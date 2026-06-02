@@ -1,13 +1,13 @@
 {
   "date": "2026-06-02",
-  "generated_at": "2026-06-02T06:40:26.276868+00:00",
+  "generated_at": "2026-06-02T06:59:02.746682+00:00",
   "paper_count": 12,
   "news_count": 12,
   "tool_count": 20,
   "papers": [
     {
       "title": "Thinking in Blender: Staged Executable Inverse Graphics with Vision-Language Models",
-      "title_zh": "",
+      "title_zh": "Blender 中的思考：使用视觉语言模型分阶段执行逆向图形",
       "summary": "Inverse graphics is a longstanding and highly underconstrained problem that seeks to reconstruct images as editable 3D scenes which can be rendered, relit, and manipulated. In this work, we investigate whether pretrained vision-language models (VLMs) can perform executable inverse graphics directly from a single image by reconstructing a scene as an editabl…",
       "summary_zh": "逆向图形是一个长期存在且高度受限的问题，旨在将图像重建为可编辑的 3D 场景，以便进行渲染、重新点亮和操作。在这项工作中，我们研究预训练的视觉语言模型 (VLM) 是否可以通过将场景重建为可编辑的 Blender 程序，直接从单个图像执行可执行的逆向图形，而不依赖于专门的 2D 或 3D 基础模型、可微分渲染或多视图监督。我们引入了阶段可执行逆向图形 (SEIG)，这是一种代理框架，通过直接在可执行 Blender 代码空间中逐步细化场景因素（包括几何、材质、合成和照明），从单个图像重建 3D 场景。我们使用一系列跨越像素级、感知和语义保真度的重建指标来评估我们在不同场景中的框架。我们的实验表明，分阶段重建大大提高了重建保真度，凸显了使用通用 VLM 进行可执行逆向图形任务分解的重要性。最后，我们展示了由重建的可编辑 Blender 场景支持的各种…",
       "authors": [
@@ -45,7 +45,7 @@
       "title": "ProtoAda: Prototype-Guided Adaptive Adapter Expansion and Geometric Consolidation for Multimodal Continual Instruction Tuning",
       "title_zh": "ProtoAda：用于多模式连续指令调优的原型引导自适应适配器扩展和几何合并",
       "summary": "Multimodal Large Language Models (MLLMs) achieve strong performance through instruction tuning, but real-world deployment requires them to continually acquire new vision-language capabilities, making Multimodal Continual Instruction Tuning (MCIT) essential. To reduce inter-task interference and promote collaboration, recent methods often employ sparse archi…",
-      "summary_zh": "",
+      "summary_zh": "多模态大型语言模型 (MLLM) 通过指令调优实现强大的性能，但实际部署要求它们不断获取新的视觉语言功能，因此多模态连续指令调优 (MCIT) 至关重要。为了减少任务间干扰并促进协作，最近的方法通常采用稀疏架构，例如 LoRA 专家与图像文本相似性路由的混合。然而，具有不同响应结构的任务可能具有高度相似的视觉语言语义，从而被错误地发送给同一位专家；仅图像文本相似性不足以实现可靠的任务分配。例如，需要坐标预测的基础任务的专家在学习语义相似的 VQA 任务后可能会偏向于生成简短的文本答案。这种格式盲的任务分配将异构响应类型集成到共享参数中，导致梯度干扰和无效的专家协作。为了解决这个问题，我们提出了 ProtoAda，一个原型引导的自适应调优框架。 ProtoAda 引入了格式感知的任务原型，使任务分配和路由与任务语义和输出结构保持一致，并以几何感知的方…",
       "authors": [
         "Yu-Cheng Shi",
         "Zhen-Hao Xie",
@@ -60,9 +60,9 @@
     },
     {
       "title": "HumanNOVA: Photorealistic, Universal and Rapid 3D Human Avatar Modeling from a Single Image",
-      "title_zh": "",
+      "title_zh": "HumanNOVA：通过单个图像进行逼真、通用且快速的 3D 人体头像建模",
       "summary": "In this paper, we present HumanNOVA, a photorealistic, universal, and rapid model for generating 3D human avatars from a single RGB image. Achieving both photorealism and generalization is challenging due to the scarcity of diverse, high-quality 3D human data. To address this, we build a scalable data generation pipeline that follows two strategies. The fir…",
-      "summary_zh": "",
+      "summary_zh": "在本文中，我们提出了 HumanNOVA，这是一种逼真、通用且快速的模型，用于从单个 RGB 图像生成 3D 人体头像。由于缺乏多样化、高质量的 3D 人体数据，实现照片级真实感和泛化性具有挑战性。为了解决这个问题，我们构建了一个遵循两种策略的可扩展数据生成管道。第一个是利用现有的装备资产，并用日常生活中的广泛姿势来动画它们。第二个策略是利用现有的多摄像头捕捉人类图像并采用拟合来生成更多样化的训练视图。这两种策略使我们能够扩展到 10 万个资产，显着增强稳健模型训练的数据数量和多样性。在架构方面，HumanNOVA采用前馈、令牌条件化身建模框架，可以在不到一秒的时间内快速推理，并且不需要测试时间优化。给定输入图像和估计的简化人体网格（SMPL），没有详细的几何形状或外观，模型首先将两个输入编码为紧凑的标记表示。然后，这些标记充当条件信号，并通过交叉…",
       "authors": [
         "Hezhen Hu",
         "Wangbo Zhao",
@@ -81,7 +81,7 @@
       "title": "VISReg: Variance-Invariance-Sketching Regularization for JEPA training",
       "title_zh": "VISReg：JEPA 训练的方差-不变性-草图正则化",
       "summary": "Self-supervised learning methods prevent embedding collapse via modeling heuristics or explicit regularization of the embedding space. Among the latter, VICReg decomposes regularization into variance and covariance objectives, offering flexibility and interpretability. However, covariance captures only second-order statistics -- encouraging decorrelation bu…",
-      "summary_zh": "",
+      "summary_zh": "自监督学习方法通​​过建模启发式或嵌入空间的显式正则化来防止嵌入崩溃。其中，VICReg 将正则化分解为方差和协方差目标，提供灵活性和可解释性。然而，协方差仅捕获二阶统计数据——鼓励去相关，但无法强制执行稳定训练所需的完整分布形状。基于草图的方法（例如 SIGReg）通过将嵌入对齐到各向同性高斯来解决这个问题，但缺乏灵活性，并且会在崩溃时遭受梯度消失的问题。我们提出了方差-不变-草图正则化（VISReg），它将协方差替换为基于 Sliced-Wasserstein 的草图目标，该目标强制执行完整的分布形状，同时保留用于比例控制的方差项。通过解耦比例和形状，VISReg 将 VICReg 的灵活性与草图方法的分布严谨性结合起来，即使在折叠情况下也能提供稳健的梯度。我们证明 VISReg 可以线性扩展，在低质量数据集上优于现有的正则化，并且对长尾和低秩…",
       "authors": [
         "Haiyu Wu",
         "Randall Balestriero",
@@ -97,7 +97,7 @@
       "title": "AdaCodec: A Predictive Visual Code for Video MLLMs",
       "title_zh": "AdaCodec：视频 MLLM 的预测视觉代码",
       "summary": "Video is temporally redundant: adjacent frames usually share most objects, background, and layout. Yet existing video multimodal large language models (video MLLMs) usually encode each sampled frame as an independent RGB image, causing visual tokens to repeat content already present in earlier frames. This suggests a more direct video interface: send a full…",
-      "summary_zh": "",
+      "summary_zh": "视频在时间上是冗余的：相邻帧通常共享大多数对象、背景和布局。然而，现有的视频多模态大语言模型（视频 MLLM）通常将每个采样帧编码为独立的 RGB 图像，导致视觉标记重复先前帧中已存在的内容。这建议采用更直接的视频接口：仅当无法从先前的上下文中很好地预测场景时才发送完整的参考帧，否则传输帧间变化的紧凑描述。我们将此接口称为 \\emph{预测视觉代码}，并将视频 MLLM 实例化为 \\textbf{AdaCodec}。仅当条件预测成本很高时，AdaCodec 才会在参考帧上花费完整的视觉标记；否则，它将帧间变化（包括运动和预测残差）编码为紧凑的 P 令牌。在所有 11 个基准测试中，AdaCodec 在匹配的视觉令牌预算下比 Qwen3-VL-8B 每帧 RGB 基线有所改进。即使预算为 1/7$，具有 32k 代币的 AdaCodec 也超过了所有…",
       "authors": [
         "Haowen Hou",
         "Zhen Huang",
@@ -114,7 +114,7 @@
     },
     {
       "title": "ClinEnv: An Interactive Multi-Stage Long Horizon EHR Environment for Agents",
-      "title_zh": "",
+      "title_zh": "ClinEnv：面向代理的交互式多阶段长期 EHR 环境",
       "summary": "Clinical practice is not the selection of an answer from enumerated options: a physician gathers heterogeneous information incrementally and commits to sequential, irreversible decisions under uncertainty. Static benchmarks cannot probe and existing interactive medical benchmarks each compromise on at least one of them. We present ClinEnv, an interactive be…",
       "summary_zh": "临床实践不是从列举的选项中选择答案：医生逐渐收集异构信息，并在不确定的情况下做出连续的、不可逆转的决定。静态基准无法探测，现有的交互式医疗基准至少会在其中一个基准上做出妥协。我们推出了 ClinEnv，这是一个交互式基准，可以在我们称之为纵向住院模拟的范式下评估法学硕士作为主治医生与真实住院患者的入院情况。每个案例都会自动构建成决策阶段的有序序列；在每个阶段，模型在进行药物治疗、手术和诊断之前都必须主动询问四名专业代理人。 ClinEnv 通过基于本体的确定性匹配对模型决定的内容以及收集信息的方式进行评分。在七个模型中，最强的模型仅达到 0.31 的决策 F1，并且结果质量与过程质量急剧脱钩。困难集中在管理决策和后期阶段，其中模型恢复出院诊断的可靠性远高于管理操作（0.51 vs. 0.17 F1），并随着病例的进展继续发出冗余查询。 ClinEn…",
       "authors": [
@@ -135,7 +135,7 @@
       "title": "VLMs are Good Teachers for Video Reasoning via Adaptive Test-Time Optimization",
       "title_zh": "VLM 是通过自适应测试时间优化进行视频推理的好老师",
       "summary": "The recent \"Reasoning with Video\" paradigm utilizes Video Generation Models (VGMs) to generate temporally coherent visual trajectories to complete reasoning tasks. Although state-of-the-art VGMs excel at visual quality, they often struggle to understand and follow task-specific rules, leading to logical failures across diverse reasoning scenarios. Existing…",
-      "summary_zh": "",
+      "summary_zh": "最近的“视频推理”范式利用视频生成模型（VGM）生成时间连贯的视觉轨迹来完成推理任务。尽管最先进的 VGM 在视觉质量方面表现出色，但它们常常难以理解和遵循特定任务的规则，从而导致不同推理场景中的逻辑失败。现有的工作尝试利用视觉语言模型（VLM）作为问题预解决器来生成或完善 VGM 的文本指导。然而，文本描述无法捕捉复杂的时空细节，即使有有效的计划，VGM 也常常难以忠实地执行细粒度或长尾指令。虽然 VLM 作为求解器很困难，但它们具有强大的感知能力来评估流程约束满意度和最终目标实现情况。利用这一优势，我们引入了范式转变，将 VLM 的角色转变为“教师”。具体来说，VLM 教师提取特定于任务的规则来制定可区分的奖励，通过轻量级 LoRA 模块的测试时在线优化来指导 VGM Reasoner。该策略可实现自适应测试时间优化，并将推理能力扩展到 VGM…",
       "authors": [
         "Junhao Cheng",
         "Liang Hou",
@@ -201,7 +201,7 @@
       "title": "HERO'S JOURNEY: Testing Complex Rule Induction with Text Games",
       "title_zh": "英雄之旅：用文本游戏测试复杂的规则归纳",
       "summary": "We introduce HERO'S JOURNEY, a benchmark for rule induction in goal-directed episodic tasks, where agents must infer hidden rules from demonstrations and act on them through multi-step execution. HERO'S JOURNEY covers eight tasks across attribute and procedural induction families, each with four structural rule forms, controllable lexical grounding, and ide…",
-      "summary_zh": "我们引入了 HERO'S JOURNEY，这是目标导向的情景任务中规则归纳的基准，其中代理必须从演示中推断隐藏规则，并通过多步骤执行对其采取行动。 《英雄之旅》涵盖了跨属性和程序归纳系列的八个任务，每个任务都有四种结构规则形式、可控词汇基础和可识别性条件。在评估最先进的法学硕士时，我们发现模型显示了规则归纳的证据，但能力有限且跨任务不平衡。同时，流程执行增加了模型的执行瓶颈，而表面语义的影响很小。特定于归纳的转向方法提高了属性任务的性能，但在程序任务上没有显示出可靠的收益，这表明程序归纳的差距仍然是一个开放的挑战。",
+      "summary_zh": "我们引入了 HERO'S JOURNEY，这是目标导向的情景任务中规则归纳的基准，其中代理必须从演示中推断隐藏规则，并通过多步骤执行对其采取行动。 《英雄之旅》涵盖了跨属性和程序归纳系列的八个任务，每个任务都有四种结构规则形式、可控词汇基础和可识别性条件。在评估最先进的法学硕士时，我们发现模型显示了规则归纳的证据，但能力有限且跨任务不均匀。同时，流程执行增加了模型的执行瓶颈，而表面语义的影响很小。特定于归纳的转向方法提高了属性任务的性能，但在程序任务上没有显示出可靠的收益，这表明程序归纳的差距仍然是一个开放的挑战。",
       "authors": [
         "Anshun Asher Zheng",
         "Kanishka Misra",
@@ -249,14 +249,6 @@
       "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5XcVlLR2Z4UWhYR21DNmRLMXhfVDhrMVdvVGlsV0VLMUE2N3l1MGU4c1J0ZW1UajNWdFVJUzV1b1Fza1FrdmRMRHd3?oc=5"
     },
     {
-      "title": "北京首个太空算力产业创新中心落户海淀，卫星物联网产业规划发布 - 新京报",
-      "summary": "北京首个太空算力产业创新中心落户海淀，卫星物联网产业规划发布 新京报",
-      "source": "新京报",
-      "lang": "zh",
-      "published": "Tue, 02 Jun 2026 01:51:00 GMT",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9OZTYzRVI2T2V4R0duS3FxbjloUFotVEctQlNWNXhWcS0tazlLd2N3SnZWUVpZWHhhQ1VkS1h1eFltd3dyaFB4UHRfUl9DVlliNmc5VFR5WU0yUWUzekJBRVlyQ20?oc=5"
-    },
-    {
       "title": "“师承万象”：AI大模型为中小学教师赋能 - 中国网新闻中心",
       "summary": "“师承万象”：AI大模型为中小学教师赋能 中国网新闻中心",
       "source": "中国网新闻中心",
@@ -265,12 +257,12 @@
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5vUDBWb2VjY2pma3AtOXpEdF95VWk5d2ZqWmRDQk1WUUMxeDk2VjJWVkhtVlNPRGpweFJoZ04zOHZRdjdtSFY1cG9nQ2s3YzN6X3gwX3BiM21XVE40YnVIYk9VcGJwUXVLQk00?oc=5"
     },
     {
-      "title": "消息称腾讯正测试微信 AI 智能体原型，官方已将其列为最高战略优先级 - DoNews",
-      "summary": "消息称腾讯正测试微信 AI 智能体原型，官方已将其列为最高战略优先级 DoNews",
-      "source": "DoNews",
+      "title": "北京首个太空算力产业创新中心落户海淀，卫星物联网产业规划发布 - 新京报",
+      "summary": "北京首个太空算力产业创新中心落户海淀，卫星物联网产业规划发布 新京报",
+      "source": "新京报",
       "lang": "zh",
-      "published": "Tue, 02 Jun 2026 03:13:58 GMT",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA2SkU4Z0hLUkc4MWYzS2hHSnZ1UVJCQVB4TWM3ajdBdjdZU3BoT1h3UUV2TEoxMEJwOHdNcjVJa29tTHVhNHJLQkV1cG9IYVVMTWNQUG1fbTctUWRZRkE?oc=5"
+      "published": "Tue, 02 Jun 2026 01:51:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9OZTYzRVI2T2V4R0duS3FxbjloUFotVEctQlNWNXhWcS0tazlLd2N3SnZWUVpZWHhhQ1VkS1h1eFltd3dyaFB4UHRfUl9DVlliNmc5VFR5WU0yUWUzekJBRVlyQ20?oc=5"
     },
     {
       "title": "NVIDIA 正式发布 Vera：专为智能体打造的 CPU - NVIDIA",
@@ -305,12 +297,20 @@
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1jNVNvMHZta0RsWGdJNVAxTFVoOUJXOEVzN3FxQ2lvRElwOGoyMkU1Q1lCdmw3cmxraW5SY0xIajNEN2JseWdIag?oc=5"
     },
     {
-      "title": "“百川计划” 启动！京东工业推出国内首个工业大模型生态体系 - cnenergynews.cn",
-      "summary": "“百川计划” 启动！京东工业推出国内首个工业大模型生态体系 cnenergynews.cn",
-      "source": "cnenergynews.cn",
+      "title": "率先开启“智能体之年”的，为什么是高通 - 品玩",
+      "summary": "率先开启“智能体之年”的，为什么是高通 品玩",
+      "source": "品玩",
       "lang": "zh",
-      "published": "Tue, 02 Jun 2026 01:45:00 GMT",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5FOGNEa250TGZScDFtakctZlV3ZGVGQ1AyRV85SHB4Vy1paHE1TVZWNUoydDdxVWdjYmFrMWRsa1FtME1QdFpsOS1tZ3JfV2VtMk5GRUU2ZzRTSDg?oc=5"
+      "published": "Tue, 02 Jun 2026 06:06:37 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5pMHdHRHBCY2E5dVNtVEZpZUY3VThYcm5jN25vRUdSc1ptYy11azlNOVkxSlprcENXMC0waURnM0puSXdmY3ZZMA?oc=5"
+    },
+    {
+      "title": "词元经济崛起 贵州抢滩算力新高地 - 新华网",
+      "summary": "词元经济崛起 贵州抢滩算力新高地 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Tue, 02 Jun 2026 05:20:54 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBKOUZubFdZTlk5amtibTRZRjVZbVdUZTFMQ1kwNjVpYXBZMktVTTNGOW9LTFBTTlFQWkhIelZFR1RtUzNVblFZSmpCNzJyR0tfenUwaEFhZkJOTm5yUVdvWTdWWDkzVUlIMGZlUENQOFV5eEx5ZjNtUk5NME4?oc=5"
     }
   ],
   "tools": [
@@ -318,10 +318,10 @@
       "title": "awesome-mcp-servers",
       "type": "GitHub",
       "summary_en": "A collection of MCP servers.",
-      "summary": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
       "url": "https://github.com/punkpeye/awesome-mcp-servers",
       "author": "punkpeye",
-      "stars": 88337,
+      "stars": 88336,
       "language": ""
     },
     {
@@ -331,7 +331,7 @@
       "summary": "剧作家 MCP 服务器",
       "url": "https://github.com/microsoft/playwright-mcp",
       "author": "microsoft",
-      "stars": 33333,
+      "stars": 33334,
       "language": "TypeScript"
     },
     {
@@ -351,7 +351,7 @@
       "summary": "🚀 构建 MCP 服务器和客户端的快速、Python 方式。",
       "url": "https://github.com/PrefectHQ/fastmcp",
       "author": "PrefectHQ",
-      "stars": 25431,
+      "stars": 25432,
       "language": "Python"
     },
     {
@@ -371,7 +371,7 @@
       "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
       "url": "https://github.com/openclaw/openclaw",
       "author": "openclaw",
-      "stars": 376119,
+      "stars": 376124,
       "language": "TypeScript"
     },
     {
@@ -381,7 +381,7 @@
       "summary": "具有原生 AI 功能的公平代码工作流程自动化平台。将可视化构建与自定义代码、自托管或云、400 多个集成相结合。",
       "url": "https://github.com/n8n-io/n8n",
       "author": "n8n-io",
-      "stars": 190685,
+      "stars": 190687,
       "language": "TypeScript"
     },
     {
@@ -391,7 +391,7 @@
       "summary": "AutoGPT 的愿景是为每个人提供易于使用和构建的人工智能。我们的使命是提供工具，以便您可以专注于重要的事情。",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
       "author": "Significant-Gravitas",
-      "stars": 184710,
+      "stars": 184711,
       "language": "Python"
     },
     {
