@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIEYES · AI 前沿资讯与论文日报</title>
+  <meta name="description" content="每日聚合 AI 行业前沿资讯与最新评测论文，提供中文要点与下载地址，按天更新。" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <span class="logo">AI<span class="logo-accent">EYES</span></span>
+        <span class="tagline">AI 前沿资讯与最新论文</span>
+      </div>
+      <div class="header-meta">
+        <div class="mini-stats" id="miniStats">
+          <span class="ms"><b id="paperNum">--</b> 论文</span>
+          <span class="ms-dot">·</span>
+          <span class="ms"><b id="newsNum">--</b> 资讯</span>
+          <span class="ms-dot">·</span>
+          <span class="ms"><b id="toolNum">--</b> 工具</span>
+          <span class="ms-dot">·</span>
+          <span class="ms"><b id="dayNum">--</b> 天</span>
+        </div>
+        <label class="date-picker">
+          <span>日期</span>
+          <select id="dateSelect" aria-label="选择日期"></select>
+        </label>
+        <span class="updated" id="updatedAt"></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>洞察 AI 前沿，<span class="grad">每日不间断</span></h1>
+      <p class="hero-sub">聚焦 AI 最新数据与评测论文（附中文要点），追踪行业 top 级技术进展。</p>
+    </div>
+  </section>
+
+  <nav class="tab-switch">
+    <button class="big-tab active" data-tab="papers">
+      <span class="big-tab-icon">📄</span>
+      <span class="big-tab-title">前沿论文</span>
+      <span class="big-tab-desc">AI 最新数据 · 评测 · Benchmark</span>
+    </button>
+    <button class="big-tab" data-tab="news">
+      <span class="big-tab-icon">📰</span>
+      <span class="big-tab-title">行业资讯</span>
+      <span class="big-tab-desc">Top 级技术进展 · 行业动态</span>
+    </button>
+    <button class="big-tab" data-tab="tools">
+      <span class="big-tab-icon">🧰</span>
+      <span class="big-tab-title">工具技能</span>
+      <span class="big-tab-desc">AI 工具 · Skill · MCP · 经验分享</span>
+    </button>
+  </nav>
+
+  <div class="search-row">
+    <div class="search-box">
+      <input type="search" id="searchInput" placeholder="搜索标题 / 关键词…" />
+    </div>
+  </div>
+
+  <main class="main-content">
+    <div id="loading" class="loading">正在加载数据…</div>
+    <div id="empty" class="empty hidden">暂无数据，请先运行抓取脚本生成当日数据。</div>
+
+    <section id="papersPanel" class="panel">
+      <div id="papersList" class="card-list"></div>
+    </section>
+
+    <section id="newsPanel" class="panel hidden">
+      <div id="newsList" class="card-list"></div>
+    </section>
+
+    <section id="toolsPanel" class="panel hidden">
+      <div id="toolsList" class="card-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>数据来源：<a href="https://arxiv.org" target="_blank" rel="noopener">arXiv</a> · Google News。本页每日更新，仅供学习研究使用。</p>
+      <p class="copyright">Copyright © <span id="year"></span> Tian Rupeng. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

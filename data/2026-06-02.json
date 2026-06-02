@@ -1,0 +1,506 @@
+{
+  "date": "2026-06-02",
+  "generated_at": "2026-06-02T06:40:26.276868+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Thinking in Blender: Staged Executable Inverse Graphics with Vision-Language Models",
+      "title_zh": "",
+      "summary": "Inverse graphics is a longstanding and highly underconstrained problem that seeks to reconstruct images as editable 3D scenes which can be rendered, relit, and manipulated. In this work, we investigate whether pretrained vision-language models (VLMs) can perform executable inverse graphics directly from a single image by reconstructing a scene as an editabl…",
+      "summary_zh": "逆向图形是一个长期存在且高度受限的问题，旨在将图像重建为可编辑的 3D 场景，以便进行渲染、重新点亮和操作。在这项工作中，我们研究预训练的视觉语言模型 (VLM) 是否可以通过将场景重建为可编辑的 Blender 程序，直接从单个图像执行可执行的逆向图形，而不依赖于专门的 2D 或 3D 基础模型、可微分渲染或多视图监督。我们引入了阶段可执行逆向图形 (SEIG)，这是一种代理框架，通过直接在可执行 Blender 代码空间中逐步细化场景因素（包括几何、材质、合成和照明），从单个图像重建 3D 场景。我们使用一系列跨越像素级、感知和语义保真度的重建指标来评估我们在不同场景中的框架。我们的实验表明，分阶段重建大大提高了重建保真度，凸显了使用通用 VLM 进行可执行逆向图形任务分解的重要性。最后，我们展示了由重建的可编辑 Blender 场景支持的各种…",
+      "authors": [
+        "Guangzhao He",
+        "Rundong Luo",
+        "Wei-Chiu Ma",
+        "Hadar Averbuch-Elor"
+      ],
+      "published": "2026-06-01T17:59:53Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.02580v1",
+      "abs_url": "https://arxiv.org/abs/2606.02580v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.02580v1"
+    },
+    {
+      "title": "Mitigating Perceptual Judgment Bias in Multimodal LLM-as-a-Judge via Perceptual Perturbation and Reward Modeling",
+      "title_zh": "通过感知扰动和奖励建模减轻多模式法学硕士作为法官的感知判断偏差",
+      "summary": "Recent multimodal large language models have demonstrated strong reasoning ability, yet their reliability as automated evaluators remains limited by a critical weakness: when visual evidence conflicts with textual cues, MLLM judges tend to reward plausible narratives over perceptually correct answers. We identify and systematically analyze this phenomenon,…",
+      "summary_zh": "最近的多模态大语言模型已经表现出强大的推理能力，但它们作为自动评估器的可靠性仍然受到一个严重弱点的限制：当视觉证据与文本线索发生冲突时，MLLM 法官倾向于奖励合理的叙述，而不是感知上正确的答案。我们识别并系统地分析这种现象，我们将其称为感知判断偏差。通过受控的视觉扰动，现有的多模式法官经常锚定响应文本而不是他们自己的视觉感知，从而导致不一致和不可验证的评估。为了解决这个问题，我们引入了感知扰动判断数据集，该数据集构建了经过最少编辑的反事实响应，以隔离感知错误并实现可验证的监督。在此数据集的基础上，我们开发了一个统一的训练框架，将基于 GRPO 的结构化奖励与批量排名目标相结合，无需显式的成对标签即可实现连贯的全局排序。跨不同 MLLM-as-a-Judge 基准的实验表明，我们的方法大大提高了感知保真度、排名一致性以及与人类评估的一致性。我们的结…",
+      "authors": [
+        "Seojeong Park",
+        "Jiho Choi",
+        "Junyong Kang",
+        "Seonho Lee",
+        "Jaeyo Shin",
+        "Hyunjung Shim"
+      ],
+      "published": "2026-06-01T17:59:46Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.02578v1",
+      "abs_url": "https://arxiv.org/abs/2606.02578v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.02578v1"
+    },
+    {
+      "title": "ProtoAda: Prototype-Guided Adaptive Adapter Expansion and Geometric Consolidation for Multimodal Continual Instruction Tuning",
+      "title_zh": "ProtoAda：用于多模式连续指令调优的原型引导自适应适配器扩展和几何合并",
+      "summary": "Multimodal Large Language Models (MLLMs) achieve strong performance through instruction tuning, but real-world deployment requires them to continually acquire new vision-language capabilities, making Multimodal Continual Instruction Tuning (MCIT) essential. To reduce inter-task interference and promote collaboration, recent methods often employ sparse archi…",
+      "summary_zh": "",
+      "authors": [
+        "Yu-Cheng Shi",
+        "Zhen-Hao Xie",
+        "Jun-Tao Tang",
+        "Da-Wei Zhou"
+      ],
+      "published": "2026-06-01T17:59:13Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.02576v1",
+      "abs_url": "https://arxiv.org/abs/2606.02576v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.02576v1"
+    },
+    {
+      "title": "HumanNOVA: Photorealistic, Universal and Rapid 3D Human Avatar Modeling from a Single Image",
+      "title_zh": "",
+      "summary": "In this paper, we present HumanNOVA, a photorealistic, universal, and rapid model for generating 3D human avatars from a single RGB image. Achieving both photorealism and generalization is challenging due to the scarcity of diverse, high-quality 3D human data. To address this, we build a scalable data generation pipeline that follows two strategies. The fir…",
+      "summary_zh": "",
+      "authors": [
+        "Hezhen Hu",
+        "Wangbo Zhao",
+        "Lanqing Guo",
+        "Hanwen Jiang",
+        "Jonathan C. Liu",
+        "Zhiwen Fan"
+      ],
+      "published": "2026-06-01T17:58:11Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.02573v1",
+      "abs_url": "https://arxiv.org/abs/2606.02573v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.02573v1"
+    },
+    {
+      "title": "VISReg: Variance-Invariance-Sketching Regularization for JEPA training",
+      "title_zh": "VISReg：JEPA 训练的方差-不变性-草图正则化",
+      "summary": "Self-supervised learning methods prevent embedding collapse via modeling heuristics or explicit regularization of the embedding space. Among the latter, VICReg decomposes regularization into variance and covariance objectives, offering flexibility and interpretability. However, covariance captures only second-order statistics -- encouraging decorrelation bu…",
+      "summary_zh": "",
+      "authors": [
+        "Haiyu Wu",
+        "Randall Balestriero",
+        "Morgan Levine"
+      ],
+      "published": "2026-06-01T17:58:01Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.02572v1",
+      "abs_url": "https://arxiv.org/abs/2606.02572v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.02572v1"
+    },
+    {
+      "title": "AdaCodec: A Predictive Visual Code for Video MLLMs",
+      "title_zh": "AdaCodec：视频 MLLM 的预测视觉代码",
+      "summary": "Video is temporally redundant: adjacent frames usually share most objects, background, and layout. Yet existing video multimodal large language models (video MLLMs) usually encode each sampled frame as an independent RGB image, causing visual tokens to repeat content already present in earlier frames. This suggests a more direct video interface: send a full…",
+      "summary_zh": "",
+      "authors": [
+        "Haowen Hou",
+        "Zhen Huang",
+        "Zheming Liang",
+        "Qingyi Si",
+        "Chenglin Li",
+        "Shuai Dong"
+      ],
+      "published": "2026-06-01T17:56:35Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.02569v1",
+      "abs_url": "https://arxiv.org/abs/2606.02569v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.02569v1"
+    },
+    {
+      "title": "ClinEnv: An Interactive Multi-Stage Long Horizon EHR Environment for Agents",
+      "title_zh": "",
+      "summary": "Clinical practice is not the selection of an answer from enumerated options: a physician gathers heterogeneous information incrementally and commits to sequential, irreversible decisions under uncertainty. Static benchmarks cannot probe and existing interactive medical benchmarks each compromise on at least one of them. We present ClinEnv, an interactive be…",
+      "summary_zh": "临床实践不是从列举的选项中选择答案：医生逐渐收集异构信息，并在不确定的情况下做出连续的、不可逆转的决定。静态基准无法探测，现有的交互式医疗基准至少会在其中一个基准上做出妥协。我们推出了 ClinEnv，这是一个交互式基准，可以在我们称之为纵向住院模拟的范式下评估法学硕士作为主治医生与真实住院患者的入院情况。每个案例都会自动构建成决策阶段的有序序列；在每个阶段，模型在进行药物治疗、手术和诊断之前都必须主动询问四名专业代理人。 ClinEnv 通过基于本体的确定性匹配对模型决定的内容以及收集信息的方式进行评分。在七个模型中，最强的模型仅达到 0.31 的决策 F1，并且结果质量与过程质量急剧脱钩。困难集中在管理决策和后期阶段，其中模型恢复出院诊断的可靠性远高于管理操作（0.51 vs. 0.17 F1），并随着病例的进展继续发出冗余查询。 ClinEn…",
+      "authors": [
+        "Yuxing Lu",
+        "Yushuhong Lin",
+        "Wenqi Shi",
+        "J. Ben Tamo",
+        "Xukai Zhao",
+        "Jinzhuo Wang"
+      ],
+      "published": "2026-06-01T17:56:26Z",
+      "category": "cs.AI",
+      "arxiv_id": "2606.02568v1",
+      "abs_url": "https://arxiv.org/abs/2606.02568v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.02568v1"
+    },
+    {
+      "title": "VLMs are Good Teachers for Video Reasoning via Adaptive Test-Time Optimization",
+      "title_zh": "VLM 是通过自适应测试时间优化进行视频推理的好老师",
+      "summary": "The recent \"Reasoning with Video\" paradigm utilizes Video Generation Models (VGMs) to generate temporally coherent visual trajectories to complete reasoning tasks. Although state-of-the-art VGMs excel at visual quality, they often struggle to understand and follow task-specific rules, leading to logical failures across diverse reasoning scenarios. Existing…",
+      "summary_zh": "",
+      "authors": [
+        "Junhao Cheng",
+        "Liang Hou",
+        "Tianxiong Zhong",
+        "Xin Tao",
+        "Pengfei Wan",
+        "Kun Gai"
+      ],
+      "published": "2026-06-01T17:54:26Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.02564v1",
+      "abs_url": "https://arxiv.org/abs/2606.02564v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.02564v1"
+    },
+    {
+      "title": "IntraShuffler: A Privacy Preserving Framework for Heterogeneous DP Federated Learning",
+      "title_zh": "IntraShuffler：异构 DP 联邦学习的隐私保护框架",
+      "summary": "Heterogeneous Differential Privacy (HDP) in Federated Learning (FL) allows clients to select individual privacy budgets ($\\varepsilon_i$) according to institutional policies and data sensitivity. In practice, many HDP-FL systems employ $\\varepsilon$-aware server aggregation to improve model utility by re-weighting client updates according to their declared…",
+      "summary_zh": "联邦学习（FL）中的异构差分隐私（HDP）允许客户根据机构政策和数据敏感性选择个人隐私预算（$\\varepsilon_i$）。在实践中，许多 HDP-FL 系统采用 $\\varepsilon$ 感知服务器聚合，通过根据其声明的隐私预算重新加权客户端更新来提高模型实用性。然而，FL 中的梯度更新保留了由非独立且同分布（非 IID）数据引起的结构模式，并且 $\\varepsilon$ 感知聚合暴露的这些附加信号为诚实但好奇的服务器进行推理创造了新的机会。在这项工作中，我们首先证明配备梯度去噪和代理建模的服务器可以安装\\emph{隐私推理攻击}，该攻击可以在现实知识约束下推断客户端的分布属性并链接来自同一客户端的训练轮次更新，通过代理推理准确性和链接成功来衡量。 Shuffle 模型已被广泛研究，作为通过匿名更新源来防御此类推理风险的方法，但它从根本上与…",
+      "authors": [
+        "Farhin Farhad Riya",
+        "Olivera Kotevska",
+        "Jinyuan Stella Sun"
+      ],
+      "published": "2026-06-01T17:54:10Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.02563v1",
+      "abs_url": "https://arxiv.org/abs/2606.02563v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.02563v1"
+    },
+    {
+      "title": "Permissive Safety Through Trusted Inference: Verifiable Belief-Space Neural Safety Filters for Assured Interactive Robotics",
+      "title_zh": "通过可信推理实现许可安全：用于有保证的交互式机器人的可验证置信空间神经安全过滤器",
+      "summary": "Autonomous robots that interact with people must make safe and efficient decisions under human-induced uncertainty, such as their preferences, goals, competency, and willingness to cooperate. Safety filters are a popular approach for ensuring safety in interactive robotics, since their modular design separates safety from performance, allowing robots to ope…",
+      "summary_zh": "与人类互动的自主机器人必须在人类引起的不确定性下做出安全有效的决策，例如它们的偏好、目标、能力和合作意愿。安全过滤器是确保交互式机器人安全的一种流行方法，因为它们的模块化设计将安全性与性能分开，使机器人能够在人周围安全操作，同时对任务效率的影响最小。虽然传统的安全过滤器通常仅在物理空间中运行，忽略了机器人在线学习和适应的能力，但最近提出的信念空间安全过滤器（BeliefSF）通过运行时推理在闭环中推理机器人的安全性，主动降低机器人在线的不确定性，从而降低过滤的保守性。然而，为部署 BeliefSF 的机器人提供正式的安全保证仍然是一个重大挑战，因为处理高维置信空间所需的安全过滤器的运行时推理和神经逼近中存在错误。在本文中，我们提出了一种算法方法，使用保形预测来验证 BeliefSF 的高概率安全性，同时明确考虑机器人运行时推理模块的可靠性。我们的方…",
+      "authors": [
+        "Haimin Hu"
+      ],
+      "published": "2026-06-01T17:54:00Z",
+      "category": "cs.RO",
+      "arxiv_id": "2606.02562v1",
+      "abs_url": "https://arxiv.org/abs/2606.02562v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.02562v1"
+    },
+    {
+      "title": "From Layers to Submodules: Rethinking Granularity in Replacement-Based LLM Compression",
+      "title_zh": "从层到子模块：重新思考基于替换的 LLM 压缩的粒度",
+      "summary": "Post-training compression of Large Language Models (LLMs) removes entire architectural components, either deleting them or replacing them with fitted modules. Existing replacement-based methods share two design constraints: full-layer granularity and contiguous selection. We argue that this is overly restrictive: in fact, redundancy in pretrained transforme…",
+      "summary_zh": "大型语言模型 (LLM) 的训练后压缩会删除整个架构组件，要么删除它们，要么用合适的模块替换它们。现有的基于替换的方法有两个设计约束：全层粒度和连续选择。我们认为这种限制过于严格：事实上，预训练 Transformer 中的冗余并不局限于连续区域，也不是均匀分布在 Attention 和 FeedForward 输出之间，这意味着不同的策略最好地近似不同的子模块类型，并且可移动组件不需要在连续的深度范围内聚集。基于这种直觉，我们引入了 SubFit（子模块级拟合残差替换），它在子模块级别压缩 LLM：Attention 和 FeedForward 子模块被选择为非连续的，并且每个子模块都接收自己的轻量级拟合残差旁路。 SubFit 在训练后运行，仅需要校准数据。在十个法学硕士（五个基础、五个指令调整）、五个从 12.5% 到 37.5% 的稀疏度水…",
+      "authors": [
+        "Elia Cunegatti",
+        "Marcus Vukojevic",
+        "Erik Nielsen",
+        "Giovanni Iacca"
+      ],
+      "published": "2026-06-01T17:52:53Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.02559v1",
+      "abs_url": "https://arxiv.org/abs/2606.02559v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.02559v1"
+    },
+    {
+      "title": "HERO'S JOURNEY: Testing Complex Rule Induction with Text Games",
+      "title_zh": "英雄之旅：用文本游戏测试复杂的规则归纳",
+      "summary": "We introduce HERO'S JOURNEY, a benchmark for rule induction in goal-directed episodic tasks, where agents must infer hidden rules from demonstrations and act on them through multi-step execution. HERO'S JOURNEY covers eight tasks across attribute and procedural induction families, each with four structural rule forms, controllable lexical grounding, and ide…",
+      "summary_zh": "我们引入了 HERO'S JOURNEY，这是目标导向的情景任务中规则归纳的基准，其中代理必须从演示中推断隐藏规则，并通过多步骤执行对其采取行动。 《英雄之旅》涵盖了跨属性和程序归纳系列的八个任务，每个任务都有四种结构规则形式、可控词汇基础和可识别性条件。在评估最先进的法学硕士时，我们发现模型显示了规则归纳的证据，但能力有限且跨任务不平衡。同时，流程执行增加了模型的执行瓶颈，而表面语义的影响很小。特定于归纳的转向方法提高了属性任务的性能，但在程序任务上没有显示出可靠的收益，这表明程序归纳的差距仍然是一个开放的挑战。",
+      "authors": [
+        "Anshun Asher Zheng",
+        "Kanishka Misra",
+        "David I. Beaver",
+        "Junyi Jessy Li"
+      ],
+      "published": "2026-06-01T17:51:40Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.02556v1",
+      "abs_url": "https://arxiv.org/abs/2606.02556v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.02556v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "北京市首个太空算力产业创新中心批复设立 - 新华网",
+      "summary": "北京市首个太空算力产业创新中心批复设立 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Tue, 02 Jun 2026 05:30:03 GMT",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQaVh2bzBJUWpvdkljOEhLRzBfWjNqWEJtc01qTkJWYVU5Z1RQWVFJd2NTdUVES0x0cFdkVU85OXk0Tm5nVHVYQnhQV21qTUhEMjlWMnFaN2hlRDlveUYycFZNV0dNV2IxdmNCcmM4dVJnREl1QldhQjE4bmZhelJGb0pkOA?oc=5"
+    },
+    {
+      "title": "算力筑基支撑具身智能场景化突破- 中国日报网 - China Daily",
+      "summary": "算力筑基支撑具身智能场景化突破- 中国日报网 China Daily",
+      "source": "China Daily",
+      "lang": "zh",
+      "published": "Tue, 02 Jun 2026 00:53:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE40MDRoZnZ2bW85WHlTT2NudmM5RUlnVVMzc0hIaTFBdUhRdDUzeU82VFc3eWhoSXFpQlpPZmdBVXkzZnVsYXI3T2R2TUktMzZDNTFkV3ZILUZZRjZ6MlJuVXZhelBvcFBiaDhOR2ZVMDN4ZUVTOW80MG9kcFo1ekk?oc=5"
+    },
+    {
+      "title": "阿里发布Qwen3.7-Plus多模态智能体模型 - 观点网",
+      "summary": "阿里发布Qwen3.7-Plus多模态智能体模型 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Tue, 02 Jun 2026 05:30:20 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE90d3pCTmw0LUtMQUxJZGV6X0xfVW44Z0dxamEwcV9wWFZ2ak96LUNQZFZqU3hhYmttR0pETldBX0tlOTI5a29vRzBJNTF5VUhfU2QyY1N0SDJ4cXdHTUluaHN3?oc=5"
+    },
+    {
+      "title": "亮相端侧AI峰会 兆芯ZX86自主算力赋能产业高速发展 - 集微网",
+      "summary": "亮相端侧AI峰会 兆芯ZX86自主算力赋能产业高速发展 集微网",
+      "source": "集微网",
+      "lang": "zh",
+      "published": "Tue, 02 Jun 2026 06:04:23 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5XcVlLR2Z4UWhYR21DNmRLMXhfVDhrMVdvVGlsV0VLMUE2N3l1MGU4c1J0ZW1UajNWdFVJUzV1b1Fza1FrdmRMRHd3?oc=5"
+    },
+    {
+      "title": "北京首个太空算力产业创新中心落户海淀，卫星物联网产业规划发布 - 新京报",
+      "summary": "北京首个太空算力产业创新中心落户海淀，卫星物联网产业规划发布 新京报",
+      "source": "新京报",
+      "lang": "zh",
+      "published": "Tue, 02 Jun 2026 01:51:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9OZTYzRVI2T2V4R0duS3FxbjloUFotVEctQlNWNXhWcS0tazlLd2N3SnZWUVpZWHhhQ1VkS1h1eFltd3dyaFB4UHRfUl9DVlliNmc5VFR5WU0yUWUzekJBRVlyQ20?oc=5"
+    },
+    {
+      "title": "“师承万象”：AI大模型为中小学教师赋能 - 中国网新闻中心",
+      "summary": "“师承万象”：AI大模型为中小学教师赋能 中国网新闻中心",
+      "source": "中国网新闻中心",
+      "lang": "zh",
+      "published": "Tue, 02 Jun 2026 06:16:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5vUDBWb2VjY2pma3AtOXpEdF95VWk5d2ZqWmRDQk1WUUMxeDk2VjJWVkhtVlNPRGpweFJoZ04zOHZRdjdtSFY1cG9nQ2s3YzN6X3gwX3BiM21XVE40YnVIYk9VcGJwUXVLQk00?oc=5"
+    },
+    {
+      "title": "消息称腾讯正测试微信 AI 智能体原型，官方已将其列为最高战略优先级 - DoNews",
+      "summary": "消息称腾讯正测试微信 AI 智能体原型，官方已将其列为最高战略优先级 DoNews",
+      "source": "DoNews",
+      "lang": "zh",
+      "published": "Tue, 02 Jun 2026 03:13:58 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA2SkU4Z0hLUkc4MWYzS2hHSnZ1UVJCQVB4TWM3ajdBdjdZU3BoT1h3UUV2TEoxMEJwOHdNcjVJa29tTHVhNHJLQkV1cG9IYVVMTWNQUG1fbTctUWRZRkE?oc=5"
+    },
+    {
+      "title": "NVIDIA 正式发布 Vera：专为智能体打造的 CPU - NVIDIA",
+      "summary": "NVIDIA 正式发布 Vera：专为智能体打造的 CPU NVIDIA",
+      "source": "NVIDIA",
+      "lang": "zh",
+      "published": "Mon, 01 Jun 2026 14:33:07 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE94Y1ZxdS1CT09kRUJQSHc2UXBOS2JQVzF6Vmd0Y1MxMzdOVTVzcXVIcEtuUE10dTBJS0lzRnFIaXNkODdNWmZULTIxaEo3bElCUG5UelNfZGkzV19VWS1RUS1kVHlXTmd5RlUyY2Z3MG4tNzd0ZDJrQ3VB?oc=5"
+    },
+    {
+      "title": "算力合同引纠纷：讯众通信被诉违约 涉案金额超1.8亿元 - 东方财富",
+      "summary": "算力合同引纠纷：讯众通信被诉违约 涉案金额超1.8亿元 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Tue, 02 Jun 2026 01:14:35 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBmWFRUZkFQTXdOZXlrOHhWeHBzNTBrckdhcWZqaXQyWFpUNWxZYWRpeERlQmwxdDYzbDhHMXktUlhEemlpT3lWbkNxOWJDN3JsVl9IZ2ZxanRIeFJQMDQtUw?oc=5"
+    },
+    {
+      "title": "AI修图火了！GPT Image 2被网友玩烂，“照骗”要升级了？ - 新浪财经",
+      "summary": "AI修图火了！GPT Image 2被网友玩烂，“照骗”要升级了？ 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Tue, 02 Jun 2026 04:12:56 GMT",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUzQ0bEFPd0k3cUx5OEF2T3NyNWE0YVNrc0tVRWlyM2dXWllNMmR1TzkxbHd2RHR5QlRIdHBOUVVjbmZ4ZF9LbkZyMlhIY19tbkUwUWwwbEs2NGFvUWNhbHFTazYzMjdqQloxSHUzQ1FTVnotOGhuMHVyZzZPeHZMRldjeGY3dXd0aGFTVmVndXlCT3dhQlF3R09hOW43WE5EVnVaQUFoUQ?oc=5"
+    },
+    {
+      "title": "全国首个绿色算力全栈AI平台上线 - 财联社",
+      "summary": "全国首个绿色算力全栈AI平台上线 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Mon, 01 Jun 2026 17:27:26 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1jNVNvMHZta0RsWGdJNVAxTFVoOUJXOEVzN3FxQ2lvRElwOGoyMkU1Q1lCdmw3cmxraW5SY0xIajNEN2JseWdIag?oc=5"
+    },
+    {
+      "title": "“百川计划” 启动！京东工业推出国内首个工业大模型生态体系 - cnenergynews.cn",
+      "summary": "“百川计划” 启动！京东工业推出国内首个工业大模型生态体系 cnenergynews.cn",
+      "source": "cnenergynews.cn",
+      "lang": "zh",
+      "published": "Tue, 02 Jun 2026 01:45:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5FOGNEa250TGZScDFtakctZlV3ZGVGQ1AyRV85SHB4Vy1paHE1TVZWNUoydDdxVWdjYmFrMWRsa1FtME1QdFpsOS1tZ3JfV2VtMk5GRUU2ZzRTSDg?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "A collection of MCP servers.",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 88337,
+      "language": ""
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 33333,
+      "language": "TypeScript"
+    },
+    {
+      "title": "github-mcp-server",
+      "type": "GitHub",
+      "summary_en": "GitHub's official MCP Server",
+      "summary": "GitHub 的官方 MCP 服务器",
+      "url": "https://github.com/github/github-mcp-server",
+      "author": "github",
+      "stars": 30352,
+      "language": "Go"
+    },
+    {
+      "title": "fastmcp",
+      "type": "GitHub",
+      "summary_en": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+      "summary": "🚀 构建 MCP 服务器和客户端的快速、Python 方式。",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "author": "PrefectHQ",
+      "stars": 25431,
+      "language": "Python"
+    },
+    {
+      "title": "activepieces",
+      "type": "GitHub",
+      "summary_en": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+      "summary": "AI 代理和 MCP 及 AI 工作流程自动化 •（约 400 个用于 AI 代理的 MCP 服务器） • AI 自动化/带 MCP 的 AI 代理 • AI 工作流程和 AI 代理 • 用于 AI 代理的 MCP",
+      "url": "https://github.com/activepieces/activepieces",
+      "author": "activepieces",
+      "stars": 22510,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 376119,
+      "language": "TypeScript"
+    },
+    {
+      "title": "n8n",
+      "type": "GitHub",
+      "summary_en": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "summary": "具有原生 AI 功能的公平代码工作流程自动化平台。将可视化构建与自定义代码、自托管或云、400 多个集成相结合。",
+      "url": "https://github.com/n8n-io/n8n",
+      "author": "n8n-io",
+      "stars": 190685,
+      "language": "TypeScript"
+    },
+    {
+      "title": "AutoGPT",
+      "type": "GitHub",
+      "summary_en": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "summary": "AutoGPT 的愿景是为每个人提供易于使用和构建的人工智能。我们的使命是提供工具，以便您可以专注于重要的事情。",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "author": "Significant-Gravitas",
+      "stars": 184710,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
