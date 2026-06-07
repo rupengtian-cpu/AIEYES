@@ -1,0 +1,507 @@
+{
+  "date": "2026-06-07",
+  "generated_at": "2026-06-07T10:58:05.671914+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution",
+      "title_zh": "Code2LoRA：软件演化下超网络生成的代码语言模型适配器",
+      "summary": "Code language models need repository-level context to resolve imports, APIs, and project conventions. Existing methods inject this knowledge as long inputs (retrieved through RAG or dependency analysis) or through per-repository fine-tuning and LoRA -- costly at repository scale and brittle to evolving codebases. We introduce Code2LoRA, a hypernetwork frame…",
+      "summary_zh": "代码语言模型需要存储库级上下文来解析导入、API 和项目约定。现有方法将这些知识作为长输入（通过 RAG 或依赖性分析检索）或通过每个存储库微调和 LoRA 注入——在存储库规模上成本高昂，并且对于不断发展的代码库来说很脆弱。我们引入了 Code2LoRA，这是一个超网络框架，可生成特定于存储库的 LoRA 适配器，以零推理时间令牌开销有效地注入存储库知识。 Code2LoRA支持两种使用场景：Code2LoRA-Static将单个存储库快照转换为适配器，适合稳定代码库的理解；而 Code2LoRA-Evo 则维护一个由 GRU 隐藏状态支持的适配器，该状态根据代码差异进行更新，适合不断发展的代码库的主动开发。为了根据参数高效的微调基线评估 Code2LoRA，我们构建了 RepoPeftBench，这是一个包含 604 个 Python 存储库的…",
+      "authors": [
+        "Liliana Hotsko",
+        "Yinxi Li",
+        "Yuntian Deng",
+        "Pengyu Nie"
+      ],
+      "published": "2026-06-04T17:59:46Z",
+      "category": "cs.SE",
+      "arxiv_id": "2606.06492v1",
+      "abs_url": "https://arxiv.org/abs/2606.06492v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06492v1"
+    },
+    {
+      "title": "PAR3D: A Unified 3D-MLLM with Part-Aware Representation for Scene Understanding",
+      "title_zh": "PAR3D：具有用于场景理解的零件感知表示的统一 3D-MLLM",
+      "summary": "Recent advances in 3D multimodal large language models (3D-MLLMs) have enabled unified solutions for 3D scene understanding tasks, including visual question answering, captioning, and referring segmentation. However, existing 3D-MLLMs remain largely object-centric, limiting their ability to model fine-grained part structures that are essential for embodied…",
+      "summary_zh": "3D 多模态大语言模型 (3D-MLLM) 的最新进展为 3D 场景理解任务提供了统一的解决方案，包括视觉问答、字幕和引用分割。然而，现有的 3D-MLLM 在很大程度上仍然以对象为中心，限制了它们对细粒度零件结构进行建模的能力，而细粒度零件结构对于与 3D 环境的具体交互至关重要。在这项工作中，我们提出了 PAR3D，这是一个统一的零件感知 3D-MLLM 框架，使模型能够理解、推理和确定 3D 场景中的对象及其零件。为了实现零件感知 3D 场景理解的训练和评估，我们引入了 ScenePart，这是一个具有零件级注释和语言指令的合成 3D 场景数据集。我们进一步开发部件感知 3D 表示学习，以通过细粒度部件级语义丰富 3D 视觉表示，并提出分层分割查询生成，通过分层对象部件查询来基础部件目标。大量的实验表明，我们的方法极大地改进了部分级问答和引用…",
+      "authors": [
+        "Shaohui Dai",
+        "Yansong Qu",
+        "You Shen",
+        "Shengchuan Zhang",
+        "Liujuan Cao"
+      ],
+      "published": "2026-06-04T17:59:04Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.06485v1",
+      "abs_url": "https://arxiv.org/abs/2606.06485v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06485v1"
+    },
+    {
+      "title": "Operation-Guided Progressive Human-to-AI Text Transformation Benchmark for Multi-Granularity AI-Text Detection",
+      "title_zh": "用于多粒度人工智​​能文本检测的操作引导渐进式人类到人工智能文本转换基准",
+      "summary": "As AI writing assistants become increasingly integrated into real-world drafting and revision workflows, many documents are no longer purely human-written or AI-generated, but instead result from progressive human-AI co-editing. However, existing AI-text detection benchmarks largely focus on final outputs and provide limited understanding of how AI authorsh…",
+      "summary_zh": "随着人工智能写作助手越来越多地融入现实世界的起草和修订工作流程，许多文档不再纯粹是人类编写或人工智能生成的，而是由渐进的人类与人工智能共同编辑的结果。然而，现有的人工智能文本检测基准主要关注最终输出，并且对人工智能作者信号在整个修订过程中如何出现、积累或消失的理解有限。我们推出了 OpAI-Bench，这是一个操作引导的基准，用于研究跨文档、句子、标记和跨度粒度的渐进式人机到 AI 文本转换。从人类编写的文档开始，OpAI-Bench 在预定义的 AI 覆盖级别和五种代表性的 AI 编辑操作下为每个样本构建了九个连续修订的版本，涵盖四个领域，同时在多个粒度上保留完整的作者来源。该基准测试支持使用 8 个文档级检测器、7 个句子级检测器和 2 个细粒度 token/span 级检测器进行综合评估。实验表明，人工智能文本的可检测性不仅受到人工智能编辑内…",
+      "authors": [
+        "Sondos Mahmoud Bsharat",
+        "Jiacheng Liu",
+        "Xiaohan Zhao",
+        "Tianjun Yao",
+        "Xinyi Shang",
+        "Yi Tang"
+      ],
+      "published": "2026-06-04T17:58:05Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.06481v1",
+      "abs_url": "https://arxiv.org/abs/2606.06481v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06481v1"
+    },
+    {
+      "title": "Complexity-Balanced Diffusion Splitting",
+      "title_zh": "复杂性平衡的扩散分裂",
+      "summary": "Standard continuous-time generative models rely on monolithic architectures that must navigate vastly different signal regimes, from isotropic noise to intricate data distributions. While scaling model capacity improves performance, deploying a massive network uniformly across the entire generative timeline is inherently inefficient. In this work, we propos…",
+      "summary_zh": "标准连续时间生成模型依赖于整体架构，该架构必须导航截然不同的信号状态，从各向同性噪声到复杂的数据分布。虽然扩展模型容量可以提高性能，但在整个生成时间线上统一部署大规模网络本质上是低效的。在这项工作中，我们提出了复杂性平衡拆分（CBS），这是一种时间容量分配的原则框架，可将生成工作负载分配到多个专用子网络中。基于函数逼近理论和 de Boor 的均分原理，CBS 将扩散时间线划分为等逼近负担的片段，为生成动力学更难以建模的区域分配更多的表征能力。为了估计这种局部复杂性，我们引入了两个互补且易于处理的监控函数：基于流动狄利克雷能量的空间测量，以及基于采样轨迹加速度的几何测量。使用轻量级辅助模型来估计这些复杂性概况，我们的方法消除了启发式时间分割或计算昂贵的搜索过程的需要。跨多种架构（SiT、JiT 和 UNet）和数据集的广泛评估表明，CBS 始终如一…",
+      "authors": [
+        "Noam Issachar",
+        "Dani Lischinski",
+        "Raanan Fattal"
+      ],
+      "published": "2026-06-04T17:57:15Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.06477v1",
+      "abs_url": "https://arxiv.org/abs/2606.06477v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06477v1"
+    },
+    {
+      "title": "Self-Augmenting Retrieval for Diffusion Language Models",
+      "title_zh": "扩散语言模型的自增强检索",
+      "summary": "Discrete diffusion language models generate text by iteratively denoising an entire response in parallel. At each step, they predict tentative tokens for every masked position, committing the confident predictions to the output and discarding the unconfident ones. We show that the discarded tokens are in fact a useful lookahead signal for retrieval-augmente…",
+      "summary_zh": "离散扩散语言模型通过并行迭代地对整个响应进行去噪来生成文本。在每一步中，他们都会预测每个屏蔽位置的暂定标记，将置信的预测提交到输出并丢弃不置信的预测。我们表明，丢弃的标记实际上是检索增强生成的有用前瞻信号：即使是低置信度标记也经常在去噪轨迹的早期出现显着实体，从而能够在输出最终确定之前检索更强的证据。我们通过扩散语言模型的自增强检索 (SARDI) 来利用这一点，SARDI 是一个动态 RAG 框架，它使用这些前瞻标记来指导去噪期间的检索。 SARDI 无需训练，与检索器无关，适用于任何具有推理能力的离散扩散语言模型。在五个多跳 QA 基准测试中，SARDI 的吞吐量优于当前的免训练扩散和自回归检索基线，吞吐量提高了 8 倍。",
+      "authors": [
+        "Paul Jünger",
+        "Justin Lovelace",
+        "Linxi Zhao",
+        "Dongyoung Go",
+        "Kilian Q. Weinberger"
+      ],
+      "published": "2026-06-04T17:56:27Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.06474v1",
+      "abs_url": "https://arxiv.org/abs/2606.06474v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06474v1"
+    },
+    {
+      "title": "MLEvolve: A Self-Evolving Framework for Automated Machine Learning Algorithm Discovery",
+      "title_zh": "MLEvolve：用于自动机器学习算法发现的自我进化框架",
+      "summary": "Large language model (LLM) agents are increasingly applied to long-horizon tasks such as scientific discovery and machine learning engineering (MLE), where sustained self-evolution becomes a key capability. However, existing MLE agents suffer from inter-branch information isolation, memoryless search, and lack of hierarchical control, which together hinder…",
+      "summary_zh": "大型语言模型（LLM）代理越来越多地应用于长期任务，例如科学发现和机器学习工程（MLE），其中持续的自我进化成为关键能力。然而，现有的 MLE 代理存在分支间信息隔离、无记忆搜索和缺乏层次控制的问题，这些都阻碍了长期优化。我们推出了 MLEvolve，一种基于 LLM 的自进化多代理框架，用于端到端机器学习算法发现。通过将树搜索扩展到渐进式 MCGS，MLEvolve 能够通过基于图的参考边实现跨分支信息流，并通过受熵启发的渐进式计划逐渐将搜索从广泛探索转变为集中利用。为了让代理随着经验的积累而发展，我们引入了回顾性记忆，它将冷启动领域知识库与动态全局记忆相结合，用于特定任务的经验检索和重用。为了稳定的长期迭代，我们进一步使用自适应编码模式将战略规划与代码生成解耦。 MLE-Bench 的评估表明，MLEvolve 在 12 小时预算（标准运行时间…",
+      "authors": [
+        "Shangheng Du",
+        "Xiangchao Yan",
+        "Jinxin Shi",
+        "Zongsheng Cao",
+        "Shiyang Feng",
+        "Zichen Liang"
+      ],
+      "published": "2026-06-04T17:55:59Z",
+      "category": "cs.AI",
+      "arxiv_id": "2606.06473v1",
+      "abs_url": "https://arxiv.org/abs/2606.06473v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06473v1"
+    },
+    {
+      "title": "How abundant are good interpolators?",
+      "title_zh": "好的插值器有多少？",
+      "summary": "Let $S$ be the set of unit norm linear classifiers $θ\\in \\mathbb{R}^d$ which correctly classify every point of a labeled dataset $(X_i,y_i)_{i=1}^n$, $X_i \\in \\mathbb{R}^d$, $y_i \\in \\{-1,+1\\}$, with a possibly negative margin $κ$ fixed in advance. Under two natural data-generating distributions of the $(X,y)$ pairs -- a Gaussian mixture model and a logisti…",
+      "summary_zh": "令$S$为单位范数线性分类器的集合$θ\\in \\mathbb{R}^d$，它正确地对标记数据集$(X_i,y_i)_{i=1}^n$、$X_i \\in \\mathbb{R}^d$、$y_i \\in \\{-1,+1\\}$中的每个点进行分类，并预先固定可能的负边距$κ$。在 $(X,y)$ 对的两种自然数据生成分布下——高斯混合模型和具有高斯特征的逻辑模型——以及在 $n/d \\to α$ 且 $α$ 足够小的情况下，我们建立了一个大偏差原理，即从 $S$ 中随机选择的点 $θ$ 实现给定的泛化误差，并且数据选择的概率很高。相关的大偏差率函数是确定性的，并且描述了具有给定期望性能的内插分类器在$d$的指数尺度上的比例。因此，我们建立了以下集中现象：除了指数级的一小部分插值分类器之外，所有插值分类器都具有由该速率函数的唯一最大化器给出的大致相同的泛化性能…",
+      "authors": [
+        "August Y. Chen",
+        "Ahmed El Alaoui"
+      ],
+      "published": "2026-06-04T17:55:10Z",
+      "category": "math.ST",
+      "arxiv_id": "2606.06469v1",
+      "abs_url": "https://arxiv.org/abs/2606.06469v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06469v1"
+    },
+    {
+      "title": "You Only Index Once: Cross-Layer Sparse Attention with Shared Routing",
+      "title_zh": "您只需索引一次：具有共享路由的跨层稀疏注意力",
+      "summary": "Long-context inference in modern LLMs is increasingly constrained by decoding efficiency, especially in reasoning-heavy settings where models generate long intermediate chains of thought. Existing sparse attention methods often face a practical efficiency-quality trade-off. Structured block sparse methods typically provide stronger acceleration but incur no…",
+      "summary_zh": "现代法学硕士中的长上下文推理越来越受到解码效率的限制，尤其是在模型生成长中间思想链的推理密集型环境中。现有的稀疏注意力方法经常面临实际的效率与质量的权衡。结构化块稀疏方法通常提供更强的加速，但会导致明显的质量损失，而令牌稀疏方法通常更准确，但提供有限的端到端加速，因为整个缓存上的 top-k 路由仍然昂贵。在这项工作中，我们提出了跨层稀疏注意力（CLSA），它建立在 YOCO 等 KV 共享架构之上。核心思想是不仅跨跨解码器层共享KV缓存，而且还共享路由索引。单个索引器计算一次 token 级 top-k 选择，并跨层重用结果索引，从而保留 token 稀疏注意力的细粒度选择性，同时分摊路由开销。由此产生的架构联合改善了所有主要推理瓶颈，包括预填充、KV 缓存存储和长上下文解码。短上下文和长上下文基准测试的实验表明，CLSA 既准确又高效，在 12…",
+      "authors": [
+        "Yutao Sun",
+        "Yanqi Zhang",
+        "Li Dong",
+        "Jianyong Wang",
+        "Furu Wei"
+      ],
+      "published": "2026-06-04T17:54:04Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.06467v1",
+      "abs_url": "https://arxiv.org/abs/2606.06467v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06467v1"
+    },
+    {
+      "title": "Benchmark Everything Everywhere All at Once",
+      "title_zh": "一次性对所有地方的所有内容进行基准测试",
+      "summary": "Benchmarks are fundamental for evaluating and advancing LLMs and MLLMs by providing standardized and explicit measures of performance. However, their construction is labor-intensive and hard to reuse, raising concerns about sustainability and scalability. Moreover, existing benchmarks often quickly reach performance saturation after their release, resulting…",
+      "summary_zh": "基准通过提供标准化和明确的绩效衡量标准，是评估和推进 LLM 和 MLLM 的基础。然而，它们的构造是劳动密集型的并且难以重复使用，引发了人们对可持续性和可扩展性的担忧。此外，现有的基准测试在发布后往往很快达到性能饱和，导致对最先进模型的区分不足。为了应对这些挑战，我们引入了 Benchmark Agent，这是一个专为基准构建而设计的完全自主的代理系统。我们的框架编排了完整的基准构建流程，从用户查询分析和子任务设计到数据注释和质量控制。为了评估 Benchmark Agent，我们使用它来生成 15 个具有代表性的基准，涵盖不同的评估场景，包括文本理解、多模态理解和特定领域推理。广泛的实验，包括人工评估、法学硕士法官评估和一致性检查，证明 Benchmark Agent 可以在最少的人工参与下生成高质量的基准样本。更重要的是，通过持续的评估，我们…",
+      "authors": [
+        "Shiyun Xiong",
+        "Dongming Wu",
+        "Peiwen Sun",
+        "Yuang Ai",
+        "Bokang Yang",
+        "Wencheng Han"
+      ],
+      "published": "2026-06-04T17:52:04Z",
+      "category": "cs.AI",
+      "arxiv_id": "2606.06462v1",
+      "abs_url": "https://arxiv.org/abs/2606.06462v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06462v1"
+    },
+    {
+      "title": "Flow-based Policy Adaptation without Policy Updates",
+      "title_zh": "基于流的策略适配，无需策略更新",
+      "summary": "Leveraging prior knowledge from pretrained policies, foundation models, or human operators offers an efficient alternative to learning robot skills from scratch. However, these agents often provide actions that are suboptimal, noisy, or misaligned with task-specific expert behavior. We propose GLOVES, a family of flow-based adaptation methods that correct n…",
+      "summary_zh": "利用预先训练的策略、基础模型或人类操作员的先验知识，为从头开始学习机器人技能提供了一种有效的替代方案。然而，这些代理通常提供次优、嘈杂或与特定任务的专家行为不一致的操作。我们提出了 GLOVES，这是一系列基于流的适应方法，通过将非专家行为传输到专家行为分布来纠正非专家行为。手套不是用完全自主取代代理控制，而是执行选择性的动作级别适应，提高任务成功率，同时保留代理意图。学习流还通过反向流评估提供了自然的分布内评分机制。我们使用这个信号作为干预门：看起来与专家分布一致的动作不改变地通过，而异常或分布外（OOD）动作则被纠正。这样，只有在必要时才提供帮助。手套仅需要有限的专家监督，使用少量的演示或可重复使用的成功技能片段。通过学习本地专家的动作模式并在执行过程中缝合它们，GLOVES 提供了一个轻量级的共享控制模块，可实现跨任务和环境的稳健动作适应。代…",
+      "authors": [
+        "Luzhe Sun",
+        "Jingtian Ji",
+        "Haoran Chen",
+        "Jiawei Zhou",
+        "Matthew R. Walter"
+      ],
+      "published": "2026-06-04T17:51:12Z",
+      "category": "cs.RO",
+      "arxiv_id": "2606.06461v1",
+      "abs_url": "https://arxiv.org/abs/2606.06461v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06461v1"
+    },
+    {
+      "title": "Event Detection for Parameter-to-KPI Dependency Learning for AI-RAN",
+      "title_zh": "AI-RAN 参数到 KPI 依赖性学习的事件检测",
+      "summary": "Next-generation wireless networks are expected to rely on multiple concurrent AI-driven control functions that optimize different network objectives simultaneously, particularly in AI-integrated and open radio access network architectures such as AI Radio Access Network (AI-RAN) and Open Radio Access Network (O-RAN). When these functions interact, they can…",
+      "summary_zh": "下一代无线网络预计将依赖于多个并发的人工智能驱动的控制功能，同时优化不同的网络目标，特别是在人工智能集成和开放的无线接入网络架构中，例如人工智能无线接入网络（AI-RAN）和开放无线接入网络（O-RAN）。当这些功能交互时，它们可能会以仅从原始网络数据难以检测到的方式相互干扰。管理此类交互的一个关键缺失部分是可靠的、可解释的依赖结构，该结构捕获哪些控制参数在任何给定时间积极影响哪些网络性能结果。本文重点关注通过将嘈杂的连续遥测数据转换为参数活动和 KPI 响应的二进制指标来支持此类依赖性学习所需的事件检测步骤。主要困难在于，并非数据中的每一次波动都反映了真正的控制交互，因此该方法必须区分真实的参数-结果关系和背景变化。由于很难获得具有已知参数 KPI 基本事实的真实 AI-RAN 流量轨迹，因此我们引入了一种具有植入的潜在依赖项的合成闭环流量生成器…",
+      "authors": [
+        "Christie Djidjev",
+        "Nicholas Kaminski"
+      ],
+      "published": "2026-06-04T17:50:39Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.06459v1",
+      "abs_url": "https://arxiv.org/abs/2606.06459v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06459v1"
+    },
+    {
+      "title": "In-Context Multiple Instance Learning",
+      "title_zh": "情境中的多实例学习",
+      "summary": "Multiple Instance Learning (MIL) addresses problems where supervision is available at the level of bags of instances and has been successfully applied in fields ranging from computational pathology to satellite imagery. Nevertheless, existing algorithms struggle in the low-label regime that characterizes many real-world applications. Flexible models overfit…",
+      "summary_zh": "多实例学习（MIL）解决了在实例包级别上进行监督的问题，并已成功应用于从计算病理学到卫星图像等领域。然而，现有的算法在低标签机制中举步维艰，而低标签机制是许多现实世界应用的特征。灵活的模型过度拟合，而刚性的模型无法适应手头的任务。我们表明，使用感知器式架构对合成数据进行预训练，可以生成一个模型，该模型可以解决少量标记包中的新任务。在推理时，分类发生在单次前向传递中，不需要梯度更新。我们提出并研究了用于袋结构数据的不同合成数据生成器，发现它们捕获了互补的归纳偏差。在这些生成器的混合物上进行预训练的模型继承了它们每个任务的优势，并在 12 个 MIL 基准中实现了最佳平均性能，优于需要特定任务训练的监督基线。",
+      "authors": [
+        "Alexander Möllers",
+        "Marvin Sextro",
+        "Julius Hense",
+        "Gabriel Dernbach",
+        "Klaus-Robert Müller"
+      ],
+      "published": "2026-06-04T17:50:32Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.06458v1",
+      "abs_url": "https://arxiv.org/abs/2606.06458v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.06458v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "官厅湖畔崛起算力“超级大脑”—— 驱动京津冀乃至全国的“数字大脑”高速运转 - ncsti.gov.cn",
+      "summary": "官厅湖畔崛起算力“超级大脑”—— 驱动京津冀乃至全国的“数字大脑”高速运转 ncsti.gov.cn",
+      "source": "ncsti.gov.cn",
+      "lang": "zh",
+      "published": "Sun, 07 Jun 2026 04:49:52 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1JWnN6VjRlSXFkX3BQanVpdU1rM3FrdFlNcUJKNENUSVBjb0Zwc2w2SzM3ckd2Wl92M2l0bzNhUzJtY19Fdjc2ZU14dW56YW5sN2tSYjdBV1JoR1NhUGJfUFdWUG1DNDdMZGZfWFpDUUE3V3FaZTQ3MXVIQkQ5Zw?oc=5"
+    },
+    {
+      "title": "Anthropic偷跑代码又秒删，GPT-5.6震撼升级决战Mythos！ - 新浪财经",
+      "summary": "Anthropic偷跑代码又秒删，GPT-5.6震撼升级决战Mythos！ 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Sun, 07 Jun 2026 07:55:32 GMT",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSUE4eXFXdGlTeXNhalFiajRRWGIyYWZtRlpMWUZybFo4RFIxTUpucDlESFRwbWFBa2Jqcm9EN21IT0Y3QmQzT2xEY3lwRkxXcWg4RG44M2pxV1c5cHItTkd2UEV6VmlCdG0tYXVRV3JTX2VQV2lLWXd6dzlYM1d0MEFGUGpQelhSSzNoZFFQTWhRbm12bzBscGtOc0E3RWZjbUcxdkM3Zw?oc=5"
+    },
+    {
+      "title": "算力普惠再提速 多元算力前瞻布局更好满足行业需求 - 央视网",
+      "summary": "算力普惠再提速 多元算力前瞻布局更好满足行业需求 央视网",
+      "source": "央视网",
+      "lang": "zh",
+      "published": "Sun, 07 Jun 2026 07:06:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1KWUVrak54VExKQVpHVXhucEVhalIycjNHZWZ1cVozTjFKblpDR2ZIQzFTZTBrUEpmdjFLUGt0WDZYeHZINDQzSkdMalVrVW05TE1XbVZnTmRKQ3kzaFRXdTlzUnRTWVRfcFFWU2NtZVFXZ29LN2VJ?oc=5"
+    },
+    {
+      "title": "对话王尚广：在太空建数据中心，就像在地球上建港口 - 新京报",
+      "summary": "对话王尚广：在太空建数据中心，就像在地球上建港口 新京报",
+      "source": "新京报",
+      "lang": "zh",
+      "published": "Sun, 07 Jun 2026 10:49:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9CUDAzRDh1dGYxc3Y3Zng3Sm5SOFFCVk5OLV9QclRlRHBSbG5qaWY1WDltZ2JkSTJVdGdWWElycFRCa2JxY0RZcUYtWFNQdDFaWXZiekZwOVIzOVF2cnhUOXZtaGE?oc=5"
+    },
+    {
+      "title": "算力，大消息！全球首个，启用！ - 新浪财经",
+      "summary": "算力，大消息！全球首个，启用！ 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Sun, 07 Jun 2026 04:34:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5IY1Q3VzJIdktBbkhQZDhqTlh5NGVYU0YxM3BWMUkzdUNha1AwYXRpMXN1RUg0cThkaWw1Vl8wQzdwNmZnYUZIaDYycDBYUklKSGtfa1ZqdDN3OE0zYzIwd1l0b2J6aGpqY2pPdk1ueV9sUGlvUkE?oc=5"
+    },
+    {
+      "title": "全球首个“算电岛”在青岛发布 重构智算供电新范式 - 中国科技网",
+      "summary": "全球首个“算电岛”在青岛发布 重构智算供电新范式 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Sun, 07 Jun 2026 04:19:45 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA4bFNYbVE2QlUzNGZ0dEpEaHZyOXlIQm5sTVhXZXFsWmtCRkdSbkJTQTd3MGpEN2Z3RC05aEpyNkVGcHFvUW9lYjJvUS1vTHpVdnE2N1dVeEd6OGRtWEZHWF9scGtsLWlUajJ0cnE1MWs?oc=5"
+    },
+    {
+      "title": "AI内卷拼安全，海光自研C86锁死机密算力 - 同花顺财经",
+      "summary": "AI内卷拼安全，海光自研C86锁死机密算力 同花顺财经",
+      "source": "同花顺财经",
+      "lang": "zh",
+      "published": "Sun, 07 Jun 2026 10:34:58 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5PNE1CN0VDbTN5My1lXzhVaGxrMmZEQl9pQXN4Mkl5Tmc2a1Z2aGxHX3Qzd3IxV1E2QjBjT09nRWptQ21ManZWU0t6RDRMOXFVSkpma1BadC1HMVNxd0E?oc=5"
+    },
+    {
+      "title": "大理大学发布生物科学专业垂直大模型 - yn.chinanews.com.cn",
+      "summary": "大理大学发布生物科学专业垂直大模型 yn.chinanews.com.cn",
+      "source": "yn.chinanews.com.cn",
+      "lang": "zh",
+      "published": "Sun, 07 Jun 2026 08:23:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBGb2JvQnFOcWJja1F3LWRiVWFEbU90Slk3ZzVuSjVIUXhpVjdBUUUteVp6THhDaDItNnRFUHRWdkUzUkFxUUI1NExZYnFiX2Y1T2JiVExMNWtTM0M3bnJxZkhiYlgxenc?oc=5"
+    },
+    {
+      "title": "中科闻歌发布通用决策大模型Decitron决策机 - 科学网—新闻",
+      "summary": "中科闻歌发布通用决策大模型Decitron决策机 科学网—新闻",
+      "source": "科学网—新闻",
+      "lang": "zh",
+      "published": "Sun, 07 Jun 2026 01:15:40 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE02U3hOQmEySXE0VUhXQkE5QUpBcVJyZG1FVkNSdW1FMG9WT05qMUdmQy0xS241bE1idEVzcTIyU2Rfd0xMaVg3NW10cUpRZndzazdOUG54QWVuNkFlcWxPRnJZSU0?oc=5"
+    },
+    {
+      "title": "智谱、阶跃、阿里、商汤，中国大模型公司集体押注，具身智能大规模数据飞轮开启 - 中华网",
+      "summary": "智谱、阶跃、阿里、商汤，中国大模型公司集体押注，具身智能大规模数据飞轮开启 中华网",
+      "source": "中华网",
+      "lang": "zh",
+      "published": "Sun, 07 Jun 2026 09:32:39 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE81M3Y3ZXlTUVRvQnRRb0hQRXpyVGRMY29WWU1tLUFNdWFWYlB5bm1DWHNiTnU2VHZRUC15M3FYbU9fS3gtbVgwenhWQkwydEtmTy1ZaWFkdnZGejIwZWc?oc=5"
+    },
+    {
+      "title": "对话Gemini负责人：下一代AGI的三条主线，世界模型负责理解，Agent负责行动，Memory负责进化 - 凤凰网科技",
+      "summary": "对话Gemini负责人：下一代AGI的三条主线，世界模型负责理解，Agent负责行动，Memory负责进化 凤凰网科技",
+      "source": "凤凰网科技",
+      "lang": "zh",
+      "published": "Sun, 07 Jun 2026 07:30:51 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1wMFRkenYzMlUwTWJxQWgtWU1aSldYdVI2UGhzdjVmOTZDUVA4Vk9lWGo2SldlclB0RExfVjZUNHQwNzlpMWRabG5wMXU?oc=5"
+    },
+    {
+      "title": "让 Agent 真正协同作战：GoS 为多智能体推理构建共享信念状态|语言模型|医疗|故障|体协|焦点_手机新浪网 - 新浪财经",
+      "summary": "让 Agent 真正协同作战：GoS 为多智能体推理构建共享信念状态|语言模型|医疗|故障|体协|焦点_手机新浪网 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Sun, 07 Jun 2026 09:21:16 GMT",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVW03Nnhqc2xrbS1QZ3NzNTRrYnlaVmdMbWpOSkppWWw2NWg2VjNiQU9tSEY3NWNGS1VxWmMtZnlWSld3TjNjUEJHN2dqOHB2SWFrbW0xN2MyQ3I5WVltSzBTSF9ybThxWjNUMkRYdEw3N3dlZlBUMmhJR01jQUltd0EwTTlMWm1UVlV4QXg3T2tFSlI0OHUtVDVKam9FOU81OTFfamNtWXJUNWFWMEwxRnhB?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 88643,
+      "language": ""
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 33574,
+      "language": "TypeScript"
+    },
+    {
+      "title": "github-mcp-server",
+      "type": "GitHub",
+      "summary_en": "GitHub's official MCP Server",
+      "summary": "GitHub 的官方 MCP 服务器",
+      "url": "https://github.com/github/github-mcp-server",
+      "author": "github",
+      "stars": 30495,
+      "language": "Go"
+    },
+    {
+      "title": "fastmcp",
+      "type": "GitHub",
+      "summary_en": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+      "summary": "🚀 构建 MCP 服务器和客户端的快速、Python 方式。",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "author": "PrefectHQ",
+      "stars": 25519,
+      "language": "Python"
+    },
+    {
+      "title": "activepieces",
+      "type": "GitHub",
+      "summary_en": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+      "summary": "AI 代理和 MCP 及 AI 工作流程自动化 •（约 400 个用于 AI 代理的 MCP 服务器） • AI 自动化/带 MCP 的 AI 代理 • AI 工作流程和 AI 代理 • 用于 AI 代理的 MCP",
+      "url": "https://github.com/activepieces/activepieces",
+      "author": "activepieces",
+      "stars": 22601,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 377352,
+      "language": "TypeScript"
+    },
+    {
+      "title": "n8n",
+      "type": "GitHub",
+      "summary_en": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "summary": "具有原生 AI 功能的公平代码工作流程自动化平台。将可视化构建与自定义代码、自托管或云、400 多个集成相结合。",
+      "url": "https://github.com/n8n-io/n8n",
+      "author": "n8n-io",
+      "stars": 191429,
+      "language": "TypeScript"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 185232,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
