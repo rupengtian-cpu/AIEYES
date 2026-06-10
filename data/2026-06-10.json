@@ -1,0 +1,513 @@
+{
+  "date": "2026-06-10",
+  "generated_at": "2026-06-10T14:39:22.482144+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "When to Align, When to Predict: A Phase Diagram for Multimodal Learning",
+      "title_zh": "何时调整、何时预测：多模态学习的阶段图",
+      "summary": "Cross-modal alignment (CA) and cross-modal prediction (CP) are the dominant paradigms for multimodal representation learning, yet there is no systematic understanding of when each succeeds, when each fails, and when cross-modal training helps at all -- a gap that leaves practitioners, especially in scientific domains like biomedicine or astrophysics, with h…",
+      "summary_zh": "跨模态对齐（CA）和跨模态预测（CP）是多模态表示学习的主要范式，但对于每种模式何时成功、何时失败以及跨模式训练何时有所帮助，还没有系统的理解——这一差距使得从业者，特别是在生物医学或天体物理学等科学领域，使用异构仪器和多层次的组织和测量，无法诊断为什么标准方法表现不佳的最佳单一模式。我们开发了一个统一的线性框架来解决这两个问题。在具有结构化跨模态干扰相关性的尖峰信号加噪声模型下，我们推导了暴露互补故障模式的两个目标的分离比：对齐使每种模态变白，并且当干扰在视图之间强烈相关时失败；预测通过单侧白化对可交叉预测的内容进行编码，恢复由源模态质量控制。生成的相图将多模态问题分为四种状态：两者、仅 CA、仅 CP 和两者都不。我们提出了一种数据驱动的程序，使用小型标记子样本在此图中定位真实世界的数据集，在任何跨模式训练之前确定首选目标和预测方向。对合成数据…",
+      "authors": [
+        "Ilay Kamai",
+        "Hugues Van Assel",
+        "Aviv Regev",
+        "Hagai B. Perets",
+        "Randall Balestriero"
+      ],
+      "published": "2026-06-09T17:59:58Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.11190v1",
+      "abs_url": "https://arxiv.org/abs/2606.11190v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11190v1"
+    },
+    {
+      "title": "A Unifying Lens on Supervised Fine-Tuning Through Target Distribution Design",
+      "title_zh": "通过目标分布设计进行监督微调的统一镜头",
+      "summary": "Supervised fine-tuning (SFT) typically maximizes the likelihood of every token in a demonstrated trajectory. However, an observed token can be non-unique, noisy, or misaligned with the model prior. Strictly fitting toward this one-hot target may be suboptimal, especially when the pretrained model encodes a rich knowledge prior. In this work, we reinterpret…",
+      "summary_zh": "监督微调（SFT）通常会最大化每个标记在演示轨迹中的可能性。然而，观察到的标记可能是不唯一的、有噪声的或与先验模型不一致的。严格拟合这一单一热点目标可能不是最理想的，特别是当预训练模型编码了丰富的先验知识时。在这项工作中，我们将 SFT 重新解释为目标分布设计：我们不再只研究损失目标，而是分析损失驱动模型匹配的代币级别目标。我们引入了 Q-target 框架，它将 SFT 监督分解为两个明确的选择：（1）对观察到的 token 的依赖程度如何，以及（2）如何在替代方案上分配剩余的概率质量。这种观点将许多现有的 SFT 变体统一为目标分布 Q 的隐式选择。基于这种观点，我们提出了 Target-SFT，它直接从所需的目标分布构建训练目标。该方法在评估的十个推理数据集模型设置中始终表现出色，显示了这种基于目标的方法的有效性。总的来说，我们的公式揭示了…",
+      "authors": [
+        "Tong Xie",
+        "Yuanhao Ban",
+        "Yunqi Hong",
+        "Sohyun An",
+        "Yihang Chen",
+        "Cho-Jui Hsieh"
+      ],
+      "published": "2026-06-09T17:59:54Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.11189v1",
+      "abs_url": "https://arxiv.org/abs/2606.11189v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11189v1"
+    },
+    {
+      "title": "Next Forcing: Causal World Modeling with Multi-Chunk Prediction",
+      "title_zh": "下一个强迫：具有多块预测的因果世界建模",
+      "summary": "Autoregressive video generation has emerged as a powerful paradigm for World Action Models (WAMs). However, existing approaches suffer from slow training convergence and limited converged accuracy, particularly at high frame rates, as the training supervision is confined to the current chunk without explicit signals about future dynamics; they also suffer f…",
+      "summary_zh": "自回归视频生成已成为世界行动模型 (WAM) 的强大范例。然而，现有方法存在训练收敛速度慢和收敛精度有限的问题，特别是在高帧速率下，因为训练监督仅限于当前块，没有关于未来动态的明确信号；由于迭代视频去噪，它们还面临推理缓慢的问题。在本文中，我们提出了 Next Forcing，这是一种用于因果世界建模的多块预测 (MCP) 框架，可实现更快的训练、更高的准确性和加速的推理。受大型语言模型中多标记预测的启发，Next Forcing 引入了 MCP 训练目标，该目标通过轻量级辅助 MCP 模块增强主模型，以同时对多个未来时间范围内的视频块（next$^1$、next$^2$、next$^3$ 块）进行去噪。这些 MCP 模块形成了跨预测深度的因果链，其中利用主模型多层融合的中间特征来预测未来动态，允许近期预测为更远未来的预测提供信息，并向主模型提供密…",
+      "authors": [
+        "Gangwei Xu",
+        "Qihang Zhang",
+        "Jiaming Zhou",
+        "Xing Zhu",
+        "Yujun Shen",
+        "Xin Yang"
+      ],
+      "published": "2026-06-09T17:59:22Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.11187v1",
+      "abs_url": "https://arxiv.org/abs/2606.11187v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11187v1"
+    },
+    {
+      "title": "AnyMod-LLVE: Low-Light Video Enhancement with Modality-Agnostic Inference",
+      "title_zh": "AnyMod-LLVE：具有模态无关推理的低光视频增强",
+      "summary": "Low-light video enhancement (LLVE) remains a challenging task due to severe information degradation under low-illumination conditions. Recent multimodal approaches have significantly improved enhancement performance by incorporating auxiliary modalities, such as event streams and infrared images. However, these methods typically assume the availability of t…",
+      "summary_zh": "由于低照度条件下信息严重退化，低光视频增强（LLVE）仍然是一项具有挑战性的任务。最近的多模态方法通过结合事件流和红外图像等辅助模态显着提高了增强性能。然而，这些方法通常假设这些模式在推理时可用，这在现实场景中通常是不可行的。为了解决这个问题，在这项工作中，我们提出了 AMNet，一种用于 LLVE 的统一多模态框架，以支持灵活的模态不可知推理，其中辅助模态可能不可用。为了解决模态缺失的问题，我们引入了空间谱双门转换器，它可以学习辅助模态和 RGB 输入之间的对应关系，生成隐式辅助表示以支持鲁棒增强。此外，为了充分促进跨模态对应的学习，我们基于仅 RGB 数据集和合成辅助模态进行大规模多模态预训练。大量实验表明，AMNet 可以处理任意推理时间模态组合，并在模态缺失条件下展现出 LLVE 的卓越性能。代码和模型可在项目页面上找到。",
+      "authors": [
+        "Hangfeng Liang",
+        "Yutao Hu",
+        "Yanhan Hu",
+        "Xiaohan Wu",
+        "Wenqi Shao",
+        "Ying Fu"
+      ],
+      "published": "2026-06-09T17:59:05Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.11186v1",
+      "abs_url": "https://arxiv.org/abs/2606.11186v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11186v1"
+    },
+    {
+      "title": "TacForeSight: Force-Guided Tactile World Model for Contact-Rich Manipulation",
+      "title_zh": "TacForeSight：力引导触觉世界模型，用于丰富的接触操作",
+      "summary": "Contact-rich manipulation requires robots to continuously perceive and regulate evolving physical interactions under dynamic contact transitions or complex surface geometries. Recent imitation learning methods improve contact-aware control by incorporating tactile or force feedback, but they rarely model the asymmetric spatiotemporal roles of global force a…",
+      "summary_zh": "丰富的接触操作要求机器人在动态接触转换或复杂的表面几何形状下不断感知和调节不断变化的物理相互作用。最近的模仿学习方法通​​过结合触觉或力反馈来改善接触感知控制，但它们很少模拟全局力和局部触觉感知的不对称时空作用。为了解决这个问题，我们提出了 TacForeSight，一种用于实时操纵的轻量级力调节触觉前视框架。核心组件是 TacForceWM，这是一种触觉世界模型，可根据高频手腕力和扭矩信号的双指触觉观察来预测短视界触觉潜在动态。另一个关键组成部分是预测触觉条件策略，它利用预测的潜在特征作为预期接触先验，通过交叉注意力对当前到未来的触觉演化进行建模，并通过触觉引导门控模块自适应地融合视觉触觉特征。通过纯粹在紧凑的潜在空间内进行预测，TacForeSight 能够通过适合高频操纵控制的高效实时推理来实现主动接触推理。对五个代表性任务和三个过程中扰动设…",
+      "authors": [
+        "Yujie Zang",
+        "Yuhang Zheng",
+        "Xian Nie",
+        "Yupeng Zheng",
+        "Shuai Tian",
+        "Songen Gu"
+      ],
+      "published": "2026-06-09T17:59:03Z",
+      "category": "cs.RO",
+      "arxiv_id": "2606.11184v1",
+      "abs_url": "https://arxiv.org/abs/2606.11184v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11184v1"
+    },
+    {
+      "title": "EEVEE: Towards Test-time Prompt Learning in the Real World for Self-Improving Agents",
+      "title_zh": "EEVEE：在现实世界中实现自我改进代理的测试时即时学习",
+      "summary": "In this paper, we propose EEVEE, the first multi-dataset test-time prompt learning framework for LLM agents, enabling test-time prompt learning under real-world task streams. Existing methods are largely designed for single-dataset settings, while real-world applications require models to handle heterogeneous input streams drawn from multiple datasets, doma…",
+      "summary_zh": "在本文中，我们提出了 EEVEE，这是第一个用于 LLM 代理的多数据集测试时提示学习框架，可在实际任务流下实现测试时提示学习。现有的方法主要是针对单数据集设置而设计的，而现实世界的应用程序需要模型来处理从多个数据集、域和任务分布中提取的异构输入流，这限制了它们的实际适用性。为了减轻跨数据集干扰，EEVEE 引入了一个路由器，它将传入输入划分为任务集群，并将它们分配给合适的提示配置。该设计通过路由器提示协同进化策略进行优化，该策略采用交错的路由器和提示学习阶段来解决它们的相互依赖性。跨多个数据集的实验表明，该框架提高了异构数据流下的鲁棒性，同时保持单基准学习能力和效率。具体而言，EEVEE 比 Qwen3-4B-Instruct 和 DeepSeek-V3.2 的平均多基准分数提高了 10.38 和 24.32 分，超过 SOTA 方法 GEPA…",
+      "authors": [
+        "Weixian Xu",
+        "Shilong Liu",
+        "Mengdi Wang"
+      ],
+      "published": "2026-06-09T17:57:16Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.11182v1",
+      "abs_url": "https://arxiv.org/abs/2606.11182v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11182v1"
+    },
+    {
+      "title": "Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories",
+      "title_zh": "数据记者代理：将数据转换为可验证的多模式故事",
+      "summary": "Data tells stories that shape society; the data journalist's job is to turn raw information into stories non-experts can trust. A high-quality news feature takes a newsroom team weeks: hunting for context, running statistics, choosing an angle, and designing visuals. Recent agents handle individual steps well: data-science agents close the analysis loop, wh…",
+      "summary_zh": "数据讲述塑造社会的故事；数据记者的工作是将原始信息转化为非专家可以信任的故事。高质量的新闻专题需要新闻编辑室团队花费数周的时间：寻找背景、运行统计数据、选择角度和设计视觉效果。最近的代理很好地处理了各个步骤：数据科学代理关闭了分析循环，而设计代理则合成了漂亮的网站。但特工可以充当端到端的数据记者吗？我们引入了数据记者代理 (Data2Story)，这是一个多代理框架，可将专业角色编排到单个虚拟新闻编辑室中。 Data2Story 贡献了两项创新。 (i) 声明有证据支持：检查员将每个数字、角度和资产与数据、代码或外部参考联系起来。 (ii) 文章是多模态生成的：Data2Story 不是默认使用纯文本和静态图表，而是推理读者想要看到的内容，然后部署多模态工具，例如地理交互式地图和音乐音频。我们根据 18 篇文章评估 Data2Story，每篇文章都…",
+      "authors": [
+        "Kevin Qinghong Lin",
+        "Batu EI",
+        "Yuhong Shi",
+        "Pan Lu",
+        "Philip Torr",
+        "James Zou"
+      ],
+      "published": "2026-06-09T17:51:55Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.11176v1",
+      "abs_url": "https://arxiv.org/abs/2606.11176v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11176v1"
+    },
+    {
+      "title": "Predicting Future Behaviors in Reasoning Models Enables Better Steering",
+      "title_zh": "在推理模型中预测未来行为可以实现更好的指导",
+      "summary": "Deployed large reasoning models (LRMs) often behave unexpectedly. Test-time steering controls LRM outputs by intervening on their hidden representations, but it can degrade output quality. We argue that prior steering work implicitly relies on internal features that detect behavior in already generated text. We show that these detection features are poor pr…",
+      "summary_zh": "部署的大型推理模型 (LRM) 通常会出现意外行为。测试时控制通过干预 LRM 输出的隐藏表示来控制 LRM 输出，但它会降低输出质量。我们认为，先前的指导工作隐含地依赖于检测已生成文本中的行为的内部特征。我们表明，这些检测特征不能很好地预测未来的行为结果，因此不是自然的干预目标。相反，我们训练激活探针来通过中间推理步骤预测未来行为的可能性。这些探针以 64%-91% 的准确度预测最可能的行为，揭示了一种单独类型的内部预测特征。基于这些预测功能，我们引入了一种文本级引导方法，即未来探针控制生成。 FPCG 对多个候选句子进行采样，并根据预测未来行为可能性的探针选择最好的一个。这使得转向几乎不会降低输出质量。 FPCG 还可以在激活引导失败的多个评估中启用引导。这些结果表明，区分检测和预测特征可以采用更细致的方法来控制 LRM 行为。",
+      "authors": [
+        "Evgenii Kortukov",
+        "Piotr Komorowski",
+        "Florian Klein",
+        "Paula Engl",
+        "Gabriele Sarti",
+        "Seong Joon Oh"
+      ],
+      "published": "2026-06-09T17:49:24Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.11172v1",
+      "abs_url": "https://arxiv.org/abs/2606.11172v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11172v1"
+    },
+    {
+      "title": "Multi-Faceted Interactivity Alignment in Full-Duplex Speech Models",
+      "title_zh": "全双工语音模型中的多方面交互对齐",
+      "summary": "Full-duplex spoken dialogue models can listen and speak simultaneously, making them a promising architecture for natural conversation. However, current models are trained solely with supervised learning through token-level likelihood maximization, which does not directly optimize interaction-level behaviors, causing interactivity issues such as excessive si…",
+      "summary_zh": "全双工口语对话模型可以同时听和说，这使它们成为自然对话的有前途的架构。然而，当前的模型仅通过令牌级似然最大化进行监督学习进行训练，这并不能直接优化交互级行为，从而导致过度沉默和不合时宜的轮流等交互问题。最近的工作应用强化学习（RL）来提高交互性，但现有方法仅解决奖励中有限的一组交互行为。在这项工作中，我们提出了一种训练后对齐方法，通过强化学习全面提高全双工口语对话模型的交互性。我们讨论了交互性的四个典型轴：暂停处理、轮流、反向通道和用户中断。对于每个轴，我们从人类对话语料库中提取短音频片段，并使用特定于轴的奖励函数优化模型。基于法学硕士的响应质量额外奖励可防止语义退化。我们将我们的方法应用于两个开源模型 Moshi 和 PersonaPlex，证明了使用预先录制的音频的离线评估和实时多轮对话评估的交互性的持续改进。",
+      "authors": [
+        "Atsumoto Ohashi",
+        "Neil Zeghidour",
+        "Alexandre Défossez",
+        "Eugene Kharitonov"
+      ],
+      "published": "2026-06-09T17:46:55Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.11167v1",
+      "abs_url": "https://arxiv.org/abs/2606.11167v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11167v1"
+    },
+    {
+      "title": "Flaws in the LLM Automation Narrative",
+      "title_zh": "LLM 自动化叙述中的缺陷",
+      "summary": "Large Language Models (LLMs) are increasingly described as performing at the level of human experts on knowledge economy tasks. These claims are primarily based on how LLMs perform on benchmarking tasks that measure average performance across standardized datasets. Primary limitations of many benchmarking tasks are that they often measure performance based…",
+      "summary_zh": "大型语言模型 (LLM) 越来越多地被描述为在知识经济任务上达到人类专家的水平。这些说法主要基于法学硕士在基准测试任务中的表现，这些基准测试任务衡量标准化数据集的平均性能。许多基准测试任务的主要局限性在于，它们通常根据直接包含在 LLM 培训数据中的内容来衡量性能，并且它们经常不评估 LLM 性能的可靠性或 LLM 错误的程度。然而，在高风险的环境中，这些品质至关重要。通过一项需要编写计算机代码来完成数据分析任务的新颖的法学硕士基准测试任务，我们将前沿法学硕士的性能与人类专家提交的内容进行比较，并明确测量响应的方差和错误的程度。我们的研究表明，人类专家在一系列指标上的平均表现更好，并且表现出较小的变异性。我们的结果证明法学硕士的表现并不能始终达到人类专家的水平，并证明了在法学硕士基准评估中测量方差和评估误差大小的重要性。",
+      "authors": [
+        "George Perrett",
+        "Javae Elliott",
+        "Jennifer Hill",
+        "Marc Scott"
+      ],
+      "published": "2026-06-09T17:46:10Z",
+      "category": "stat.OT",
+      "arxiv_id": "2606.11166v1",
+      "abs_url": "https://arxiv.org/abs/2606.11166v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11166v1"
+    },
+    {
+      "title": "ReasonAlloc: Hierarchical Decoding-Time KV Cache Budget Allocation for Reasoning Models",
+      "title_zh": "ReasonAlloc：推理模型的分层解码时间 KV 缓存预算分配",
+      "summary": "Long chain-of-thought (CoT) trajectories in large language model (LLM) reasoning cause severe inference bottlenecks due to rapid key-value (KV) cache growth. Current decoding-time compression methods mitigate this issue via token eviction, but typically assume a uniform budget distribution across all layers and heads. In contrast, existing non-uniform budge…",
+      "summary_zh": "由于键值 (KV) 缓存的快速增长，大型语言模型 (LLM) 推理中的长思维链 (CoT) 轨迹会导致严重的推理瓶颈。当前的解码时压缩方法通过令牌驱逐来缓解这个问题，但通常假设所有层和头之间的预算分布是统一的。相比之下，现有的非均匀预算分配方法主要是为静态提示预填充阶段设计的，它们没有捕获自回归推理的逐步上下文需求。为了弥补这一差距，我们提出了 ReasonAlloc，这是一个免训练框架，它将解码时 KV 压缩重新定义为分层预算分配问题。 ReasonAlloc 在两个互补的层面上运行：离线分层预分配策略捕获架构驱动的需求模式，我们称之为“\\textit{Reasoning Wave}”，而在线 head-wise 策略在解码过程中根据实时效用将资源重新分配给信息丰富的 head。使用 DeepSeek-R1-Distill-Llama-8B、De…",
+      "authors": [
+        "Wenhao Liu",
+        "Hao Shi",
+        "Yunhe Li",
+        "Weizhi Fei",
+        "Xiangyuan Wang",
+        "Mengzhe Ruan"
+      ],
+      "published": "2026-06-09T17:44:23Z",
+      "category": "cs.AI",
+      "arxiv_id": "2606.11164v1",
+      "abs_url": "https://arxiv.org/abs/2606.11164v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11164v1"
+    },
+    {
+      "title": "COGENT: Continuous Graph Emulators with Neural Ordinary Differential Equations for Long-Term Physical Forecasting",
+      "title_zh": "COGENT：具有神经常微分方程的连续图模拟器，用于长期物理预测",
+      "summary": "In this work, we present COGENT, a continuous graph emulator with Neural Ordinary Differential Equations for long-term physical forecasting on irregular geospatial meshes. COGENT encodes a finite history of system states and associated forcing fields and external forcings with a graph-based history encoder, producing node-wise context vectors that capture b…",
+      "summary_zh": "在这项工作中，我们提出了 COGENT，一种具有神经常微分方程的连续图模拟器，用于对不规则地理空间网格进行长期物理预测。 COGENT 使用基于图的历史编码器对系统状态以及相关的强迫场和外部强迫的有限历史进行编码，生成捕获局部空间相互作用和时间演化的节点上下文向量。这些上下文向量初始化并调节潜在的神经常微分方程，其动力学由插值的未来强迫和显式相对推出时间驱动。通过将预测轨迹建模为连续的潜在动力系统，COGENT 可以在任意未来时间生成预测，而不是局限于固定的时间离散。残差解码器将生成的潜在轨迹映射回未来的物理状态，从而实现直接多步预测，而无需重复将预测状态反馈回模型。该公式将基于图形的空间表示、历史条件潜在动态和连续时间推出结合在一个统一的框架中，用于基于网格的物理模拟仿真。为了稳定长期监督下的训练，我们还提出了有效的 rollout-horizo…",
+      "authors": [
+        "Zesheng Liu",
+        "Maryam Rahnemoonfar"
+      ],
+      "published": "2026-06-09T17:43:30Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.11162v1",
+      "abs_url": "https://arxiv.org/abs/2606.11162v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11162v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "湖南省首届智能体研讨会在长沙举行 - 中国科技网",
+      "summary": "湖南省首届智能体研讨会在长沙举行 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Wed, 10 Jun 2026 02:34:10 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9uMlF2WDBfRHcxdTVVanE2SFVoOGtwZFNUdWZEMExMcFVyNXFCWkVNc2lNOXVaVXc4VGNVeGlIU0tlX1BmS1VhNFU0RUQxbHJZdlVLODRob0paUG1tTkdlQWxkeVNGQm0xWnM4STg0SWU?oc=5"
+    },
+    {
+      "title": "算无疆，智共融：国产算力从“单点突破”迈向“生态成势” - 新华网",
+      "summary": "算无疆，智共融：国产算力从“单点突破”迈向“生态成势” 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Wed, 10 Jun 2026 08:05:56 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE11aFJuRDcxNW4xc2Y4UXhmN0xrMXFzeUUwdURqVkF2SGFRTHNhQk5NSlR3Nm9QeTBHV25NTDV1aEtGZ1oxYUJCdGNPT1VFZmc1ZnFtUFlfRWtjclRPM1F5WEZZdHJpb3NDOTFFeUN1aHZzV2l6N3dhMWJQdGg?oc=5"
+    },
+    {
+      "title": "聆讯通过，京籍“中国科学院AI大模型第一股”来了！ - ncsti.gov.cn",
+      "summary": "聆讯通过，京籍“中国科学院AI大模型第一股”来了！ ncsti.gov.cn",
+      "source": "ncsti.gov.cn",
+      "lang": "zh",
+      "published": "Wed, 10 Jun 2026 06:09:11 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0yMXhETjV2OXA5TUVSTkZ0ckJxY1FCVGdnako5dGY3QUpWRHpzcEhtWl9faVNpLThnWmhTTHpSM3ZBT3ZzNHVIeE56a1ZGcjhHaFNuSjhkTThuQmNaTUV3V0hzbm1ycWJJVHJOYWx1NVA?oc=5"
+    },
+    {
+      "title": "王兴伟：AI智能体时代 高校信息化建设之路 - edu.cn",
+      "summary": "王兴伟：AI智能体时代 高校信息化建设之路 edu.cn",
+      "source": "edu.cn",
+      "lang": "zh",
+      "published": "Wed, 10 Jun 2026 03:14:59 GMT",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBnZVl0VlU2MHNhb1JaSU1Kal9KWkRsalpkcG5NNEhPd1B5cC12YmZQOHFWMFhNWGNKZ09FZ0RkUmUzUFhaRnFsS29CUnZrQWF3NlFQblZRdURhUkVqRTVYc09vbXAzLVFDS2p5N2lPSHlqdEV4Mlg0NQ?oc=5"
+    },
+    {
+      "title": "生物院罗宵团队在DNA基础大模型研究领域取得重要进展 - 湖南大学新闻网",
+      "summary": "生物院罗宵团队在DNA基础大模型研究领域取得重要进展 湖南大学新闻网",
+      "source": "湖南大学新闻网",
+      "lang": "zh",
+      "published": "Wed, 10 Jun 2026 09:24:26 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wVmNVMS1VdGJHbTYwbEZBQ3NsaW9mQmxFcmUyN18xWEtsY2lVR3VwWHd5N0hJZFN4Z0Q0TlRiYnBlcDRlaGdacEZNcE12bHZjRGpWQ0NR?oc=5"
+    },
+    {
+      "title": "全球监管机构呼吁加强对金融领域智能体化AI的管控|风险|银行业|金融机构|受访者|征求意见_手机新浪网 - 新浪财经",
+      "summary": "全球监管机构呼吁加强对金融领域智能体化AI的管控|风险|银行业|金融机构|受访者|征求意见_手机新浪网 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Wed, 10 Jun 2026 11:08:01 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOM2lmS2tad3pqbnBlOEc1eWNmcUR0N1l1SXV3eFhOV19nNzZyUXZLN2ltTE1IVkNmYjhEZUZtR09nVkRmQnl5aHRmZ3dLZjgxRi1VVWdIRTZGVE9WZVB0NFdXUjZwMXhkRE5IN3ByUmZRX0hGVWFILV9jRS02UjdzYUllOTVjbFJ4UGdRczl3cEVOVGNCT2dmZ1VhRUd3TFNsWlo3LXZFYWRVQQ?oc=5"
+    },
+    {
+      "title": "工信部：到2028年 城域算力1毫秒时延圈覆盖率不低于75% - 中国日报网",
+      "summary": "工信部：到2028年 城域算力1毫秒时延圈覆盖率不低于75% 中国日报网",
+      "source": "中国日报网",
+      "lang": "zh",
+      "published": "Wed, 10 Jun 2026 07:41:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE94NDRrVkNTdWpDc1hnNk9OWjJKY1p3dEhlSHhJSG5UdGtyMmhrRmtaZmwxYXVwaXlFcm9Hbk1sd2hfVDFkTEFySzQ2bHIxRWY3TXJTR2NVN2dIZmxpQmxHNVlZZGV2bXVFTG93dlVNbXFVVXB4US1YS0NybU8?oc=5"
+    },
+    {
+      "title": "“新华语典”时政智能体工作推进座谈会在武汉举行 - 新华网",
+      "summary": "“新华语典”时政智能体工作推进座谈会在武汉举行 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Wed, 10 Jun 2026 12:00:41 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQTHZpR1kzcS1zQzBQSkdza1B1MlJSbDNuSk5iQnlnUHlOU3EtdnltOE9mRllEZDlBbWI5Yi0tdWZaT1VzZWRRQUJXbDh3U2pBX3hHblE5VTl2MHdMaFdXU21UWDR2bS1KTmpLN0dIUnJDZlJLRnJMV25sbjVIQ1hFQWdB?oc=5"
+    },
+    {
+      "title": "新疆算力布局优势显现，加速迈向绿色算力新高地｜真相 - chinanews.com.cn",
+      "summary": "新疆算力布局优势显现，加速迈向绿色算力新高地｜真相 chinanews.com.cn",
+      "source": "chinanews.com.cn",
+      "lang": "zh",
+      "published": "Wed, 10 Jun 2026 03:21:55 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBaSHNRTEtXZlFvLXR6SzlzMHE1bkdNbkZKek5YZWdjOV93UDZRdFpXZUhlOVg0SGdoWHB5XzBBSUFFOUUtVjJwbFphVHRnT254ZGRvRks1YU00Ylo2M3I0cC12aUZlaEc0?oc=5"
+    },
+    {
+      "title": "从“拥有算力”到“生产智能”：优刻得发布企业级AI工厂建设解决方案 - 同花顺财经",
+      "summary": "从“拥有算力”到“生产智能”：优刻得发布企业级AI工厂建设解决方案 同花顺财经",
+      "source": "同花顺财经",
+      "lang": "zh",
+      "published": "Wed, 10 Jun 2026 09:56:34 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE4yUVd2U2tZOGR0MDVqeGZ1all3eGU1TzctanNuOVJYVW1DUzB1R25ZS3RYRGVQTmxZd3BMZEFQLS1wVE81T1MyT2NWUDNJRHNhalBRazhrMTVsNGFSOHNMQXJn?oc=5"
+    },
+    {
+      "title": "聚焦绿色算力 共筑发展新机 | 2026黄海新区绿色算力（上海）招商恳谈会成功举办 - 中国江苏网",
+      "summary": "聚焦绿色算力 共筑发展新机 | 2026黄海新区绿色算力（上海）招商恳谈会成功举办 中国江苏网",
+      "source": "中国江苏网",
+      "lang": "zh",
+      "published": "Wed, 10 Jun 2026 08:56:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQN0pkcl8tclNiaG5rM0xfNlI1N205WDdSNUpkZzVJanBsWWtIeXFNTHJVaGE0bTc3UXRQUzFLUGxPdVVxX19QNmZEcXJ4MFJudDBXbW4tSDJGWHVQeHFjMHA5MEl5RjF4UWpLbTg2MWt1bGc4RVEyTlBOdUFCc0tqM3I2NjlQekkyZGRn?oc=5"
+    },
+    {
+      "title": "工信部：到2028年城域算力1毫秒时延圈覆盖率不低于75% - 新京报",
+      "summary": "工信部：到2028年城域算力1毫秒时延圈覆盖率不低于75% 新京报",
+      "source": "新京报",
+      "lang": "zh",
+      "published": "Wed, 10 Jun 2026 09:31:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1TT2o5Mk5kdEh6STNKcDY1VW82RjVpVU0wZngta01hTzU4WlpzSWtHc1JtS2phMmNyTEktaXI1SlhncVhYQkdEd1JtUDRZMDRyVjR3NjAtc3ZHbzJjU2JhVGFIRk8?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 88803,
+      "language": ""
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 33731,
+      "language": "TypeScript"
+    },
+    {
+      "title": "github-mcp-server",
+      "type": "GitHub",
+      "summary_en": "GitHub's official MCP Server",
+      "summary": "GitHub 的官方 MCP 服务器",
+      "url": "https://github.com/github/github-mcp-server",
+      "author": "github",
+      "stars": 30558,
+      "language": "Go"
+    },
+    {
+      "title": "fastmcp",
+      "type": "GitHub",
+      "summary_en": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+      "summary": "🚀 构建 MCP 服务器和客户端的快速、Python 方式。",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "author": "PrefectHQ",
+      "stars": 25575,
+      "language": "Python"
+    },
+    {
+      "title": "activepieces",
+      "type": "GitHub",
+      "summary_en": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+      "summary": "AI 代理和 MCP 及 AI 工作流程自动化 •（约 400 个用于 AI 代理的 MCP 服务器） • AI 自动化/带 MCP 的 AI 代理 • AI 工作流程和 AI 代理 • 用于 AI 代理的 MCP",
+      "url": "https://github.com/activepieces/activepieces",
+      "author": "activepieces",
+      "stars": 22688,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 377935,
+      "language": "TypeScript"
+    },
+    {
+      "title": "n8n",
+      "type": "GitHub",
+      "summary_en": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "summary": "具有原生 AI 功能的公平代码工作流程自动化平台。将可视化构建与自定义代码、自托管或云、400 多个集成相结合。",
+      "url": "https://github.com/n8n-io/n8n",
+      "author": "n8n-io",
+      "stars": 191919,
+      "language": "TypeScript"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 189604,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
