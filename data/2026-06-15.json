@@ -1,0 +1,510 @@
+{
+  "date": "2026-06-15",
+  "generated_at": "2026-06-15T18:57:08.030567+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Gaze Heads: How VLMs Look at What They Describe",
+      "title_zh": "凝视头：VLM 如何看待他们所描述的内容",
+      "summary": "How a vision-language model internally solves the task of describing an image is far from obvious. We find that the model develops a specific mechanism for this: a small set of attention heads in its language-model backbone, which we call gaze heads, whose attention tracks the image region the model is currently describing. We find them with a simple correl…",
+      "summary_zh": "视觉语言模型如何在内部解决描述图像的任务还远非显而易见。我们发现该模型为此开发了一种特定的机制：其语言模型主干中的一小组注意力头，我们称之为凝视头，其注意力跟踪模型当前描述的图像区域。我们使用漫画作为受控测试平台，在空间上布置叙事顺序，通过几次前向传播找到了它们的简单相关分数。这些注视头不仅仅跟踪所描述的图像标记：将它们的注意力重新定向到选定的区域，迫使 VLM 来描述该区域。对前 100 个凝视头（占所有头的不到 9%）进行一次注意力掩模干预，可以以 83.1% 的准确率引导模型对任何选定的漫画面板的答案，而对随机头的相同干预无法重定向答案，并且对所有头进行干预会破坏生成。同样的杠杆还扩展到持续控制：在生成中期切换凝视目标使模型结束其当前的面板描述，并在几个标记内移动到新的面板描述。除了漫画之外，同样的干预措施将答案重定向到自然 COCO 图像中…",
+      "authors": [
+        "Rohit Gandikota",
+        "David Bau"
+      ],
+      "published": "2026-06-12T17:59:57Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.14703v1",
+      "abs_url": "https://arxiv.org/abs/2606.14703v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14703v1"
+    },
+    {
+      "title": "OmniVideo-100K: A Dataset for Audio-Visual Reasoning through Structured Scripts and Evidence Chains",
+      "title_zh": "OmniVideo-100K：通过结构化脚本和证据链进行视听推理的数据集",
+      "summary": "Current automated pipelines for audio-visual Question Answering (QA) generally adopt a ``video-caption-QA'' paradigm. However, these methods typically segment videos into short clips and generate separate descriptions for audio and visual modalities. This decoupled processing severs inherent associations between sounds and their visual sources, while indepe…",
+      "summary_zh": "当前用于视听问答（QA）的自动化管道通常采用“视频-字幕-QA”范例。然而，这些方法通常将视频分割成短片，并为音频和视觉模态生成单独的描述。这种解耦处理切断了声音与其视觉源之间的固有关联，而独立的剪辑处理通常会导致跨片段对同一实体的描述不一致。此外，将长文本理解和 QA 合成耦合到一个步骤中通常会将模型限制为局部事件，从而产生缺乏长期时间连接和深度跨模态推理的问题。为了解决这些问题，我们提出了一种具有两种机制的自动化数据引擎：（1）\\textbf{实体锚定视频脚本}将视频转换为结构化脚本，包括摘要、主要实体列表和分段视听描述。实体列表充当全局先验，以确保跨段引用一致性并重建视听关联。 (2) \\textbf{Clue-Guided QA Generation} 提示模型首先从脚本中挖掘跨段、多模态线索，然后根据这些高价值线索生成 QA 对。利用这个…",
+      "authors": [
+        "Xinyue Cai",
+        "Chaoyou Fu",
+        "Yi-Fan Zhang",
+        "Ran He",
+        "Caifeng Shan"
+      ],
+      "published": "2026-06-12T17:59:55Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.14702v1",
+      "abs_url": "https://arxiv.org/abs/2606.14702v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14702v1"
+    },
+    {
+      "title": "RATS! Patches Talk Through Registers: Emergent Parts in Register Attention Transformers",
+      "title_zh": "老鼠！补丁通过寄存器进行对话：寄存器注意力变压器中的紧急部分",
+      "summary": "When humans see a bird, they recognize far more than just \"bird\" -- they see a head, wings, and talons, a structured assembly of reusable parts that can be identified across every bird they have ever seen. We ask whether a self-supervised visual model can discover the same compositional structure on its own. To this end, we propose RATS (Register Attention…",
+      "summary_zh": "当人类看到一只鸟时，他们认识的不仅仅是“鸟”——他们看到的是头部、翅膀和爪子，这些可重复使用部件的结构化组装可以在他们见过的每只鸟中识别出来。我们询问自我监督的视觉模型是否可以自行发现相同的构图结构。为此，我们提出了 RATS（注册注意力变换器），它将分类令牌分解为 N 个可学习的注册令牌，这些注册令牌通过三步压缩通信广播注意力通过 L->N->N->L 瓶颈路由补丁信息。 N 个寄存器被划分在 H 个注意力头中，因此分配给不同头的寄存器不会相互交互。如果没有辅助损失或部分注释，每个语域都会自发地专门研究一个原始语义区域，其新兴结构类似于对象部分。 RATS 在五个细分基准中平均超过所有基线 +12 mIoU，在 ADE20K (+1.11 mIoU) 和 COCO (+0.2 AP^m) 上持续增长。其寄存器字典进一步展示了相关类别之间的部分级一…",
+      "authors": [
+        "Timing Yang",
+        "Predrag Neskovic",
+        "Jansen Seheult",
+        "Wenchao Han",
+        "Anand Bhattad",
+        "Alan Yuille"
+      ],
+      "published": "2026-06-12T17:59:53Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.14701v1",
+      "abs_url": "https://arxiv.org/abs/2606.14701v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14701v1"
+    },
+    {
+      "title": "Instruct-Particulate: Scaling Feed-Forward 3D Object Articulation with Kinematic Control",
+      "title_zh": "指令粒子：通过运动学控制缩放前馈 3D 对象关节",
+      "summary": "Reconstructing articulated 3D objects is important for animation, gaming, and robotic simulations. Recent neural networks can estimate the articulated structure of 3D objects, but their generalization remains limited by the scarcity of annotated data for this task. To address this gap, we introduce Instruct-Particulate, a model that takes a 3D mesh together…",
+      "summary_zh": "重建铰接式 3D 对象对于动画、游戏和机器人模拟非常重要。最近的神经网络可以估计 3D 对象的铰接结构，但其泛化能力仍然受到该任务注释数据稀缺的限制。为了解决这一差距，我们引入了 Instruct-Penchant，该模型将 3D 网格与目标运动学规范（包括零件描述、连接性、关节类型和可选点提示）结合在一起，并预测相应的运动学零件分割和关节运动参数。运动学规范消除了任务的歧义，并允许模型针对不同粒度的注释，从而可以使用更丰富的异构训练数据。在测试时，可以从大型视觉语言模型中自动获取运动学规范，因此该模型可以应用于任何输入网格。为了大规模训练我们的模型，我们构建了超过 150,000 个铰接式 3D 对象的异构数据集，通过视觉语言模型的运动学标签部分标记其他 3D 模型（整体或已分解为多个部分）而获得的数据扩展了现有的公开可用集合。实验表明，我们的模…",
+      "authors": [
+        "Ruining Li",
+        "Yuxin Yao",
+        "Matt Zhou",
+        "Chuanxia Zheng",
+        "Christian Rupprecht",
+        "Joan Lasenby"
+      ],
+      "published": "2026-06-12T17:59:36Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.14699v1",
+      "abs_url": "https://arxiv.org/abs/2606.14699v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14699v1"
+    },
+    {
+      "title": "ClinHallu: A Benchmark for Diagnosing Stage-Wise Hallucinations in Medical MLLM Reasoning",
+      "title_zh": "ClinHallu：医学 MLLM 推理中诊断阶段性幻觉的基准",
+      "summary": "Building trustworthy medical multimodal large language models (MLLMs) is critical for reliable clinical decision support. Existing medical hallucination benchmarks mainly focus on data collection, but often ignore where hallucinations originate within the reasoning process. We find that hallucination sources vary across samples: errors may arise from visual…",
+      "summary_zh": "构建值得信赖的医学多模式大语言模型 (MLLM) 对于可靠的临床决策支持至关重要。现有的医学幻觉基准主要侧重于数据收集，但往往忽略推理过程中幻觉的起源。我们发现不同样本的幻觉来源有所不同：错误可能源于视觉错误识别、不正确的医学知识回忆或有缺陷的推理整合。为了实现源级幻觉诊断，我们引入了 ClinHallu，这是医学 MLLM 推理中分阶段幻觉诊断的基准。 ClinHallu 包含 7,031 个经过验证的实例，其中每个实例都通过分解为视觉识别、知识回忆和推理集成的结构化推理跟踪进行了增强。我们还使用阶段替换干预措施来衡量纠正特定阶段如何影响最终答案。除了评估之外，我们还表明跟踪监督微调可以减少阶段性幻觉。 ClinHallu 提供了一个细粒度的幻觉测试平台，用于诊断和减轻医学 MLLM 中的推理失败。该基准可在 https://github.com…",
+      "authors": [
+        "Sicheng Yang",
+        "Hangjie Yuan",
+        "Wenjun Zhang",
+        "Jinwang Wang",
+        "Yichen Qian",
+        "Weihua Chen"
+      ],
+      "published": "2026-06-12T17:58:38Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.14697v1",
+      "abs_url": "https://arxiv.org/abs/2606.14697v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14697v1"
+    },
+    {
+      "title": "CORA: Analyzing and bridging thinking-answer gap in Multimodal RLVR via Consistency-Oriented Reasoning Alignment",
+      "title_zh": "CORA：通过一致性导向的推理对齐来分析和弥合多模式 RLVR 中的思维与答案差距",
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) has successfully elicited the reasoning capabilities of large language models, motivating its extension to multimodal scenarios. Existing methods primarily focus on improving the visual coverage of reasoning traces and mitigating visual hallucinations, but underestimate the semantic inconsistency between…",
+      "summary_zh": "可验证奖励的强化学习（RLVR）已成功激发了大型语言模型的推理能力，推动其扩展到多模态场景。现有方法主要侧重于提高推理痕迹的视觉覆盖率和减轻视觉幻觉，但低估了推理过程和最终答案之间的语义不一致。在本文中，我们深入研究了大型视觉语言模型 (LVLM) RLVR 中思维与答案不一致的问题，对整个组相对策略优化 (GRPO) 训练过程中收集的首次展示和 RLVR 后评估输出进行了全面分析，表明该问题在训练期间持续存在，并且在推理期间仍然存在。在分析的推动下，我们提出了面向一致性的推理对齐（CORA），它通过轻量级的即插即用一致性奖励模型将思维-答案语义一致性引入到RLVR中，并进一步结合混合奖励优势分裂（HRAS）来稳定地协调任务和一致性优化。跨代表性多模态推理基准和主流 LVLM 的大量实验表明，CORA 提高了任务性能，同时有效缓解了思维与答案的不一…",
+      "authors": [
+        "Jiayue Cao",
+        "Zhicong Lu",
+        "Xuehan Sun",
+        "Wei Jia",
+        "Hongling Zheng",
+        "Changyuan Tian"
+      ],
+      "published": "2026-06-12T17:54:59Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.14691v1",
+      "abs_url": "https://arxiv.org/abs/2606.14691v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14691v1"
+    },
+    {
+      "title": "A Complexity Measure for Active Learning in Multi-group Mean Estimation",
+      "title_zh": "多组均值估计中主动学习的复杂性度量",
+      "summary": "We study a \\emph{max-risk} objective for active learning in a multi-group mean estimation $d$-armed bandits: a learner adaptively allocates a budget of $T$ samples across $d$ groups to minimize the worst-case uncertainty index $\\max_{k\\in[d]}σ_k^2/n_k$, where $σ_k$ is the standard deviation of the distribution of arm $d$, and $n_k$ is the number of times ar…",
+      "summary_zh": "我们研究了多组均值估计 $d$ 武装老虎机中主动学习的 \\emph{max-risk} 目标：学习者自适应地在 $d$ 组之间分配 $T$ 样本的预算，以最小化最坏情况的不确定性指数 $\\max_{k\\in[d]}σ_k^2/n_k$，其中 $σ_k$ 是臂 $d$ 分布的标准差，$n_k$ 是臂 $d$ 的分布次数采样。我们开发了一个局部极小极大框架，并证明了该目标的第一个一般下界，对于任何有限方差假设类都有效。该界限将难度分为三个正交因素：\\emph{预算}项、\\emph{异方差}指数（衡量不确定性在各臂上分布的不均匀程度）以及依赖于模型的复杂性度量 \\emph{方差局部曲率} ($\\mathrm{VLC}$)，它捕获方差局部变化在假设类内产生的信息量。对于平滑类，$\\mathrm{VLC}$ 是方差的重新参数化——Fisher 信息，具有普通…",
+      "authors": [
+        "Abdellah Aznag",
+        "Rachel Cummings",
+        "Adam N. Elmachtoub"
+      ],
+      "published": "2026-06-12T17:54:26Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.14690v1",
+      "abs_url": "https://arxiv.org/abs/2606.14690v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14690v1"
+    },
+    {
+      "title": "CottonLeafVision: An Explainable and Robust Deep Learning Framework for Cotton Leaf Disease Classification",
+      "title_zh": "CottonLeafVision：用于棉叶病分类的可解释且稳健的深度学习框架",
+      "summary": "Globally, cotton is a highly economically beneficial crop, as the textile industry heavily depends on it. So, the precise identification and detection of cotton leaf disease is crucial for economic stability. The development goal of \"CottonLeafVision\" is to accurately classify and detect cotton leaf disease. With this goal, we have evaluated multiple pretra…",
+      "summary_zh": "在全球范围内，棉花是一种经济效益极高的作物，因为纺织业严重依赖它。因此，棉花叶部病害的精确识别和检测对于经济稳定至关重要。 “CottonLeafVision”的开发目标是准确分类和检测棉花叶部病害。为了实现这一目标，我们在公开的棉叶病图像数据集上评估了多个预训练的深度卷积神经网络，包括 DenseNet201、InceptionV3 和 VGG19。该图像数据集包括七个类别、六个疾病类别和一个健康类别，是在反映现实世界挑战的各种现场条件下收集的。在这些预训练模型中，使用 DenseNet201，我们实现了最高的分类准确率 98%。为了增强模型的可靠性和可解释性，我们采用了不同的技术和方法，例如梯度加权类激活映射（Grad-CAM）、遮挡敏感性分析和对抗性训练，以提高模型的抗噪声能力。最后，我们开发了一个原型，以便将该模型的功能应用于现实农业。本文…",
+      "authors": [
+        "Rafi Ahamed",
+        "Md. Abir Rahman",
+        "Tasnia Tarannum Roza",
+        "Munaia Jannat Easha",
+        "Md. Asif Khan",
+        "Sudeepta Mandal"
+      ],
+      "published": "2026-06-12T17:50:23Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.14686v1",
+      "abs_url": "https://arxiv.org/abs/2606.14686v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14686v1"
+    },
+    {
+      "title": "HumP-KD: A Hybrid Uncertainty-Aware Multi-Stage Progressive Knowledge Distillation Framework for Efficient Fire Classification",
+      "title_zh": "HumP-KD：一种用于高效火灾分类的混合不确定性感知多阶段渐进知识蒸馏框架",
+      "summary": "Real-time fire classification systems require models that are simultaneously accurate, computationally efficient, and deployable on resource-constrained hardware. This work proposes \\textbf{HumP-KD}, a Hybrid Uncertainty-aware Multi-stage Progressive Knowledge Distillation framework for efficient fire classification. Two datasets, FlameVision and Dataset-II…",
+      "summary_zh": "实时火灾分类系统需要模型同时准确、计算高效且可部署在资源受限的硬件上。这项工作提出了 \\textbf{HumP-KD}，一种用于高效火灾分类的混合不确定性感知多阶段渐进知识蒸馏框架。使用两个数据集：FlameVision 和 Dataset-II，包含 8,600 和 31,309 个图像。在标准预处理、在线增强、高斯噪声和运动模糊鲁棒性条件下应用各种 CNN 和 Transformer 基线。所提出的 HumP-KD 模型通过三个紧密集成的组件，将来自两个冻结的异构 Transformer 教师 Swin-Tiny 和 ViT-Base 的知识及其 Meta-MLP 集成提炼成轻量级的 MobileViT-S 学生。分层渐进知识蒸馏采用分层特征生成器。它生成一个融合的空间注意掩模，以选择性地引导蒸馏到判别区域。多阶段知识蒸馏在训练过程中逐步激活三…",
+      "authors": [
+        "Mohammed Arif Mainuddin",
+        "Najifa Tabassum",
+        "Omar Ibne Shahid",
+        "Riasat Khan"
+      ],
+      "published": "2026-06-12T17:48:27Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.14684v1",
+      "abs_url": "https://arxiv.org/abs/2606.14684v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14684v1"
+    },
+    {
+      "title": "Towards Direct Latent-Space Synthesis for Parallel Branches in LLM-Agent Workflows",
+      "title_zh": "LLM-Agent 工作流程中并行分支的直接潜在空间综合",
+      "summary": "Large language models increasingly serve as execution engines for agentic systems, yet they still consume context through a sequential text interface. This creates a mismatch with modern structured agent workflows, in which independent branches explore subtasks, retrieve evidence, or generate candidate solutions before a final synthesis step. Existing syste…",
+      "summary_zh": "大型语言模型越来越多地充当代理系统的执行引擎，但它们仍然通过顺序文本接口消耗上下文。这与现代结构化代理工作流程不匹配，在现代结构化代理工作流程中，独立分支在最终综合步骤之前探索子任务、检索证据或生成候选解决方案。现有系统通常通过连接它们的文本输出来合并这些分支，这会丢弃并行结构并产生冗余的预填充计算。在这项工作中，我们引入了 Parallel-Synthesis，这是一个即插即用的框架，使合成器能够直接使用并行工作代理生成的 KV 缓存。并行合成将校准独立生成的分支缓存的缓存映射器与可从该非顺序缓存接口生成的微调合成器适配器相结合。我们使用将合成器暴露给并行缓存上下文的数据来训练并行合成，教授跨缓存分支的聚合，并从基于标准文本串联的合成中提取推理行为。在涵盖数学、科学 QA、代码生成、GAIA 和多智能体数据库诊断的 9 个下游数据集上，并行合成在…",
+      "authors": [
+        "Shikun Liu",
+        "Mufei Li",
+        "Dongqi Fu",
+        "Haoyu Wang",
+        "Yinglong Xia",
+        "Hong Li"
+      ],
+      "published": "2026-06-12T17:39:29Z",
+      "category": "cs.AI",
+      "arxiv_id": "2606.14672v1",
+      "abs_url": "https://arxiv.org/abs/2606.14672v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14672v1"
+    },
+    {
+      "title": "When to Write and When to Suppress: Route-Specialized Dual Adapters for Memory-Assisted Knowledge Editing",
+      "title_zh": "何时写入和何时抑制：用于记忆辅助知识编辑的路由专用双适配器",
+      "summary": "Knowledge editing systems must update selected facts while preserving nearby but irrelevant behavior. This paper studies this problem in a memory-assisted setting where an edit memory is retrieved at inference time and a parameter-efficient adapter corrects the model's object preference. We argue that the central design question is not only how to write an…",
+      "summary_zh": "知识编辑系统必须更新选定的事实，同时保留附近但不相关的行为。本文在记忆辅助设置中研究了这个问题，其中在推理时检索编辑记忆，并且参数高效的适配器纠正模型的对象偏好。我们认为，核心设计问题不仅是如何编写编辑，而且是什么时候抑制它。我们引入 \\method{}，一个专门用于路由的双适配器编辑器。相关路由器首先决定提示是否应该接收编辑存储器。路由提示使用经过训练的编辑适配器，使其更喜欢新对象而不是原始对象；未路由的非直接提示使用经过训练的单独位置适配器来保留或恢复原始对象首选项。我们在相同的内存协议和两个 7B/8B 基本模型下，在三个 1,000 例协议 \\cf{}、\\zsre{} 和 \\mquake{} 上评估 \\method{}。在 Llama-3.1-8B-Instruct 上，\\method{} 在所有三个基准上获得了最佳的总体概率偏好精度：\\c…",
+      "authors": [
+        "Yining Huang"
+      ],
+      "published": "2026-06-12T17:37:32Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.14668v1",
+      "abs_url": "https://arxiv.org/abs/2606.14668v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14668v1"
+    },
+    {
+      "title": "HPSv3++: Scaling Reward Models Across the Full Spectrum of Diffusion Model Capabilities",
+      "title_zh": "HPSv3++：在扩散模型功能的整个范围内扩展奖励模型",
+      "summary": "Reward models guide text-to-image (T2I) systems toward outputs aligned with human preferences. However, typical reward models such as HPSv3 are trained on pre-annotated data from earlier T2I models, without accounting for quality discriminative shifts arising from evolving model capabilities and reinforcement learning (RL) iterations, limiting their broader…",
+      "summary_zh": "奖励模型引导文本到图像（T2I）系统朝着符合人类偏好的输出方向发展。然而，诸如 HPSv3 之类的典型奖励模型是根据早期 T2I 模型的预注释数据进行训练的，没有考虑到不断发展的模型功能和强化学习 (RL) 迭代所引起的质量判别变化，从而限制了其更广泛的适用性。在这项工作中，我们提出了 HPSv3++，这是一种奖励模型框架，它针对不同的 T2I 模型功能及其在整个能力迭代范围内的 RL 迭代变化提升了 HPSv3 模型。具体来说，我们首先介绍 HPDv3++，这是一个 212K 二维偏好数据集，使用最新的高性能（Qwen-Image）模型在人工监督下注释文本保真度和美学质量。然后我们提出一个两阶段的培训框架。第一阶段采用数据感知正交梯度投影来融合 HPDv3++ 的不同审美感知，同时保留 HPSv3 中原始有效的人类偏好知识。第 2 阶段进一步利用…",
+      "authors": [
+        "Yijun Liu",
+        "Jie Huang",
+        "Zeyue Xue",
+        "Yuming Li",
+        "Ruizhe He",
+        "Haoran Li"
+      ],
+      "published": "2026-06-12T17:22:04Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.14657v1",
+      "abs_url": "https://arxiv.org/abs/2606.14657v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14657v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "自带“冠军基因”的团队想让国产芯片“跑起来” - 科学网—新闻",
+      "summary": "自带“冠军基因”的团队想让国产芯片“跑起来” 科学网—新闻",
+      "source": "科学网—新闻",
+      "lang": "zh",
+      "published": "Mon, 15 Jun 2026 14:25:40 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA0YUg1eHNLRkJDN1lqcFJsdVEzWEVEM3d2c0NaNW9VMUYwUXlObnZNazdkQktiWWNRZnkzUllYcU1uY09IVlBGd0FDTHlCTHBGNmJYMGMwZWtLbzhwZnBPYjhjS0U?oc=5"
+    },
+    {
+      "title": "三大运营商齐推Token套餐 AI算力“大众化”时代要来了？ - 财联社",
+      "summary": "三大运营商齐推Token套餐 AI算力“大众化”时代要来了？ 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Mon, 15 Jun 2026 14:24:44 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5ZMGpPUGFlQVltd2tTZGRCWnNhQndzU1JqNmpuejFaMUNRODBhbTh4OHM0Q0wzZHRlMVNTM1R1WEhCTlo1VzJLbQ?oc=5"
+    },
+    {
+      "title": "HVLP算力铜箔成关键基材 某厂商“在手订单已排至2027年下半年” - 东方财富",
+      "summary": "HVLP算力铜箔成关键基材 某厂商“在手订单已排至2027年下半年” 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Mon, 15 Jun 2026 12:13:20 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE51Ny0yazlyaXFHdGZyWExpR212SnlhZWxOUmxxS2ZhZzVqdkN3Smxvbi1nUlFBejd3UThhdGlMN2JySTlLUy13Ymw1UXNGa2N2Q295dnFmbFNqMm5NU2RpSA?oc=5"
+    },
+    {
+      "title": "刚刚，李想举起5nm自研AI芯片，甩出关键细节！ - 智东西",
+      "summary": "刚刚，李想举起5nm自研AI芯片，甩出关键细节！ 智东西",
+      "source": "智东西",
+      "lang": "zh",
+      "published": "Mon, 15 Jun 2026 14:07:15 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9NanI0U2wwaG1pQWtGdjZhRTNRZ2xRaGNCT2x4UnpERXI5bDBPdEdGVzF3MXBsQ2pMZVdpUElnY3p1TEdhRmc?oc=5"
+    },
+    {
+      "title": "7×24小时在线，谷歌推出搜索智能体功能 - 世界互联网大会",
+      "summary": "7×24小时在线，谷歌推出搜索智能体功能 世界互联网大会",
+      "source": "世界互联网大会",
+      "lang": "zh",
+      "published": "Mon, 15 Jun 2026 12:09:04 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAyYWJyLW42ckJOUXJNU1ZEdWF6SjBNdC1hQjQ1VmQ4YTJGdGNibVhkMHprTnRJNWExUE9TT2Uzajl3RnJtSjA2NEpORnR2Vl9HVVhXM3d4S1FHQVltTWNjVmNGQzdDalhsSnc?oc=5"
+    },
+    {
+      "title": "三展联动聚力AI算力全产业链！IICIE、CIOE、elexcon共筑光电芯存一体化生态 - 集微网",
+      "summary": "三展联动聚力AI算力全产业链！IICIE、CIOE、elexcon共筑光电芯存一体化生态 集微网",
+      "source": "集微网",
+      "lang": "zh",
+      "published": "Mon, 15 Jun 2026 10:58:21 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1xS2ZMUVhTcHhaXzJlRmJwNGRwRVpfLS00aFRxd05mRHdaUXBzRGdjaE5wcjktNHc3ZEtBYi1QTGthX3Bqb1lJZERR?oc=5"
+    },
+    {
+      "title": "贝塔创新以AI基础设施布局数智生态 打造智算时代新型运营平台 - 新京报",
+      "summary": "贝塔创新以AI基础设施布局数智生态 打造智算时代新型运营平台 新京报",
+      "source": "新京报",
+      "lang": "zh",
+      "published": "Mon, 15 Jun 2026 10:40:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5aaEFpUG5SaGxYQ0NZZTdkRXI0NjN6M29CUkRCeF9DUWNqRHl6d0w1cHliX1JUOE9IdFRCcUpXR0F3d2VpZ0p0OGRERFJLWndkV1VXOE10eVV5bjFQd2tubm5LUlc?oc=5"
+    },
+    {
+      "title": "AI芯片公司燧原科技科创板IPO过会 2025年净亏损11.97亿元 - 财新",
+      "summary": "AI芯片公司燧原科技科创板IPO过会 2025年净亏损11.97亿元 财新",
+      "source": "财新",
+      "lang": "zh",
+      "published": "Mon, 15 Jun 2026 14:06:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1pRzl1Z29KeERNQkdIUE0tOTVCV1BOUVRfaExERmU1cVVzSEFJNUhPTUpLZXNOaV9EZXVGTUs3RG1mMTRmS3pkVEtYZlBIYUQwdjBHSjRBQmpyeVp1Sk5yclVsdm0?oc=5"
+    },
+    {
+      "title": "京廊毫秒云端握手廊坊算力“隐形心脏”奔涌百亿数字洪流 - lf.gov.cn",
+      "summary": "京廊毫秒云端握手廊坊算力“隐形心脏”奔涌百亿数字洪流 lf.gov.cn",
+      "source": "lf.gov.cn",
+      "lang": "zh",
+      "published": "Mon, 15 Jun 2026 05:06:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBFdExvTnFOa1RueXdaN0EyNWJldkxYMlNmUENWTnRIVU9wdW5EU0ZxNWZFV050a1hlaGk0SGxfWE5RZjB0QlBvdHpKTVVlbEk?oc=5"
+    },
+    {
+      "title": "Salesforce斥资36亿美元收购AI客服平台Fin，强化智能体服务矩阵 - 新浪财经",
+      "summary": "Salesforce斥资36亿美元收购AI客服平台Fin，强化智能体服务矩阵 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Mon, 15 Jun 2026 15:45:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOWVVMLUpSVEo1OExTSDYtLXZVSE9EZU54ZS1yeUFpMVhuMGt3YTYwcDJMelc1a2NHM0Rmc0RON3dkcm9YRlQ0MjZ4MG9ROEVxUzV3c1gyci1UWTRyYjdFVTcxelZpUFRpai1JOTFlOXFtUFBvNENWX3VFNldRNFk2aU5FUGVuSDRweDdKYlVXcEVYNzltbWliWWZCYi1obHBaVzBRQk1PcVY4Nkw0YjIyRWV2NnBxdUlzbkZhc216NFhOcTBCVVpzQktvalZBQmY0alhweVdocGVxU0RWQTNqLW00NEZycVl6a2VSWkFTclllZkk2WmtBdER6dmhJVkxoRkdyS3VuOXRVTE1vQlE?oc=5"
+    },
+    {
+      "title": "技术突围！理想发布全球首款数据流AI芯片马赫M100 - 电子工程专辑",
+      "summary": "技术突围！理想发布全球首款数据流AI芯片马赫M100 电子工程专辑",
+      "source": "电子工程专辑",
+      "lang": "zh",
+      "published": "Mon, 15 Jun 2026 12:57:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1LTXY5VnJoZURvTlhUN3UtTnFHVjlpRkJSR1o2LU9rWHMwOFREWHFCa3Z0QkgwYlFpQk40UXNLZ19GRHZaaUpwTlBLSktmYVgyeHFz?oc=5"
+    },
+    {
+      "title": "国产AI芯片燧原科技IPO过会，商业化进展被持续关注 - 凤凰财经",
+      "summary": "国产AI芯片燧原科技IPO过会，商业化进展被持续关注 凤凰财经",
+      "source": "凤凰财经",
+      "lang": "zh",
+      "published": "Mon, 15 Jun 2026 17:02:37 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5UT3h0R25hRHhDR0FMY2xIWmpnTkpnNTNZQzNaWG1jd0Vzb0thTWRNMm1EYzFETGhtc2gxNEowX2ZrSm9FVnp6bXBpZUlxWkR6?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 89201,
+      "language": ""
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 33951,
+      "language": "TypeScript"
+    },
+    {
+      "title": "github-mcp-server",
+      "type": "GitHub",
+      "summary_en": "GitHub's official MCP Server",
+      "summary": "GitHub 的官方 MCP 服务器",
+      "url": "https://github.com/github/github-mcp-server",
+      "author": "github",
+      "stars": 30698,
+      "language": "Go"
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。减少 60-95% 的标记，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/chopratejas/headroom",
+      "author": "chopratejas",
+      "stars": 28626,
+      "language": "Python"
+    },
+    {
+      "title": "fastmcp",
+      "type": "GitHub",
+      "summary_en": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+      "summary": "🚀 构建 MCP 服务器和客户端的快速、Python 方式。",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "author": "PrefectHQ",
+      "stars": 25640,
+      "language": "Python"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 378856,
+      "language": "TypeScript"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 194315,
+      "language": "Python"
+    },
+    {
+      "title": "n8n",
+      "type": "GitHub",
+      "summary_en": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "summary": "具有原生 AI 功能的公平代码工作流程自动化平台。将可视化构建与自定义代码、自托管或云、400 多个集成相结合。",
+      "url": "https://github.com/n8n-io/n8n",
+      "author": "n8n-io",
+      "stars": 192644,
+      "language": "TypeScript"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
