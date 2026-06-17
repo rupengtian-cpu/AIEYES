@@ -1,0 +1,514 @@
+{
+  "date": "2026-06-17",
+  "generated_at": "2026-06-17T14:38:46.691320+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Future Dynamic 3D Reconstruction: A 3D World Model with Disentangled Ego-Motion",
+      "title_zh": "未来动态 3D 重建：具有解开自我运动的 3D 世界模型",
+      "summary": "Forecasting the evolution of dynamic environments is crucial for autonomous agents. While generative world models have recently achieved high photorealism in 2D video synthesis by mixing ego-motion and environmental dynamics within the image plane, they exhibit physical inconsistencies, such as morphing or vanishing objects, especially over long time horizo…",
+      "summary_zh": "预测动态环境的演变对于自主代理至关重要。虽然生成世界模型最近通过在图像平面内混合自我运动和环境动力学在 2D 视频合成中实现了高度真实感，但它们表现出物理不一致，例如物体变形或消失，尤其是在较长的时间范围内。在本文中，我们提出了 FR3D，这是一种世界模型，可以预测未来动态 3D 重建的持久 3D 潜在表示。与之前将世界视为一系列基于图像的特征的作品不同，FR3D 明确地将场景的 3D 演化与代理的轨迹分离，将推断的自我运动视为动作的潜在代理。这种解开解决了自运动和世界运动之间的模糊性，确保了未来的几何一致性。此外，我们引入了一种师生蒸馏策略，该策略利用现成基础模型的空间“常识”，从而实现稳健的零样本泛化。大量实验证明，FR3D 在通过多个数据集的单目观察进行未来动态 3D 重建（甚至是未来 2 秒）方面具有强大的性能。项目页面：https://f…",
+      "authors": [
+        "Nils Morbitzer",
+        "Jonathan Evers",
+        "Artem Savkin",
+        "Thomas Stauner",
+        "Nassir Navab",
+        "Federico Tombari"
+      ],
+      "published": "2026-06-16T17:59:46Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.18250v1",
+      "abs_url": "https://arxiv.org/abs/2606.18250v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18250v1"
+    },
+    {
+      "title": "Unified Multimodal Autoregressive Modeling with Shared Context-Visual Tokenizer is Key to Unification",
+      "title_zh": "具有共享上下文视觉分词器的统一多模态自回归建模是统一的关键",
+      "summary": "Unified Multimodal Modeling aims to integrate visual understanding and generation within a single system. However, existing approaches typically rely on two disparate visual tokenizers, which splits the representation space and hinders truly unified modeling. We propose UniAR, a unified autoregressive framework where a single discrete visual tokenizer serve…",
+      "summary_zh": "统一多模态建模旨在将视觉理解和生成集成到单个系统中。然而，现有的方法通常依赖于两个不同的视觉分词器，这会分割表示空间并阻碍真正的统一建模。我们提出了 UniAR，一个统一的自回归框架，其中单个离散视觉标记器充当理解和生成之间的关键桥梁，从而实现共享上下文，其中模型可以直接解释其自己生成的视觉标记，而无需额外的重新编码。 UniAR 采用具有多级特征融合和免查找按位量化方案的预训练视觉编码器，保留高级语义和低级细节，同时以最小的成本扩展有效的视觉词汇。在此基础上，统一自回归模型采用并行按位预测来联合预测空间分组的多级视觉代码，大大减少视觉序列长度并加速生成。最后，基于扩散的视觉解码器对离散视觉标记进行操作以解码高保真图像。通过大规模预训练，然后进行监督微调和强化学习，UniAR 在图像生成和图像编辑方面实现了最先进的性能，同时在多模态理解基准上保持竞…",
+      "authors": [
+        "Wujian Peng",
+        "Lingchen Meng",
+        "Yuxuan Cai",
+        "Xianwei Zhuang",
+        "Yuhuan Yang",
+        "Rongyao Fang"
+      ],
+      "published": "2026-06-16T17:59:22Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.18249v1",
+      "abs_url": "https://arxiv.org/abs/2606.18249v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18249v1"
+    },
+    {
+      "title": "Visual Verification Enables Inference-time Steering and Autonomous Policy Improvement",
+      "title_zh": "视觉验证支持推理时间引导和自主策略改进",
+      "summary": "Robots deployed in the real world should learn from their experience and improve over time. This requires a mechanism of practicing and learning from feedback. In this paper, we propose VERITAS, a generator-verifier framework for generalist robot policies for inference-time policy steering and self-improvement. We use a pre-trained generalist robot policy a…",
+      "summary_zh": "部署在现实世界中的机器人应该从经验中学习并随着时间的推移而改进。这需要一种练习和从反馈中学习的机制。在本文中，我们提出了 VERITAS，这是一种用于通用机器人策略的生成器验证器框架，用于推理时策略指导和自我改进。我们使用预先训练的通用机器人策略作为“生成器”，并将其与无梯度“视觉验证器”配对，该验证器在推理时评估动作。该框架支持推理时间引导，无需额外培训即可提高策略性能。我们证明，在没有额外演示数据培训的情况下，推理时间验证的性能始终优于普通通才。此外，我们证明，经过验证的推出为离线策略改进提供了有效的监督：根据经过验证的自生成轨迹进行微调的策略可以实现一致的性能增益。值得注意的是，我们发现经过验证的部署后培训可以达到与专家演示相当的效率，同时不需要人工干预。我们的结果强调推理时间验证是一种实用且可扩展的机制，用于在部署期间改进机器人策略。",
+      "authors": [
+        "Mingtong Zhang",
+        "Dhruv Shah"
+      ],
+      "published": "2026-06-16T17:59:04Z",
+      "category": "cs.RO",
+      "arxiv_id": "2606.18247v1",
+      "abs_url": "https://arxiv.org/abs/2606.18247v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18247v1"
+    },
+    {
+      "title": "EventDrive: Event Cameras for Vision-Language Driving Intelligence",
+      "title_zh": "EventDrive：用于视觉语言驾驶智能的事件相机",
+      "summary": "Event cameras sense the world through asynchronous brightness changes with microsecond latency and high dynamic range, offering motion fidelity far beyond frame-based sensors and capturing temporal structure that conventional exposures often miss. These properties make events a powerful complement to RGB in autonomous driving, especially under blur, glare,…",
+      "summary_zh": "事件摄像机通过具有微秒延迟和高动态范围的异步亮度变化来感知世界，提供远远超出基于帧的传感器的运动保真度，并捕获传统曝光经常错过的时间结构。这些特性使事件成为自动驾驶中 RGB 的强大补充，特别是在模糊、眩光和快速运动的情况下，在这些情况下基于帧的感知可能变得不可靠。然而，现有的事件感知视觉语言模型仍然仅限于一般感知，并且没有揭示事件感知如何有助于整个驾驶循环中的推理和决策。我们推出了 EventDrive，这是一个大规模的基准测试和模型套件，它在四个核心维度上统一了事件流、RGB 帧和语言监督：感知、理解、预测和规划，涵盖字幕、结构化 QA、基础、运动状态识别、轨迹预测和规划任务。在此基础上，EventDrive-VLM 引入了多水平事件金字塔和时间水平专家混合模块，以自适应编码和融合异步和基于帧的信息以进行下游推理。对不同任务的综合评估表明，事件…",
+      "authors": [
+        "Dongyue Lu",
+        "Rong Li",
+        "Ao Liang",
+        "Lingdong Kong",
+        "Wei Yin",
+        "Lai Xing Ng"
+      ],
+      "published": "2026-06-16T17:58:40Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.18242v1",
+      "abs_url": "https://arxiv.org/abs/2606.18242v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18242v1"
+    },
+    {
+      "title": "EBench: Elemental Diagnosis of Generalist Mobile Manipulation Policies",
+      "title_zh": "EBench：通用移动操作策略的基本诊断",
+      "summary": "We present EBench, a simulation benchmark that diagnoses generalist mobile manipulation policies beyond a single success-rate scalar. EBench comprises 26 diverse and challenging manipulation tasks annotated along 5 capability dimensions and 4 generalization dimensions. We evaluate state-of-the-art generalist manipulation models including $π_0$, $π_{0.5}$, X…",
+      "summary_zh": "我们推出了 EBench，这是一个模拟基准，可以诊断超出单一成功率标量的通用移动操纵策略。 EBench 包含 26 个多样化且具有挑战性的操作任务，按照 5 个功能维度和 4 个泛化维度进行注释。我们评估了最先进的通才操纵模型，包括 $π_0$、$π_{0.5}$、XVLA 和 InternVLA-A1，并揭示了成功率接近的模型表现出截然不同的能力概况：$π_{0.5}$ 实现了最高的测试成功率和最佳的训练-测试保留率，而 InternVLA-A1 主导移动操纵，但在灵巧任务上崩溃，而 XVLA 在与其他策略相比，一组不相交的原子技能。除了能力分析之外，EBench还从4个有代表性的角度分析泛化能力，识别不同分布转移因素的影响。结果揭示了总体得分背后模型的优势和劣势。我们希望这个基准能够提供广泛的诊断信号来指导通才操纵模型的迭代。",
+      "authors": [
+        "Ning Gao",
+        "Jinliang Zheng",
+        "Xing Gao",
+        "Haoxiang Ma",
+        "Hanqing Wang",
+        "Yukai Wang"
+      ],
+      "published": "2026-06-16T17:58:22Z",
+      "category": "cs.RO",
+      "arxiv_id": "2606.18239v1",
+      "abs_url": "https://arxiv.org/abs/2606.18239v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18239v1"
+    },
+    {
+      "title": "ReproRepo: Scaling Reproducibility Audits with GitHub Repository Issues",
+      "title_zh": "ReproRepo：通过 GitHub 存储库问题扩展再现性审核",
+      "summary": "Reproducing research results from papers and released code is central to scientific progress. Existing works have introduced benchmarks to evaluate whether LLM agents can assist with reproducibility, but they are difficult to scale due to their reliance on substantial manual effort for data curation and evaluation. We introduce ReproRepo, a scalable framewo…",
+      "summary_zh": "从论文和发布的代码中复制研究结果是科学进步的核心。现有的工作已经引入了基准来评估 LLM 代理是否可以帮助再现性，但由于它们依赖于大量的手动数据管理和评估，因此很难扩展。我们引入了 ReproRepo，这是一个用于再现性评估的可扩展框架，它利用人类提出的 GitHub 问题作为对现实再现拦截器自然发生的监督。我们在主要会议上的 1,149 篇最新机器学习论文上实例化了 ReproRepo，并评估了四种前沿模型代理配置。我们的结果表明，LLM 代理即使不执行代码，也可以从论文-存储库对中识别出许多现实世界的可重复性问题：我们研究中最好的代理，即带有 GPT-5.5 的 Codex，为研究中约 90% 的论文提供了至少一个语义相关的人类报告的拦截器。进一步的分析表明，代理对于显示可见故障和识别正确的语义区域特别有效，但在精确定位方面可能仍然不够。 Re…",
+      "authors": [
+        "Shanda Li",
+        "Qiuhong Anna Wei",
+        "Jingwu Tang",
+        "Valerie Chen",
+        "Nihar B Shah",
+        "Tim Dettmers"
+      ],
+      "published": "2026-06-16T17:58:05Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.18237v1",
+      "abs_url": "https://arxiv.org/abs/2606.18237v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18237v1"
+    },
+    {
+      "title": "Zone of Proximal Policy Optimization: Teacher in Prompts, Not Gradients",
+      "title_zh": "近端策略优化区域：老师在提示中，而不是梯度中",
+      "summary": "Knowledge distillation transfers a teacher's competence to a small student but is brittle in the small-student regime: forcing the student to imitate logits from a much larger teacher concentrates it on the teacher's sharpest modes, hurting generalization on benchmark families beyond the training corpus. Reinforcement learning (RL) avoids logit imitation by…",
+      "summary_zh": "知识蒸馏将教师的能力转移给小学生，但在小学生制度中是脆弱的：强迫学生模仿大得多的教师的逻辑，将其集中在教师最敏锐的模式上，从而损害了训练语料库之外的基准家庭的泛化能力。强化学习 (RL) 通过对学生自己的部署进行训练来避免逻辑模仿。然而，在每次推出都失败的问题上（产生零优势并被默默丢弃），将更强的教师响应注入到政策梯度中会打破政策假设并引发漂移。我们引入了近端政策优化区域（ZPPO），其灵感来自维果茨基的近端发展区域，它使教师保持在提示而不是政策梯度内。在困难问题上，ZPPO 构建了两个重新制定的提示：包含二元候选的问题 (BCQ) 将一个正确的教师响应与一个不正确的学生响应配对，作为学生必须区分的匿名候选，而包含否定候选的问题 (NCQ) 将学生的错误推出聚合到单个提示中，以显示他们共同的失败模式。即时重放缓冲区会重新循环每个难题，直到问题毕业（…",
+      "authors": [
+        "Byung-Kwan Lee",
+        "Ximing Lu",
+        "Shizhe Diao",
+        "Minki Kang",
+        "Saurav Muralidharan",
+        "Karan Sapra"
+      ],
+      "published": "2026-06-16T17:46:02Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.18216v1",
+      "abs_url": "https://arxiv.org/abs/2606.18216v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18216v1"
+    },
+    {
+      "title": "Rethinking Dataset Distillation for Classification: Do Distilled Sets Outperform Coresets?",
+      "title_zh": "重新思考用于分类的数据集蒸馏：蒸馏集是否优于核心集？",
+      "summary": "Dataset distillation (DD) has emerged as a prominent approach in data centric machine learning, aiming to synthesize compact training sets for efficient training by compressing the information in large datasets into a small number of synthetic samples. However, DD methods are often evaluated under inconsistent evaluation protocols, ranging from standard ERM…",
+      "summary_zh": "数据集蒸馏（DD）已成为以数据为中心的机器学习中的一种重要方法，旨在通过将大型数据集中的信息压缩为少量合成样本来合成紧凑的训练集以进行高效训练。然而，DD 方法经常在不一致的评估协议下进行评估，从标准 ERM 到单/多教师监督，使得很难从评估中分离出蒸馏数据的有效性。此外，许多现有方法声称 DD 优于核心集选择 (CS) 等数据修剪方法，这是基于将压缩数据集限制为真实样本的子集从根本上限制了其表达能力的假设。在这项工作中，我们使用标准化数据集和评估协议通过大规模实验批判性地评估 DD 方法，以评估其内在有效性。我们使用三种广泛采用的训练协议针对三种 CS 策略，在 ImageNet-1K、ImageNet100 和 ImageNette 上对七种最先进 (SOTA) DD 方法进行基准测试。我们的结果表明，虽然一些 DD 方法甚至无法超越简单的随机…",
+      "authors": [
+        "Trisha Mittal",
+        "Akshay Mehra",
+        "Joshua Kimball"
+      ],
+      "published": "2026-06-16T17:37:49Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.18209v1",
+      "abs_url": "https://arxiv.org/abs/2606.18209v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18209v1"
+    },
+    {
+      "title": "Fixed-Point Reasoners: Stable and Adaptive Deep Looped Transformers",
+      "title_zh": "定点推理器：稳定且自适应的深环变压器",
+      "summary": "Looped architectures provide an inductive bias toward learning step-by-step procedures for tasks that require compositional reasoning. The number of effective layers reached by looping determines the quality of the solution these models find. Like deep architectures, looped architectures are prone to a signal propagation problem induced by depth as the halt…",
+      "summary_zh": "循环架构为学习需要组合推理的任务的逐步过程提供了归纳偏差。循环达到的有效层数决定了这些模型找到的解决方案的质量。与深度架构一样，随着停止决策的推迟，循环架构很容易出现由深度引起的信号传播问题。在本文中，我们使用预范数层和残差缩放来解决这个信号传播问题。基于这些架构修改，我们提出了 FPRM，一种基于 Transformer 的定点推理模型，它使用定点收敛作为循环架构中的端到端停止机制。我们表明，定点停止允许 FPRM 调整其计算以适应任务难度。 FPRM 在常见推理基准上有效，即数独、迷宫、状态跟踪和 ARC-AGI。",
+      "authors": [
+        "Sajad Movahedi",
+        "Vera Milovanović",
+        "Shlomo Libo Feigin",
+        "Alexander Theus",
+        "Thomas Hofmann",
+        "Valentina Boeva"
+      ],
+      "published": "2026-06-16T17:36:33Z",
+      "category": "cs.AI",
+      "arxiv_id": "2606.18206v1",
+      "abs_url": "https://arxiv.org/abs/2606.18206v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18206v1"
+    },
+    {
+      "title": "Analyzing and Encoding the Al-Mawrid Arabic-English Dictionary with the ISO Language Markup Framework and TEI Lex-0",
+      "title_zh": "使用 ISO 语言标记框架和 TEI Lex-0 分析和编码 Al-Mawrid 阿拉伯语-英语词典",
+      "summary": "This paper presents a robust methodology for the systematic digitization and encoding of the Al-Mawrid Arabic-English dictionary, transforming it from a legacy print resource into a standardized computational lexicon. Addressing a significant gap in Arabic lexical infrastructure, the study adopts a dual-standard framing that aligns the ISO Lexical Markup Fr…",
+      "summary_zh": "本文提出了一种对 Al-Mawrid 阿拉伯语-英语词典进行系统数字化和编码的强大方法，将其从传统印刷资源转变为标准化计算词典。为了解决阿拉伯语词汇基础设施中的重大差距，该研究采用了双标准框架，使 ISO 词汇标记框架 (LMF) 与文本编码倡议 TEI Lex-0 指南保持一致。通过对词典的宏观和微观结构应用编辑视角，该研究解决了 20 世纪双语词典典型的结构模糊和标点不一致的问题。该方法基于对词典词汇知识密度的实证分析。该研究利用代表性样本（字母 Ayn，占总体积的 4.6%）为编码过程提供了科学依据，证明结构解析准确度为 91%。信息提取规则的定量评估显示出高性能，同义词的精确度为 85%，召回率为 98%，其他形态语义特征的精确度为 88%。除了技术描述之外，本文还对现有阿拉伯语词汇资源进行了批判性比较，并讨论了 TEI Lex-0 在对特…",
+      "authors": [
+        "Diaa Fayed",
+        "Laurent Romary"
+      ],
+      "published": "2026-06-16T17:35:11Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.18205v1",
+      "abs_url": "https://arxiv.org/abs/2606.18205v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18205v1"
+    },
+    {
+      "title": "RubricsTree: Scalable and Evolving Open-Ended Evaluation of Personal Health Agents across Health Memory and Medical Skills",
+      "title_zh": "RubricsTree：跨健康记忆和医疗技能的个人健康代理的可扩展和不断发展的开放式评估",
+      "summary": "The LLM-empowered personal health agents with user health (sensor) metrics have offered a promising pathway to alleviate global disparities in healthcare access. However, large-scale clinical deployment remains constrained by an open-ended evaluation bottleneck: physician annotation is reliable but costly and unscalable, while LLM-as-a-judge evaluators are…",
+      "summary_zh": "法学硕士授权的个人健康代理具有用户健康（传感器）指标，为缓解全球医疗保健获取方面的差异提供了一条有希望的途径。然而，大规模临床部署仍然受到开放式评估瓶颈的限制：医生注释可靠，但成本高昂且不可扩展，而法学硕士作为法官的评估者可扩展，但主观、不一致，有时临床上不一致。我们推出了 RubricsTree，这是一个可扩展的评估框架，具有超过 100 个原子的、可临床验证的布尔量规的专家对齐分层分类法，通过由经验丰富的医生领导的专业小组通过迭代人机循环管理协议从 4,000 个真实用户查询的见解中演变而来。上下文感知自适应路由器仅激活每个查询的相关自动加权标题子集，从而提供具有专家一致质量的可扩展评估所需的吞吐量。通过系统的元评估，我们表明 RubricsTree (i) 在具有挑战性的开放式查询的专家对齐方面大大超过了强大的大规模评估基线； (ii) 可靠…",
+      "authors": [
+        "Weizhi Zhang",
+        "Zechen Li",
+        "Hamid Palangi",
+        "Ben Graef",
+        "A. Ali Heydari",
+        "Simon A. Lee"
+      ],
+      "published": "2026-06-16T17:34:53Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.18203v1",
+      "abs_url": "https://arxiv.org/abs/2606.18203v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18203v1"
+    },
+    {
+      "title": "Learning from the Self-future: On-policy Self-distillation for dLLMs",
+      "title_zh": "从自我未来中学习：dLLM 的政策自我蒸馏",
+      "summary": "On-policy self-distillation (OPSD) has proven effective for post-training large language models (LLMs), yet its application to diffusion LLMs (dLLMs) remains unexplored. Existing OPSD methods are inherently autoregressive-centric. They inject privileged information via left-to-right prefix conditioning with token-level divergence supervision, a design that…",
+      "summary_zh": "事实证明，按策略自蒸馏 (OPSD) 对于训练后大型语言模型 (LLM) 是有效的，但其在扩散 LLM (dLLM) 中的应用仍未得到探索。现有的 OPSD 方法本质上是以自回归为中心的。他们通过从左到右的前缀调节和令牌级发散监督来注入特权信息，这种设计从根本上与 dLLM 的任意顺序生成相冲突。我们推出 d-OPSD，这是第一个专为 dLLM 量身定制的 OPSD 框架。我们的方法有两个核心贡献。首先，我们通过使用自我生成的答案作为后缀条件来重新构建自教师结构，使学生模型能够从“自我未来经验”而不是特权前缀中学习。其次，我们将监督从令牌级别转变为步骤级别，使训练与 dLLM 的迭代去噪过程保持一致。跨越四个推理基准的实验表明，d-OPSD 始终优于 RLVR 和 SFT 基线，具有卓越的样本效率，仅需要 RLVR 约 10% 的优化步骤，并为 d…",
+      "authors": [
+        "Yifu Luo",
+        "Zeyu Chen",
+        "Haoyu Wang",
+        "Xinhao Hu",
+        "Yuxuan Zhang",
+        "Zhizhou Sha"
+      ],
+      "published": "2026-06-16T17:24:57Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.18195v1",
+      "abs_url": "https://arxiv.org/abs/2606.18195v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18195v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "超10亿！边缘算力赛道诞生今年最大单笔融资 - 财联社",
+      "summary": "超10亿！边缘算力赛道诞生今年最大单笔融资 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Wed, 17 Jun 2026 10:31:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE4ybUJ3QUZTMVBuMmZrM0twdlBMdnlaNmxRWVBOdlJvYnBlRloyXy16bjh6MzVvaldTb2tyQjhvdm5pX2JQRHo2VQ?oc=5"
+    },
+    {
+      "title": "算力极致 AI极简！2026商业市场鲲鹏昇腾轻量化场景方案发布会圆满举办 - 教育在线",
+      "summary": "算力极致 AI极简！2026商业市场鲲鹏昇腾轻量化场景方案发布会圆满举办 教育在线",
+      "source": "教育在线",
+      "lang": "zh",
+      "published": "Wed, 17 Jun 2026 11:33:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1WaTJmR09udHgxNU5heDAxNncyUFdodWg1d0owYU04QXcxWVlpcnNNTi1rek5NbnNuUzJhT0FfX285UHc5NmozMEtaZDFSTm5IYXJaWTZxTGlITHhFZVRScGJGdkFWeHdFVUhvT3V3?oc=5"
+    },
+    {
+      "title": "云南AI科研平台全链条服务区域科技创新 - 中国科技网",
+      "summary": "云南AI科研平台全链条服务区域科技创新 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Wed, 17 Jun 2026 13:16:25 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE85ZjZyaXlkUEtJR2pMTkhWNm4wRXFrNWJSZmpTYXdmS01talpNRk5LbEtCX1E2OTRnNVpvX3RycFBfaGFJN1h6TkpjRjRzQWg2UHR0SzdSUkp4QUdKRlp6SGFzWGhDNk5IcExUWUdKMEs?oc=5"
+    },
+    {
+      "title": "推动太空算力发展 重构先进制造业竞争力 - 新华网",
+      "summary": "推动太空算力发展 重构先进制造业竞争力 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Wed, 17 Jun 2026 00:48:46 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBaVTJaVHNTM2Z1allkaDdOenJuR2FfUGJEMGpZQy00YWllQktLMC1GRGZkcUJJYjJVaDQxR1Uwc043U3hVZHF1UWt0VXpYcVV6RzFPUGxXeUxCSG53dkVGR2EzS0ptY3FyMkFJWUdMUGxFZV9leWZtMmR2TVk?oc=5"
+    },
+    {
+      "title": "2600亿市场量价齐升后，算力产业分化加速 - 21财经",
+      "summary": "2600亿市场量价齐升后，算力产业分化加速 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Wed, 17 Jun 2026 10:01:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOMThRNnB1aG1HMkw5bTBWbmhEdzdlbkpFTVl5X0JaYzA1bUlKcEdXVk81eDl0WlBocEVsWjBQVXl1N0dPcm5GV3JTVHRwZEs5UHNyUVBRd3p2MmMxWFdKWjlVcUJRQ3RRQmU2R0VQUTBCLXAxRVNucS0xNnNZMjJEaWFRanlLbl96a0FPZEFMSQ?oc=5"
+    },
+    {
+      "title": "海尔资本行业观点：AI算力时代，数据中心液冷正在成为新一代“卖铲人” - sh.chinanews.com.cn",
+      "summary": "海尔资本行业观点：AI算力时代，数据中心液冷正在成为新一代“卖铲人” sh.chinanews.com.cn",
+      "source": "sh.chinanews.com.cn",
+      "lang": "zh",
+      "published": "Wed, 17 Jun 2026 06:31:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE56WGZMM1Z4QWtOckJWUzhWa1pTZmhyVTI5ZE5NaXA1dXk2cWVSXzM4T2ZDWTZEVjktZ3BLUVBiUlpjUzZ5TW5BNzloSjVIWWdDcXJfU0RNYTk2MUdObXQyVkNyd0QtWUNYQ1M0Qg?oc=5"
+    },
+    {
+      "title": "9390万元！智谱拿下大模型大单 - 智东西",
+      "summary": "9390万元！智谱拿下大模型大单 智东西",
+      "source": "智东西",
+      "lang": "zh",
+      "published": "Wed, 17 Jun 2026 12:56:10 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE50Y29iZmtaelJEaVJuRUlkWmtOV3dBbEhFQ2U0MWFuUnFxZkhqcXpycTlxMnozTzlHSXBFRUl0TDF3UWF0N2c?oc=5"
+    },
+    {
+      "title": "智谱开源新一代大模型GLM-5.2 跻身全球模型前三 - 中国日报网",
+      "summary": "智谱开源新一代大模型GLM-5.2 跻身全球模型前三 中国日报网",
+      "source": "中国日报网",
+      "lang": "zh",
+      "published": "Wed, 17 Jun 2026 10:20:43 GMT",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBscl9ERkVRMlA2V0trWEtNcTE2QzlIY01JUGhqYnlGaGlmVjFCVk1UUndkbjBEUElidGlzRTF0TDl0R1VsTmtLUE9JbTc2YU9idi1ZQVJrd1pjUFhHRmxXODhaNk9ZZF9wcXpzSS1ITVVNcWFXSjRrRDZCUQ?oc=5"
+    },
+    {
+      "title": "解码109丨从芯片到算力：国产AI全栈突围进行时 - 央广财经",
+      "summary": "解码109丨从芯片到算力：国产AI全栈突围进行时 央广财经",
+      "source": "央广财经",
+      "lang": "zh",
+      "published": "Wed, 17 Jun 2026 09:42:52 GMT",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBGX00tYTViNGpIdnNtOE01UFpfY3ZWLWNnMzNqMzhTU2doMEZ0c08zU1lHRklOQkwyNHVoZDdIM1lieE5aeEJpWm1uZEJIaUV5dURpNUdiWXNiTXZVUU5FWkFyYldPUnhSVjR6UTAtRQ?oc=5"
+    },
+    {
+      "title": "AI算力变局：TPU正成为“另一个选项” - 新浪网",
+      "summary": "AI算力变局：TPU正成为“另一个选项” 新浪网",
+      "source": "新浪网",
+      "lang": "zh",
+      "published": "Wed, 17 Jun 2026 13:56:31 GMT",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBES3dIUUpDUU5pT05wMHNxQ0toU3huR1NRaFZidXo1RUdnNlF3YXJSNmtfYkRZbE16eXgwTTVwY3BwaHJ0Z3g2c2xnSWVSMFdMMk5XLW54N2ZSZmhMSUF6M0Z3azg5UUY1UVpzV1ZLOUpuaUxub2RiamhiWDZXaTQ?oc=5"
+    },
+    {
+      "title": "同日斩获十亿级算力大单！高乐、行云科技高调背后风险隐现 - 东方财富",
+      "summary": "同日斩获十亿级算力大单！高乐、行云科技高调背后风险隐现 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Wed, 17 Jun 2026 13:24:21 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBjXzVCaGYySmdoeGdudFRWcFpPUlp6N3VVVDNHMkJscTV6UUxtZW9aY1pSQ1BsQTh1SjMtY3ljWnhhZmdlTGpGc1d6Wl8zVmItZUNmQjhaTXVaX0pkTGR3Tg?oc=5"
+    },
+    {
+      "title": "科创板第五套标准扩至人工智能大模型，企业上市需满足八项细化要求 - thepaper.cn",
+      "summary": "科创板第五套标准扩至人工智能大模型，企业上市需满足八项细化要求 thepaper.cn",
+      "source": "thepaper.cn",
+      "lang": "zh",
+      "published": "Wed, 17 Jun 2026 13:47:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1jSDh6ZGtQeVJlMEZmQUN3aTF6aDJhaS1IcldCb19PakQ1aEZ5NWNuamI2RlBJWWhad3NBdGNVUjk4cnNocmxWNS1BNWJHekwyWk4tR3VLRDQxS1h4Z1FoRw?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 89345,
+      "language": ""
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 34034,
+      "language": "TypeScript"
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。令牌减少 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/chopratejas/headroom",
+      "author": "chopratejas",
+      "stars": 30782,
+      "language": "Python"
+    },
+    {
+      "title": "github-mcp-server",
+      "type": "GitHub",
+      "summary_en": "GitHub's official MCP Server",
+      "summary": "GitHub 的官方 MCP 服务器",
+      "url": "https://github.com/github/github-mcp-server",
+      "author": "github",
+      "stars": 30763,
+      "language": "Go"
+    },
+    {
+      "title": "fastmcp",
+      "type": "GitHub",
+      "summary_en": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+      "summary": "🚀 构建 MCP 服务器和客户端的快速、Python 方式。",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "author": "PrefectHQ",
+      "stars": 25674,
+      "language": "Python"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 379164,
+      "language": "TypeScript"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 195941,
+      "language": "Python"
+    },
+    {
+      "title": "n8n",
+      "type": "GitHub",
+      "summary_en": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "summary": "具有原生 AI 功能的公平代码工作流程自动化平台。将可视化构建与自定义代码、自托管或云、400 多个集成相结合。",
+      "url": "https://github.com/n8n-io/n8n",
+      "author": "n8n-io",
+      "stars": 192923,
+      "language": "TypeScript"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
