@@ -1,0 +1,514 @@
+{
+  "date": "2026-06-18",
+  "generated_at": "2026-06-18T14:28:39.002488+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Native Active Perception as Reasoning for Omni-Modal Understanding",
+      "title_zh": "本机主动感知作为全模态理解的推理",
+      "summary": "Passive models for long video understanding typically rely on a \"watch-it-all\" paradigm, processing frames uniformly regardless of query difficulty, causing computational cost to grow with video duration. Although interactive frameworks have emerged, they often rely on global pre-scanning, and their context cost still scales with video length. We propose Om…",
+      "summary_zh": "用于长视频理解的被动模型通常依赖于“全部观看”范例，无论查询难度如何，都统一处理帧，导致计算成本随着视频持续时间的增加而增加。尽管交互式框架已经出现，但它们通常依赖于全局预扫描，并且它们的上下文成本仍然随着视频长度而变化。我们提出了 OmniAgent，这是第一个原生全模式代理，它将视频理解制定为基于 POMDP 的迭代观察-思考-行动循环。 OmniAgent 执行按需操作，有选择地将视听线索提取到持久的文本内存中，从而有效地将推理复杂性与原始视频持续时间解耦。为了实现这一点，我们引入了（1）代理监督微调，通过双阶段质量控制的 N 最佳轨迹合成来引导原生主动感知，以及（2）TAURA 代理强化学习（回合感知自适应不确定性重新调整优势），它利用回合水平熵来引导信用分配转向关键发现回合。至关重要的是，OmniAgent 表现出积极的测试时间扩展，其中…",
+      "authors": [
+        "Zhenghao Xing",
+        "Ruiyang Xu",
+        "Yuxuan Wang",
+        "Jinzheng He",
+        "Ziyang Ma",
+        "Qize Yang"
+      ],
+      "published": "2026-06-17T17:59:56Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.19341v1",
+      "abs_url": "https://arxiv.org/abs/2606.19341v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19341v1"
+    },
+    {
+      "title": "Beyond the Current Observation: Evaluating Multimodal Large Language Models in Controllable Non-Markov Games",
+      "title_zh": "超越当前观察：评估可控非马尔可夫游戏中的多模态大语言模型",
+      "summary": "Deploying multimodal foundation models as closed-loop policies increasingly requires conditioning actions on observations that are no longer visible. However, existing benchmarks either expose the full state, conflate hidden-state reconstruction with other agent skills, or test recall only after an episode has ended. We introduce RNG-Bench (Reconstructive N…",
+      "summary_zh": "将多模式基础模型部署为闭环策略越来越需要对不再可见的观察结果采取调节行动。然而，现有的基准要么暴露完整状态，要么将隐藏状态重建与其他智能体技能混为一谈，要么仅在情节结束后测试召回。我们引入了 RNG-Bench（重构非马尔可夫游戏），这是一个基准套件，旨在隔离基本模型重建过去观察结果并在多步骤交互过程中对其采取行动的能力。 RNG-Bench 包括两个互补的游戏：配对（在特定位置短暂显示的卡牌身份必须稍后回忆）和 3D 迷宫（以自我为中心的视图必须集成到空间地图中）。这两款游戏都在具有三个受控难度轴的统一工具下进行评估：网格大小、视觉模式和观察模式。该基准测试还引入了一个头对头的决斗协议来控制实例级方差，以及一个内存间隙指标，以消除由于不良动作选择而导致的遗忘。最难的配置需要每集大约 128K 个令牌和 350 个图像输入的上下文，并且距离前沿 M…",
+      "authors": [
+        "Shengyuan Ding",
+        "Xilin Wei",
+        "Xinyu Fang",
+        "Haodong Duan",
+        "Dahua Lin",
+        "Jiaqi Wang"
+      ],
+      "published": "2026-06-17T17:59:34Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.19338v1",
+      "abs_url": "https://arxiv.org/abs/2606.19338v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19338v1"
+    },
+    {
+      "title": "Learning User Simulators with Turing Rewards",
+      "title_zh": "使用图灵奖励学习用户模拟器",
+      "summary": "Learning to simulate human users in interactive settings could advance the training of agent assistants, evaluation of personalization systems, research in the social sciences, and more. Existing approaches generally do so by training a large language model (LLM) to match a single ground truth response, either by maximizing the log probability or by using a…",
+      "summary_zh": "学习在交互环境中模拟人类用户可以促进代理助理的培训、个性化系统的评估、社会科学研究等。现有方法通常通过训练大型语言模型（LLM）来匹配单个地面实况响应来实现这一点，或者通过最大化对数概率或通过使用相似性奖励。相反，我们提出了 {Turing-RL}：一种基于图灵测试的强化学习方法，用于训练用户模拟器模型。 {Turing-RL} 使用区分性图灵奖励和 LLM 判断来对生成的响应与给定用户历史的真实用户的难以区分的程度进行评分，并且用户模拟器 LLM 学习生成与用户通过此类奖励可能说出的内容难以区分的响应。在两个不同的领域（对话聊天和 Reddit 论坛讨论）中，我们发现 {Turing-RL} 在法学硕士和人类评估指标上始终优于基线方法。我们的研究表明，对于学习用户模拟器来说，优化不可区分性而不是响应匹配是有效的。",
+      "authors": [
+        "Yingshan Susan Wang",
+        "Cedegao E. Zhang",
+        "Linlu Qiu",
+        "Zexue He",
+        "Pengyuan Li",
+        "Alex Pentland"
+      ],
+      "published": "2026-06-17T17:58:48Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.19336v1",
+      "abs_url": "https://arxiv.org/abs/2606.19336v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19336v1"
+    },
+    {
+      "title": "Freeing the Law with LOCUS: A Local Ordinance Corpus for the United States",
+      "title_zh": "用 LOCUS 解放法律：美国地方条例语料库",
+      "summary": "Progress in legal AI increasingly depends on access to authoritative legal text at scale. Yet one of the most consequential layers of American law remains largely absent from existing machine-readable corpora: local ordinances. Local codes govern zoning, housing, business licensing, public health, noise, animal control, and many other domains of everyday re…",
+      "summary_zh": "法律人工智能的进步越来越依赖于大规模获取权威法律文本。然而，美国法律最重要的层面之一在现有的机器可读语料库中仍然基本上缺失：地方法规。地方法规管辖分区、住房、商业许可、公共卫生、噪音、动物控制和许多其他日常监管领域，但它们分散在专为人类浏览而不是批量研究访问而设计的供应商平台上。我们引入 LOCUS - 美国地方条例语料库 - 美国市和县条例代码的综合语料库和县统一访问层。可供研究人员发布的原始语料库代表了几乎所有公开的市县法令。生成的原始语料库包含来自 9,239 个市县的代码。较小的县统一 LOCUS 接入层覆盖美国 3,144 个县中最大的 2,309 个县，占人口的大多数。我们使用 OCR 来处理无数阻碍法律成为公共资源的文档格式。我们发布包含覆盖元数据的语料库，以支持可重复性、下游法律人工智能研究以及机器可读访问当地法律的增量扩展。我们训…",
+      "authors": [
+        "Denis Peskoff",
+        "Joe Barrow",
+        "Christopher Vu",
+        "Diag Davenport"
+      ],
+      "published": "2026-06-17T17:58:22Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.19334v1",
+      "abs_url": "https://arxiv.org/abs/2606.19334v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19334v1"
+    },
+    {
+      "title": "Do as I Do: Dexterous Manipulation Data from Everyday Human Videos",
+      "title_zh": "像我一样做：来自日常人类视频的灵巧操作数据",
+      "summary": "How can we scalably generate data for robotic manipulation, especially on human-like platforms such as dexterous multi-fingered hands? Learning from human videos has recently emerged as a likely answer to this question. However, difficulties in estimating hand-object interaction and crossing the human-to-robot embodiment gap have hindered the adoption of ab…",
+      "summary_zh": "我们如何可扩展地生成用于机器人操作的数据，尤其是在灵巧的多指手等类似人类的平台上？最近，从人类视频中学习可能成为这个问题的答案。然而，估计手-物体交互和跨越人与机器人实施差距的困难阻碍了采用丰富的单眼纯 RGB 人类视频作为机器人操作数据的主要来源。在这项工作中，我们提出了 DO AS I DO，一种将单眼 RGB 人类视频重建和重新定位到多指灵巧机器人手的算法。 DO AS I DO 从各种以自我为中心和外向中心的野外视频源重建手部物体交互。然后，该算法将这些手部与物体的交互估计重新定位为现实世界中可执行的一系列动作，从不同的人类视频中生成机器人完整的操作数据。总体而言，正如我们在具有基本事实的数据集和在线收集的视频剪辑数据集上的实验所示，DO AS I DO 在估计手部物体交互和从 RGB 视频中提取灵巧操作轨迹方面优于以前的最先进技术。我们的…",
+      "authors": [
+        "Bhawna Paliwal",
+        "Haritheja Etukuru",
+        "William Liang",
+        "Pieter Abbeel",
+        "Nur Muhammad Mahi Shafiullah",
+        "Jitendra Malik"
+      ],
+      "published": "2026-06-17T17:57:34Z",
+      "category": "cs.RO",
+      "arxiv_id": "2606.19333v1",
+      "abs_url": "https://arxiv.org/abs/2606.19333v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19333v1"
+    },
+    {
+      "title": "UBP2: Uncertainty-Balanced Preference Planning for Efficient Preference-based Reinforcement Learning",
+      "title_zh": "UBP2：基于偏好的高效强化学习的不确定性平衡偏好规划",
+      "summary": "Preference-based RL provides an approach to learning reward models from pairwise comparisons of behaviors, bypassing the need for explicit reward design. However, existing methods typically rely on passive data collection and suffer from poor sample efficiency, especially during the early stages of learning. We introduce a model-based approach that actively…",
+      "summary_zh": "基于偏好的强化学习提供了一种通过行为的成对比较来学习奖励模型的方法，从而绕过了显式奖励设计的需要。然而，现有方法通常依赖于被动数据收集，样本效率较差，尤其是在学习的早期阶段。我们引入了一种基于模型的方法，通过联合推理奖励、动态和价值函数的不确定性来积极指导探索。我们的方法，不确定性平衡偏好规划（UBP2），使用奖励、动态和价值函数模型的集合，根据结合了预期奖励、最终价值和认知不确定性的统一分数来评估候选轨迹。根据这一目标进行规划可以在利用和信息获取之间进行明确的权衡，而不需要临时的探索启发法。在标准正则性假设下，我们为有限范围和无限范围设置建立了次线性遗憾保证。根据经验，Meta-World 基准测试表明，UBP2 比基于无模型偏好的方法和基于非乐观模型的基线实现了更高的样本效率。",
+      "authors": [
+        "Mohamed Nabail",
+        "Leo Cheng",
+        "Jingmin Wang",
+        "Nicholas Rhinehart"
+      ],
+      "published": "2026-06-17T17:54:32Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.19328v1",
+      "abs_url": "https://arxiv.org/abs/2606.19328v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19328v1"
+    },
+    {
+      "title": "Rethinking Reward Supervision: Rubric-Conditioned Self-Distillation",
+      "title_zh": "重新思考奖励监督：标题条件自蒸馏",
+      "summary": "Post-training of reasoning language models is commonly driven by supervised distillation and reinforcement learning with verifiable rewards. Distillation often relies on chain-of-thought annotations that are expensive to obtain and may themselves be noisy, incomplete, or partially incorrect; even when the final solution is correct, an imperfect rationale ca…",
+      "summary_zh": "推理语言模型的后训练通常由具有可验证奖励的监督蒸馏和强化学习驱动。蒸馏通常依赖于思想链注释，这些注释的获取成本很高，而且本身可能是嘈杂的、不完整的或部分不正确的；即使最终的解决方案是正确的，不完美的理由也会干扰学习。另一方面，具有经过验证的奖励的强化学习通常将评估反馈压缩为标量信号，从而模糊了响应的哪些方面应该改进。我们提出了 \\textbf{Rubric-Conditioned Self-Distillation}，一个框架，它将 rubrics 作为结构化的、细粒度的反馈，用于政策自蒸馏。我们的方法以标准级别的标准为条件调整教师模型，并使用它为学生自己的采样轨迹提供标记级别的指导。这种设计避免了将单一参考原理作为唯一的监督目标。相反，评分细则指定了强响应应该满足的内容，从而在推理过程中实现比标量奖励优化更细粒度的信用分配。我们使用两阶段管道实例…",
+      "authors": [
+        "Siyi Gu",
+        "Jialin Chen",
+        "Sophia Zhou",
+        "Arman Cohan",
+        "Rex Ying"
+      ],
+      "published": "2026-06-17T17:54:04Z",
+      "category": "cs.AI",
+      "arxiv_id": "2606.19327v1",
+      "abs_url": "https://arxiv.org/abs/2606.19327v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19327v1"
+    },
+    {
+      "title": "Reference-Driven Multi-Speaker Audio Scene Generation from In-the-Wild Priors",
+      "title_zh": "根据野外先验生成参考驱动的多扬声器音频场景",
+      "summary": "Existing multi-speaker dialogue systems bind speakers to utterances through structured supervision: per-turn tags, multi-stream transcriptions, or learnable speaker embeddings. These systems operate within speech-only pipelines that produce clean vocal sequences without the ambient texture of real conversations. We take a different approach. Our method, Sce…",
+      "summary_zh": "现有的多说话人对话系统通过结构化监督将说话人与话语绑定：每轮标签、多流转录或可学习的说话人嵌入。这些系统在纯语音管道中运行，产生干净的声音序列，没有真实对话的环境纹理。我们采取不同的方法。我们的方法 ScenA 以文本到音频流匹配基础模型为条件，该模型在大规模野外数据上进行了预训练，直接在多个参考语音和描述整个多扬声器音频场景的自由形式自然语言提示上进行了预训练。利用这样的基础模型，我们可以继承其自然的、非工作室音频的能力：背景噪声、室内声学、重叠对话和自发的副语言事件，同时添加多扬声器控制，而无需任何每轮结构。具体来说，参考潜在变量被连接到模型的标记序列中，并通过轻量级身份感知位置编码来区分。然而，我们发现了这种方法的一个关键障碍：\\textit{参考快捷方式}。在标准噪声计划下的训练过程中，模型可以通过与噪声目标的声学相似性来识别匹配参考，完全…",
+      "authors": [
+        "Michael Finkelson",
+        "Daniel Segal",
+        "Eitan Richardson",
+        "Shahar Armon",
+        "Nani Goldring",
+        "Poriya Panet"
+      ],
+      "published": "2026-06-17T17:51:50Z",
+      "category": "cs.SD",
+      "arxiv_id": "2606.19325v1",
+      "abs_url": "https://arxiv.org/abs/2606.19325v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19325v1"
+    },
+    {
+      "title": "Data Intelligence Agents: Interpreting, Modeling, and Querying Enterprise Data via Autonomous Coding Agents",
+      "title_zh": "数据智能代理：通过自主编码代理解释、建模和查询企业数据",
+      "summary": "Production data integration is bottlenecked by repeated, lossy handoffs between data owners, engineers, and analysts who must collaboratively discover, structure, and query enterprise data. We present Data Intelligence Agents (DIA), a system of three agents (Data Interpreter, Schema Creator, and Query Generator) that compresses this workflow by treating aut…",
+      "summary_zh": "生产数据集成的瓶颈在于数据所有者、工程师和分析师之间重复的、有损的交接，他们必须协作发现、构建和查询企业数据。我们提出了数据智能代理（DIA），这是一个由三个代理（数据解释器、模式创建器和查询生成器）组成的系统，它通过将自主编码代理（ACA）视为一流的抽象来压缩此工作流程：代理不是发出文本，而是生成、执行、验证和修复具体工件，利用共享内存以实现经验重用，并将每个代理呈现出来供领域专家审查。 DIA 为企业客户部署在生产环境中。我们深入研究查询生成器，并在涵盖四个任务类别和四种方言的七个 SQL 基准测试中以完全自主的模式对其进行评估。它匹配或超过了所有七个中已发布的最佳结果，表明基于执行、基于 ACA 和共享内存构建的架构可以泛化整个数据智能工作负载，并且适应范围仅限于自然语言指令。",
+      "authors": [
+        "Anoushka Vyas",
+        "Aarushi Dhanuka",
+        "Sina Khoshfetrat Pakazad",
+        "Henrik Ohlsson"
+      ],
+      "published": "2026-06-17T17:45:32Z",
+      "category": "cs.MA",
+      "arxiv_id": "2606.19319v1",
+      "abs_url": "https://arxiv.org/abs/2606.19319v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19319v1"
+    },
+    {
+      "title": "Explaining Attention with Program Synthesis",
+      "title_zh": "用程序综合解释注意力",
+      "summary": "A longstanding goal of research on interpretable deep learning is to replace opaque neural computations with human-meaningful symbolic descriptions. In this paper, we propose an approach for approximating the behavior of components of deep networks with executable programs. We focus on attention heads in transformer language models. For a given head, we fir…",
+      "summary_zh": "可解释深度学习研究的一个长期目标是用对人类有意义的符号描述取代不透明的神经计算。在本文中，我们提出了一种用可执行程序来近似深度网络组件行为的方法。我们专注于 Transformer 语言模型中的注意力头。对于给定的头部，我们首先在随机选择的训练示例集合上计算其相关的注意力矩阵。接下来，我们用这些矩阵的摘要来提示预先训练的语言模型，并指示它生成一组 Python 程序，这些程序可以在仅给定输入句子中的文本的情况下重现相关的注意模式。最后，我们根据最终的一组程序对保留输入的行为的预测程度对程序进行重新排序。我们证明，一组少于 1,000 个此类生成的程序可以重现 GPT-2、TinyLlama-1.1B 和 Llama-3B 中头部的注意力模式，在 TinyStories 上实现平均 Intersection-over-Union 相似度高于 75%。…",
+      "authors": [
+        "Amiri Hayes",
+        "Belinda Li",
+        "Jacob Andreas"
+      ],
+      "published": "2026-06-17T17:40:55Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.19317v1",
+      "abs_url": "https://arxiv.org/abs/2606.19317v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19317v1"
+    },
+    {
+      "title": "NeuMesh++: Towards Versatile and Efficient Volumetric Editing with Disentangled Neural Mesh-based Implicit Field",
+      "title_zh": "NeuMesh++：通过基于解缠神经网格的隐式场实现多功能且高效的体积编辑",
+      "summary": "Recently neural implicit rendering techniques have evolved rapidly and demonstrated significant advantages in novel view synthesis and 3D scene reconstruction. However, existing neural rendering methods for editing purposes offer limited functionalities, e.g., rigid transformation and category-specific editing. In this paper, we present a novel mesh-based r…",
+      "summary_zh": "最近，神经隐式渲染技术发展迅速，并在新颖的视图合成和 3D 场景重建方面展现出显着的优势。然而，现有的用于编辑目的的神经渲染方法提供的功能有限，例如严格的变换和特定于类别的编辑。在本文中，我们提出了一种新颖的基于网格的表示，通过在网格顶点上使用解缠结的几何、纹理和语义代码对神经辐射场进行编码，从而提供了一组高效且全面的编辑功能，包括网格引导的几何编辑、具有纹理交换、填充和绘画操作的指定纹理编辑以及语义引导编辑。为此，我们开发了多种技术，包括新颖的局部空间参数化以提高渲染质量和训练稳定性，可学习的顶点修改颜色以提高纹理编辑的保真度，空间感知优化策略以实现精确的纹理编辑，以及语义辅助区域选择以减轻隐式字段编辑的繁琐注释。在真实和合成数据集上进行的大量实验和编辑示例证明了我们的方法在表示质量和编辑能力方面的优越性。项目页面：https://zju3dv.…",
+      "authors": [
+        "Chong Bao",
+        "Yuan Li",
+        "Bangbang Yang",
+        "Yujun Shen",
+        "Hujun Bao",
+        "Zhaopeng Cui"
+      ],
+      "published": "2026-06-17T17:39:21Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.19316v1",
+      "abs_url": "https://arxiv.org/abs/2606.19316v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19316v1"
+    },
+    {
+      "title": "Diffusion-Proof: Recipe for Formal Theorem Proving Beyond Auto-Regressive Generation",
+      "title_zh": "扩散证明：超越自回归生成的形式定理证明方法",
+      "summary": "Enhancing the formal math reasoning capabilities of Large Language Models (LLMs) has become a key focus in both mathematical and computer science communities in recent years. While significant progress has been made in using state-of-the-art Auto-Regressive (AR) LLMs for formal theorem proving, these models suffer from inherent limitations. Their next-token…",
+      "summary_zh": "近年来，增强大型语言模型（LLM）的形式数学推理能力已成为数学和计算机科学界的重点关注点。尽管在使用最先进的自回归 (AR) LLM 进行形式定理证明方面已经取得了重大进展，但这些模型仍存在固有的局限性。由于长程一致性和长序列错误复合的挑战，他们的下一个令牌预测生成方法可能会产生次优的性能。扩散法学硕士（dLLM）的最新进展提供了一种有前途的替代方案，它通过多令牌块的迭代去噪来生成文本。然而，维持远程一致性至关重要的 dLLM 在形式数学中的应用仍然没有得到充分研究。为了应对上述挑战，据我们所知，我们提出**扩散证明**，这是第一个训练和应用 dLLM 进行形式定理证明的框架。我们的框架包含两个模型的训练和推理方法。第一个是*dLLM-Prover-7B*，它通过远程连贯策略使用来执行整体证明写作。第二个是*dLLM-Corrector-7B*，这…",
+      "authors": [
+        "Ruida Wang",
+        "Rui Pan",
+        "Pengcheng Wang",
+        "Shizhe Diao",
+        "Tong Zhang"
+      ],
+      "published": "2026-06-17T17:38:32Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.19315v1",
+      "abs_url": "https://arxiv.org/abs/2606.19315v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19315v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "大模型发展重塑AI算力运营模式 - 中国科技网",
+      "summary": "大模型发展重塑AI算力运营模式 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Thu, 18 Jun 2026 11:13:18 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5QcHpqaFRHTkJIV3d0Zml0Ui0xYjZmUlF6R1c3cG1kbnFvMm5helI2VmZlTWxndl9FYWJHZHhJTURwd05qMlNHNk9SUGZDNXNZdjBSSnRvaU9qTlYtVHp3czd1Y1BDaHBpUzA1NDk3aEY?oc=5"
+    },
+    {
+      "title": "金融智能体元年：告别问答式AI，规模化应用落地 - 21财经",
+      "summary": "金融智能体元年：告别问答式AI，规模化应用落地 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Thu, 18 Jun 2026 12:08:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNa2ZCbTBCSUtHRTFiTnhON1g3X1dveGppbkRiT3luLW9YUkh1Zkpqbl9hMUpSS1JNYnVjNTROZHBhbHR5VkVUNmdiak03WTJlRTNFS0xyVEI4Qm03NnhFMjhtYV9tTWlBMXN4QzNBbWZtLU5mUGFQa3p2QmxrVF9kX0htTmlJUERfcTJ2clFmQQ?oc=5"
+    },
+    {
+      "title": "亚马逊高性价比AI芯片产品深受企业青睐 - 新浪财经",
+      "summary": "亚马逊高性价比AI芯片产品深受企业青睐 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Thu, 18 Jun 2026 11:48:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNDRzUGhOSFJNYW4zMWd6WkZnNjZWeGtuNl8zSGVYSUFNeE0tSUc5eGZTb3ppMl9sMnA3c0hDdkVFcG1hYXNUSmhRWi1CdGFQeC1oblg0NE0teWVYV2ZjSWE0VnhJemJjVElBY0hqVjgxUFRGR0JBbjFCWWFwRnNOR1gxNXlmbnc?oc=5"
+    },
+    {
+      "title": "押注长上下文与国产算力生态 智谱凭GLM-5.2跻身全球大模型头部阵营？ - 财联社",
+      "summary": "押注长上下文与国产算力生态 智谱凭GLM-5.2跻身全球大模型头部阵营？ 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Thu, 18 Jun 2026 11:01:14 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1YSXh6R21JSjJRUWVHdlJqdnI1dEJEWjRqR3IycXNlcUd6MXoxQ3NaUUEtbWp4STR5MllsQ3NlM2NWWGZQcWp1WA?oc=5"
+    },
+    {
+      "title": "从实业基底到智算版图，东阳光打造绿色算力全产业链闭环 - 新京报",
+      "summary": "从实业基底到智算版图，东阳光打造绿色算力全产业链闭环 新京报",
+      "source": "新京报",
+      "lang": "zh",
+      "published": "Thu, 18 Jun 2026 09:54:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1iRkRRUURHTXVMdy1MekdXbjBiamFHZ2t4Rjg2ZW1UVXZpZFZMa3M3OFhpYzFnLTM5Vnk4WGNoSEFZenUxVlJrWkYwWDlHa1Vxa0s3RmhTMXUwMHN2V2c3U3NrZ3Y?oc=5"
+    },
+    {
+      "title": "智能体生态的信任与共赢——中改圆桌“智能体生态的信任与共赢”研讨会会议综述 - 财新",
+      "summary": "智能体生态的信任与共赢——中改圆桌“智能体生态的信任与共赢”研讨会会议综述 财新",
+      "source": "财新",
+      "lang": "zh",
+      "published": "Thu, 18 Jun 2026 06:48:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE4yYnVtZHRyQk5ab0twSTVxQ1pac0tYRVRoWkUwbGFpcHUycmRxMFZPV2JtWDM5cDlURTBTbUdhbGREQXFXdHNOS25VbG9xWTZTd2JpMEpxOFU5Z3Nxd0FwUkVR?oc=5"
+    },
+    {
+      "title": "【科技日报】“智能编译优化系统”充分释放国产芯片算力 - 大连理工大学新闻网",
+      "summary": "【科技日报】“智能编译优化系统”充分释放国产芯片算力 大连理工大学新闻网",
+      "source": "大连理工大学新闻网",
+      "lang": "zh",
+      "published": "Thu, 18 Jun 2026 02:48:44 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE81b05aejUxY21DemI3MjgzSWg3eXBCRmtpTHJnN1FpNTJRNHBRczFLei1NZnRSS0tLY1pBMl83NzJRQ2NrZ2QwWXVINldMNUVHSnJsVWp6R1Y?oc=5"
+    },
+    {
+      "title": "2026中国国际金融展：神州鲲泰多元算力筑牢金融数智化底座 - 央广网",
+      "summary": "2026中国国际金融展：神州鲲泰多元算力筑牢金融数智化底座 央广网",
+      "source": "央广网",
+      "lang": "zh",
+      "published": "Thu, 18 Jun 2026 08:15:47 GMT",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4yTlRZMHNuYkU2bzZtaDNqT1h6bWxCZ2s1VnNNeWRhakNtMEdCLWNldjFwejU2VzZmT3hkaUIyNlBkZDFKTUlrNWFfMnNhQXVJOTVrLUVTS1hOREhOY0pSbW41dFp0UUpUY3FWQ0NTUy1mNE0?oc=5"
+    },
+    {
+      "title": "算苗3D TokenPU正式流片 推动国产AI云端大算力芯片再升级 - 新华网",
+      "summary": "算苗3D TokenPU正式流片 推动国产AI云端大算力芯片再升级 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Thu, 18 Jun 2026 02:32:01 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE80Q1RmZkdOWUxRWDVuaE1IRllyaGNXZVl1TXk1a1VTQ21aQldaMGtjOTg5NWhjVDRiQnBORkZrNVZZX0hHSlUxS0J4QnhrM3VNdEZaa2xQWUF3WVBKQVlDWDh3eDViQmZSdTVzZ2NHbXBsRUEtRUF4RGE5V3U?oc=5"
+    },
+    {
+      "title": "自主智能体遇阻：数据库成最大挑战 - Infoq.cn",
+      "summary": "自主智能体遇阻：数据库成最大挑战 Infoq.cn",
+      "source": "Infoq.cn",
+      "lang": "zh",
+      "published": "Thu, 18 Jun 2026 09:58:41 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1WcVdyVDNfS0ItNDZ5RWEwa3NBaXlIWlA0bDhBQUhRR3QweFhHenFXcHRxbHpHNjU1WmUtQUZIVXVNeTBId2lVTThkYm9aTVhUczJjUzR2RXVobWJEcFE?oc=5"
+    },
+    {
+      "title": "深智城集团支撑万亿级国产AI大模型训练取得重要突破 - sz.gov.cn",
+      "summary": "深智城集团支撑万亿级国产AI大模型训练取得重要突破 sz.gov.cn",
+      "source": "sz.gov.cn",
+      "lang": "zh",
+      "published": "Thu, 18 Jun 2026 03:01:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9KaERXOGNKSUpNUzBiUVRzYTEtRGc5cVlLNmVCQ2NFSm9PdTJub3ZmcjA5UjFEVzJHV052OHE3cW91SHNwWWxlbmtWVTJPYllVdzlVTGc0S3g3bTBONnRKTGdVeVVSbzU0MEo3Sks0QTVfWGlEUVE0?oc=5"
+    },
+    {
+      "title": "润和软件Jetto AI智能测试助手平台荣获“2026中国AI智能体领航者”奖项 - 同花顺财经",
+      "summary": "润和软件Jetto AI智能测试助手平台荣获“2026中国AI智能体领航者”奖项 同花顺财经",
+      "source": "同花顺财经",
+      "lang": "zh",
+      "published": "Thu, 18 Jun 2026 14:02:03 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5jRlotcWdKZjF2SGFtTEtsMklPckhFRkt3Q2pfdjBCRlhYbVFqSjd0Tk40TFUtMm1zdFlHSkpUdUpQRjdiRDVmYzQwQ3BOQkRlLVU2RkREak44cGxSY1JwUUVB?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 89408,
+      "language": ""
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 34079,
+      "language": "TypeScript"
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。令牌减少 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/chopratejas/headroom",
+      "author": "chopratejas",
+      "stars": 32760,
+      "language": "Python"
+    },
+    {
+      "title": "github-mcp-server",
+      "type": "GitHub",
+      "summary_en": "GitHub's official MCP Server",
+      "summary": "GitHub 的官方 MCP 服务器",
+      "url": "https://github.com/github/github-mcp-server",
+      "author": "github",
+      "stars": 30786,
+      "language": "Go"
+    },
+    {
+      "title": "fastmcp",
+      "type": "GitHub",
+      "summary_en": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+      "summary": "🚀 构建 MCP 服务器和客户端的快速、Python 方式。",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "author": "PrefectHQ",
+      "stars": 25697,
+      "language": "Python"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 379355,
+      "language": "TypeScript"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 196721,
+      "language": "Python"
+    },
+    {
+      "title": "n8n",
+      "type": "GitHub",
+      "summary_en": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "summary": "具有原生 AI 功能的公平代码工作流程自动化平台。将可视化构建与自定义代码、自托管或云、400 多个集成相结合。",
+      "url": "https://github.com/n8n-io/n8n",
+      "author": "n8n-io",
+      "stars": 193037,
+      "language": "TypeScript"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
