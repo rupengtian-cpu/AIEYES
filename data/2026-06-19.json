@@ -1,0 +1,505 @@
+{
+  "date": "2026-06-19",
+  "generated_at": "2026-06-19T14:24:23.596189+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "TimeProVe: Propose, then Verify for Efficient Long Video Temporal Reasoning in Activities of Daily Living",
+      "title_zh": "TimeProVe：提出并验证日常生活活动中的高效长视频时间推理",
+      "summary": "Long Video Question Answering (LVQA) requires identifying sparse, query-relevant evidence within hours-long untrimmed videos. Existing approaches either process videos densely with large vision-language models (VLMs), incurring prohibitive computational cost, or rely on sparse caption-based reasoning, which often misses temporally localized and motion-centr…",
+      "summary_zh": "长视频问答 (LVQA) 需要在长达数小时的未修剪视频中识别稀疏的、与查询相关的证据。现有方法要么使用大型视觉语言模型（VLM）密集处理视频，从而产生高昂的计算成本，要么依赖基于稀疏字幕的推理，这通常会错过时间局部和以运动为中心的证据。我们推出了 TimeProVe，这是一种经济高效的混合框架，用于长视频中的时间推理。 TimeProVe 首先采用轻量级模块来生成基于行动的答案——证据假设，然后调用昂贵的 VLM 仅进行有针对性的验证。我们框架的核心在于基于动作的候选证据（ACE）模块，该模块将时间局部动作转换为查询条件的候选答案，并通过轻量级 LLM 推理支持证据窗口。我们进一步介绍 OpenTSUBench (OTB)，这是一个开放式基准测试，旨在评估现实世界日常生活活动 (ADL) 场景中的基于时间的推理。实验表明，TimeProVe 的性能…",
+      "authors": [
+        "Arkaprava Sinha",
+        "Dominick Reilly",
+        "Siddharth Krishnan",
+        "Hieu Le",
+        "Srijan Das"
+      ],
+      "published": "2026-06-18T17:59:48Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.20561v1",
+      "abs_url": "https://arxiv.org/abs/2606.20561v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.20561v1"
+    },
+    {
+      "title": "UNIEGO: Proxies as Mediators for Unified Egocentric Video Representation Learning",
+      "title_zh": "UNIEGO：代理作为统一自我中心视频表示学习的中介",
+      "summary": "Egocentric video understanding is inherently limited by the narrow perspective of wearable cameras: a single viewpoint, a single modality, a single model cannot capture the full richness of human action. We argue that a truly expressive egocentric representation must subsume complementary knowledge across viewpoints, modalities, and foundation model represe…",
+      "summary_zh": "以自我为中心的视频理解本质上受到可穿戴相机狭隘视角的限制：单一视点、单一模式、单一模型无法捕捉人类行为的全部丰富性。我们认为，真正富有表现力的以自我为中心的表示必须包含跨观点、模式和基础模型表示的补充知识，但仍然可以仅从以自我为中心的视频中部署。为此，我们引入了一个分层的多教师蒸馏框架，该框架产生了 UNIEGO，这是一个统一的以自我为中心的编码器，由九名教师进行训练，涵盖自我-外在观点、RGB、深度和骨架模式，以及四个基础模型。我们的框架不是直接从异构教师中提取，这些教师的不兼容的架构和特征几何会导致冲突的梯度，而是插入一层特定于表示的代理模型，将不同的教师知识转化为同质的自我中心空间。第二个蒸馏阶段是选择性代理蒸馏 (SPD)，然后为每个训练样本自适应地选择正确且可信的代理子集，专门从可靠的监督中进行蒸馏并抑制错误信号。通过将 UNIEGO 初…",
+      "authors": [
+        "Wenhao Chi",
+        "Arkaprava Sinha",
+        "Dominick Reilly",
+        "Hieu Le",
+        "Srijan Das"
+      ],
+      "published": "2026-06-18T17:59:45Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.20559v1",
+      "abs_url": "https://arxiv.org/abs/2606.20559v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.20559v1"
+    },
+    {
+      "title": "Structuring and Tokenizing Distributed User Interest Context for Generative Recommendation",
+      "title_zh": "构建和标记分布式用户兴趣上下文以进行生成推荐",
+      "summary": "Generative recommendation is an emerging paradigm that has shown promise in industrial recommendation systems, aiming to predict users' next interactions from their historical behaviors. At the core of generative recommendation lies item tokenization, which bridges item semantics and recommendation models. However, existing methods often struggle to effecti…",
+      "summary_zh": "生成式推荐是一种新兴范式，在工业推荐系统中显示出前景，旨在根据用户的历史行为预测用户的下一次交互。生成推荐的核心是项目标记化，它连接了项目语义和推荐模型。然而，现有的方法通常很难同时有效地组织和注入复杂的用户行为和项目语义上下文到推荐模型中。一方面，现有的基于图的集成方法，例如图序列化和图神经网络，要么面临可扩展性问题，要么仅利用本地图信息。另一方面，现有的语义标记化方法通常依赖于启发式方法并且缺乏明确的监督信号，这可能导致语义表示不准确或次优。为了解决用户兴趣上下文建模中的这些限制，我们提出了 G2Rec，这是一个可扩展的框架，它将基于图的整体用户共同参与建模与语义标记化相结合，以实现工业规模的生成推荐。总体而言，G2Rec 使推荐模型能够捕获整体且基于语义的用户兴趣原型，而不需要真实的用户兴趣，从而在工业顺序推荐中提供更全面、更准确的用户行为上…",
+      "authors": [
+        "Ruizhong Qiu",
+        "Yinglong Xia",
+        "Dongqi Fu",
+        "Hanqing Zeng",
+        "Ren Chen",
+        "Xiangjun Fan"
+      ],
+      "published": "2026-06-18T17:58:32Z",
+      "category": "cs.IR",
+      "arxiv_id": "2606.20554v1",
+      "abs_url": "https://arxiv.org/abs/2606.20554v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.20554v1"
+    },
+    {
+      "title": "Predictability as a Fine-Grained Measure for Privacy",
+      "title_zh": "可预测性作为隐私的细粒度衡量标准",
+      "summary": "Differential privacy (DP) ensures rigorous individual-level privacy guarantees against even the most knowledgeable attackers, but its worst-case nature can impose a costly privacy-accuracy tradeoff. We introduce privacy via predictability, a fine-grained framework that explicitly incorporates the attacker's core knowledge, a compromised portion of the datas…",
+      "summary_zh": "差分隐私 (DP) 可确保严格的个人级隐私保证，即使是最有知识的攻击者也能免受攻击，但其最坏情况的性质可能会带来代价高昂的隐私准确性权衡。我们通过可预测性引入隐私，这是一个明确包含攻击者核心知识的细粒度框架、随机过程生成的数据集的受损部分以及指定的查询系列。可预测性将隐私泄露衡量为攻击者在观察算法输出后预测有关未知个体的敏感信息的能力的增量增益，超出了从受损数据中已经推断出的信息。我们表明，可预测性和 DP 通常是不可比较的：每个都可以很小，而另一个则很大。然而，在最坏的情况下，除了一个人之外的所有人都受到损害，并且所有二进制查询都被认为是敏感的，可预测性意味着互信息 DP。更一般地说，可预测性提供了针对特定敏感信息和特定攻击者模型定制的更细粒度的隐私度量。我们引入了一个通用框架，使用广义矩法（GMM）来分析当受损数据由平稳、遍历、混合过程生成时的…",
+      "authors": [
+        "Linda Lu",
+        "Karthik Sridharan"
+      ],
+      "published": "2026-06-18T17:55:31Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.20546v1",
+      "abs_url": "https://arxiv.org/abs/2606.20546v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.20546v1"
+    },
+    {
+      "title": "Current World Models Lack a Persistent State Core",
+      "title_zh": "当前的世界模型缺乏持久状态核心",
+      "summary": "World models are increasingly regarded as a decisive step toward artificial general intelligence, yet modeling the physical world demands more than rendering convincing frames on demand: it requires an internal world state that keeps evolving over time, decoupled from observation, so that objects endure and events run to their conclusions whether or not a c…",
+      "summary_zh": "世界模型越来越被认为是迈向通用人工智能的决定性一步，然而，对物理世界进行建模所需要的不仅仅是按需渲染令人信服的框架：它需要一个随着时间的推移而不断演变的内部世界状态，与观察脱钩，以便无论摄像机是否在观察，物体都能持续存在，事件也能得出结论，就像月球在无人注视时保持其轨道一样。这一要求是现有基准的盲点，现有基准奖励保真度、运动和相机可控性等表面属性，而从不询问生成的世界在不被观察到的情况下是否会不断发展。我们引入了 \\textbf{WRBench}，这是第一个系统诊断基准，它将相机运动视为对可观察性的干预，并将评估解析为人类校准的链，询问相机是否执行所请求的交互，场景在视图中是否保持连续和可识别，以及返回的目标是否与设置的运动事件保持一致。在跨越四种控制范式的 23 个模型的 9{,}600 个视频中，一项发现被证明是顽固的：当前系统将观察到的世界维…",
+      "authors": [
+        "Jinpeng Lu",
+        "Dexu Zhu",
+        "Haoyuan Shi",
+        "Linghan Cai",
+        "Guo Tang",
+        "Yinda Chen"
+      ],
+      "published": "2026-06-18T17:55:15Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.20545v1",
+      "abs_url": "https://arxiv.org/abs/2606.20545v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.20545v1"
+    },
+    {
+      "title": "CalTennis: Large Multi-View Tennis Video Dataset and Benchmark of Monocular-to-3D Pose Estimation",
+      "title_zh": "CalTennis：大型多视图网球视频数据集和单目到 3D 姿势估计的基准",
+      "summary": "The Caltech Tennis Dataset (CalTennis) is a large-scale video benchmark for evaluating monocular-to-3D pose estimation in the wild. CalTennis comprises over 11 million frames (51 hours) of tennis practice and match play from 40 players, captured with 2-6 synchronized cameras at 60 Hz. It is 10 times larger than existing in-the-wild human motion video datase…",
+      "summary_zh": "加州理工学院网球数据集 (CalTennis) 是一个大规模视频基准，用于评估野外单眼到 3D 姿势估计。 CalTennis 包含 40 名球员的超过 1100 万帧（51 小时）的网球练习和比赛，由 2-6 个同步摄像机以 60 Hz 的频率拍摄。它比现有的野外人体运动视频数据集大 10 倍，比现有 MOCAP 地面实况数据集大 3 倍，并且是第一个提供专家运动运动同步多视图记录的大规模基准。多视图设置可以对单目到 3D 姿态估计算法进行廉价、无标签的评估。我们描述了一种简单、标准化的协议，无需专门的设备或专业知识即可实现数据收集，以及全自动视频校准和同步。在 CalTennis 上对最先进的单眼到 3D 姿势方法进行基准测试，我们发现虽然 3D 关节角度恢复现在相当准确，但所有模型都难以一致地估计深度和脚部接触。我们进一步提出了两个新颖的表现…",
+      "authors": [
+        "Ilona Demler",
+        "Xinran Xie",
+        "Blake Werner",
+        "Anna Szczuka",
+        "Pietro Perona"
+      ],
+      "published": "2026-06-18T17:52:22Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.20542v1",
+      "abs_url": "https://arxiv.org/abs/2606.20542v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.20542v1"
+    },
+    {
+      "title": "Multi-Task Bayesian In-Context Learning",
+      "title_zh": "多任务贝叶斯情境学习",
+      "summary": "Bayesian predictive inference provides a principled framework for uncertainty quantification, data efficiency, and robust generalization. However, exact inference is often intractable, and scalable approximations may remain computationally expensive or require restrictive modeling assumptions that degrade predictive performance. Prior-Data Fitted and in-con…",
+      "summary_zh": "贝叶斯预测推理为不确定性量化、数据效率和稳健泛化提供了原则框架。然而，精确的推理通常很棘手，并且可扩展的近似可能在计算上仍然昂贵或需要限制性的建模假设，从而降低预测性能。先验数据拟合和上下文模型最近通过学习将数据集直接映射到预测分布而成为摊销替代方案，但现有方法与训练先验的支持紧密耦合，并且缺乏在测试时适应新先验的明确机制，导致分布转移下的鲁棒性有限。我们引入了一种用于摊销分层贝叶斯预测推理的多任务上下文学习框架，该框架将先验信息明确表示为上下文数据集的前缀。经过先验任务和目标任务序列训练的变压器可以学习在先验家族中调整其预测。在一系列难度越来越大的评估中，包括元分布外的先验和具有高维潜在结构的先验，我们的方法与预言机贝叶斯预测器相匹配，同时速度快了几个数量级。我们进一步证明了它在现实世界时空温度预测基准上的实际相关性。代码可在 https://g…",
+      "authors": [
+        "Qingyang Zhu",
+        "Eric Karl Oermann",
+        "Kyunghyun Cho"
+      ],
+      "published": "2026-06-18T17:50:10Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.20538v1",
+      "abs_url": "https://arxiv.org/abs/2606.20538v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.20538v1"
+    },
+    {
+      "title": "Execution-State Capsules: Graph-Bound Execution-State Checkpoint and Restore for Low-Latency, Small-Batch, On-Device Physical-AI Serving",
+      "title_zh": "执行状态胶囊：用于低延迟、小批量、设备上物理 AI 服务的图形绑定执行状态检查点和恢复",
+      "summary": "Mainstream LLM serving systems reuse prefix work mainly through paged or radix key-value (KV) caches. This is highly effective for high-throughput, high-concurrency serving, but it manages only one positional fragment of execution state: the KV cache. We study the opposite regime: low-latency, small-batch, on-device physical-AI serving, where interactive LL…",
+      "summary_zh": "主流LLM服务系统主要通过分页或基数键值（KV）缓存来重用前缀工作。这对于高吞吐量、高并发服务非常有效，但它只管理执行状态的一个位置片段：KV 缓存。我们研究相反的机制：低延迟、小批量、设备上的物理人工智能服务，其中交互式 LLM 代理、语音系统和机器人策略在紧张的响应预算下反复分支、重置、中断和重新进入。我们引入了执行状态胶囊、图形绑定检查点和恢复机制，用于在提交的边界处实现完整的可恢复状态。 FlashRT 是一个白盒、面向后端的内核运行时，其评估的 NVIDIA CUDA 后端在连续的静态缓冲区上运行捕获的图形计划，没有块表间接。因为活动状态是一组封闭的命名缓冲区，所以胶囊可以快照、恢复、分叉或回滚整个执行边界，包括 KV、循环状态、卷积状态、MTP 状态和元数据。这将重用从令牌寻址的 KV 片段转移到图形绑定的执行状态边界。在 RTX 50…",
+      "authors": [
+        "Liang Su"
+      ],
+      "published": "2026-06-18T17:49:36Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.20537v1",
+      "abs_url": "https://arxiv.org/abs/2606.20537v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.20537v1"
+    },
+    {
+      "title": "The FID Lottery: Quantifying Hidden Randomness in Generative-Model Evaluation",
+      "title_zh": "FID 彩票：量化生成模型评估中隐藏的随机性",
+      "summary": "The Frechet Inception Distance (FID) is the de facto arbiter of image generation, yet most papers report just a single number from a single trained model using a single sampling seed. How reproducible is that number if we retrain the model, or merely resample from it? In this paper, we treat FID as a random variable on a two-axis panel of training and gener…",
+      "summary_zh": "Frechet 起始距离 (FID) 是图像生成事实上的仲裁者，但大多数论文仅报告使用单个采样种子的单个训练模型的单个数字。如果我们重新训练模型，或者仅仅从中重新采样，这个数字的可重复性如何？在本文中，我们将 FID 视为训练和生成种子两轴面板上的随机变量，并直接在数百个在类条件 ImageNet 256x256 上训练的 SiT 网络上测量其方差。我们报告了令人惊讶的发现：(a) 使用具有不同种子的相同配方重新训练模型，FID 移动量（在 Inception 特征空间中）比从固定网络重新绘制样本多 3.2 倍。 (b) 该差距由三个因素驱动：随机初始化、数据排序和流匹配损失的每步高斯噪声。 (c) 增加计算或模型大小几乎不会收紧扩散，将 FID 变异系数 (CoV) 保持在 1-2% 的范围内。 (d) 每个单元的无分类器引导调整将传播范围减半，…",
+      "authors": [
+        "Nicolas Dufour",
+        "Alexei A. Efros",
+        "Patrick Pérez"
+      ],
+      "published": "2026-06-18T17:49:32Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.20536v1",
+      "abs_url": "https://arxiv.org/abs/2606.20536v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.20536v1"
+    },
+    {
+      "title": "VisDom: Sparse Novel View Synthesis with Visible Domain Constraint",
+      "title_zh": "VisDom：具有可见域约束的稀疏新颖视图合成",
+      "summary": "Sparse novel view synthesis (NVS) remains challenging due to the ambiguity of recovering 3D geometry from few input views. While NeRF- and Gaussian Splatting (GS)-based methods perform well with dense supervision, they often overfit in sparse settings, producing floating artifacts and inconsistent geometry. Silhouette consistency is commonly used as a regul…",
+      "summary_zh": "由于从少量输入视图恢复 3D 几何图形的模糊性，稀疏新颖视图合成 (NVS) 仍然具有挑战性。虽然基于 NeRF 和高斯分布 (GS) 的方法在密集监督下表现良好，但它们经常在稀疏设置中过度拟合，产生浮动伪影和不一致的几何形状。轮廓一致性通常用作正则化器，但它仍然不够，因为轮廓一致的区域可能会超出真实的对象几何形状。我们引入了 VisDom，这是一种免学习的几何约束，它通过强制执行最低的多视图可见性要求来增强基于经典雕刻的视觉外壳重建。具体来说，我们将可见域定义为至少 $K$ 视图观察到的 3D 空间子集，并将其用作标准基于轮廓的重建之上的附加过滤标准。这在稀疏视图设置中提供了更强的空间先验。我们通过在优化过程中限制体积采样和指导高斯放置，将 VisDom 集成到隐式 (NeRF) 和显式 (GS) 管道中。在三个具有挑战性的数据集上进行的实验表明…",
+      "authors": [
+        "Mariia Gladkova*",
+        "Tarun Yenamandra*",
+        "Edmond Boyer",
+        "Robert Maier",
+        "Tony Tung",
+        "Daniel Cremers"
+      ],
+      "published": "2026-06-18T17:45:37Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.20531v1",
+      "abs_url": "https://arxiv.org/abs/2606.20531v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.20531v1"
+    },
+    {
+      "title": "StylisticBias: A Few Human Visual Cues Drive Most Social Biases in MLLMs",
+      "title_zh": "风格偏见：少数人类视觉线索导致 MLLM 中的大多数社会偏见",
+      "summary": "Multimodal large language models (MLLMs) are increasingly deployed in personally and societally consequential settings, yet the visual cues that shape how these models judge people remain poorly understood. Prior work often compares different (groups of) individuals, making it difficult to separate appearance effects from identity differences. We introduce…",
+      "summary_zh": "多模态大语言模型 (MLLM) 越来越多地部署在对个人和社会有重大影响的环境中，但影响这些模型如何判断人们的视觉线索仍然知之甚少。先前的工作经常比较不同（群体）的个体，因此很难将外观影响与身份差异分开。我们引入了 StylisticBias，这是一个用于评估 MLLM 属性级社会偏见的受控基准。我们生成 500 个逼真的基本面，并为每个面创建约 50 个单属性变体，生成约 25K 图像。这种设计保持身份固定，并一次改变一个视觉属性。它让我们能够衡量特定线索如何改变模型判断。我们在 25 个二元社会判断场景中评估了 6 个 MLLM。我们发现年龄和体型主导着身份层面的影响，而时尚风格和其他视觉线索则推动了最大的属性层面的转变。我们进一步发现，大约 15 个属性占总变异的近 80%，表明偏差集中在一小部分视觉线索中。在语义上与外表一致的判断中，敏感性最…",
+      "authors": [
+        "Shaghayegh Kolli",
+        "Timo Cavelius",
+        "Nafiseh Nikeghbal",
+        "Samantha Dalal",
+        "Jana Diesner"
+      ],
+      "published": "2026-06-18T17:39:56Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.20527v1",
+      "abs_url": "https://arxiv.org/abs/2606.20527v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.20527v1"
+    },
+    {
+      "title": "SARLO-80: Worldwide Slant SAR Language Optic Dataset 80cm",
+      "title_zh": "SARLO-80：全球倾斜 SAR 语言光学数据集 80cm",
+      "summary": "Multimodal foundation models have advanced rapidly thanks to large optical benchmarks, but comparable resources for synthetic aperture radar (SAR) remain limited. Existing SAR--optical datasets largely rely on low-resolution, intensity-only Ground Range Detected~(GRD) products and do not preserve complex-valued SAR measurements or native acquisition geometr…",
+      "summary_zh": "得益于大型光学基准，多模态基础模型发展迅速，但合成孔径雷达 (SAR) 的类似资源仍然有限。现有的 SAR 光学数据集在很大程度上依赖于低分辨率、仅强度的地面范围检测 (GRD) 产品，并且不保留复值 SAR 测量或本地采集几何结构，这限制了物理接地的多模态学习。特别是，仍然缺乏结合超高分辨率（VHR）SAR SLC、对齐光学图像和自然语言描述的大规模公共数据集。我们提出了一个 VHR SAR 光学文本数据集，该数据集是根据开放访问的 Umbra 聚光灯采集构建的，作为传感器独立复杂数据 (SICD) 分发。我们从全球约 2,500 个场景（VV/HH、20cm--2m 原始分辨率）中，通过带限 FFT 重采样将所有 SAR 数据标准化为 80cm 斜距网格，并将图像平铺为 1024 x 1024 块。对于每个 SAR 补丁，我们检索高分辨率光学瓦…",
+      "authors": [
+        "Solène Debuysère",
+        "Nicolas Trouvé",
+        "Nathan Letheule",
+        "Elise Colin",
+        "Georgia Channing"
+      ],
+      "published": "2026-06-18T17:38:01Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.20523v1",
+      "abs_url": "https://arxiv.org/abs/2606.20523v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.20523v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "财经慧说丨AI大模型上市，路径通了 - 新华网",
+      "summary": "财经慧说丨AI大模型上市，路径通了 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Fri, 19 Jun 2026 11:33:58 GMT",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBkaE5FVWxkMnpURmpFNUJzWFpDWEV0LVRiWXBlSUhNbDdjQTF6a3djdzNEeUJJUmtNR0VaakFBWUlITlY2ZlpHZlk2TDVJRE5HNHdwUlp0MUNJRThSd1cyOEU4VmxpQVg4QW1wdFhmeFpfQkFuNGhJ?oc=5"
+    },
+    {
+      "title": "金融智能体元年：告别问答式AI，规模化应用落地 - 21财经",
+      "summary": "金融智能体元年：告别问答式AI，规模化应用落地 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Fri, 19 Jun 2026 10:30:47 GMT",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOeWxFcTdVWGJYaUo4US16MUdZSVpSZTgtUTZqYlpjNktObkJrcWt2UTNNR3VJQkFVczVIUllYRjNWc2ZYNzhWT3VFVzJhMFZsWk1VZ04zSThfcUhpa0lPM1RDY0htYTczbmEyOW1jM3RMOHVDWkRPSUpFdm5hSW9DcXBSVXdCZ0R6b0VKSDdXemNHR1Rw?oc=5"
+    },
+    {
+      "title": "“企业家+科学家+投资人” 这款AI大模型助力科技成果转化 - 新华网",
+      "summary": "“企业家+科学家+投资人” 这款AI大模型助力科技成果转化 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Fri, 19 Jun 2026 12:52:22 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQUZTa0RyeFRuQzV5bWdyZi0yOEt0aHJfREtXZ1dBTUIwWTlBYUg1cUkxQlJwTWJVdGQ1Y1JoT0diNWVoVGU4S1JqWEhmSmI1WW9NZ2pGWUZvS0tRYVBPbm1MZnM5ZC1BRTNaZWxsZXpwbVV0bE0yWmluTU1FYmdnclhB?oc=5"
+    },
+    {
+      "title": "芯报丨亚马逊拟向第三方数据中心销售AI芯片 - 电子工程专辑",
+      "summary": "芯报丨亚马逊拟向第三方数据中心销售AI芯片 电子工程专辑",
+      "source": "电子工程专辑",
+      "lang": "zh",
+      "published": "Fri, 19 Jun 2026 12:30:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE53WWNPVEl0WHBfUHpxcnhuSTFabkpHYTVxakV4RHpPWHhEdjk2V0tZUTBqcDdleFk1VFBGdUxMUFcxZnJwYjl1dkNBU256enpVdXVv?oc=5"
+    },
+    {
+      "title": "中国大模型何时能达Fable级别？马斯克预计明年Q1 唐杰称不用那么久 - 财联社",
+      "summary": "中国大模型何时能达Fable级别？马斯克预计明年Q1 唐杰称不用那么久 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Fri, 19 Jun 2026 03:18:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5DQlJLVTRwVzJZM1pWT1ljQm1zeXRtbVNzU0pfWWNuZy05SERCSTA5R0I0eDFoeUh0ZnlqYTI1VkMzTGlDTm5sUA?oc=5"
+    },
+    {
+      "title": "AI芯片Napier，从数学底层推翻了GPU的算力逻辑 - 新浪财经",
+      "summary": "AI芯片Napier，从数学底层推翻了GPU的算力逻辑 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Fri, 19 Jun 2026 08:38:49 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBGUmdhV0Vod3ZHdy1zTUhhRENVLVRTbFk2QkVZY2VSRHZRRjNEeWM2X0g2Wk0xbFRHeHhwd2xnMVQyNmYtQWFJRjhRaUlULXkxYlNycU9jMEg4REJyZS11NFBvSV9hY2R3SjNPdGN3WHU1SGZ1RFE?oc=5"
+    },
+    {
+      "title": "OpenClaw、Hermes背后：智能体时代的攻防规则正在改变 - 智源社区",
+      "summary": "OpenClaw、Hermes背后：智能体时代的攻防规则正在改变 智源社区",
+      "source": "智源社区",
+      "lang": "zh",
+      "published": "Fri, 19 Jun 2026 10:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBuSC1jTmlNOVFTLVZVUGl2LUFBQmduRmdEcWdpYXVOOExVM0cyNklsTkdHNTNCM1NSTWNtN1RaR1FCZ1V4N3QtNw?oc=5"
+    },
+    {
+      "title": "网友提问“中国大模型何时达到Fable级别？”，马斯克“可能明年Q1”，智谱CEO唐杰“不需要那么久” - 华尔街见闻",
+      "summary": "网友提问“中国大模型何时达到Fable级别？”，马斯克“可能明年Q1”，智谱CEO唐杰“不需要那么久” 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Fri, 19 Jun 2026 01:45:45 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9BTU42dmN6b05FODgtQjRWbzJZcm9GTmdrallNNTVRd2NEZWtyQnVCOVBENUNOaVJOQ0JHNWE4NGdERkVQRm1Pc1FXTjVuSERlV0VV?oc=5"
+    },
+    {
+      "title": "探访广西防洪大模型：“超级大脑”守护八桂安澜 - 广西新闻网",
+      "summary": "探访广西防洪大模型：“超级大脑”守护八桂安澜 广西新闻网",
+      "source": "广西新闻网",
+      "lang": "zh",
+      "published": "Fri, 19 Jun 2026 06:08:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE40SkY3OWFCU1FCNlV5YmtrQnBlOGxQS3E0TDZITG9qYmY5a3FIQzJXRVNDRW9STW9SOFVNenpZRGx1NEtWbDU5eU5uRl9JR18yTTBOcHh0ZnU3NXM3SkdINkh4aUJxMHU2TlVlNXc1VXZ2cUl2R0hTdFI1MDJCZHc?oc=5"
+    },
+    {
+      "title": "开源模型黄金时代来临：白宫叫停Anthropic顶级模型意味着什么？ - 财联社",
+      "summary": "开源模型黄金时代来临：白宫叫停Anthropic顶级模型意味着什么？ 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Fri, 19 Jun 2026 06:33:47 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE54djQtYzZFaC1vT0JJR1lqeW01d0t4MzNpTWdMVm9DZ0NIaGtNcDQ5dzVLMzByeXZFLTdwUVNwU0NFN3FOal9DeQ?oc=5"
+    },
+    {
+      "title": "上交所发布：AI（大模型）企业适用科创板第五套上市标准审核指引 - 新浪网",
+      "summary": "上交所发布：AI（大模型）企业适用科创板第五套上市标准审核指引 新浪网",
+      "source": "新浪网",
+      "lang": "zh",
+      "published": "Fri, 19 Jun 2026 14:06:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBiN1NfWWl5eUFTTmpGMWRVQ3l3OENNR1huYkREQWJMcFZ3cnQxaVdjbmU1Tkd4X3QtVzJOZEJlZjJYNkROQXFvdThaczNmaGNGUXpRVFhFcXpWQXlMSnkyQUxFanQ0SFdnaHUzYXEzVGVmOXpoN3ItVXpjc2ZJQQ?oc=5"
+    },
+    {
+      "title": "“新华语典”权威AI时政资讯智能体赋能包头高质量发展座谈会举行 - 新华网",
+      "summary": "“新华语典”权威AI时政资讯智能体赋能包头高质量发展座谈会举行 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Fri, 19 Jun 2026 08:37:28 GMT",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNOC02Q243aVBtc0tSNlZDRnJfMDZKdUhIaEJMNDc2WnRia3BaS1pEYUpKdUNaTTRjT2hPYnVseGpySjVUM1NteXBETGVKQTExc1FnVDlSNlVodzlFT2ktYk1aQ0JnM3hOT2FZWlY1R194VXlzVXR6c2dVbjFvVjBXTjJCaw?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 89453,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。减少 60-95% 的标记，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/chopratejas/headroom",
+      "author": "chopratejas",
+      "stars": 37074,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 34114,
+      "language": "TypeScript"
+    },
+    {
+      "title": "github-mcp-server",
+      "type": "GitHub",
+      "summary_en": "GitHub's official MCP Server",
+      "summary": "GitHub 的官方 MCP 服务器",
+      "url": "https://github.com/github/github-mcp-server",
+      "author": "github",
+      "stars": 30813,
+      "language": "Go"
+    },
+    {
+      "title": "fastmcp",
+      "type": "GitHub",
+      "summary_en": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+      "summary": "🚀 构建 MCP 服务器和客户端的快速、Python 方式。",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "author": "PrefectHQ",
+      "stars": 25711,
+      "language": "Python"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 379486,
+      "language": "TypeScript"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 197392,
+      "language": "Python"
+    },
+    {
+      "title": "n8n",
+      "type": "GitHub",
+      "summary_en": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "summary": "具有原生 AI 功能的公平代码工作流程自动化平台。将可视化构建与自定义代码、自托管或云、400 多个集成相结合。",
+      "url": "https://github.com/n8n-io/n8n",
+      "author": "n8n-io",
+      "stars": 193145,
+      "language": "TypeScript"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
