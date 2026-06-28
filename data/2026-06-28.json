@@ -1,0 +1,508 @@
+{
+  "date": "2026-06-28",
+  "generated_at": "2026-06-28T10:55:06.713330+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Ask, Solve, Generate: Self-Evolving Unified Multimodal Understanding and Generation via Self-Consistency Rewards",
+      "title_zh": "提问、解决、生成：通过自我一致性奖励自我进化统一多模式理解和生成",
+      "summary": "Most unified large multimodal models (LMMs) that support both visual understanding and image generation still rely on curated post-training supervision, such as human annotations, preference labels, or external reward models. We ask whether a unified LMM can improve both abilities autonomously using only unlabeled images. We propose a self-evolving training…",
+      "summary_zh": "大多数支持视觉理解和图像生成的统一大型多模态模型 (LMM) 仍然依赖于精心策划的训练后监督，例如人工注释、偏好标签或外部奖励模型。我们询问统一的 LMM 是否可以仅使用未标记的图像自主地提高这两种能力。我们提出了一个自我进化的训练框架，具有三个内部角色：生成视觉问题的提议者、回答和评估问题的求解器以及合成图像的生成器。训练仅使用自衍生的一致性信号，没有人工注释、偏好标签或任务训练的外部奖励/判断模型。为了稳定学习，我们引入了求解器令牌熵（STE），这是一种基于令牌级预测不确定性的连续难度信号，即使样本级一致性变得不可靠，它仍然有用。对于图像生成，我们设计了一种多尺度内部评估方案，将问答保真度评分与循环一致的字幕相结合。这创建了求解器介导的耦合，更好的视觉理解可以实现更可靠的生成评估和更强的内部训练信号。该框架在基于扩散的 BLIP3o、整流流 B…",
+      "authors": [
+        "Ritesh Thawkar",
+        "Shravan Venkatraman",
+        "Omkar Thawakar",
+        "Abdelrahman Shaker",
+        "Fahad Khan",
+        "Hisham Cholakkal"
+      ],
+      "published": "2026-06-25T17:59:57Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.27376v1",
+      "abs_url": "https://arxiv.org/abs/2606.27376v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27376v1"
+    },
+    {
+      "title": "Scalable Behavior Cloning with Open Data, Training, and Evaluation",
+      "title_zh": "通过开放数据、培训和评估进行可扩展的行为克隆",
+      "summary": "We introduce ABC, a fully open-source stack for manipulation with behavior cloning. At its core is ABC-130K: the largest open-source teleoperation dataset to date, featuring 3,500 hours of data spanning over 130K episodes across 195 diverse tasks. Furthermore, we open-source our accessible hardware setup, training infrastructure, and simulation pipeline. We…",
+      "summary_zh": "我们介绍 ABC，一个完全开源的堆栈，用于通过行为克隆进行操作。其核心是 ABC-130K：迄今为止最大的开源远程操作数据集，包含 3,500 小时的数据，涵盖 195 个不同任务的 130K 多个片段。此外，我们还开源了可访问的硬件设置、培训基础设施和模拟管道。我们还发布了 400 小时的 sim-teleop 数据，并提供了一个协同训练方案，可产生相关的模拟和现实世界评估，为在昂贵的现实世界评估之前消除模型设计和培训决策提供可靠的代理。我们探索各种训练方法，并比较扩散变压器 (DiT) 和视觉-语言-动作 (VLA) 模型的常见架构选择，将我们的发现基于现实世界的评估。由此产生的策略成功地执行了灵巧的任务，例如折叠盒子和从钱包中提取信用卡。通过提供可重复的工具包，我们的目标是将研究人员置于平等的基础上，为作为一个社区共同学习行为克隆的基础知识奠…",
+      "authors": [
+        "Arthur Allshire",
+        "Himanshu Gaurav Singh",
+        "Ritvik Singh",
+        "Adam Rashid",
+        "Hongsuk Choi",
+        "David McAllister"
+      ],
+      "published": "2026-06-25T17:59:57Z",
+      "category": "cs.RO",
+      "arxiv_id": "2606.27375v1",
+      "abs_url": "https://arxiv.org/abs/2606.27375v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27375v1"
+    },
+    {
+      "title": "Paying More Attention to Visual Tokens in Self-Evolving Large Multimodal Models",
+      "title_zh": "在自我进化的大型多模态模型中更加关注视觉标记",
+      "summary": "Recently, self-evolving large multimodal models (LMMs) have received attention for improving visual reasoning in a purely unsupervised setting. However, multi-role self-play and self-consistency reward schemes in existing self-evolving LMMs optimize answer agreement without ensuring the decoder attends to visual content, relying instead on statistical langu…",
+      "summary_zh": "最近，自进化大型多模态模型（LMM）因在纯无监督环境中改善视觉推理而受到关注。然而，现有的自进化 LMM 中的多角色自我对弈和自一致性奖励方案优化了答案一致性，但没有确保解码器关注视觉内容，而是依赖统计语言先验来产生自一致性输出。这导致了我们称之为视觉条件不足的持续失败模式，其中解码器在生成过程中依赖于语言先验而不是图像，表现为对视觉标记的关注不足。因此，当前的自我进化 LMM 在视觉语言理解任务（例如图像字幕和视觉问答）上遇到了困难。为了解决这个问题，我们提出了VISE（视觉不变性自我进化），这是一个纯粹的无监督自我进化框架，它通过两个互补的基于不变性的奖励直接规范模型的视觉调节策略：几何不变性奖励在已知变换下强制空间一致性，语义不变性奖励通过要求模型在预测区域受到干扰时识别证据的缺失来惩罚证据不可知的生成。 VISE 在单一模型中运行，无需专家…",
+      "authors": [
+        "Shravan Venkatraman",
+        "Ritesh Thawkar",
+        "Omkar Thawakar",
+        "Rao Muhammad Anwer",
+        "Hisham Cholakkal",
+        "Salman Khan"
+      ],
+      "published": "2026-06-25T17:59:55Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.27373v1",
+      "abs_url": "https://arxiv.org/abs/2606.27373v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27373v1"
+    },
+    {
+      "title": "Reinforcement Learning without Ground-Truth Solutions can Improve LLMs",
+      "title_zh": "没有真实解决方案的强化学习可以提高法学硕士",
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) for training LLMs typically rely on ground-truth answers to assign rewards, limiting their applicability to tasks where the ground-truth solution is unknown. We introduce a \\textbf{R}anking-\\textbf{i}nduced \\textbf{VER}ifiable framework (RiVER) that trains LLMs on score-based optimization tasks without g…",
+      "summary_zh": "用于训练法学硕士的可验证奖励强化学习（RLVR）通常依赖真实答案来分配奖励，这限制了它们对真实解决方案未知的任务的适用性。我们引入了一个 \\textbf{R}anking-\\textbf{i}duced \\textbf{VER} 可框架（RiVER），该框架在没有真实解决方案的情况下在基于分数的优化任务上训练 LLM，使用确定性执行反馈作为连续值监督。当将群体相对强化学习应用于此类连续奖励时，我们发现了两个关键挑战：\\emph{规模优势}，即测试实例中未校准的分数大小会扭曲策略更新；以及 \\emph{频率优势}，即重复采样的次优解决方案可能会超过罕见但更强的候选解决方案。 RiVER 通过校准奖励塑造来解决这些挑战，该奖励塑造使用实例比较并强调顶级求解器，同时保留其他有效解决方案的有限反馈。我们对 12 个 AtCoder Heuristic Co…",
+      "authors": [
+        "Yingyu Lin",
+        "Qiyue Gao",
+        "Nikki Lijing Kuang",
+        "Xunpeng Huang",
+        "Kun Zhou",
+        "Tongtong Liang"
+      ],
+      "published": "2026-06-25T17:59:36Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.27369v1",
+      "abs_url": "https://arxiv.org/abs/2606.27369v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27369v1"
+    },
+    {
+      "title": "Autoregressive Boltzmann Generators",
+      "title_zh": "自回归玻尔兹曼发生器",
+      "summary": "Efficient sampling of molecular systems at thermodynamic equilibrium is a hallmark challenge in statistical physics. This challenge has driven the development of Boltzmann Generators (BGs), which allow rapid generation of uncorrelated equilibrium samples by combining a generative model with exact likelihoods and an importance sampling correction. However, m…",
+      "summary_zh": "在热力学平衡下对分子系统进行有效采样是统计物理学中的一个标志性挑战。这一挑战推动了玻尔兹曼生成器 (BG) 的发展，它可以通过将生成模型与精确似然和重要性采样校正相结合来快速生成不相关的平衡样本。然而，现代 BG 主要依赖于归一化流（NF），由于严格的可逆性约束（离散时间）或计算昂贵的似然性（连续时间），其表达能力受到限制。在本文中，我们提出了自回归玻尔兹曼生成器 (ArBG)——一种新颖的自回归建模框架——它通过脱离基于流的 BG 范式克服了这些限制。 ArBG 规避了流的拓扑约束并支持顺序推理时间干预，同时通过利用大型语言模型中有效的架构来提供增强的可扩展性。我们凭经验证明，ArBG 在所有基准测试中都比基于流的模型带来了显着改进，特别是在较大的肽系统（例如 10 残基 Chignolin）中。此外，我们还引入了 Robin，这是一个使用 Ar…",
+      "authors": [
+        "Danyal Rehman",
+        "Charlie B. Tan",
+        "Yoshua Bengio",
+        "Avishek Joey Bose",
+        "Alexander Tong"
+      ],
+      "published": "2026-06-25T17:58:21Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.27361v1",
+      "abs_url": "https://arxiv.org/abs/2606.27361v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27361v1"
+    },
+    {
+      "title": "When are likely answers right? On Sequence Probability and Correctness in LLMs",
+      "title_zh": "什么时候可能的答案是正确的？法学硕士中的序列概率和正确性",
+      "summary": "Many decoding methods for large language models can be understood as shifting probability mass toward outputs that are more likely under the model, either locally at the token level or globally at the sequence level. Therefore, their success depends on a fundamental question: when does sequence probability, that is, the conditional probability of a continua…",
+      "summary_zh": "大型语言模型的许多解码方法可以理解为将概率质量转移到模型下更可能的输出，无论是局部的令牌级别还是全局的序列级别。因此，他们的成功取决于一个基本问题：序列概率，即给定提示的连续的条件概率，何时真正与正确性一致？在本文中，我们着手在四个级别上量化解码方法、模型和基准之间的这种关系：跨解码方法、跨方法内的超参数、跨数据集中的提示-答案对以及跨对同一提示的重复响应。我们发现较高的序列概率通常可以预测固定数据集中提示-答案对的正确性。然而，这种关系通常不会转移到解码决策：通过改变超参数或方法来增加序列概率并不能可靠地提高准确性。此外，序列概率并不是对同一提示的响应正确性的良好指标。这些发现阐明了解码何时可以或不能提高正确性，并为解码、自我一致性和无验证者自我改进提供实用指导。",
+      "authors": [
+        "Johannes Zenn",
+        "Jonas Geiping"
+      ],
+      "published": "2026-06-25T17:58:02Z",
+      "category": "stat.ML",
+      "arxiv_id": "2606.27359v1",
+      "abs_url": "https://arxiv.org/abs/2606.27359v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27359v1"
+    },
+    {
+      "title": "RouterVLA: Turning Smoke Tests into Supervision for Heterogeneous VLA Selection",
+      "title_zh": "RouterVLA：将冒烟测试转变为异构 VLA 选择的监督",
+      "summary": "We study whether pre-deployment evaluation rollouts can be reused to supervise policy selection. Robot teams routinely smoke test candidate vision-language-action (VLA) policies, then compress those trials into a global winner. RouterVLA evaluates this idea with outcome-disjoint cross-fitting: recorded probes build a profile for each frozen expert, and a se…",
+      "summary_zh": "我们研究是否可以重复使用部署前评估来监督策略选择。机器人团队定期对候选者的视觉-语言-动作（VLA）策略进行冒烟测试，然后将这些试验压缩成全球获胜者。 RouterVLA 通过结果不相交的交叉拟合来评估这一想法：记录的探针为每个冻结的专家构建一个配置文件，并且单独的试验对所选专家进行评分，而无需输入其配置文件。在 34,752 条 LIBERO-Plus 推出记录中，透明的探测成功规则将保留成功率从 0.4686 提高到 0.6149，增加了 +14.64pp。在此处研究的仅标量配置文件下，学习的记分器在统计上与此规则无法区分，这表明调试携带路由值，而额外的标量记分器容量不会创建它。重复使用评分试验会使测得的收益增加 1.87 倍，因此可信的账本路由需要结果分离；模型扩展改进了单独的策略，而调试感知路由则改进了基于它们构建的系统。",
+      "authors": [
+        "Xingyu Ren",
+        "Chugang Yi",
+        "Ge Ma",
+        "Youran Sun"
+      ],
+      "published": "2026-06-25T17:56:33Z",
+      "category": "cs.RO",
+      "arxiv_id": "2606.27355v1",
+      "abs_url": "https://arxiv.org/abs/2606.27355v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27355v1"
+    },
+    {
+      "title": "RayPE: Ray-Space Positional Encoding for 3D-Aware Video Generation",
+      "title_zh": "RayPE：用于 3D 感知视频生成的光线空间位置编码",
+      "summary": "Modern video diffusion transformers position their tokens through RoPE on the (u,v,t) axes -- a description of the camera's sampling grid that says nothing about the 3D structure of the scene. We observe that the geometric relation between two camera rays is captured by the Plucker reciprocal product, which is bilinear in the two rays -- the same algebraic…",
+      "summary_zh": "现代视频扩散变压器通过 RoPE 将其标记定位在 (u,v,t) 轴上——这是对摄像机采样网格的描述，但没有提及场景的 3D 结构。我们观察到，两条相机光线之间的几何关系是由 Plucker 倒积捕获的，它在两条光线中是双线性的——与 Transformer 注意力中的点积相同的代数形式。基于这个类比，我们提出了 RayPE，这是一种位置编码扩展，它将每个令牌的 6D Plucker 坐标添加到自注意力的查询和密钥中，并采用查询/密钥翻转安排，在该安排下，对称身份配置与倒数乘积完全一致。注入是相加的，产生的注意力分数分解为一个内容项、一个几何项以及两个内容和几何交叉项——我们的实验发现所有这些都是单独必要的。为了使编码在具有异构相机平移尺度（SfM、深度 SLAM、度量）的视频数据中保持稳定，我们进一步将光线方向与矩幅解耦，通过学习的对数幅值函数对…",
+      "authors": [
+        "Minghao Yin",
+        "Jiahao Lu",
+        "Wenbo Hu",
+        "Wang Zhao",
+        "Shan Ying",
+        "Kai Han"
+      ],
+      "published": "2026-06-25T17:51:02Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.27345v1",
+      "abs_url": "https://arxiv.org/abs/2606.27345v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27345v1"
+    },
+    {
+      "title": "Understanding Domain-Aware Distribution Alignment in Budgeted Entity Matching",
+      "title_zh": "了解预算实体匹配中的领域感知分布对齐",
+      "summary": "Entity Matching (EM) is a core operation in the data integration pipeline, where records from different sources are compared to determine whether they refer to the same real-world entity. Recent work has incorporated domain information and low-resource learning techniques to better adapt EM systems to realistic settings. While these approaches have demonstr…",
+      "summary_zh": "实体匹配 (EM) 是数据集成管道中的核心操作，其中比较来自不同源的记录以确定它们是否引用相同的现实世界实体。最近的工作结合了领域信息和低资源学习技术，以更好地使 EM 系统适应现实环境。虽然这些方法表现出了强大的性能，但仍不清楚它们在实践中在不同的数据约束和监督级别下的表现如何。在本文中，我们研究了一种最先进的低资源、领域感知 EM 方法（BEACON），并研究了不同算法选择和数据可用性条件如何影响其性能。我们进行了一系列有针对性的实验来评估这些变化，从而更深入地了解分布对齐的作用和 BEACON 框架的行为。",
+      "authors": [
+        "Nicholas Pulsone",
+        "Gregory Goren",
+        "Roee Shraga"
+      ],
+      "published": "2026-06-25T17:49:48Z",
+      "category": "cs.DB",
+      "arxiv_id": "2606.27342v1",
+      "abs_url": "https://arxiv.org/abs/2606.27342v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27342v1"
+    },
+    {
+      "title": "SAM2Matting: Generalized Image and Video Matting",
+      "title_zh": "SAM2Matting：通用图像和视频抠图",
+      "summary": "Despite impressive advances in image matting, video matting remains challenging due to the inherent gap between high-level tracking, which requires frame-wise understanding, and low-level matting, which focuses on extremely fine-grained details. Existing methods attempt this with expensive and narrowly-scoped video matting datasets, which may limit out-of-d…",
+      "summary_zh": "尽管图像抠图方面取得了令人印象深刻的进步，但视频抠图仍然具有挑战性，因为高级跟踪（需要逐帧理解）和低级抠图（专注于极其细粒度的细节）之间存在固有差距。现有的方法尝试使用昂贵且范围狭窄的视频抠图数据集来实现这一点，这可能会限制域外泛化并损害跟踪的鲁棒性。我们使用 SAM2Matting 重新思考该范式，这是一种跟踪器到抠图框架，可将 VOS 跟踪器推进到高保真视频抠图。具体来说，它通过使用区域提议桥和专用抠图头增强基础跟踪器（例如 SAM2、SAM3）来解耦任务，使不妥协的跟踪器能够处理时间一致性，同时抠图组件解决细粒度的细节。值得注意的是，尽管仅针对图像进行了训练，但 SAM2Matting 在视频抠图方面建立了新的最先进的性能，支持多种提示类型，保持强大的时间一致性，并在以人类为中心和野外场景中表现出强大的泛化能力。",
+      "authors": [
+        "Ruiqi Shen",
+        "Guangquan Jie",
+        "Chang Liu",
+        "Henghui Ding"
+      ],
+      "published": "2026-06-25T17:48:27Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.27339v1",
+      "abs_url": "https://arxiv.org/abs/2606.27339v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27339v1"
+    },
+    {
+      "title": "Language-Based Digital Twins for Elderly Cognitive Assistance",
+      "title_zh": "用于老年人认知援助的基于语言的数字孪生",
+      "summary": "Digital twins have emerged as a promising paradigm for personalized healthcare, enabling modeling of individual behavior and health trajectories. In cognitive health, early detection of Mild Cognitive Impairment (MCI) remains challenging, where language and conversational patterns serve as non-invasive biomarkers. In this work, we propose a language-based d…",
+      "summary_zh": "数字孪生已成为个性化医疗保健的一个有前途的范例，可以对个人行为和健康轨迹进行建模。在认知健康方面，轻度认知障碍（MCI）的早期检测仍然具有挑战性，其中语言和对话模式可以作为非侵入性生物标志物。在这项工作中，我们提出了一种基于语言的数字孪生框架，该框架利用大型语言模型（LLM）通过结合风格提示和上下文元数据来模仿老年人的对话行为。为了评估保真度和认知一致性，我们引入了多头条件变分自动编码器（cVAE），它联合测量重建质量并预测认知分数。 I-CONECT 数据集上的实验表明，数字孪生保留了特定于身份的特征，并实现了与真实数据相当的重建和 MoCA 预测误差，同时优于 GPT 生成的基线响应。这些结果凸显了基于语言的数字孪生作为一种可扩展、非侵入性的个性化和持续认知健康监测方法的潜力。",
+      "authors": [
+        "Mohammad Mehdi Hosseini",
+        "Mohammad H. Mahoor",
+        "Hiroko H. Dodge"
+      ],
+      "published": "2026-06-25T17:45:53Z",
+      "category": "cs.AI",
+      "arxiv_id": "2606.27334v1",
+      "abs_url": "https://arxiv.org/abs/2606.27334v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27334v1"
+    },
+    {
+      "title": "RoPEMover: Depth-Aware Object Relocation via Positional Embeddings",
+      "title_zh": "RoPEMover：通过位置嵌入进行深度感知对象重定位",
+      "summary": "Moving an object in a single image requires geometry-consistent spatial rearrangement, including handling occlusions, revealing previously unseen regions, and maintaining coherent shadows and reflections. Existing approaches are not well suited to this setting and often fail to preserve such scene-level consistency. We address this problem by introducing a…",
+      "summary_zh": "在单个图像中移动对象需要几何一致的空间重新排列，包括处理遮挡、显示以前未见过的区域以及保持连贯的阴影和反射。现有的方法不太适合这种设置，并且通常无法保持这种场景级的一致性。我们通过引入一种几何感知的对象运动方法来解决这个问题，该方法直接对扩散变换器的位置表示进行操作。我们的主要见解是旋转位置嵌入（RoPE）定义了一个结构化的空间场，可以明确地操纵该空间场以引发受控运动。我们将 2D RoPE 扩展为深度感知公式，对 3D 空间结构进行编码，从而实现一致的对象位移和场景感知更新。我们的模型是通过参数高效的微调，使用合成数据与一小组真实图像相结合进行训练的。尽管实际监督很少，但它在大空间位移下保留了对象身份，在新显示的区域中生成合理的内容，并持续更新与场景相关的效果，例如阴影和照明。标准物体运动基准的实验结果证明了所有评估指标的最先进的性能。",
+      "authors": [
+        "Ipek Oztas",
+        "Duygu Ceylan",
+        "Aybars Bugra Aksoy",
+        "Aysegul Dundar"
+      ],
+      "published": "2026-06-25T17:45:20Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.27332v1",
+      "abs_url": "https://arxiv.org/abs/2606.27332v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27332v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "OpenAI发布新版GPT大模型 仅向特定用户开放 - 央广网",
+      "summary": "OpenAI发布新版GPT大模型 仅向特定用户开放 央广网",
+      "source": "央广网",
+      "lang": "zh",
+      "published": "Sun, 28 Jun 2026 00:58:54 GMT",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBVaXZpSWtPSnFCTFNTM3UxSU04LWhnT2drVkhvRml1dUNiaFI5VjNXM0Z5VlB5aVNvVnY3aTVEd2htOUhaUEZKQmFTcVdwTFc4NTJ5c1ZpQmVDZDZMTjlZTklOQ3M5eFZhSnFTTzhn?oc=5"
+    },
+    {
+      "title": "让算力“人人可知、处处可用”，武汉即将出台新版算力券政策，规模将达1亿元 - wuhan.gov.cn",
+      "summary": "让算力“人人可知、处处可用”，武汉即将出台新版算力券政策，规模将达1亿元 wuhan.gov.cn",
+      "source": "wuhan.gov.cn",
+      "lang": "zh",
+      "published": "Sun, 28 Jun 2026 02:43:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE85NlVzbm4wa0hHMENBX3BLcmR3NFY2LUN1SExIcFBkNkY4RGZUOHJvUHdTVXJCTlZxaklRVlJRNlNlQlh5aGV3d0RhRmNZdm1hRU4tQ1RGQWs3WDQzS19OS3pBZ3RodWVublJ5LWV3?oc=5"
+    },
+    {
+      "title": "加快构建全国一体化算力网 - 东方财富",
+      "summary": "加快构建全国一体化算力网 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Sat, 27 Jun 2026 22:12:51 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0wRjRmYThkeEVRSmd0eGpRcGNoZ0ZWZ1pzdXhNZzVNMHFDbk90dW9leGtoNzBSSjAxdHgyUnd4R05wSzE1ZVZpYWlseWktWHhLWkY3b2ZLUEpRbFA3bGVsNg?oc=5"
+    },
+    {
+      "title": "算力供不应求 谷歌限制Meta使用Gemini模型 - 联合早报",
+      "summary": "算力供不应求 谷歌限制Meta使用Gemini模型 联合早报",
+      "source": "联合早报",
+      "lang": "zh",
+      "published": "Sun, 28 Jun 2026 09:38:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBOOVY3Y2UwbjI2dHRQZEVxSTRUSS1PSTdiMklmYW1ZRkxSQ2Rkc2dDcG9SOUEwZDhXZjV6V3Vjam02SXpqVXd6RDlOTTZ4VE5OYjB2eENjbFFVQ3kxb0ttUGNYaXZXeXhQS3pOSHVJQjZBQlE?oc=5"
+    },
+    {
+      "title": "OpenAI发布GPT-5.6 降价开启美国大模型价格战 - 财新",
+      "summary": "OpenAI发布GPT-5.6 降价开启美国大模型价格战 财新",
+      "source": "财新",
+      "lang": "zh",
+      "published": "Sun, 28 Jun 2026 02:51:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9QMldkY1hiSWNPQVY2SzhUd2JrSkxJVTdQakpDejlocW9qS2JFSnVkcjhhUlh6c3hYWjJvQ09Ld0FEWFgzNXp4SnlIdVh4cnZEaEN3Ukd3STV2UkJVa0liVnA5UXg?oc=5"
+    },
+    {
+      "title": "算力告急：谷歌悄然对Meta实施Gemini使用上限 - 凤凰网",
+      "summary": "算力告急：谷歌悄然对Meta实施Gemini使用上限 凤凰网",
+      "source": "凤凰网",
+      "lang": "zh",
+      "published": "Sun, 28 Jun 2026 07:51:17 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA3Q0d0YzJIUnZHLXFrenVVU3l6RXpHWU5EWV9mXzFJeERnT05odEV5R0hUQXNqb19CcUViTUJ4cHpDSjd6M3VORE1uUFh6WWdj?oc=5"
+    },
+    {
+      "title": "大模型推理最高提速85%！DeepSeek发表重磅论文 提出两项互补机制 - 财联社",
+      "summary": "大模型推理最高提速85%！DeepSeek发表重磅论文 提出两项互补机制 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Sun, 28 Jun 2026 06:40:01 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFB0NHB1cTJoTXBlcHZHVzJkVnhDbkVfOFJwa19YdVo5NjIwaGl0VkFHdm0wSElpekhNZkRxNm1UQjFkamp1QndfMA?oc=5"
+    },
+    {
+      "title": "AI竞争迈入规模化落地阶段，华为预判智能体互联网核心竞争力 - 中国基金报",
+      "summary": "AI竞争迈入规模化落地阶段，华为预判智能体互联网核心竞争力 中国基金报",
+      "source": "中国基金报",
+      "lang": "zh",
+      "published": "Sun, 28 Jun 2026 03:32:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBCZ291THV2MU4xcFRFX3RuN1c4UGdNUy1FSGZaeXRQbW1lUm43UnJnN0JlZEpIaWJJaDNUalJQQmtZYzRTREFkQ2EyNXhtREN1RFlRc0hXV0RJRFU0Yzdra0x2eFVhZ0xxWWlVT3Nyck4zd1lTLV90Z2dR?oc=5"
+    },
+    {
+      "title": "【追风逐浪看湖北】“卷”出比头发丝还细的钻针鄂企闯入全球顶尖AI算力产业链- 湖北日报新闻客户端 - 湖北日报传媒集团",
+      "summary": "【追风逐浪看湖北】“卷”出比头发丝还细的钻针鄂企闯入全球顶尖AI算力产业链- 湖北日报新闻客户端 湖北日报传媒集团",
+      "source": "湖北日报传媒集团",
+      "lang": "zh",
+      "published": "Sun, 28 Jun 2026 07:44:34 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9nRm0wM0NadzFnNEtCMm1ReHlZUFdTUk5xMWN3M2RjTHlJalRjenZia2dEZFJFc2pjNkZ0eGd5N0xsLWJtREJrVTlyUVUyR2poblIxUjc3U0E?oc=5"
+    },
+    {
+      "title": "北京大学程哲：算力芯片的先进热测量与热管理技术— 第二届先进封装与高算力热管理大会！江苏·苏州 7月23-24日 - 电子工程专辑",
+      "summary": "北京大学程哲：算力芯片的先进热测量与热管理技术— 第二届先进封装与高算力热管理大会！江苏·苏州 7月23-24日 电子工程专辑",
+      "source": "电子工程专辑",
+      "lang": "zh",
+      "published": "Sun, 28 Jun 2026 07:29:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5VNFI5VEtvRHRQMWg3VGNsdkV0bVBzM2pNMkgyeVdFTWpuZ2h4NzhnLXpQYXlDcHVJQnBoX3VfR2RGZWR4MkM3UGRiTWpoS2UxTlVV?oc=5"
+    },
+    {
+      "title": "百亿次下载背后：中国AI的“开放答卷” - jwview.com",
+      "summary": "百亿次下载背后：中国AI的“开放答卷” jwview.com",
+      "source": "jwview.com",
+      "lang": "zh",
+      "published": "Sun, 28 Jun 2026 05:12:58 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBQOUQ2ZUxFZDdXUC16ZElvTllNUXVMak1wLVduTVg4T0hjMVhSbzhlZ3VTa1kxY3FiWmIwaTJYcGJieHFyOXJhRU5OOHZ5aE03N1N4cXFIMGJSYnlhYjNZSUx4U1o0YTQ?oc=5"
+    },
+    {
+      "title": "OpenAI曝作弊门！GPT-5.6创史上最高作弊率 - 智源社区",
+      "summary": "OpenAI曝作弊门！GPT-5.6创史上最高作弊率 智源社区",
+      "source": "智源社区",
+      "lang": "zh",
+      "published": "Sun, 28 Jun 2026 08:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0zUjNVQU1uSDhKVFBFQzRXMjdoa1pfSlRhQ082ZWZObHJRT1JNVUFoRHlDRGlTTkJZdFhhX0ZrYlBKMjVoSlZYUw?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 89893,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。减少 60-95% 的标记，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 52793,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 34448,
+      "language": "TypeScript"
+    },
+    {
+      "title": "github-mcp-server",
+      "type": "GitHub",
+      "summary_en": "GitHub's official MCP Server",
+      "summary": "GitHub 的官方 MCP 服务器",
+      "url": "https://github.com/github/github-mcp-server",
+      "author": "github",
+      "stars": 31023,
+      "language": "Go"
+    },
+    {
+      "title": "fastmcp",
+      "type": "GitHub",
+      "summary_en": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+      "summary": "🚀 构建 MCP 服务器和客户端的快速、Python 方式。",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "author": "PrefectHQ",
+      "stars": 25829,
+      "language": "Python"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 380795,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 240335,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 204611,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
