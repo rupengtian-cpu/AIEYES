@@ -1,0 +1,515 @@
+{
+  "date": "2026-06-29",
+  "generated_at": "2026-06-29T16:40:48.444975+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "DexCompose: Reusing Dexterous Policies for Multi-Task Manipulation with a Single Hand",
+      "title_zh": "DexCompose：重用灵巧策略以单手操作多任务",
+      "summary": "Dexterous manipulation policies can solve individual skills, but composing them to perform multiple tasks with a single hand remains challenging. Adding a new task on top of an existing manipulation skill often imposes conflicting demands on overlapping fingers and contact modes, causing destructive interference between preserving an existing manipulation o…",
+      "summary_zh": "灵巧的操纵策略可以解决个人技能问题，但将它们组合成单手执行多项任务仍然具有挑战性。在现有操作技能之上添加新任务通常会对重叠的手指和接触模式提出相互冲突的要求，从而在保留现有操作结果和执行新操作结果之间造成破坏性干扰。我们提出了 DexCompose，一个角色感知的残差组合框架，它通过明确的手指级动作所有权重用预先训练的灵巧策略来进行多任务操作。给定两个预训练的全手策略，DexCompose 首先从第一个技能收集成功的任务后状态，并对候选手指掩模执行发布测试，以确定哪些手指是维持既定技能状态所必需的。然后，它训练两个不对称残差模块：用于任务保存的有界残差稳定器，以及仅在分配给新任务的动作子空间内适应冻结的下游策略的上下文感知残差。我们评估了 16 项复合灵巧操作任务的框架，涵盖四种物体保留技能和四种下游交互。 DexCompose 实现了 77.4%…",
+      "authors": [
+        "Dihong Huang",
+        "Zhenyu Wei",
+        "Zhuxiu Xu",
+        "Yunchao Yao",
+        "Sikai Li",
+        "Mingyu Ding"
+      ],
+      "published": "2026-06-26T17:59:57Z",
+      "category": "cs.RO",
+      "arxiv_id": "2606.28323v1",
+      "abs_url": "https://arxiv.org/abs/2606.28323v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.28323v1"
+    },
+    {
+      "title": "PerceptionRubrics: Calibrating Multimodal Evaluation to Human Perception",
+      "title_zh": "感知量规：根据人类感知校准多模态评估",
+      "summary": "We introduce PerceptionRubrics, a rubric-based evaluation framework that addresses the gap between saturated benchmark scores and real-world brittleness. Shifting evaluation from holistic semantic matching to rigorous atomic auditing, PerceptionRubrics pairs 1,038 information-dense images with over 12,000 instance-specific rubrics. These criteria are derive…",
+      "summary_zh": "我们引入了 PerceptionRubrics，这是一个基于评分标准的评估框架，可解决饱和基准分数与现实世界脆弱性之间的差距。 PerceptionRubrics 将评估从整体语义匹配转变为严格的原子审核，将 1,038 个信息密集的图像与超过 12,000 个特定于实例的评分标准配对。这些标准源自通过新颖的循环同行评审共识管道构建的黄金标题，然后提炼成必须正确（基本事实）和简单错误（细粒度细节）规则的双流系统。至关重要的是，PerceptionRubrics 实现了门控评分机制：与线性平均值不同，强制性视觉事实的失败会引发严厉的二元惩罚。广泛的评估产生了重要的见解：（1）可靠性差距：模型经常正确验证碎片元素，但无法满足严格的联合约束，暴露出密集域中的脆弱性； (2) 开放-封闭分层：与推理趋势相反，我们揭示了开源和专有前沿之间持续存在 8% 的感…",
+      "authors": [
+        "Yana Wei",
+        "Hongbo Peng",
+        "Yanlin Lai",
+        "Liang Zhao",
+        "Kangheng Lin",
+        "En Yu"
+      ],
+      "published": "2026-06-26T17:59:15Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.28322v1",
+      "abs_url": "https://arxiv.org/abs/2606.28322v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.28322v1"
+    },
+    {
+      "title": "StructSplat: Generalizable 3D Gaussian Splatting from Uncalibrated Sparse Views",
+      "title_zh": "StructSplat：来自未校准稀疏视图的可推广 3D 高斯分布",
+      "summary": "We present StructSplat, a feed-forward and generalizable 3D Gaussian reconstruction framework that operates directly on uncalibrated images without requiring camera parameters. Existing methods either rely on per-scene optimization or assume known camera poses, and often entangle geometry and appearance within a unified backbone, limiting reconstruction fid…",
+      "summary_zh": "我们提出了 StructSplat，一种前馈且可推广的 3D 高斯重建框架，可直接对未校准的图像进行操作，无需相机参数。现有方法要么依赖于每个场景的优化，要么假设已知的相机姿势，并且通常将几何和外观纠缠在统一的主干中，限制了重建保真度和泛化。我们的关键思想是采用一种结构化表示来组织几何、语义和纹理线索，并在重建过程中发挥明确的作用。具体来说，我们引入了像素对齐的特征注入机制，以实现从 2D 观察中进行精确的纹理建模，结合语义感知先验以提高全局一致性，并设计相机对齐策略以防止信息泄漏并提高泛化能力。实验表明，我们的方法在具有挑战性的基准测试中显着优于先前的方法。在 DL3DV 上，我们的方法实现了 28.045 PSNR，超过 AnySplat (22.377) +5.67 dB。在跨数据集评估中，我们的方法在 ACID 上比 AnySplat 实现…",
+      "authors": [
+        "Jia-Chen Zhao",
+        "Beiqi Chen",
+        "Xinyang Chen",
+        "Guangcong Wang",
+        "Liqiang Nie"
+      ],
+      "published": "2026-06-26T17:59:06Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.28321v1",
+      "abs_url": "https://arxiv.org/abs/2606.28321v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.28321v1"
+    },
+    {
+      "title": "WARP-RM: A Warp-Augmented Relative Progress Reward Model for Data Curation",
+      "title_zh": "WARP-RM：用于数据管理的扭曲增强相对进度奖励模型",
+      "summary": "Scaling imitation learning requires large datasets, yet human teleoperation inevitably produces mixed-quality demonstrations containing hesitations and recoveries. Prior frame-level progress reward models supervise on absolute temporal progress proxies that suffer from label noise, or require costly human annotations to define subtask boundaries. We present…",
+      "summary_zh": "扩展模仿学习需要大量数据集，但人类远程操作不可避免地会产生包含犹豫和恢复的混合质量演示。先前的帧级进度奖励模型对绝对时间进度代理进行监督，这些代理受到标签噪声的影响，或者需要昂贵的人工注释来定义子任务边界。我们提出了 WARP（扭曲增强相对进度），这是一种新颖的完全自监督算法，用于直接从成功的演示中学习密集的、有符号的相对进度幅度。 WARP 通过演示的时间扭曲增强（可变播放速度和反转）生成每帧进度目标，并且我们训练 WARP-RM 来预测输入帧之间的标准化经过时间。在重叠窗口中聚合这些预测会产生密集的帧级进度信号。然后我们引入了 WARP-BC，它利用这些标量奖励估计来在行为克隆期间增加高优势动作块的权重，其中块级优势是通过聚合每帧奖励来获得的。我们在物理双手机器人系统上评估了我们的方法，该系统执行长视距可变形物体操作任务：从随机皱巴巴的开始折叠…",
+      "authors": [
+        "Justin Yu",
+        "Andrew Goldberg",
+        "Kavish Kondap",
+        "Karim El-Refai",
+        "Ethan Ransing",
+        "Qianzhong Chen"
+      ],
+      "published": "2026-06-26T17:58:06Z",
+      "category": "cs.RO",
+      "arxiv_id": "2606.28320v1",
+      "abs_url": "https://arxiv.org/abs/2606.28320v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.28320v1"
+    },
+    {
+      "title": "Surprises in Proper Positive-Only Learning",
+      "title_zh": "正确的积极学习中的惊喜",
+      "summary": "Binary classification from positive-only samples is a variant of PAC learning in which the learner receives i.i.d. samples from the positive region of an unknown target concept, but is evaluated under the original distribution (which places mass on both positive and negative regions). This model dates back to Natarajan [1987, STOC], and the characterization…",
+      "summary_zh": "仅正样本的二元分类是 PAC 学习的一种变体，其中学习者接收 i.i.d.来自未知目标概念的正区域的样本，但在原始分布下进行评估（将质量放在正区域和负区域上）。这个模型可以追溯到 Natarajan [1987, STOC]，对不正确学习的描述是众所周知的——它甚至出现在教科书中。然而，正确的纯正学习的特征长期以来一直没有定论。在这项工作中，我们重新审视并解决了这个问题：当且仅当一个概念类具有有限的 VC 维并且满足一个新的组合条件（我们称之为一致的外部可分离性）时，它才可以从纯正样本中正确学习。与几个分离结果一起，这个特征揭示了与标准 PAC 学习截然不同的令人惊讶的丰富景观：正确和不正确的学习是分开的，随机和确定性的正确学习是分开的，有些类没有 ERM 是学习器，有限的 VC 维度甚至不足以满足非均匀学习。在此过程中，我们引入了新的组合维度，我…",
+      "authors": [
+        "Shai Ben-David",
+        "Farnam Mansouri",
+        "Anay Mehrotra",
+        "Manolis Zampetakis"
+      ],
+      "published": "2026-06-26T17:54:13Z",
+      "category": "stat.ML",
+      "arxiv_id": "2606.28309v1",
+      "abs_url": "https://arxiv.org/abs/2606.28309v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.28309v1"
+    },
+    {
+      "title": "VGB for Masked Diffusion Model: Efficient Test-time Scaling for Reward Satisfaction and Sample Editing",
+      "title_zh": "用于掩蔽扩散模型的 VGB：有效的测试时间缩放以实现奖励满意度和样本编辑",
+      "summary": "Inference-time scaling is a promising paradigm to improve generative models, especially when outputs must satisfy structural constraints or optimize downstream rewards. We consider Masked Diffusion Model (MDM) and introduce MDM-VGB, a discrete diffusion sampler that augments unmasking generation with theoretically principled reward-guided remasking. Inspire…",
+      "summary_zh": "推理时间缩放是改进生成模型的一种有前途的范例，特别是当输出必须满足结构约束或优化下游奖励时。我们考虑掩蔽扩散模型 (MDM) 并引入 MDM-VGB，这是一种离散扩散采样器，可通过理论上原则上的奖励引导重掩蔽来增强揭露生成。受经典 Jerrum-Sinclair 回溯马尔可夫链最近在奖励倾斜生成中取得成功的启发，MDM-VGB 将回溯随机游走从固定前缀树扩展到屏蔽状态图，允许在任意位置取消屏蔽和重新屏蔽令牌。由此产生的采样器有利于揭露和重新掩盖移动，从而产生更高价值的部分配置，从而实现有效的高奖励生成和低奖励样本的有效修复。我们证明 MDM-VGB 对过程验证器噪声具有鲁棒性，并实现二次复杂度，而流行的测试时启发式方法（例如 best-of-$N$）可能会因错误累积而产生指数复杂度。我们的理论发现得到了强大的实证表现的证实，特别是在流行的约束满足和…",
+      "authors": [
+        "Kijung Jeon",
+        "Thuy-Duong Vuong",
+        "Molei Tao"
+      ],
+      "published": "2026-06-26T17:47:09Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.28301v1",
+      "abs_url": "https://arxiv.org/abs/2606.28301v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.28301v1"
+    },
+    {
+      "title": "CacheMPC: Certified Cached Model Predictive Control for Quadruped Locomotion",
+      "title_zh": "CacheMPC：经过认证的四足运动缓存模型预测控制",
+      "summary": "Model Predictive Control (MPC) is the standard predictive layer in hierarchical quadruped controllers, but the per-cycle QP solve limits the update rate achievable on embedded processors. Because legged gaits revisit a bounded region of state space, MPC solutions admit caching and reuse. This paper proposes \\emph{Certified CacheMPC}: a Locality-Sensitive-Ha…",
+      "summary_zh": "模型预测控制 (MPC) 是分层四足控制器中的标准预测层，但每周期 QP 求解限制了嵌入式处理器上可实现的更新速率。由于腿式步态会重新访问状态空间的有界区域，因此 MPC 解决方案允许缓存和重用。本文提出了 \\emph{Certified CacheMPC}：水平接触力轨迹的局部敏感哈希缓存，按接触模式分区，在查询时检索，仅当后验每次查询证书确认原始可行性和成本次优的拉格朗日双间隙上限时才接受。有限预算控制器计划结合了顶级 $K$ 认证的检索、截止日期有限的 QP 解决方案以及移动的最后认证的后备。该框架在 Unitree Go2 上进行了 $2{,}038$ 可用冷控制器 MuJoCo 试验的评估，包括在三个故障边界单元进行的 $600$ 试验 $n\\!=\\!50$ 活动，以及在机器人上的 NVIDIA Orin NX 上的首次部署会话。非门控缓…",
+      "authors": [
+        "Nimesh Khandelwal",
+        "Mehul Anand",
+        "Shakti S. Gupta",
+        "Mangal Kothari"
+      ],
+      "published": "2026-06-26T17:47:05Z",
+      "category": "cs.RO",
+      "arxiv_id": "2606.28300v1",
+      "abs_url": "https://arxiv.org/abs/2606.28300v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.28300v1"
+    },
+    {
+      "title": "Democratic ICAI: Debating Our Way to Steering Principles from Preferences",
+      "title_zh": "民主 ICAI：辩论我们如何从偏好中引导原则",
+      "summary": "Preference-based alignment often struggles to capture the reasoning that underlies human judgments. Many evaluations rely on multiple interacting criteria, yet pairwise labels reveal only the final choice rather than the considerations that shape preferences. Inverse Constitutional AI (ICAI) improves interpretability in decision making by summarizing prefer…",
+      "summary_zh": "基于偏好的一致性常常难以捕捉人类判断背后的推理。许多评估依赖于多个相互作用的标准，但成对标签仅揭示最终选择，而不是影响偏好的考虑因素。逆宪法人工智能（ICAI）通过将偏好总结为自然语言原则来提高决策的可解释性，但其单遍解释忽略了复杂决策中涉及的许多细微差别。我们引入了民主 ICAI，这是一种新颖的方法，通过结构化的角色辩论收集多种相互竞争的理由，为影响每次比较的因素提供更广泛、更具表现力的解释。从这些更丰富的信号中，我们得出更清晰、更全面的指导原则，并利用它们通过基于法学硕士和决策树的法官来指导决策建模。跨多个创意任务类别的创意偏好基准 MuCE-Pref 和 LiTBench 的实验表明，民主 ICAI 产生了更忠实的偏好结构。它改进了相对于深思熟虑的提示和基于原则的基线的跨任务的平均偏好预测，同时产生了法学硕士注释者喜欢的宪法。",
+      "authors": [
+        "Kevin Kingslin",
+        "Anish Natekar",
+        "Ashutosh Ranjan",
+        "Vivek Srivastava",
+        "Savita Bhat",
+        "Shirish Karande"
+      ],
+      "published": "2026-06-26T17:38:47Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.28294v1",
+      "abs_url": "https://arxiv.org/abs/2606.28294v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.28294v1"
+    },
+    {
+      "title": "Bridging Ab Initio Symmetries and Global Nuclear Masses with Interpretable Neural Networks",
+      "title_zh": "用可解释的神经网络连接从头算对称性和全局核质量",
+      "summary": "Ab initio modeling has established Wigner's SU(4) and Elliott's SU(3) as dominant symmetries of the nuclear force in light and intermediate-mass nuclei. We ask whether they also govern nuclear binding across the entire chart. Our aim is not high-precision prediction but physical insight, through interpretable, symmetry-based models. From the SU(3) and SU(4)…",
+      "summary_zh": "从头算模型已将维格纳的 SU(4) 和埃利奥特的 SU(3) 确立为轻质和中等质量核中核力的主要对称性。我们询问它们是否也控制着整个星盘的核结合。我们的目标不是高精度预测，而是通过可解释的、基于对称的模型获得物理洞察力。根据 SU(3) 和 SU(4) 卡西米尔算子，我们构建了三个神经网络 (NN) 质量模型：用于点预测的特征信息神经网络 (FINN)、添加不确定性量化的高斯信息神经网络 (GINN) 和维格纳信息神经网络 (WINN)——使用卡西米尔作为算子基础的质量公式。所有这些都在 AME2016 上进行了培训，并在 AME2020 的新核上进行了验证。相对于液滴基线，SU(4) 算子单独将训练和测试数据的均方根误差 (RMSE) 减少了近一半，而外推则减少了约五分之一，这表明维格纳对称性携带的预测信息超出了体积属性。尽管其形式紧凑，WINN…",
+      "authors": [
+        "Phong Dang",
+        "Evander Espinoza",
+        "Xiaoliang Wan",
+        "Michela Negro",
+        "Jerry P. Draayer",
+        "Feng Pan"
+      ],
+      "published": "2026-06-26T17:31:34Z",
+      "category": "nucl-th",
+      "arxiv_id": "2606.28287v1",
+      "abs_url": "https://arxiv.org/abs/2606.28287v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.28287v1"
+    },
+    {
+      "title": "Agentic Hardware Design as Repository-Level Code Evolution",
+      "title_zh": "代理硬件设计作为存储库级代码演化",
+      "summary": "We present HORIZON, a self-evolving agent framework that treats hardware design as repository-level code evolution. A Markdown harness is compiled into a project pack containing domain knowledge, an executable evaluator, an acceptance predicate, and a git/runtime policy; a hands-free agent loop then evolves an isolated git worktree, using repository operati…",
+      "summary_zh": "我们提出了 HORIZON，一个自我进化的代理框架，它将硬件设计视为存储库级代码进化。 Markdown 工具被编译成一个项目包，其中包含领域知识、可执行评估器、接受谓词和 git/运行时策略；然后，免提代理循环会发展出一个独立的 git 工作树，使用存储库操作进行状态管理、跟踪和重播。这将之前的存储库规模自我进化工作从 EDA 软件系统扩展到硬件设计工件本身。我们在 ChipBench、RTLLM、Verilog-Eval 和九个 CVDP 类别上评估我们的方法，通过完全免提代理循环在所有套件中实现 100% 基准测试完成。然而，我们并不声称硬件设计的代理人工智能已经得到解决：这些基准测试是芯片设计中更广泛的工程问题的受控代理。部分〜\\ ref {sec：discuss}检查了当前研究的局限性并强调了开放研究的挑战。",
+      "authors": [
+        "Cunxi Yu",
+        "Chenhui Deng",
+        "Nathaniel Pinckney",
+        "Brucek Khailany"
+      ],
+      "published": "2026-06-26T17:21:06Z",
+      "category": "cs.AR",
+      "arxiv_id": "2606.28279v1",
+      "abs_url": "https://arxiv.org/abs/2606.28279v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.28279v1"
+    },
+    {
+      "title": "Towards Automating Scientific Review with Google's Paper Assistant Tool",
+      "title_zh": "使用 Google 论文助理工具实现科学评审自动化",
+      "summary": "Artificial intelligence is driving a revolution in scientific discovery, accelerating everything from hypothesis generation to mathematical theorem proving. However, this rapid acceleration is creating a systemic challenge: traditional human peer review cannot scale to match the influx of AI-assisted science. Ultimately, to resolve this tension, we must als…",
+      "summary_zh": "人工智能正在推动科学发现的一场革命，加速从假设生成到数学定理证明的一切。然而，这种快速加速正在带来系统性挑战：传统的人类同行评审无法适应人工智能辅助科学的涌入。最终，为了解决这种紧张局势，我们还必须部署人工智能来加速验证和审查过程本身。为了围绕这一转变进行讨论，我们提出了一种分类法，其中包括科学评估中人工智能与人类合作的四个渐进级别，并讨论了每个级别所涉及的各种权衡。作为迈向这一未来的一步，我们推出了论文辅助工具（PAT），这是一个为深度科学审查和验证而构建的代理人工智能框架。 PAT 吸收完整的科学手稿并进行综合评估，检查理论结果，验证实验，提出改进建议并识别潜在缺陷。通过利用推理缩放技术，PAT 能够比单独的单个模型调用识别更深层次的问题，与 SPOT 基准中的数学错误零样本召回相比，实现了 34% 的改进。在两个主要计算机科学会议（STOC…",
+      "authors": [
+        "Rajesh Jayaram",
+        "Drew Tyler",
+        "David Woodruff",
+        "Corinna Cortes",
+        "Yossi Matias",
+        "Vahab Mirrokni"
+      ],
+      "published": "2026-06-26T17:19:17Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.28277v1",
+      "abs_url": "https://arxiv.org/abs/2606.28277v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.28277v1"
+    },
+    {
+      "title": "SimFoundry: Modular and Automated Scene Generation for Policy Learning and Evaluation",
+      "title_zh": "SimFoundry：用于策略学习和评估的模块化和自动化场景生成",
+      "summary": "Training and evaluating robot policies in the real world is costly and difficult to scale. We introduce SimFoundry, a modular and automated system for zero-shot real-to-sim scene construction from a video. SimFoundry generates sim-ready digital twins and supports object, scene, and task editing, enabling the automated generation of diverse digital cousins:…",
+      "summary_zh": "在现实世界中训练和评估机器人策略成本高昂且难以扩展。我们推出 SimFoundry，这是一种模块化自动化系统，用于从视频中零镜头实景到模拟场景构建。 SimFoundry 生成模拟就绪的数字孪生，并支持对象、场景和任务编辑，从而能够自动生成不同的数字孪生：重建现实世界场景的可供性保留变化。在 SimFoundry 数据上训练的策略可以零样本传输到具有挑战性的实际任务，包括多步骤操作、铰接对象交互和双手交互，其数字表兄弟（原始场景、对象和任务的变体）有助于泛化到新的现实世界条件。在 7 个操作任务和 5 个策略架构中，SimFoundry 模拟评估强烈预测了现实世界的性能，平均皮尔逊相关性为 0.911，平均最大排名违规为 0.018。在现实世界中评估模拟训练的零样本策略时，使用模拟中的对象、场景和任务表兄弟进行训练的策略显示平均任务成功率分别提高了…",
+      "authors": [
+        "Nadun Ranawaka",
+        "Josiah Wong",
+        "Wei-Lin Pai",
+        "Wei-Teng Chu",
+        "Tianyuan Dai",
+        "Masoud Moghani"
+      ],
+      "published": "2026-06-26T17:18:43Z",
+      "category": "cs.RO",
+      "arxiv_id": "2606.28276v1",
+      "abs_url": "https://arxiv.org/abs/2606.28276v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.28276v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "北京太空算力创新中心揭牌，算力上太空将带来哪些改变？ - 新京报",
+      "summary": "北京太空算力创新中心揭牌，算力上太空将带来哪些改变？ 新京报",
+      "source": "新京报",
+      "lang": "zh",
+      "published": "Mon, 29 Jun 2026 13:24:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1QcmFkcUMzSGRTX0tQbGY1b2JSNkdFa3ozQk11aDQ3UWgzdzhILWJBWE9VME9pRWdIN2NPeGFuYUE0NHc3Y2NJUXRHOXg1ekl5YTZ3MmgtN2JCc2wwckNzMTJfa04?oc=5"
+    },
+    {
+      "title": "北京太空算力创新中心揭牌 - chinanews.com.cn",
+      "summary": "北京太空算力创新中心揭牌 chinanews.com.cn",
+      "source": "chinanews.com.cn",
+      "lang": "zh",
+      "published": "Mon, 29 Jun 2026 12:23:21 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBuZUVWc2pNSnZHQ2hBdFFwcl9DTThZZFptc3cwanV6czVuMlVPZ2JsSEpGQ1pSazRPN3pFOWh5V1ZxRWlyblNnZU9VS2ZrRXNnUXNwc2l5ZlAtSUg3TVo3YmlMQ2ZQVmwy?oc=5"
+    },
+    {
+      "title": "AI算力芯片国产化提速 产业协同共探定制化发展新路径 - 中国日报网",
+      "summary": "AI算力芯片国产化提速 产业协同共探定制化发展新路径 中国日报网",
+      "source": "中国日报网",
+      "lang": "zh",
+      "published": "Mon, 29 Jun 2026 10:51:24 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE14NnExbWYzc2d6TnRqTm5IcDVfak5mVExnejM5ZGV3TkVjUWF1N21qQlp0YXR1NXRjcVlvLWNjOXZsSXpxdkp0UkdRdjJxeW96aW5GWFFHQ3ktdEVQVTBSWi1BS0VscmVJVTZqaklsV3RxelQ0blJ5VnhBd28?oc=5"
+    },
+    {
+      "title": "【科技日报】从粉笔讲台到算力课堂 大连理工大学用AI探索工科育人新范式 - 大连理工大学新闻网",
+      "summary": "【科技日报】从粉笔讲台到算力课堂 大连理工大学用AI探索工科育人新范式 大连理工大学新闻网",
+      "source": "大连理工大学新闻网",
+      "lang": "zh",
+      "published": "Mon, 29 Jun 2026 08:43:45 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBTU25ablpzbjlSM1lRZmRRZmVVVWNxSU51RTY1RjN6TTQxb0hEdkthVWVLYmgxWlFZeGRqUnpyejVLbGZzUmpRejhHeHI0TEJzU0YxVjl2UDk?oc=5"
+    },
+    {
+      "title": "主动拥抱人工智能时代的积极尝试——写在权威AI时政资讯智能体“新华语典”上线之际 - 新华网",
+      "summary": "主动拥抱人工智能时代的积极尝试——写在权威AI时政资讯智能体“新华语典”上线之际 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Mon, 29 Jun 2026 00:43:43 GMT",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQa0xCU3BXUlRPLXhUb3Y2UEhtalFvOGdfMHQ0WVJPTVJwcWlGczJmTUNVNllaXzcta1V0VWV3bldKVEoybXFXYUdwZFNjcllnUDNaaGduWUwzMFMzd2pYRUpSb3M5aGhlMEJjWndYakk2T2RTVE81ZFZpM0hFV0hZdlFqaw?oc=5"
+    },
+    {
+      "title": "芯片一边“泡澡”一边算 津企领跑算力产业新赛道 - tjlgbj.gov.cn",
+      "summary": "芯片一边“泡澡”一边算 津企领跑算力产业新赛道 tjlgbj.gov.cn",
+      "source": "tjlgbj.gov.cn",
+      "lang": "zh",
+      "published": "Mon, 29 Jun 2026 05:44:32 GMT",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0ySms3Zm5Fb3hiLWdCNGJPOGszYWhveXc3TTNxalhyUUJtcDFWSmw1YTh3c1M4clNTUkhqQmotYU8tM1V3OUxSeWJaU1pyVXNyQmhtRmxWUVBiRlpYQmhtLWpCQk5HdWhFYkJ2S1V1VkIxajQ?oc=5"
+    },
+    {
+      "title": "美众议员跨党推出法案，旨在阻止中国通过租用美国云计算服务获取先进AI芯片 - 美国之音",
+      "summary": "美众议员跨党推出法案，旨在阻止中国通过租用美国云计算服务获取先进AI芯片 美国之音",
+      "source": "美国之音",
+      "lang": "zh",
+      "published": "Mon, 29 Jun 2026 15:07:57 GMT",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOc0pXSHNFNnpkT3dXdFJHVk83a3k5aWpXd0s3STlQYXRBaW83Ml9YMDEydm94VlB1ekdZTUhOWWxQeWtlaVB2eW51dmdqYkZXdk9nQldQbEF4b2ZrckZKSlBHalc1dDdsSUdobUhYdFVCdVFPMUQyRFVYV3hnRUJKVzNpRnV1bzMzdXhPUVM2djR5NWNFWW9zRnE2Z056YlB0TFkxN3RRRWpFQUw1NTl2NUFDWERFbGxiSndBeU5mUGFpR1I5VjZyRVE0NVJZVHlZUDhzS19Da1hpZ9IB3AFBVV95cUxPOG8tTTBSTjdEYnFUOFFUcEo1c3h0YW40LURmanNmTjBCaUFIUVVSQWRKS1J0Tm1KV3JpVWZ1QUh5WmNCbllWYjFZQTNJd0pfLW1VNGRDR1BTR2hVY2s5X3JyeWl2WkdzR0VSYnNyVGEzcnZ0OHNZRkpsZUdYQ3pQTi1NWWVKNkQtT25JSzRYbExxNDJvUXZqN2x5UWdYOVUyZHJzdGFyZG9YOTJJRUYzVlpJbEsyaFpGYkhiNEpuXzRWWUlYVlhFRG1WYjVvblltdEFVRGdZd1NST05B?oc=5"
+    },
+    {
+      "title": "迈信林签署8.9亿元算力服务器相关设备采购合同 - 东方财富",
+      "summary": "迈信林签署8.9亿元算力服务器相关设备采购合同 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Mon, 29 Jun 2026 12:08:45 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ZV3prZlNpNU9tZnUwZUJQVjdJNkRiSmdxSEx3eVdnYjZwaDREa1lDSFRVc09BNXBScWsxNlItWGtmSU53MU4tQTNiTnU4NHVhSWs4S1lWSFZZTmFLU2dOYw?oc=5"
+    },
+    {
+      "title": "算力为什么要“上天”？ - 京报网",
+      "summary": "算力为什么要“上天”？ 京报网",
+      "source": "京报网",
+      "lang": "zh",
+      "published": "Mon, 29 Jun 2026 11:13:35 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9CODFJRlQ5ZGxVbVdWandLQWk3VGsyMDRMQ1JhY29sdHhjbnlzS0RrSVdXam1EaExQc3g3b19lMjEwZm9fWEVtRkU1WHJRZDhpT0NtYnlxWkVyUW9iaEE?oc=5"
+    },
+    {
+      "title": "又一美国科技巨头，悄然转向中国大模型 - 观察者网",
+      "summary": "又一美国科技巨头，悄然转向中国大模型 观察者网",
+      "source": "观察者网",
+      "lang": "zh",
+      "published": "Mon, 29 Jun 2026 10:11:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1XdjhSY0VEM0N0VHdwMTFGZ3N6YThjaTV0N3VpejRueVctdHpjZ3RzeGljcFFGR2RZUHBqWGJ4OW0xN012bFRDX2YzQXlMd3J1ck9mNEZCYXNMd21PVGVDQ2R0NTI?oc=5"
+    },
+    {
+      "title": "专访灵御智能：云端算力+真机数据双轮驱动，锚定具身智能基础设施 - 经济参考报",
+      "summary": "专访灵御智能：云端算力+真机数据双轮驱动，锚定具身智能基础设施 经济参考报",
+      "source": "经济参考报",
+      "lang": "zh",
+      "published": "Mon, 29 Jun 2026 11:26:31 GMT",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNalk3UHZYUFhYRHpUeHY1Y2JwUDhpVEJ1UFFNbldIa05qRUNRdVlNUkhpbGNXSmZHN3ZjLWpfcm5ndlRiZEdNZVQ3STlwQ0pZLTVQY041RThUU0ZMVEtMdGgzX1gwamlyck5UVEY2NFFKWmJlSHlTRWFXWEdYZmVNNg?oc=5"
+    },
+    {
+      "title": "移动云：AI时代打造新算力和网络新空间 - 新浪网",
+      "summary": "移动云：AI时代打造新算力和网络新空间 新浪网",
+      "source": "新浪网",
+      "lang": "zh",
+      "published": "Mon, 29 Jun 2026 13:22:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE81dVJWSlRnQ2hydVRLSHVOZTUzTHlxX1lNT1JUZDhvNHRzUkJUUlNncGJMaDJLNjBnaWJOQ1IxMHVlUFdFWE5VeGJDaEVBWDB1ZzNCaXRka0MycFNwT0dHYVVVdWpIcnlPYkNzNFJ0SG1PTkVmR2c?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 89968,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。令牌减少 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 53684,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 34502,
+      "language": "TypeScript"
+    },
+    {
+      "title": "github-mcp-server",
+      "type": "GitHub",
+      "summary_en": "GitHub's official MCP Server",
+      "summary": "GitHub 的官方 MCP 服务器",
+      "url": "https://github.com/github/github-mcp-server",
+      "author": "github",
+      "stars": 31059,
+      "language": "Go"
+    },
+    {
+      "title": "fastmcp",
+      "type": "GitHub",
+      "summary_en": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+      "summary": "🚀 构建 MCP 服务器和客户端的快速、Python 方式。",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "author": "PrefectHQ",
+      "stars": 25861,
+      "language": "Python"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 380973,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 241368,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 205558,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
