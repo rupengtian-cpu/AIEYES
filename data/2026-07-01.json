@@ -1,0 +1,508 @@
+{
+  "date": "2026-07-01",
+  "generated_at": "2026-07-01T12:47:54.493238+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "FaceMoE: Mixture of Experts for Low-Resolution Face Recognition",
+      "title_zh": "FaceMoE：低分辨率人脸识别专家的组合",
+      "summary": "Low-resolution face recognition (LR-FR) remains a challenging task due to poor feature extraction and aggregation, as probe images often contain limited identity information resulting from extreme degradations such as blur, occlusion, and low contrast. Additionally, the domain gap between high-resolution (HR) gallery images and low-resolution (LR) probe ima…",
+      "summary_zh": "由于特征提取和聚合不佳，低分辨率人脸识别（LR-FR）仍然是一项具有挑战性的任务，因为探测图像通常包含由于模糊、遮挡和低对比度等极端退化而导致的有限身份信息。此外，高分辨率（HR）图库图像和低分辨率（LR）探测图像之间的域差距构成了重大挑战。当在 LR 数据集上进行微调时，单个特征编码器很难在两个领域中有效地泛化，而灾难性遗忘会进一步放大这个问题。为了应对这些挑战，我们提出了 FaceMoE，它是针对低分辨率人脸识别的专家混合 (MoE) 转换器架构的有效改编。具体来说，我们引入了多个专门的前馈网络（FFN）专家，并结合了一个 top-k 路由器，该路由器动态地将令牌分配给适当的专家。这种设计迅速促进了专家对面部不同语义区域的专业化，这使得 FaceMoE 能够执行分辨率感知的特征提取。此外，top-k 路由器有利于稀疏专家激活，使模型能够在 LR…",
+      "authors": [
+        "Kartik Narayan",
+        "Vishal M. Patel"
+      ],
+      "published": "2026-06-30T17:59:57Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.32040v1",
+      "abs_url": "https://arxiv.org/abs/2606.32040v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.32040v1"
+    },
+    {
+      "title": "Introspective Coupling: Self-Explanation Training Tracks Behavioral Change Despite Fixed Supervision",
+      "title_zh": "内省耦合：自我解释训练跟踪行为变化，尽管有固定的监督",
+      "summary": "When does training language models (LMs) to generate explanations of their predictions yield faithful introspection, rather than superficial imitation? We study LMs trained to explain which features of their inputs influenced their behavior, using models' counterfactual behavior on modified inputs as supervision. Surprisingly, we find that LMs trained on fi…",
+      "summary_zh": "训练语言模型（LM）来生成对其预测的解释何时会产生忠实的内省，而不是肤浅的模仿？我们研究了经过训练的语言模型，以解释输入的哪些特征影响了他们的行为，使用模型对修改输入的反事实行为作为监督。令人惊讶的是，我们发现，接受来自自身早期检查点甚至不同家庭中行为相似模型的固定反事实解释训练的语言模型，经常会产生更忠实于自己当前行为的解释，而不是训练目标的解释。当训练解释在训练过程中与当前行为保持充分相关时，即使行为本身发生变化，LM 解释和行为之间的这种“内省”耦合就会发生。我们还表明，内省耦合会跟踪行为变化：当解释培训与其他培训后目标同时提供时，解释会跟踪这些变化，而无需更新监督。这种现象出现在多个任务中，包括阿谀奉承和拒绝，并且对标签噪声具有鲁棒性。总的来说，我们的结果表明，即使是反事实解释的固定数据集也可以提供可扩展且可概括的训练后信号以进行内省。",
+      "authors": [
+        "Zifan Carl Guo",
+        "Laura Ruis",
+        "Jacob Andreas",
+        "Belinda Z. Li"
+      ],
+      "published": "2026-06-30T17:59:32Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.32038v1",
+      "abs_url": "https://arxiv.org/abs/2606.32038v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.32038v1"
+    },
+    {
+      "title": "PointSplat: Compact Gaussian Splatting via Human-Centric Prediction",
+      "title_zh": "PointSplat：通过以人为中心的预测进行紧凑高斯分布",
+      "summary": "Producing 3D human representations from input views on the fly is essential for immersive live streaming systems, where representation compactness is as critical as high fidelity given limited computational power and transmission bandwidth. Although recent feed-forward reconstruction methods achieve impressive quality through the view-centric prediction of…",
+      "summary_zh": "从动态输入视图生成 3D 人体表征对于沉浸式直播系统至关重要，在有限的计算能力和传输带宽的情况下，表征紧凑性与高保真度同样重要。尽管最近的前馈重建方法通过以视图为中心的 3D 表示预测实现了令人印象深刻的质量，但它们在多个视图中重复编码相同的主题内容，导致显着的视图间冗余。我们的主要见解是直接在 3D 空间中执行预测，使网络能够学习并生成高度紧凑的表示。为此，我们提出了 PointSplat，一种以人类为中心的新颖方法，可以直接从输入点集推断高斯原语。所提出的方法首先估计粗略的几何代理并执行射线投射以修剪冗余点并建立明确的 2D--3D 对应关系。随后，它采用点图像变换器来融合外观和几何特征，在单次前向传递中预测高斯属性。这种设计将预测限制在感兴趣的前景区域，大大减少了高斯总数，同时提高了新视图渲染质量。大量实验表明，PointSplat 实现了更…",
+      "authors": [
+        "Yujie Guo",
+        "Yudong Jin",
+        "Lingteng Qiu",
+        "Zehong Shen",
+        "Zhen Xu",
+        "Jing Zhang"
+      ],
+      "published": "2026-06-30T17:59:05Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.32036v1",
+      "abs_url": "https://arxiv.org/abs/2606.32036v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.32036v1"
+    },
+    {
+      "title": "QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents",
+      "title_zh": "QVal：低成本评估长期 LLM 代理人的密集监督信号",
+      "summary": "LLM agents increasingly act over long horizons, where a single trajectory can contain hundreds or thousands of actions. In these settings, outcome-only rewards provide too sparse guidance, failing to inform the model about the goodness of intermediate actions. Dense supervision methods aim to solve this problem by scoring intermediate steps, from intrinsic…",
+      "summary_zh": "LLM 代理越来越多地在长视野中行动，其中单个轨迹可以包含数百或数千个行动。在这些设置中，仅结果奖励提供的指导过于稀疏，无法告知模型中间行动的优点。密集监督方法旨在通过对中间步骤进行评分来解决这个问题，从内在信心到自我蒸馏和嵌入相似性。然而，通常的做法是通过测量集成它们的训练管道的下游性能来评估它们。这是昂贵的，将监督质量与培训工程混杂因素混为一谈，并且使得需要不同培训设置的不同方法系列变得无法比较。因此，密集的监督方法很少以共同点为基准。我们引入了 QVal，一个无需训练的测试平台，用于直接评估密集的监督信号。给定状态-动作对，QVal 衡量方法的得分 Q 对齐的程度：它是否根据强参考策略的 Q 值对动作进行排序。这使我们可以在任何训练运行之前比较信号，并将信号质量与其他工程选择分开。我们将 QVal 实例化为 QVal-v1.0，对四种不同环境…",
+      "authors": [
+        "Sergio Hernández-Gutiérrez",
+        "Matteo Merler",
+        "Ilze Amanda Auzina",
+        "Joschka Strüber",
+        "Ameya Prabhu",
+        "Matthias Bethge"
+      ],
+      "published": "2026-06-30T17:58:23Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.32034v1",
+      "abs_url": "https://arxiv.org/abs/2606.32034v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.32034v1"
+    },
+    {
+      "title": "When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors",
+      "title_zh": "当法学硕士不小心读表时：测量和减少数据引用错误",
+      "summary": "While large language models (LLMs) perform well on table tasks, they still make data referencing errors (DREs), i.e., incorrectly citing or omitting table values, despite understanding the table structure. Beyond final-answer accuracy, DREs directly compromise the correctness and reliability of intermediate reasoning steps. Yet prior studies have only offer…",
+      "summary_zh": "虽然大型语言模型 (LLM) 在表任务上表现良好，但它们仍然会出现数据引用错误 (DRE)，即，尽管了解表结构，但错误地引用或省略表值。除了最终答案的准确性之外，DRE 还直接损害中间推理步骤的正确性和可靠性。然而之前的研究只提供了有限的小规模分析。在这项工作中，我们首次对不同模型和任务的表格数据引用错误进行系统评估。我们的结果表明，DRE 出现在所有测试模型（1.7B 至 20B 参数）中。此外，我们证明，通过基于批评家的过滤和拒绝抽样，将数据引用作为批评家可显着提高答案准确性，最高可达 12.0%。最后，我们训练了一个轻量级的 4B 参数批评模型，该模型在检测分布内和分布外 DRE 方面的平均 F1 分数达到 78.2%，并有效辅助大型模型的推理。",
+      "authors": [
+        "Yuqing Yang",
+        "Qi Zhu",
+        "Zhen Han",
+        "Boran Han",
+        "Zhengyuan Shen",
+        "Shuai Wang"
+      ],
+      "published": "2026-06-30T17:54:50Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.32029v1",
+      "abs_url": "https://arxiv.org/abs/2606.32029v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.32029v1"
+    },
+    {
+      "title": "Generative Skill Composition for LLM Agents",
+      "title_zh": "LLM 代理人的生成技能构成",
+      "summary": "Recent LLM agents benefit from skills for solving complex tasks. Skills encapsulate modular packages of procedural knowledge and instructions for performing specialized tasks, such as setting up a sandboxed environment, running a test suite, or refactoring a function across multiple files. As skill libraries grow and become reusable across tasks and domains…",
+      "summary_zh": "最近的法学硕士代理人受益于解决复杂任务的技能。技能封装了用于执行专门任务的程序知识和指令的模块化包，例如设置沙盒环境、运行测试套件或跨多个文件重构函数。随着技能库不断增长并可跨任务和领域重用，选择合适的技能组合已成为一个中心瓶颈。现有的方法分为两类。一个将智能体的推理暴露给整个技能集合；另一个通过嵌入或基于 LLM 的重新排序器执行技能检索。两者都提供了有用的见解；然而，他们忽视了技能构成的结构性本质，这是对哪些技能、多少技能以及以何种顺序排列的共同决定——这三个维度是无法分离的。我们将其形式化为结构化技能组合：给定一个任务和一个技能库，预测一个可执行的技能计划，该计划共同指定激活的子集、计数和执行顺序。我们提出了 SkillComposer，它将结构化技能组合实例化为任务条件技能序列预测。 SkillComposer 在技能标识符上使用约束自回归…",
+      "authors": [
+        "Xinyu Zhao",
+        "Zhen Tan",
+        "Vaishnav Tadiparthi",
+        "Nakul Agarwal",
+        "Kwonjoon Lee",
+        "Ehsan Moradi Pari"
+      ],
+      "published": "2026-06-30T17:53:09Z",
+      "category": "cs.CL",
+      "arxiv_id": "2606.32025v1",
+      "abs_url": "https://arxiv.org/abs/2606.32025v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.32025v1"
+    },
+    {
+      "title": "FLORA: A deep learning approach to predict forest attributes from heterogeneous LiDAR data",
+      "title_zh": "FLORA：一种从异构 LiDAR 数据预测森林属性的深度学习方法",
+      "summary": "Forest attributes are essential for national-scale resource monitoring. Airborne LiDAR metrics are among the auxiliary variables most strongly correlated with forest attributes used in National Forest Inventory (NFI) estimates. However, producing wall-to-wall predictions remains challenging when LiDAR data are acquired under heterogeneous conditions. As nat…",
+      "summary_zh": "森林属性对于国家规模的资源监测至关重要。机载 LiDAR 指标是与国家森林清查 (NFI) 估算中使用的森林属性最密切相关的辅助变量之一。然而，当在异构条件下获取 LiDAR 数据时，生成全面的预测仍然具有挑战性。随着国家激光雷达项目在欧洲范围内扩展，传感器、飞行参数、季节和扫描角度的变化限制了现有模型的稳健性，而这些模型通常根据当地条件进行校准。我们提出了 FLORA（带有辅助数据的森林 LiDAR 八叉树回归），这是一个深度学习框架，可以预测六种森林属性：来自异构 LiDAR 点云的主导高度、总体积、落叶体积、针叶体积、断面积和茎密度。 FLORA 通过后期融合门控机制将基于八叉树的主干与生态和时空辅助变量相结合。使用法国 LiDAR HD 项目的数据在法国大陆 32,052 个国家森林清查地块上对模型进行训练和评估。在叶上和叶下采集上训练的单…",
+      "authors": [
+        "Emilie Vautier",
+        "Clément Mallet",
+        "Cédric Vega"
+      ],
+      "published": "2026-06-30T17:52:28Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.32023v1",
+      "abs_url": "https://arxiv.org/abs/2606.32023v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.32023v1"
+    },
+    {
+      "title": "Automated Background Swapping for Robustness against Spurious Backgrounds",
+      "title_zh": "自动背景交换可实现针对虚假背景的鲁棒性",
+      "summary": "Classifiers based on Deep Neural Networks exhibit strong performance across domains, yet can fail catastrophically if they rely on spurious correlations, i.e., features that are predictive of the target label in the training data but are not causally linked and thus fail to generalize. For the vision domain, many such spurious correlations manifest themselv…",
+      "summary_zh": "基于深度神经网络的分类器在跨领域表现出强大的性能，但如果它们依赖于虚假相关性，即可以预测训练数据中的目标标签但没有因果关系并因此无法泛化的特征，则可能会发生灾难性的失败。对于视觉领域，许多此类虚假相关性在图像的背景中显现出来，其中只有前景可以预测类别标签。在本文中，我们引入自动背景交换（AutoBackSwap）来减少分类器对此类虚假背景的依赖。 AutoBackSwap使用辅助网络来解开前景和背景，然后通过填充来合成完整的背景，最后结合不同的前景和修复的背景来增强训练数据。我们发现，仅对几百个样本进行补丁式标记就足以训练二级网络，并在具有挑战性的图像分类任务上自动增强完整的训练数据集。与许多以前的方法相比，即使训练数据中没有单个样本打破虚假相关性，AutoBackSwap 也被证明非常有效。在一系列具有虚假背景的图像分类任务中，AutoBackS…",
+      "authors": [
+        "Cesar Roder",
+        "Kajetan Schweighofer"
+      ],
+      "published": "2026-06-30T17:50:24Z",
+      "category": "cs.CV",
+      "arxiv_id": "2606.32018v1",
+      "abs_url": "https://arxiv.org/abs/2606.32018v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.32018v1"
+    },
+    {
+      "title": "FedLAB: Traceable Semantic Codebooks for Federated Multimodal Graph Foundation Learning",
+      "title_zh": "FedLAB：用于联合多模态图基础学习的可追踪语义密码本",
+      "summary": "Multimodal graph foundation models aim to learn reusable knowledge from graphs enriched with text, images, attributes, and relational topology, thereby supporting diverse graph-centric and modality-centric tasks. In practice, however, such multimodal graphs are often distributed across decentralized clients, where raw contents and local structures cannot be…",
+      "summary_zh": "多模态图基础模型旨在从富含文本、图像、属性和关系拓扑的图中学习可重用的知识，从而支持各种以图为中心和以模态为中心的任务。然而，在实践中，这种多模态图通常分布在分散的客户端中，由于隐私限制，原始内容和本地结构无法集中共享。这激发了联合多模态图基础学习，这不仅需要可迁移的表示学习，还需要严格数据隔离下的内在语义可追溯性。现有的方法通常通过参数、原型、嵌入或紧凑码本来交换或存储知识，这些方法支持优化和传输，但没有明确揭示模态证据、节点语义和拓扑上下文如何共同支持预测。为了弥补这一差距，我们提出了 FedLAB，这是一种可追踪的语义码本框架，它将多模态图知识组织成类型化的分层码本，以提供模态证据、节点语义和拓扑上下文。 FedLAB 通过联合语义重心预训练进一步细化这些跟踪单元，同时保持原始多模态内容和图形结构本地化。对 10 个基准和 6 个下游任务进行…",
+      "authors": [
+        "Zekai Chen",
+        "Kairui Yang",
+        "Xuaner Chen",
+        "Xunkai Li",
+        "Xun Wu",
+        "Rong-Hua Li"
+      ],
+      "published": "2026-06-30T17:47:39Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.32016v1",
+      "abs_url": "https://arxiv.org/abs/2606.32016v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.32016v1"
+    },
+    {
+      "title": "CoMet: Context and Multiplicity Decomposition for Multimodal Uncertainty Estimation",
+      "title_zh": "CoMet：多模态不确定性估计的上下文和多重性分解",
+      "summary": "Uncertainty estimation has been a long-standing challenge in AI models; it amounts to \"knowing what you don't know,\" and metacognition is notoriously difficult even for humans (cf. the Dunning-Kruger effect). Although it is still far from solved even in simpler classification systems, tackling it in multimodal large language models (MLLMs) is becoming incre…",
+      "summary_zh": "不确定性估计一直是人工智能模型中长期存在的挑战；它相当于“知道你不知道的事情”，而元认知即使对于人类来说也是出了名的困难（参见邓宁-克鲁格效应）。尽管即使在更简单的分类系统中，这个问题还远未得到解决，但在多模态大型语言模型（MLLM）中解决这个问题正变得越来越重要。在 MLLM 中，不确定性可能源于任何不同的来源及其关系，并且进一步可能源于开放式环境中的无限答案。为了解决这些问题，我们提出了 CoMet，这是一种 MLLM 不确定性估计方法，通过将不确定性分解为特定于上下文的项和特定于多重性的项。前者捕获由给定上下文（例如任务或提示）引起的歧义，而后者捕获由上下文确定的有多少看似合理的答案仍然与给定输入兼容。我们训练一个轻量级的事后不确定性模块来估计这些量，这可以实现有效的不确定性估计，而无需自回归答案生成或重复采样。对各种开放式多模态基准、幻觉检…",
+      "authors": [
+        "Sanghyuk Chun",
+        "William Yang",
+        "Amaya Dharmasiri",
+        "Olga Russakovsky"
+      ],
+      "published": "2026-06-30T17:46:09Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.32012v1",
+      "abs_url": "https://arxiv.org/abs/2606.32012v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.32012v1"
+    },
+    {
+      "title": "Surrogate Fidelity: When Can Open LLMs Explain Closed Ones?",
+      "title_zh": "替代保真度：开放式法学硕士什么时候可以解释封闭式法学硕士？",
+      "summary": "Mechanistic interpretability (MI) requires full access to model internals, yet the APIs for most widely deployed language models at best expose log-probabilities over output tokens. This creates a surrogate problem: when do measurements made on open models allow us to make claims about a closed model? We evaluate surrogate fidelity at the prediction, attrib…",
+      "summary_zh": "机械可解释性 (MI) 需要完全访问模型内​​部结构，但最广泛部署的语言模型的 API 最多只能公开输出标记的对数概率。这就产生了一个替代问题：在开放模型上进行的测量何时允许我们对封闭模型提出主张？我们在预测、归因和表征层面评估替代保真度。对于二元分类任务，对数赔率提供了模型表示空间的 API 兼容标量读数，而留一归因提供了对模型行为的洞察。在涵盖四个系列（Llama、Qwen、GPT 和 Gemini）的 11 个模型中，我们发现预测保真度大大夸大了归因保真度：对答案达成一致的模型通常对原因有不同意见。我们记录了访问有效性反转：注意模式和扰动幅度等白盒信号在模型中高度稳定，但对因果归因的预测能力很弱，而黑盒输入消融通过设计捕获了因果归因。机制洞察力不会自动转移到封闭的目标，并且预测级别的一致性不足以保证这种转移。代码和结果可在 https://g…",
+      "authors": [
+        "Philippe Chlenski",
+        "Zachariah Carmichael",
+        "Ayush Warikoo",
+        "Chia-Tse Shao",
+        "Yingxiao Ye",
+        "Aobo Yang"
+      ],
+      "published": "2026-06-30T17:43:44Z",
+      "category": "cs.LG",
+      "arxiv_id": "2606.32008v1",
+      "abs_url": "https://arxiv.org/abs/2606.32008v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.32008v1"
+    },
+    {
+      "title": "AxDafny: Agentic Verified Code Generation in Dafny",
+      "title_zh": "AxDafny：Dafny 中的代理验证代码生成",
+      "summary": "We study agentic code generation in Dafny, where a model must generate both executable code and the proof artifacts for verification. We present AxDafny, a verifier-guided repair framework that iteratively generates implementations, invariants, assertions, and termination arguments. We also introduce LiveCodeBench-Pro-Dafny (LCB-Pro-Dafny), a benchmark of 2…",
+      "summary_zh": "我们研究 Dafny 中的代理代码生成，其中模型必须生成可执行代码和用于验证的证明工件。我们提出了 AxDafny，一个验证者引导的修复框架，它迭代地生成实现、不变量、断言和终止参数。我们还推出了 LiveCodeBench-Pro-Dafny (LCB-Pro-Dafny)，这是一个将 250 个竞赛式编程问题转换为 Dafny 的基准，具有正式规范和基于验证者的评估工具。在 LCB-Pro-Dafny 上，AxDafny 相对于基准 GPT-5.5 性能大幅提高了验证成功率。在 DafnyBench 上，AxDafny 的验证成功率达到 92.7%，比之前报道的最强证明提示基线高出 6.5 个百分点。最后，我们展示了验证成功和运行时测试性能衡量生成代码的不同方面。",
+      "authors": [
+        "Benjamin Breen",
+        "Austin Letson",
+        "Borja Requena Pozo",
+        "Leopoldo Sarra"
+      ],
+      "published": "2026-06-30T17:39:43Z",
+      "category": "cs.AI",
+      "arxiv_id": "2606.32007v1",
+      "abs_url": "https://arxiv.org/abs/2606.32007v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.32007v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "“汇智聚力·智启新程”智能体应用驱动产业跃迁主题论坛在京举办 - 新华网",
+      "summary": "“汇智聚力·智启新程”智能体应用驱动产业跃迁主题论坛在京举办 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Wed, 01 Jul 2026 08:41:31 GMT",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxORjhHeGttaml5UUx2bUozT2Jva1Y2bEh2aS1Xa2VxazZfMVVuSDdad0Vhczg0SVExZnNIVHhsdzBTdHE4dVE4akxKWkU5SG5KX0NxWF9qNkNhT1dLeUFScFQzQzc0MVZ1cXVtZ0VRZENfU1puNnBmTVI1RkthZTJxdA?oc=5"
+    },
+    {
+      "title": "全国首个“智能体+FDE”培育工程在光谷启动 - 中国科技网",
+      "summary": "全国首个“智能体+FDE”培育工程在光谷启动 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Wed, 01 Jul 2026 03:19:44 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE44Mm1YNmhSbnYwc29uMExibnBCVjBFQmloWmFoYVozekFneVFvSjdHMDFrdXlyMGZQQWpuNC1TT3lDVGNjQ1FpTTdLb2lnQkVucFFhYjVNblFIaHF1YUJyb0tMMm1pUlQwX05pZ1FpTnM?oc=5"
+    },
+    {
+      "title": "人保财险签发全国首单“算力保”专属产品 - 新华网客户端",
+      "summary": "人保财险签发全国首单“算力保”专属产品 新华网客户端",
+      "source": "新华网客户端",
+      "lang": "zh",
+      "published": "Wed, 01 Jul 2026 06:43:48 GMT",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPYTFHVHVkUzdzekpGWXpCZlBkUVJkVkx6aXlXREJvQWp4SXdDMnpLZnFyZENlUVZvd1RzeGVtQk04aURualZNMm95Uml4MHVNNmJjcGE5c0hJWmE4X1hvaGhMRWdGZXgteXVucEcyYkJCVkVwVjBYVjYwTkk3NFV3VndNRk9fTno1UTFhRjJpMEJ3elE0bHZKRUl3?oc=5"
+    },
+    {
+      "title": "空天地一体，中国移动算力“新”生态丨算启新程“智”在移动 - 中国日报网",
+      "summary": "空天地一体，中国移动算力“新”生态丨算启新程“智”在移动 中国日报网",
+      "source": "中国日报网",
+      "lang": "zh",
+      "published": "Wed, 01 Jul 2026 02:07:10 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9BVlAweDdPWW4zQmdhVnpIOG13aGZqak5CdzlJMFlBZUMxdFVqYUtPRVQtVjI0ek4tSzlrRGxqdnRCTEZVUVAyMmdoU3F1c09IZXpveU9qdndtZnFRRXVTbmRyYU14RmZkRWtsMjhYNExoV2pHVlBDZm1SM1g?oc=5"
+    },
+    {
+      "title": "三年投10亿、年内万P算力 光谷发布智能体经济“路线图” - 财联社",
+      "summary": "三年投10亿、年内万P算力 光谷发布智能体经济“路线图” 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Wed, 01 Jul 2026 10:36:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBYemRqVjRHNFVfcExfa0ctTWhya1JfNEdtNTJWY1pmblRiLUhpUjZ5WVNvcjloaG14S3hVMDZROWtUUGc2c1JscA?oc=5"
+    },
+    {
+      "title": "智能体产业迈入落地“深水区” 产学研资协同破解规模化难题 - 光明网",
+      "summary": "智能体产业迈入落地“深水区” 产学研资协同破解规模化难题 光明网",
+      "source": "光明网",
+      "lang": "zh",
+      "published": "Wed, 01 Jul 2026 02:04:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1oRkNOMzh3aERuMDQ2THlucVBmb2dQUWZ0NWJLcVZNQXJ2czB2SExadXJGVWtSbzBMTmxqS2xUSUhaTzVyUG1oSHZacXNJbHgweWZ2UmZlRmRnR2RGb19lQg?oc=5"
+    },
+    {
+      "title": "“龙虾”带火硬件生意：当AI智能体接管智能家居 - 21财经",
+      "summary": "“龙虾”带火硬件生意：当AI智能体接管智能家居 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Wed, 01 Jul 2026 07:14:54 GMT",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPN2toVVVlUFM0dU0wZGc2ek1PSmNnUEQ2WUJtTi0xajZQMVl0WEJJR1E2TkFvdkVoRVExX0NXakxUYmVuZDlBRTlrSFotYnU2eTZEakZZMXlMR0l1OVhoemhLbXFhYkFKaUxhZTZCTjJTMmtjZmlod01TX0g5akFfazRpMzFqLTczWm1KdUJPNjREQnNB?oc=5"
+    },
+    {
+      "title": "联和投资公司下属上海兆芯携全栈ZX86自主算力方案亮相2026世界移动通信大会_国企动态 - gzw.sh.gov.cn",
+      "summary": "联和投资公司下属上海兆芯携全栈ZX86自主算力方案亮相2026世界移动通信大会_国企动态 gzw.sh.gov.cn",
+      "source": "gzw.sh.gov.cn",
+      "lang": "zh",
+      "published": "Wed, 01 Jul 2026 01:43:21 GMT",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRlFCZTBMbThEenB2MzREZG5kV3dvWURXOWl2Wk16RDVpdU8xQkhSMDJheWtQUC1Scmw5RkowcGhSQjVkVzFXUkx5NkxNamtzOUFGQmVUa1JxN19sb3MzeHBEWjd5WHdTcUFHQ1N2VmlCN1ZzNC03djZlRV9YaVotMUFIemdwMVVOZGFkR1JWVGZudw?oc=5"
+    },
+    {
+      "title": "行云科技：控股子公司签订55.08亿元算力服务合同 - 东方财富",
+      "summary": "行云科技：控股子公司签订55.08亿元算力服务合同 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Wed, 01 Jul 2026 12:18:55 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1vazJFNU9iQ0RRdHNiek9Qem15LUFFejRzSGNuNnEtOXVfUXhzVmtONFFkTjRsREt2b0xsRG96MEd2bU1KcExMYk0wR2toWlBqU0xyWmI1SmFxdy1DTW5lalhLWQ?oc=5"
+    },
+    {
+      "title": "机器人抢活、智能体解惑……这场AI+理论宣讲开通了“赛博空间” - 浙江新闻",
+      "summary": "机器人抢活、智能体解惑……这场AI+理论宣讲开通了“赛博空间” 浙江新闻",
+      "source": "浙江新闻",
+      "lang": "zh",
+      "published": "Wed, 01 Jul 2026 10:43:09 GMT",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9oS0ozY1pVR3dCSUhzenFKSGtpUEltekN2bHd4c2VrREFnb2FwVkFjbDgyZnhsLWNjTVNPZUN0Mjl2eWVDSWtsazJfcEMxTUJGVkljMlROaXBScHY3VDJubzJYYnkwc3NpcnBMaG1hdkRYZw?oc=5"
+    },
+    {
+      "title": "全市唯一！园区大模型备案+1 - sipac.gov.cn",
+      "summary": "全市唯一！园区大模型备案+1 sipac.gov.cn",
+      "source": "sipac.gov.cn",
+      "lang": "zh",
+      "published": "Wed, 01 Jul 2026 02:12:20 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObTIxODdBMmtkTWYtNG5BR3d6Z1N0S21xZXZMdi1kUFZXSlJXbXU5TWpiWlpGN2o3eVJNa2YzVkU0U05JOEU4Q2ZBZG1OWmV4ckFObXlTeVFMWXBxU04wMVRQcHhaNTViOGxoYlFZUTl1V2pxdVduMGJ3TTM5VjhIbkJtTWZvWXNBQWE0?oc=5"
+    },
+    {
+      "title": "“互联网之父”即将退休 预言AI智能体将重塑行业标准 - 新浪财经",
+      "summary": "“互联网之父”即将退休 预言AI智能体将重塑行业标准 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Wed, 01 Jul 2026 08:12:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNmwxNVo2R01qbzF4cWEzRnhJYWhHaHFEQldWZEVweUM1SDhHX1Q1Y21jMnBfTFFRaW4wQ0VwY2xSSUplcEZYdE5HYzNmTEk0RjFZYkJTcGNzdHJ3TU15d0tFbjUzb090X1BqR091VWhySkNjdld5bzQ1Szk1TGhEVnppNWZPbFE?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 90094,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。减少 60-95% 的标记，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 55009,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 34562,
+      "language": "TypeScript"
+    },
+    {
+      "title": "github-mcp-server",
+      "type": "GitHub",
+      "summary_en": "GitHub's official MCP Server",
+      "summary": "GitHub 的官方 MCP 服务器",
+      "url": "https://github.com/github/github-mcp-server",
+      "author": "github",
+      "stars": 31100,
+      "language": "Go"
+    },
+    {
+      "title": "fastmcp",
+      "type": "GitHub",
+      "summary_en": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+      "summary": "🚀 构建 MCP 服务器和客户端的快速、Python 方式。",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "author": "PrefectHQ",
+      "stars": 25895,
+      "language": "Python"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 381264,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 243158,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 206932,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
