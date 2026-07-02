@@ -1,0 +1,514 @@
+{
+  "date": "2026-07-02",
+  "generated_at": "2026-07-02T11:54:43.717983+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Measuring the Gap Between Human and LLM Research Ideas",
+      "title_zh": "衡量人类和法学硕士研究理念之间的差距",
+      "summary": "LLMs are increasingly used to brainstorm research ideas, but existing evaluations mostly judge individual ideas by novelty, feasibility, or expert preference. We instead ask: how far are current LLM-generated ideas from human researchers? To characterize this gap, we build a large-scale evaluation framework for ideation from high-quality human research pape…",
+      "summary_zh": "法学硕士越来越多地用于集思广益的研究想法，但现有的评估大多通过新颖性、可行性或专家偏好来判断个人想法。相反，我们会问：目前法学硕士提出的想法与人类研究人员的差距有多远？为了描述这一差距，我们根据高质量的人类研究论文构建了一个大规模的构思评估框架。对于每篇论文，我们都会对一小部分密切相关的先前作品进行逆向工程，这些作品可能激发了其核心思想。然后，法学硕士会被提示从一组论文标题和摘要中产生一个新想法。我们引入了一个两轴研究品味分类法，通过机会模式和研究范式来描述每个想法，并用它来量化人类和法学硕士想法之间的差异。在不同法学硕士产生的想法集中，我们观察到一致的分布差距：法学硕士的想法不成比例地集中在类似桥梁的机会和综合方法上，而人类论文参考分布在框架差距和构建贡献的方式上更广泛地传播。这一结果表明，优秀的法学硕士可以产生一系列合理的想法，但该范围仍然比人…",
+      "authors": [
+        "Ziyu Chen",
+        "Yilun Zhao",
+        "Arman Cohan"
+      ],
+      "published": "2026-07-01T17:59:56Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.01233v1",
+      "abs_url": "https://arxiv.org/abs/2607.01233v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.01233v1"
+    },
+    {
+      "title": "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training",
+      "title_zh": "一层就够了吗？训练单个 Transformer 层可以匹配全参数 RL 训练",
+      "summary": "Reinforcement learning (RL) has become a central component of post-training large language models (LLMs), yet little is understood about how RL adaptation is distributed across transformer layers. Existing approaches typically update all model parameters uniformly, implicitly assuming that every layer contributes similarly to the gains obtained during RL po…",
+      "summary_zh": "强化学习 (RL) 已成为训练后大型语言模型 (LLM) 的核心组成部分，但人们对 RL 适应如何跨 Transformer 层进行分布了解甚少。现有方法通常统一更新所有模型参数，隐含地假设每一层对 RL 后训练期间获得的增益的贡献相似。在这项工作中，我们通过对 RL 训练进行系统的分层研究来挑战这一假设。令人惊讶的是，我们发现训练单个 Transformer 层可以恢复全参数 RL 训练所获得的大部分增益，在某些情况下甚至超过它。为了量化这种现象，我们引入了数量层贡献，它衡量通过单独训练一层而恢复的完全强化学习改进的比例。在涵盖两个模型系列（Qwen3、Qwen2.5）、三种 RL 算法（GRPO、GiGPO、Dr. GRPO）的七个模型以及包括数学推理、代码生成和代理决策在内的多个任务域中，我们观察到一个非常稳定的模式：RL 增益高度集中在变压…",
+      "authors": [
+        "Zijian Zhang",
+        "Rizhen Hu",
+        "Athanasios Glentis",
+        "Dawei Li",
+        "Chung-Yiu Yau",
+        "Hongzhou Lin"
+      ],
+      "published": "2026-07-01T17:59:54Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.01232v1",
+      "abs_url": "https://arxiv.org/abs/2607.01232v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.01232v1"
+    },
+    {
+      "title": "Language-Critique Imitation Learning from Suboptimal Demonstrations",
+      "title_zh": "从次优演示中进行语言批判模仿学习",
+      "summary": "Prior work on imitation learning from suboptimal demonstrations typically relies on compressed supervision signals such as confidence estimates, discriminator scores, or importance weights. These scalar signals are inherently limited, as they cannot explicitly express intermediate reasoning about task progress, failure modes, or corrective actions. We propo…",
+      "summary_zh": "先前从次优演示中进行模仿学习的工作通常依赖于压缩的监督信号，例如置信度估计、鉴别器分数或重要性权重。这些标量信号本质上是有限的，因为它们无法明确表达有关任务进度、故障模式或纠正措施的中间推理。我们提出了一种从次优演示中进行模仿学习的语言批评框架，该框架利用自然语言作为结构化监督信号，避免表达反馈崩溃为标量。我们的方法首先从明确描述当前进展的演示中构建语言标签，识别次优行为并提供细粒度的纠正指导。然后，我们引入一种语言批评损失，直接使用这些结构化信号来训练策略，而不将它们简化为标量，并将其实例化为行为克隆和扩散策略，产生 LC-BC 和 LC-DP。我们进一步提供了一个理论结果，表明所提出的客观上限是标准假设下专家绩效差距的上限。根据经验，我们评估了涵盖导航、操作和游戏玩法的各种连续控制任务，我们的方法始终优于强大的模仿学习和离线强化学习基线。这些结…",
+      "authors": [
+        "Chih-Han Yang",
+        "Dai-Jie Wu",
+        "Yun-Ping Huang",
+        "Ping-Chun Hsieh",
+        "Kenneth Marino",
+        "Shao-Hua Sun"
+      ],
+      "published": "2026-07-01T17:57:22Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.01225v1",
+      "abs_url": "https://arxiv.org/abs/2607.01225v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.01225v1"
+    },
+    {
+      "title": "Ink3D: Sculpting 3D Assets with Extremely Complex Textures via Video Generative Models",
+      "title_zh": "Ink3D：通过视频生成模型雕刻具有极其复杂纹理的 3D 资源",
+      "summary": "Recent 3D generative models can synthesize high-quality geometry but often struggle to reproduce intricate textures from reference images, largely due to the scarcity of large-scale 3D training data with rich surface appearance. In contrast, visual generative models are trained on datasets several orders of magnitude larger and excel at modeling complex vis…",
+      "summary_zh": "最近的 3D 生成模型可以合成高质量的几何体，但通常很难从参考图像中再现复杂的纹理，这主要是由于缺乏具有丰富表面外观的大规模 3D 训练数据。相比之下，视觉生成模型是在大几个数量级的数据集上进行训练的，并且擅长对复杂的视觉模式进行建模。出于这一差距，我们引入了 Ink3D，这是一个将 3D 生成与大规模视频生成模型连接起来的框架，以合成极其复杂的纹理。 Ink3D 首先使用现成的 3D 生成模型重建白色网格几何体。然后，它采用 OrbitPainter（一种条件视频生成模型）来生成密集的轨道扫描视频，捕获跨视点的物体外观。为了将这些视图转换为连贯的纹理，我们引入了TextureOptimizer，这是一个神经烘焙模块，它集成了密集的多视图观察，同时减轻了视频生成引起的几何不一致。通过解耦几何和纹理合成并利用大规模预训练视频先验，Ink3D 能够比以…",
+      "authors": [
+        "Yue Han",
+        "Chong Li",
+        "Zhening Liu",
+        "Cong Huang",
+        "Fang Deng",
+        "Yong Liu"
+      ],
+      "published": "2026-07-01T17:56:39Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.01222v1",
+      "abs_url": "https://arxiv.org/abs/2607.01222v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.01222v1"
+    },
+    {
+      "title": "FurnitureVLA: Learning Long-Horizon Bimanual Furniture Assembly with Vision-Language-Action Model",
+      "title_zh": "FurnitureVLA：使用视觉-语言-动作模型学习长视野双手家具组装",
+      "summary": "Current work on robot furniture assembly mostly focuses on toy-scale settings or single-arm manipulation. We introduce FurnitureVLA, the first systematic study of real-scale bimanual furniture assembly using Vision-Language-Action models (VLAs). We formalize the task, develop a scalable simulation pipeline for expert data generation and evaluation, and buil…",
+      "summary_zh": "目前机器人家具组装的工作主要集中在玩具秤设置或单臂操作上。我们推出 FurnitureVLA，这是第一个使用视觉-语言-动作模型 (VLA) 对真实比例的双手家具组装进行系统研究。我们将任务形式化，开发用于专家数据生成和评估的可扩展模拟管道，并构建用于单操作员双手控制的 VR 远程操作系统，以收集高质量的真实世界演示。为了解决具有多达 7 个子任务和 1550 个控制步骤的极端长视野组装问题，我们提出了一种进度增强型 VLA，在基于语义的子任务上进行了微调，联合预测动作和连续进度信号，实现自动子任务转换并减少推理过程中的复合错误。我们进一步研究对实际规模装配精度产生严重影响的感知和控制设计因素。与三种家具类型的基线相比，FurnitureVLA 将平均模拟成功率从 48% 提高到 80%，我们的设计因素研究还额外提高了 21%。我们在真实的 Kin…",
+      "authors": [
+        "Chenyang Ma",
+        "Yue Yang",
+        "Radu Corcodel",
+        "Siddarth Jain",
+        "Andrew Wu",
+        "Chiori Hori"
+      ],
+      "published": "2026-07-01T17:51:21Z",
+      "category": "cs.RO",
+      "arxiv_id": "2607.01212v1",
+      "abs_url": "https://arxiv.org/abs/2607.01212v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.01212v1"
+    },
+    {
+      "title": "Are Performance-Optimization Benchmarks Reliably Measuring Coding Agents?",
+      "title_zh": "性能优化基准是否可靠地衡量编码代理？",
+      "summary": "Repository-level performance-optimization benchmarks such as GSO, SWE-Perf and SWE-fficiency evaluate coding agents by applying patches to real repositories and comparing runtime against unoptimized baselines and official reference patches. Their leaderboard scores are increasingly used as evidence of coding-agent progress, but those scores can conflate run…",
+      "summary_zh": "存储库级性能优化基准（例如 GSO、SWE-Perf 和 SWE-fficiency）通过将补丁应用到真实存储库并将运行时与未优化的基线和官方参考补丁进行比较来评估编码代理。他们的排行榜分数越来越多地被用作编码代理进展的证据，但这些分数可能会混淆运行时的不稳定性、特定于基准的评分规则以及至少一项公开提交已经解决了多少任务。我们通过三个基准审核这些问题。首先，我们在四种常见类型的 Google Cloud 机器上重放 740 个代码优化任务的官方参考补丁。大多数基准测试任务都可以重放，但它们的参考补丁在每次跨机重放中仅满足 39/102 GSO 任务、11/140 SWE-Perf 任务和 411/498 SWE-fficiency 任务的原始基准有效性规则； SWE-Perf 特别脆弱，因为许多参考补丁产生接近于零的运行时更改。其次，我们表明公众提…",
+      "authors": [
+        "Zhi Chen",
+        "Zhensu Sun",
+        "Yuling Shi",
+        "David Lo",
+        "Lingxiao Jiang"
+      ],
+      "published": "2026-07-01T17:50:48Z",
+      "category": "cs.SE",
+      "arxiv_id": "2607.01211v1",
+      "abs_url": "https://arxiv.org/abs/2607.01211v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.01211v1"
+    },
+    {
+      "title": "Linkify: Learning from Interface-Augmented Assembly Graphs",
+      "title_zh": "Linkify：从界面增强装配图中学习",
+      "summary": "We present Linkify, a framework for learning from interface-augmented assembly graphs to enable context-aware part retrieval in mechanical assemblies. While recent generative AI methods for CAD have focused largely on isolated parts or monolithic assemblies, the rich geometric information at the interfaces between parts, where function is realized, remains…",
+      "summary_zh": "我们提出了 Linkify，这是一个从界面增强装配图中学习的框架，以实现机械装配中的上下文感知零件检索。虽然最近的 CAD 生成式 AI 方法主要集中在孤立的零件或整体组件上，但零件之间接口处（实现功能的地方）的丰富几何信息仍未得到充分探索。我们通过重新计算 Fusion 360 Gallery Assembly 数据集的高保真界面几何形状、纠正丢失和错误的接触以及生成局部接触区域的点云表示来解决这一差距。使用这些数据，我们构建装配图，其节点通过预训练的点云编码器对零件几何形状进行编码，其边缘对界面几何形状进行编码。在此表示之上，我们训练基于 GATv2 的图注意力网络来解决遮蔽零件预测任务：给定一个保留了一个零件的组件，该模型从大量几何聚集零件词汇中预测缺失组件的类别，从而近似现实的零件检索场景。与非图基线（例如逻辑回归和对聚合节点特征进行操作的…",
+      "authors": [
+        "Anushrut Jignasu",
+        "Daniele Grandi"
+      ],
+      "published": "2026-07-01T17:45:51Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.01205v1",
+      "abs_url": "https://arxiv.org/abs/2607.01205v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.01205v1"
+    },
+    {
+      "title": "World from Motion: Generative Dynamic Gaussian Reconstruction from Monocular Video",
+      "title_zh": "运动世界：单目视频生成动态高斯重建",
+      "summary": "We present World from Motion, a method for generating freely renderable dynamic 3D Gaussian representations from monocular videos. Our approach conditions a video model on dense, pixel-aligned renderings that encode appearance, geometry, and 3D scene motion along both input and target camera trajectories to correct rendering artifacts and fill in missing re…",
+      "summary_zh": "我们提出了 World from Motion，一种从单目视频生成可自由渲染的动态 3D 高斯表示的方法。我们的方法在密集、像素对齐的渲染上设置视频模型，这些渲染沿着输入和目标相机轨迹对外观、几何和 3D 场景运动进行编码，以纠正渲染伪影并填充初始重建中缺失的区域。为了训练该模型，我们构建了对齐的多视图视频对和动态 3DGS 表示的数据集，并具有单眼重建的模拟伪影特征。在测试时，我们将模型的各代（包括新观察到的区域和运动）提炼回单个一致的高质量动态 3DGS，从而改进新视图合成和底层 3D 运动。我们的方法在 4D 重建领域树立了新的技术水平，并无缝推广到具有大视点变化和动态运动的野外视频。",
+      "authors": [
+        "Liyuan Zhu",
+        "Shengyu Huang",
+        "Amrita Mazumdar",
+        "Tianye Li",
+        "Zan Gojcic",
+        "Gordon Wetzstein"
+      ],
+      "published": "2026-07-01T17:41:00Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.01202v1",
+      "abs_url": "https://arxiv.org/abs/2607.01202v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.01202v1"
+    },
+    {
+      "title": "Quantum vs. Classical Machine Learning: A Unified Empirical Comparison",
+      "title_zh": "量子与经典机器学习：统一的实证比较",
+      "summary": "Quantum computing has emerged as a promising computational paradigm for machine learning (ML), with the potential to offer computational advantages over classical approaches. At this stage, the evidence supporting the performance and advantages of quantum machine learning (QML) models relative to classical models is insufficient.To address this gap, this pa…",
+      "summary_zh": "量子计算已成为机器学习 (ML) 的一种有前景的计算范式，与传统方法相比，有可能提供计算优势。现阶段，支持量子机器学习（QML）模型相对于经典模型的性能和优势的证据还不够。为了解决这一差距，本文对 QML 模型及其经典模型的性能进行了实证研究。我们比较了监督学习和强化学习的七个模型对。我们的结果表明，评估的量子机器学习模型在整体预测性能、策略稳定性或训练时间方面尚未超过经典基线。尽管如此，QML 仍然是一种有前途的过滤噪声和控制误报的方法。我们的研究结果总结了量子机器学习在硬件环境、训练效率和收敛稳定性方面面临的挑战，为QML的鲁棒性和参数优化研究提供了基础。这项工作可在 https://github.com/Z-537-437/QML 上公开获取。",
+      "authors": [
+        "Chuanming Yu",
+        "Jiaming Liu",
+        "Zihao Ge",
+        "Xiongfei Wu",
+        "Lulu Zhu",
+        "Pengzhan Zhao"
+      ],
+      "published": "2026-07-01T17:31:46Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.01197v1",
+      "abs_url": "https://arxiv.org/abs/2607.01197v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.01197v1"
+    },
+    {
+      "title": "Perceive-to-Reason: Decoupling Perception and Reasoning for Fine-Grained Visual Reasoning",
+      "title_zh": "感知到推理：将感知和推理解耦以实现细粒度视觉推理",
+      "summary": "Fine-grained visual reasoning remains challenging for vision-language models, especially when small but critical visual cues are buried in high-resolution images. Existing approaches rely on repeated cropping or test-time visual search to introduce local evidence, but they typically do not explicitly distinguish perception from reasoning. In this paper, we…",
+      "summary_zh": "细粒度的视觉推理对于视觉语言模型仍然具有挑战性，特别是当小而关键的视觉线索隐藏在高分辨率图像中时。现有的方法依赖于重复裁剪或测试时视觉搜索来引入局部证据，但它们通常不会明确区分感知和推理。在本文中，我们提出了感知到推理（P2R），这是一个统一的框架，它将细粒度视觉推理制定为两个阶段的过程：模型首先将与问题相关的证据定位为感知器，然后根据带注释的图像和裁剪区域作为推理器回答问题。为了更好地使训练与这种解耦的公式保持一致，我们进一步引入了感知推理交替GRPO（PRA-GRPO），这是一种角色感知强化学习策略，仅使用最终答案监督在以感知为中心的更新和以推理为中心的更新之间交替。 P2R 建立在 Qwen3-VL-Instruct-2B/4B/8B 之上，持续提高跨模型规模的性能。特别是，P2R-4B 在 V-Star 上达到 93.2%，在 HR-Ben…",
+      "authors": [
+        "Hongxing Li",
+        "Xiufeng Huang",
+        "Dingming Li",
+        "Wenjing Jiang",
+        "Zixuan Wang",
+        "Haolei Xu"
+      ],
+      "published": "2026-07-01T17:24:26Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.01191v1",
+      "abs_url": "https://arxiv.org/abs/2607.01191v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.01191v1"
+    },
+    {
+      "title": "Right in the Right Way: LM Training with Verifiable Rewards and Human Demonstrations",
+      "title_zh": "以正确的方式进行：具有可验证奖励和人类示范的 LM 培训",
+      "summary": "RL with verifiable rewards (RLVR) has emerged as a powerful paradigm for training LMs on tasks with well-defined success metrics, such as code generation and mathematical reasoning. However, current RLVR methods optimize only what can be objectively scored, often neglecting subjective, non-verifiable aspects of human-like outputs, such as style and structur…",
+      "summary_zh": "具有可验证奖励的强化学习 (RLVR) 已成为一种强大的范式，用于训练 LM 执行具有明确定义的成功指标的任务，例如代码生成和数学推理。然而，当前的 RLVR 方法仅优化可以客观评分的内容，通常忽略类人输出的主观、不可验证的方面，例如风格和结构。这种限制导致了有据可查的失败模式，例如多样性崩溃、听起来不自然的响应和奖励黑客攻击。我们提出了一种对抗性生成器-鉴别器框架，该框架通过从人类演示中学习到的信号来增强可验证的奖励。使用强化学习训练生成器模型，以最大限度地提高任务准确性和来自判别器的对抗性奖励。鉴别器与生成器策略一起训练，学会区分人类编写的输出和模型生成的输出。鉴别器充当人类输出分布的学习代理，提供难以形式化为标量奖励的生成方面的反馈。在不同的领域，包括错误修复和开放式生成，我们的方法不断改进不可验证的属性，同时保持 RLVR 的准确性增益。在…",
+      "authors": [
+        "Mehul Damani",
+        "Isha Puri",
+        "Idan Shenfeld",
+        "Jacob Andreas"
+      ],
+      "published": "2026-07-01T17:13:35Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.01181v1",
+      "abs_url": "https://arxiv.org/abs/2607.01181v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.01181v1"
+    },
+    {
+      "title": "QuasiMoTTo: Quasi-Monte Carlo Test-Time Scaling",
+      "title_zh": "QuasiMoTTo：准蒙特卡罗测试时间缩放",
+      "summary": "Scaling inference compute, by generating many parallel attempts per problem, is a costly but reliable lever for improving language model capabilities. By default these attempts are generated independently, wasting inference compute on redundant solutions. This waste seems unavoidable. After all, independence is what makes parallel sampling trivial to scale.…",
+      "summary_zh": "通过为每个问题生成许多并行尝试来扩展推理计算，是提高语言模型能力的一种昂贵但可靠的杠杆。默认情况下，这些尝试是独立生成的，浪费了冗余解决方案的推理计算。这种浪费似乎是不可避免的。毕竟，独立性使得并行采样在规模上变得微不足道。然而，这种权衡并不是根本性的：采样器有丰富的设计空间，可以完全并行地生成相关但精确的样本。我们探索这个设计空间，作为提高扩展推理计算和强化学习（RL）样本效率的途径。具体来说，我们引入了 QuasiMoTTo，它使用相关样本作为 i.i.d 的直接替代品。样品。为了生成这些样本，QuasiMoTTo 使用自回归采样的重新参数化作为逆 CDF 采样，并使用准蒙特卡罗 (QMC) 绘制底层制服；由于 QMC 比 i.i.d. 更均匀地分布均匀性，因此生成的样本以少得多的冗余覆盖输出空间。尽管批次是相关的，但每个样本根据语言模型都是边…",
+      "authors": [
+        "Michael Y. Li",
+        "Anthony Zhan",
+        "Kanishk Gandhi",
+        "Noah D. Goodman",
+        "Emily B. Fox"
+      ],
+      "published": "2026-07-01T17:10:08Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.01179v1",
+      "abs_url": "https://arxiv.org/abs/2607.01179v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.01179v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "独家｜金山云加速GPU算力建设：小米百亿预算落地，阿里签五年数十亿长约 - Jiemian.com",
+      "summary": "独家｜金山云加速GPU算力建设：小米百亿预算落地，阿里签五年数十亿长约 Jiemian.com",
+      "source": "Jiemian.com",
+      "lang": "zh",
+      "published": "Thu, 02 Jul 2026 09:45:53 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBzQWZNN1c2VjM5R1lyWDNlS2N6bVJmNExpTXpSY2lILUwtTDhSQXhOUmM3NHdFVlZEOFF2VFkySjBpSjVkajkyenFFSUc5S01jTF9tUm5XM04?oc=5"
+    },
+    {
+      "title": "亚马逊硬件主管：公司将加速自研端侧AI芯片 为设备“换芯”做准备 - 财联社",
+      "summary": "亚马逊硬件主管：公司将加速自研端侧AI芯片 为设备“换芯”做准备 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Thu, 02 Jul 2026 08:31:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE56aEdwazJqVElMRTlhWU5CeGRIUUhSSzJ5aDNBZFBBYllYQ1o1dVNZdkQxcXo5TUVLam9rLXR0eTNfM2R6dXE1NA?oc=5"
+    },
+    {
+      "title": "美银：Meta卖算力，意在讲好AI投资回报故事 - 华尔街见闻",
+      "summary": "美银：Meta卖算力，意在讲好AI投资回报故事 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Thu, 02 Jul 2026 07:37:17 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0yV1pWR21KOE0wWjU2elpsMU5Fc2pYdTllNGVGWGg0MzNvdGFLNXZtMkQzUE5hbUlQZW1tb25iMG4tRktJbkR4czVVVHRLS3Q1OGJj?oc=5"
+    },
+    {
+      "title": "工信部韩夏：我国智能体互联网逐步从概念构想走向实践落地 - eeo.com.cn",
+      "summary": "工信部韩夏：我国智能体互联网逐步从概念构想走向实践落地 eeo.com.cn",
+      "source": "eeo.com.cn",
+      "lang": "zh",
+      "published": "Thu, 02 Jul 2026 09:52:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5iQ043T2ZxTzJDNXpIdC04Q1JCWkM1ZWNnRTllSkotU21WOUZTMWhEc0ZDeEhQVjF3UEt2b3FlRm1sQjFRWGF6cEV4R3hRTjNGbWRpWHBxSQ?oc=5"
+    },
+    {
+      "title": "深度智控 x 旭创科技：AI for AI ，算力狂潮下的能效新解法 - 中国日报网",
+      "summary": "深度智控 x 旭创科技：AI for AI ，算力狂潮下的能效新解法 中国日报网",
+      "source": "中国日报网",
+      "lang": "zh",
+      "published": "Thu, 02 Jul 2026 09:28:12 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1WUWtNNVp2aG11NDdYS3NOblozSGRoWGdubUtJRzNMSmNDNV9XR3RHV0ZhdFVtelZ0MnQ3Tjg5eGtiOThTRkRfSjVwZVNNNjQ2bjBuWHNTSldMLUZLNU1WNjlXajNmOVpTUnFNWXRIaGR3Y1NIdldqd1F3ZXU?oc=5"
+    },
+    {
+      "title": "训练全程由国产芯片完成，万亿级参数大模型 LongCat-2.0 发布 - 美团",
+      "summary": "训练全程由国产芯片完成，万亿级参数大模型 LongCat-2.0 发布 美团",
+      "source": "美团",
+      "lang": "zh",
+      "published": "Thu, 02 Jul 2026 10:40:48 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5aZzFwZVFMSEZ6SjVob29xdXZKU19YQjEyNEVRWEozNVhOWkhJYmNOVnBaWlFrSkJOS25Gems1QWxfUWlHNUxjVjNvaWdGX0lxSm9rdlo5LXZDZw?oc=5"
+    },
+    {
+      "title": "金山云加速GPU算力建设 小米百亿预算落地、阿里签长约 - 观点网",
+      "summary": "金山云加速GPU算力建设 小米百亿预算落地、阿里签长约 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Thu, 02 Jul 2026 10:05:26 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1EMHhMVnV4WnNkdzJDV1NEX1pCLTBGQ0xVa3FIdllWRERJVkNZdnlaMmxCWk1OTlNQTjVaWjJEbzR2T3Y5czk0bWNFUFdsT2NOSVpzbjZPWTJsOHhORDFlTmdn?oc=5"
+    },
+    {
+      "title": "全新车服务智能体开启公测 汽车之家“芝士车管家”重塑一站式专业车生活体验 - 新华网",
+      "summary": "全新车服务智能体开启公测 汽车之家“芝士车管家”重塑一站式专业车生活体验 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Thu, 02 Jul 2026 06:17:59 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBKWDB3TU1hNXgyalg3LUVORGc3T25iWWFFMnBueDZTMGh3NERWbmJzX2p3U3VvYl8yaEhrM05TTVlVQjc3c0VUU0hiMERzNlE1dy13NmpwMkJra0pvR1NJb0tJU1NWZnVkdUZOMGRXUDJiVG9VUWx6Q1YxLVo?oc=5"
+    },
+    {
+      "title": "Meta“小作文”有偏误！国内算力供不应求！ - 新浪财经",
+      "summary": "Meta“小作文”有偏误！国内算力供不应求！ 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Thu, 02 Jul 2026 11:27:44 GMT",
+      "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPZ2hyUUFIWlRmZXNKVFYxc1NUV3RMc25vYi00T2tsNkVxYllYNEw5WUJwS1ZvT2JyNHMwUzV1MVZlNXRuUTZfcUREa2FnVzhMSU04ajFMRzBSWWVuMlF0QS1CQ2k5SXlwNUxlbDJmQmZZVFVYc21EMEN6NG4yRVJIdUltUmN1Z0NNa0JUZ0kwVm0wWnV6OHlYS1gyNUM0T1FxaDlFM1hfZzI4N2NGMWd6VFZ5bjNtci0zeXFFS1d2OGw4R2dUaDZKMjRHTUJPWGttZkVSVVR1XzZTd1FDWFNyM3Q1Sk1aZmNNa05DQl9GZkJWSTliZ0hIbHBKbUFVUW5EWEh0anV2dWY4QzFNdHhMcWxoUExaVlowVkJpY2c1T2JwUmpy?oc=5"
+    },
+    {
+      "title": "工业互联网、算力最新布局，八部门重磅发布｜盘前情报- 21世纪经济报道 - 21财经",
+      "summary": "工业互联网、算力最新布局，八部门重磅发布｜盘前情报- 21世纪经济报道 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Thu, 02 Jul 2026 05:56:14 GMT",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZ290WklRS0RWa3o5MHBhUVJwMElacXFaaUhsVENwYTMycTNWNVNvamhGOHlrNm9QVkU0WmhlZ3hJc1FfeHgxT1VBYnlrRjVtRVgyOXhyNHVNVmgwNTRQaWpoNHkyazJSX0IzUTc4NjFLamtJVkN2dm5PNFJmY2VBZlBpVXB2MXFkbWowampDdjlTdUxh?oc=5"
+    },
+    {
+      "title": "Meta“卖算力”冲击AI交易！透视短期博弈，是“误杀”还是真“拐点”？ - 富途牛牛",
+      "summary": "Meta“卖算力”冲击AI交易！透视短期博弈，是“误杀”还是真“拐点”？ 富途牛牛",
+      "source": "富途牛牛",
+      "lang": "zh",
+      "published": "Thu, 02 Jul 2026 06:16:18 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObEpLTkIxclJnY05falFmXzBTZEhzdUhMbF9LOVN4ZmlkRFBXZV9nZkJOMWg0S19ZNm9LNEJkdW9PTHZQbF85QS16OUJhWGprVm9DZzlJMk5yaEw2Tno1YnYwb0JZbXlwekhTRXhNSmh2LThWX05sVEtsTkR2ZFpvbzJFcmxpQ3oxdVk0NUln?oc=5"
+    },
+    {
+      "title": "AI算力需求扩容支撑科技板块景气周期，关注科创50ETF易方达（588080）后续走势 - 东方财富",
+      "summary": "AI算力需求扩容支撑科技板块景气周期，关注科创50ETF易方达（588080）后续走势 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Thu, 02 Jul 2026 10:50:37 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0zanpqWWdLMkExQnJjNENhUkxUSXlNRzNlNExnYVB1ZEVLQXJxVDRtSV9vTWRyWHdXbWIzYTFWZ3B2WG03Zl9TWExMSEtXdzRTUno4bm9LcW04SUN6T2FfUXBaY0NSdw?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 90170,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。减少 60-95% 的标记，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 55545,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 34600,
+      "language": "TypeScript"
+    },
+    {
+      "title": "github-mcp-server",
+      "type": "GitHub",
+      "summary_en": "GitHub's official MCP Server",
+      "summary": "GitHub 的官方 MCP 服务器",
+      "url": "https://github.com/github/github-mcp-server",
+      "author": "github",
+      "stars": 31127,
+      "language": "Go"
+    },
+    {
+      "title": "fastmcp",
+      "type": "GitHub",
+      "summary_en": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+      "summary": "🚀 构建 MCP 服务器和客户端的快速、Python 方式。",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "author": "PrefectHQ",
+      "stars": 25928,
+      "language": "Python"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 381416,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 243955,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 207694,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
