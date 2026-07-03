@@ -1,0 +1,516 @@
+{
+  "date": "2026-07-03",
+  "generated_at": "2026-07-03T06:21:23.094729+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Alignment Is All You Need For X-to-4D Generation",
+      "title_zh": "对齐是 X 到 4D 生成所需的全部",
+      "summary": "Generative diffusion models excel at synthesizing high-quality images, videos, and 3D content under multimodal control. However, arbitrary user-defined modality-to-4D (X-to-4D) generation remains challenging due to the high cost of constructing diverse datasets and the limited scalability of existing methods. This paper presents Align4D, a flexible framewor…",
+      "summary_zh": "生成扩散模型擅长在多模态控制下合成高质量图像、视频和 3D 内容。然而，由于构建不同数据集的成本高昂以及现有方法的可扩展性有限，任意用户定义的模态到 4D（X-to-4D）生成仍然具有挑战性。本文介绍了 Align4D，这是一个灵活的框架，可将任何模态输入转换为连贯的视频-3D 对，使用视频引导 4D 运动和 3D 数据来塑造 4D 几何形状。 Align4D引入了三个关键技术：（1）对象距离对齐，分别搜索视频对齐和多视图对齐对象距离（VAOD/MAOD），以协调4D渲染与视频以及多视图扩散模型的先验； (2)运动-几何联合对齐，通过同步视频和3D输入约束已知和未知视图，确保4D生成的一致性； (3)异步优化，将高斯属性和变形网络训练解耦，以增强运动和几何保真度。我们进一步提出了 X4D 数据集，它集成了提示、图像、视频和 3D 数据进行基准测试。…",
+      "authors": [
+        "Qiaowei Miao",
+        "Kehan Li",
+        "Yawei Luo",
+        "Yi Yang"
+      ],
+      "published": "2026-07-02T17:59:57Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.02516v1",
+      "abs_url": "https://arxiv.org/abs/2607.02516v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02516v1"
+    },
+    {
+      "title": "Distributed Attacks in Persistent-State AI Control",
+      "title_zh": "持久状态人工智能控制中的分布式攻击",
+      "summary": "As AI coding agents become more autonomous, they increasingly ship code iteratively, with the codebase persisting across sessions. This persistence creates a new attack surface: a misaligned or prompt-injected agent can distribute attacks across pull requests (PRs) and time its payload for the PR with the best natural cover. To study the resulting dynamics,…",
+      "summary_zh": "随着人工智能编码代理变得更加自主，它们越来越多地迭代地交付代码，并且代码库在会话之间持续存在。这种持久性创建了一个新的攻击面：未对齐或提示注入的代理可以跨拉取请求 (PR) 分发攻击，并为具有最佳自然覆盖的 PR 计时其有效负载。为了研究由此产生的动态，我们引入了迭代 VibeCoding，这是一种人工智能控制设置，旨在研究安全部署有能力但可能不受信任的人工智能。在迭代 VibeCoding 中，编码代理在持久代码库中的一系列 PR 上构建软件，同时执行隐蔽的副任务。我们的基准测试包括两个任务系列：CLI 工具和 Flask Web 服务，总共 20 个任务变体。我们使用 Claude Sonnet 4.5 作为攻击代理，使用 GPT-4o 作为监控器。我们将渐进式攻击（将副任务分布在 PR 之间）与集中在单个 PR 中的非渐进式攻击进行比较。没有…",
+      "authors": [
+        "Josh Hills",
+        "Ida Caspary",
+        "Asa Cooper Stickland"
+      ],
+      "published": "2026-07-02T17:59:56Z",
+      "category": "cs.AI",
+      "arxiv_id": "2607.02514v1",
+      "abs_url": "https://arxiv.org/abs/2607.02514v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02514v1"
+    },
+    {
+      "title": "LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning",
+      "title_zh": "LACUNA：评估 LLM 遗忘的定位精度的测试平台",
+      "summary": "LLMs memorize sensitive training data, including personally identifiable information (PII), creating a pressing need for reliable post hoc removal methods. Unlearning has emerged as a promising solution, with state-of-the-art(SOTA) methods often following a localize-first, unlearn-second paradigm that targets specific model parameters. However, existing ben…",
+      "summary_zh": "法学硕士会记住敏感的培训数据，包括个人身份信息 (PII)，因此迫切需要可靠的事后删除方法。取消学习已经成为一种有前途的解决方案，最先进的（SOTA）方法通常遵循针对特定模型参数的本地化第一、取消学习第二范式。然而，现有的基准仅在输出级别评估遗忘，从而留下了一个悬而未决的问题：遗忘是否真正从模型参数中删除了知识，或者只是混淆了它，重新浮现攻击的成功加剧了这一担忧。为了弥补这一差距，我们引入了 LACUNA：第一个具有真实参数级本地化的不可学习测试平台。 LACUNA 通过屏蔽持续预训练将合成个体的 PII 注入基于 1B 和 7B OLMo 的模型的预定义参数中，从而能够直接评估遗忘是否针对负责知识存储的权重。我们使用 LACUNA 对当前的 SOTA 去学习方法进行基准测试，发现尽管输出级性能很强，但现有方法非常不精确，并且容易受到重新表面攻击。…",
+      "authors": [
+        "Matteo Boglioni",
+        "Thibault Rousset",
+        "Siva Reddy",
+        "Marius Mosbach",
+        "Verna Dankers"
+      ],
+      "published": "2026-07-02T17:59:52Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.02513v1",
+      "abs_url": "https://arxiv.org/abs/2607.02513v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02513v1"
+    },
+    {
+      "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+      "title_zh": "程序即权重：模糊函数的编程范式",
+      "summary": "Many everyday programming tasks resist clean rule-based implementation, such as alerting on important log lines, repairing malformed JSON, or ranking search results by intent, and are increasingly outsourced to large language model APIs at the cost of locality, reproducibility, and price. We propose fuzzy-function programming: compiling such a function from…",
+      "summary_zh": "许多日常编程任务抵制基于干净规则的实现，例如对重要日志行发出警报、修复格式错误的 JSON 或按意图对搜索结果进行排名，并且越来越多地外包给大型语言模型 API，但以局部性、可重复性和价格为代价。我们提出模糊函数编程：将这样的函数从自然语言规范编译成紧凑的、本地可执行的神经工件。我们用程序权重 (PAW) 实例化了这种范例，其中在 FuzzyBench（我们发布的 10M 示例数据集）上训练的 4B 编译器，为冻结的轻量级解释器发出参数高效的适配器。执行 PAW 程序的 0.6B Qwen3 解释器与 Qwen3-32B 直接提示的性能相匹配，同时使用大约五十分之一的推理内存，并在 MacBook M3 上以 30 token/s 的速度运行。 PAW 将基础模型从按输入问题求解器重新构建为工具构建器：每个函数定义调用一次，它会生成一个小型可重用工…",
+      "authors": [
+        "Wentao Zhang",
+        "Liliana Hotsko",
+        "Woojeong Kim",
+        "Pengyu Nie",
+        "Stuart Shieber",
+        "Yuntian Deng"
+      ],
+      "published": "2026-07-02T17:59:50Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.02512v1",
+      "abs_url": "https://arxiv.org/abs/2607.02512v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02512v1"
+    },
+    {
+      "title": "Online Safety Monitoring for LLMs",
+      "title_zh": "法学硕士在线安全监控",
+      "summary": "Despite alignment training, LLMs remain prone to generating unsafe outputs at deployment time. Monitoring outputs online and raising an alarm when safety can no longer be assumed is therefore critical. We study a simple real-time monitor that turns a verifier signal from an external model into an alarm decision by thresholding, with the threshold calibrated…",
+      "summary_zh": "尽管接受了对齐培训，法学硕士仍然容易在部署时产生不安全的输出。因此，在线监控输出并在无法保证安全时发出警报至关重要。我们研究了一种简单的实时监视器，它通过阈值将来自外部模型的验证器信号转变为警报决策，并通过风险控制校准阈值。在数学推理和红队数据集的实验中，我们表明这种简单的设计与基于顺序假设检验的更先进的监视器具有竞争力。",
+      "authors": [
+        "Mona Schirmer",
+        "Metod Jazbec",
+        "Alexander Timans",
+        "Christian Naesseth",
+        "Maja Waldron",
+        "Eric Nalisnick"
+      ],
+      "published": "2026-07-02T17:59:43Z",
+      "category": "cs.AI",
+      "arxiv_id": "2607.02510v1",
+      "abs_url": "https://arxiv.org/abs/2607.02510v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02510v1"
+    },
+    {
+      "title": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
+      "title_zh": "ReContext：递归证据重放作为 LLM 工具进行长上下文推理",
+      "summary": "Understanding and reasoning over long contexts has become a key requirement for deploying large language models (LLMs) in realistic applications. Although recent LLMs support increasingly long context windows, they often fail to use relevant evidence that is already present in the input, revealing a gap between context access and effective context utilizati…",
+      "summary_zh": "对长上下文的理解和推理已成为在实际应用中部署大型语言模型 (LLM) 的关键要求。尽管最近的法学硕士支持越来越长的上下文窗口，但它们常常无法使用输入中已存在的相关证据，从而揭示了上下文访问和有效上下文利用之间的差距。在这项工作中，我们提出了递归证据重放作为长上下文推理的 LLM Harness (RECONTEXT)，这是一种用于改进长上下文推理的免训练推理方法。 RECONTEXT 使用模型内部相关信号来构建查询条件证据池，并在最终生成之前重播它，同时保留完整的原始上下文。这种递归选择过程将证据组织与答案生成分开，无需训练、外部记忆或上下文修剪。我们还提供了基于联想记忆的理论分析，它将上下文描述为记忆存储，将问题描述为检索线索，将注意力描述为线索-痕迹关联，将重放描述为痕迹重新激活。对 8 个上下文长度为 128K 的长上下文数据集进行的实验表明…",
+      "authors": [
+        "Yanjun Zhao",
+        "Ruizhong Qiu",
+        "Tianxin Wei",
+        "Yuanchen Bei",
+        "Zhining Liu",
+        "Lingjie Chen"
+      ],
+      "published": "2026-07-02T17:59:26Z",
+      "category": "cs.AI",
+      "arxiv_id": "2607.02509v1",
+      "abs_url": "https://arxiv.org/abs/2607.02509v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02509v1"
+    },
+    {
+      "title": "What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates",
+      "title_zh": "当没有人在场时，法学硕士代理人会说什么：多代理人辩论中的社会结构和潜在客观出现",
+      "summary": "LLM agents will increasingly act in socially structured settings where role, audience, and relational context can shape what is advantageous or costly to say. We study whether such social structure, without any explicit objective in the prompt, changes what an agent expresses publicly relative to an off-the-record (OTR) channel elicited under the same condi…",
+      "summary_zh": "LLM代理人将越来越多地在社会结构环境中行动，在这种环境中，角色、受众和关系背景可以决定什么是有利的，什么是昂贵的。我们研究这样的社会结构，在提示中没有任何明确的目标，是否会改变代理人相对于相同条件下引发的非记录（OTR）渠道公开表达的内容。我们引入了一个双通道辩论框架，其中代理产生公开言论，这些言论与被记录但从未向其他参与者显示的 OTR 响应一起进入共享历史。在 10 个模型、3 个场景以及每个场景中的 5 个变体中，对齐诱导设置会在目标代理中产生系统性的公共 OTR 分歧，其决策分歧从 $\\sim$3% 基线上升到大约 40%。四种综合分析的效果是一致的：立场、语义相似性、自然语言推理和调查回复。在某些情况下，OTR 的回应明确地将公共便利归因于关系压力，例如职业风险或赞助义务。研究结果表明，代理评估应该超越明确的目标并检测紧急目标。我们提出…",
+      "authors": [
+        "Arman Ghaffarizadeh",
+        "Danyal Mohaddes",
+        "Aliakbar Izadkhah",
+        "Shahriar Noroozizadeh"
+      ],
+      "published": "2026-07-02T17:59:23Z",
+      "category": "cs.AI",
+      "arxiv_id": "2607.02507v1",
+      "abs_url": "https://arxiv.org/abs/2607.02507v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02507v1"
+    },
+    {
+      "title": "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
+      "title_zh": "推理法学硕士提高了长篇电视剧中的说话人识别能力",
+      "summary": "Long-form TV dramas present a formidable challenge for comprehensive video understanding, where deciphering complex storyline often relies on \\textbf{speaker recognition}, the task of accurately attributing each spoken utterance to its respective character. In this paper, we advance this field through two primary contributions. (1) We introduce \\textbf{Dram…",
+      "summary_zh": "长篇电视剧对全面的视频理解提出了巨大的挑战，其中破译复杂的故事情节通常依赖于 \\textbf{说话人识别}，即准确地将每个口语归因于其各自角色的任务。在本文中，我们通过两项主要贡献推动了这一领域的发展。 (1) 我们引入了 \\textbf{DramaSR-532K}，这是一个大规模基准，包含 532K 条带注释的对话台词，涵盖 900 多个独特的字符，需要整合听觉、语言和视觉线索来进行说话人识别。 (2) 我们提出 \\textbf{DramaSR-LRM}，这是一种基于大型推理模型（LRM）的稳健方法。 DramaSR-LRM 旨在通过多模式工具使用自动聚合上下文证据，综合不同的输入以实现高保真归因。实验结果表明，DramaSR-LRM 的性能显着优于现有基线，特别是在声学生物识别技术本质上不可靠的简短话语上。 \\textit{所有数据和代码将在项…",
+      "authors": [
+        "Yuxuan Li",
+        "Lingxi Xie",
+        "Xinyue Huo",
+        "Jihao Qiu",
+        "Jiacheng Shao",
+        "Pengfei Chen"
+      ],
+      "published": "2026-07-02T17:58:52Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.02504v1",
+      "abs_url": "https://arxiv.org/abs/2607.02504v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02504v1"
+    },
+    {
+      "title": "DemoPSD: Disagreement-Modulated Policy Self-Distillation",
+      "title_zh": "DemoPSD：分歧调节政策自我蒸馏",
+      "summary": "On-policy self-distillation (OPSD) has emerged as a practical method for training large language models (LLMs) to reason, where a single model acts as both the teacher and the student with different levels of information access. However, recent studies have found that the teacher's dense token-level supervision, conditioned on privileged information, can le…",
+      "summary_zh": "按策略自蒸馏 (OPSD) 已成为训练大型语言模型 (LLM) 进行推理的实用方法，其中单个模型既充当教师又充当学生，具有不同级别的信息访问权限。然而，最近的研究发现，教师以特权信息为条件的密集令牌级监督可能会导致对域内模式的过度拟合，抑制探索并损害跨域泛化，同时还引入了一个更根本的问题：“特权信息泄漏”，即学生编码在测试时不可用的依赖于答案的快捷方式。我们介绍**DemoPSD**，这是一种新颖的框架，通过“选择性采用教师指导”的理念解决此类问题。 DemoPSD 不是拟合完整的教师分布，而是引导学生走向“反向 KL 重心目标”，这是教师和学生分布的加权几何组合，自然地平衡了向教师学习与保留学生自己的推理能力。我们测量它们分布之间的差异，并使用这种差异来自适应控制每个令牌位置的混合。我们证明 DemoPSD 实现了 **(1)** *泄漏衰减*，…",
+      "authors": [
+        "Yunhe Li",
+        "Hao Shi",
+        "Wenhao Liu",
+        "Mengzhe Ruan",
+        "Hanxu Hou",
+        "Zhongxiang Dai"
+      ],
+      "published": "2026-07-02T17:58:29Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.02502v1",
+      "abs_url": "https://arxiv.org/abs/2607.02502v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02502v1"
+    },
+    {
+      "title": "Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots",
+      "title_zh": "Embodied.cpp：异构机器人上的嵌入式 AI 模型的便携式推理运行时",
+      "summary": "Embodied AI models now span vision-language-action (VLA) models and world-action models (WAMs), but practical deployment remains fragmented across model-specific Python stacks, backend assumptions, and robot-side glue code, especially on heterogeneous edge devices. Existing inference runtimes are designed mainly for request-response serving and therefore do…",
+      "summary_zh": "体现的人工智能模型现在涵盖视觉语言动作（VLA）模型和世界动作模型（WAM），但实际部署在特定于模型的Python堆栈、后端假设和机器人端粘合代码中仍然支离破碎，尤其是在异构边缘设备上。现有的推理运行时主要是为请求-响应服务而设计的，因此不满足体现部署的运行时契约：闭环控制内的多速率执行、异构硬件上的延迟优先批量1推理以及超出固定令牌I/O的可扩展体现接口。我们推出了 Embodied.cpp，一个用于体现模型的可移植 C++ 推理运行时。基于对代表性 VLA 模型和 WAM 的架构分析，Embodied.cpp 捕获共享执行路径并将其组织为五层：输入适配器、序列构建器、骨干执行、头插件和部署适配器。该运行时提供模块化多速率执行、延迟优先融合推理以及可扩展的运算符和 I/O 支持，从而能够通过一个后端抽象跨异构设备、机器人和模拟器进行部署。我们在两…",
+      "authors": [
+        "Ling Xu",
+        "Chuyu Han",
+        "Borui Li",
+        "Hao Wu",
+        "Shiqi Jiang",
+        "Ting Cao"
+      ],
+      "published": "2026-07-02T17:58:28Z",
+      "category": "cs.RO",
+      "arxiv_id": "2607.02501v1",
+      "abs_url": "https://arxiv.org/abs/2607.02501v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02501v1"
+    },
+    {
+      "title": "Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of Machine Learning Interatomic Potentials",
+      "title_zh": "超越 Adam：SOAP 和 Muon 用于更快、标签高效地训练机器学习原子间势",
+      "summary": "Machine learning interatomic potentials (MLIPs) have become a hallmark of AI for scientific simulation. While efforts on new architectures and datasets have led to increasingly accurate and general models, the choice of optimizer for training has largely remained unexplored, defaulting to Adam and its variants in the community. Here, we implement and system…",
+      "summary_zh": "机器学习原子间势（MLIP）已成为科学模拟人工智能的标志。虽然对新架构和数据集的努力导致了模型越来越准确和通用，但训练优化器的选择在很大程度上仍未被探索，默认为 Adam 及其在社区中的变体。在这里，我们实现并系统地比较了一类最近提出的矩阵结构优化器，包括 Muon、SOAP 和混合 SOAP-Muon，用于训练 NequIP 和 Allegro MLIP 模型。我们发现这些优化器在收敛速度和最终精度方面都明显优于 Adam。 SOAP 和 SOAP-Muon 作为稳健且始终如一的强大方法而出现，而 Muon 相对于 Adam 只提供了部分收益。在部分部队监督下，这些改进尤其明显。我们的结果表明，优化器选择是 MLIP 的一个被忽视但有影响力的设计轴。",
+      "authors": [
+        "Gil Harari",
+        "Yoel Zimmermann",
+        "Ola Tangen Kulseng",
+        "Laura Zichi",
+        "Chuin Wei Tan",
+        "Marc L. Descoteaux"
+      ],
+      "published": "2026-07-02T17:57:31Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.02499v1",
+      "abs_url": "https://arxiv.org/abs/2607.02499v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02499v1"
+    },
+    {
+      "title": "Seek to Segment: Active Perception for Panoramic Referring Segmentation",
+      "title_zh": "寻求分割：全景参考分割的主动感知",
+      "summary": "Existing referring segmentation models passively process static images captured from fixed perspectives, limiting their applicability in Embodied AI, where agents must perform active perception in the continuous 360$^\\circ$ environments. To bridge this gap, we introduce a novel task: Active Panoramic Referring Segmentation (APRS). In this setting, an agent…",
+      "summary_zh": "现有的参考分割模型被动地处理从固定视角捕获的静态图像，限制了它们在嵌入式人工智能中的适用性，其中代理必须在连续的 360$^\\circ$ 环境中执行主动感知。为了弥补这一差距，我们引入了一项新任务：主动全景参考分割（APRS）。在此设置中，代理需要调整其观察方向（$Δθ，Δφ$）来探索 360$^\\circ$ 环境，寻找用户指令指定的对象进行分割。为了解决这一具有挑战性的任务，我们提出了 PanoSeeker，一种用于高效 APRS 的记忆增强代理。 PanoSeeker 不依赖启发式扫描，而是将视觉语言模型 (VLM) 与 EgoSphere（一种显式空间视觉记忆）集成。通过逐步将连续的局部观察整合到统一的 360$^\\circ$ 表示中，EgoSphere 使代理能够规划高效且非冗余的搜索轨迹。一旦找到目标，代理就会执行主动视点对齐并输出分割掩…",
+      "authors": [
+        "Song Tang",
+        "Shuming Hu",
+        "Xincheng Shuai",
+        "Henghui Ding",
+        "Yu-Gang Jiang"
+      ],
+      "published": "2026-07-02T17:56:49Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.02497v1",
+      "abs_url": "https://arxiv.org/abs/2607.02497v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.02497v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "砸钱时代落幕？Meta和Anthropic接连出招，AI行业逻辑悄然生变 - 财联社",
+      "summary": "砸钱时代落幕？Meta和Anthropic接连出招，AI行业逻辑悄然生变 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Fri, 03 Jul 2026 02:52:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE01VzJEcnpJbHpSeS1ER0p1UklCdXlLbzNoQWtGSWdZeGNBaW8yRGtkRnJWMEp1NzNxcmpYV0taM2FCRmg5enpHMA?oc=5"
+    },
+    {
+      "title": "Anthropic启动自研AI芯片开发工作 - 观点网",
+      "summary": "Anthropic启动自研AI芯片开发工作 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Fri, 03 Jul 2026 05:18:56 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFB4bGdvVFNaanVWTEtXX3pqc3AzZ2RZTW1iUFEwTTM3bEY2M0JpOENyQTRxQmNZN2hFOHFIT3hWSmRwdVlPazNtMTVCRXRmdw?oc=5"
+    },
+    {
+      "title": "并行科技拟租入GPU算力资源 金额不超过16588.8万元 - 东方财富",
+      "summary": "并行科技拟租入GPU算力资源 金额不超过16588.8万元 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Thu, 02 Jul 2026 22:31:24 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE53UGNudzJ0dDMwNHRqOTJ6YkZzdG83T1FkRmxaeTlJQ2liZTBtR0VodDEwQUpYWURmdG9YY3EzU1lMS3d0RHpQME12dmVGRnZCc0dmRjh6MHpxT2EwVVhFag?oc=5"
+    },
+    {
+      "title": "训练全程由国产芯片完成，万亿级参数大模型 LongCat-2.0 发布 - 美团",
+      "summary": "训练全程由国产芯片完成，万亿级参数大模型 LongCat-2.0 发布 美团",
+      "source": "美团",
+      "lang": "zh",
+      "published": "Fri, 03 Jul 2026 02:23:56 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5aZzFwZVFMSEZ6SjVob29xdXZKU19YQjEyNEVRWEozNVhOWkhJYmNOVnBaWlFrSkJOS25Gems1QWxfUWlHNUxjVjNvaWdGX0lxSm9rdlo5LXZDZw?oc=5"
+    },
+    {
+      "title": "SemiAnalysis驳斥“算力过剩论”：Meta算力扩张远超想象，明年资本开支将“高得惊人” - 华尔街见闻",
+      "summary": "SemiAnalysis驳斥“算力过剩论”：Meta算力扩张远超想象，明年资本开支将“高得惊人” 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Fri, 03 Jul 2026 02:01:08 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1MRF8xQ1pESGsxbTh2RXdRVEMxdWVXblNJZ0pPVFdhSzFHYXFHV1RyeWFFbkZjRGJvTG0wcWNOSWlldm5JaVRkWmNkakFSTzh3cVVR?oc=5"
+    },
+    {
+      "title": "Meta商业模式调整“惊吓”全球科技股 业内人士：算力过剩？没那回事！ - 证券时报",
+      "summary": "Meta商业模式调整“惊吓”全球科技股 业内人士：算力过剩？没那回事！ 证券时报",
+      "source": "证券时报",
+      "lang": "zh",
+      "published": "Thu, 02 Jul 2026 22:45:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5Wb2VGYURPWXg4RjVWNF94Q2hBeXkzM3ZtMV9YdFJsbnpoYUNfRkxIZEhUYXFNTUkyTlctTGV0NURFUEttYUVNUFl2U2J1MkF3WkZ6TGFYamhUZWxY?oc=5"
+    },
+    {
+      "title": "北京亦庄全方位布局“词元经济”产业链 - 新京报",
+      "summary": "北京亦庄全方位布局“词元经济”产业链 新京报",
+      "source": "新京报",
+      "lang": "zh",
+      "published": "Fri, 03 Jul 2026 02:25:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5jdUNWMnJrY2FDRjZVRURTRXZZUVRQNGhycjdfNXZjeGxyV01fdS1TY0wwcTFSM0lINmp6eFc1NVBsbG5GMnkxVFY4NFNwNlR3VnJwc3ZrSkkxR1djNVU4MkxLVE4?oc=5"
+    },
+    {
+      "title": "我国智能体互联领域首套国家标准体系发布 - 光明网",
+      "summary": "我国智能体互联领域首套国家标准体系发布 光明网",
+      "source": "光明网",
+      "lang": "zh",
+      "published": "Fri, 03 Jul 2026 01:21:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9VNVhqcDV4aDF3RE1LRnFLeEJmbHR6eHpwNzVURkpYNG5mZWhQbFFpN28yQmpVdk1JbnRuYXFmVUtTaGZySUdoaFl0dldjY0RfeUtsYjVRbVEzTzIzcloxYW5B?oc=5"
+    },
+    {
+      "title": "中国发布全球首个地层学AI大模型 - 电子工程专辑",
+      "summary": "中国发布全球首个地层学AI大模型 电子工程专辑",
+      "source": "电子工程专辑",
+      "lang": "zh",
+      "published": "Fri, 03 Jul 2026 04:51:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5TRjUxUDVFZHFDWmJyVmxfTG1ZZktQQ1BtT0lXTVJDa19GeXV6WVg4cWw3STcySHlpVmZaWUtvbmx3c0pzYktlT0k2LVhuT2J1Q2ww?oc=5"
+    },
+    {
+      "title": "卷不赢模型，Meta改行「算力包租公」 - 投资界",
+      "summary": "卷不赢模型，Meta改行「算力包租公」 投资界",
+      "source": "投资界",
+      "lang": "zh",
+      "published": "Fri, 03 Jul 2026 05:05:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5PTURMN2t0Mm52b2E5OERMajZGaS1FQndWeHBKYkdqRmstVkoydEdaUVJ1SE9yT19SWm11ZV9zaGtFUW9ZM21LOFRwOWRRU0ZOMVRBZHh3?oc=5"
+    },
+    {
+      "title": "Meta“卖算力”原因曝光？扎克伯格：AI智能体开发速度不及预期 - 财联社",
+      "summary": "Meta“卖算力”原因曝光？扎克伯格：AI智能体开发速度不及预期 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Fri, 03 Jul 2026 00:27:37 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE84TGp2Y2FqNTZMTHUwY3ItTXFWZ2tNZnFDVWFTZWM1T2RTZl9wZmZrdXI1RkpranljT2xiWkd5V3FfXzNVUnAwZQ?oc=5"
+    },
+    {
+      "title": "DeepSeek涨价带飞算力租赁！002929，两连板 - 东方财富",
+      "summary": "DeepSeek涨价带飞算力租赁！002929，两连板 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Thu, 02 Jul 2026 20:26:35 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBhVFJmNnFRUFExc1hmWUctbGsxZS1UVFFncmQ4ZDByaGhhMkhDMGRUbHRIa3NuWXNIU1duRjM0cjRVVGFIWEZLd2RtU0ZDVFBFdHBXbDJPaU84WHFyRGt2MA?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 90210,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。减少 60-95% 的标记，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 55933,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 34643,
+      "language": "TypeScript"
+    },
+    {
+      "title": "github-mcp-server",
+      "type": "GitHub",
+      "summary_en": "GitHub's official MCP Server",
+      "summary": "GitHub 的官方 MCP 服务器",
+      "url": "https://github.com/github/github-mcp-server",
+      "author": "github",
+      "stars": 31143,
+      "language": "Go"
+    },
+    {
+      "title": "fastmcp",
+      "type": "GitHub",
+      "summary_en": "🚀 The fast, Pythonic way to build MCP servers and clients.",
+      "summary": "🚀 构建 MCP 服务器和客户端的快速、Python 方式。",
+      "url": "https://github.com/PrefectHQ/fastmcp",
+      "author": "PrefectHQ",
+      "stars": 25938,
+      "language": "Python"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 381536,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 244732,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 208205,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
