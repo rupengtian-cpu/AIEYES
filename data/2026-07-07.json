@@ -1,0 +1,518 @@
+{
+  "date": "2026-07-07",
+  "generated_at": "2026-07-07T06:36:53.669524+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "From Fixed to Free Cameras: Calibration-Free View-Robust Vision-Language-Action Model",
+      "title_zh": "从固定相机到自由相机：免校准视图-鲁棒视觉-语言-动作模型",
+      "summary": "Real-world robot deployment rarely maintains the training-stage camera setup, where cameras often experience repositioning or remounting depending on actual scenarios. Existing view-robust Vision-Language-Action (VLA) policies tolerate such camera variations only when the camera extrinsics are explicitly provided, making them fragile and hard to use especia…",
+      "summary_zh": "现实世界的机器人部署很少维持训练阶段的摄像机设置，其中摄像机经常根据实际场景进行重新定位或重新安装。现有的视图鲁棒性视觉语言动作（VLA）策略只有在明确提供相机外部参数时才能容忍此类相机变化，这使得它们脆弱且难以使用，尤其是在视图鲁棒性至关重要时。我们认为，政策不应该被告知摄像头在哪里，而应该自己弄清楚。为此，我们引入了以相机为中心的 VLA (CamVLA)，这是一种新的 VLA 模型，它通过预测 (i) 在本地相机框架中表示的以相机为中心的末端执行器动作，以及 (ii) 将相机与机器人底座相关联的 6-DoF 手眼矩阵，将操作控制与相机几何结构解耦。确定性几何变换将两个预测组合成机器人基架动作。这使得我应该如何在与姿势无关的以相机为中心的动作生成中从我从相机视角几何基础中观察的位置移动。由此产生的策略是免校准、无深度和单视图，仅需要单个单目 R…",
+      "authors": [
+        "Wenhao Li",
+        "Xueying Jiang",
+        "Quanhao Qian",
+        "Deli Zhao",
+        "Shijian Lu",
+        "Gongjie Zhang"
+      ],
+      "published": "2026-07-06T17:59:59Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.05396v1",
+      "abs_url": "https://arxiv.org/abs/2607.05396v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05396v1"
+    },
+    {
+      "title": "Interpretable Human-Label-Free Deep Learning for Real-Bogus Classification with Uncertainty Quantification",
+      "title_zh": "可解释的无人类标签的深度学习，用于具有不确定性量化的真实伪造分类",
+      "summary": "Time-domain surveys generate many transient candidates, making Real-Bogus classification a critical step in automated discovery pipelines. Reliable labels are costly, while community labels can be noisy and survey-dependent. We aim to develop a Real-Bogus classification framework that can be trained without human-labeled data using injected transients and b…",
+      "summary_zh": "时域调查会产生许多瞬态候选者，使真假分类成为自动发现管道中的关键步骤。可靠的标签成本高昂，而社区标签可能很嘈杂并且依赖于调查。我们的目标是开发一个真实-虚假分类框架，该框架可以在没有人工标记数据的情况下使用注入瞬态和虚假主导的调查数据进行训练，在强类别污染下保持稳健，并提供校准的不确定性量化。我们将模拟瞬态注入与受污染的调查类相结合，并使用不对称共同教学为具有不同标签噪声水平的类训练双网络模型。我们评估基准子集的性能，并使用潜在空间可视化工具分析学习到的表示。对于不确定性量化（UQ），我们比较了 MC dropout 和深度集成，并提出了一种低成本混合策略，利用双网络设置来改进校准。我们将评估扩展到光曲线领域，以评估光曲线类别的恢复。该方法在标记子集上实现了强大的Real-Bogus性能，并且在严重的类别污染下保持稳定。它以高保真度恢复瞬态光曲线类…",
+      "authors": [
+        "Raphaël Bonnet-Guerrini",
+        "Bruno Sanchez",
+        "Dominique Fouchez",
+        "Benjamin Racine",
+        "Maya Guy",
+        "Mariam Sabalbal"
+      ],
+      "published": "2026-07-06T17:59:58Z",
+      "category": "astro-ph.IM",
+      "arxiv_id": "2607.05393v1",
+      "abs_url": "https://arxiv.org/abs/2607.05393v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05393v1"
+    },
+    {
+      "title": "LLM-as-a-Verifier: A General-Purpose Verification Framework",
+      "title_zh": "LLM-as-a-Verifier：通用验证框架",
+      "summary": "Scaling pre-training, post-training, and test-time compute have become the central paradigms for improving the capabilities of LLMs. In this work, we identify verification, the ability to determine the correctness of a solution, as a new scaling axis. To unlock this and demonstrate its effectiveness, we introduce LLM-as-a-Verifier, a general-purpose verific…",
+      "summary_zh": "扩展训练前、训练后和测试时计算已成为提高法学硕士能力的核心范例。在这项工作中，我们将验证（确定解决方案正确性的能力）确定为新的缩放轴。为了解锁这一点并证明其有效性，我们引入了 LLM-as-a-Verifier，这是一种通用验证框架，可以为代理任务提供细粒度的反馈，而无需额外的培训。与标准的 LM 法官提示 LLM 为候选解决方案生成离散分数不同，LLM 作为验证者计算评分标记 logits 分布的期望以生成连续分数。这种概率公式使验证能够沿多个维度扩展：(1) 评分粒度，(2) 重复评估，以及 (3) 标准分解。特别是，我们表明，缩放评分粒度可以更好地分离正解和负解，从而产生更校准的比较。此外，通过减少方差和复杂性，扩展重复评估和标准分解始终可以带来验证准确性的额外收益。我们进一步引入了一种经济高效的排名算法，用于使用验证者的连续分数在候选者中选…",
+      "authors": [
+        "Jacky Kwok",
+        "Shulu Li",
+        "Pranav Atreya",
+        "Yuejiang Liu",
+        "Yixing Jiang",
+        "Chelsea Finn"
+      ],
+      "published": "2026-07-06T17:59:35Z",
+      "category": "cs.AI",
+      "arxiv_id": "2607.05391v1",
+      "abs_url": "https://arxiv.org/abs/2607.05391v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05391v1"
+    },
+    {
+      "title": "Deform360: A Massive Multi-view Visuotactile Dataset for Deformable World Models",
+      "title_zh": "Deform360：用于可变形世界模型的海量多视图视觉触觉数据集",
+      "summary": "Predicting object dynamics (i.e., world modeling) is a fundamental challenge for robotic manipulation, and modeling deformable objects presents a particularly difficult case due to their high-dimensional state spaces and complex material properties. While current world models approach this through two distinct paradigms: learning the dynamics over the 2D pi…",
+      "summary_zh": "预测物体动力学（即世界建模）是机器人操纵的一项基本挑战，而对可变形物体进行建模由于其高维状态空间和复杂的材料属性而呈现出特别困难的情况。当前的世界模型通过两种不同的范式来解决这个问题：学习 2D 像素空间或更明确的 3D 几何空间的动态。由于缺乏多样化、大规模的现实世界数据，对它们的相对优势和局限性的系统理解仍然难以实现。为了解决这个问题，我们推出了 Deform360，这是一个大型视觉触觉数据集，包含 198 个日常生活物体、1,980 个交互序列以及来自 41 个环视摄像头和双手触觉抓手的超过 215 小时的观察，以捕获全局运动和接触引起的局部变形。利用新型无标记视觉触觉 3D 跟踪管道来提取密集的几何形状和运动，我们系统地评估当前最先进的世界模型，将 2D 视频模型与 3D 粒子模型进行比较。最后，我们通过在可变形物体上执行机器人规划任务来提…",
+      "authors": [
+        "Hongyu Li",
+        "Wanjia Fu",
+        "Xiaoyan Cong",
+        "Zekun Li",
+        "Binghao Huang",
+        "Hanxiao Jiang"
+      ],
+      "published": "2026-07-06T17:59:18Z",
+      "category": "cs.RO",
+      "arxiv_id": "2607.05390v1",
+      "abs_url": "https://arxiv.org/abs/2607.05390v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05390v1"
+    },
+    {
+      "title": "InFlux++: Real and Synthetic Data for Estimating Dynamic Camera Intrinsics",
+      "title_zh": "InFlux++：用于估计动态相机本质的真实数据和合成数据",
+      "summary": "Camera intrinsics are vital for recovering 3D structure from 2D video. However, most 3D algorithms assume fixed intrinsics throughout a video, an assumption that often fails for real-world in-the-wild videos. Consequently, estimating per-frame intrinsics from RGB images is critical for making 3D methods robust to videos with dynamic intrinsics. InFlux previ…",
+      "summary_zh": "相机内部函数对于从 2D 视频恢复 3D 结构至关重要。然而，大多数 3D 算法都假设整个视频具有固定的内在特性，但这种假设对于真实世界的野外视频通常是失败的。因此，从 RGB 图像估计每帧内在函数对于使 3D 方法对具有动态内在函数的视频具有鲁棒性至关重要。 InFlux 此前通过为动态内在视频建立了第一个具有每帧地面实况内在函数的现实基准，推进了这一研究方向。然而，由于两个障碍，现有方法仍然不准确：（i）训练数据稀缺且缺乏内在多样性； (ii) 包括 InFlux 在内的基准测试的场景和相机运动多样性有限，因此很难正确评估方法。为了解决这两个问题，我们提出了 InFlux++，它由两个组件组成。 InFlux++ Synth 是一个大规模程序生成的合成视频数据集，包含来自 1841 个高分辨率视频的 441K+ 个带注释的帧，为训练动态内在预测…",
+      "authors": [
+        "Erich Liang",
+        "Caleb Kha-Uong",
+        "Chinmaya Saran",
+        "Sreemanti Dey",
+        "David W. Liu",
+        "Junhan Ouyang"
+      ],
+      "published": "2026-07-06T17:58:33Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.05389v1",
+      "abs_url": "https://arxiv.org/abs/2607.05389v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05389v1"
+    },
+    {
+      "title": "Search Beyond What Can Be Taught: Evolving the Knowledge Boundary in Agentic Visual Generation",
+      "title_zh": "超越可教内容的搜索：在代理视觉生成中发展知识边界",
+      "summary": "Visual generators excel at rendering, but they confidently fabricate what they do not know. User requests are unbounded, evolving, and deeply long-tailed: new characters, trending entities, post-cutoff events, and more. This world-knowledge bottleneck is structural: generators are trained on fixed corpora, but the visual world is open-ended. We construct Se…",
+      "summary_zh": "视觉生成器擅长渲染，但他们自信地制造他们不知道的东西。用户请求是无限的、不断发展的、深度长尾的：新角色、趋势实体、截止后事件等等。这种世界知识瓶颈是结构性的：生成器是在固定语料库上训练的，但视觉世界是开放的。我们构建了 SearchGen-20K 和 SearchGen-Bench，其中包含 20,839 个提示，涵盖 12 个故障类别和 22 个领域，并与预先执行的多模式 SearchGen-Corpus-1M 配对，以支持离线、可重复的研究。在 SearchGen-Bench 上，前沿开放生成器的得分仅为 21 至 28（满分 100），在现有基准测试中无法看到 40 分的下滑。自然的补救措施是使用搜索工具，实现代理视觉生成。然而，我们发现朴素搜索失败了：它不加区别地检索，将噪声注入到生成器已经处理的提示中。我们将根本原因追溯到生成器特定的、不…",
+      "authors": [
+        "Haozhe Wang",
+        "Weijia Feng",
+        "Jinpeng Yu",
+        "Che Liu",
+        "Ping Nie",
+        "Fangzhen Lin"
+      ],
+      "published": "2026-07-06T17:56:12Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.05382v1",
+      "abs_url": "https://arxiv.org/abs/2607.05382v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05382v1"
+    },
+    {
+      "title": "TabPack: Efficient Hyperparameter Ensembles for Tabular Deep Learning",
+      "title_zh": "TabPack：用于表格深度学习的高效超参数集成",
+      "summary": "In deep learning for tabular data, efficient ensembles of multilayer perceptrons (MLPs) have recently emerged as effective and practical architectures. Existing methods of this kind use the same hyperparameters for all underlying MLPs, which requires hyperparameter tuning for achieving the best performance. In this work, we introduce TabPack, an efficient M…",
+      "summary_zh": "在表格数据的深度学习中，高效的多层感知器 (MLP) 集成最近已成为有效且实用的架构。现有的此类方法对所有底层 MLP 使用相同的超参数，这需要调整超参数才能实现最佳性能。在这项工作中，我们引入了 TabPack，这是一种高效的 MLP 集成，具有强大的开箱即用性能，并减少了对传统调优的依赖。在单次运行中，TabPack 可以高效地并行采样和训练具有不同超参数的许多 MLP，并在训练期间动态选择集成成员。因此，TabPack 仅需要指定 MLP 超参数的采样范围，而不是精确的超参数值，这自然需要较低的精度才能获得良好的性能。在中型到大型公共数据集的实验中，具有默认设置的 TabPack 的性能与经过广泛调整的先前方法相当，从而大大减少了在表格任务上获得有竞争力的结果所需的工作量和计算资源。值得注意的是，在现代 MacBook 上运行默认 TabPa…",
+      "authors": [
+        "Yury Gorishniy",
+        "Akim Kotelnikov",
+        "Ivan Rubachev",
+        "Artem Babenko"
+      ],
+      "published": "2026-07-06T17:55:55Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.05380v1",
+      "abs_url": "https://arxiv.org/abs/2607.05380v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05380v1"
+    },
+    {
+      "title": "Cortex: A Bidirectionally Aligned Embodied Agent Framework for Long-horizon Manipulation",
+      "title_zh": "Cortex：用于长视野操纵的双向对齐实体框架",
+      "summary": "While recent Vision-Language-Action (VLA) models show promise toward generalist manipulation policies, they struggle with long-horizon tasks due to their Markovian nature-relying solely on current observations. Hierarchical dual-system methods address this but suffer from a gap between high-level planning semantics and low-level execution kinematics. We int…",
+      "summary_zh": "虽然最近的视觉-语言-行动（VLA）模型显示出对通用操纵政策的希望，但由于其马尔可夫性质（仅依赖于当前的观察），它们在长期任务中遇到了困难。分层双系统方法解决了这个问题，但存在高级规划语义和低级执行运动学之间的差距。我们引入了 Cortex，这是一个双向对齐的实体代理框架，具有定制的规划接口，可将可执行且易于处理的子任务计划从高级 VLM 传递到低级 VLA。具体来说，我们将操作子任务标准化为 32 个规范技能原语，并将易处理原则（例如代表性对象属性和改进的轨迹可达性）注入数据生成管道中。这使得能够自动注释超过 4000 小时的开源视频数据并生成 30 小时的模拟数据。我们进一步设计了一种事件平衡采样策略来构建训练数据，以微调框架，以更好地处理子任务转换期间的规划模糊性，并通过精心设计的从任务上下文到推理过程中技能约束的线束工程来增强。开环 VLM…",
+      "authors": [
+        "Jiaqi Peng",
+        "Xiqian Yu",
+        "Delin Feng",
+        "Yuqiang Yang",
+        "Wenzhe Cai",
+        "Jing Xiong"
+      ],
+      "published": "2026-07-06T17:55:05Z",
+      "category": "cs.RO",
+      "arxiv_id": "2607.05377v1",
+      "abs_url": "https://arxiv.org/abs/2607.05377v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05377v1"
+    },
+    {
+      "title": "Fitted Occupancy-Ratio Evaluation without Bellman Completeness",
+      "title_zh": "无贝尔曼完整性的拟合占用率评估",
+      "summary": "Occupancy ratios correct distribution shift in offline reinforcement learning and are central to off-policy evaluation. Existing primal-dual and minimax methods typically estimate these ratios by enforcing occupancy-balance moments over a critic class. We propose fitted occupancy-ratio evaluation (FORE), a fitted fixed-point method that characterizes the di…",
+      "summary_zh": "占用率可以纠正离线强化学习中的分布变化，并且是离策略评估的核心。现有的原始对偶和极小极大方法通常通过在批评者类别上强制占用平衡矩来估计这些比率。我们提出了拟合占用率评估（FORE），这是一种拟合定点方法，通过伴随贝尔曼递归来表征贴现占用率。在每次迭代中，FORE 都会在一步转换数据上求解单级密度比目标，从而将伴随贝尔曼图像投影到 Kullback-Leibler (KL) 散度中的对数比类上。与拟合 Q 评估的分析不同，拟合 Q 评估的分析通常需要价值函数可实现性以及贝尔曼完整性或预计算子稳定性，我们的中心逼近条件只是贴现占用率本身的可实现性。在这种情况下，由于伴随贝尔曼算子是 KL 收缩，总体 KL 投影递归以相对熵向真实比率收缩。对于经验递归，我们建立了有限样本后悔界限，该界限在 KL 中产生收敛，达到对数比率近似误差和由比率假设类的复杂性控制…",
+      "authors": [
+        "Lars van der Laan",
+        "Nathan Kallus"
+      ],
+      "published": "2026-07-06T17:53:32Z",
+      "category": "stat.ML",
+      "arxiv_id": "2607.05375v1",
+      "abs_url": "https://arxiv.org/abs/2607.05375v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05375v1"
+    },
+    {
+      "title": "GaP: A Graph-as-Policy Multi-Agent Self-Learning Harness For Variational Automation Tasks",
+      "title_zh": "GaP：用于变分自动化任务的图即策略多智能体自学习工具",
+      "summary": "For robots to work reliably in commercial and industrial applications, can recent advances in agentic coding systems combine interpretable robot programming with the open-world adaptability of model-free policies? We focus on \"Variational Automation\" (VA), a class of tasks that have larger variations in object geometry and pose than fixed automation. Model-…",
+      "summary_zh": "为了让机器人在商业和工业应用中可靠地工作，代理编码系统的最新进展能否将可解释的机器人编程与无模型策略的开放世界适应性结合起来？我们专注于“变量自动化”（VA），这是一类在对象几何形状和姿势上比固定自动化具有更大变化的任务。无模型策略通常很难缩小 VA 任务的可靠性差距，这些任务必须在商业和工业应用中持续可靠地执行。受任务和运动规划 (TAMP) 和机器人操作系统 (ROS) 先前工作的推动，我们引入了图即策略 (GaP)，这是一种多智能体编码工具，可从模块化开放机器人技能库 (MORSL) 中生成具有感知、规划和控制节点的定向计算图。然后，GaP 生成一个内部模拟环境，以并行演练具有不同图的任务实例，以迭代地细化图结构和参数，以提高成功率和吞吐量。使用 8 个新的开放 VA 任务基准（其中 4 个是模拟的，4 个是现实世界中的）进行的评估表明，Ga…",
+      "authors": [
+        "Kaiyuan Chen",
+        "Shuangyu Xie",
+        "Letian Fu",
+        "Justin Yu",
+        "William Pacini",
+        "Sandeep Bajamahal"
+      ],
+      "published": "2026-07-06T17:47:31Z",
+      "category": "cs.RO",
+      "arxiv_id": "2607.05369v1",
+      "abs_url": "https://arxiv.org/abs/2607.05369v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05369v1"
+    },
+    {
+      "title": "SPEARBench: A Benchmark for Naturalness Evaluation in Streaming Speech-to-Speech Language Models",
+      "title_zh": "SPEARBench：流式语音到语音语言模型的自然度评估基准",
+      "summary": "Streaming speech-to-speech language models aim to answer spoken queries directly with synthetic speech. However, standard speech and text benchmarks do not capture whether these systems behave naturally in conversations, where timing, turn-taking, prosody, interpersonal stance, language and dialect consistency, and relationship-aware appropriateness jointly…",
+      "summary_zh": "流式语音到语音语言模型旨在通过合成语音直接回答口头查询。然而，标准语音和文本基准无法捕捉这些系统在对话中是否表现自然，其中时间、轮流、韵律、人际立场、语言和方言一致性以及关系感知适当性共同塑造感知质量。我们引入了 SPEARBench，这是一个用于评估问答交互中语音到语音语言模型自然度的基准。 SPEARBench 从无缝交互语料库构建受控对话提示，跨多个模型运行推理，并使用多维协议评估生成的答案，该协议涵盖响应延迟、中断、语音质量、ASR 鲁棒性、语言和方言一致性、情感自然度、人际立场和可解释的分布基线。该基准包括原始人类答案作为参考条件，并报告几个当代模型的结果。结果表明，当前模型可以实现高信号质量和低 ASR 错误，同时在延迟、重叠、方言保留、情绪适应和人际立场动态方面仍与人类对话行为不同。",
+      "authors": [
+        "Thomas Thebaud",
+        "Yuzhe Wang",
+        "Hao Zhang",
+        "Sathvik Manikantan Napa Ugandhar",
+        "Ashish Hallur",
+        "Georgi Tinchev"
+      ],
+      "published": "2026-07-06T17:42:59Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.05365v1",
+      "abs_url": "https://arxiv.org/abs/2607.05365v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05365v1"
+    },
+    {
+      "title": "REDDIT: Correcting Model-Generated Timestamp Drift in ASR without Forgetting via Replay-Based Distribution Editing",
+      "title_zh": "REDDIT：通过基于重放的分布编辑纠正 ASR 中模型生成的时间戳漂移而不会忘记",
+      "summary": "Modern autoregressive ASR systems can emit timestamps as decoded tokens, enabling timestamped transcription without frame-level aligners or inference-time post-processing. We show that these generated timestamps can drift across long non-speech spans: the transcript may remain plausible, but the decoded time axis drifts away from the audio. We study this no…",
+      "summary_zh": "现代自回归 ASR 系统可以将时间戳作为解码令牌发出，从而无需帧级对齐器或推理时间后处理即可实现带时间戳的转录。我们表明，这些生成的时间戳可能会在较长的非语音跨度上漂移：文字记录可能仍然可信，但解码的时间轴会偏离音频。我们通过在 15 个经过评估的时间戳生成 ASR 和音频语言系统中自建间隙和长间隙基准来研究这种非语音引起的时间戳漂移。简单的时间戳校正微调可以改善对齐，但会严重降低非目标 ASR 行为，从而暴露遗忘问题。我们提出了REDDIT（基于重放的分布eDITing），这是一种轻量级的两阶段后训练框架，可以纠正时间戳，同时避免这种灾难性的遗忘：它首先在模型自己的重放解码器上下文下编辑时间戳目标，同时匹配非时间戳标记上的冻结基本分布，然后应用一个简短的编辑前缀细化阶段。在此框架中，我们通过将 VAD 修剪的语音跨度与插入的非语音间隙和已知的串联…",
+      "authors": [
+        "Cheng-Kang Chou",
+        "Ming-To Chuang",
+        "Ke-Han Lu",
+        "Chan-Jan Hsu",
+        "Hung-yi Lee"
+      ],
+      "published": "2026-07-06T17:40:54Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.05364v1",
+      "abs_url": "https://arxiv.org/abs/2607.05364v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05364v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "我国算力网络技术标准研制取得突破 - 人民日报",
+      "summary": "我国算力网络技术标准研制取得突破 人民日报",
+      "source": "人民日报",
+      "lang": "zh",
+      "published": "Mon, 06 Jul 2026 22:45:19 GMT",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA2SGdrX2xwTF82OEp1cDFTeklFZXBJZGVkM1RESHBlMFhjaGlCTG9TUjNIbWswRE1YSUZhNnVDdlhSNHkzU3NqdklEaUlSb0pBRHpLUVI0T1BTZ2xBNm9hNlhfTjlPU2p3MVNYVFpBX1R4R0JxZUY4dzFFY0w4Wkk?oc=5"
+    },
+    {
+      "title": "巨头开始卖算力，打开了什么魔盒 - thepaper.cn",
+      "summary": "巨头开始卖算力，打开了什么魔盒 thepaper.cn",
+      "source": "thepaper.cn",
+      "lang": "zh",
+      "published": "Mon, 06 Jul 2026 23:35:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5LcmY3ZjhfLXpEdHZRSHVKS0JRLWFCSTVqN3lZeDR3MDFLUGwxWDBsbjhUNk03VUhtdFo4cXo3Y1VNaVF0UGZrTHBnc2hTQVdTZ0x2Vk9leVlJNFhjN1hzSw?oc=5"
+    },
+    {
+      "title": "全球首个，正式启用！算力价格，要更便宜了 - 东方财富",
+      "summary": "全球首个，正式启用！算力价格，要更便宜了 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Mon, 06 Jul 2026 23:43:32 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE00cUMtLU1ZWmZFQVZkbkh3YVA5Nl9sNVdTTEdpZmltamZsZDNfMHhUWmtwWVNvUGRjOTNtUUFnUjhQdmtENkNjS0RjVWdWYkt1VmtXWUJMX1JkTi1feWlKaw?oc=5"
+    },
+    {
+      "title": "上海已有169款大模型通过备案 智能算力规模突破16万P - 观点网",
+      "summary": "上海已有169款大模型通过备案 智能算力规模突破16万P 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Tue, 07 Jul 2026 02:41:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9UQnR6VzRQMkNFM0pCRm9hcE1VNWw5QkhxZVE0c2tVRERDeDAtWnJlUVdCMkRjR3kxcE11dXVUd1lEZU1tZDRsR2RZempMUzdvazkyNEltOG42aTEwQkgxYktn?oc=5"
+    },
+    {
+      "title": "世界人工智能大会下周开幕！华为最大规模超节点真机、全球首款AI智能体手机等首秀 - 财联社",
+      "summary": "世界人工智能大会下周开幕！华为最大规模超节点真机、全球首款AI智能体手机等首秀 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Tue, 07 Jul 2026 04:44:44 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5Oek5RcVVUbG1LVEd1bTZRbzRzTmNqc1lYekJKV05lT3lqRVNOazdTZ0tWSDJHbWhna0lPSFdQQm9TOVhlamc?oc=5"
+    },
+    {
+      "title": "全球首款，AI智能体手机将首秀 - 21财经",
+      "summary": "全球首款，AI智能体手机将首秀 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Tue, 07 Jul 2026 05:59:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdnMxcHQ2aTc4aWZmN1pSNTYzRi1NN1lGSUhuUnp4dzFJTGZLd1lCdTJJcmQydWRwYU5jZEg4ZFl2V2NSdnVyRmRhYmtrUjVyaG1OdHY2Y1BLc3BxQ1h2MGwzcHBJa2ppWEhTekZzdkQxU1Vva3FpcjVkci16U0ZqYThRMGVHeGVlOUFyYw?oc=5"
+    },
+    {
+      "title": "学校智能体开发与应用创新大赛暨智能体设计训练营启动 - 北京印刷学院",
+      "summary": "学校智能体开发与应用创新大赛暨智能体设计训练营启动 北京印刷学院",
+      "source": "北京印刷学院",
+      "lang": "zh",
+      "published": "Tue, 07 Jul 2026 06:06:20 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1fWFlpSXNPSGt4c1QyTUxvODB6bVdWVHAycUJGN29pLS00dzI4WXg4b3V3c2JRMkN2VV9SbjFTbUdTb0hoWmR1X2p4SHRNWkQtN0VYT0lZWDI3VXFWdXUzX2tBRko5WUFlRHhoNkV2VS1OdVZf?oc=5"
+    },
+    {
+      "title": "这4大瓶颈，困住了 AI 算力 - 信息化观察网",
+      "summary": "这4大瓶颈，困住了 AI 算力 信息化观察网",
+      "source": "信息化观察网",
+      "lang": "zh",
+      "published": "Tue, 07 Jul 2026 01:31:35 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8xaFB0X0JZRnMtdnhHSmJZSjhqUzFqT2cyeV85bG10VGJWcFc2WVFHWkE3YTA5ZEVXeWFrLVIxU3hITmYxVWg2QTNWcnpGeml2QTM2OXNFRFhsYnlWdkJHbQ?oc=5"
+    },
+    {
+      "title": "为AI与空间应用服务的超级算力星座｜阿莱耶识ALAYA - 品玩",
+      "summary": "为AI与空间应用服务的超级算力星座｜阿莱耶识ALAYA 品玩",
+      "source": "品玩",
+      "lang": "zh",
+      "published": "Tue, 07 Jul 2026 05:25:15 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5GVDctWGJMOTBrZUtpWDB3WVlyRHlfRkQ0c0c3VERkc2lOMFVhdnlQN2w3a2dkTFpZNVdYdGUwTmFNSXNxN3p0Sg?oc=5"
+    },
+    {
+      "title": "训练全程由国产芯片完成，万亿级参数大模型 LongCat-2.0 发布 - 美团",
+      "summary": "训练全程由国产芯片完成，万亿级参数大模型 LongCat-2.0 发布 美团",
+      "source": "美团",
+      "lang": "zh",
+      "published": "Mon, 06 Jul 2026 20:03:48 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5aZzFwZVFMSEZ6SjVob29xdXZKU19YQjEyNEVRWEozNVhOWkhJYmNOVnBaWlFrSkJOS25Gems1QWxfUWlHNUxjVjNvaWdGX0lxSm9rdlo5LXZDZw?oc=5"
+    },
+    {
+      "title": "Meta算力冗余只是烟幕弹，全球AI基建远未见顶 - 财新",
+      "summary": "Meta算力冗余只是烟幕弹，全球AI基建远未见顶 财新",
+      "source": "财新",
+      "lang": "zh",
+      "published": "Tue, 07 Jul 2026 04:14:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBjQjlQaThsWXNpb29mVTRhR2ZqYUxqRmEyTmNGbjVJdmtXVXdnOFVMUmFYVHVPY01wYjVETWg3bTRJdDZKUWVZZ0VVRmdpS1AwRWJIdFFZNXo5eGFJaXd3ckln?oc=5"
+    },
+    {
+      "title": "2026中国端侧算力方案洞察报告（AI Box篇） - 电子工程专辑",
+      "summary": "2026中国端侧算力方案洞察报告（AI Box篇） 电子工程专辑",
+      "source": "电子工程专辑",
+      "lang": "zh",
+      "published": "Tue, 07 Jul 2026 00:13:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBBanNtQ0JuNVNieldjYlB5eU1HWlBBSXZGRFZQa1l3SWZuUm5BeDZ4LWtKMF9scnY2c21ZQWtLc1g4akh3a290UmxQZVFOMklXcy0w?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 90392,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。令牌减少 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 57237,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 34787,
+      "language": "TypeScript"
+    },
+    {
+      "title": "github-mcp-server",
+      "type": "GitHub",
+      "summary_en": "GitHub's official MCP Server",
+      "summary": "GitHub 的官方 MCP 服务器",
+      "url": "https://github.com/github/github-mcp-server",
+      "author": "github",
+      "stars": 31258,
+      "language": "Go"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 27548,
+      "language": "C"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 382003,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 248015,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 210537,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
