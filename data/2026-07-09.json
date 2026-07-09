@@ -1,0 +1,502 @@
+{
+  "date": "2026-07-09",
+  "generated_at": "2026-07-09T06:34:34.458842+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
+      "title_zh": "准确、跨学科、透明的结构属性理解与深层的原生结构推理",
+      "summary": "Structure-property relationships are foundational to biology, chemistry and materials science, where function, reactivity and physical response emerge from spatial, chemical and periodic organization. Mechanistically explaining these relationships requires interpreting structural evidence through scientific principles and physical constraints, from stereoch…",
+      "summary_zh": "结构-性质关系是生物学、化学和材料科学的基础，其中功能、反应性和物理响应产生于空间、化学和周期性组织。从机械上解释这些关系需要通过科学原理和物理约束来解释结构证据，从立体化学和键合到对称性、能量学和周期顺序。然而，将人工智能应用于这一过程提出了表示和推理的共同挑战：模型必须保留领域本机结构信息，同时显示特定证据如何支持这些约束下的预测。在这里，我们介绍 SciReasoner，这是一种多模式科学基础模型，用于蛋白质、小分子和无机晶体的本机结构推理。 SciReasoner 将坐标、拓扑和周期性连接离散化为统一的结构感知词汇，在推理过程中将结构标记视为可寻址的证据单元。在同源控制的基因本体预测中，SciReasoner 改进了低同源性和孤儿样蛋白质的细胞成分注释，将 $F_{\\max}$ 从 0.42 增加到 0.55。在化学中，它将单步逆合成精度从…",
+      "authors": [
+        "Chen Tang",
+        "Yizhou Wang",
+        "Jianyu Wu",
+        "Lintao Wang",
+        "Shixiang Tang",
+        "Pengze Li"
+      ],
+      "published": "2026-07-08T17:59:59Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.07708v1",
+      "abs_url": "https://arxiv.org/abs/2607.07708v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07708v1"
+    },
+    {
+      "title": "Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass",
+      "title_zh": "打破数据库锁定：用于数据库旁路的高性能存储读取器的代理再生",
+      "summary": "Analytical workloads operating on data stored in external database systems face a fundamental bottleneck: data access is guarded entirely by the database driver, like JDBC or ODBC, forcing all reads through query execution and other driver layers that are not designed for bulk columnar analytics. We present Jailbreak, an approach that bypasses the database…",
+      "summary_zh": "对存储在外部数据库系统中的数据进行操作的分析工作负载面临着一个根本瓶颈：数据访问完全由数据库驱动程序（例如 JDBC 或 ODBC）保护，强制通过查询执行和其他并非为批量列式分析设计的驱动程序层进行所有读取。我们提出了 Jailbreak，这是一种通过直接读取存储文件并将数据具体化为内存中列式缓冲区来完全绕过数据库引擎的方法。 Jailbreak 的关键见解是，数据库文件格式虽然复杂，但由其源代码和文档完全指定，大型语言模型 (LLM) 可以摄取这些工件来重新生成特定于操作员的表读取组件，而无需人工设计的解析逻辑。 Jailbreak 利用 LLM 辅助代码合成进行数据库存储解码，将传统的不透明格式转变为可直接查询的工件。我们评估 PostgreSQL 和 MySQL 存储文件的越狱，针对只读副本和离线处理管道中常见的分析快照场景。生成的读取器生成…",
+      "authors": [
+        "Victor Giannakouris",
+        "Immanuel Trummer"
+      ],
+      "published": "2026-07-08T17:55:00Z",
+      "category": "cs.DB",
+      "arxiv_id": "2607.07696v1",
+      "abs_url": "https://arxiv.org/abs/2607.07696v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07696v1"
+    },
+    {
+      "title": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety",
+      "title_zh": "机构红队：部署规则，而不仅仅是模型，因果性地塑造了多智能体人工智能安全",
+      "summary": "We introduce institutional red-teaming, an evaluation methodology for testing deployment rules in multi-agent AI: hold the agents, objectives, and task state fixed, vary only one rule, and attribute the resulting change in collective behavior to that rule. We instantiate the methodology in IABench-CA, a consequence-allocation benchmark spanning 228 contexts…",
+      "summary_zh": "我们引入了机构红队，这是一种用于测试多智能体人工智能中的部署规则的评估方法：保持智能体、目标和任务状态固定，仅改变一个规则，并将集体行为的最终变化归因于该规则。我们在 IABench-CA 中实例化了该方法，这是一个结果分配基准，涵盖 228 个上下文、五个规范规则和七个模型群体（33,924 个游戏），具有规范的合作参考和自动标记的推理轨迹。出现了三个发现。 (1) 部署规则会因果性地改变集体安全：仅改变后果规则的举措就意味着每个人口的死亡率增加 22 至 58 个百分点。 (2) 不存在安全默认值，但目标风险是普遍存在的：最安全的规则、最不安全的规则，甚至发生效应的方向在不同人群中都不同，但回归身份定位在任何情况下对于任何人群都不是绝对最安全的，消除了世界各地 30-87% 游戏中资源最少的代理，并且相对于所有七个人群的合作参考而言是选择不安全…",
+      "authors": [
+        "Yujiao Chen"
+      ],
+      "published": "2026-07-08T17:53:56Z",
+      "category": "cs.AI",
+      "arxiv_id": "2607.07695v1",
+      "abs_url": "https://arxiv.org/abs/2607.07695v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07695v1"
+    },
+    {
+      "title": "Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF",
+      "title_zh": "用于样本高效扩散 RLHF 的选择性时间步长加权和基于优势的重放",
+      "summary": "Reinforcement learning from human feedback (RLHF) has emerged as a powerful paradigm for aligning generative models with human preferences. However, applying RLHF to diffusion models remains highly feedback inefficient, as existing approaches typically require large amounts of human or reward model evaluations. This limitation reduces the practicality of di…",
+      "summary_zh": "来自人类反馈的强化学习（RLHF）已成为使生成模型与人类偏好保持一致的强大范例。然而，将 RLHF 应用于扩散模型仍然是非常低效的反馈，因为现有方法通常需要大量的人工或奖励模型评估。这种限制降低了扩散 RLHF 在反馈是主要瓶颈的现实环境中的实用性。在本文中，我们提出了两种互补策略，可以显着提高扩散 RLHF 的反馈效率，同时保留对未见提示的泛化能力。我们的主要观察结果是，扩散轨迹中的奖励信息分布不均匀：并非所有去噪时间步长或轨迹都对从奖励信号中学习做出同样的贡献。通过在优化过程中强调信息丰富的时间步长和轨迹，我们获得了更有效的梯度更新。首先，我们引入了一种按时间步长的加权方案，该方案在策略优化期间重新加权去噪步骤。我们从理论上将这种权重与近端策略优化（PPO）的最优收敛特性联系起来，并根据经验近似结果的权重趋势。其次，我们引入了一种重播机制，该机…",
+      "authors": [
+        "Eric Zhu",
+        "Abhinav Shrivastava",
+        "Soumik Mukhopadhyay"
+      ],
+      "published": "2026-07-08T17:49:49Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.07693v1",
+      "abs_url": "https://arxiv.org/abs/2607.07693v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07693v1"
+    },
+    {
+      "title": "ECGLight: Compute-Light Framework For Paper ECG Digitization and Myocardial Infarction Screening",
+      "title_zh": "ECGLight：用于纸质心电​​图数字化和心肌梗死筛查的计算光框架",
+      "summary": "Electrocardiography (ECG) is one of the most widely used tests for diagnosing cardiovascular disease. Yet several remote clinics still utilize paper ECG printouts for their analysis due to limited connectivity and computational capacity. As a result, vast numbers of physical ECGs obtained in remote areas still remain incapable of being accessed by contempor…",
+      "summary_zh": "心电图（ECG）是诊断心血管疾病最广泛使用的测试之一。然而，由于连接性和计算能力有限，一些远程诊所仍然使用纸质心电图打印输出进行分析。因此，在偏远地区获得的大量物理心电图仍然无法被当代基于人工智能 (AI) 的决策支持访问，因为它们需要大量的计算资源或强大的高速互联网连接。这导致在一些情况下，急性冠状动脉闭塞（ACS）等疾病被忽视，再灌注治疗被延迟。尽管之前的工作已经分别解决了数字化和诊断问题，并利用了先进的人工智能模型，但仍然缺乏一个轻计算的设备上框架来以高保真度重建纸质心电图，同时准确支持多个临床相关终点。我们通过端到端轻量级设备上数字化诊断管道来满足这一需求，该管道将智能手机照片或纸质心电图扫描转换为校准的 12 导联信号和心肌梗塞 (MI) 病理屏幕，并使用 SHapley 附加解释 (SHAP) 来支持可解释性。对 PTB-XL 数据集中…",
+      "authors": [
+        "Shreyasvi Natraj",
+        "Cyrus Achtari",
+        "Felice Gragnano",
+        "Andrea Milzi",
+        "Marco Valgimigli",
+        "Diego Paez-Granados"
+      ],
+      "published": "2026-07-08T17:42:00Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.07683v1",
+      "abs_url": "https://arxiv.org/abs/2607.07683v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07683v1"
+    },
+    {
+      "title": "Any-Dimensional Learning by Sampling",
+      "title_zh": "通过采样进行任意维度的学习",
+      "summary": "Many machine learning models are defined for inputs of different sizes, such as point clouds containing different numbers of points, sequences of tokens of different lengths, and graphs on different numbers of nodes. Such models are trained on finitely-many examples of necessarily limited sizes. How well do these models generalize from inputs of small size…",
+      "summary_zh": "许多机器学习模型是针对不同大小的输入定义的，例如包含不同数量点的点云、不同长度的标记序列以及不同数量节点上的图。此类模型是在大小必然有限的有限多个示例上进行训练的。这些模型从小尺寸输入泛化到训练期间未见过的较大尺寸输入的效果如何？此外，在大量输入上评估此类模型通常成本高昂。我们如何绘制大输入以获得模型采用相似值的较小输入？这两个问题的核心是需要比较不同大小的输入并用小输入来近似大输入。我们提出了一种统一的方法来解决这些问题，即使用随机采样图来比较不同大小的输入。我们考虑的抽样图是替换抽样、随机分箱和物种抽样的概括。我们根据领域中不同大小的问题实例之间的对称性和关系来描述每种类型的采样都适用的应用领域。我们的框架针对所选的采样概念连续地生成函数类的明确泛化和草图率，涵盖了在不同大小的序列、图和张量上定义的函数大族。具体示例包括测度矩多项式、同态密度和…",
+      "authors": [
+        "Eitan Levin",
+        "Venkat Chandrasekaran"
+      ],
+      "published": "2026-07-08T17:38:29Z",
+      "category": "math.ST",
+      "arxiv_id": "2607.07680v1",
+      "abs_url": "https://arxiv.org/abs/2607.07680v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07680v1"
+    },
+    {
+      "title": "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
+      "title_zh": "扩展体现智能的专家混合视频预训练",
+      "summary": "Despite the recent promise in robot control, video generative models suffer from a domain mismatch due to their primary focus on content creation. For example, their design inherently prioritizes visual fidelity and creativity over computational efficiency and physical realism. In this work, we present LingBot-Video, a DiT-based video pretraining paradigm s…",
+      "summary_zh": "尽管机器人控制最近前景广阔，但视频生成模型由于主要关注内容创建而遭受领域不匹配的困扰。例如，他们的设计本质上优先考虑视觉保真度和创造力，而不是计算效率和物理真实感。在这项工作中，我们提出了 LingBot-Video，这是一种专门为体现智能量身定制的基于 DiT 的视频预训练范例。从架构的角度来看，我们采用混合专家（MoE）而不是密集的框架来实现建模能力和推理效率之间的更好权衡，并设法从头开始扩展。从数据角度来看，我们构建了一个数据分析引擎，通过广泛的面向机器人的镜头增强标准互联网视频，包括操纵、导航和以自我为中心的视角，以使基本模型具备对行为和世界动态的内在理解。从训练的角度来看，我们开发了一个多维度的奖励系统，以强化身体理性和任务完成的一致性，超越美学、提示跟随和动作一致性等标准标准。综合评估验证了其作为视频基础模型的性能和效率。我们将 Lin…",
+      "authors": [
+        "Shuailei Ma",
+        "Jiaqi Liao",
+        "Xinyang Wang",
+        "Jingjing Wang",
+        "Chaoran Feng",
+        "Zijing Hu"
+      ],
+      "published": "2026-07-08T17:33:40Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.07675v1",
+      "abs_url": "https://arxiv.org/abs/2607.07675v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07675v1"
+    },
+    {
+      "title": "MedPMC: A Systematic Framework for Scaling High-Fidelity Medical Multimodal Data for Foundation Models",
+      "title_zh": "MedPMC：用于扩展基础模型高保真医学多模态数据的系统框架",
+      "summary": "Medicine is inherently multimodal, requiring clinicians to synthesize information across diverse data streams. Yet the development of multimodal foundation models is constrained by limited access to large-scale, high-quality clinical data. Although PubMed Central (PMC) offers a complementary source of expert-authored image-text data, existing PMC-derived re…",
+      "summary_zh": "医学本质上是多模式的，要求临床医生综合不同数据流的信息。然而，多模式基础模型的发展受到大规模、高质量临床数据的限制。尽管 PubMed Central (PMC) 提供了专家创作的图像文本数据的补充来源，但现有的 PMC 衍生资源在保真度、再现性和临床验证方面仍然有限。我们推出 MedPMC，这是一个自动化、可持续更新的框架，可将许可的文献转化为医疗多模式模型的高保真基础设施。 MedPMC 应用于 610 万篇 PMC 文章，策划了 1100 万个医学图像-文本对。组件评估显示在初始筛选（F1 = 93.2）、多面板图形检测（F1 = 96.5）、图形分离（mAP = 89.8）、标题分离和对齐（F1 = 81.4；ROUGE-L = 85.3）和医学图形分类（F1 = 96.5）方面表现出色。由五名注释员（其中三名受过医学培训）进行手动审查，发…",
+      "authors": [
+        "Hyunjae Kim",
+        "Dain Kim",
+        "Pan Xiao",
+        "Serina S. Applebaum",
+        "Younjoon Chung",
+        "Xuguang Ai"
+      ],
+      "published": "2026-07-08T17:26:49Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.07673v1",
+      "abs_url": "https://arxiv.org/abs/2607.07673v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07673v1"
+    },
+    {
+      "title": "PeTeR: Post-Training Robustification of Probabilistic Circuits",
+      "title_zh": "Peter：概率电路的训练后鲁棒性",
+      "summary": "Probabilistic circuits (PCs) can model complex joint distributions while supporting exact and efficient computation of many inference queries. However, standard likelihood-based PC learning is vulnerable to overfitting and fragile generalization when confronted with data noise, small sample sizes, or distribution shifts. This can be mitigated using distribu…",
+      "summary_zh": "概率电路 (PC) 可以对复杂的联合分布进行建模，同时支持许多推理查询的精确高效计算。然而，当面临数据噪声、小样本量或分布变化时，标准的基于可能性的 PC 学习很容易出现过度拟合和脆弱的泛化。这可以通过使用分布稳健优化来缓解，该优化考虑经验分布的 Wasserstein 球内的最坏情况分布，但当前的方法仅限于在此框架中从头开始训练模型。相反，我们提出了 PeTeR：一种新颖的、无数据的后训练框架，旨在增强预训练的 PC 的能力以应对分布变化，而无需从头开始重新训练。跨多个密度估计基准的实证评估表明，PeTeR 有效地增强了基线模型以对抗随机和对抗性扰动，从而实现了与数据依赖的稳健学习基线相比的竞争或卓越性能。",
+      "authors": [
+        "Adrian Ciotinga",
+        "Yeming Dai",
+        "YooJung Choi"
+      ],
+      "published": "2026-07-08T17:25:20Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.07671v1",
+      "abs_url": "https://arxiv.org/abs/2607.07671v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07671v1"
+    },
+    {
+      "title": "DiaLLM: An Investigation into the Robustness-Generation Gap in English Dialect Adaptation",
+      "title_zh": "DiaLLM：英语方言适应中鲁棒性代沟的调查",
+      "summary": "Large language models increasingly \\emph{understand} dialectal English, yet still \\emph{produce} only standard, US-leaning English, leaving dialectal generation, the harder half of the problem, largely unaddressed. We introduce \\textbf{DiaLLM}, which continually pretrains three open-weight language model families on the International Corpus of English and a…",
+      "summary_zh": "大型语言模型越来越\\emph{理解}方言英语，但仍然\\emph{只产生}标准的、倾向于美国的英语，而方言生成（问题中更难的一半）基本上没有得到解决。我们引入了 \\textbf{DiaLLM}，它不断地在国际英语语料库上预训练三个开放权重语言模型家族，并应用隐式和显式的训练后范式，每种范式都结合了三种模型对齐策略，首次对澳大利亚英语、印度英语和英国北部英语中的这些组件进行了受控比较。我们的结果表明，方言的鲁棒性和生成是\\emph{分离的}：基准是由持续的预训练和 SFT 塑造的，而对齐则以基准未捕获的方式明显地重塑了生成。明确的针对品种的适应产生的输出被可靠地识别为方言，并且比广泛对齐更受青睐，但最积极地优化方言奖励的方法并不是人类评估者所偏爱的。独立的语言分析证实了这种奖励质量的差距，在三个家庭中的两个家庭中最为明显。没有单一的对齐方法占主导地位，…",
+      "authors": [
+        "Jordan Painter",
+        "Dipankar Srirag",
+        "Adarsh Kappiyath",
+        "Diptesh Kanojia",
+        "Aditya Joshi",
+        "Lu Yin"
+      ],
+      "published": "2026-07-08T17:24:27Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.07669v1",
+      "abs_url": "https://arxiv.org/abs/2607.07669v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07669v1"
+    },
+    {
+      "title": "Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops",
+      "title_zh": "人工智能中的递归自我完善：从有界自我完善到自主研究循环",
+      "summary": "AI systems increasingly participate in their own improvement: revising their outputs, adapting their own harnesses during deployment, training on data they generate, and, increasingly, conducting AI research itself. This literature is described under a vocabulary (\"self-refine,\" \"self-reward,\" \"self-play,\" \"self-evolve\") that conflates fundamentally differe…",
+      "summary_zh": "人工智能系统越来越多地参与自身的改进：修改其输出、在部署过程中调整自己的工具、对其生成的数据进行培训，以及越来越多地自行进行人工智能研究。这些文献是用一个词汇（“自我完善”、“自我奖励”、“自我发挥”、“自我进化”）来描述的，这些词汇融合了根本不同的野心。我们沿着两个轴调查了 1,250 篇 arXiv 论文（2024-2026 年）：系统改进的内容——部署中的行为、通过培训制定的政策、评估者或研究过程本身——以及闭环程度（人在环到完全闭环）。该分类法将有界自我完善（收敛的、可评估的和已经工业化的实践）与开放式递归自我改进（RSI）区分开来，后者仍然受到每个测量轴上的基础要求、崩溃动力学和计算约束的限制。其显着特征是自我评估的专用类别：每个改进循环都声称某些信号可以替代人类判断。我们调查了评估者的设计空间——法官、过程奖励模型、验证者、评分标准、元…",
+      "authors": [
+        "Mingguang Chen",
+        "Licheng Wang",
+        "Bo Qu"
+      ],
+      "published": "2026-07-08T17:19:50Z",
+      "category": "cs.AI",
+      "arxiv_id": "2607.07663v1",
+      "abs_url": "https://arxiv.org/abs/2607.07663v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07663v1"
+    },
+    {
+      "title": "ALER-TI: Aligned Latent Embedding Retrieval for Time Series Imputation",
+      "title_zh": "ALER-TI：时间序列插补的对齐潜在嵌入检索",
+      "summary": "Deep learning has significantly advanced time series imputation, yet most existing architectures primarily rely on localized temporal context within the corrupted input sequence. This reliance can be limiting in real-world scenarios, where time series often exhibit non-stationary dynamics, weak temporal correlations, and infrequent patterns that are difficu…",
+      "summary_zh": "深度学习具有显着先进的时间序列插补，但大多数现有架构主要依赖于损坏的输入序列中的局部时间上下文。这种依赖性在现实世界场景中可能会受到限制，其中时间序列通常表现出非平稳动态、弱时间相关性以及难以仅根据附近观测来重建的罕见模式。在本文中，我们提出了 ALER-TI（用于时间序列插补的对齐潜在嵌入检索），这是一种检索增强框架，明确利用历史模式来补充退化的局部上下文，以实现更可靠的缺失值重建。 ALER-TI 的核心是潜在嵌入对齐 (LEA)，它可以减轻损坏的查询和完整的历史候选之间的表示不匹配。通过在潜在空间中应用事后屏蔽，LEA 将候选者与查询的缺失模式对齐，同时允许预先计算和缓存历史嵌入以实现高效检索。 ALER-TI 与模型无关，可以通过轻量级适配模块与各种插补主干集成。对不同缺失率下的六个真实世界数据集进行的广泛实验表明，ALER-TI 不断改进…",
+      "authors": [
+        "Xuan-Thong Truong",
+        "Trung-Kien Le",
+        "Tung Kieu",
+        "Thi-Thu Nguyen",
+        "Nhat-Hai Nguyen"
+      ],
+      "published": "2026-07-08T16:59:38Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.07640v1",
+      "abs_url": "https://arxiv.org/abs/2607.07640v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07640v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "GPT-Live 发布 - OpenAI",
+      "summary": "GPT-Live 发布 OpenAI",
+      "source": "OpenAI",
+      "lang": "zh",
+      "published": "Thu, 09 Jul 2026 01:59:50 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1BWmt1dlpRenpNN1dNRnpwb2FpTzMxak5ub2RscWszcExpc3M0akgzaThMclZJZnlfTEhsZWprb0FCMTY5d2dNeGVMTVA4YmhfTHZxcENMZ3BhOTh4dzY5d2dJTnQtV0tI?oc=5"
+    },
+    {
+      "title": "加快万亿级算力网建设 夯实智能经济新底座 - 新华网",
+      "summary": "加快万亿级算力网建设 夯实智能经济新底座 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Thu, 09 Jul 2026 00:51:35 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1RUzRPTEN4Ykw4Z3BadHdvSkt1NjNLZWhuQ3lZSGhOT29oQkkySjlYVHVXZFVPZFVLYXhwUzV3Y2FYOVVISElGX2pYM1RQaHk1TU16ekRiVGlMdF9ya2Nwa2xEWnI1MGZvQ3FGT19pNHhmYXo2dlp3VDBSY1pHZw?oc=5"
+    },
+    {
+      "title": "“黄鹤楼星空计划”智能体创新创投大赛圆满落幕 - 央广网",
+      "summary": "“黄鹤楼星空计划”智能体创新创投大赛圆满落幕 央广网",
+      "source": "央广网",
+      "lang": "zh",
+      "published": "Thu, 09 Jul 2026 00:56:04 GMT",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5tM0NvVVVSVWF6LXVwWW4tWUh2M2tTNmNWYnpqbHJpMHhWdUZXUEdiTVF4bE9sRWY0ZkRMUDBvdHBmX01RYmRHTjh0TjNuSWJrc2c4NzBuNUN2a1JURlVvVE5jVkRNendMRTFWNG9uWTVMdw?oc=5"
+    },
+    {
+      "title": "华为Atlas 950真机即将亮相WAIC 国产算力迎来超节点时代？ - 财联社",
+      "summary": "华为Atlas 950真机即将亮相WAIC 国产算力迎来超节点时代？ 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Wed, 08 Jul 2026 22:21:15 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE11SXNHODFjY1EyZWJIbXg2WDhUVnRCQ2ZvUmpfM01ZVUlGUENrNVVJYmp3MlJPdFhJdXFVQmFfdC15SFM1Z3JhXw?oc=5"
+    },
+    {
+      "title": "【活力中国调研行】GPU成AI时代“算力心脏” 国产全栈自主彰显中国“芯”力量 - jwview.com",
+      "summary": "【活力中国调研行】GPU成AI时代“算力心脏” 国产全栈自主彰显中国“芯”力量 jwview.com",
+      "source": "jwview.com",
+      "lang": "zh",
+      "published": "Thu, 09 Jul 2026 00:32:37 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5wdENTVW9VU3BTSzZPZHc4WkFVdkNKRzFEVDhfUFpyZGxxRHFuZVZ2RDc0cGxQaDZxOVhEOHFZZWV4MFhxbHVNci1LbFZsTXByUzJfNVp2RE1zQkJUeC1na0J0NEszS2s?oc=5"
+    },
+    {
+      "title": "预览 GPT-5.6 Sol：新一代模型 - OpenAI",
+      "summary": "预览 GPT-5.6 Sol：新一代模型 OpenAI",
+      "source": "OpenAI",
+      "lang": "zh",
+      "published": "Thu, 09 Jul 2026 02:03:52 GMT",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9DYVdnUFM0M3pOQjFTd0RHdG1fbms3aDdfUjJVcW44VEdjYUxLR2xnUU51YXBTTDQtc2JuRTZYRjd2N3pUQmpaSmxHbzJ1bGd5ZnBqWEpKbW4waTZmOTRZdGFrcHJMU1RQcTN3?oc=5"
+    },
+    {
+      "title": "阶跃星辰将发布AI智能体手机 抢先落地新一代AI终端 - 观点网",
+      "summary": "阶跃星辰将发布AI智能体手机 抢先落地新一代AI终端 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Thu, 09 Jul 2026 01:17:31 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9yX053a0lQQ01VUUt2OXkxU3QzdlJRQk5mTFhSM2ItWnBpc19PbjJXU2hUWHZlMDMxVmNvZHhYcmFJT2JUdDhJNlpsa0dTZw?oc=5"
+    },
+    {
+      "title": "全球首款AI智能体手机，下周发布 - 智东西",
+      "summary": "全球首款AI智能体手机，下周发布 智东西",
+      "source": "智东西",
+      "lang": "zh",
+      "published": "Thu, 09 Jul 2026 03:17:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5CMjBUVzMzX1ZlTmxfSURMRjNTQ0RCaVdkQ09XRzRjbkxMOEJQbU5XSElYeURhZXNaODNLejg0TlVKR2hYZGc?oc=5"
+    },
+    {
+      "title": "蚂蚁灵波同日开源两大模型，推动世界模型与具身智能视频生成的双升级 - 中国日报网",
+      "summary": "蚂蚁灵波同日开源两大模型，推动世界模型与具身智能视频生成的双升级 中国日报网",
+      "source": "中国日报网",
+      "lang": "zh",
+      "published": "Thu, 09 Jul 2026 06:23:58 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1pUExVUlBBbzNLQURaTF9RVEVWZENJbzdlb0lXcHdESnE1Z3ZSUERVYXZxWUhHOWtRM2F3WGEyVTZtS3RkSWU1LUpPTlc1d2ZYZFZOck1WeGc0c1I5N1BwRDYzdFhYRUdhWWxnS1JNVnU2QVI3c2dncjRSckk?oc=5"
+    },
+    {
+      "title": "智谱完成约314亿港元配售，聚焦大模型技术研发 - 东方财富",
+      "summary": "智谱完成约314亿港元配售，聚焦大模型技术研发 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Thu, 09 Jul 2026 04:42:34 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5iT2wza1pKaHVsbl9KZll2clhCQ1hJX3I1NzNtT1phdGNWdUYtSmNJM1I1Y21kX0RzSG5zc3hwZ2tBeUstTzdYa05Dc1dYN3lPdHNaMXlYVEFVbWdTOE15dw?oc=5"
+    },
+    {
+      "title": "努比亚全球首款AI智能体手机将亮相2026世界人工智能大会 - 电子工程专辑",
+      "summary": "努比亚全球首款AI智能体手机将亮相2026世界人工智能大会 电子工程专辑",
+      "source": "电子工程专辑",
+      "lang": "zh",
+      "published": "Thu, 09 Jul 2026 05:27:27 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMeGcwUWxPcTFubGJBbjlpWXdDN3BjNVNhb002RjdRNWVFeWZwZU85UHNGdk1xYlNUNk56S1Ewc1c5dWd0aU1UaHF1SlY3bHZlQXJhZ2JFTmRsa1dB?oc=5"
+    },
+    {
+      "title": "活力中国调研行｜国内GPU龙头沐曦：站稳国内市场 剑指世界一流算力平台 - 上观新闻",
+      "summary": "活力中国调研行｜国内GPU龙头沐曦：站稳国内市场 剑指世界一流算力平台 上观新闻",
+      "source": "上观新闻",
+      "lang": "zh",
+      "published": "Thu, 09 Jul 2026 05:54:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB1eEI3NW1MWDZwVXFiRWtPWW10MTMwU2ZBbjdPdzZYLUwzSXFRY2dnTkhWcjN4LXZYNzhZZUhsYXBndnliM1J4VGpBTFNIRW9DcnRxMTdVbWFxQQ?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 90488,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。减少 60-95% 的标记，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 57972,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57327,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 34854,
+      "language": "TypeScript"
+    },
+    {
+      "title": "github-mcp-server",
+      "type": "GitHub",
+      "summary_en": "GitHub's official MCP Server",
+      "summary": "GitHub 的官方 MCP 服务器",
+      "url": "https://github.com/github/github-mcp-server",
+      "author": "github",
+      "stars": 31307,
+      "language": "Go"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 382254,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 250143,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 211740,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
