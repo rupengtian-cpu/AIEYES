@@ -1,0 +1,512 @@
+{
+  "date": "2026-07-11",
+  "generated_at": "2026-07-11T05:31:51.105553+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Wat3R: Underwater 3D Geometry Learning without Annotations",
+      "title_zh": "Wat3R：无需注释的水下 3D 几何学习",
+      "summary": "Estimating 3D geometry in underwater environments presents unique challenges due to light attenuation, scattering, and the absence of large-scale, high-quality 3D annotations. Pioneering methods rely on massive dense annotations that are impractical in underwater settings. In this paper, we propose Wat3R, a cross-domain semi-supervised learning framework de…",
+      "summary_zh": "由于光衰减、散射以及缺乏大规模、高质量 3D 注释，估计水下环境中的 3D 几何形状面临着独特的挑战。开创性的方法依赖于大量密集的注释，这在水下环境中是不切实际的。在本文中，我们提出了 Wat3R，这是一种跨域半监督学习框架，旨在适应从空气到水下场景的前馈 3D 重建模型。独特的是，我们的方法不需要遵循师生架构的任何带注释的水下数据，该架构仅在大量未标记的真实水下视频片段上学习稳健的几何表示。我们还设计了一种跨视图一致性损失，它利用来自其他视图的几何线索来补偿当前视图中由水衰减和散射引起的信息退化。此外，考虑到缺乏综合评估基准，我们构建了Water3D，这是一个涵盖各种水体和水下场景的多样化数据集，专为几何任务评估而设计。实验结果表明，Wat3R 在水下多视图深度估计和点云重建方面优于当前最先进的方法。数据集和代码可在 https://github…",
+      "authors": [
+        "Jiangwei Ren",
+        "Xingyu Jiang",
+        "Zijie Song",
+        "Wei Xu",
+        "Hongkai Lin",
+        "Dingkang Liang"
+      ],
+      "published": "2026-07-09T17:59:58Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.08772v1",
+      "abs_url": "https://arxiv.org/abs/2607.08772v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08772v1"
+    },
+    {
+      "title": "ZipDepth: Bringing Lightweight Zero-Shot Monocular Depth Anywhere, on Any Device",
+      "title_zh": "ZipDepth：在任何设备上随时随地带来轻量级零镜头单目深度",
+      "summary": "Monocular depth estimation has seen remarkable progress through foundation models achieving robust zero-shot generalization, yet their computational demands place them far beyond the reach of embedded and mobile platforms. Lightweight alternatives exist, but have been developed almost exclusively within single-domain, self-supervised paradigms, failing sile…",
+      "summary_zh": "通过基础模型实现强大的零样本泛化，单目深度估计取得了显着进展，但它们的计算需求使它们远远超出了嵌入式和移动平台的能力范围。轻量级的替代方案是存在的，但几乎完全是在单域、自我监督的范式中开发的，在域转移的情况下悄然失败。我们提出了 ZipDepth，这是一种紧凑的单目深度网络，它通过将高效的可重参数化编码器-解码器与从大型多域训练集的基础模型中提取的大规模知识相结合来弥补这一差距。 ZipDepth 仅包含 610 万个参数，从服务器 GPU 到功率受限设备均以实时速率运行，在五个基准测试中的轻量级模型中实现了零样本精度和部署效率之间的最佳权衡，向具有 50 倍以上参数的基础模型的精度迈出了重要一步。",
+      "authors": [
+        "Fabio Tosi",
+        "Luca Bartolomei",
+        "Matteo Poggi",
+        "Stefano Mattoccia"
+      ],
+      "published": "2026-07-09T17:59:58Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.08771v1",
+      "abs_url": "https://arxiv.org/abs/2607.08771v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08771v1"
+    },
+    {
+      "title": "LongE2V: Long-Horizon Event-based Video Reconstruction, Prediction, and Frame Interpolation with Video Diffusion Models",
+      "title_zh": "LongE2V：使用视频扩散模型进行长视野基于事件的视频重建、预测和帧插值",
+      "summary": "Recovering high-quality video from sparse event streams is a challenging task. Regression methods often blur textures, while existing generative models struggle with long-term stability. We propose LongE2V, a novel approach that leverages pre-trained video diffusion priors to jointly handle event-based video reconstruction, prediction, and frame interpolati…",
+      "summary_zh": "从稀疏事件流中恢复高质量视频是一项具有挑战性的任务。回归方法通常会模糊纹理，而现有的生成模型则难以实现长期稳定性。我们提出了 LongE2V，这是一种利用预先训练的视频扩散先验来联合处理基于事件的视频重建、预测和帧插值的新颖方法。通过微调基础视频模型，我们的方法实现了高数据效率和卓越的感知质量。我们引入自回归展开和自适应上下文切换来减轻极长序列中的时间漂移​​。我们还建议使用交叉残差校正重新编码对齐，以确保帧插值期间精确的双向一致性。此外，事件体素密度增强可确保不同传感器分辨率下的稳健性。对现实世界基准的大量实验表明，LongE2V 在所有三个任务中都优于最先进的方法，表现出卓越的时间一致性和零样本泛化。项目页面：https://cdfan0627.github.io/LongE2V-page/",
+      "authors": [
+        "Cheng-De Fan",
+        "Chun-Wei Tuan Mu",
+        "Chen-Wei Chang",
+        "Chin-Yang Lin",
+        "Kun-Ru Wu",
+        "Yu-Chee Tseng"
+      ],
+      "published": "2026-07-09T17:59:52Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.08770v1",
+      "abs_url": "https://arxiv.org/abs/2607.08770v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08770v1"
+    },
+    {
+      "title": "Geometry and Gradient-based Partitioning for Panoramic Outdoor Reconstruction",
+      "title_zh": "用于室外全景重建的几何和梯度分区",
+      "summary": "Scaling 3D Gaussian Splatting (3DGS) to large outdoor scenes is costly in both data acquisition and computation. Adopting panoramic images with equirectangular projection (ERP) can reduce capture effort via their full $360^{\\circ}$ field of view, yet the resulting omnipresent visibility invalidates existing partitioning strategies that rely on local camera…",
+      "summary_zh": "将 3D 高斯溅射 (3DGS) 扩展到大型户外场景的数据采集和计算成本都很高。采用等距柱状投影 (ERP) 的全景图像可以通过其完整的 360^{\\circ}$ 视野减少捕获工作，但由此产生的无所不在的可见性使依赖于本地相机平截头体的现有分区策略失效，导致逐块优化退化为全局训练。因此，我们提出了 PanoLOG，这是一个两阶段从粗到细的框架，配备了专为大规模全景 3DGS 重建而定制的基于几何和梯度的分区策略。在全局粗略阶段，PanoLOG 利用天空球建模和全景单目深度监督来实现可靠的几何形状，而在细化阶段，G$^2$PS 通过视差驱动的不确定性构建自适应包围体，并通过基于梯度的重要性评分分配摄像机。此外，我们构建了 Pano360，这是用于室外场景重建的大规模全景数据集的第一个基准。大量实验表明，G$^2$PS 实现了最先进的渲染质量，同时保持…",
+      "authors": [
+        "Weijian Chen",
+        "Weibo Yao",
+        "Yuhang Zhang",
+        "Xiaolin Tang",
+        "Guo Wang",
+        "Weijun Zhang"
+      ],
+      "published": "2026-07-09T17:59:43Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.08769v1",
+      "abs_url": "https://arxiv.org/abs/2607.08769v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08769v1"
+    },
+    {
+      "title": "UniClawBench: A Universal Benchmark for Proactive Agents on Real-World Tasks",
+      "title_zh": "UniClawBench：主动代理实际任务的通用基准",
+      "summary": "The rapid development of large language models and multimodal large language models has accelerated the emergence of proactive agents capable of operating everyday tools and assisting users in real-world environments. However, existing benchmarks struggle to evaluate such agents effectively, as they often rely on sandboxed environments and single-turn evalu…",
+      "summary_zh": "大语言模型和多模态大语言模型的快速发展加速了能够操作日常工具并在现实环境中帮助用户的主动代理的出现。然而，现有的基准很难有效地评估此类代理，因为它们通常依赖于沙盒环境和单轮评估范例。此外，他们基于场景的任务分类法在同一任务类别中混合了多个模型功能，使得很难确定代理失败的根本原因。为了解决这些限制，我们推出了 UniClawBench，这是第一个能力驱动的基准测试，旨在评估动态的现实环境中的主动代理。 UniClawBench 围绕五种基本模型功能构建：技能使用、探索、长上下文推理、多模式理解和跨平台协调。基于这些能力，我们设计了 400 个双语现实世界任务。与之前依赖静态、预先记录的答案的基准测试不同，我们的基准测试使用细粒度、逐步完成检查点来评估实时 Docker 容器中的代理。此外，我们设计了一种闭环评估策略，包括执行代理、隐藏监督代理和用户代…",
+      "authors": [
+        "Zhekai Chen",
+        "Chengqi Duan",
+        "Kaiyue Sun",
+        "Bohao Li",
+        "Yuqing Wang",
+        "Manyuan Zhang"
+      ],
+      "published": "2026-07-09T17:59:32Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.08768v1",
+      "abs_url": "https://arxiv.org/abs/2607.08768v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08768v1"
+    },
+    {
+      "title": "OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators",
+      "title_zh": "OPSD-V：用于训练后少步自回归视频生成器的策略自蒸馏",
+      "summary": "We propose OPSD-V, an on-policy self-distillation paradigm for post-training few-step autoregressive (AR) video diffusion models. Existing few-step AR video generators can produce long videos with low latency, but still suffer from error accumulation and weakened motion dynamics during long autoregressive rollout. OPSD-V reduces long-horizon degradation whi…",
+      "summary_zh": "我们提出了 OPSD-V，一种用于训练后少步自回归（AR）视频扩散模型的策略自蒸馏范例。现有的几步 AR 视频生成器可以生成低延迟的长视频，但在长时间自回归部署过程中仍然会遇到错误积累和运动动态减弱的问题。 OPSD-V 减少了长期退化，同时保留了原始的几步推理路径。关键思想是在训练期间引入真实的长视频数据作为时间上下文，并用它来提供密集的轨迹级监督。具体来说，学生遵循精确的推理时间推出，根据其自己之前生成的 KV 缓存生成每个块。同时，教师在与学生访问的相同去噪状态下进行评估，但使用更干净的 AR 一致时间缓存，其中较旧的历史可以被真实视频上下文替换。这在策略 AR 缓存动态下提供了密集的去噪级别校正目标，而无需更改采样器、去噪步骤数或推理时间缓存机制。我们将 OPSD-V 应用于代表性的几步 AR 视频模型，包括 Self-Forcing 和…",
+      "authors": [
+        "Hongyu Liu",
+        "Chun Wang",
+        "Feng Gao",
+        "Xuanhua He",
+        "Yue Ma",
+        "Ziyu Wan"
+      ],
+      "published": "2026-07-09T17:59:11Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.08766v1",
+      "abs_url": "https://arxiv.org/abs/2607.08766v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08766v1"
+    },
+    {
+      "title": "Enhancing In-context Panoramic Generation via Geometric-aware Pretraining",
+      "title_zh": "通过几何感知预训练增强上下文全景生成",
+      "summary": "In this work, we present Canvas360, a two-stage framework for in-context panoramic generation that combines geometry-aware pretraining with downstream task-specific fine-tuning. To address the lack of large-scale, high-quality training data tailored to in-context panoramic tasks, we propose Canvas360Dataset, a collection of 1M high-quality paired panoramic…",
+      "summary_zh": "在这项工作中，我们提出了 Canvas360，这是一个用于上下文全景生成的两阶段框架，它将几何感知预训练与下游特定于任务的微调相结合。为了解决缺乏针对上下文全景任务定制的大规模、高质量训练数据的问题，我们提出了 Canvas360Dataset，它是 1M 高质量配对全景样本的集合，用于风格迁移、修复、外绘和编辑，从而能够对不同的上下文生成场景进行有效监督。在建模方面，Canvas360 通过并行深度生成、速度圆形填充和相似性损失正则化增强了文本到全景的生成，使模型能够学习几何感知表示、捕获对象失真细节并提高几何一致性和全局连贯性。此外，在强大的全景先验的支持下，Canvas360 实现了统一的上下文全景生成框架，该框架通过令牌级串联支持各种下游任务，在任务覆盖范围和建模灵活性方面超越了现有方法。大量实验表明，Canvas360 提高了全景图像保真…",
+      "authors": [
+        "Haoran Feng",
+        "Ruiyang Zhang",
+        "Longyi Zhang",
+        "Dizhe Zhang",
+        "Lu Qi"
+      ],
+      "published": "2026-07-09T17:59:06Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.08765v1",
+      "abs_url": "https://arxiv.org/abs/2607.08765v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08765v1"
+    },
+    {
+      "title": "OpenCoF: Learning to Reason Through Video Generation",
+      "title_zh": "OpenCoF：通过视频生成学习推理",
+      "summary": "Reasoning has become a core capability for large models, especially when reliable decisions require understanding logical consequences. Recent video generation models offer a reasoning path distinct from previous Chain-of-Thought (CoT): reasoning can unfold through temporally connected frames, known as Chain-of-Frame (CoF) reasoning. However, existing video…",
+      "summary_zh": "推理已成为大型模型的核心功能，尤其是当可靠的决策需要理解逻辑结果时。最近的视频生成模型提供了与之前的思想链 (CoT) 不同的推理路径：推理可以通过时间连接的帧展开，称为帧链 (CoF) 推理。然而，现有的视频生成器主要是在通用视频语料库上进行训练，仍然缺乏多样化的监督和专门的 CoF 推理设计。为了解决这一差距，我们引入了 OpenCoF，一个由 OpenCoF-17K 数据集（涵盖 11 个任务族的推理视频数据集）和 Wan-CoF 组成的框架，Wan-CoF 是一个微调视频模型，用于研究不同的时间监督是否可以改善 CoF 行为。在四个视频推理基准测试中，Wan-CoF 比 Wan2.2-I2V-A14B 基准取得了相当大的进步。在此基础上，我们凭经验探索更先进的 CoF 功能设计，即为模型配备视觉和文本推理标记。该机制分别捕获低级视觉线索和高…",
+      "authors": [
+        "Xinyan Chen",
+        "Ziyu Guo",
+        "Renrui Zhang",
+        "Dongzhi Jiang",
+        "Hongsheng Li"
+      ],
+      "published": "2026-07-09T17:58:29Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.08763v1",
+      "abs_url": "https://arxiv.org/abs/2607.08763v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08763v1"
+    },
+    {
+      "title": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
+      "title_zh": "想法有基因组：对科学谱系推理和基于谱系的想法生成进行基准测试",
+      "summary": "Scientific ideas rarely start from a blank page. They inherit mechanisms, repair known limitations, and recombine pieces of earlier work, much like biological genomes. Current benchmarks still say little about whether AI systems can follow this inheritance structure. We present IdeaGene-Bench (IG-Bench), a benchmark for scientific lineage reasoning and line…",
+      "summary_zh": "科学思想很少是从白纸开始的。它们继承机制，修复已知的局限性，并重组早期工作的片段，就像生物基因组一样。目前的基准测试仍然很少谈到人工智能系统是否可以遵循这种继承结构。我们推出 IdeaGene-Bench (IG-Bench)，这是科学谱系推理和基于谱系的想法生成的基准。 IG-Bench 围绕 IdeaGene 框架进行组织：每篇论文或提案都表示为一组最小的、有类型的、有证据的 Idea Genome 对象，GenomeDiff 对齐这些对象以记录六种操作进化动态下的继承、突变、丢失、外部导入和新颖插入。该基准包含 1,961 个黄金谱系痕迹、1,085 个精心策划的 Idea Genome 对象以及 10 个科学领域的 920 个成对 GenomeDiff 记录。它支持两种评估。 IG-Exam（42 种任务类型，1,029 个实例）测试思想基…",
+      "authors": [
+        "Yifan Zhou",
+        "Qihao Yang",
+        "Yan Li",
+        "Donggang Li",
+        "Xiru Hu",
+        "Hokin Deng"
+      ],
+      "published": "2026-07-09T17:55:53Z",
+      "category": "cs.AI",
+      "arxiv_id": "2607.08758v1",
+      "abs_url": "https://arxiv.org/abs/2607.08758v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08758v1"
+    },
+    {
+      "title": "Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling",
+      "title_zh": "沿前向扩散的评分精度并不能证明扩散采样中的数值稳定性",
+      "summary": "Score matching controls average error under the forward marginals, but a discretized reverse-time sampler evaluates the learned score along its own trajectory. We show that small forward-marginal error does not guarantee numerical stability. We construct a single smooth score field with arbitrarily small forward-marginal $L^2$ error. The learned reverse-tim…",
+      "summary_zh": "分数匹配控制前向边缘下的平均误差，但离散逆时采样器沿着其自己的轨迹评估学习的分数。我们表明，小的前向边缘误差并不能保证数值稳定性。我们构造一个具有任意小的前向边际 $L^2$ 误差的单个平滑得分场。学习到的逆时过程是非爆炸性的，具有每个阶的矩，并且可以任意接近路径空间总变分中的精确逆时过程。然而，它的欧拉-丸山离散化在概率上收敛，而每个正矩都发散。因此，即使每个 Wasserstein 距离 $W_p$、$p\\ge1$ 发散，弱收敛也可以保持。同样的故障也可能发生在一种固定的有限神经架构中。我们构建了一系列有界、全局 Lipschitz 降噪器，其前向边际误差和路径空间总变化距离都趋于零，而它们的 Euler-Maruyama 端点在每个 $W_p$ 中发散。对于紧凑支持的数据，我们还给出了简单的正结果。将学习到的降噪器投影到包含支持的已知有界闭凸…",
+      "authors": [
+        "Yiwei Zhou"
+      ],
+      "published": "2026-07-09T17:55:52Z",
+      "category": "stat.ML",
+      "arxiv_id": "2607.08757v1",
+      "abs_url": "https://arxiv.org/abs/2607.08757v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08757v1"
+    },
+    {
+      "title": "MulTTiPop: A Multitrack Transcription Dataset for Pop Music",
+      "title_zh": "MulTTiPop：流行音乐的多轨转录数据集",
+      "summary": "We present MulTTiPop, a dataset of pop music segments and their associated multitrack MIDI recordings for the evaluation of automatic music transcription models. MulTTiPop contains 572 segments of popular music totaling 3.5 hours of audio, and contains songs from diverse genres and decades from the 1930s to 2000s. To collect this dataset, we perform metadat…",
+      "summary_zh": "我们提出了 MulTTiPop，这是一个流行音乐片段及其相关多轨 MIDI 录音的数据集，用于评估自动音乐转录模型。 MulTTiPop 包含 572 个流行音乐片段，总计 3.5 小时的音频，并且包含来自 1930 年代到 2000 年代不同流派和几十年的歌曲。为了收集此数据集，我们对来自 Lakh MIDI 和 TheoryTab 数据集的歌曲片段执行基于元数据的匹配，手动识别音频和 MIDI 之间的锚点节拍，然后对音频使用节拍跟踪并扭曲 MIDI 以匹配其节奏和时间。我们在 MulTTiPop 上评估最先进的自动音乐转录模型，发现很大的改进空间，最好的模型实现了 38% 的 Onset F1。有关 MulTTiPop 的更多详细信息和声音示例，请访问 https://gclef-cmu.org/multtipop。",
+      "authors": [
+        "Nathan Pruyne",
+        "Benjamin Stoler",
+        "William Chen",
+        "Chien-yu Huang",
+        "Shinji Watanabe",
+        "Chris Donahue"
+      ],
+      "published": "2026-07-09T17:55:33Z",
+      "category": "cs.SD",
+      "arxiv_id": "2607.08756v1",
+      "abs_url": "https://arxiv.org/abs/2607.08756v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08756v1"
+    },
+    {
+      "title": "SLORR: Simple and Efficient In-Training Low-Rank Regularization",
+      "title_zh": "SLORR：简单高效的训练中低阶正则化",
+      "summary": "Low-rank factorization is widely used to compress neural networks, but modern models are often not naturally amenable to aggressive factorization without significant accuracy loss. Existing training-time low-rank regularizers can improve compressibility, but they often require SVDs of large weight matrices, modify the model architecture (introducing additio…",
+      "summary_zh": "低秩分解广泛用于压缩神经网络，但现代模型通常不能自然地适应激进的分解而不造成显着的准确性损失。现有的训练时低秩正则化器可以提高可压缩性，但它们通常需要大型权重矩阵的 SVD、修改模型架构（引入额外的可训练参数）或依赖有状态的缓存量。为了解决这些限制，我们引入了 SLORR，这是一种简单、无状态且保留架构的框架，用于训练中的低秩正则化，并使用基于 Hoyer 稀疏度度量和核范数的两个主要变体进行实例化。 SLORR 使用 GPU 友好的近似值直接正则化原始权重矩阵，用于正则化器的前向和后向传递，为此我们提供近似保证。我们首先在 ResNet-50、ViT-B/16 和 ViT-L/16 的短期持续训练以及 ResNet-18 的预训练中评估 ImageNet-1K 上的 SLORR，其中 SLORR 引入可压缩性，同时引入不到 8% 的训练开销。我们…",
+      "authors": [
+        "David González-Martínez",
+        "Shiwei Liu"
+      ],
+      "published": "2026-07-09T17:51:50Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.08754v1",
+      "abs_url": "https://arxiv.org/abs/2607.08754v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.08754v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "算力正在改变什么（序与跋） - 人民日报",
+      "summary": "算力正在改变什么（序与跋） 人民日报",
+      "source": "人民日报",
+      "lang": "zh",
+      "published": "Sat, 11 Jul 2026 00:11:49 GMT",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBYLTF2ejJlalVqNU9DLUw5Qk1qX3VFVjZXYUF6d3RHLU5QcFItekJlbmUtU1VqaGJicmo5dmFFTXU0OWF0VldTSUxYa0FidGJORVZ4OWFsd01UNldTNGV6VDVKeFVpUmRBTFlxcFZaVGhBSzVqZHZGS2VLLW9kRVU?oc=5"
+    },
+    {
+      "title": "AI算力进入“下半场”：高质量通用算力仍稀缺 上海为什么能“长”出这些公司 - 财联社",
+      "summary": "AI算力进入“下半场”：高质量通用算力仍稀缺 上海为什么能“长”出这些公司 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Fri, 10 Jul 2026 21:19:43 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5mcFg4QlE4Y2NDdFNjaHNiZ3Y4MWJ2WmhjZ3poeVdCOV96ZUF6bkIxTzlGdDJtZFEzT1M0X2JhUHNhWVVrWk1ZSw?oc=5"
+    },
+    {
+      "title": "中国用十万卡定义下一代AI基建！|大模型|曙光|芯片|系统|时代_手机新浪网 - 新浪财经",
+      "summary": "中国用十万卡定义下一代AI基建！|大模型|曙光|芯片|系统|时代_手机新浪网 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Sat, 11 Jul 2026 05:05:19 GMT",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQXVrMFBBZ3ZSbDVXOHVVRjh2SlY0Tldvc05QTzlBRnlERHlUWGxidEVLdkZJVU9yYlZqQk5wUkI0c3FITXgxZzBBdGFxaHlFTlJZNDFEMnhCT0dVMWRId3gtQlNYLWNoT0ZtRlhSWkhHZ1BPbURPVlR2NjlGR3hFTFgzVmZ0SXQ4X3lsOWRZVm45RXQ0djN6MjBWZldoNUZCVzZhdWdmVQ?oc=5"
+    },
+    {
+      "title": "华为Token Centric Fabric大模型智算网络方案，筑牢西部AI算力底座 - 同花顺",
+      "summary": "华为Token Centric Fabric大模型智算网络方案，筑牢西部AI算力底座 同花顺",
+      "source": "同花顺",
+      "lang": "zh",
+      "published": "Sat, 11 Jul 2026 01:37:47 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1aUzFkR2JrWDVIeVV2dnJpdTZWOWlUeEI0UUJhSEY1MEFpRHNaQTZxSEwycW5UV0Y5QlQyTFFmcEdENC1wLW1LbFU5VEF3UzNkZzNZalprWnNtMGxoWTRoUFlR?oc=5"
+    },
+    {
+      "title": "福建人工智能产业观察⑦|打造大模型赋能新质生产力的“福建范式” - 东南网",
+      "summary": "福建人工智能产业观察⑦|打造大模型赋能新质生产力的“福建范式” 东南网",
+      "source": "东南网",
+      "lang": "zh",
+      "published": "Fri, 10 Jul 2026 23:49:11 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBPa2FURjJOWm9JYUc2M0FUb0pIRVlqczRTbkVnSERKQlh4TU4tSTRKVjNjZG1DZkF2THpKVHFsYzdyc1RtVVcyUEtFd2tNdGtzOHU3YmI5c29uZkVheG1NWVdEdGlkQQ?oc=5"
+    },
+    {
+      "title": "GPT-Live 发布 - OpenAI",
+      "summary": "GPT-Live 发布 OpenAI",
+      "source": "OpenAI",
+      "lang": "zh",
+      "published": "Thu, 09 Jul 2026 01:59:50 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1BWmt1dlpRenpNN1dNRnpwb2FpTzMxak5ub2RscWszcExpc3M0akgzaThMclZJZnlfTEhsZWprb0FCMTY5d2dNeGVMTVA4YmhfTHZxcENMZ3BhOTh4dzY5d2dJTnQtV0tI?oc=5"
+    },
+    {
+      "title": "邬贺铨院士：2030年国内智能体服务Token流量占比将达到75% - cb.com.cn",
+      "summary": "邬贺铨院士：2030年国内智能体服务Token流量占比将达到75% cb.com.cn",
+      "source": "cb.com.cn",
+      "lang": "zh",
+      "published": "Sat, 11 Jul 2026 02:12:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBfUDh4a19pVy1IdnFPVGZneERjRzdsZFVSN0JHbFhnQWUyUGJYZ3huYWNhTzA3aklRTUo4RGd5VFBSaFVKU2JHWEdFM3hEN1J5QWdhR1hGSzVXZ0Jma1dNQmFR?oc=5"
+    },
+    {
+      "title": "直播预约 | AI眼镜SoC大变局：算力、功耗、感知三重极限，谁先破局？ - 电子工程专辑",
+      "summary": "直播预约 | AI眼镜SoC大变局：算力、功耗、感知三重极限，谁先破局？ 电子工程专辑",
+      "source": "电子工程专辑",
+      "lang": "zh",
+      "published": "Sat, 11 Jul 2026 04:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE95TXlBczZIcXVGa1VWd3FCMlNBSnRqSmJveW1QZHlJMlhnVG9wY0lQV0pjUmJReHBMNEtlQVBuZ1p2ckN5QzJzTzI2eFRtTUFmRU93?oc=5"
+    },
+    {
+      "title": "中国AI算力，正在换一种组织方式 - 新浪网",
+      "summary": "中国AI算力，正在换一种组织方式 新浪网",
+      "source": "新浪网",
+      "lang": "zh",
+      "published": "Sat, 11 Jul 2026 03:46:33 GMT",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE45bzZVbllBeHpvQ2Q3TGZWVmluc2lvRHhnU3JvLWpmSno3R2FORU1EOXQwM1RzcElfVFdfWE9PX0ZqT2Y4LU51ZnQ3RUZqbzRyaUZKLXVQelJIT21DTEJPa0tDSmhOTkEzeXkwRXZpTThrQQ?oc=5"
+    },
+    {
+      "title": "山西深耕绿色算力产业 走出转型发展新路 - peopleapp.com",
+      "summary": "山西深耕绿色算力产业 走出转型发展新路 peopleapp.com",
+      "source": "peopleapp.com",
+      "lang": "zh",
+      "published": "Fri, 10 Jul 2026 09:51:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBWQ0pDNXB1VkZlaURnM0FybmtEanRUWWUzY1pyV3UyQjJYaW82T0xiOFhPMUJ1bmduYml1TTFnMVFabFJRZExpb0VROEJqQlBBeHd4akNodWtTYTFSLW9FUGxzVkMzeVZj?oc=5"
+    },
+    {
+      "title": "从“会说”到“会做”，未来式智能押注智能体商业化 - 新浪财经",
+      "summary": "从“会说”到“会做”，未来式智能押注智能体商业化 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Sat, 11 Jul 2026 05:05:19 GMT",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTHc1M0NQbTl4MmNIS2FiWGNKd0RGS3YwTmhmOHYweUNVaTdacE9YOWEzSFotYlV4MTNkMElhM1Q3NUNibnJieFBpcUtPdW0wd3Z5N0FCU0hhNlJnbWY3QkpSbmFVQUNvMGk1eGctSVlBTXk2YjJTeGt0ZDd6Z3NieG04Yi1SdktORUFEVUU4MHBGV0Q0eDdmemE4WHgtTEQ5SGFlWWVDQQ?oc=5"
+    },
+    {
+      "title": "财经聚焦丨从“技术可用”到“商业可赚” AI智能体加速落地 - 新华网",
+      "summary": "财经聚焦丨从“技术可用”到“商业可赚” AI智能体加速落地 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Fri, 10 Jul 2026 09:12:31 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUl82ZEJFYTJ6Y3U0dDdTbGJSZlZENHZnWFNkMDBVdHpCbmNUYVM1V2NlWXcydWZtVXFCMWZjUU00X0g3WGt4TVRSR2VuWTBndGE2ZkE0YzY1ZWtZQ0g1bFFhejNpS3NwS0xZclBiR2NnUUZPcWFfbElVYmdxcUtFemkyR2p6MGc4?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 90589,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。减少 60-95% 的标记，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 58445,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57331,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 34937,
+      "language": "TypeScript"
+    },
+    {
+      "title": "github-mcp-server",
+      "type": "GitHub",
+      "summary_en": "GitHub's official MCP Server",
+      "summary": "GitHub 的官方 MCP 服务器",
+      "url": "https://github.com/github/github-mcp-server",
+      "author": "github",
+      "stars": 31351,
+      "language": "Go"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 382530,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 251922,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 212869,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
