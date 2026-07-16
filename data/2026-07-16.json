@@ -1,0 +1,506 @@
+{
+  "date": "2026-07-16",
+  "generated_at": "2026-07-16T05:30:55.751036+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Leveraging unlabelled data for generalizable neural population decoding",
+      "title_zh": "利用未标记数据进行可推广的神经群体解码",
+      "summary": "Robust and accurate neural decoders are integral to neurotechnologies such as brain-computer interfaces and closed-loop experiments. Recent work has shown that tokenizing neural data at the spike level facilitates multi-session pretraining and delivers state-of-the-art decoding performance. However, current spike-based models are restricted to supervised le…",
+      "summary_zh": "强大而准确的神经解码器是脑机接口和闭环实验等神经技术不可或缺的一部分。最近的工作表明，在尖峰级别对神经数据进行标记有助于多会话预训练并提供最先进的解码性能。然而，当前基于尖峰的模型仅限于监督学习（SL），限制了对具有配对行为标签的数据集的训练。为了解决这个限制，我们引入了 MOJO（基于 Masked autOencoder 的联合训练），这是一种尖峰标记化模型的训练框架，通过 masked 自动编码和 SL 目标联合利用自监督学习（SSL）。我们在到达任务期间跨越猴子运动皮层的三个尖峰数据集以及视觉和决策任务期间的多区域小鼠记录上评估了 MOJO，证明了比纯 SL 训练的模型优越的性能。当使用有限的标记数据进行训练时，这种改进尤其明显，特别是在几次微调中，其中只有来自新会话的少量标记数据可用。结合 SSL 还可以产生更多可解释的神经元表示，从而提…",
+      "authors": [
+        "Ximeng Mao",
+        "Nanda H. Krishna",
+        "Avery Hee-Woon Ryoo",
+        "Matthew G. Perich",
+        "Guillaume Lajoie"
+      ],
+      "published": "2026-07-15T17:58:00Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.14086v1",
+      "abs_url": "https://arxiv.org/abs/2607.14086v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14086v1"
+    },
+    {
+      "title": "Linear Independent Component Analysis via Optimal Transport",
+      "title_zh": "通过最佳传输进行线性独立分量分析",
+      "summary": "Linear Independent Component Analysis (ICA) recovers jointly independent source signals from their linear mixtures. To achieve this, classical ICA algorithms attempt to maximize non-Gaussianity, measured by negentropy, which is linked to independence by information theory. Because exact negentropy optimization is intractable, they rely on proxy contrast fun…",
+      "summary_zh": "线性独立分量分析 (ICA) 从线性混合中恢复联合独立的源信号。为了实现这一目标，经典 ICA 算法尝试最大化非高斯性（通过负熵来衡量），而负熵与信息论的独立性相关。由于精确的负熵优化很棘手，因此它们依赖于代理对比函数，例如四阶累积量和参数对数似然。我们建议使用与标准高斯的 Wasserstein 距离 $W_2^2$ 的平方来测量非高斯性。我们证明，当投影恢复独立分量时，标准正态分布与数据线性投影之间的 Wasserstein 距离最大化。基于这一观察，我们提出了 OT-ICA 算法，该算法通过基于梯度的优化来找到该投影。对模拟数据的实证评估表明，对于不同分布的潜在变量，OT-ICA 的性能优于基于代理的方法。 EEG 伪影去除和计量经济学价格发现的应用证实 OT-ICA 可以用于应用 ICA 任务，而无需分布假设。",
+      "authors": [
+        "Ashutosh Jha",
+        "Michel Besserve",
+        "Simon Buchholz"
+      ],
+      "published": "2026-07-15T17:56:11Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.14081v1",
+      "abs_url": "https://arxiv.org/abs/2607.14081v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14081v1"
+    },
+    {
+      "title": "MetaPerch: Learning from metadata for bioacoustics foundation models",
+      "title_zh": "MetaPerch：从生物声学基础模型的元数据中学习",
+      "summary": "Bioacoustic foundation models rely on large-scale citizen science platforms like Xeno-Canto for geographically and ecologically diverse data. Recent work has shown that supervision alone can produce SotA species detection models when trained on this large-scale data -- however, there remains unutilized potential in the form of recording metadata readily ava…",
+      "summary_zh": "生物声学基础模型依赖于 Xeno-Canto 等大型公民科学平台来获取地理和生态多样性数据。最近的工作表明，在对这种大规模数据进行训练时，仅监督就可以产生 SotA 物种检测模型 - 然而，在这些社区驱动的数据中心内记录可用的元数据的形式仍然存在未利用的潜力。在这项工作中，我们探索使用元数据（例如位置和时间）作为辅助监督信号，使模型能够在其学习表示中利用物种元数据相关性。辅助元数据损失提供了超出发声本身的额外信息，可以鼓励更丰富、更强大的表示，更好地概括物种分布和声域变化——这是在现实世界的被动声学监测（PAM）设置中部署的重要挑战。我们引入了 MetaPerch，这是一种新的基础模型，它在多个具有挑战性的领域中实现了强大的物种识别性能，并针对 9 个不同元数据源对 17 个生物声学数据集的影响进行了广泛的实证研究。",
+      "authors": [
+        "Mustafa Chasmai",
+        "Vincent Dumoulin",
+        "Jenny Hamer"
+      ],
+      "published": "2026-07-15T17:42:41Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.14072v1",
+      "abs_url": "https://arxiv.org/abs/2607.14072v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14072v1"
+    },
+    {
+      "title": "Screening of Biosecurity Features in Metagenomic Data with Evo 2 Probes",
+      "title_zh": "使用 Evo 2 探针筛选宏基因组数据中的生物安全特征",
+      "summary": "Genomic foundation models such as Evo 2 learn rich sequence representations, but their value for biosecurity screening is largely unexplored. We ask how much biosecurity-relevant signal is linearly accessible in these representations by training minimal linear and attention probes on frozen Evo 2 layer-26 activations, without fine-tuning the underlying mode…",
+      "summary_zh": "Evo 2 等基因组基础模型可以学习丰富的序列表示，但它们对于生物安全筛选的价值在很大程度上尚未被开发。我们询问通过在冻结的 Evo 2 第 26 层激活上训练最小线性和注意力探针，在这些表示中可以线性访问多少生物安全相关信号，而无需微调底层模型。在保留的宏基因组测试集中，探针以很强的辨别力检测抗菌素耐药性 (AMR)：线性探针的区域级 ROC-AUC 为 0.888（平均池），而单头注意力探针则升至 0.977。这些探针解析了更细粒度的 AMR 药物类别子类别，并将它们与不相关的功能基因分开，提供了额外的证据，证明所获悉的信号不能仅由通用功能基因状态来解释。细菌毒力也是可解码的，尽管较弱（区域级 ROC-AUC 0.833）。 AMR 探针在模拟短读长上保留了可比较的排名性能，无需重新训练，从而可以在组装计算成本高昂或不可靠的情况下在组装前进行评…",
+      "authors": [
+        "Jeremy Guntoro",
+        "Alexander Dack",
+        "Dylan Danno",
+        "Michaela Jančovičová",
+        "Križan Jurinović",
+        "Vanessa Smilansky"
+      ],
+      "published": "2026-07-15T17:38:02Z",
+      "category": "q-bio.GN",
+      "arxiv_id": "2607.14070v1",
+      "abs_url": "https://arxiv.org/abs/2607.14070v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14070v1"
+    },
+    {
+      "title": "Hindcast: Replaying Prediction Markets to Evaluate LLM Forecasters",
+      "title_zh": "Hindcast：重播预测市场以评估 LLM 预测者",
+      "summary": "Forecasters are evaluated by backtesting, which replays resolved questions and grades the probability the system would have assigned before the outcome was known. For LLMs, two channels leak the answer into this test. A model that retrieves can surface reports written after the event, turning forecasting into a lookup, and each new model is trained on data…",
+      "summary_zh": "预测员通过回溯测试进行评估，回溯测试会重播已解决的问题，并对系统在结果已知之前分配的概率进行评分。对于法学硕士，有两个渠道将答案泄漏到此测试中。检索模型可以显示事件发生后编写的报告，将预测转变为查找，并且每个新模型都根据更接近事件的数据进行训练，因此去年模型的未来问题位于今年的训练数据中。不管怎样，考试成绩在声称成绩具有预见性的同时还能回忆。我们引入了 Hindcast，它通过对模型进行评级来关闭这两种泄漏，就好像它处于选定的过去日期 $t_0$（在任一通道中存在结果之前）一样。 Hindcast 根据公共 Reddit 的冻结快照重播已解决的 Polymarket 预测市场，让模型只读取 $t_0$ 之前编写的帖子，并根据发生的情况和 $t_0$ 的市场自身价格对每个预测进行评分，这本身就是根据相同的过去信息做出的人类预测。由于截止值是按市场设置…",
+      "authors": [
+        "Xiao Ye",
+        "Jacob Dineen",
+        "Evan Zhu",
+        "Shijie Lu",
+        "Kevin Song",
+        "Ben Zhou"
+      ],
+      "published": "2026-07-15T17:21:43Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.14051v1",
+      "abs_url": "https://arxiv.org/abs/2607.14051v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14051v1"
+    },
+    {
+      "title": "PhysClaw-0: A Symbiotic Agentic System for Robot Autonomy via Language Corrections",
+      "title_zh": "PhysClaw-0：通过语言校正实现机器人自主的共生代理系统",
+      "summary": "Autonomous data collection governs the volume and quality of real-world trajectories for manipulation policy learning. Existing pipelines reduce human effort via self-resetting, VLM verification, or language-guided correction, yet episode-scoped fixes must be reissued whenever the same failure recurs, so oversight cost grows with session length rather than…",
+      "summary_zh": "自主数据收集控制着操纵政策学习的现实世界轨迹的数量和质量。现有的管道通过自重置、VLM 验证或语言引导的纠正来减少人力，但每当相同的故障再次出现时，就必须重新发布事件范围的修复，因此监督成本随着会话长度而不是随着明显问题的数量而增加。我们提出了 PhysClaw-0，一种人机共生代理系统，其中的修正被保留并在各轮中重复使用。收集循环自动收集、验证和重置，仅当某个阶段耗尽显式重试预算时才为远程操作员暂停。 LLM 解析器将每个自然语言话语映射到存储在纠正记忆中的结构化调整，因此解决的故障模式通常不需要在相同条件下再次纠正。在真实的机器人桌面清理测试台上，PhysClaw-0 与远程操作的成功相当，同时将人类工作时间减少至 16%。语言修正提高了所有四种评估环境中验证者与人类的一致性，并将平均单次尝试成功率从 12.5% 提高到 47.5%（手臂选择：…",
+      "authors": [
+        "Boyuan Wang",
+        "Zhenyuan Zhang",
+        "Zhiqin Yang",
+        "Peijun Gu",
+        "Shuya Wang",
+        "Xiaofeng Wang"
+      ],
+      "published": "2026-07-15T17:16:24Z",
+      "category": "cs.RO",
+      "arxiv_id": "2607.14047v1",
+      "abs_url": "https://arxiv.org/abs/2607.14047v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14047v1"
+    },
+    {
+      "title": "Earthquaker-AI: A Retrieval-Augmented Generation Framework with Rubric-Based Assessment for Primary School Earthquake Education",
+      "title_zh": "Earthquaker-AI：基于评分标准的小学地震教育评估的检索增强生成框架",
+      "summary": "This paper presents Earthquaker-AI, a hybrid educational framework building upon a previously implemented educational robotics project by integrating a conversational AI assistant based on Retrieval-Augmented Generation. It aims to enhance earthquake preparedness and conscious action among primary-school students. The system extends the award-winning STEM p…",
+      "summary_zh": "本文介绍了 Earthquaker-AI，这是一种混合教育框架，它建立在之前实施的教育机器人项目的基础上，通过集成基于检索增强生成的对话式 AI 助手。其目的是加强小学生的防震准备和自觉行动。该系统将屡获殊荣的 STEM 项目 Earthquaker 从乐高 WeDo2 的机械模拟扩展到认知和元认知处理。机器人组件使用乐高 WeDo2 自动化来模拟地震响应，让学生与传感器和执行器进行交互，作为保护动作的有形表现。该助理作为一种引导学习机制，使学生的反应与安全准则保持一致，同时提供基于规则的口头反馈，支持紧急情况下的自我调节学习和冷静。 Earthquaker-AI 遵循与认知发展相一致的渐进学习轨迹。在早期年级，重点是通过多项选择题对安全行为进行基本认识，并通过二维标题进行评估。在中年级，学生通过多项选择题确定正确的行动顺序，并通过三轴评估标准进行…",
+      "authors": [
+        "Xanthi Kokkinou",
+        "Chaido Mizeli",
+        "Nafsika Koulaxidou",
+        "Marina Delianidi",
+        "Konstantinos Diamantaras"
+      ],
+      "published": "2026-07-15T17:15:16Z",
+      "category": "cs.AI",
+      "arxiv_id": "2607.14046v1",
+      "abs_url": "https://arxiv.org/abs/2607.14046v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14046v1"
+    },
+    {
+      "title": "AI-accelerated End-to-End Framework for Rapid Professional Upskilling",
+      "title_zh": "人工智能加速的端到端框架，可实现快速专业技能提升",
+      "summary": "By 2030, 59 of every 100 workers will need reskilling or upskilling, yet the average time to close an enterprise skills gap grew from roughly 3 days in 2014 to 36 days in 2018. Most current frameworks accelerate single stages of upskilling programs and generally lack industry validation. We present an end-to-end framework that applies AI acceleration across…",
+      "summary_zh": "到 2030 年，每 100 名工人中就有 59 名需要重新培训或提升技能，但缩小企业技能差距的平均时间从 2014 年的大约 3 天增长到 2018 年的 36 天。当前大多数框架加速了技能提升计划的单个阶段，并且通常缺乏行业验证。我们提出了一个端到端的框架，将人工智能加速应用于知识获取、内容开发、内容审查和验证、教学和评估开发五个阶段；非常注重生产和学习效率。三个强有力的外部信号验证了该框架：美国国家会计委员会协会审查并批准了一项基于继续专业教育学分框架的技能提升计划； 3 名学习者遵循该计划并在极短的时间内通过了 NVIDIA Agentic AI 专业认证考试，还有 14 名学习者正在进行中；该程序的知识库支持复杂的下游分析，例如生成用于管理多代理人工智能系统风险的强大的 1,267 个风险项目数据集。",
+      "authors": [
+        "Tam Nguyen",
+        "Hung Nguyen",
+        "Robert Ogburn"
+      ],
+      "published": "2026-07-15T17:14:03Z",
+      "category": "cs.AI",
+      "arxiv_id": "2607.14044v1",
+      "abs_url": "https://arxiv.org/abs/2607.14044v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14044v1"
+    },
+    {
+      "title": "Multi-Expert Routing for Multi-Domain Low-Resource OCR: A Manchu Case Study",
+      "title_zh": "多域低资源 OCR 的多专家路由：满文案例研究",
+      "summary": "Historical Manchu OCR must accommodate various visually distinct writing styles, including regular script, running script, and the semi-cursive chancery hand used in palace memorials, despite limited labeled data. We study a multi-expert system that reuses checkpoints from an iterative fine-tuning process as domain specialists and uses a lightweight page-le…",
+      "summary_zh": "历史满文 OCR 必须适应各种视觉上不同的书写风格，包括楷书、行书和宫殿纪念馆中使用的半草书，尽管标记数据有限。我们研究了一个多专家系统，该系统作为领域专家重用迭代微调过程中的检查点，并使用轻量级页面级图像分类器按视觉风格分派页面。当检查点池缺乏合适的专家时，我们会为该领域培训一名额外的专家。在三个冻结测试集上，路由系统以两位小数精度匹配每种风格的选定专家：楷书的 CER 为 0.30%，纪念章的 CER 为 1.57%，行书的 CER 为 4.83%。该路由器实现了 99.3% 的页面级域准确度，并以相同的精度与域标签预言机进行匹配。三名选定的专家中有两人没有接受过针对其最终领域的专门培训；只有运行脚本专家接受了以该域为目标的培训。我们报告评估协议、路由器设计和每页预测，以使比较具有可重复性。",
+      "authors": [
+        "Zhan Chen",
+        "Jiqiao Ma",
+        "Chih-wen Kuo"
+      ],
+      "published": "2026-07-15T17:12:37Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.14041v1",
+      "abs_url": "https://arxiv.org/abs/2607.14041v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14041v1"
+    },
+    {
+      "title": "Can an Old Dog Be Taught New Tricks? Taking LLMs Beyond Sentence Level Translation",
+      "title_zh": "老狗能教新把戏吗？让法学硕士超越句子级翻译",
+      "summary": "Automatic translation systems, from CAT tools to MT, overwhelmingly treat translation as a sentence-by-sentence act. This paper asks whether LLMs can be moved beyond that paradigm through whole-document, corpus-informed translation. We present PAT (Pragmatic Auto-Translator), a RAG-based system that pairs user-configured specifications with context from a c…",
+      "summary_zh": "自动翻译系统，从 CAT 工具到 MT，绝大多数都将翻译视为逐句行为。本文询问法学硕士是否可以通过整个文档、语料库信息的翻译来超越这种范式。我们提出了 PAT（实用自动翻译器），这是一个基于 RAG 的系统，它将用户配置的规范与美国英语和拉丁美洲西班牙语的真实长格式文本的可比语料库中的上下文进行配对，将检索到的段落、章节和文档级示例传递给法学硕士以生成整个文档。目标是进行专业验证的翻译草稿：重新编写目标文本以适应西班牙语语境，其中话语组织、修辞风格和语用规范与英语有很大不同。我们使用定制的 MQM 类型学评估了三个项目中生成人工智能论文的六篇自动翻译，由两名训练有素的评估员进行评估，从美国英语翻译成拉丁美洲和墨西哥西班牙语。结果表明，有限的提示没有产生有意义的重新表述，并且规范和语料库通知的翻译有时显示出实质性的重新表述，尽管并不总是有效。我们发现…",
+      "authors": [
+        "Alaina Brandt"
+      ],
+      "published": "2026-07-15T17:10:24Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.14040v1",
+      "abs_url": "https://arxiv.org/abs/2607.14040v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14040v1"
+    },
+    {
+      "title": "SPECS: Speciated Evolutionary Circuit Synthesis",
+      "title_zh": "规格：特定进化电路合成",
+      "summary": "We propose SPECS, a genetic algorithm for automated analog circuit synthesis with joint topology and sizing optimization. SPECS is inspired by NeuroEvolution of Augmenting Topologies (NEAT), an evolutionary algorithm originally developed to synthesize neural networks. By reformulating the genome representation and adapting the genetic operators to the analo…",
+      "summary_zh": "我们提出了 SPECS，一种用于自动模拟电路合成的遗传算法，具有联合拓扑和尺寸优化。 SPECS 的灵感来自增强拓扑的 NeuroEvolution (NEAT)，这是一种最初开发用于合成神经网络的进化算法。通过重新制定基因组表示并使遗传算子适应模拟电路领域，我们成功地将 NEAT 的核心原理转移到模拟电路综合中。电路特定的布线约束被纳入其中，以确保在整个进化过程中有效且具有物理意义的设计，并且物种形成用于在保持种群多样性的同时保留创新。我们在一组由平方、立方、平方根和立方根函数组成的计算电路综合任务上评估所提出的方法。实验结果表明，SPECS 在解决方案质量和可靠性方面均优于所有任务的基准方法。综合电路及其原理图可在补充存储库中找到。",
+      "authors": [
+        "Yağız Gençer",
+        "Stefan Uhlich",
+        "Andrea Bonetti",
+        "Arun Venkitaraman",
+        "Chia-Yu Hsieh",
+        "Lorenzo Servadei"
+      ],
+      "published": "2026-07-15T16:57:32Z",
+      "category": "cs.NE",
+      "arxiv_id": "2607.14027v1",
+      "abs_url": "https://arxiv.org/abs/2607.14027v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14027v1"
+    },
+    {
+      "title": "Improving Wind and Solar Power Prediction with Efficient Wrapper-based Feature Selection: An Empirical Study",
+      "title_zh": "通过基于包装的高效特征选择改进风能和太阳能预测：实证研究",
+      "summary": "With rising global energy demand and growing awareness of climate change and its impacts, the share of renewable energies in the global energy mix continues to grow. Unlike conventional power generation, the output of renewable energy sources cannot be controlled as consistently due to their dependence on environmental conditions. Therefore, reliable predic…",
+      "summary_zh": "随着全球能源需求的不断增长以及人们对气候变化及其影响的认识不断增强，可再生能源在全球能源结构中的份额持续增长。与传统发电不同，可再生能源的输出由于其对环境条件的依赖而无法得到一致的控制。因此，对当前和未来能源生产的可靠预测至关重要。在本文中，我们报告了关于现实世界可再生能源预测任务的两篇结构化文献综述的结果：风力涡轮机功率曲线建模和光伏功率预测。对于前者，我们自己进行了全面的文献综述，而对于后者，我们根据现有调查综合了有关频繁选择的输入特征的关键发现。在这两个领域中，我们的分析表明，尽管有大量可用的监控和环境变量，但仅存在有限或非系统的特征选择方法。为了解决这一差距，我们提出了基于集群的顺序特征选择（CSFS），这是一种新颖的、与模型无关的、基于集群的包装方法，用于在可再生能源预测管道中自动、高效且可靠的特征选择。为了支持可重复性和重用，我们在 G…",
+      "authors": [
+        "Daniel Grillmeyer",
+        "Marius Hadry",
+        "Michael Stenger",
+        "Vanessa Borst",
+        "Veronika Lesch",
+        "Samuel Kounev"
+      ],
+      "published": "2026-07-15T16:55:42Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.14024v1",
+      "abs_url": "https://arxiv.org/abs/2607.14024v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14024v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "端侧AI合规破局！7款手机端侧大模型集中备案 AI智能体产业化或加速(附股) - 东方财富",
+      "summary": "端侧AI合规破局！7款手机端侧大模型集中备案 AI智能体产业化或加速(附股) 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Thu, 16 Jul 2026 00:47:15 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5LcVRUTXVJSGNOSFNoc1FxUzVCY0ZyTllUVUM0VnpqalN6OHJMemZOdTM5cGdybXh2UmJ6bnd2d08yeVJoZ1VkdjFSY2gyNFNSTDl6a3A3eld1Um0zU1BJdQ?oc=5"
+    },
+    {
+      "title": "从买算力到卖能力：嬴彻科技七亿商用里程背后的云上飞轮 - 新浪新闻_手机新浪网",
+      "summary": "从买算力到卖能力：嬴彻科技七亿商用里程背后的云上飞轮 新浪新闻_手机新浪网",
+      "source": "新浪新闻_手机新浪网",
+      "lang": "zh",
+      "published": "Thu, 16 Jul 2026 02:41:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5RSTBDcndoQU5XbGRudUJBUEcwQ0ZBVGhpaVl3eW1TZGJrWVowX200cnI0QnZjYjNZTXVTcnU4THdIRmt4X3l6eElsTDBxdmx3QUlLczZwZ1JVZm5Oclc1eEdQUmJudGlzTERFMjRYRHRIajRDblE?oc=5"
+    },
+    {
+      "title": "底层架构升级、金融场景打通，MiniMax旗下通用智能体产品全新升级 - 上观新闻",
+      "summary": "底层架构升级、金融场景打通，MiniMax旗下通用智能体产品全新升级 上观新闻",
+      "source": "上观新闻",
+      "lang": "zh",
+      "published": "Thu, 16 Jul 2026 03:06:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0zaF8tZkxaUU1NTkpjOXBEaE1ObmpfdW9lRWhBeEw2WS1aUEtzLWg2ZnBxWUZQU3J6MFBmSU1oQjBoN3pkUE9NeVFQRlhBQjI2LWJrdUl4b2ZYZw?oc=5"
+    },
+    {
+      "title": "软硬件模型三位一体！原生智能体手机在上海亮相 - 中国科技网",
+      "summary": "软硬件模型三位一体！原生智能体手机在上海亮相 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Wed, 15 Jul 2026 13:03:15 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1JbGpHNGMwVE0takU3cXBGeENWSWhxVm5NbGs1Nkd2dUNkb253cXJUQjNzVTJrMC0wUHcwSDNJWDl3Q3FuWlZPeTczNE95NE1KR0k2bmNNcGxnSUJ1ZVF0eFZ4ZjBjOFV5TF9XNnM0MlM?oc=5"
+    },
+    {
+      "title": "我国首个水风光一体化智慧运营大模型在蓉发布 - 四川新闻",
+      "summary": "我国首个水风光一体化智慧运营大模型在蓉发布 四川新闻",
+      "source": "四川新闻",
+      "lang": "zh",
+      "published": "Thu, 16 Jul 2026 02:37:34 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5Xak40WVE2TmZKeDlHSlVsalhkRWZhTTVyZng2Vy1MYVd3MFU3NWFlZ0lKVXI1RWVvX0J3bmlzR0pPVkFZRzdxT1EwdjNzRjFieGhRS0ZrTVNvOTNBdEtVNlp1VQ?oc=5"
+    },
+    {
+      "title": "告别“赛博恋人”？新规为AI情感陪伴戴紧箍，豆包、千问切割 - 新京报",
+      "summary": "告别“赛博恋人”？新规为AI情感陪伴戴紧箍，豆包、千问切割 新京报",
+      "source": "新京报",
+      "lang": "zh",
+      "published": "Thu, 16 Jul 2026 03:42:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1lOGlhMERZZXNRRXg3NHZTX3ZlbkhuZDFvNlZfZ0wyeUJ4ZnZfMDBWMzRoQ2Q1eFhZZ3F0b0otZUcyYm0wdWFETHlOcWhiYjZCYkhOU29vUGJGbldEZGZ4UW5oMmI?oc=5"
+    },
+    {
+      "title": "深圳华强：协助华为建设算力生态 推进计算部件总经销业务落地 - 观点网",
+      "summary": "深圳华强：协助华为建设算力生态 推进计算部件总经销业务落地 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Thu, 16 Jul 2026 04:39:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1sRGNBN1FqUTFWWGRoYUNsSzNYOUQzeVpjcDJUbmxXYkltbnlUZGVDcl9Vc1dnTzFnT2NUb2Vfc09pem1TWkRiYXRWSlZrNzc3U2JuSTBZTlJibnVXY05mRWxB?oc=5"
+    },
+    {
+      "title": "全球AI巨头集体调头：大模型的价格战结束了 - 新浪财经",
+      "summary": "全球AI巨头集体调头：大模型的价格战结束了 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Thu, 16 Jul 2026 05:12:32 GMT",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPekRNYzV6ei1GUmY4Qld4eFc2c0RwSV9ualJnYWw1QWtFUWJpTWtFU3lOVXZ3MkhlSXVYTFhMMGd4U1M3OERndElZWWVQamI1NDR2NnI2cDQyX3A3NXYybTlHaHdOLWEyZUNpMFRlNGFFSGlQNlAtS1kxY0RWLUZTYnhEdVItaHk1ZXVsVUpERFRraFdwVE9JcnI5RFBzLUR2amx1QnliaG1DRmRNa29wSHBB?oc=5"
+    },
+    {
+      "title": "“天翼领航者”号入列 助力中国算力和人工智能发展向海图强 - 央视网",
+      "summary": "“天翼领航者”号入列 助力中国算力和人工智能发展向海图强 央视网",
+      "source": "央视网",
+      "lang": "zh",
+      "published": "Thu, 16 Jul 2026 03:46:13 GMT",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1ob1R4S3BKOXBvXzYzMUVmSXpxUHA0UExWZk5ZUXB5LS1EVDRSRmdsX1JzYXBqNVlfclM0MXJqMkR2MVJTRHpQdnpzdEZwNXNMaWV3MndlNUtXeTkzd0NTUWljZlczSl9NSi12SHZtWWVlQUxtT0tyUQ?oc=5"
+    },
+    {
+      "title": "莲花控股，算力埋雷 - thepaper.cn",
+      "summary": "莲花控股，算力埋雷 thepaper.cn",
+      "source": "thepaper.cn",
+      "lang": "zh",
+      "published": "Wed, 15 Jul 2026 23:16:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBlRHpXV3g0aE5MMm0wbnBjeVZlTE1PZElGTXFkY3ZJa0lwR09yRVczdjVyUVNJem5hMFZ3cl82UGdVY1hCVk90aUV6Wnc1Wmd1eEdOTkRhYWJPcDAxMmc?oc=5"
+    },
+    {
+      "title": "全国卫生产业企业管理协会医学AI智能体专业委员会成立大会在京举行 - 京报网",
+      "summary": "全国卫生产业企业管理协会医学AI智能体专业委员会成立大会在京举行 京报网",
+      "source": "京报网",
+      "lang": "zh",
+      "published": "Thu, 16 Jul 2026 01:10:06 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9mZVVPbk9kcE9LdXlNS1FYY0hKVFdOMjJXUmdmZS1POHBUNlBkaFdkWVZycjJrdjMwQUhJWDNNS3dTa2Eta01aOUlsY2M2a1RFVlBqdUJySVNTUzdwYVE?oc=5"
+    },
+    {
+      "title": "IDC：百度智能云蝉联中国金融大模型市场份额第一 - 飞象网",
+      "summary": "IDC：百度智能云蝉联中国金融大模型市场份额第一 飞象网",
+      "source": "飞象网",
+      "lang": "zh",
+      "published": "Thu, 16 Jul 2026 03:16:58 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBFcEkxZEFQRnFCMmdZa05BekNEa0VuaThEUWQxb3V4Yy1MdXp1R2Y2WjN5WlpBZGdrWExQd1ludVJKYXFxY1BOWC1WZw?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 90831,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 59389,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57333,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 35138,
+      "language": "TypeScript"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 31944,
+      "language": "C"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 383071,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 255523,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 215572,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
