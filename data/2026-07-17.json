@@ -1,0 +1,511 @@
+{
+  "date": "2026-07-17",
+  "generated_at": "2026-07-17T05:32:39.030171+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Hierarchical Denoising For Multi-Step Visual Reasoning",
+      "title_zh": "多步视觉推理的分层去噪",
+      "summary": "Video models are evolving into vision foundation models, yet they still lack human-like multi-step reasoning. Streaming autoregressive diffusion models are efficient but limited in reasoning, while bidirectional diffusion enables global revision with high inference costs due to dense frame-level denoising. Both paradigms struggle to achieve logical consiste…",
+      "summary_zh": "视频模型正在演变为视觉基础模型，但它们仍然缺乏类人的多步骤推理。流式自回归扩散模型虽然高效，但推理能力有限，而双向扩散则可实现全局修正，但由于密集的帧级去噪，推理成本较高。这两种范式都在努力实现复杂推理任务的逻辑一致性和低延迟流。我们提出了 HDR（视觉推理分层去噪），这是一个统一的框架，它将分层潜伏集成到因果视频生成中以进行多步推理。 HDR 将视频潜在层组织成树状结构的层次结构，从而在流式输出之前实现从粗到细的推理。粗略的去噪层为全局规划保留了不确定的假设，而更精细的层则逐渐将它们细化为具体的视觉状态。稀疏分层注意力模式（SHAP）进一步降低了时间注意力成本。我们引入了一种具有分布外情况的分层多步视频推理基准，涵盖六个任务：迷宫导航、汉诺塔、单线绘制、滑动拼图、推箱子和倒水。与流式自回归扩散基线相比，HDR 将成功率从 34.22 提高到 60…",
+      "authors": [
+        "Zezhong Qian",
+        "Xiaowei Chi",
+        "Chak-Wing Mak",
+        "Tianze Zhou",
+        "Ruibin Yuan",
+        "Yuhan Rui"
+      ],
+      "published": "2026-07-16T17:59:57Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.15278v1",
+      "abs_url": "https://arxiv.org/abs/2607.15278v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15278v1"
+    },
+    {
+      "title": "Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models",
+      "title_zh": "分区、提示、聚合：语言模型中的统计自洽性",
+      "summary": "In-context learning is commonly interpreted as a form of conditional inference, in which the prompt specifies a context and the model's output is treated as an estimate of the corresponding conditional distribution. If this interpretation holds, then LLM estimates should satisfy basic probabilistic identities. In particular, the law of total probability ass…",
+      "summary_zh": "上下文学习通常被解释为条件推理的一种形式，其中提示指定上下文，并且模型的输出被视为相应条件分布的估计。如果这种解释成立，那么 LLM 估计应该满足基本概率恒等式。特别是，总概率定律断言，先验加权条件分布在任何有效的总体划分上聚合成总体水平边际。在这项工作中，我们调查了法学硕士的估计在多大程度上遵守了这种自我一致性原则。我们使用二叉树作为评估支架，将群体递归地划分为越来越细粒度的子群体。然后，我们向法学硕士提供上下文中的口头亚总体描述，将所得估计值汇总回总体水平估计值，并在不同粒度的分区之间进行比较。跨问题域和最先进的前沿模型应用该协议，我们发现了对基本一致性属性的广泛违反。对角色提示的深入研究揭示了一种我们称之为宏观谬误的模式：从更细粒度的亚群体反应中重建的估计通常比直接的群体水平估计更符合人类参考数据。这种效应在树结构和估计任务的变化中持续存在，…",
+      "authors": [
+        "Patrik Wolf",
+        "Thomas Kleine Buening",
+        "Andreas Krause",
+        "Celestine Mendler-Dünner"
+      ],
+      "published": "2026-07-16T17:59:31Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.15277v1",
+      "abs_url": "https://arxiv.org/abs/2607.15277v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15277v1"
+    },
+    {
+      "title": "SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions",
+      "title_zh": "SciDiagramEdit：学习从论文修订中编辑科学图表",
+      "summary": "Editing the figures in a research paper is a routine and time-consuming part of everyday research practice: authors relabel components, rearrange panels, and restyle visuals as they revise their manuscripts. Automating this editing workflow under a natural-language instruction, however, is challenging, because a scientific figure is a dense infographic in w…",
+      "summary_zh": "编辑研究论文中的图表是日常研究实践中例行且耗时的一部分：作者在修改手稿时重新标记组件、重新排列面板并重新设计视觉效果。然而，在自然语言指令下自动化此编辑工作流程具有挑战性，因为科学图形是一个密集的信息图表，其中原理图、图表、照片、标题和箭头等异构视觉元素在严格的视觉语法下组成，以推进特定的论点。为了解决这个问题，我们提出了 SciDiagramEdit，这是一个基准和技能进化框架，可以从自然论文修订中学习并在图形的可编辑矢量源上进行操作，用户可以在其中与代理一起检查和共同编辑单个图元。我们的基准测试从 arXiv 版本历史中挖掘前后图对，每个图都基于作者自己的修订意图。为了适应编辑指令的多样性，我们通过技能进化采用代理学习：代理提议者根据多个时期的执行跟踪不断完善代理的技能规范。由此产生的技能逐渐提高了保留验证集上的编辑准确性，提供了证据表明自然论…",
+      "authors": [
+        "Yasheng Sun",
+        "Zezi Zeng",
+        "Yifan Yang",
+        "Chong Luo",
+        "Wenyi Wang",
+        "Ziwei Liu"
+      ],
+      "published": "2026-07-16T17:58:36Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.15272v1",
+      "abs_url": "https://arxiv.org/abs/2607.15272v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15272v1"
+    },
+    {
+      "title": "SceneBind: Binding What and Where Across Vision, Audio and Language",
+      "title_zh": "SceneBind：跨视觉、音频和语言绑定内容和位置",
+      "summary": "We present SceneBind, an omni-modal representation of realistic scenes with joint semantic and 3D spatial understanding across vision, audio and language. Existing omni-modal encoders excel at instance-level semantics (i.e., what is present), but often lack explicit spatial structure (i.e., where it is). SceneBind addresses this gap by representing each sce…",
+      "summary_zh": "我们提出了 SceneBind，一种现实场景的全模式表示，具有跨视觉、音频和语言的联合语义和 3D 空间理解。现有的全模态编码器擅长实例级语义（即存在的内容），但通常缺乏明确的空间结构（即它在哪里）。 SceneBind 通过将每个场景表示为语义空间实体，将全局语义嵌入与以对象为中心的语义空间槽相结合来解决这一差距。这种表示明确地捕获了对象级语义、空间属性和不确定性。我们进一步提出了 SceneBind Matching，这是一种语义空间匹配方案，它将全局场景相似性与对象对齐相结合，支持跨模式场景检索和对象接地。为了训练和评估 SceneBind，我们策划了一个具有结构化语义和空间注释的新颖的现实世界双耳视听数据集，并提出了一种用于跨模态对齐语义和空间信号的训练协议。 SceneBind 与大规模预训练语义编码器兼容，只需少量额外标记即可添加轻量级…",
+      "authors": [
+        "Mingfei Chen",
+        "Zijun Cui",
+        "Ruoke Zhang",
+        "Hyeonggon Ryu",
+        "Eli Shlizerman"
+      ],
+      "published": "2026-07-16T17:55:15Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.15265v1",
+      "abs_url": "https://arxiv.org/abs/2607.15265v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15265v1"
+    },
+    {
+      "title": "Beyond Success Rate: Cost-Aware Evaluation of Offensive and Defensive Security Agents",
+      "title_zh": "超越成功率：进攻性和防御性安全代理的成本意识评估",
+      "summary": "Security-agent evaluations commonly measure peak offensive capability under generous inference budgets, emphasizing vulnerability discovery, exploit development, penetration testing, and CTF completion. Such measurements are useful but incomplete: in operational security, every reasoning step, tool call, telemetry query, and enrichment request consumes budg…",
+      "summary_zh": "安全代理评估通常在慷慨的推理预算下衡量峰值攻击能力，强调漏洞发现、漏洞利用开发、渗透测试和 CTF 完成。这样的测量很有用，但不完整：在操作安全中，每个推理步骤、工具调用、遥测查询和丰富请求都会消耗预算。我们通过这种成本成功的视角来评估语言模型安全代理，以应对进攻性 Cybench 挑战和防御性 Splunk BOTS v1 调查挑战。我们不只报告最佳案例的成功，而是比较固定成本水平的模型，并通过推理支出和工具支出来分解性能。我们的结果显示了红队和蓝队任务的不同缩放机制。通过额外的测试时间计算，进攻性 CTF 性能得到提高，并且扩展的开放权重模型可以接近前沿专有系统，同时保持成本竞争力。防御性 SOC 调查的扩展方式不同：成功更多地依赖于严格的工具使用、遥测导航和选择性丰富，而不是仅仅依赖于原始推理预算。我们认为，安全代理基准应该衡量经济效率和运营…",
+      "authors": [
+        "Paul Kassianik",
+        "Blaine Nelson",
+        "Yaron Singer"
+      ],
+      "published": "2026-07-16T17:54:47Z",
+      "category": "cs.CR",
+      "arxiv_id": "2607.15263v1",
+      "abs_url": "https://arxiv.org/abs/2607.15263v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15263v1"
+    },
+    {
+      "title": "Decoding Market Emotion from Blockchain Activity: A Data-Driven Sentiment Classifier",
+      "title_zh": "从区块链活动解码市场情绪：数据驱动的情绪分类器",
+      "summary": "The growing use of Bitcoin as a decentralized digital asset and investment tool has sparked strong interest in understanding its market behavior. This study presents a new approach to analyze Bitcoin market sentiment by combining on-chain and financial data with social media posts. Unlike models that aim to predict prices, this work focuses on explaining ma…",
+      "summary_zh": "比特币作为一种去中心化数字资产和投资工具的使用日益广泛，引发了人们对了解其市场行为的强烈兴趣。这项研究提出了一种通过将链上和财务数据与社交媒体帖子相结合来分析比特币市场情绪的新方法。与旨在预测价格的模型不同，这项工作的重点是使用区块链交易、比特币的历史价格数据和每日 Twitter 情绪分类来解释市场情绪。该方法将情绪趋势与链上和财务指标合并，标准化为数据集以进行详细的市场分析。使用交叉验证对多个机器学习模型进行了测试，梯度提升 (XGBoost) 成为情感分类最可靠的模型，平均 F1 分数约为 0.84。 SHAP（SHapley Additive exPlanations）是一种基于博弈论的模型可解释性方法，用于量化链上特征对模型预测的贡献，提高透明度。结果表明，这种数据组合产生了有意义的预测信号和见解，支持数据驱动的加密货币分析和深度学习的未…",
+      "authors": [
+        "Arthur G. Bubolz",
+        "Abreu Quevedo",
+        "Giancarlo Lucca",
+        "Rafael A. Berri",
+        "Eduardo Borges",
+        "Bruno L. Dalmazo"
+      ],
+      "published": "2026-07-16T17:52:26Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.15258v1",
+      "abs_url": "https://arxiv.org/abs/2607.15258v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15258v1"
+    },
+    {
+      "title": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
+      "title_zh": "SearchOS-V1：迈向稳健的开放域信息搜索代理协作",
+      "summary": "Recent advances in Tool-Integrated Large Language Models have made web search a core capability of information-seeking agents. However, as interaction histories grow, agents increasingly struggle to track task progress. When search attempts fail to yield useful evidence, current single- and multi-agent systems can become trapped in repetitive loops, wasting…",
+      "summary_zh": "工具集成大型语言模型的最新进展使网络搜索成为信息查找代理的核心能力。然而，随着交互历史的增长，代理越来越难以跟踪任务进度。当搜索尝试未能产生有用的证据时，当前的单智能体和多智能体系统可能会陷入重复循环，浪费搜索预算并最终损害最终输出的质量和完整性。我们引入了 SearchOS，这是一个系统级多代理框架，它将脆弱的、隐式的搜索进度转变为显式的、持久的和共享的状态。首先，我们将开放域信息搜索制定为具有基础引用的关系模式完成，其中代理发现实体，跨链接表填充属性，并将每个值锚定到源证据。然后我们设计面向搜索的上下文管理（SOCM），它将演化状态具体化为前沿任务、证据图、覆盖图和故障记忆。 SearchOS 基于 SOCM 构建，采用管道并行调度机制，该机制与子代理的执行重叠，并不断用针对未解决的覆盖间隙的任务重新填充空闲槽，以提高利用率和吞吐量。为了安排和…",
+      "authors": [
+        "Yuyao Zhang",
+        "Junjie Gao",
+        "Zhengxian Wu",
+        "Jiaming Fan",
+        "Jin Zhang",
+        "Shihan Ma"
+      ],
+      "published": "2026-07-16T17:51:23Z",
+      "category": "cs.AI",
+      "arxiv_id": "2607.15257v1",
+      "abs_url": "https://arxiv.org/abs/2607.15257v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15257v1"
+    },
+    {
+      "title": "HoloGeo: Mitigating Landmark Bias in Geo-localization via Evidence-Driven Reasoning",
+      "title_zh": "HoloGeo：通过证据驱动推理减轻地理定位中的地标偏差",
+      "summary": "Recent advances in Vision-Language Models (VLMs) have significantly improved image geo-localization, yet existing models remain susceptible to landmark bias, causing them to overlook geographical cues or form spurious correlations, ultimately resulting in inaccurate localization. To systematically investigate this issue, we first design two quantitative met…",
+      "summary_zh": "视觉语言模型（VLM）的最新进展显着改善了图像地理定位，但现有模型仍然容易受到地标偏差的影响，导致它们忽略地理线索或形成虚假相关性，最终导致定位不准确。为了系统地研究这个问题，我们首先设计了偏差强度（BI）和偏差危害性（BH）两个定量指标来表征地标对模型推理的影响，并建立了一个综合基准LandmarkBias-3K。为了减轻地标偏差，我们进一步提出了一种证据驱动的推理框架 HoloGeo，以提高地理定位的可靠性。 HoloGeo 由高质量数据集 BF-30k 支持，并用结构化多证据无偏差推理链进行注释。通过整合多维奖励，HoloGeo 明确鼓励对不同视觉线索的平衡注意力，并实现证据驱动的联合推理。大量实验表明，HoloGeo 不仅在 IM2GPS3K 和 YFCC4k 上保持优异的性能，而且在 LandmarkBias-3K 上显着优于现有的开源…",
+      "authors": [
+        "Pengcheng Zhou",
+        "Xuanyu Liu",
+        "Yanchen Yin",
+        "Bobo Li",
+        "Shengqiong Wu",
+        "Mong-Li Lee"
+      ],
+      "published": "2026-07-16T17:50:03Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.15255v1",
+      "abs_url": "https://arxiv.org/abs/2607.15255v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15255v1"
+    },
+    {
+      "title": "teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data",
+      "title_zh": "告诉我为什么（除了堵塞）：城市驾驶数据的探索性因果分析",
+      "summary": "Traffic agencies now have access to large volumes of video-derived data for studying safety and congestion. Most of these data are observational and collected without interventions, which makes causal questions such as \"How would rain change traffic density?\" difficult to answer. We present teLLMe, a system for exploratory causal analysis of urban driving d…",
+      "summary_zh": "交通机构现在可以访问大量视频数据来研究安全和拥堵情况。大多数这些数据都是观察性的，并且是在没有干预的情况下收集的，这引发了诸如“降雨将如何改变交通密度？”之类的因果问题。很难回答。我们推出了 teLLMe，一个用于城市驾驶数据集探索性因果分析的系统。该系统从根据行车记录仪注释构建的结构化事件表开始，并将因果结构学习与 PC 算法、基于引导的稳定性检查以及使用线性回归和 DoWhy 的查询特定效果估计相结合。通过模式感知的法学硕士将自然语言问题映射到结构化因果查询，使用户能够指定治疗、结果和亚群。 teLLMe 返回一张“因果卡”，其中总结了效果估计、调整集、DAG 支持和假设，后面是简短的自然语言解释。对 BDD 派生的交通事件的案例研究表明，该系统可以呈现涉及天气、高峰时段和交通密度的合理关系，同时使不确定性和建模选择变得明确。该系统被设计为假设…",
+      "authors": [
+        "Qiwei Li",
+        "Jorge Ortiz"
+      ],
+      "published": "2026-07-16T17:49:28Z",
+      "category": "cs.AI",
+      "arxiv_id": "2607.15254v1",
+      "abs_url": "https://arxiv.org/abs/2607.15254v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15254v1"
+    },
+    {
+      "title": "Bridge Evidence: Static Retrieval Utility Does Not Predict Causal Utility in Multi-Step Agentic Search",
+      "title_zh": "桥接证据：静态检索实用程序不能预测多步代理搜索中的因果实用程序",
+      "summary": "Retrieval systems are trained and evaluated on a static idea of usefulness: hand a document and a question to a reader model, see whether the answer improves, and score the document accordingly. The idea holds up when a document is read on its own. It breaks when a language model works as a search agent, issuing several queries and reasoning across turns, b…",
+      "summary_zh": "检索系统根据静态有用性概念进行训练和评估：将文档和问题交给读者模型，查看答案是否有所改进，并对文档进行相应评分。当单独阅读文档时，这个想法是成立的。当语言模型充当搜索代理、发出多个查询并轮流进行推理时，它就会崩溃，因为文档的重要性在于它让代理下一步做什么，而不是它对当前问题所说的内容。我们衡量这一差距而不是争论它。在 HotpotQA 上使用 ReAct 风格的代理，我们重播 1000 个开发问题，并且对于代理读取的每个文档，将其删除并从该点重新运行其余的轨迹。将原始运行与其反事实进行比较，得出来自三个增量的反事实轨迹效用 (CTU) 分数：最终答案质量、下一个查询检索质量和回合计数。将 CTU 与静态 RAG 实用程序 (SRU) 交叉比较超过 23,322 个文档观察结果，两者在统计上接近独立 (Spearman rho = -0.026)。代…",
+      "authors": [
+        "Debayan Mukhopadhyay",
+        "Utshab Kumar Ghosh",
+        "Shubham Chatterjee"
+      ],
+      "published": "2026-07-16T17:48:29Z",
+      "category": "cs.IR",
+      "arxiv_id": "2607.15253v1",
+      "abs_url": "https://arxiv.org/abs/2607.15253v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15253v1"
+    },
+    {
+      "title": "ARMOR++: Agentic Orchestration of a Multi-Domain Primitive Set for Transferable Attacks on Deepfake Detectors",
+      "title_zh": "ARMOR++：用于 Deepfake 探测器可转移攻击的多域原语集的代理编排",
+      "summary": "The reliability of deepfake detectors frequently degrades under black-box adversarial transfer, as these models often rely on fragile, architecture-dependent forensic cues. Existing transfer attacks often lack semantic awareness and struggle to maintain effectiveness under strict no-query constraints, particularly when perturbations are transferred from con…",
+      "summary_zh": "Deepfake 探测器的可靠性在黑盒对抗性传输下经常会降低，因为这些模型通常依赖于脆弱的、依赖于架构的取证线索。现有的转移攻击通常缺乏语义意识，并且难以在严格的无查询约束下保持有效性，特别是当扰动从卷积代理转移到基于变压器的目标时。为了解决这些限制，本文引入了 ARMOR++，这是一种强大的多代理框架，专为高可转移性的 Deepfake 规避而设计。该框架利用 Qwen2.5-VL 视觉语言模型 (VLM) 提供空间语义先验，而 Qwen3 大型语言模型 (LLM) 协调基元选择、自适应超参数重新参数化和熵正则化扰动混合。通过集成五个互补原语、涵盖密集优化、基于显着性的方法、空间变换、频域扰动和块结构修改，ARMOR++ 有效地针对异构归纳偏差。对 AADD-2025 基准的严格评估表明，ARMOR++ 在低质量和高质量图像体系中均显着优于现有的…",
+      "authors": [
+        "Christos Korgialas",
+        "Gabriel Lee Jun Rong",
+        "Dion Jia Xu Ho",
+        "Pai Chet Ng",
+        "Xiaoxiao Miao",
+        "Konstantinos N. Plataniotis"
+      ],
+      "published": "2026-07-16T17:45:13Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.15246v1",
+      "abs_url": "https://arxiv.org/abs/2607.15246v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15246v1"
+    },
+    {
+      "title": "Beyond the Leaderboard: Design Lessons for Trustworthy Multimodal VQA",
+      "title_zh": "超越排行榜：值得信赖的多模式 VQA 设计课程",
+      "summary": "Healthcare multimodal AI must combine visual and textual evidence while remaining reliable and interpretable. Using MediaEval Medico 2025 as a retrospective GI endoscopy case study, we analyze design choices across nine documented systems for question answering and explanation quality. Parameter-efficient adaptation of pretrained backbones provides strong c…",
+      "summary_zh": "医疗保健多模式人工智能必须结合视觉和文本证据，同时保持可靠和可解释。我们使用 MediaEval Medico 2025 作为回顾性胃肠道内窥镜检查案例研究，分析了九个记录系统的设计选择，以提高问答和解释质量。预训练主干的参数高效适应提供了强大的挑战性能，但答案级别的收益并不能始终转化为忠实和完整的临床推理。尽管证据是相关的而不是基于消融的，但强制结构化推理和显式基础的方法在异构问题类型中显示出更可靠的行为。这些结果激励评估超越词汇重叠、标准化证据相关解释、泄漏感知数据治理以及轻量级鲁棒性和校准检查。研究结果支持基于数据融合、可解释性和弹性评估的值得信赖的多模式医疗保健人工智能。",
+      "authors": [
+        "Sushant Gautam",
+        "Vajira Thambawita",
+        "Michael A. Riegler",
+        "Pål Halvorsen",
+        "Steven A. Hicks"
+      ],
+      "published": "2026-07-16T17:38:19Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.15241v1",
+      "abs_url": "https://arxiv.org/abs/2607.15241v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15241v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "WAIC：智能体站上C位 产业链布局提速 - 新华网",
+      "summary": "WAIC：智能体站上C位 产业链布局提速 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Fri, 17 Jul 2026 01:28:45 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQM24xSjNtbmE5M245Z2pBaGw4bVFlQXdlS0R6VWhEeXFVSlpocWR3WlhJZnBZOEx6UTlMZ1YwSGMtTmk0ekFjTXJmald2T0ZabUtHMVM1WVR3UkRoajBtRjRGQkJGWTBDQkdqd3J3NHRHYjVXU1pkck0yczBfQWdMRG5R?oc=5"
+    },
+    {
+      "title": "赋能AI潮涌！“申智杯”科学智能与AI算力两大赛道迎来巅峰对决 - 上观新闻",
+      "summary": "赋能AI潮涌！“申智杯”科学智能与AI算力两大赛道迎来巅峰对决 上观新闻",
+      "source": "上观新闻",
+      "lang": "zh",
+      "published": "Fri, 17 Jul 2026 04:22:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE54TTlWcER3WURuS3RMeS1xVUN6ekxWWnJuYm4tYmdVTV9BLWlKUTFuWHpUS2VQS1djRnJNT3lkYXlGMTh1eGFoeEhrUG5mS0o3OWNLc05RVHI5QQ?oc=5"
+    },
+    {
+      "title": "端侧AI合规破局！7款手机端侧大模型集中备案 AI智能体产业化或加速(附股) - 东方财富",
+      "summary": "端侧AI合规破局！7款手机端侧大模型集中备案 AI智能体产业化或加速(附股) 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Thu, 16 Jul 2026 18:58:07 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5LcVRUTXVJSGNOSFNoc1FxUzVCY0ZyTllUVUM0VnpqalN6OHJMemZOdTM5cGdybXh2UmJ6bnd2d08yeVJoZ1VkdjFSY2gyNFNSTDl6a3A3eld1Um0zU1BJdQ?oc=5"
+    },
+    {
+      "title": "谷歌大跌5%！报道：Gemini旗舰模型发布延期，编程能力不及预期，落后OpenAI - 华尔街见闻",
+      "summary": "谷歌大跌5%！报道：Gemini旗舰模型发布延期，编程能力不及预期，落后OpenAI 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Thu, 16 Jul 2026 22:25:25 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBZZmVkSDMtRmtyOTRwdWZ3NG5IYnpHWUsxRjVyY0h6UG14WlFGSXdTSmR1MlJDdVZSdXRvbThXczJmWTZEdzBfTGhEQk1KOWluR2xJ?oc=5"
+    },
+    {
+      "title": "狂堆GPU路渐窄 算力调优接棒AI竞赛 - 证券时报",
+      "summary": "狂堆GPU路渐窄 算力调优接棒AI竞赛 证券时报",
+      "source": "证券时报",
+      "lang": "zh",
+      "published": "Thu, 16 Jul 2026 22:50:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9zcWxzYXpTUWktT3FOVjNLMl9HOVRCeEZjb2NPSVBnQ1BfLV9ROTl6Y1R0S09fRVhFdVVNWDI0ZWtJZnJsWkI2UUtLZ0k0TTZqY0pQM1pmRVUtalNw?oc=5"
+    },
+    {
+      "title": "英特尔牵手谷歌云 部署Gemini生成式AI覆盖全球员工 - 观点网",
+      "summary": "英特尔牵手谷歌云 部署Gemini生成式AI覆盖全球员工 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Fri, 17 Jul 2026 00:15:10 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1PcnB6V2x4UTEyTzNER2RNTmpuY1poYkRjdWRQQ1ByelRtaHNibERYdl81ZjF2aU9TamZFellZemlTdWk0UDZQWDJlR1JwaU43d3c2RWVnb2JEaVVQbDRtWnNR?oc=5"
+    },
+    {
+      "title": "深圳人工智能产业加速融入千行百业 - sz.gov.cn",
+      "summary": "深圳人工智能产业加速融入千行百业 sz.gov.cn",
+      "source": "sz.gov.cn",
+      "lang": "zh",
+      "published": "Fri, 17 Jul 2026 04:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB3V2Y5N3NMYXRRUXVFWWpWaDFjaTh5RlEtMDkyQ3NaNk1nTmcyMGZLLTAxbU5sdDR6VGRSOGZvT0t3YTcxdkQxcC1OM1ZkMml1RlVlTDVPaGpuM2E1TU1XNkJacmZvYkNWNGFNQUZtR0hkUTRMUHZF?oc=5"
+    },
+    {
+      "title": "“申智杯”科学智能与AI算力两大赛道迎来巅峰对决 - thepaper.cn",
+      "summary": "“申智杯”科学智能与AI算力两大赛道迎来巅峰对决 thepaper.cn",
+      "source": "thepaper.cn",
+      "lang": "zh",
+      "published": "Fri, 17 Jul 2026 02:12:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5lSUFIRUsxX1VnLUE3SnNlSlpVSmhQcXl6UlQyVG9YYzluelR0VEpWcU5QR0U1dC14MXNlUEpkcm1wdWl2azR1ODgxNXNFdzdmY3B3VEdwdFFGczI5R1E?oc=5"
+    },
+    {
+      "title": "Gemini 3.5 Pro跳票，AI Coding拉垮，谷歌一夜蒸发2000亿美元 - 维科号",
+      "summary": "Gemini 3.5 Pro跳票，AI Coding拉垮，谷歌一夜蒸发2000亿美元 维科号",
+      "source": "维科号",
+      "lang": "zh",
+      "published": "Fri, 17 Jul 2026 03:31:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9QZU9kbmhsSFVDcWtrOEdMRU5yNG90Z1hMd1B2YjRoNl9aS0ZYNExXMlNzMG4tSFhBbU1KczMtTENXR1kxZ2F6ekdyTVlFVHc?oc=5"
+    },
+    {
+      "title": "谋算力也应提效能（人民时评） - 人民日报",
+      "summary": "谋算力也应提效能（人民时评） 人民日报",
+      "source": "人民日报",
+      "lang": "zh",
+      "published": "Fri, 17 Jul 2026 00:19:23 GMT",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSTdGWTc2cUhkX2pKOHJKSzg3Y3RMdkdycF9jTGdxUFJwOXY5NmNPRUJ5WTF2VElZSW9zVTU3WmVYd29lUFNmbk5zS25qME1jUVRsYjF1RFBMNUpGQkEyWm40MUxLd0piak1hSmRnWkJTcGxMZk1haUR6VnVQMEFOVQ?oc=5"
+    },
+    {
+      "title": "云边端全栈闭环：雷神科技筑牢AI算力底座，开启增长新引擎 - 证券时报",
+      "summary": "云边端全栈闭环：雷神科技筑牢AI算力底座，开启增长新引擎 证券时报",
+      "source": "证券时报",
+      "lang": "zh",
+      "published": "Fri, 17 Jul 2026 03:31:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9GYUtwblFiSU8xd0lJOGZSX0hPUFdmQ0xjQnFMTWNla0M0aW10TmZfbjY1QWVmdEpnSVN5eE9rdWJWd0RvVHVwWWFxYmF1THJJZ0dCODJvZVVOaEtW?oc=5"
+    },
+    {
+      "title": "DeepSeek最新估值曝光 国产大模型资本化提速 多股获资金关注(名单) - 东方财富",
+      "summary": "DeepSeek最新估值曝光 国产大模型资本化提速 多股获资金关注(名单) 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Fri, 17 Jul 2026 00:45:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9tR1ZtaC1DMDRaMTlrZVRVSWtGSW5pdVNRZlV0c2VjSnZXOElybGxhX0dLTGoxX3otOEkxeGdmeXRZU21rWFZSekVIZWVoSEZHb2NiVUtZOFBMMy16UGd5WQ?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 90859,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 59553,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57336,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 35182,
+      "language": "TypeScript"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 32189,
+      "language": "C"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 383190,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 256110,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 216077,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
