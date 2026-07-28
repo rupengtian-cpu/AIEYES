@@ -1,0 +1,514 @@
+{
+  "date": "2026-07-28",
+  "generated_at": "2026-07-28T05:37:33.384843+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Data Pyramid for Embodied Manipulation",
+      "title_zh": "用于具体操作的数据金字塔",
+      "summary": "Multimodal foundation models learned to see and to speak by consuming the whole internet. Embodied agents admit no such shortcut, since they require data that couple observations with physical states and actions. These signals can be provided, to varying degrees, by multiple data sources. In this work, we organize the embodied data ecosystem as a \"pyramid\"…",
+      "summary_zh": "多模态基础模型通过消耗整个互联网来学会看和说话。实体主体不承认这样的捷径，因为它们需要将观察与物理状态和动作结合起来的数据。这些信号可以在不同程度上由多个数据源提供。在这项工作中，我们将具体数据生态系统组织为一个“金字塔”，涵盖五个互补来源：真实机器人数据、UMI 式数据、自我中心和外中心数据、模拟数据和通用视觉语言数据。我们围绕可扩展性和机器人对齐之间的紧张关系组织金字塔，并在数据质量、多样性、可重用性和物理保真度方面进一步描述每个源的特征。然后，我们通过数据配方的角度分析最近的具体基础模型，检查在预训练期间如何选择、对齐和混合不同的源。对于具身大脑模型、视觉语言动作模型和世界动作模型等，我们将数据组合与感知、推理、规划、动作生成和世界预测等能力联系起来。最后，我们讨论了六个开放挑战：构建大规模触觉数据集、收集故障和恢复数据、开发可扩展的数据收集…",
+      "authors": [
+        "Yifan Ye",
+        "Yankai Fu",
+        "Yaoxu Lv",
+        "Bohan Hou",
+        "Jun Cen",
+        "Lingdong Kong"
+      ],
+      "published": "2026-07-27T17:59:58Z",
+      "category": "cs.RO",
+      "arxiv_id": "2607.24744v1",
+      "abs_url": "https://arxiv.org/abs/2607.24744v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24744v1"
+    },
+    {
+      "title": "ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding",
+      "title_zh": "ClinFusion：以视觉为中心的多模式法学硕士系统，用于整体医学理解",
+      "summary": "Multimodal large language models (MLLMs) hold immense potential to revolutionize clinical practice, yet deploying them in the medical domain is fundamentally a vision-centric challenge: models must absorb knowledge from heterogeneous 2D and 3D medical images, and evaluation protocols must align with radiologists' clinical practice and provide an accurate, f…",
+      "summary_zh": "多模态大语言模型 (MLLM) 具有彻底改变临床实践的巨大潜力，但将其部署在医学领域从根本上来说是一个以视觉为中心的挑战：模型必须从异构 2D 和 3D 医学图像中吸收知识，评估协议必须与放射科医生的临床实践保持一致，并提供准确、细粒度和事实驱动的评估。在本文中，我们介绍了 ClinFusion，这是一种以视觉为中心的 MLLM，旨在实现整体医学理解，系统地解决这些局限性。我们提出了一种组合级联视觉编码器架构，具有级联空间感知局部融合算子，可在融合编码器内统一不同的 2D 和本机 3D 医学图像理解。我们进一步介绍了一个基于视觉的评估框架，包括用于指令遵循评估的 MedIF-Bench 和用于临床对齐和事实驱动的报告生成评估的基于兴趣区域的方法。我们表明，ClinFusion 在一套全面的 2D 和 3D 多模态医疗基准测试中树立了新的最先进水平—…",
+      "authors": [
+        "Hangjie Yuan",
+        "Yichen Qian",
+        "Zhiwei Tang",
+        "Xianzhe Xu",
+        "Lirong Wu",
+        "Sicheng Yang"
+      ],
+      "published": "2026-07-27T17:59:49Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.24743v1",
+      "abs_url": "https://arxiv.org/abs/2607.24743v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24743v1"
+    },
+    {
+      "title": "KANEx: Translating Kolmogorov-Arnold Networks' Interpretability to Medical Explainability",
+      "title_zh": "KANEx：将 Kolmogorov-Arnold 网络的可解释性转化为医学可解释性",
+      "summary": "Computer vision models have become highly effective for medical applications, yet their black-box nature continues to undermine clinician trust. In clinical workflows, chest X-ray classifiers are increasingly paired with Vision-Language Models (VLMs) to generate natural-language explanations. However, these systems add linguistic fluency without addressing…",
+      "summary_zh": "计算机视觉模型在医疗应用中已经变得非常有效，但其黑匣子性质继续破坏临床医生的信任。在临床工作流程中，胸部 X 射线分类器越来越多地与视觉语言模型 (VLM) 配对以生成自然语言解释。然而，这些系统增加了语言的流畅性，却没有解决视觉模型潜在的不透明性。随着柯尔莫哥洛夫-阿诺德网络（KAN）的出现，其基于样条的组件提供了本质上可解释的功能单元，我们研究是否可以利用这种架构透明度来产生更值得信赖的文本解释。我们推出 KANEx，这是第一个利用 KAN 的符号透明度来支持 VLM 推理的框架。这种可解释性还使得设计 KAN-Map 成为可能，这是一种直接源自 KAN 模型而不是梯度近似的新型热图生成方法。我们将这些基础上下文输入下游 VLM 以增强可解释性。以 MIMIC-CXR 数据集为基准，我们证明了具有 ResNet/ViT 基线的基于 KAN 的架…",
+      "authors": [
+        "Krithi Shailya",
+        "Ananya Lakshmi Ravi",
+        "Venkatanathan K. V.",
+        "Sowmya S. Sundaram",
+        "Gokul S. Krishnan",
+        "Aditi Anand"
+      ],
+      "published": "2026-07-27T17:57:02Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.24730v1",
+      "abs_url": "https://arxiv.org/abs/2607.24730v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24730v1"
+    },
+    {
+      "title": "Infrared Imaging Empowered by Artificial Intelligence for Pediatric Skeletal Triage: A Narrative Review and Future Perspectives",
+      "title_zh": "人工智能支持的红外成像用于儿科骨骼分诊：叙述回顾和未来展望",
+      "summary": "Background. Pediatric musculoskeletal trauma represents up to 18% of pediatric ED visits, yet diagnosis still depends on ionizing radiography. Cumulative low-dose radiation in early life raises lifetime leukemia and brain malignancy risk, motivating radiation-free triage alternatives. Objective. To synthesize evidence for a hybrid framework coupling broad-s…",
+      "summary_zh": "背景。小儿肌肉骨骼创伤占儿科急诊就诊人数的 18%，但诊断仍然依赖于电离放射线照相。生命早期累积的低剂量辐射会增加终生白血病和脑部恶性肿瘤的风险，从而激发了无辐射分类替代方案的发展。客观的。综合证据，证明将广谱红外 (IR) 成像与深度学习跨模式翻译相结合的混合框架，从非电离数据生成临床可解释的合成射线照相重建。方法。我们回顾了跨越 650 nm 至 1 mm 的五个红外光谱窗口 - NIR-I、NIR-II、SWIR、MIR/LWIR 和 THz - 以及双几何（透射/反射）采集如何利用波长特定的组织深度和生化敏感性。我们总结了图像到图像转换网络（Pix2Pix、CycleGAN、Swin-Unet）和特征匹配算法（SuperPoint、SuperGlue、ALIKED、LightGlue），用于将红外数据对齐和融合到射线照相等效重建中。影响。儿…",
+      "authors": [
+        "Sajad Amiri",
+        "Pardis Afshar",
+        "Elham Anjomshoa"
+      ],
+      "published": "2026-07-27T17:56:53Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.24727v1",
+      "abs_url": "https://arxiv.org/abs/2607.24727v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24727v1"
+    },
+    {
+      "title": "DreamStyle3D: Efficient 3D Stylized Asset Generation via Dual-Attention Disentanglement",
+      "title_zh": "DreamStyle3D：通过双注意力解耦实现高效的 3D 风格化资产生成",
+      "summary": "With the growth of gaming, animation, and virtual reality industries, the demand for efficient generation of stylized 3D assets is rapidly increasing. However, existing approaches still struggle to jointly preserve style fidelity, geometric consistency, and generation efficiency, as most of them still rely on indirect 2D-to-3D stylization pipelines. This mo…",
+      "summary_zh": "随着游戏、动漫和虚拟现实行业的发展，对高效生成风格化3D资产的需求正在快速增长。然而，现有方法仍然难以共同保持风格保真度、几何一致性和生成效率，因为它们大多数仍然依赖于间接 2D 到 3D 风格化管道。这催生了原生 3D 风格化框架，该框架可以明确地将风格与几何图形分离，同时保持高效。为此，我们提出了 DreamStyle3D，这是一种基于解耦双交叉注意力机制的风格化 3D 资产生成的有效框架。我们的方法显式地分离几何和风格特征，以在保持结构一致性的同时实现高效的风格注入，并进一步采用轻量级训练策略来增强风格一致性和模型泛化。此外，我们还构建了一个自动化数据管道，并构建了约 15K 个内容风格风格化三元组的数据集，用于训练和评估。大量实验表明，我们的 DreamStyle3D 可以在 10 秒内生成高保真、几何一致的风格化 3D 资源，在保持卓越风…",
+      "authors": [
+        "Kai Wang",
+        "Ziheng Ouyang",
+        "Xuying Zhang",
+        "Ming-Ming Cheng",
+        "Qibin Hou"
+      ],
+      "published": "2026-07-27T17:55:21Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.24721v1",
+      "abs_url": "https://arxiv.org/abs/2607.24721v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24721v1"
+    },
+    {
+      "title": "DataOrchestra: Learning to Orchestrate Per-Example Curation of Pretraining Data",
+      "title_zh": "DataOrchestra：学习编排预训练数据的每个示例管理",
+      "summary": "Pretraining data processing is critical to the downstream performance of Large Language Models (LLMs). However, many existing approaches define a fixed processing strategy at the corpus or domain level and apply it uniformly to many examples, without adapting to the needs of each example. We propose DataOrchestra, a framework that unifies different processi…",
+      "summary_zh": "预训练数据处理对于大型语言模型 (LLM) 的下游性能至关重要。然而，许多现有方法在语料库或领域级别定义固定的处理策略，并将其统一应用于许多示例，而没有适应每个示例的需求。我们提出了 DataOrchestra，这是一个统一不同处理操作并为每个示例编排特定于示例的管道的框架。给定一大块预训练数据，编排器决定是否删除、不触及或清理它。对于要清理的块，它会选择一个或多个下游操作，范围从编程编辑到不同形式的基于 LLM 的重写。对于每个重写步骤，它进一步生成一条具体指令，由相应的下游工具模型执行。我们在 DataOrchestra 处理的 Web 数据上从头开始预训练从 0.5B 到 7B 的模型，并在 11 个基准测试中观察到相对于单个数据处理方法的稳定平均收益。 DataOrchestra 对于数学持续预训练也很有效，并且性能优于更强的处理基线，同时…",
+      "authors": [
+        "Zhen Huang",
+        "Yikun Wang",
+        "Shijie Xia",
+        "Pengfei Liu"
+      ],
+      "published": "2026-07-27T17:54:12Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.24717v1",
+      "abs_url": "https://arxiv.org/abs/2607.24717v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24717v1"
+    },
+    {
+      "title": "Efficient LLM-Generated Shuttling Compilers for Complex Trapped-Ion Architectures",
+      "title_zh": "用于复杂俘获离子架构的高效 LLM 生成的穿梭编译器",
+      "summary": "Trapped-ion quantum computers rely on shuttling compilers, which cast an input algorithm into a sequence of ion-qubit movements within a given architecture. We present the first study in which a single frontier large language model (LLM), Claude Opus 4.7, generates and iteratively refines the full Python code of shuttling compilers from written specificatio…",
+      "summary_zh": "俘获离子量子计算机依赖于穿梭编译器，它将输入算法转换为给定架构内的一系列离子量子位运动。我们提出了第一项研究，其中单一前沿大语言模型 (LLM) Claude Opus 4.7 根据书面规范生成并迭代完善穿梭编译器的完整 Python 代码。我们从 (i) 线性分段陷阱的编译器开始，将其扩展到 (ii) 带结点的陷阱，最后实现 (iii) 一类广泛的连通陷阱图的高效编译。适用于更一般情况的编译器使用以前的代码作为种子。我们使用通用的量子电路套件将法学硕士生成的编译器与最先进的手工编译器进行基准测试。 (i) 的穿梭时间步数减少了 76%，(ii) 的穿梭时间步数减少了 39%。对于自由连接架构的广泛情况 (iii)，我们发现所需的穿梭时间步数存在很大变化，具体取决于连接性。与走廊式结构相比，密集连接、连接点丰富的结构可以将穿梭时间步数减少一个数量级…",
+      "authors": [
+        "Fabian Kreppel",
+        "Reza Salkhordeh",
+        "Ferdinand Schmidt-Kaler",
+        "André Brinkmann"
+      ],
+      "published": "2026-07-27T17:51:18Z",
+      "category": "quant-ph",
+      "arxiv_id": "2607.24714v1",
+      "abs_url": "https://arxiv.org/abs/2607.24714v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24714v1"
+    },
+    {
+      "title": "ERUnderstand: Evaluating Vision-Language Models on Structured ER Diagrams",
+      "title_zh": "ERUnderstand：评估结构化 ER 图上的视觉语言模型",
+      "summary": "Entity-Relationship Diagrams (ERDs) are central to conceptual database design, yet they are typically available only as rendered images rather than machine-readable schemas, limiting AI-assisted database engineering. We introduce ERUnderstand, the first large-scale benchmark for structured understanding of ER diagrams, comprising 2,960 diagrams collected fr…",
+      "summary_zh": "实体关系图 (ERD) 是概念数据库设计的核心，但它们通常仅作为渲染图像而不是机器可读的模式提供，这限制了人工智能辅助的数据库工程。我们推出了 EUnderstand，这是第一个用于结构化理解 ER 图的大规模基准，包括从精选的教育资源、现实世界模式中收集的 2,960 个图表，以及跨越不同领域、符号、复杂性级别和扩展实体关系 (EER) 构造的综合生成的示例。每个图表都配有标准化的机器可读表示形式，用于对模式元素进行细粒度评估。在评估最先进的视觉语言模型 (VLM) 时，我们发现虽然常见的 ERD 元素能够可靠地恢复 (F1 > 0.74)，但在弱实体 (低至 0.28 F1)、多值属性 (0.14 F1) 和 N 元关系 (0.07 F1) 上的性能急剧下降。推理增强模型将整体性能提高了 15-25%，但仍然对语言先验和增加的图表复杂性敏感。…",
+      "authors": [
+        "Ali Ansari",
+        "Yasmin Mohammadi",
+        "Farnoush Nili",
+        "Parsa Esmaeilkhani",
+        "Longin Jan Latecki",
+        "Eduard Dragut"
+      ],
+      "published": "2026-07-27T17:46:43Z",
+      "category": "cs.AI",
+      "arxiv_id": "2607.24707v1",
+      "abs_url": "https://arxiv.org/abs/2607.24707v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24707v1"
+    },
+    {
+      "title": "SADe: Sparse-Atom Support Decontamination for Few-Shot Segmentation with Weak Support Annotations",
+      "title_zh": "SADe：具有弱支持注释的稀疏原子支持净化少镜头分割",
+      "summary": "Few-shot segmentation (FSS) commonly assumes clean pixel-level support masks, yet practical support supervision often uses boxes, scribbles, coarse masks, or pseudo-masks. These weak annotations may include texture-similar distractors and background context alongside the target, contaminating class prototypes or visual prompts before query prediction. We in…",
+      "summary_zh": "少镜头分割（FSS）通常假设干净的像素级支持掩模，但实际的支持监督通常使用框、涂鸦、粗掩模或伪掩模。这些弱注释可能包括纹理相似的干扰因素和目标旁边的背景上下文，在查询预测之前污染类原型或视觉提示。我们引入了 SADe，这是一个与预测器无关的支持净化层，可以在没有查询信息的情况下估计所选支持补丁的可靠性。 SADe 的核心是稀疏自动编码器 (SAE) 原子证据：密集相似性可能会对目标和纹理相似的上下文做出响应，而弱支持区域内部和外部的对比原子激活则提供因子级可靠性线索。轻量级路由器将原子证据与密集相似性和事件统计相结合，以预测补丁可靠性并生成干净的支持掩码。在 FSS-1000 的综合弱支持事件上接受过一次训练后，路由器就被冻结以进行所有目标评估。生成的掩码支持独立预测，或者可以通过本机支持接口提供给异构 FSS 模型，而无需更改查询端推理。在匹配的…",
+      "authors": [
+        "Hang Xing",
+        "Guangjun Liu",
+        "Yan Xia",
+        "Xueming Ding"
+      ],
+      "published": "2026-07-27T17:46:18Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.24706v1",
+      "abs_url": "https://arxiv.org/abs/2607.24706v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24706v1"
+    },
+    {
+      "title": "Panda: Unsupervised Pelvic Anomaly Detection for Real-Time MR Imaging",
+      "title_zh": "Panda：用于实时 MR 成像的无监督骨盆异常检测",
+      "summary": "Female pelvic diseases remain an under researched area characterized by often delayed diagnosis. While pelvic MRI offers superior soft-tissue contrast for diagnosis and image-guided procedures, real-time anomaly detection remains challenging due to physiological motion, tissue deformation, and instrument artifacts. Existing supervised approaches are impract…",
+      "summary_zh": "女性盆腔疾病仍然是一个研究不足的领域，其特点是经常延迟诊断。虽然盆腔 MRI 为诊断和图像引导程序提供了卓越的软组织对比度，但由于生理运动、组织变形和仪器伪影，实时异常检测仍然具有挑战性。现有的监督方法不切实际，因为不良事件罕见、异质且难以注释。我们提出了一种基于 Dinomaly 的无监督异常检测框架，适用于盆腔 MRI，可以从健康病例中学习规范表示，并在不需要标签的情况下标记偏差。我们的方法利用冻结的 DINOv3 Vision Transformer 编码器与噪声 MLP 瓶颈和线性注意力解码器相结合，以防止身份映射，同时保持计算效率。通过编码器和解码器表示之间的每个标记的余弦距离来定位异常，产生空间异常图，该图在扫描仪上提供即时反馈，以支持放射科医生决策和自适应协议调整。该框架在子宫肌瘤数据集的精选子集上进行评估，在 40.5 切片/秒的帧…",
+      "authors": [
+        "Anika Knupfer",
+        "Maximilian Lindholz",
+        "Johanna Paula Müller",
+        "Jordina Aviles Verdera",
+        "Smiti Tripathy",
+        "Susanne Schulz-Heise"
+      ],
+      "published": "2026-07-27T17:44:29Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.24703v1",
+      "abs_url": "https://arxiv.org/abs/2607.24703v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24703v1"
+    },
+    {
+      "title": "Spatio-Temporal Conditional Denoising Transformer for Modality-Missing RGBT Tracking",
+      "title_zh": "用于模态缺失 RGBT 跟踪的时空条件去噪变压器",
+      "summary": "Missing modalities in RGBT tracking often lead to incomplete and unstable multimodal feature representations that greatly degrade the performance. Existing methods typically attempt to recover missing modalities from available ones, but the quality of data generated in challenging scenarios might be unsatisfactory. In addition, current approaches exhibit li…",
+      "summary_zh": "RGBT 跟踪中缺失的模态通常会导致多模态特征表示不完整且不稳定，从而极大地降低性能。现有方法通常尝试从可用的模态中恢复丢失的模态，但在具有挑战性的场景中生成的数据质量可能无法令人满意。此外，当前的方法在处理缺失数据和完整数据方面表现出有限的灵活性。为了克服这些限制，我们提出了一种时空条件去噪变换器（SCDT），它集成了空间线索和时间上下文，在统一的框架中自适应地执行缺失模态的信息重建和弱模态的特征增强，以实现鲁棒的模态缺失 RGBT 跟踪。特别是，SCDT 利用最近历史帧中的短期时间线索来捕获细粒度的时间相关性，并利用编码模态演化的长期时间线索来捕获全局上下文。通过联合利用长期短期时间上下文作为条件，SCDT 逐步引导可用模态的噪声特征来学习可靠且时间一致的多模态表示。此外，SCDT 引入了一种噪声调制适应机制，可根据模态可用性动态调整其行为，使…",
+      "authors": [
+        "Andong Lu",
+        "Ziyi Zha",
+        "Jiandong Jin",
+        "Shihao Li",
+        "Chenglong Li",
+        "Jin Tang"
+      ],
+      "published": "2026-07-27T17:44:00Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.24701v1",
+      "abs_url": "https://arxiv.org/abs/2607.24701v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24701v1"
+    },
+    {
+      "title": "Beyond Scale and Generation: Understanding Language Model-based Entity Matching",
+      "title_zh": "超越规模和生成：理解基于语言模型的实体匹配",
+      "summary": "Entity matching identifies records that refer to the same real-world entity. Language models can be adapted to this task through bi-encoder, cross-encoder, and generative matcher architectures. However, prior studies often conflate matcher architecture with differences in model backbone, model variant(reflecting different pretraining objectives), and model…",
+      "summary_zh": "实体匹配可识别引用同一现实世界实体的记录。语言模型可以通过双编码器、交叉编码器和生成匹配器架构来适应此任务。然而，先前的研究经常将匹配器架构与模型主干、模型变体（反映不同的预训练目标）和模型大小的差异混为一谈，使得很难隔离性能增益的来源。我们通过受控因子研究解决了这个问题，该研究涵盖 Qwen3 系列的三个匹配器架构、三个模型变体和三个模型大小以及九个数据集，总计 1,215 次微调运行。我们还评估跨数据集的可转移性和计算成本。我们的结果表明，模型变体对于双编码器至关重要：面向嵌入的变体提供了更强的初始化和更有利的表示几何预测下游匹配性能。交叉编码器相对于双编码器保持了一致的优势，因为它们联合编码记录对而不是独立地表示每个记录，尽管较大的模型部分缩小了这种差距。生成匹配器的性能并不普遍优于交叉编码器。相反，它们的优势集中在分布转移上，包括记录模式和…",
+      "authors": [
+        "Zeyu Zhang",
+        "Xue Li",
+        "Iacer Calixto",
+        "Paul Groth",
+        "Sebastian Schelter"
+      ],
+      "published": "2026-07-27T17:29:18Z",
+      "category": "cs.DB",
+      "arxiv_id": "2607.24688v1",
+      "abs_url": "https://arxiv.org/abs/2607.24688v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24688v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "广州越秀新增算力中心 - 中国科技网",
+      "summary": "广州越秀新增算力中心 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Tue, 28 Jul 2026 03:16:54 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1wTG1GRnRSZ2NOTGVOdUJMSnBZVEhKb0xlRy1ENzViWUk0VXhfM2RwQWRsS1N3dkdTYmhKNlVneFpsbGtVZllMYkZUWUhhaGhOSk9SQkZCLV9vamZnN2RNMHhBaHNZNEpXLVJ3bk1Xb3c?oc=5"
+    },
+    {
+      "title": "刚刚，Gemini 3.6 Flash 正式发布，但网友笑得更大声了 - 爱范儿",
+      "summary": "刚刚，Gemini 3.6 Flash 正式发布，但网友笑得更大声了 爱范儿",
+      "source": "爱范儿",
+      "lang": "zh",
+      "published": "Tue, 28 Jul 2026 01:56:23 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE10cGRKZTVYVE1jbi1zbXRVREdhTncySERJTkVELTRpdEVJSlc0a1p4VldsMF9xVEFHVjhZblZFNkNNMGc?oc=5"
+    },
+    {
+      "title": "语音大模型赛道持续升温 云知声完成U2-ASR、U2-TTS多语种升级 - 东方财富",
+      "summary": "语音大模型赛道持续升温 云知声完成U2-ASR、U2-TTS多语种升级 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Tue, 28 Jul 2026 04:50:38 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBEb2ZkbGw5Wlg5Vm1HaXBQenJJRmlEZjVpTFdrQ0pOdnpaZUJpSnpjcHpIT1RlUDN4SlpvTHVhLXdYNzAtYUt2LWlpVFAyWUhHb1YwZzNBbGd3TVRZalFmQWZxSzNrdw?oc=5"
+    },
+    {
+      "title": "“越秀芯光”算力中心落地，光合组织牵引AI生态协同跃升 - 时代在线",
+      "summary": "“越秀芯光”算力中心落地，光合组织牵引AI生态协同跃升 时代在线",
+      "source": "时代在线",
+      "lang": "zh",
+      "published": "Tue, 28 Jul 2026 03:36:25 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE80Qm9kZVlUTlNtYy1hUXVhQmh3RlhRTmlKVmFNREZvQmxCY1ZvdTBlejIxSmZ5YWVBZjhlM05NQnVtZEd5YjM0Y19ZYw?oc=5"
+    },
+    {
+      "title": "《从AI设备到个人AI：智能体驱动的终端进化与产业重构》白皮书发布 - eeo.com.cn",
+      "summary": "《从AI设备到个人AI：智能体驱动的终端进化与产业重构》白皮书发布 eeo.com.cn",
+      "source": "eeo.com.cn",
+      "lang": "zh",
+      "published": "Tue, 28 Jul 2026 02:56:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9sVFc1LThqM1lKQlJqNk1VUnIyOVpUR0tOdDQ2OVU2ZC1OcVAwM0RGRFFXbWt0ak1PY0U4b0hCZUpXU2ZQQTl6eHRtN0liemNrUTgzMkE0dw?oc=5"
+    },
+    {
+      "title": "中原粮仓长出算力肌肉 - chinanews.com.cn",
+      "summary": "中原粮仓长出算力肌肉 chinanews.com.cn",
+      "source": "chinanews.com.cn",
+      "lang": "zh",
+      "published": "Tue, 28 Jul 2026 05:27:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5JY21VVmdKdXdGaHZDMEpDZXVoYjVmWllrMWU3WTZOTUlodDk5WV9fczc3Vm1yM2hPb3hNa3RUUkpwdWV0dEhucTloRzFOSVhGWjdHR2FVc0ltUk5fdmdISzNsUGlNR2c3?oc=5"
+    },
+    {
+      "title": "国内全栈式AI智能体开发服务商有哪些？2026深度测评推荐 - 手机新浪网",
+      "summary": "国内全栈式AI智能体开发服务商有哪些？2026深度测评推荐 手机新浪网",
+      "source": "手机新浪网",
+      "lang": "zh",
+      "published": "Tue, 28 Jul 2026 01:22:17 GMT",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQb19TTUMtdWRSVXR5RlZkTXFMc25LYUxaWDh0bHBRbnd0Mmstd0FiWUZHekUtd1hGMDVPc3JpeTlrYW5KcVFLaTZUdmZoYm5ZUjg1Y09UcUgtSGEzSkdoR19CSzJrcm5GeW5TMTN1S2JXWFlveHZUbGhLcERuNDlDd2VDemVhLTJkWWpQRnZ6NWlZam8?oc=5"
+    },
+    {
+      "title": "新思科技携微软推出AI芯片设计工作流 加快从芯片到系统的产品设计流程 - 观点网",
+      "summary": "新思科技携微软推出AI芯片设计工作流 加快从芯片到系统的产品设计流程 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Tue, 28 Jul 2026 01:55:40 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5ZbzllUkxhVFVTU2c4dVgzMXRPb0xZd3JHWi04YUxodnM5ejZkSDZiT2tQa1NlSmE0dHdLcTBESmZzNXV3M2toa3FGdDdmY1ZMYXdRN2FNWGc4VU9nSW5xQ0tR?oc=5"
+    },
+    {
+      "title": "蓝象智联毛仁歆：产业智能体不缺模型，缺的是可信数据与规则 - 财联社",
+      "summary": "蓝象智联毛仁歆：产业智能体不缺模型，缺的是可信数据与规则 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Mon, 27 Jul 2026 20:40:34 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1tSm1oU2tfcmZ2ZElPWFRUYk5najl0UTZBODBvUlpZR0o3cnZpNXJkWk9xS3FtS1RZQUY2MDVNZjREOTNneWRGLQ?oc=5"
+    },
+    {
+      "title": "海外大模型Token代理乱象：“提成”高达55% 治理与监管存难题 - 证券时报",
+      "summary": "海外大模型Token代理乱象：“提成”高达55% 治理与监管存难题 证券时报",
+      "source": "证券时报",
+      "lang": "zh",
+      "published": "Mon, 27 Jul 2026 22:45:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9sdXY5RDFPemt4cHE3NmJ3dm5YYmRPNE9lOEZCSHpDU2lWZExwVXE3ZENWWjlOOUhDZDVGclkxaHd1NTduWjlva1JWTkxPcWVOYlp0b1BkdXJjbDhZ?oc=5"
+    },
+    {
+      "title": "算力芯片SRAM和HBM，谁与争锋？ - 电子工程专辑",
+      "summary": "算力芯片SRAM和HBM，谁与争锋？ 电子工程专辑",
+      "source": "电子工程专辑",
+      "lang": "zh",
+      "published": "Tue, 28 Jul 2026 01:38:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9qQjBBaDM5NU8tMGI4cWpPczRvU0ZBTXN4N2szUFllTHN4SzBFX2JJemo5NzZTRkY2RVRzVG10VlUyZ2ZYblg1TXhQbWgzTmZ1QWJJ?oc=5"
+    },
+    {
+      "title": "人工智能大模型训练中著作权的合理使用 - 中国知识产权律师网",
+      "summary": "人工智能大模型训练中著作权的合理使用 中国知识产权律师网",
+      "source": "中国知识产权律师网",
+      "lang": "zh",
+      "published": "Tue, 28 Jul 2026 02:50:05 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1fZDlqUnRKbHRNNmM0c2ExMEF4bG5DYUF1WDFhNVpkdEJjMDRnbDdwTzFLSDA2QVN2c0FDQUhRenVmZTlYTzg4ZHVYeVhvN2hEYXl6bWRaS0Q?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 91470,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 62827,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57382,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 35991,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 35550,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 384379,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 262254,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 221533,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
