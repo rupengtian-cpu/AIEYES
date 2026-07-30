@@ -1,0 +1,507 @@
+{
+  "date": "2026-07-30",
+  "generated_at": "2026-07-30T05:31:02.190464+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Do You Really Need to Pretrain Q-Functions for Online RL Fine-Tuning?",
+      "title_zh": "您真的需要预训练 Q 函数来进行在线 RL 微调吗？",
+      "summary": "Pre-training followed by fine-tuning has become the dominant recipe for learning performant policies, and in value-based reinforcement learning (RL) this raises a natural question: given a pretrained policy, should the Q-function be pretrained on offline data too? Conventional wisdom suggests it should, but recent results show that online RL with a randomly…",
+      "summary_zh": "预训练和微调已经成为学习性能策略的主要方法，在基于价值的强化学习（RL）中，这提出了一个自然的问题：给定预训练的策略，Q 函数也应该在离线数据上进行预训练吗？传统观点认为应该这样做，但最近的结果表明，具有随机初始化 Q 函数的在线强化学习可以产生高性能且可靠的策略，而无需预先训练 Q 函数。在本文中，我们系统地研究了在预训练的基本策略之上进行微调时，预训练 Q 函数是否真的有帮助。令人惊讶的是，我们发现朴素的 Q 函数预训练通常比随机初始化没有什么好处。我们证明这源于根本性的不匹配：预训练期间学习的 Q 函数针对的是预训练策略的 Q 函数，而不是在线微调收敛到的 Q 函数，并且即使在离线价值最大化之后，这种差距仍然存在。受这一发现的启发，我们提出了通过策略集成（IPE）进行初始化，这是一种简单的方法，可以训练多种不同的策略，并使用它们的池化部署来引…",
+      "authors": [
+        "Perry Dong",
+        "Ron Polonsky",
+        "Dorsa Sadigh",
+        "Chelsea Fin"
+      ],
+      "published": "2026-07-29T17:59:51Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.27203v1",
+      "abs_url": "https://arxiv.org/abs/2607.27203v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27203v1"
+    },
+    {
+      "title": "Mental World Modeling",
+      "title_zh": "心理世界建模",
+      "summary": "World models enable a predictive substrate for planning and action, yet existing formulations merely answer a physical question: what/where it is, and how will it evolve. Human behavior, however, is driven by hidden mental state (what a person believes, wants, intends, feels, and considers socially permissible), so a model that tracks the physical scene but…",
+      "summary_zh": "世界模型为规划和行动提供了预测基础，但现有的公式仅回答了一个物理问题：它是什么/在哪里，以及它将如何演变。然而，人类行为是由隐藏的心理状态（一个人相信、想要、打算、感觉和认为社会允许的）驱动的，因此跟踪物理场景而不是每个智能体所知道和相信的模型会预测正确场景的错误动作。我们制定了心理世界建模（MWM），这是一个通用的理论框架，它使心理变量成为世界模型的核心组成部分，而不是事后的基本原理：MWM保持耦合的物理-心理世界状态，呈现特定于目标的部分观察，并模拟候选动作如何共同更新这两个组成部分。我们在 MENTIS 中实例化了该框架，这是一个免训练且完全可检查的基线，它将过程分解为状态解析、目标观察生成、动作分解、耦合的身体和心理转换以及分支级价值评估。在手动构建的质量控制的数据集上，涵盖文本、图像和声音视频故事的情境决策场景，使用 8 个现代 LLM…",
+      "authors": [
+        "Hao Fei",
+        "Yiran Zhao"
+      ],
+      "published": "2026-07-29T17:59:39Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.27201v1",
+      "abs_url": "https://arxiv.org/abs/2607.27201v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27201v1"
+    },
+    {
+      "title": "From Classification to Regression: Using a Fruitfly to Solve Equations",
+      "title_zh": "从分类到回归：使用果蝇求解方程",
+      "summary": "We present a novel approach to regression tasks using classification which is motivated by the mechanism used by fruitflies to sense their environment. Specifically, we formulate a general framework for learning nonlinear input-output relationships by replacing complex global surrogate models with a finite library of representative local patterns. Since sci…",
+      "summary_zh": "我们提出了一种使用分类来执行回归任务的新方法，该方法的动机是果蝇感知环境的机制。具体来说，我们通过用有限的代表性局部模式库替换复杂的全局代理模型，制定了学习非线性输入输出关系的通用框架。由于科学数据通常占据输入空间的有限且重复的区域，因此我们通过测量查询和存储模式之间的相似性来生成预测，然后通过加权重建组合它们的相关响应。我们使用合适的嵌入和相似性度量将这种方法应用于非线性动力系统、数据驱动的回归和物理信息学习。对于动力系统，我们的离线-在线工作流程在离线阶段从数据或控制方程中提取模式，而在线预测只需要相似性评估和响应聚合。这种结构帮助我们减少计算和内存需求，同时提供对准确性、存储和推理成本之间权衡的明确控制。",
+      "authors": [
+        "Shady E. Ahmed",
+        "Panos Stinis"
+      ],
+      "published": "2026-07-29T17:58:05Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.27196v1",
+      "abs_url": "https://arxiv.org/abs/2607.27196v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27196v1"
+    },
+    {
+      "title": "VidMap: Exploiting Temporal Structure for Video-Based Structure-from-Motion",
+      "title_zh": "VidMap：利用时间结构实现基于视频的运动结构",
+      "summary": "Accurately recovering the camera's calibration and metric poses for any unconstrained video would unlock large-scale training data for navigation and scene understanding. The dominant approaches to this problem are severely limited: Simultaneous Localization and Mapping (SLAM) is sensitive to initialization and transient failures due to its causal, incremen…",
+      "summary_zh": "准确恢复任何无约束视频的相机校准和公制姿势将为导航和场景理解解锁大规模训练数据。解决这个问题的主要方法受到严重限制：同步定位和建图（SLAM）由于其因果性、增量性的性质，对初始化和瞬态故障很敏感；它通常针对实时操作进行过度优化，并且通常需要已知的相机校准；而运动结构（SfM）通常会放弃任何图像排序，从而实现最佳初始化和全局优化，但缺乏对视觉对称性和极端运动的鲁棒性。为了弥补这一差距，我们引入了一个系统，该系统将 SLAM 的强顺序约束与离线 SfM 的灵活性和全局优化相结合，从而能够对任意、长、未校准的视频进行度量重建。该系统利用宽基线密集图像匹配的最新进展，将时间排序视为可靠闭环的一等公民，并通过度量单目深度先验增强全局优化。因此，对表现出极端运动和视觉对称性的各种具有挑战性的数据集进行彻底评估表明，我们的方法比最先进的 SLAM 和 SfM（经…",
+      "authors": [
+        "Zador Pataki",
+        "Paul-Edouard Sarlin",
+        "Marc Pollefeys"
+      ],
+      "published": "2026-07-29T17:58:04Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.27194v1",
+      "abs_url": "https://arxiv.org/abs/2607.27194v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27194v1"
+    },
+    {
+      "title": "Can AI agents conduct open-ended AI research? Early evidence from two case studies",
+      "title_zh": "人工智能代理可以进行开放式人工智能研究吗？来自两个案例研究的早期证据",
+      "summary": "Forecasts of explosive AI progress hinge on AI agents automating AI research. But evidence on whether agents can carry out open-ended AI research is thin. Current evaluations either test agents on narrow, verifiable tasks, which excludes open-ended research, or submit AI-generated papers to blind peer review, which is overstretched, stochastic, and suffers…",
+      "summary_zh": "人工智能爆炸性进展的预测取决于人工智能代理自动化人工智能研究。但关于智能体是否可以进行开放式人工智能研究的证据还很少。目前的评估要么在狭窄的、可验证的任务上测试代理，这排除了开放式研究，要么将人工智能生成的论文提交给盲目的同行评审，这种评审过度拉伸、随机且评审质量较差。我们引入了第三种衡量人工智能研发自动化进展的方法。代理承担高质量未发表论文的核心、开放式研究问题，论文的原作者对其输出进行评分。我们称这些为影子评估。我们对两份未发布的 NeurIPS 2026 提交内容进行了影子评估，为前沿代理提供了六天的时间和数千美元的计算资源。这些特工在没有人类帮助的情况下完成了所有工程，但无法在回答研究问题方面取得实质性进展。结果，这两篇论文都被作者明确拒绝。我们确定了五种反复出现的失败模式：对可发表研究的标准判断不佳、对研究设计中的缺陷缺乏创造性的反应、从…",
+      "authors": [
+        "Peter Kirgis",
+        "Sayash Kapoor",
+        "Andrew Schwartz",
+        "Stephan Rabanser",
+        "David Africa",
+        "Konstantinos Voudouris"
+      ],
+      "published": "2026-07-29T17:57:19Z",
+      "category": "cs.AI",
+      "arxiv_id": "2607.27191v1",
+      "abs_url": "https://arxiv.org/abs/2607.27191v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27191v1"
+    },
+    {
+      "title": "APEX-Accounting",
+      "title_zh": "APEX-会计",
+      "summary": "We introduce APEX-Accounting, a benchmark built by Mercor in partnership with Ramp, to assess whether frontier models can do the real work of accountants. Tasks include reconciling accounts, accruing expenses, posting transactions, and producing reports. The private eval set comprises 160 tasks, split across 10 worlds. Each world contains an accounting syst…",
+      "summary_zh": "我们引入 APEX-Accounting，这是 Mercor 与 Ramp 合作建立的基准，用于评估前沿模型是否可以完成会计师的实际工作。任务包括核对账户、应计费用、过帐交易和生成报告。私人评估集包含 160 个任务，分布在 10 个世界中。每个世界都包含一个会计系统以及电子表格、PDF 和其他文件。每项任务均由会计和簿记专家撰写和解决，他们还编写评分标准。在 9 个前沿模型中，Claude-Fable-5 (Max) 以 56.4% 的平均 Criteria@3 领先，领先于 Muse-Spark-1.1 (xHigh) 的 52.6%。没有模型得分超过 2.6% Pass^8 (GPT-5.6-Sol (Max+Pro))，最高 Pass@8 为 21.5% (Muse-Spark-1.1 (xHigh))。我们尝试将代币预算从 1 美元增加到…",
+      "authors": [
+        "Julien Benchek",
+        "Austin Bennett",
+        "Jasmin Kern",
+        "Ryan Stevens",
+        "Rene Sultan",
+        "Charis Ching"
+      ],
+      "published": "2026-07-29T17:56:49Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.27189v1",
+      "abs_url": "https://arxiv.org/abs/2607.27189v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27189v1"
+    },
+    {
+      "title": "Inverse Learning of Latent Risk-Neutral Densities from Irregular Option Quotes",
+      "title_zh": "从不规则期权报价中逆向学习潜在风险中性密度",
+      "summary": "Accurate option prices do not imply accurate recovery of the latent risk-neutral density. We study this distinction with two complementary benchmarks. A controlled benchmark exposes simulator-truth densities for latent evaluation, while a chronological NIFTY benchmark tests only held-out market prices. A two-component lognormal mixture has the lowest aggreg…",
+      "summary_zh": "准确的期权价格并不意味着潜在风险中性密度的准确恢复。我们通过两个互补的基准来研究这种区别。受控基准暴露了模拟器真实密度以进行潜在评估，而按时间顺序排列的 NIFTY 基准仅测试保留的市场价格。两成分对数正态混合物在综合基准上具有最低的总价格、$L^1$、Wasserstein 和固定尾误差。学习算子保留了较窄的优势：相对于混合物，DeepONet 将 1% 的分位数和方差误差减少了 39.0% 和 34.6%，而报价转换器在结构错误指定的 Merton 系列上将 $L^1$ 减少了 16.4%。数值条件分析解释了为什么这些排名可能不同：在实施质量和前向约束后，126 个定价方向中有 95 个在数值上为空，并且由 $L^1 = 0.061$ 分隔的两个密度在所覆盖的行使价上产生相同的价格。在 524 个保留的 NIFTY 调用中，验证选择的测试时间调…",
+      "authors": [
+        "Lennon J. Shikhman",
+        "Michael Galarnyk",
+        "Aadi Dash",
+        "Nicholas A. Welsh"
+      ],
+      "published": "2026-07-29T17:56:20Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.27188v1",
+      "abs_url": "https://arxiv.org/abs/2607.27188v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27188v1"
+    },
+    {
+      "title": "Pangram 4 Technical Report",
+      "title_zh": "Pangram 4 技术报告",
+      "summary": "We present Pangram 4, the latest deep-learning-based AI-text classification model from Pangram Labs. We achieve an AUROC of 0.9916 with a false positive rate of 0.0041% and a false negative rate of 0.3396%. In addition to its increased overall accuracy compared with Pangram 3, Pangram 4 exhibits superior out-of-distribution generalization and robustness to…",
+      "summary_zh": "我们推出 Pangram 4，这是 Pangram Labs 最新的基于深度学习的人工智能文本分类模型。我们的 AUROC 为 0.9916，假阳性率为 0.0041%，假阴性率为 0.3396%。与 Pangram 3 相比，除了整体准确性有所提高之外，Pangram 4 还表现出卓越的分布外泛化能力和对抗性攻击的鲁棒性。 Pangram 4 的另一个新颖贡献是它提高了区分细粒度编辑和人工智能与人类共同创作的混合文本的能力。我们展示了边界检测任务和交错人工智能辅助检测的改进。最后，我们报告了标准 AI 检测基准的指标，显示 Pangram 4 在各种设置和领域的 AI 文本检测任务上实现了最先进的性能。",
+      "authors": [
+        "Ben Glickenhaus",
+        "Katherine Thai",
+        "Jenna Russell",
+        "Elyas Masrour",
+        "Yue Han",
+        "Max Spero"
+      ],
+      "published": "2026-07-29T17:53:01Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.27183v1",
+      "abs_url": "https://arxiv.org/abs/2607.27183v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27183v1"
+    },
+    {
+      "title": "HumanCLAW: Can Vision-Language Models Act Through a Body?",
+      "title_zh": "HumanCLAW：视觉语言模型可以通过身体起作用吗？",
+      "summary": "Evaluating whether a vision-language model (VLM) can act through a physical body is challenging. The outcome of an action couples the VLM's decision with motor control. When a task fails, it is hard to tell whether the VLM made a bad choice or the motor controller simply failed to execute it, e.g., losing balance and falling. In this work, we introduce Huma…",
+      "summary_zh": "评估视觉语言模型 (VLM) 是否可以通过身体发挥作用是一项挑战。动作的结果将 VLM 的决策与电机控制结合起来。当任务失败时，很难判断 VLM 是否做出了错误的选择，或者电机控制器只是未能执行它，例如失去平衡和跌倒。在这项工作中，我们介绍了 HumanCLAW，这是一种将行动决策与低级执行分离的评估框架。每一步，现成的 VLM 都会发出原子技能命令，该命令会被转换为亚秒级的连续全身运动，并产生真实的物理后果，包括重力和碰撞。因此，身体可以在物理世界中自由行动，而执行方面的干扰、平衡和运动错误则被排除在外。仍然可以测量的是模型的行动智能：它对身体下一步应该执行的动作的即时选择。基于这个框架，我们构建了 HumanCLAW-Bench：跨越 41 个室内场景的 1,218 个长视野、以自我为中心的查找-导航-交互片段。我们测试了九个最先进的 VLM，…",
+      "authors": [
+        "Siyao Li",
+        "Jiawei Gu",
+        "Shuai Liu",
+        "Kairui Hu",
+        "Zekun Li",
+        "Linjie Li"
+      ],
+      "published": "2026-07-29T17:51:36Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.27180v1",
+      "abs_url": "https://arxiv.org/abs/2607.27180v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27180v1"
+    },
+    {
+      "title": "DenseOn with the LateOn: Fully Open Dense and Late-Interaction Models for Multilingual, Long-Context, and Code Search",
+      "title_zh": "DenseOn 与 LateOn：用于多语言、长上下文和代码搜索的完全开放的密集和后期交互模型",
+      "summary": "State-of-the-art retrieval models increasingly rely on closed training data, creating a reproducibility gap. We present an open end-to-end recipe for training retrieval models and study how English supervision transfers to multilingual retrieval through translate-train. We first reconstruct and curate 665M English contrastive pre-training pairs from 1.4B pa…",
+      "summary_zh": "最先进的检索模型越来越依赖于封闭的训练数据，从而造成了可重复性的差距。我们提出了一种开放的端到端训练检索模型的方法，并研究英语监督如何通过翻译训练转移到多语言检索。我们首先从 34 个公共来源的 1.4B 对中重建和策划 665M 个英语对比预训练对，并使用挖掘的硬负例构建 1.88M 个有监督的微调对。训练产生两个 149M 参数模型：DenseOn（一种单向量密集模型）和 LateOn（一种 ColBERT 风格的后期交互模型）。他们在 BEIR 上分别实现了 56.20 和 57.22 的平均 nDCG@10，为该尺寸级别设定了新的最先进结果。然后，我们将经过验证的英语数据翻译成八种语言，产生 2.8B 对跨语言样本，并训练 mDenseOn 和 mLateOn，这两个基于 mmBERT 的 307M 参数模型。尽管共享它们的主干、数据和目标…",
+      "authors": [
+        "Raphaël Sourty",
+        "Antoine Chaffin",
+        "Paulo Roberto Moura Junior",
+        "Amélie Chatelain"
+      ],
+      "published": "2026-07-29T17:50:51Z",
+      "category": "cs.CL",
+      "arxiv_id": "2607.27178v1",
+      "abs_url": "https://arxiv.org/abs/2607.27178v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27178v1"
+    },
+    {
+      "title": "Partner Capability Estimation for Task-Agnostic Adaptation in Ad-Hoc Teamwork",
+      "title_zh": "临时团队合作中任务无关适应的合作伙伴能力估计",
+      "summary": "Effective collaboration with novel and diverse partners is a crucial skill for autonomous agents. Most current ad-hoc teamwork (AHT) approaches assume that agents will collaborate on a single, fixed task and that the partner's capabilities, their ability to successfully execute the desired action, are already known. In reality, a partner's true capabilities…",
+      "summary_zh": "与新颖且多样化的合作伙伴进行有效协作是自主代理的一项关键技能。当前大多数临时团队合作 (AHT) 方法都假设代理将在单个固定任务上进行协作，并且合作伙伴的能力以及成功执行所需操作的能力都是已知的。事实上，合作伙伴的真实能力往往是隐藏的，人类合作者可能会在具有多种有效策略的任务上表现不佳。为了解决这些限制，我们将临时团队合作扩展到多任务设置中，将其重新定义为联合规划问题，并在隐藏的合作伙伴能力下进行分散执行。我们引入 CE-CM（通过上下文模型进行能力估计），这是一种推断任务不变能力向量的近似贝叶斯方法。通过使用基于模拟的采样，代理估计能力并引入上下文多代理马尔可夫决策过程进行规划。这种方法不需要群体预训练，并且只需通过几个任务就可以在线完善其信念。为了考虑到人类的不可预测性，我们提出了 CE-CM-Div，这是一种根据不同的规划器部署而不是单一的最…",
+      "authors": [
+        "Peter Tisnikar",
+        "Maja Swieczkowska",
+        "Benteng Ma",
+        "Gerard Canal",
+        "Matteo Leonetti"
+      ],
+      "published": "2026-07-29T17:50:39Z",
+      "category": "cs.AI",
+      "arxiv_id": "2607.27177v1",
+      "abs_url": "https://arxiv.org/abs/2607.27177v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27177v1"
+    },
+    {
+      "title": "Improving Item Discoverability in e-Commerce Search via Related Intent Generation",
+      "title_zh": "通过相关意图生成提高电子商务搜索中的项目可发现性",
+      "summary": "Traditional search systems are optimized to retrieve items that strictly match a query, often prioritizing precision over recall. In e-commerce marketplaces and particularly grocery, this paradigm is limiting, as user satisfaction and commercial outcomes depend heavily on the discoverability of substitute, complementary, and thematically related items. In t…",
+      "summary_zh": "传统的搜索系统经过优化，可以检索与查询严格匹配的项目，通常优先考虑精确度而不是召回率。在电子商务市场，特别是杂货店，这种模式是有限制的，因为用户满意度和商业成果在很大程度上取决于替代品、补充品和主题相关商品的可发现性。在本文中，我们提出了一种可扩展的发现增强搜索系统，该系统利用意图条件召回扩展。我们的方法生成隐式用户意图，以扩大候选者的召回率，同时保持相关性。该系统通过两阶段混合架构解决了生成检索的成本与质量权衡问题。首先，我们利用封闭权重大型语言模型（LLM）来最大限度地提高头部查询的可发现性。为了将这些优势扩展到尾部查询，我们引入了一种经过微调的小语言模型 (SLM)，通过 LoRA 适配器和师生蒸馏进行训练。我们使用严格的双重框架来评估系统：（a）根据人类对语义质量的偏好进行验证的法学硕士作为法官指标，以及（b）端到端会话级购买分析。结果表明…",
+      "authors": [
+        "Ji Xin",
+        "Xiao Xiao",
+        "Ishan Bhatt",
+        "Vinesh Gudla",
+        "Trace Levinson",
+        "Raochuan Fan"
+      ],
+      "published": "2026-07-29T17:46:35Z",
+      "category": "cs.IR",
+      "arxiv_id": "2607.27172v1",
+      "abs_url": "https://arxiv.org/abs/2607.27172v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.27172v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "算力资源，这样互通共享（大数据观察·“六张网”里的新动能） - 人民网",
+      "summary": "算力资源，这样互通共享（大数据观察·“六张网”里的新动能） 人民网",
+      "source": "人民网",
+      "lang": "zh",
+      "published": "Wed, 29 Jul 2026 21:56:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5QZ0JMNlNEZ3FOUWhfYVhqYmlvNllCdzVHWmYzUzREa1c0ZzVIMHJXcnBiN0Z1OVpieWR3aTE2aFFSVGVSUkV0Z1FJUEFzcldzaUp0RnJ5M1pGTGdVSkc1UmYtWVN2T3hLM3F0NTVR?oc=5"
+    },
+    {
+      "title": "国产算力厂商火速适配Kimi K3 开源风暴席卷全球AI产业 - 证券时报",
+      "summary": "国产算力厂商火速适配Kimi K3 开源风暴席卷全球AI产业 证券时报",
+      "source": "证券时报",
+      "lang": "zh",
+      "published": "Wed, 29 Jul 2026 22:44:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1RTlhJbTUwSHNKNXIwdXhfdnNqU3pDRmMzQWJfbEhnN3lHSTVBeGdXWFZPMnZtUUlfNlRjQlQxaEN6b0JmSFJVZUtoNzQ5eW9mNEdGQU1kbTZWSkcy?oc=5"
+    },
+    {
+      "title": "首个突破 90% 成功率的桌面操作智能体！从堆模型到拼工程，实在 Agent 登顶 OSWorld 双冠 - Infoq.cn",
+      "summary": "首个突破 90% 成功率的桌面操作智能体！从堆模型到拼工程，实在 Agent 登顶 OSWorld 双冠 Infoq.cn",
+      "source": "Infoq.cn",
+      "lang": "zh",
+      "published": "Thu, 30 Jul 2026 02:35:49 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5RbzF0ai1adlduR1NBcENKT05Hd05RWmVjWjVHVFRBdmxQOW5CZUJtUG1Xa0s3ODdDS1FqV1NZdW5hQlpRcVY2NkRUNjh5SzFQaklnSTY5bWtLZjdPQnc?oc=5"
+    },
+    {
+      "title": "毛伟明在长沙调研算力建设情况 - 新华网",
+      "summary": "毛伟明在长沙调研算力建设情况 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Thu, 30 Jul 2026 01:16:45 GMT",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBScFhnY18ydmxrcWRyazhJRG1EUEJxTHVGaGFfbW1JZXJNRW5hZVBTS0FCSTJvcXpodTVFc0YzMWZ2RVJTWGRHMHZfSWdZS0l0S3VmUXZheEp6cXlDaDVvd3QwQ3hJY0FsS0s4MGxwZ3hYYTdWRkxzaWVXYw?oc=5"
+    },
+    {
+      "title": "电力与算力的双向奔赴 - 中国能源新闻网",
+      "summary": "电力与算力的双向奔赴 中国能源新闻网",
+      "source": "中国能源新闻网",
+      "lang": "zh",
+      "published": "Wed, 29 Jul 2026 12:06:56 GMT",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE95a1ZUQmZsOEJGaVhGQlJ2QUdYLVF5ck10MVoyeEF0cDhnMWZuU3c5SVdITlp0RHI4bFQzU3FQbGV4eVhRbExYUWtHQTdYR21rdmtpc2RPb0NvVUR6S01zTnc2WGJSSk9tQ1JkdDA5Njc4X3VyZ3pv?oc=5"
+    },
+    {
+      "title": "韶关赴京推介，亮出“算力家底” - 21财经",
+      "summary": "韶关赴京推介，亮出“算力家底” 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Thu, 30 Jul 2026 01:20:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdUs5NF8yRVlqN241Z1plTzJuc3U2LXdCaC1wTlNyVzZYUWl0cGMweS1HM2xnWGRqaV9kbGtPZUxzVmx6TG9ZcmozMmdIcFpqaWhwQUp0Q0pENE45Z2R2Q0l5MnRYMnZ6eGxMY1pHODFsamNXUmFtWWFwUFNPU2oxVDd1aER0TGNsTTg5Tg?oc=5"
+    },
+    {
+      "title": "北京亦庄要让AI算力随取随用 - finance.sina.cn",
+      "summary": "北京亦庄要让AI算力随取随用 finance.sina.cn",
+      "source": "finance.sina.cn",
+      "lang": "zh",
+      "published": "Thu, 30 Jul 2026 04:11:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNHVUZkE0bmhoYlZxQWtQT2hNczc5aU5zUEpBRVp6X0Exd0Jhd1NsVTdQX1VVZGNYR1hsSnlTR1U2NzVJYUdsbl9qM1JaaE44b21vTW01QWdjWDBJSjBHcjM4UU1Gbk9hOVZqOHgzbkdGQnhMOVg4d3p1Y0lCTmdyajg0V3h2TGpMWmFnOXBfRmhFTG1kZGN0MQ?oc=5"
+    },
+    {
+      "title": "以“数”为笔绘转型画卷 算力赋能高质量发展 - chinanews.com.cn",
+      "summary": "以“数”为笔绘转型画卷 算力赋能高质量发展 chinanews.com.cn",
+      "source": "chinanews.com.cn",
+      "lang": "zh",
+      "published": "Thu, 30 Jul 2026 01:30:34 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4yYXY1ZE9HQl9JUXNhdmlJQUJGb2wtOXJxWmpBT28zUmtCTjFIenJuY0poMXQ5TmhweXZMLVlSNVVob3VzajJjUmRLRkRIOGlFZjN6YXMwOUo0Sko1VWVya29QNnBIMXBp?oc=5"
+    },
+    {
+      "title": "字节跳动调整AI业务架构 大模型业务ARR为40亿美元 - 财新",
+      "summary": "字节跳动调整AI业务架构 大模型业务ARR为40亿美元 财新",
+      "source": "财新",
+      "lang": "zh",
+      "published": "Thu, 30 Jul 2026 02:48:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9VTDE0VzlCb2RDcE5NejRpaHU3VW9lM2VWQnJGMkpveVdDM0t4cl9Db1c3enhITXdXNmZFQXVTdjExdWpJclNsbVprdEpGNFIycEc3YVZZTF81eG1PRC1QQjR5Mjk?oc=5"
+    },
+    {
+      "title": "智能体时代启幕：PC与芯片产业迎接范式重构 - 集微网",
+      "summary": "智能体时代启幕：PC与芯片产业迎接范式重构 集微网",
+      "source": "集微网",
+      "lang": "zh",
+      "published": "Thu, 30 Jul 2026 04:45:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE4wMktkVHMwS0REbzhxZkp4OE1BYVlvWVhSbUxjRHVxZzNUYWhKN1hIX202d013NXlVUmJ2LWI0LTktRTA?oc=5"
+    },
+    {
+      "title": "清微智能：AI自己“设计”AI芯片，可重构算力走出中国硬科技的创新突围之路｜WAIC 2026 - 凤凰网财经",
+      "summary": "清微智能：AI自己“设计”AI芯片，可重构算力走出中国硬科技的创新突围之路｜WAIC 2026 凤凰网财经",
+      "source": "凤凰网财经",
+      "lang": "zh",
+      "published": "Thu, 30 Jul 2026 03:27:18 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0zZnhaVmZMMkhsTUc2OWR6TE1OU0wwbVBrMUpsT3ZHX01WRUVvZ3U2SWZBX3phOWJ5MmRIZEVJU2Focm1JX2dvNTNQRFlNb0pj?oc=5"
+    },
+    {
+      "title": "AI短临大模型 “刻画” 小尺度天气变化 - 天津日报",
+      "summary": "AI短临大模型 “刻画” 小尺度天气变化 天津日报",
+      "source": "天津日报",
+      "lang": "zh",
+      "published": "Wed, 29 Jul 2026 22:00:03 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNNWtTTjNxZUNOaWdXZlJUZGVYX3N5NVJScE00QVc2YXp5RGtIazZyYzR2VHZuZXNablpBaXIwQW9WTU9ONDI3OXNIT090Zm1aYzQwMmNsaVFRMXAteHdVMzI1TDZJTEd2TFVzZzFGb2V0Z2h6UnF0Q3gxbnhrSzJGQk13?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 91588,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 63254,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57386,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 36502,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 35624,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 384523,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 263459,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 222451,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
