@@ -1,0 +1,514 @@
+{
+  "date": "2026-07-31",
+  "generated_at": "2026-07-31T05:55:57.655280+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Learning to Trace Seiberg Dualities",
+      "title_zh": "学习追踪塞伯格二元性",
+      "summary": "Dualities play an important role in establishing both microscopic and emergent phenomena in a wide range of physical systems. In practice, though, it can often be computationally challenging to establish when two systems are dual, even when all of the \"rules of the game\" are well-known. Said differently, when confronted with two systems, how can one efficie…",
+      "summary_zh": "对偶性在建立广泛的物理系统中的微观现象和涌现现象方面发挥着重要作用。然而，在实践中，即使所有“游戏规则”都是众所周知的，确定两个系统何时是对偶的，在计算上通常也具有挑战性。换句话说，当面对两个系统时，如何有效地确定它们实际上是对偶的？在本文中，我们使用机器学习方法来解决超对称箭袋规范理论的塞伯格对偶性问题。从数学上讲，这涉及建立箭袋的突变，这又是“学习解开”主题的变体。一方面，这为我们提供了一种用于确定不同对偶性的计算复杂性的实用工具。另一方面，它也让我们能够研究不同的网络架构如何学习如何追踪塞伯格对偶性。我们发现，对于具有适度数量的箭袋节点（数量级为 10 美元）的箭袋，由变压器和多层感知器组成的不同网络架构往往优于确定性算法。通过完善的探路算法（本质上是“箭袋谷歌地图”）补充网络可以进一步提高搜索策略的效率和准确性。我们预计此类问题可以作为应用…",
+      "authors": [
+        "Jonathan J. Heckman",
+        "Shani Meynet",
+        "Alessandro Mininno",
+        "Gary Shiu"
+      ],
+      "published": "2026-07-30T17:59:56Z",
+      "category": "hep-th",
+      "arxiv_id": "2607.28628v1",
+      "abs_url": "https://arxiv.org/abs/2607.28628v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28628v1"
+    },
+    {
+      "title": "ReToken: One Token to Improve Vision-Language Models for Visual Retrieval",
+      "title_zh": "ReToken：一种改进视觉检索视觉语言模型的代币",
+      "summary": "Long visual context poses a challenge for vision-language models: performance degrades as the number of distractors grows, and processing all tokens at once is computationally infeasible under GPU memory constraints. We present ReToken, a single learnable embedding trained as an explicit retrieval target that selects a sparse set of query-relevant visual to…",
+      "summary_zh": "长视觉上下文对视觉语言模型提出了挑战：随着干扰因素数量的增加，性能会下降，并且在 GPU 内存限制下一次处理所有标记在计算上是不可行的。我们提出了 ReToken，这是一个被训练为显式检索目标的单一可学习嵌入，它从预填充的视觉 KV 缓存中选择一组稀疏的与查询相关的视觉标记。仅在小型图像 QA 数据集上进行训练，ReToken 在图像和视频基准测试中产生了一致的增益：在 Visual Haystacks 上，它将 Qwen3VL-8B 提高了 13.4 点，将 InternVL3.5 提高了 12.4 点（相对 >20%），而在 LVBench 上，它将零镜头转换为长视频，与 Qwen3VL-8B 相比，获得了 8.0 点的增益。由于其轻量级设计，训练和长视频推理都适合在单个 H100 上进行。代码位于：https://github.com/ava…",
+      "authors": [
+        "Yao Xiao",
+        "Reuben Tan",
+        "Zhen Zhu",
+        "Yuqun Wu",
+        "Jianfeng Gao",
+        "Derek Hoiem"
+      ],
+      "published": "2026-07-30T17:59:56Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.28627v1",
+      "abs_url": "https://arxiv.org/abs/2607.28627v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28627v1"
+    },
+    {
+      "title": "ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine",
+      "title_zh": "ACE-Data-0：以人为本的环境捕捉作为具体数据引擎",
+      "summary": "Embodied intelligence faces a fundamental data bottleneck. Models must capture how first-person perception, whole-body motion, dexterous manipulation, object state, sound, and touch evolve together as humans pursue goals over time. Existing datasets fragment this experience across viewpoints, modalities, or spatial scales, leaving the full perception-action…",
+      "summary_zh": "具身智能面临着基本的数据瓶颈。模型必须捕捉第一人称感知、全身运动、灵巧操作、物体状态、声音和触觉如何随着人类追求目标而一起演变。现有的数据集将这种体验分割成不同的观点、模式或空间尺度，只留下部分观察到的完整的感知-行动循环。我们推出了环境捕捉引擎 (ACE)，这是一种以人为中心的数据引擎，可将真实的家庭环境转变为空间校准、时间同步的录音室。 ACE 在两个互补的尺度上运行：桌面尺度配置解决了手部物体操作的问题，而房间尺度配置则捕捉整个身体的运动、移动和在家具齐全的房屋中的交互。 ACE 将自我中心和多视图外心视频、全身和关节式手部运动、物体几何和 6 自由度轨迹、音频和触觉信号记录为统一的多感官流。使用 ACE，我们构建了 ACE-Data-0，其中包含 200 个任务类别的 150 小时和 1700 万视频帧，由 50 名参与者在 2 个环境中执…",
+      "authors": [
+        "Yukang Cao",
+        "Haozhe Xie",
+        "Beichen Wen",
+        "Runmao Yao",
+        "Yinghao Liu",
+        "Yue Huang"
+      ],
+      "published": "2026-07-30T17:59:50Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.28625v1",
+      "abs_url": "https://arxiv.org/abs/2607.28625v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28625v1"
+    },
+    {
+      "title": "PhiZero: A World Model Built Around Physical Language",
+      "title_zh": "PhiZero：围绕物理语言构建的世界模型",
+      "summary": "We introduce PhiZero, a physical world model built around physical language, a compact discrete representation of world-state transitions. Existing physical world models typically predict future videos directly in pixel space, leaving the underlying world dynamics implicit within high-dimensional visual predictors. Motivated by humans' ability to abstract p…",
+      "summary_zh": "我们介绍 PhiZero，一个围绕物理语言构建的物理世界模型，是世界状态转换的紧凑离散表示。现有的物理世界模型通常直接在像素空间中预测未来的视频，将潜在的世界动态隐含在高维视觉预测器中。人类能够从视觉经验中抽象出预测结构，并以自然语言对其进行组织以进行明确的推理，因此我们通过自我监督从野外视频中学习物理语言，并用它来明确地推理物理世界如何演变。因此，PhiZero 采用了推理然后渲染的范式：它首先将未来世界的演变推断为物理语言序列，然后将推断的过渡渲染为视频。跨代和理解基准的广泛实验验证了 PhiZero 模拟物理相干世界演化的能力。我们进一步展示了其在现实和交互式世界建模、细粒度动作条件模拟和零镜头运动传输方面的潜力。",
+      "authors": [
+        "Shuyao Shang",
+        "Yuqi Wang",
+        "Ruopeng Gao",
+        "Xu Chen",
+        "Tieniu Tan",
+        "Lue Fan"
+      ],
+      "published": "2026-07-30T17:59:46Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.28624v1",
+      "abs_url": "https://arxiv.org/abs/2607.28624v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28624v1"
+    },
+    {
+      "title": "PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball",
+      "title_zh": "PAC-MAN：感知感知 CBF-RL 在人形躲避球中实现全身安全",
+      "summary": "We present PAC-MAN, a perception-aware CBF-RL framework that couples control-barrier safety with deployment-realistic onboard sensing for whole-body humanoid dodgeball. The deployed policy sees the ball only as segmentation-masked depth from a head-mounted camera, while training-time CBF guidance represents clearance to every body link, and an adversarial m…",
+      "summary_zh": "我们推出了 PAC-MAN，这是一种感知感知的 CBF-RL 框架，它将控制屏障安全性与部署逼真的机载传感相结合，用于全身人形躲避球。部署的策略仅将球视为来自头戴式摄像头的分段屏蔽深度，而训练时 CBF 指导表示对每个身体链接的间隙，并且对抗性运动先验规范了由此产生的规避反射。我们在受控的任意链路接触基准上进行评估，并在两种状态下进行种子投掷：单次投掷和部署循环，其中机器人走回其位置并在投掷之间恢复。在此基准上，该政策与特权国家神谕有几分相似：仅固定机载摄像头就足以规避。我们发现可用的屏障结构取决于感知可观察性：Joint-CBF 通过准确的球状态提供最佳性能，当仅用作训练指导时，在固定相机观察下性能会下降，并通过球跟踪万向节或特权运行时过滤器恢复。因此，我们在现实世界的 Unitree G1 上部署了一个轻量级的 Link-CBF 策略零射击，它…",
+      "authors": [
+        "Lizhi Yang",
+        "Junheng Li",
+        "Aaron D. Ames"
+      ],
+      "published": "2026-07-30T17:59:35Z",
+      "category": "cs.RO",
+      "arxiv_id": "2607.28623v1",
+      "abs_url": "https://arxiv.org/abs/2607.28623v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28623v1"
+    },
+    {
+      "title": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
+      "title_zh": "AISPA：大型语言模型应用程序的以用户为中心的系统提示审核",
+      "summary": "System prompts are instructions configured by developers to govern the behaviors of foundation models in AI applications. They are used throughout commercial AI products, but are rarely disclosed to the public or regulators, creating a serious trust and accountability gap in the wide deployment of AI systems. In this paper, we introduce Artificial Intellige…",
+      "summary_zh": "系统提示是开发人员配置的指令，用于管理人工智能应用程序中基础模型的行为。它们在整个商业人工智能产品中使用，但很少向公众或监管机构披露，这在人工智能系统的广泛部署中造成了严重的信任和责任差距。在本文中，我们介绍了人工智能系统提示保证（AISPA），这是一个以用户为中心的框架，用于系统地审核人工智能系统中的系统提示。 AISPA 检查系统提示的特定部分，并根据对用户重要的八个维度对其进行评估。然后，我们使用该框架审查 88 个商业 AI 产品中系统提示的 3,249 条指令，将每条指令分类为保护性（用户的）指令或有问题的指令。我们的审计揭示了四个核心发现。首先，不同产品和开发人员的系统提示设计差异很大，一些组织平均每个产品有超过 60 条保护指令，而其他组织平均不到 5 条。其次，保护指令被广泛采用，但范围较浅：98.9% 的产品至少包含一条，但只有…",
+      "authors": [
+        "Xiangning Lin",
+        "Shenzhe Zhu",
+        "Shu Yang",
+        "Zhenyu Zhang",
+        "Haoqian Zhang",
+        "Yipeng Zhao"
+      ],
+      "published": "2026-07-30T17:58:58Z",
+      "category": "cs.AI",
+      "arxiv_id": "2607.28617v1",
+      "abs_url": "https://arxiv.org/abs/2607.28617v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28617v1"
+    },
+    {
+      "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+      "title_zh": "OSReward：为跨平台计算机使用奖励模型建立标准化评估",
+      "summary": "Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and reasoning. Verifying whether it fulfilled the task instruction is central to CUA evaluation, data curation, and reinforcement learning. Neither human-written verifiers nor human annotators can provide such verification at sc…",
+      "summary_zh": "计算机使用代理 (CUA) 在数字世界中快速发展。 CUA 轨迹记录了智能体的动作、状态和推理。验证它是否完成任务指令是 CUA 评估、数据管理和强化学习的核心。人工编写的验证器和人工注释器都无法大规模提供此类验证，因此该领域越来越多地转向视觉语言模型 (VLM) 作为 CUA 轨迹的判断。但一个基本问题长期以来一直未被审视：这些 VLM 法官是否足够可靠？为了系统地研究它，我们引入了 OSReward，这是一个现实的、高质量的基准，用于根据 CUA 轨迹评估 VLM 法官。这些轨迹来自不同的代理主干，跨平台执行经过人工验证的指令，然后通过多阶段人工注释严格标记真实判决。在此基础上，我们衍生出了 OSReward-Hard，这是一个专注于真正困难案例的挑战集，以及 OSReward-Multi，用于细粒度的效率和对齐评分。迄今为止对 VLM 判断最…",
+      "authors": [
+        "Qiushi Sun",
+        "Kanzhi Cheng",
+        "Yian Wang",
+        "Bowen Yang",
+        "Hang Yan",
+        "Liheng Chen"
+      ],
+      "published": "2026-07-30T17:57:41Z",
+      "category": "cs.AI",
+      "arxiv_id": "2607.28609v1",
+      "abs_url": "https://arxiv.org/abs/2607.28609v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28609v1"
+    },
+    {
+      "title": "KAISEN: Reproducible Subgroup Fairness Auditing for Clinical Risk Models",
+      "title_zh": "KAISEN：临床风险模型的可重复亚组公平性审核",
+      "summary": "Clinical risk models routinely achieve strong aggregate performance while producing materially different error rates across patient subgroups. Audit pipelines have been proposed to catch this, but their components are rarely stress-tested, so it is unclear which parts of an audit can be trusted and under what conditions. We present KAISEN, a five-phase audi…",
+      "summary_zh": "临床风险模型通常会实现强劲的总体性能，同时在患者亚组中产生截然不同的错误率。审计管道已被提议来解决这一问题，但其组件很少经过压力测试，因此尚不清楚审计的哪些部分以及在什么条件下可以信任。我们提出了 KAISEN，一个五阶段审计管道，涵盖亚组分层、差异测量、机制诊断、事后缓解和漂移监测，根据 16 项疾病任务、2030 年健康人的 15 个社会决定因素轴和三个预先指定的交叉点的综合基准进行评估直至失败。以下是四项发现。 (i) 显着性跟踪每个轴与其自身最小可检测效应的差距：15 个轴上的显着性计数与原始均衡赔率差 (EOD) 之间的等级相关性为 rho = 0.56，一旦 EOD 按该下限标准化，就会上升到 rho = 0.78。 (ii) 每组阈值优化在 48 次保留运行中的 48 次中减少了 EOD（配对 delta = -0.285，95% C…",
+      "authors": [
+        "Sparsh Roy",
+        "Samuel Girmachew",
+        "Nishita Chavan"
+      ],
+      "published": "2026-07-30T17:57:18Z",
+      "category": "cs.LG",
+      "arxiv_id": "2607.28608v1",
+      "abs_url": "https://arxiv.org/abs/2607.28608v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28608v1"
+    },
+    {
+      "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
+      "title_zh": "信标：知道何时以及如何执行代理视觉推理",
+      "summary": "The fundamental goal of agentic visual reasoning is to improve the success rate of multimodal large language models (MLLMs) on complex tasks, rather than merely equipping them with a sophisticated yet inefficient reasoning paradigm. In this work, we rethink agentic visual reasoning through two key dimensions of tool use: Mode Adaptiveness (MA) and Tool Effe…",
+      "summary_zh": "代理视觉推理的基本目标是提高多模态大语言模型（MLLM）在复杂任务上的成功率，而不是仅仅为其配备复杂但低效的推理范式。在这项工作中，我们通过工具使用的两个关键维度重新思考代理视觉推理：模式适应性（MA）和工具效果（TE）。模式适应性表征了 MLLM 是否能够识别何时真正需要工具并相应地调用它们，从而避免不必要的计算开销，同时提高需要工具辅助的挑战性问题的性能。工具效果表征了工具使用的实际影响：工具应该扩展模型对仅通过文本推理无法解决的问题的能力，同时避免模型在没有工具的情况下已经可以解决的问题出现额外错误。我们进行了全面的分析来量化这两个属性，并凭经验揭示现有的代理视觉推理模型表现出有限的模式适应性，而在困难示例上使用工具所产生的收益在很大程度上被模型已经可以解决的简单示例所带来的危害所抵消。受这些观察的启发，我们提出了 Beacon，这是一种新颖…",
+      "authors": [
+        "Qixun Wang",
+        "Yang Shi",
+        "Letian Cheng",
+        "Zhuoran Zhang",
+        "Yan He",
+        "Yuqi Tang"
+      ],
+      "published": "2026-07-30T17:46:55Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.28595v1",
+      "abs_url": "https://arxiv.org/abs/2607.28595v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28595v1"
+    },
+    {
+      "title": "Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments",
+      "title_zh": "Change2Task：从存储库更改到可执行编码代理任务和环境",
+      "summary": "Scaling coding agents requires a continuing supply of executable data for training, benchmarking, and continuous evaluation. Each task must couple a realistic software state with a specification, development tools, and reliable verification. To expand this supply, we present Change2Task, a system grounded in repository history that converts merged pull requ…",
+      "summary_zh": "扩展编码代理需要持续提供可执行数据以进行培训、基准测试和持续评估。每项任务都必须将实际的软件状态与规范、开发工具和可靠的验证结合起来。为了扩大这种供应，我们推出了 Change2Task，这是一个基于存储库历史记录的系统，可将合并的拉取请求转换为同一存储库的健康现代修订版上经过验证的任务。它将历史证据与演进的代码结合起来，通过补丁反转、代码映射或代理重建来重建任务状态，并验证从健康基础到任务状态和恢复状态的生命周期。通过从维护的环境中派生基于开发人员证据的多个任务，Change2Task 为编码代理培训和评估提供可执行数据，同时减少重复的环境设置、存储和任务构建工作。我们通过五个常见且广泛采用的编码代理任务系列来评估系统：错误修复、功能添加、测试生成、应用程序编程接口迁移和安全修复。从 1,130 个符合构建条件的源变更开始，Change2Task…",
+      "authors": [
+        "Haomin Qi",
+        "Xingliang Wang",
+        "Xuanqi Gao",
+        "Baihui Sang",
+        "Xin Zhang",
+        "Minghua Ma"
+      ],
+      "published": "2026-07-30T17:44:31Z",
+      "category": "cs.SE",
+      "arxiv_id": "2607.28591v1",
+      "abs_url": "https://arxiv.org/abs/2607.28591v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28591v1"
+    },
+    {
+      "title": "VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation",
+      "title_zh": "VAD：在多模态同策略蒸馏中为目标重建提供视觉证据",
+      "summary": "Multimodal on-policy distillation (OPD) transfers fine-grained visual knowledge by supervising student-generated trajectories with a privileged-view teacher. Yet its next-token corrections are source-mixed, combining visual signals with linguistic priors and teacher-specific effects. The key challenge is to estimate which corrections are supported by visual…",
+      "summary_zh": "多模态同策略蒸馏（OPD）通过特权视图教师监督学生生成的轨迹来传输细粒度的视觉知识。然而，它的下一个标记更正是源混合的，将视觉信号与语言先验和教师特定的效果结合起来。关键的挑战是估计哪些校正得到视觉证据的支持，而不仅仅是在哪里或如何强烈地进行蒸馏。我们引入视觉归因蒸馏（VAD），这是一种反事实目标重建算法，用于估计教师校正的视觉归因部分。对于每个学生生成的前缀，VAD 都会评估同一固定教师，并提供和删除相关证据。中心对数概率的相应变化定义了 ut，它是视觉证据方向的签名代理，用于估计揭示证据如何支持或反驳候选标记。 VAD 将原始校正投影到该代理上，以获得干预对齐分量和代理无法解释的残差，然后根据前者重建学生锚定目标。在训练过程中，这个重建的目标提供主要的监督信号，而特权教师则提供弱正则化器。在 4B 和 9B 尺度的六个细粒度视觉基准中，VAD…",
+      "authors": [
+        "Kangning Zhang",
+        "Yixing Li",
+        "Shuai Shao",
+        "Qingyao Li",
+        "Zhengxi Lu",
+        "Zhiyuan Yao"
+      ],
+      "published": "2026-07-30T17:43:46Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.28590v1",
+      "abs_url": "https://arxiv.org/abs/2607.28590v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28590v1"
+    },
+    {
+      "title": "MixFrag: Fragility-Guided Mixed-Precision Post-Training Quantization for Vision Transformers",
+      "title_zh": "MixFrag：视觉变压器的脆弱性引导混合精度训练后量化",
+      "summary": "Post-training quantization (PTQ) has emerged as an effective solution for deploying Vision Transformers (ViTs) on resource-constrained devices. However, existing PTQ methods typically employ uniform bit-widths across transformer components, overlooking their heterogeneous sensitivity to quantization and leading to inefficient precision allocation. In this p…",
+      "summary_zh": "训练后量化 (PTQ) 已成为在资源受限设备上部署视觉转换器 (ViT) 的有效解决方案。然而，现有的 PTQ 方法通常在变压器组件上采用统一的位宽，忽略了它们对量化的异构敏感性，导致精度分配效率低下。在本文中，我们提出了{MixFrag，一种用于 Vision Transformers 的脆弱性引导的混合精度 PTQ 框架。 MixFrag 首先通过使用小型校准集测量全精度和隔离量化输出分布之间的 Kullback-Leibler (KL) 散度来估计组件级量化脆弱性。然后，它将比特分配公式化为多项选择背包问题 (MCKP)，从而在目标比特预算下实现自适应逐层精度分配。在 ImageNet-1K 上跨多个 Vision Transformer 架构的大量实验表明，MixFrag 在实际混合精度设置下实现了有竞争力的分类性能。此外，对 COCO 对…",
+      "authors": [
+        "Md. Mehrab Hossain Opi",
+        "Robiul Islam Ryad",
+        "Md. Umar Faruk"
+      ],
+      "published": "2026-07-30T17:43:36Z",
+      "category": "cs.CV",
+      "arxiv_id": "2607.28589v1",
+      "abs_url": "https://arxiv.org/abs/2607.28589v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.28589v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "小盒子里有大算力！记者探访江苏太空算力载荷研发一线 - 中国江苏网",
+      "summary": "小盒子里有大算力！记者探访江苏太空算力载荷研发一线 中国江苏网",
+      "source": "中国江苏网",
+      "lang": "zh",
+      "published": "Fri, 31 Jul 2026 03:03:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQktFRG05SjJtN3gwdkE0Z0s3Rm1BRFd6Z3NkVXk1MmZiMlhCeEJqNjktano5SlNJQWtiWjRzSEZ1QnhoajVjVTU4SGtLbWFlODdLWkxKMkJ0WlRrcThEUUM1eWd1THRWZGdsSjhvNzVfbWU5UTVqSW84S2EyZHJPVlNxMmxvSklrVjZj?oc=5"
+    },
+    {
+      "title": "OpenAI突然宣布：GPT-5.6大幅降价，2折起售 - 智东西",
+      "summary": "OpenAI突然宣布：GPT-5.6大幅降价，2折起售 智东西",
+      "source": "智东西",
+      "lang": "zh",
+      "published": "Fri, 31 Jul 2026 01:29:01 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE80WjQ4WDB5bkpzSDRBblluS1NjbjRmVWZ4SE1VYmVQMXdHQ3pobnYzak1jN0Fua2QyNHpjb2tHSlcxZkVPaVE?oc=5"
+    },
+    {
+      "title": "发改委：上半年AI行业增长超30% 智能算力达去年同期2.8倍 - 观点网",
+      "summary": "发改委：上半年AI行业增长超30% 智能算力达去年同期2.8倍 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Fri, 31 Jul 2026 04:48:37 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5FLWpkMkFRRFVicDlMa0NnREtRZEtpVGlPck95RTJTRGg1eHZTUEw4RlNwU1AtSjBZVWg5Vi1abmJXZk9CMTNBWlRSOW9mRzJFQm52VmN4VmFlbXhuR0VJRl9B?oc=5"
+    },
+    {
+      "title": "OpenAI突然杀疯！GPT 5.6系列价格最高暴降80%，AI竟开始自己改代码实现原地飞升 - 华尔街见闻",
+      "summary": "OpenAI突然杀疯！GPT 5.6系列价格最高暴降80%，AI竟开始自己改代码实现原地飞升 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Fri, 31 Jul 2026 00:58:50 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1RZ01uV0hVeVI5SEVjS0dCWGFlOTRuaV90aDhYZ29RTEtMXzk1TVdnMXlxc2RTaklJUmNrMTU3bGROX3pIYmQ3VmVpY3FHdzE5OEMw?oc=5"
+    },
+    {
+      "title": "一图看懂丨AI算力军备持续升温：美股四巨头开支指引再度上调 - 东方财富",
+      "summary": "一图看懂丨AI算力军备持续升温：美股四巨头开支指引再度上调 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Fri, 31 Jul 2026 03:30:59 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8xNDhzZURtQVJxbG5PN3l6ZHJuT3JwbWMwOGVWWkRUUzNoMmZQQmFDQllxQktIVDZHcmtROXpVU0U5N1FIcFA3SVB3NEVnUEVndU1EVWxjVGdRUmdHRjNrdg?oc=5"
+    },
+    {
+      "title": "上线两天被“挤爆”！中国开源模型，火遍全球 - 数字中国建设峰会",
+      "summary": "上线两天被“挤爆”！中国开源模型，火遍全球 数字中国建设峰会",
+      "source": "数字中国建设峰会",
+      "lang": "zh",
+      "published": "Fri, 31 Jul 2026 02:38:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9RZlVELTMwVnRwZ1FDZl9vM0FfRVlUeVRmSVpUZ1BMbDV6YmdfeXlvNmxNOU5McXluWWVGbXlwZG1IOXh2V29DMGppcnlMbDlVaWZyRDJMQTJFcl9EZVIzeEhXRHFWS1NUYllXS3lHXzJxMXJDNGc?oc=5"
+    },
+    {
+      "title": "谷歌Gemini 4预训练计划是否已正式启动？ - 手机新浪网",
+      "summary": "谷歌Gemini 4预训练计划是否已正式启动？ 手机新浪网",
+      "source": "手机新浪网",
+      "lang": "zh",
+      "published": "Fri, 31 Jul 2026 03:13:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1tNHNfNWE2Z2dDcEJWZ1l0UmZ0Y2o5LXZDajhtd1lKTHBuREw3QkxONm45ZldwdDB3TkdnYmdhUHZ0VHJRNjA2Q3pzcjRDVVEtcmpXZTBvTmM5TlAzY2l3TjZ0RWxkU0J0bFp5bmMxQXZpUQ?oc=5"
+    },
+    {
+      "title": "泰岳泰斗 2.0——让AI智能体真正跑通安全运营 - 同花顺财经",
+      "summary": "泰岳泰斗 2.0——让AI智能体真正跑通安全运营 同花顺财经",
+      "source": "同花顺财经",
+      "lang": "zh",
+      "published": "Fri, 31 Jul 2026 02:18:44 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA0SWtCNk1ZR3FfMnp1UUxOaHBUWjdhclBFQ2FFVmNqYnpwTTJGdGNvcU8xXzVkVm05S2NPMUF3Z0FsTEVlYnpKZXRlM3FOVlN1bXJpX1pCNkFYWEVzUzJSaFd3?oc=5"
+    },
+    {
+      "title": "中国AI团队登顶全球权威测试榜单 智能体“实在Agent”创90.2%成功率新纪录 - finance.sina.com.cn",
+      "summary": "中国AI团队登顶全球权威测试榜单 智能体“实在Agent”创90.2%成功率新纪录 finance.sina.com.cn",
+      "source": "finance.sina.com.cn",
+      "lang": "zh",
+      "published": "Fri, 31 Jul 2026 04:45:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQOXVYLTlCOE1RX29wOHFualZ2aHAtTjc1b0h5Y2hKTFotZHExVEFSaE1wSlV0SGNNNTJsRnBZTmw5allTTndNSXhhZE5DdXloRXRCb2ZDQkFDQ1ItRVIycWhuaEo0dnRjc25XWUg4eGJyRkQwOHJmSEljdmt4b1NERWJlekJBVXU0cEpHMF9hSGxiM25EeExvblZ6UGZUdmxRMVV0SmMwQQ?oc=5"
+    },
+    {
+      "title": "破100亿次！中国开源模型下载量全球第一 - 京报网",
+      "summary": "破100亿次！中国开源模型下载量全球第一 京报网",
+      "source": "京报网",
+      "lang": "zh",
+      "published": "Thu, 30 Jul 2026 22:41:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBmYmJJRkhFUEJXS2I4X1VhTmlvd2xKLVk1R3d5a012UW1oWEtCSi1RUUJnZ3FaS2NkUjBkdWRoakdEUDZyQ2R4QTc5THg4NDBzbm50dHBxY0o4b0J6aEl3MUU5ODY0Q3pDVEUwZWFYQlNOUQ?oc=5"
+    },
+    {
+      "title": "OpenAI推出GPT-5.6“促销”：Luna降价80%，Sol首推2.5倍速“反向加价”模式 - 华尔街见闻",
+      "summary": "OpenAI推出GPT-5.6“促销”：Luna降价80%，Sol首推2.5倍速“反向加价”模式 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Thu, 30 Jul 2026 20:11:19 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Oc2NTeHc2emE1ay00OG9rYWRaUGkwb25RaGNQWVQ0RU0ySl9STzFEY0doS092azE4YjRpU2pkSUNGODJZSFZjQWR3b2dpa0lLbEhN?oc=5"
+    },
+    {
+      "title": "发改委：加快人工智能法立法进程 上半年国产大模型下载量突破100亿次 - 观点网",
+      "summary": "发改委：加快人工智能法立法进程 上半年国产大模型下载量突破100亿次 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Fri, 31 Jul 2026 04:50:13 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9MbGxTLTU0cllYUF9YY1EyakNTVUY2dEFnaGYyMVkxaUtuWXZLcmhQU3gwdGdsbG9hM2ZGc2Rudk1PbGpZSElxT3VLci00TGpPMGlqa0RzaVFTV0M1WWoxR3Fn?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 91629,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 63458,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57389,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 36685,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 35659,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 384638,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 264076,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 223026,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
