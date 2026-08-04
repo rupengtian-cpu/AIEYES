@@ -1,0 +1,411 @@
+{
+  "date": "2026-08-04",
+  "generated_at": "2026-08-04T05:39:16.718332+00:00",
+  "paper_count": 12,
+  "news_count": 0,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "WorldExam: Benchmarking World Models from Apparent Appearance to Inherent Reactivity",
+      "title_zh": "WorldExam：从外观到内在反应性对世界模型进行基准测试",
+      "summary": "Controllable video generation models are increasingly being developed as world models. Accordingly, evaluating them in this role extends beyond the apparent appearance of generated videos to the inherent reactivity of the worlds they depict: the ability to infer from the scene state how the world should react and to generate plausible consequences not expli…",
+      "summary_zh": "可控视频生成模型越来越多地被开发为世界模型。因此，在这个角色中评估它们超出了生成视频的外观，扩展到它们所描绘的世界的固有反应性：从场景状态推断世界应该如何反应并生成输入中未明确描述的合理结果的能力。然而，现有的基准主要通过检查所请求的动作和交互结果是否实现来评估视觉质量或明确的指令履行情况，而没有充分检查固有的反应性。我们推出了 WorldExam，这是一个跨越四个级别的分层诊断基准：视觉质量、控制依从性、空间一致性和世界反应性。它包含 8 个专门任务的 1,474 个案例，并支持对相机、动作和语言驱动的模型范式进行统一评估。世界反应级别评估超出输入中明确指定的场景条件反应和目标导向行为。对 20 个代表性模型的评估揭示了明显的能力分化。相机驱动模型擅长相机控制，但其界面不支持动态交互；行动驱动的模型可以更精确地控制主体，但往往会让世界反应迟钝；语…",
+      "authors": [
+        "Yuxue Yang",
+        "Shuyao Shang",
+        "Jiahe Wang",
+        "Zitong Zhou",
+        "Liang Tan",
+        "Junhan Zeng"
+      ],
+      "published": "2026-08-03T17:59:54Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.02603v1",
+      "abs_url": "https://arxiv.org/abs/2608.02603v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02603v1"
+    },
+    {
+      "title": "AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling",
+      "title_zh": "AURORA-LM：连续潜在扩散语言建模的自动编码统一表示",
+      "summary": "Language remains an outlier in generative modeling: while images, video, and audio are increasingly modeled in continuous latent spaces, text generation still relies predominantly on discrete tokens. Existing continuous language models either inherit embedding spaces not designed for joint generation and decoding, or compress autoencoded latents to ease dif…",
+      "summary_zh": "语言在生成建模中仍然是一个异常值：虽然图像、视频和音频越来越多地在连续潜在空间中建模，但文本生成仍然主要依赖于离散标记。现有的连续语言模型要么继承不是为联合生成和解码而设计的嵌入空间，要么压缩自动编码的潜在变量以方便扩散，从而牺牲令牌级保真度。我们没有简化表示以适应生成模型，而是保留高容量、可解码的潜在文本，并设计扩散模型来直接学习其分布。我们引入了 AURORA-LM，一种连续潜在扩散语言模型，它将可解​​码文本表示的构建与其分布建模分开。基于查询的编码器-解码器将文本组织成大容量、前缀对齐的潜在序列，块因果扩散变换器通过流匹配学习其分布，从左到右生成块，同时并行对每个块内的位置进行去噪。由于这种潜在模型更难扩散到模型，因此 AURORA-LM 仅限制噪声输入路径，同时保留完整的干净潜在预测目标，在不减少面向解码器的容量的情况下容纳全宽度潜在模型…",
+      "authors": [
+        "Jiajun Liang",
+        "Yucheng Liao",
+        "Yukang Cao",
+        "Jiazhe Wei",
+        "Ken Li",
+        "Wende Tan"
+      ],
+      "published": "2026-08-03T17:59:50Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.02602v1",
+      "abs_url": "https://arxiv.org/abs/2608.02602v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02602v1"
+    },
+    {
+      "title": "VR3D: View-Robust 3D Representation Learning for Aerial-Ground Person Re-Identification",
+      "title_zh": "VR3D：用于空中-地面人员重新识别的视图鲁棒 3D 表示学习",
+      "summary": "Aerial-ground person re-identification is a challenging task due to cross-platform viewpoint variations, which cause severe occlusion and geometric deformation. Existing methods attempt to learn view-invariant representations exclusively within the 2D image space, where drastic viewpoint variations cause the learned features to remain coupled with viewpoint…",
+      "summary_zh": "由于跨平台视点变化，导致严重的遮挡和几何变形，空中-地面人员重新识别是一项具有挑战性的任务。现有方法试图仅在 2D 图像空间内学习视图不变表示，其中剧烈的视点变化导致学习到的特征与视点偏差保持耦合。为了解决这个问题，我们提出了 VR3D，一种视图鲁棒的 3D 表示学习框架，它将图像映射到统一的 3D 坐标空间中，以实现与视图无关的特征交互。具体来说，我们引入了视图鲁棒 3D 表示交互，它利用从单个 2D 观察中提取的 3D 先验，将 2D 外观特征提升到规范的 3D 空间中。 VR3I 采用 3D 几何语义注意力，基于 3D 空间位置在相应身体部位的 2D 补丁和 3D 体素之间建立交互，从而有效地将 2D 语义扎根于 3D 框架内。此外，由于视点变化和 3D 重建误差导致这些表示的可靠性在样本之间存在差异，因此我们引入了可靠性感知融合，它可以估计…",
+      "authors": [
+        "Chao Ji",
+        "Shiyu Xuan",
+        "Zechao Li"
+      ],
+      "published": "2026-08-03T17:59:01Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.02598v1",
+      "abs_url": "https://arxiv.org/abs/2608.02598v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02598v1"
+    },
+    {
+      "title": "onepot-Bench 0: towards lab-aware in silico chemistry benchmarks",
+      "title_zh": "onepot-Bench 0：迈向具有实验室意识的硅化学基准",
+      "summary": "Language models are playing an increasingly important role in laboratory science, performing tasks such as experiment planning, execution, and post-hoc analysis. However, precisely measuring their abilities is difficult, as scientific capabilities require a mixture of both problem-solving skills and domain-specific intuition. Existing evaluations rarely mea…",
+      "summary_zh": "语言模型在实验室科学中发挥着越来越重要的作用，执行实验规划、执行和事后分析等任务。然而，精确衡量他们的能力很困难，因为科学能力需要解决问题的技能和特定领域的直觉的结合。现有的评估很少衡量在物理实验室中做出可靠决策所需的能力，并且通常依赖于模型训练语料库中可能出现的公共数据。我们推出了 onepot-Bench 0，这是一个专有的基准套件，用于评估与湿实验室执行相关的合成化学功能的语言模型。 onepot-Bench 0 包含三个补充评估：ChemAbacus 衡量免工具化学信息学素养和数字推理； SynthRefusal 描述了各种良性、受控和设计药物靶标的安全性和拒绝行为； SynthBench 使用我们实验室生成的私人实验数据评估反应结果预测和催化剂选择。这些评估共同探讨了基本能力、可靠性和更深入的知识，以及在实验室中实现可靠性能所需的所有技能。",
+      "authors": [
+        "Brandon Wang",
+        "Andrei S. Tyrin",
+        "Daniil A. Boiko"
+      ],
+      "published": "2026-08-03T17:58:27Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.02595v1",
+      "abs_url": "https://arxiv.org/abs/2608.02595v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02595v1"
+    },
+    {
+      "title": "CAPEval: A Decoupled Caption Evaluation across Understanding and Generation",
+      "title_zh": "CAPEval：跨理解和生成的解耦字幕评估",
+      "summary": "Captions serve as a primary supervision signal for both multimodal understanding and text-to-image generation. However, previous evaluations treat the caption quality as a single scalar objective, which conflates two distinct properties: (1) how much visual information a caption covers and (2) how reliably the image supports its stated claims. To this end,…",
+      "summary_zh": "字幕是多模态理解和文本到图像生成的主要监督信号。然而，以前的评估将标题质量视为单个标量目标，它合并了两个不同的属性：（1）标题覆盖了多少视觉信息；（2）图像支持其声明的可靠性如何。为此，我们设计了一个解耦的字幕评估基准 CAPEval（覆盖率和精度评估），其中包含人工编写的真实字幕和人工验证的原子检查表项目。具体来说，CAPEval 将字幕质量分解为覆盖率和精度。前者量化了标题对真实事实内容的覆盖程度，而后者则反映了标题中表达的所有主张的事实正确率。我们选择 10 个字幕生成器，并进一步对来自四个模型系列的他们进行受控的下游端到端实验，其中字幕源是唯一的变量。根据经验，我们发现了一致的任务依赖性分离：覆盖率作为理解性能的更强相关性，而精度作为发电性能的主要预测因子。这种解耦的评估范例不仅可以提供更细粒度的字幕质量诊断，而且还为选择和优化针对不同下游…",
+      "authors": [
+        "Zhipeng Liu",
+        "Haochen Wang",
+        "Zhaoxiang Zhang"
+      ],
+      "published": "2026-08-03T17:57:03Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.02589v1",
+      "abs_url": "https://arxiv.org/abs/2608.02589v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02589v1"
+    },
+    {
+      "title": "GradCuit: Credit-Assigned Gradient Flow Enables Robust and Interpretable Test-Time Latent Reasoning",
+      "title_zh": "GradCuit：信用分配的梯度流可实现稳健且可解释的测试时潜在推理",
+      "summary": "Optimization-based latent reasoning improves large language model outputs by optimizing instance-specific continuous states at test time while keeping model parameters frozen. Existing methods, however, typically connect these states to the reasoning trajectory through decoded tokens, making sequence-level credit assignment indirect and obscuring how latent…",
+      "summary_zh": "基于优化的潜在推理通过在测试时优化特定于实例的连续状态同时保持模型参数冻结来改进大型语言模型输出。然而，现有方法通常通过解码的标记将这些状态连接到推理轨迹，从而使序列级信用分配变得间接，并模糊了潜在更新如何塑造后续推理。我们引入了 GradCuit（通过电路的梯度），它在提示的隐藏表示和生成的延续之间的选定 Transformer 层插入可优化的潜在状态。因果自注意力为每个连续标记对数概率提供了通过剩余 Transformer 块到达每个先前潜在状态的可微路径，从而使整个连续的奖励加权梯度能够直接分配给潜在状态。在五个指令调整的主干、三个推理基准和两种答案格式中，GradCuit 的平均准确率达到 64.5%，比思想链提示高 6.6 个百分点，比最强竞争方法高 2.4 个百分点。 GradCuit 还表现出更高的稳健性：在七种学习率设置中，它始终优…",
+      "authors": [
+        "Zhaoxin Yu",
+        "Qi Shen",
+        "Hengli Li",
+        "Zhaowei Zhang",
+        "Song-Chun Zhu",
+        "Chi Zhang"
+      ],
+      "published": "2026-08-03T17:55:24Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.02585v1",
+      "abs_url": "https://arxiv.org/abs/2608.02585v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02585v1"
+    },
+    {
+      "title": "Ego2Robot: Scalable Robot Data Synthesis from Egocentric Human Data",
+      "title_zh": "Ego2Robot：从以自我为中心的人类数据合成可扩展的机器人数据",
+      "summary": "Learning generalizable robot manipulation policies requires large-scale and diverse demonstration data. Egocentric human manipulation videos offer rich scene and task diversity, and prior work has shown that retargeting and rendering such videos into robot-format data can yield effective per-task policies at small scale. However, whether this approach can p…",
+      "summary_zh": "学习可推广的机器人操纵策略需要大规模且多样化的演示数据。以自我为中心的人类操作视频提供了丰富的场景和任务多样性，之前的工作表明，将此类视频重新定位并渲染为机器人格式的数据可以在小规模下产生有效的每任务策略。然而，这种方法是否能为大规模的视觉-语言-动作模型提供预训练的好处仍有待探索。我们提出了 \\textbf{Ego2Robot}，这是一个可扩展的管道，通过动作重定向、机器人手臂视觉合成和多级质量管理，将以自我为中心的人类操作视频转换为机器人训练数据。 Ego2Robot 支持精选数据集和野外视频，生成涵盖 15 个机器人形态的 18,561 小时的机器人训练数据，使其成为迄今为止最大的自我到机器人数据集。为了评估泛化性，我们使用涵盖视觉外观、场景布局、实施例形态和任务语义的解缠扰轴扩展了 RoboTwin2.0。实验表明，对 Ego2Robot…",
+      "authors": [
+        "Ye Wang",
+        "Pei Lin",
+        "Xiong-Hui Chen",
+        "Haoqi Yuan",
+        "Zhixuan Liang",
+        "Yiyang Huang"
+      ],
+      "published": "2026-08-03T17:52:26Z",
+      "category": "cs.RO",
+      "arxiv_id": "2608.02580v1",
+      "abs_url": "https://arxiv.org/abs/2608.02580v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02580v1"
+    },
+    {
+      "title": "Pseudorandom Streams within Diffusion Models Act as Learnable Inputs That Affect Generation Quality",
+      "title_zh": "扩散模型中的伪随机流充当影响生成质量的可学习输入",
+      "summary": "Diffusion models rely on stochastic inputs, yet on finite-precision hardware, the \"randomness\" they consume is realized as deterministic numerical orbits generated by pseudorandom rules. Accessible orbit structure can become a learnable input and affect both training and generation because the realized loss and its gradient depend on the concrete pseudorand…",
+      "summary_zh": "扩散模型依赖于随机输入，但在有限精度硬件上，它们消耗的“随机性”被实现为由伪随机规则生成的确定性数值轨道。可访问的轨道结构可以成为可学习的输入，并影响训练和生成，因为实现的损失及其梯度取决于每个优化步骤消耗的具体伪随机值。小型多层感知器根据轨道最近的历史记录来预测轨道的下一个值，测量一般序列的可预测性。扩散探针用在线随机张量替换真实图像，同时保留扩散架构和训练目标，测量目标系统是否可以利用轨道结构。在控制边际统计并筛选出明显的动力学和有限精度故障后，剩余轨道在 MNIST 和 CIFAR-10 上仍然会产生明显不同的扩散损失和生成质量。尽管局部排名不同，但这两项指标都显示出与宏观发电退化的强烈排名相关性。通过 IID 基线归一化后，探针损耗和真实数据扩散损耗大致遵循经验幂律，两个数据集具有不同的指数。这些结果表明伪随机源不仅是一种分布选择，而且是一…",
+      "authors": [
+        "Shengzhi Deng",
+        "Chenqi Ye",
+        "Yanze Guo"
+      ],
+      "published": "2026-08-03T17:50:54Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.02575v1",
+      "abs_url": "https://arxiv.org/abs/2608.02575v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02575v1"
+    },
+    {
+      "title": "Situation Aware Frontier Prioritization for Quadruped Search and Rescue",
+      "title_zh": "四足动物搜索和救援的态势感知前沿优先级",
+      "summary": "Quadruped robots are a promising platform for search and rescue missions because they can navigate cluttered indoor environments that may be restrictive for wheeled systems. However, in unknown rescue scenarios, autonomous exploration must balance map expansion with the likelihood of finding victims, which is not explicitly addressed by clas- sical frontier…",
+      "summary_zh": "四足机器人是执行搜索和救援任务的有前途的平台，因为它们可以在杂乱的室内环境中导航，而这对于轮式系统可能是有限制的。然而，在未知的救援场景中，自主探索必须平衡地图扩展与发现受害者的可能性，而经典的边界选择策略并没有明确解决这一问题。本文提出了一种用于单机器人四足搜救的态势感知前沿优先级方法。所提出的方法保留了前沿探索框架，但通过信息增益、观测缺陷、救援相关性、地形惩罚和旅行成本扩展了前沿排名。在两个不同难度级别的室内救援场景中，使用四足机器人在 Gazebo 模拟中对该方法进行了评估。第一个场景用作健全性检查，而第二个场景则引入了更强的混乱和边界模糊性。实验结果表明，所有方法在简单场景下都表现可靠，而在复杂场景下则不同。在这种情况下，所提出的方法在评估的方法中实现了最高的完成率和最高的受害者恢复率。这些结果表明，当前沿选择变得重要并且救援效用必须与一…",
+      "authors": [
+        "Kevin Farias",
+        "Santiago Martin",
+        "Barbara Flores",
+        "Vinicio Melgar",
+        "Igor Nunes",
+        "Hiago Sodre"
+      ],
+      "published": "2026-08-03T17:48:16Z",
+      "category": "cs.RO",
+      "arxiv_id": "2608.02571v1",
+      "abs_url": "https://arxiv.org/abs/2608.02571v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02571v1"
+    },
+    {
+      "title": "AtumAI: A Principled Framework for Agentic Generation of Datacenter Control-Plane Policies",
+      "title_zh": "AtumAI：数据中心控制平面策略代理生成的原则框架",
+      "summary": "The efficiency of a datacenter rests on its control plane policies. Designing these policies is increasingly hard: the hardware-software stack grows fast, the design space is vast and interdependent, and prototyping a single policy takes months. Agentic AI promises to automate this search. Off the shelf, however, it falls short on three fronts. It is not fo…",
+      "summary_zh": "数据中心的效率取决于其控制平面策略。设计这些策略变得越来越困难：硬件-软件堆栈快速增长，设计空间巨大且相互依赖，并且制作单个策略的原型需要数月时间。 Agentic AI 有望实现这一搜索的自动化。然而，现成的它在三个方面存在不足。它不是正式的：没有结构化的、可搜索的问题陈述，搜索几乎没有可利用的结构，并且不能保证硬约束。它不可转移：每项任务都是从头开始解决的，因此在一项任务中学到的任何内容都不会转移到下一项任务中。最后，它不是系统性的：依靠法学硕士作为候选人的唯一来源，它探索设计空间的一小部分并陷入局部最优。我们引入了 AtumAI，这是一个利用代理 AI 生成数据中心控制平面策略的框架，使该过程正式、可转移且系统化。从用简单语言表述的目标出发，AtumAI 自主提出、测试和完善候选政策，直到满足要求。它通过两个组件来实现这一点。数据中心任务编译…",
+      "authors": [
+        "Qiushi Lin",
+        "Chaojie Zhang",
+        "Íñigo Goiri",
+        "Aditya Akella",
+        "Ricardo Bianchini",
+        "Jovan Stojkovic"
+      ],
+      "published": "2026-08-03T17:45:58Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.02569v1",
+      "abs_url": "https://arxiv.org/abs/2608.02569v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02569v1"
+    },
+    {
+      "title": "ReMiX-MAE: Learning Missing-Channel Cross-Modal Representations from RGB-Only Clinical Facial Videos for Sympathetic-Mediated Pain Assessment",
+      "title_zh": "ReMiX-MAE：从仅 RGB 的临床面部视频中学习缺失通道跨模态表示，用于交感神经介导的疼痛评估",
+      "summary": "Automated pain assessment in real clinics is limited by scarce clinically grounded facial video data with weak labels (often sequence-level self-report) and by the fact that pain cues can be subtle or near-neutral in RGB, while thermal and depth signals are informative yet impractical to deploy routinely. To address these challenges, we propose ReMiX-MAE (R…",
+      "summary_zh": "真实诊所中的自动疼痛评估受到以下因素的限制：临床基础面部视频数据稀缺且标签较弱（通常是序列级自我报告），而且疼痛线索在 RGB 中可能很微妙或接近中性，而热信号和深度信号信息丰富，但常规部署不切实际。为了应对这些挑战，我们提出了 ReMiX-MAE（重建缺失通道跨模态掩码自动编码器），这是一种自监督多模态掩码预训练框架，可以从同步 RGB、热和深度视频中学习可转移的面部表示，并显式训练对缺失模态的鲁棒性，从而实现仅 RGB 部署。为了通过视频级自我报告和纵向治疗轨迹填补临床基础面部疼痛数据的空白，我们收集了交感神经介导疼痛（SMP）数据集，以及多次就诊的配对前后记录。在仅 RGB 部署下，我们使用直接特征提取和从 RGB 解码的伪多模态特征来评估 ReMiX-MAE。 ReMiX-MAE 在 SMP 上始终优于仅 RGB 屏蔽自动编码器基线，其伪多…",
+      "authors": [
+        "Nan Bi",
+        "Taoyue Wang",
+        "Lijun Yin",
+        "Vandana Sharma"
+      ],
+      "published": "2026-08-03T17:43:53Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.02561v1",
+      "abs_url": "https://arxiv.org/abs/2608.02561v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02561v1"
+    },
+    {
+      "title": "Benchmarking Sheaf Neural Networks for Inductive Tasks",
+      "title_zh": "归纳任务的层神经网络基准测试",
+      "summary": "Sheaf Neural Networks (SNNs) generalize message passing by replacing scalar edge weights of standard Graph Neural Networks (GNNs) with learnable, edge-dependent restriction maps between node stalks. Despite their strong theoretical foundations and promising transductive results, SNNs have been evaluated almost exclusively on transductive node classification…",
+      "summary_zh": "层神经网络 (SNN) 通过将标准图神经网络 (GNN) 的标量边缘权重替换为节点茎之间可学习的、边缘相关的限制图来概括消息传递。尽管 SNN 具有强大的理论基础和有希望的转导结果，但它们几乎完全在转导节点分类上进行评估，使其在归纳协议下的行为未知。我们通过层设计空间的第一个系统基准来解决这一差距，评估三种扩散机制（神经层扩散、层注意和图注意网络 v2 的层注意）、三个限制图参数化、三个茎维度和六个现代 GNN 架构组件，在一个从不组装重型层拉普拉斯的消息传递重构中，使整个设计空间在跨图批处理下可训练。通过对 14 个归纳数据集进行 1{,}890$ 美元的对照实验，得出了多种见解：限制图是主要的设计选择，通用图更可取，较大的茎增加了容量，但不能增加长距离范围，架构组件解释了比整个特定层设计空间本身更多的性能变化。在匹配的协议下，SNN 会转移到归…",
+      "authors": [
+        "Stefano Fiorini",
+        "Edoardo Coppola",
+        "Pietro Liò"
+      ],
+      "published": "2026-08-03T17:41:20Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.02558v1",
+      "abs_url": "https://arxiv.org/abs/2608.02558v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02558v1"
+    }
+  ],
+  "news": [],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 91787,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 64448,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57403,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 37332,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 35789,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 385058,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 265843,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 225023,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
