@@ -1,0 +1,514 @@
+{
+  "date": "2026-08-05",
+  "generated_at": "2026-08-05T05:36:46.039095+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "ParVL: Parallel Scaling and Expandable Compute Allocation for Multimodal LLMs",
+      "title_zh": "ParVL：多模式法学硕士的并行扩展和可扩展计算分配",
+      "summary": "Existing scaling strategies for Multimodal Large Language Models (MLLMs) typically expand either model parameters or sequential inference computation, incurring substantial memory or latency overhead. More importantly, most existing methods fail to alter the rigid, fixed computation allocation between the Vision Transformer and the Large Language Model comp…",
+      "summary_zh": "多模态大型语言模型 (MLLM) 的现有扩展策略通常会扩展模型参数或顺序推理计算，从而产生大量内存或延迟开销。更重要的是，大多数现有方法无法改变视觉转换器和大型语言模型组件之间严格的、固定的计算分配，从而限制了特定于任务的优化。为了解决这个问题，我们引入了 MLLM 的并行视觉语言 (ParVL) 扩展框架，该框架通过跨多个视觉和语言分支重用现有的 ViT 和 LLM 主干参数来扩展并行计算。该框架提出了一个核心问题：给定固定的主干参数预算，额外的共享主干计算应如何在视觉和语言模态之间分配？我们在共享主干上使用特定于分支的前缀参数实例化每个并行计算流，并通过对大约 13B 令牌的全参数监督微调来端到端训练整个模型。我们系统地研究了 ViT 编码器和 LLM 解码器之间的计算分配权衡。与相同方法的单分支基线相比，ParVL 提高了整体多模态性能，并且…",
+      "authors": [
+        "Yang Yang",
+        "Qinyu Zhao",
+        "Mouxiang Chen",
+        "Xiaohui Li",
+        "Lixin Gu",
+        "Wenhai Wang"
+      ],
+      "published": "2026-08-04T17:59:58Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.04010v1",
+      "abs_url": "https://arxiv.org/abs/2608.04010v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.04010v1"
+    },
+    {
+      "title": "SocietyBench: Forecasting Counterfactual Social-World Evolution",
+      "title_zh": "SocietyBench：预测反事实的社会世界演变",
+      "summary": "Large language models (LLMs), and the agents built on top of them, are now benchmarked heavily on whether they can finish a task -- fix a bug, drive a browser, operate a GUI. A complementary social ability, namely how well a model understands and forecasts the way real social events unfold, has barely been measured. We introduce SocietyBench, an end-to-end…",
+      "summary_zh": "大型语言模型 (LLM) 以及构建在其之上的代理现在主要针对它们是否能够完成任务（修复错误、驱动浏览器、操作 GUI）进行基准测试。一种互补的社交能力，即模型对真实社会事件展开方式的理解和预测程度，几乎没有被测量过。我们引入了 SocietyBench，这是一种端到端基准测试，它采用单行事件主题，收集五个平台上的网络新闻和社交媒体帖子，将它们提炼成一个日期索引的时间线，将事实事件和公众舆论层分开，然后将该时间线上的每个截止日期转变为经过审计的预测问题库。问题在两个正交的 100 点轴上进行评分：概率校准和时间准确性。在任何模型看到时间线之前，一个三阶段过程会替换每个命名实体，并按每个事件的常量移动每个日期，将真实的弧线转变为反事实的社交世界——结构与所发生的情况相同，但剥离了模型可以与训练前记忆相匹配的表面标签。在中文和英文版本中的五个异质事件和…",
+      "authors": [
+        "Zhenran Wang",
+        "Zhonghan Bian",
+        "Jinsong Li",
+        "Zhangyang Qi"
+      ],
+      "published": "2026-08-04T17:59:56Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.04009v1",
+      "abs_url": "https://arxiv.org/abs/2608.04009v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.04009v1"
+    },
+    {
+      "title": "WorldCup Arena: Prospective, Leakage-Free Evaluation of Frontier LLMs on a Live Tournament",
+      "title_zh": "世界杯竞技场：在现场锦标赛中对前沿法学硕士进行前瞻性、无泄漏评估",
+      "summary": "Benchmarks that measure the forecasting ability of large language models are almost always retrospective: the event has happened, the answer is somewhere on the Web, and the evaluation must defend itself against memorisation. We report the opposite design. Over the 39 days of the 2026 FIFA World Cup, six frontier LLMs -- all with extended thinking and nativ…",
+      "summary_zh": "衡量大型语言模型预测能力的基准几乎总是回顾性的：事件已经发生，答案就在网络上的某个地方，并且评估必须防止记忆。我们报告了相反的设计。在 2026 年 FIFA 世界杯的 39 天里，六位前沿法学硕士（均具有扩展思维和本地服务器端网络搜索）在每次开赛前（一次一场比赛）都被要求填写一张针对所有 104 场比赛的 7 个市场预测卡，以及 12 个小组冠军和赛前总冠军池；提出问题时不存在答案，因此评估通过构建而不是通过过滤实现无泄漏，并且冻结档案保存了 4,494 个评分预测。锦标赛建立的是六个系统共享的一组行为。在比赛结果方面，他们的平均赔率为 63.9%，与支持博彩公司最喜欢的球队持平——事实上，这也是他们通常所做的。他们彼此意见一致的次数远远多于他们正确的次数，因此多数票不会增加任何结果。他们对平局和进球的承诺不足，并将他们的比分选择集中到一个典型的…",
+      "authors": [
+        "Zhenran Wang",
+        "Zhonghan Bian",
+        "Jinsong Li",
+        "Zhangyang Qi"
+      ],
+      "published": "2026-08-04T17:59:55Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.04008v1",
+      "abs_url": "https://arxiv.org/abs/2608.04008v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.04008v1"
+    },
+    {
+      "title": "TurnSight: Turn-Level Hindsight Self-Distillation for Tool-Integrated Reasoning",
+      "title_zh": "TurnSight：用于工具集成推理的旋转级事后自蒸馏",
+      "summary": "Tool-Integrated Reasoning (TIR) enables LLMs to solve complex tasks through iterative tool interactions. However, existing reinforcement learning methods often rely on trajectory-level supervision, limiting fine-grained credit assignment in long-horizon TIR scenarios. On-policy self-distillation offers denser signals through teacher branches with privileged…",
+      "summary_zh": "工具集成推理 (TIR) 使法学硕士能够通过迭代工具交互来解决复杂的任务。然而，现有的强化学习方法通​​常依赖于轨迹级监督，限制了长视野 TIR 场景中的细粒度信用分配。策略自蒸馏通过具有特权上下文的教师分支提供更密集的信号，但现有方法通常从真实答案或检索到的技能中获取此类上下文，这可能无法反映代理实际访问的状态。此外，代币级监管无法捕捉工具交互的回合级结构。为了解决这个问题，我们提出了 TurnSight，一个回合级后见之明自蒸馏框架，直接从执行条件后见之明中获得监督。然后，它构建具有不同前瞻视野的多个后见之明视图，并通过跨视野定向协议选择可靠的监督。最后，所选的后见之明信号在同级推出中进行标准化，并用于自适应地调节 RL 优势，同时保留其原始优化方向。对三个基准的大量实验证明了 TurnSight 的有效性。我们的代码可从 https://gi…",
+      "authors": [
+        "Changle Qu",
+        "Sunhao Dai",
+        "Hengyi Cai",
+        "Yuqi Zhou",
+        "Xinran Chen",
+        "Simon"
+      ],
+      "published": "2026-08-04T17:59:21Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.04007v1",
+      "abs_url": "https://arxiv.org/abs/2608.04007v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.04007v1"
+    },
+    {
+      "title": "PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents",
+      "title_zh": "PAST-Bench：对个人代理递归自我改进的基础进行基准测试",
+      "summary": "Recursive self-improvement requires agents to turn accumulated experience into better future behavior. Personal AI agents offer a concrete setting for studying this capability because they retain preferences, task histories, tool routines, and learned skills across sessions. Yet whether retained experience actually improves them over time has not been syste…",
+      "summary_zh": "递归的自我改进要求智能体将积累的经验转化为更好的未来行为。个人人工智能代理为研究这种能力提供了一个具体的环境，因为它们保留了偏好、任务历史、工具例程和跨会话学习的技能。然而，随着时间的推移，保留的经验是否真的能提高他们的水平，还没有经过系统的测试。我们引入了 PAST-Bench，这是一个旨在隔离这个问题的基准测试。每个代理在匹配的条件下运行新鲜会话任务的有序序列，从而打开和关闭保留的体验。它涵盖了 26 个场景和 204 个情节，涉及记忆、程序重用、信息收集和更新。我们报告后期任务的收益以及这些收益是否遵循预期的保存、检索和更新路径。在七个基本模型和四个代理框架中，改进是真实的，但各个功能的改进并不均衡。具有相同标题收益的代理商可能在该收益是否得到预期途径证据的支持方面存在显着差异。在这些发现的指导下，我们开发了 Hermes+，它通过跨代理循环…",
+      "authors": [
+        "Shuhan Xue",
+        "Zixin Ding",
+        "Yichen Shen",
+        "Yinjie Wang",
+        "Zhenfei Yin",
+        "Yingcheng Wu"
+      ],
+      "published": "2026-08-04T17:58:05Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.04003v1",
+      "abs_url": "https://arxiv.org/abs/2608.04003v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.04003v1"
+    },
+    {
+      "title": "Test-Time Scaling in Reasoning LLMs: Inference Regimes, Evaluation, and Reproducibility",
+      "title_zh": "推理法学硕士中的测试时间缩放：推理机制、评估和再现性",
+      "summary": "Large language models can solve substantially harder reasoning problems with more inference-time compute. The term \"test-time scaling,\" however, now covers diverse inference algorithms that extend deliberation along a single trajectory, sample completed candidates and aggregate them through voting or verification, or search over unfinished partial states. T…",
+      "summary_zh": "大型语言模型可以通过更多的推理时间计算来解决更困难的推理问题。然而，术语“测试时间缩放”现在涵盖了多种推理算法，这些算法沿着单一轨迹扩展审议，对已完成的候选样本进行采样，并通过投票或验证或对未完成的部分状态进行搜索来聚合它们。这些算法在统计结构、计算核算和故障模式方面有所不同。在单个标量“预算”下将这些程序视为可互换的，或者在没有生成它的推理协议的情况下报告准确性，使得难以在研究之间比较结果。我们开发了沿三个轴的测试时间缩放的系统说明。首先，我们将测试时间缩放形式化为自回归模型的隐式前缀树上的预算推理，并区分三种结构机制：单轨迹顺序缩放、具有终端缩减的叶级缩放和前缀级缩放。其次，我们将评估对象视为整个推理系统，并制定将端到端系统性能与候选库诊断分开的评估原则。我们引入了一种评估配置文件，其坐标和简单函数恢复或绑定常见的重复采样指标，并规定了计算和不…",
+      "authors": [
+        "Mohsen Hariri",
+        "Weicong Chen",
+        "Nahal Shahini",
+        "Vikash Singh",
+        "Kai Ye",
+        "Amirhossein Samandar"
+      ],
+      "published": "2026-08-04T17:57:20Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.04001v1",
+      "abs_url": "https://arxiv.org/abs/2608.04001v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.04001v1"
+    },
+    {
+      "title": "When Attention Goes Blind: Numerical Failure in ALiBi Positional Encodings",
+      "title_zh": "当注意力变得盲目时：ALiBi 位置编码中的数字失败",
+      "summary": "We identify a previously overlooked failure mode of ALiBi positional encoding: its linear bias scaling underflows floating-point precision, which zeroes out a large fraction of attention weights and renders the affected attention heads partially blind. We analyze this failure mode, characterize its impact, and examine four mitigation strategies. We further…",
+      "summary_zh": "我们发现了 ALiBi 位置编码的一个先前被忽视的故障模式：它的线性偏差缩放导致浮点精度下溢，从而将大部分注意力权重归零，并使受影响的注意力头部分失明。我们分析了这种故障模式，描述了其影响，并研究了四种缓解策略。我们进一步证明了它在基于 ALiBi 的最先进的预训练模型中的出现。使用 148M 参数解码器模型进行全面的预训练实验有助于我们消除脱离上下文退化的影响。我们发现 ALiBi 的故障模式会严重损害令牌检索，而对标准解码器基准测试的影响很小。我们提出了四种训练时间缓解策略，并对它们进行单独和组合评估，发现对数尺度距离在密钥检索方面产生最一致的改进。尽管存在这个问题，默认的 ALiBi 斜率仍然是一个令人惊讶的强基线，特别是对于大海捞针检索来说。基于这些发现，我们提供了有关如何使用 ALiBi 训练模型的具体建议。",
+      "authors": [
+        "Christopher Schröder",
+        "Lukas Gienapp",
+        "Ferdinand Schlatt",
+        "Martin Potthast",
+        "Gerhard Heyer"
+      ],
+      "published": "2026-08-04T17:54:01Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.03994v1",
+      "abs_url": "https://arxiv.org/abs/2608.03994v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.03994v1"
+    },
+    {
+      "title": "Perceptual Anchoring: Prototype-Guided Text Calibration for Training-free Open-Vocabulary Semantic Segmentation",
+      "title_zh": "感知锚定：原型引导的文本校准，用于免训练的开放词汇语义分割",
+      "summary": "Training-free open-vocabulary semantic segmentation (OVSS) partitions an image into semantically distinct regions based on arbitrary text descriptions, without learning any additional parameters. However, existing methods typically focus on improving visual representations while treating text embeddings that encode only generic category concepts as fixed cl…",
+      "summary_zh": "免训练开放词汇语义分割 (OVSS) 根据任意文本描述将图像划分为语义不同的区域，无需学习任何其他参数。然而，现有方法通常侧重于改进视觉表示，同时将仅编码通用类别概念的文本嵌入视为固定分类参考。这些通用概念与捕获目标实例特定外观的视觉表示之间产生的语义差距通常会导致非目标区域中的不完整掩模和错误预测。受感知锚定背后的符号感知对应的启发，我们提出了原型引导文本校准（PTC），用于免训练的 OVSS。在感知阶段，PTC根据初始匹配分数选择可靠的视觉证据来构建特定类别的视觉原型。在锚定阶段，PTC使用这些原型来校准其相应的文本嵌入，并根据视觉证据的数量自适应调整校准强度。因此，校准后的文本嵌入与特定于实例的视觉表示更准确地对齐，同时保留通用类别语义和开放词汇泛化。此外，PTC 不需要额外的训练，也不需要外部模型，可以作为现有方法的即插即用模块。跨八个基准…",
+      "authors": [
+        "Wanli Ma",
+        "Jiangwen Lu",
+        "Qinmu Peng",
+        "Xinge You"
+      ],
+      "published": "2026-08-04T17:52:13Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.03991v1",
+      "abs_url": "https://arxiv.org/abs/2608.03991v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.03991v1"
+    },
+    {
+      "title": "Assessment of Conditional Diffusion Model for Synthetic Histopathology Image Generation",
+      "title_zh": "合成组织病理学图像生成的条件扩散模型的评估",
+      "summary": "Synthetic histopathology image generation has emerged as an approach that may address data scarcity in computational pathology, yet current evaluation methodologies may not fully assess synthetic data quality for medical applications. This work investigates and addresses limitations in existing evaluation metrics, investigating an approach for assessing syn…",
+      "summary_zh": "合成组织病理学图像生成已成为一种可以解决计算病理学中数据稀缺问题的方法，但当前的评估方法可能无法完全评估医学应用的合成数据质量。这项工作研究并解决了现有评估指标的局限性，研究了一种通过特定领域指标和下游任务验证来评估合成组织病理学图像质量的方法。我们表明，传统的合成数据评估指标（例如 Frechet 起始距离（FID）和起始分数（IS））在应用于组织病理学图像时可能存在局限性，因为它们依赖于 ImageNet 预训练的特征提取器。为了解决这些限制，我们建议考虑修改 FID 和 IS 方法，利用在数字病理数据集上预训练的基础模型，并辅以基于精确召回的指标作为附加质量评估的一部分。使用在四个基准数据集上训练的条件去噪扩散模型，通过两步训练方法，我们生成了具有系统变化的质量特征的合成数据集。我们还使用聚合 Jaccard 指数 (AJI+) 和 Dice…",
+      "authors": [
+        "Seyed Kahaki",
+        "Shijie Li",
+        "Weijie Chen",
+        "Nicholas Petrick"
+      ],
+      "published": "2026-08-04T17:51:40Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.03990v1",
+      "abs_url": "https://arxiv.org/abs/2608.03990v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.03990v1"
+    },
+    {
+      "title": "string2string Studio: An Interactive, In-Browser Platform for String-to-String Algorithms",
+      "title_zh": "string2string Studio：用于字符串到字符串算法的交互式浏览器内平台",
+      "summary": "We present string2string Studio, an interactive in-browser platform for string-to-string analysis across natural language processing, computational biology, and the digital humanities. The system integrates six main modules (alignment, distance, similarity, search, generation metrics, and BLAST homology search), operating at character, word, token, line, an…",
+      "summary_zh": "我们推出了 string2string Studio，这是一个交互式浏览器内平台，用于跨自然语言处理、计算生物学和数字人文进行字符串到字符串分析。该系统集成了六个主要模块（对齐、距离、相似性、搜索、生成度量和BLAST同源搜索），在字符、单词、标记、行和残基级别上操作。其基于 C++ 的算法编译为 WebAssembly，因此核心操作默认在本地运行，无需任何安装或数据上传。该界面报告分数及其“证据”（比对、编辑路径、度量匹配、搜索命中和同源跟踪），使方法可检查、可调试并可在共享输入上进行比较。内部基准测试显示，与 Python 前身相比，速度提升高达 2,500 倍，全局/局部对齐速度比通用本机 C 对齐器更快，并且与声明的设置下的独立引用完全一致。对于同源搜索，范围化的客户端blastn路径与匹配参数下的NCBI BLAST+排名和统计数据密切匹…",
+      "authors": [
+        "Mirac Suzgun",
+        "James Zou",
+        "Stuart M. Shieber",
+        "Dan Jurafsky"
+      ],
+      "published": "2026-08-04T17:48:15Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.03984v1",
+      "abs_url": "https://arxiv.org/abs/2608.03984v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.03984v1"
+    },
+    {
+      "title": "Can Large Language Models Recover Semantic Optimization Opportunities That Compilers Miss?",
+      "title_zh": "大型语言模型能否恢复编译器错过的语义优化机会？",
+      "summary": "Optimizing compilers miss profitable transformations when their enabling semantics are absent from the analyzed program representation. We ask whether large language models (LLMs) can recover such semantics from heterogeneous C/C++ context and realize them as validated, contract-preserving artifacts. We introduce SeGaBench, an executable benchmark containin…",
+      "summary_zh": "当分析的程序表示中缺少启用语义时，优化编译器会错过有利可图的转换。我们询问大型语言模型 (LLM) 是否可以从异构 C/C++ 上下文中恢复此类语义，并将它们实现为经过验证的、保留契约的工件。我们引入了 SeGaBench，这是一个可执行基准测试，包含 100 个综合案例和 20 个源支持案例，涵盖低级假设、数据结构不变量和高级语义提升。每个案例都包含隐藏的启用语义、预言机工件、正确性和语义验证器以及可重现的性能协议。我们对每个案例使用五个独立的回答来评估五个法学硕士。最强的模型在 94.8% 的响应中产生正确的工件，在 83.3% 的响应中实现至少 1.05 倍的加速，并在 93.3% 的情况下获得性能成功。然而，正确的工件通常只能弥补部分预言的差距。这些结果表明，LLM 可以作为推测性语义提议者补充编译器分析，前提是其工件经过验证和评估。",
+      "authors": [
+        "Hailong Jiang",
+        "Feng Yu",
+        "Emran Hossain",
+        "Jianfeng Zhu",
+        "Mengfei Ren",
+        "Qiang Guan"
+      ],
+      "published": "2026-08-04T17:47:25Z",
+      "category": "cs.PL",
+      "arxiv_id": "2608.03983v1",
+      "abs_url": "https://arxiv.org/abs/2608.03983v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.03983v1"
+    },
+    {
+      "title": "Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent",
+      "title_zh": "Video-DeepResearch：迈向下一代多模式深度研究代理",
+      "summary": "We introduce Video-DeepResearch (Video-DR), extending multimodal agents from static images to continuous video streams, a setting that demands dense spatiotemporal grounding coupled with open-web exploration. Preliminary evaluations reveal two critical bottlenecks in current models: (1) modality bias, where agents bypass visual tools in favor of textual sea…",
+      "summary_zh": "我们引入了视频深度研究（Video-DR），将多模式代理从静态图像扩展到连续视频流，这种设置需要密集的时空基础和开放网络探索。初步评估揭示了当前模型中的两个关键瓶颈：(1) 模态偏差，即代理绕过视觉工具转而支持文本搜索；(2) 参数知识泄漏，即模型依赖于内部记忆而不是真正的工具增强执行。为了应对这些挑战，我们提出了 Video-DR，它具有解耦的感知探索管道和分阶段工具解锁，可在网络检索之前强制进行详尽的跨帧视觉基础。我们的框架采用两阶段训练方法：监督微调，然后是组相对策略优化（GRPO），从而实现突破模仿学习上限的自主探索。此外，我们还策划了 Video-DR-Bench，这是一个由 200 个复杂的多跳 VQA 实例组成的人类与人工智能协作基准测试。实证结果表明，我们的 Video-DeepResearch-35B-A3B 建立了 64.0%…",
+      "authors": [
+        "Zhen Fang",
+        "Yu Zeng",
+        "Wenxuan Huang",
+        "Yiming Zhao",
+        "Shiting Huang",
+        "Tianfei Ren"
+      ],
+      "published": "2026-08-04T17:45:16Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.03979v1",
+      "abs_url": "https://arxiv.org/abs/2608.03979v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.03979v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "Meta被曝计划出售算力，AI算力过剩了吗？多家机构发声 - 财联社",
+      "summary": "Meta被曝计划出售算力，AI算力过剩了吗？多家机构发声 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Wed, 05 Aug 2026 00:17:09 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9FOGE3M0FSb0dTSTM4RjNPdDJEVG9ZV0UwLWd6bTRhZlJKRWFNcFFWQ1RfQVJCYW5VWjUxQ2U5MXE4dUtlMDhraw?oc=5"
+    },
+    {
+      "title": "长知识！为何要给AI修一张算力版电网 - 中青在线",
+      "summary": "长知识！为何要给AI修一张算力版电网 中青在线",
+      "source": "中青在线",
+      "lang": "zh",
+      "published": "Wed, 05 Aug 2026 01:21:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBWR2g2Rk1Mb1NrV2tVRWxVcm5TVjNTclg1ZHo3SVFJYnRxODdjNUNUcTZuWS1fakotRzFBdDdMS0pCbzZTeXdhOGEzN2Y2S202c2JiRnY5NVIzNU9oVzlfSllnckpPSkVjRkhFc2FUelEzQlhVbTF1X3lKZDQ?oc=5"
+    },
+    {
+      "title": "A股报复性大反攻！三大利好曝光 算力硬件方向爆发 - 东方财富",
+      "summary": "A股报复性大反攻！三大利好曝光 算力硬件方向爆发 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Wed, 05 Aug 2026 03:32:09 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9yR2VDLW4wUHBPWDI3VGlvVHFJTUMwa1pHWUdEZmZ5Z1ZDX1FDdFltdG9weWhqZ3IzM0ZLOWZmVUlwR1B2bVlqUHJvMEhKb0RQZS0xNDU5eDM3V1BodDdLMQ?oc=5"
+    },
+    {
+      "title": "全链路国产化！电力气象大模型“玑衡”上线 - 中国能源新闻网",
+      "summary": "全链路国产化！电力气象大模型“玑衡”上线 中国能源新闻网",
+      "source": "中国能源新闻网",
+      "lang": "zh",
+      "published": "Wed, 05 Aug 2026 01:00:28 GMT",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5wUFp2MmVObHVhWjlOc3ZxaF9IRGN5dTJxRmo0dk0wWFB2RGh5WXNZeERuREE1bmhIamtzRWdwRXVnME42RFpnS0IyS3dhaDQ1MXZwNTJMczY4MTRyNTZtWWUtaDNrTEttZ2pWUnBB?oc=5"
+    },
+    {
+      "title": "单靠“刷卡送算力”难解信用卡困局 - 中国经济网",
+      "summary": "单靠“刷卡送算力”难解信用卡困局 中国经济网",
+      "source": "中国经济网",
+      "lang": "zh",
+      "published": "Wed, 05 Aug 2026 00:16:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1UZnZENG1PeEtHdTljNVFvY200UWVKaUVxV1BpekNTcUVhRUJxeVFrT3RGUC1kM1R2d2M2Zmp1UENkeU9ZOGRrLXkwb0NHcFpqclRaWlppOXJqd1pTWjg1a0VxZmZqbVFldXduRVlNOA?oc=5"
+    },
+    {
+      "title": "江苏无锡：“阶梯投运”让电网跟着算力“长” - csj.news.cn",
+      "summary": "江苏无锡：“阶梯投运”让电网跟着算力“长” csj.news.cn",
+      "source": "csj.news.cn",
+      "lang": "zh",
+      "published": "Wed, 05 Aug 2026 00:10:33 GMT",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBqb2F0WmdTaENSVWpCOTlzYnVZUi1obDhpTXNNUVdjUlVPczJ2ZEFpY0o2SmhHSU8yYmpwZUxwNnA1ZnNUSW5FX3RCejRYNC1Ca29nZzBjc25pMlluenBqLTA4NmhDa1dHQzlsenNFZ0poMTJTd3lj?oc=5"
+    },
+    {
+      "title": "AI盯数据、判风险、派工单，智能体接管超大城市水务服务 - 21财经",
+      "summary": "AI盯数据、判风险、派工单，智能体接管超大城市水务服务 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Tue, 04 Aug 2026 23:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOVHB2Nk1xSTh6UHRndEVsS3RSWU1sQl9TMnhWM09JdS1rbHNkbWJpbWhWNzUyZkxJU1FvTXlQNHFfd01oeC0zM1NjSFhiWjFFNHZDb0ZScjFCa2xQSVhNLVZxLTRjWnhWOFcyWUxpZHpHYngwUmJSWGtGYUJlNXY1LUhfeVRJWXE1TkZJag?oc=5"
+    },
+    {
+      "title": "Anthropic年入1万亿美元后，算力价格狂飙10倍 - finance.sina.com.cn",
+      "summary": "Anthropic年入1万亿美元后，算力价格狂飙10倍 finance.sina.com.cn",
+      "source": "finance.sina.com.cn",
+      "lang": "zh",
+      "published": "Tue, 04 Aug 2026 23:35:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQc2Z4bE93X3RCSnQ5RDFGQ2lYMWpzTFh6ajgtMldraDRTdEdjN1dzN3NoSlJOWkU1VmVTOENKeFBoMWFXbGJxUThBSi0ydTB4d2E2dFgyZElIWElIbGk3RzdhWmxoeGViZ3hIWmExUkRoRC02NUhKS3VtQ0FCVmZWSHBrUQ?oc=5"
+    },
+    {
+      "title": "AI智能体测试中“使诈”：伪造身份骗真人批准恶意代码 - 凤凰网",
+      "summary": "AI智能体测试中“使诈”：伪造身份骗真人批准恶意代码 凤凰网",
+      "source": "凤凰网",
+      "lang": "zh",
+      "published": "Wed, 05 Aug 2026 03:03:39 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBXVG1PTHBBUndxSWRXMFhLcXdqLWRxeWE4SGpHVms2ZnZMUTA4QlVxOUZDY01QYk41RmNPNUh5REM2dEJWV3VsTWNac19ZMG90?oc=5"
+    },
+    {
+      "title": "AI算力基建支撑，卡特彼勒Q2营收首次跨过200亿门槛，全面上调全年业绩指引 - 华尔街见闻",
+      "summary": "AI算力基建支撑，卡特彼勒Q2营收首次跨过200亿门槛，全面上调全年业绩指引 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Tue, 04 Aug 2026 20:28:25 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5nNXJvMFN1VG1pTlFaaHREbWl1aXl4MndkZVpObHVxRzlhd2VMNC12SmFJTXhCWm1RVVg3WUUwMDJrVWN2dGtCUzEtalI0TE5rZ2pr?oc=5"
+    },
+    {
+      "title": "一个月9款旗舰，大模型进入「月抛」时代？ - 投资界",
+      "summary": "一个月9款旗舰，大模型进入「月抛」时代？ 投资界",
+      "source": "投资界",
+      "lang": "zh",
+      "published": "Tue, 04 Aug 2026 23:43:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0tYkhwaFFLWm5WbFo5bUFaemY4N1hLaHZWM3F6Z3luUU53Z0hua0NqMW5lbWlOdlhUVEN6YkRkWHhWSWR5YUdUcFRXWldoREtYcFZoSXVR?oc=5"
+    },
+    {
+      "title": "亿级日活App的“算力生死劫”：推理成本倒挂，他们靠跨云架构砍掉75% GPU集群 - 智源社区",
+      "summary": "亿级日活App的“算力生死劫”：推理成本倒挂，他们靠跨云架构砍掉75% GPU集群 智源社区",
+      "source": "智源社区",
+      "lang": "zh",
+      "published": "Wed, 05 Aug 2026 04:20:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1XSDBFMnhtUXFmTXYweW9BOHJuSVZhclpHLUtvUzFVQ3lUWEd2SWREQzRvMGJZY1h6NHJNRWk4RGs5NzRZeTVEMA?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 91831,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 64834,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57408,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 37501,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 35815,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 385167,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 266658,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 225627,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
