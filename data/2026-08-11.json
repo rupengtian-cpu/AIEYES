@@ -1,0 +1,514 @@
+{
+  "date": "2026-08-11",
+  "generated_at": "2026-08-11T04:13:11.382764+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Perception Before Supervision: Self-Contained Visual Distillation from Counterfactual Blind Spots",
+      "title_zh": "监督前的感知：来自反事实盲点的独立视觉蒸馏",
+      "summary": "Self-improvement for multimodal large language models (MLLMs) is typically driven by reward-based methods that provide only coarse scalar feedback. Distillation offers a richer alternative through dense token-level supervision, but in the visual domain it usually depends on privileged context constructed using external annotations and tools, or stronger mod…",
+      "summary_zh": "多模态大语言模型 (MLLM) 的自我改进通常由仅提供粗略标量反馈的基于奖励的方法驱动。蒸馏通过密集的令牌级监督提供了更丰富的替代方案，但在视觉领域，它通常依赖于使用外部注释和工具或更强大的模型构建的特权上下文。我们引入了 \\textbf{CVPD}（对比反事实视觉过程蒸馏），据我们所知，它是第一个用于 MLLM 密集、符合策略、令牌级视觉自蒸馏的完全独立的框架。 CVPD 可识别视觉盲点，其中放大某个区域会发生变化并锐化模型的答案分布，而删除同一区域则使全图像行为基本保持不变。这些区域揭示了模型可以编码但无法在全图像条件下一致利用的感知信息。我们提出了一个三门反事实标准，直接从模型自身的响应中识别这些区域，并将它们转换为密集对比监督以进行自我蒸馏。在 Qwen3-VL-8B-Instruct 上，CVPD 在 12 个基准测试中优于 6 个自我演…",
+      "authors": [
+        "Shravan Venkatraman",
+        "Omkar Thawakar",
+        "Ritesh Thawkar",
+        "Abdelrahman Shaker",
+        "Rao Muhammad Anwer"
+      ],
+      "published": "2026-08-10T17:59:56Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.09931v1",
+      "abs_url": "https://arxiv.org/abs/2608.09931v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09931v1"
+    },
+    {
+      "title": "Beyond Naturalness: Probing Automated Text-To-Speech Evaluators on Linguistically Grounded Dimensions",
+      "title_zh": "超越自然：在语言基础维度上探索自动文本到语音评估器",
+      "summary": "Automated Text-to-Speech (TTS) evaluation methods (Mean Opinion Score (MOS) predictors and Audio Large Language Models (Audio-LLM) judges) are expected to reflect human perception, yet it is unclear how well they capture the distinct aspects of speech that listeners actually perceive. We deconstruct \"naturalness\" into a linguistically grounded annotation sc…",
+      "summary_zh": "自动文本转语音 (TTS) 评估方法（平均意见得分 (MOS) 预测器和音频大语言模型 (Audio-LLM) 判断器）预计能够反映人类的感知，但尚不清楚它们如何准确地捕捉听众实际感知的语音的不同方面。我们将“自然性”解构为跨越 10 个不同感知维度的基于语言的注释模式，并使用它构建 TTS 的第一个维度级元评估基准，其中包括由训练有素的语言学家评分者注释的 860 个话语。对四个 MOS 预测器和四个 Audio-LLM 评判者进行基准测试的结果表明，MOS 预测器会崩溃到声学信号质量上，而 Audio-LLM 评判者则显示出选择性的、依赖于提示的检测，这种检测不能在所有维度上推广。这两类都不能可靠地捕获大量语言结构的语音错误。我们的数据集、注释模式和评估代码都是公开发布的，以支持更有针对性和可解释性的 TTS 评估。",
+      "authors": [
+        "Oluwanifemi Bamgbose",
+        "Simon Rosen",
+        "Jash Shah",
+        "Lindsay Devon Brin",
+        "Hoang H Nguyen",
+        "Anke Koelzer"
+      ],
+      "published": "2026-08-10T17:59:51Z",
+      "category": "cs.SD",
+      "arxiv_id": "2608.09930v1",
+      "abs_url": "https://arxiv.org/abs/2608.09930v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09930v1"
+    },
+    {
+      "title": "Multimodal Model Diffing for Feature Discovery and Control",
+      "title_zh": "用于特征发现和控制的多模态模型差异",
+      "summary": "Multimodal Large Language Models (MLLMs) exhibit strong visual understanding, yet the internal features that cause these behaviors remain difficult to identify, audit, or control. While applicable to post-hoc inspection, hidden states that are decomposed into interpretable feature directions using sparse autoencoders (SAEs) neither readily isolate which fea…",
+      "summary_zh": "多模态大语言模型 (MLLM) 表现出强大的视觉理解能力，但导致这些行为的内部特征仍然难以识别、审核或控制。虽然适用于事后检查，但使用稀疏自动编码器 (SAE) 分解为可解释的特征方向的隐藏状态既不能轻易隔离哪些特征被多模态训练改变，也不能直接用于目标控制。我们引入了 MMDiff，这是一个多模态模型差异框架，用于训练多模态 SAE 并将其转化为特征级接口，用于发现和控制多模态行为。 MMDiff 支持三种用途：(i) 特征隔离，通过将基础 LM SAE 与其多模态适应的对应物进行比较，以识别多模态训练改变的特征； (ii) 特定于任务的特征检测，通过每个标记的对比激发分析来隔离因果特征； (iii) 特征级控制，通过因果关系删除或引导发现的特征方向。我们为三个 MLLM 系列（LLaVA-MORE、PaliGemma 2 和 InternVL3.…",
+      "authors": [
+        "Hunar Batra",
+        "Lachin Naghashyar",
+        "Ashkan Khakzar",
+        "Philip Torr",
+        "Christian Schroeder de Witt",
+        "Constantin Venhoff"
+      ],
+      "published": "2026-08-10T17:59:30Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.09928v1",
+      "abs_url": "https://arxiv.org/abs/2608.09928v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09928v1"
+    },
+    {
+      "title": "Learning How the World Evolves: Extrapolative Video World Models via Latent Dynamics Reasoning",
+      "title_zh": "学习世界如何演变：通过潜在动力学推理推断视频世界模型",
+      "summary": "The world evolves following its dynamics, i.e., its laws of motion. However, leading video diffusion models largely fit the pixels without modeling how the pixels transit over time. Thus, they render visually plausible frames but may not accurately obey the laws. To capture the dynamics purely from pixels, we introduce Latent Dynamics Reasoning (LDR). LDR c…",
+      "summary_zh": "世界按照其动力学（即运动定律）演化。然而，领先的视频扩散模型很大程度上适合像素，而没有对像素随时间的传输方式进行建模。因此，它们呈现视觉上合理的框架，但可能不准确地遵守法律。为了纯粹从像素捕获动态，我们引入了潜在动态推理（LDR）。 LDR 将潜在转变转换为显式运动学积分，其中低阶动力学以数值方式积分，并且模型仅回归驱动推出的三阶和高阶残差。为了更好地推断这种集成，LDR 在结构化潜在特征而不是密集卷积特征上运行。继 PhyWorld 之后，我们在涵盖五种任务（均匀运动、抛物线、碰撞、弹跳、隐现）的受控白盒物理基准上验证了 LDR，重点关注揭示模型是否真正学习了底层动力学的分布外场景。 LDR 更好地推断了学习到的动态：在分辨率为 256$^2$ 的单任务和联合任务训练下，其分布内和分布外误差之间的差距比视频扩散基线小 20$\\times，同时使用…",
+      "authors": [
+        "Haodong Li",
+        "Shaoteng Liu",
+        "Tianyu Wang",
+        "Chongjian Ge",
+        "Sihui Ji",
+        "Jiahan Zhang"
+      ],
+      "published": "2026-08-10T17:59:19Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.09926v1",
+      "abs_url": "https://arxiv.org/abs/2608.09926v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09926v1"
+    },
+    {
+      "title": "From Values to Benchmarks: Evaluating Large Language Models for Governmental Use in Dutch",
+      "title_zh": "从价值观到基准：评估荷兰语政府使用的大型语言模型",
+      "summary": "Large language models are increasingly being deployed in governmental settings, yet few existing evaluation frameworks jointly reflect the values of public administration and the linguistic requirements of non-English contexts. We present the \"Grip on LLMs\" framework, a systematic evaluation suite for Dutch governmental use developed in collaboration with d…",
+      "summary_zh": "大型语言模型越来越多地在政府环境中部署，但现有的评估框架很少能共同反映公共管理的价值观和非英语环境的语言要求。我们提出了“Grip on LLM”框架，这是与荷兰主要市政组织的领域专家合作开发的供荷兰政府使用的系统评估套件。通过顾问委员会流程、用户研究以及对公务员聊天机器人用户的调查，我们确定了六个评估维度（事实性、诚实性、社会偏见、能源消耗、成本和培训数据透明度），并将其实施到涵盖 30 多种多语言和荷兰特定模型的基准套件中。我们的结果表明，没有一个模型在所有方面都表现出色，并且权衡是不可避免的：更高的质量始终会带来更大的环境影响和财务成本，而偏见在很大程度上仍然独立于两者。我们进一步发现事实性（模型是否正确回答）和诚实性（模型是否承认它不知道的东西）受到不同属性的控制，高事实性并不意味着高度诚实。为了使这些发现对非技术受众具有可操作性，我们发布…",
+      "authors": [
+        "Laurens Samson",
+        "Iva Gornishka",
+        "Gossa Lô",
+        "Yuki M. Asano",
+        "Sennay Ghebreab"
+      ],
+      "published": "2026-08-10T17:59:05Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.09925v1",
+      "abs_url": "https://arxiv.org/abs/2608.09925v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09925v1"
+    },
+    {
+      "title": "GENCO - A Unified Neural Solver Embedded in a Development Framework for Steady-State Grid Analysis",
+      "title_zh": "GENCO - 嵌入稳态电网分析开发框架的统一神经求解器",
+      "summary": "Foundation models are transforming business workflows and boosting productivity, yet they remain largely absent from engineering domains such as power system analysis, where strict physical consistency must be enforced. We present GENCO (GEometric Neural Corrective Optimizer), a unified neural solver for steady-state transmission grid analysis that handles…",
+      "summary_zh": "基础模型正在改变业务工作流程并提高生产力，但它们在电力系统分析等必须强制执行严格物理一致性的工程领域中仍然基本上缺席。我们推出了 GENCO（几何神经校正优化器），这是一种用于稳态输电网分析的统一神经求解器，可在单一架构和共享网络表示中处理功率流 (PF)、最优功率流 (OPF) 和状态估计 (SE)。为了支持神经电源系统求解器的进步，我们引入了开源 GridFM 开发框架，该框架标准化了低代码环境中的合成数据生成和训练。我们还发布了跨不同网格拓扑的包含数百万个 PF 和 OPF 场景的大规模数据集，以支持可重复的基准测试。我们根据 PFDelta 和 OPFData 基准对最先进的神经求解器和经典求解器（包括 Newton-Raphson 和 IPOPT）以及真实世界 Hydro-Québec SCADA 数据进行评估。对于大规模 PF，GENC…",
+      "authors": [
+        "Alban Puech",
+        "Matteo Mazzonelli",
+        "Tamara R. Govindasamy",
+        "Mangaliso Mngomezulu",
+        "Héctor Maeso-García",
+        "Thomas Tolhurst"
+      ],
+      "published": "2026-08-10T17:57:49Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.09921v1",
+      "abs_url": "https://arxiv.org/abs/2608.09921v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09921v1"
+    },
+    {
+      "title": "Overcoming Data Scarcity and Confidentiality in Hardware Assurance via Synthetic Generation",
+      "title_zh": "通过综合生成克服硬件保障中的数据稀缺性和保密性",
+      "summary": "Hardware assurance relies on scanning electron microscopy (SEM) to verify nanoscale structures, but assembling the large, high-quality datasets required for automated analysis is impeded by time-intensive acquisition and strict intellectual property (IP) constraints on proprietary designs. We propose a privacy-preserving pipeline that secures IP by heavily…",
+      "summary_zh": "硬件保证依赖于扫描电子显微镜 (SEM) 来验证纳米级结构，但组装自动分析所需的大型高质量数据集受到耗时的采集和专有设计的严格知识产权 (IP) 限制的阻碍。我们提出了一种隐私保护管道，通过严重扭曲功能设计来保护知识产权，同时从一小组初始示例生成视觉上逼真的合成数据集。 StyleGAN 首先学习硬件布局掩模的分布，以生成新颖的、宏观上变化的结构。随后，条件 GAN (Pix2PixHD) 将这些掩模转换为真实的 SEM 图像，保留真实的纹理和噪声。这项工作的主要发现是，专门在此合成数据上训练的分割模型不仅展示了到真实图像的成功“模拟到真实”传输，而且优于在有限真实数据集上训练的基线模型。由于底层合成布局显然是新颖的，并且不会重现原始设计的任何特定专有路由，因此部署最终的分段模型可以降低敏感 IP 遭受梯度反转和成员推理等攻击的风险，从而为硬件保证…",
+      "authors": [
+        "Gijung Lee",
+        "Ronald Wilson",
+        "Damon L. Woodard",
+        "Domenic Forte"
+      ],
+      "published": "2026-08-10T17:56:03Z",
+      "category": "cs.CR",
+      "arxiv_id": "2608.09914v1",
+      "abs_url": "https://arxiv.org/abs/2608.09914v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09914v1"
+    },
+    {
+      "title": "Beyond Hazard Resemblance: Contrastive Event Adjudication for Training-Free Video Anomaly Detection",
+      "title_zh": "超越危险相似性：用于免训练视频异常检测的对比事件判定",
+      "summary": "Video anomaly detection (VAD) aims to identify and temporally localize abnormal events in videos. Supervised methods learn anomaly decision boundaries from target-domain annotations but require substantial in-domain data. Existing training-free methods leverage the rich semantic knowledge and reasoning capabilities of pretrained models to interpret visual c…",
+      "summary_zh": "视频异常检测（VAD）旨在识别并暂时定位视频中的异常事件。监督方法从目标域注释中学习异常决策边界，但需要大量的域内数据。现有的免训练方法利用预训练模型丰富的语义知识和推理能力来解释视觉内容，但这些能力并不能直接定义异常决策标准：更丰富的异常描述可以更好地捕获危险相似性，而无需解决异常问题。为此，我们提出了免训练视频异常检测的对比事件裁决（CEAVAD），它将推理单元从孤立的异常概念转变为可证伪的事件假设，并通过竞争解释和视频证据之间的交互建立推理时间解释边界。具体来说，CEAVAD 首先使用公共安全知识来构建危害良性事件对比，将每个危害机制与通用正常帐户和特定于机制的良性对应项配对。然后，它确定目标区间是否更好地支持危险解释或其良性竞争对手，从而为目标产生可修改的对比边界建议。最后，CEAVAD 对相互竞争的解释进行裁决，以确定危险假设是否在视频证…",
+      "authors": [
+        "Wenti Yin",
+        "Xiang Wang",
+        "Huaxin Zhang",
+        "Hanqing Wang",
+        "Hongbo Shao",
+        "Changxin Gao"
+      ],
+      "published": "2026-08-10T17:52:51Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.09908v1",
+      "abs_url": "https://arxiv.org/abs/2608.09908v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09908v1"
+    },
+    {
+      "title": "DistMoE: Private-data Rehearsal-free Routing in Mixture-of-Experts for Distributed Instruction Tuning",
+      "title_zh": "DistMoE：用于分布式指令调优的专家混合中的私有数据免演练路由",
+      "summary": "Multimodal Large Language Models (MLLMs) have shown strong multimodal instruction-following ability, but adapting them to diverse visual-language domains typically assumes centralized data access and costly joint training. This is restrictive when data is distributed across private, domain-specific, or permission-limited clients. To this end, we propose Dis…",
+      "summary_zh": "多模态大型语言模型（MLLM）已表现出强大的多模态指令跟踪能力，但将其适应不同的视觉语言领域通常需要集中的数据访问和昂贵的联合训练。当数据跨私有、特定于域或权限受限的客户端分发时，这是限制性的。为此，我们提出了 DistMoE，一种用于分布式视觉指令调整的专家混合 (MoE) 方法。在语言解码器的每一层中，它都通过特定于客户端的私有 FFN 专家来增强公共前馈网络 (FFN)，其目标是获取特定领域的知识。然而，独立的专家培训导致私人 FFN 学习不同规模和幅度的表示，使得专家合并变得困难。为了减少特定于客户端的漂移，我们引入了一个公共锚定的专家合成阶段，该阶段通过各向同性正则化损失，仅更新本地客户端数据和公共数据混合上的路由器和轻量级私有投影适配器，从而使其成为跨客户端的免排演合成。在推理过程中，DistMoE 在公共和私人专家上执行模块化路由，从…",
+      "authors": [
+        "Mainak Singha",
+        "Niccolò Biondi",
+        "Elisa Ricci",
+        "Subhankar Roy"
+      ],
+      "published": "2026-08-10T17:52:14Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.09907v1",
+      "abs_url": "https://arxiv.org/abs/2608.09907v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09907v1"
+    },
+    {
+      "title": "DSLE: A Learning Environment for Dark Souls Boss Encounters",
+      "title_zh": "DSLE：黑暗之魂 Boss 遭遇战的学习环境",
+      "summary": "We introduce the Dark Souls Learning Environment (DSLE), a containerized platform that presents all 22 boss encounters of Dark Souls: Remastered as game-playing agent benchmarks through a Gymnasium-style interface. DSLE combines real-time combat, high-dimensional visual input, and sparse terminal rewards, with each environment step being a real action execu…",
+      "summary_zh": "我们推出了《黑暗之魂》学习环境 (DSLE)，这是一个容器化平台，通过 Gymnasium 风格的界面呈现《黑暗之魂：重制版》的所有 22 个 Boss 遭遇，作为游戏代理基准。 DSLE 结合了实时战斗、高维视觉输入和稀疏终端奖励，每个环境步骤都是针对正在运行的游戏执行的真实动作。为了支持受控比较，我们定义了 DSLE-5，一个具有代表性的五 Boss 子集，涵盖近战战斗、空间受限的竞技场、环境危害战斗、多目标战斗和快速最终 Boss 战斗，我们推荐将其作为基于 DSLE 构建的代理的起始套件。在 DSLE-5 上，我们评估随机策略、专家系统、进化基线以及根据视觉输入训练的 PPO 和 DQN 代理。专家系统和进化基线各自击败了游戏教程boss庇护恶魔（峰值胜率分别为63%和43%），但这五种方法都没有击败其他四个DSLE-5 Boss； PPO…",
+      "authors": [
+        "Derin Gezgin",
+        "Jim O'Connor",
+        "Tanner Goodwin",
+        "Gary B. Parker"
+      ],
+      "published": "2026-08-10T17:48:45Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.09902v1",
+      "abs_url": "https://arxiv.org/abs/2608.09902v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09902v1"
+    },
+    {
+      "title": "Decoding-Level Taboo: A Diagnostic Stress Test for LLM Robustness",
+      "title_zh": "解码级禁忌：LLM稳健性的诊断压力测试",
+      "summary": "Large language model evaluations typically focus on performance under nominal conditions, creating an illusion of capability where models comfortably walk a narrow, highly optimized generation corridor. In real-world deployments, however, complex system prompts, safety guardrails, and structural constraints continuously force models off this nominal path, d…",
+      "summary_zh": "大型语言模型评估通常关注标称条件下的性能，从而产生一种模型可以轻松地在狭窄、高度优化的生成走廊中行走的错觉。然而，在现实部署中，复杂的系统提示、安全护栏和结构约束不断迫使模型偏离这条名义路径，从而导致基准分数和部署性能之间出现差异。为了解决这个问题，我们引入了解码级禁忌，这是一种零提示诊断压力测试，可在运行时直接干预 logit 空间，迫使模型脱离其标称路径。通过动态屏蔽单词边界处的主要候选标记，Taboo 强制机器进行迂回表达。对几个开放权重模型系列的 Taboo 进行评估表明，偏离路径的鲁棒性很大程度上受到参数规模和训练后指令对齐的影响，鲁棒性通常随着模型大小和对齐而提高。除了本文提出的结果之外，Taboo 还提供了一种新颖的原语，用于生成各种合成数据集、压力测试运行时安全护栏以及在实际部署之前审核模型可靠性。",
+      "authors": [
+        "Tadanobu Chuyo Kamijo",
+        "Ori Rottenstreich",
+        "Javier Conde",
+        "Gonzalo Martínez",
+        "Pedro Reviriego"
+      ],
+      "published": "2026-08-10T17:47:24Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.09900v1",
+      "abs_url": "https://arxiv.org/abs/2608.09900v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09900v1"
+    },
+    {
+      "title": "Fairness in Link Prediction Beyond Demographic Parity: A Reproducibility Study",
+      "title_zh": "超越人口统计的链接预测的公平性：可重复性研究",
+      "summary": "In fair ranked link prediction, demographic parity ($Δ_\\mathrm{DP}$) is a common fairness metric. Yet, Mattos et al. (2025) argue that it fails to detect exposure bias because it ignores where links appear in the ranking. In this study, we reproduce this claim by showing that $Δ_\\mathrm{DP}$ can indicate aggregate parity even when some subgroup-pair links a…",
+      "summary_zh": "在公平排名链接预测中，人口统计奇偶性 ($Δ_\\mathrm{DP}$) 是一种常见的公平性指标。然而，马托斯等人。 （2025）认为它无法检测曝光偏差，因为它忽略了链接出现在排名中的位置。在本研究中，我们通过证明 $Δ_\\mathrm{DP}$ 可以表明聚合奇偶性，即使某些子组对链接的系统排名低于其他链接，从而重现了这一主张。然而，所提出的排名感知归一化 KL 散度 (NDKL) 确实检测到了这种差异。我们还重现了 MORAL 的有效性，这是一种后处理方法，可以提高基于曝光的公平性，同时保持竞争性效用。除了再现之外，我们还使用合成同质性设置、分类敏感属性以及其他公平性和效用指标（包括子组对适应的注意力加权排名公平性（AWRF））来评估稳健性。总体而言，我们的结果表明，基于暴露的指标揭示了 $Δ_\\mathrm{DP}$ 隐藏的偏差，并且 MORA…",
+      "authors": [
+        "Valentijn Oldenburg",
+        "Floris de Kam",
+        "Stef de Wildt",
+        "Jarno Nilson Balk"
+      ],
+      "published": "2026-08-10T17:47:19Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.09899v1",
+      "abs_url": "https://arxiv.org/abs/2608.09899v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09899v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "江门市智算中心是目前大湾区规模领先的算力基础设施集群 筑牢算力底座 智赋千行百业 - jiangmen.gov.cn",
+      "summary": "江门市智算中心是目前大湾区规模领先的算力基础设施集群 筑牢算力底座 智赋千行百业 jiangmen.gov.cn",
+      "source": "jiangmen.gov.cn",
+      "lang": "zh",
+      "published": "Tue, 11 Aug 2026 01:58:33 GMT",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0wM3dNNUpIV044TUp3SGRlb08tTmttSjVVWnBKVmpoUHpMYk1jSWY0SmxadmZKQ1dlMVVBR3lrZ1RlYlYzWjZMNzBHcWNXVE1ET0tJRnpJMVZEbmNsR0M2RzEwZ1RwNF9xRy10YXh6cw?oc=5"
+    },
+    {
+      "title": "为什么中国大模型便宜又好用？（外国网友趣问中国⑩） - 人民网",
+      "summary": "为什么中国大模型便宜又好用？（外国网友趣问中国⑩） 人民网",
+      "source": "人民网",
+      "lang": "zh",
+      "published": "Mon, 10 Aug 2026 23:14:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1kdTJ1ZTNlUS1hQ1BCX0ZNWXRMQkg3aFh1QVlhdjBHRml5UGVPLUc4TjhXV0J1OUpsNGVsUzhadzdpY2YxSU1qYW96bmsydUNreUgyMGU3OGpTTEhFN2VsVmdiazVuVHVFUFltRERB?oc=5"
+    },
+    {
+      "title": "TVB伙基汇资本建AI算力中心 首阶段算力1万PetaFLOPS - 观点网",
+      "summary": "TVB伙基汇资本建AI算力中心 首阶段算力1万PetaFLOPS 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Tue, 11 Aug 2026 00:44:13 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1SUGJZVEVWcXI1RjA1U2M1d1VsZVMxaFdBRjdlUElPbFNRTTZTT3R4N2hUSjVIdFVORjU4VVAwaHJXQmEzWlZ1V2lxSUlXbnVOWkx0NjBaMVlVSG9lTzB0cVRR?oc=5"
+    },
+    {
+      "title": "异动拉升！算力租赁概念走强 - 证券时报",
+      "summary": "异动拉升！算力租赁概念走强 证券时报",
+      "source": "证券时报",
+      "lang": "zh",
+      "published": "Tue, 11 Aug 2026 02:45:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9JalhIQTNxMDg4TWV0TnhvV0FWcmgwVGNseUEwR29XTDF3Mjc4ZkhFcWoyYkg5Z243RGZwaEJyeVFMZmVWYlBDSmhmQ1p2SGM0QjV5OVU2Q2RCbUh1?oc=5"
+    },
+    {
+      "title": "中国公司使用东南亚算力风险正在抬升 - 华尔街见闻",
+      "summary": "中国公司使用东南亚算力风险正在抬升 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Tue, 11 Aug 2026 00:45:31 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1RNFlWZjdqa3BIbGhiaElsbVpVdW5GVVprazAtanlhNElWdno2elpKUERqcElwaWR5Rm1DUjFtTFo3RlJ6czRvTHZjWC1iMWxESWNn?oc=5"
+    },
+    {
+      "title": "未来之城的创新交响丨一个大模型的产线赋能 - 河北广播电视台",
+      "summary": "未来之城的创新交响丨一个大模型的产线赋能 河北广播电视台",
+      "source": "河北广播电视台",
+      "lang": "zh",
+      "published": "Mon, 10 Aug 2026 23:29:28 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE94VlZtTThQaGZraVlQbE1ZRnJQazk3SnhwcFJaNnoxSnFlYy05bDlzT00zUE53TWtYUXMwQ2dsajVYU2MySkFmREptcVZ1Mm54SkMtV0Ixd0dLVmZtTnpJ?oc=5"
+    },
+    {
+      "title": "兆瓦级算力系统AI整机柜DC800V供电架构研究报告 - 电子工程专辑",
+      "summary": "兆瓦级算力系统AI整机柜DC800V供电架构研究报告 电子工程专辑",
+      "source": "电子工程专辑",
+      "lang": "zh",
+      "published": "Tue, 11 Aug 2026 01:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9ndGszXzdIWGxzQkZNWE1lSk1MNUVBSV9uSEhkdmo1TzZGSUViTjJONHFZdjRhUU02dkR2enZndUd6UktmcVR6eW0zNVdfajZGcUVv?oc=5"
+    },
+    {
+      "title": "机械工业云平台正式发布，巧工·智能体解锁工业AI新范式 - 新华报业网",
+      "summary": "机械工业云平台正式发布，巧工·智能体解锁工业AI新范式 新华报业网",
+      "source": "新华报业网",
+      "lang": "zh",
+      "published": "Tue, 11 Aug 2026 03:50:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1MT2VNVEtvU3B0TFBSR3RLcFBaSldWNUhud2Jfb09LeGhKS1Y0c2M2b0QtUDhxdUdla3NjSnMzWmJZYmRxRnpGOEN4UVhvRTV5bGNMSmNXeHp3TlgtV0c0Z1BLVE9ZSmU2Q1dR?oc=5"
+    },
+    {
+      "title": "算力下半场，没有孤胆英雄 - 信息化观察网",
+      "summary": "算力下半场，没有孤胆英雄 信息化观察网",
+      "source": "信息化观察网",
+      "lang": "zh",
+      "published": "Tue, 11 Aug 2026 01:19:08 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE43RE1TMDNJV0tCenV6QjlzN2xjLTRfUWRjaWlSVjZOeWxhR1k4SGtYTkU1NHhYZ05mT0VVckRubklQcmpBT1p6MkVwSnhYaVFZSjkzVTdfSU5QUmttaTlvQw?oc=5"
+    },
+    {
+      "title": "算力网要“建”更要“连”|国家发展改革委|智算中心|甘肃省|上海市|DeepSeek_手机新浪网 - 新浪财经",
+      "summary": "算力网要“建”更要“连”|国家发展改革委|智算中心|甘肃省|上海市|DeepSeek_手机新浪网 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Mon, 10 Aug 2026 22:38:44 GMT",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBuRWRuNlo0dGxUWk5ldGlVbEx5c19fY1htLTJjTUVpQURzSjU1U21pZ0dLcl9EZVl2UlBLakRDLW5Na3drUnlhRUFaZ3RhanhIOEFlYkZ5TDhEN0dfVENoM2l1STdOeDI0YTloMjJkS1gyZTBPN1RSMQ?oc=5"
+    },
+    {
+      "title": "江苏“光”和“电”畅销海外 - 中国江苏网",
+      "summary": "江苏“光”和“电”畅销海外 中国江苏网",
+      "source": "中国江苏网",
+      "lang": "zh",
+      "published": "Tue, 11 Aug 2026 03:05:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWm00dDk0cHdDNlZxZ2dUWWRJWXpaZjZ6aUZjLW9WaThlZzAzNFNvQXhiUDJwajV3QkRYd1lwWDl2SHpuUDFxeEZiS3hFa056aFdBUnZVeDhGd0tlMTZVbUxwY09HN3VrY2dialFEa3NFNDVrQjg1YjRuZlRkY3RtWVJieWJ3QkpvMlBJ?oc=5"
+    },
+    {
+      "title": "中信证券：算力突破电力边界 SST开启硅进铜退新周期 - 观点网",
+      "summary": "中信证券：算力突破电力边界 SST开启硅进铜退新周期 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Tue, 11 Aug 2026 01:20:05 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1OZFl5dE41RmM1cDBnSFRfSlZfb0Iwb1JiLVZWekdVQlVqcjM4UmpuN3hYV0FtUF93WE4wUWpIWXlUbWxFMmVuU3ZzU0M5NDVya3RkbjhJNzJNdWdabmZDMGNB?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 92067,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 65837,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57425,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 38450,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 35978,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 385834,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 270320,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 228559,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
