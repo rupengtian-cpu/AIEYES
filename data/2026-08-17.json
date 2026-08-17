@@ -1,0 +1,511 @@
+{
+  "date": "2026-08-17",
+  "generated_at": "2026-08-17T03:40:42.873027+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "CPI-Bench: A Comprehensive,Practical and Intelligent Benchmark for Real-World Image Editing",
+      "title_zh": "CPI-Bench：全面、实用、智能的真实图像编辑基准",
+      "summary": "With the rapid advancement of image editing models and their widespread application across various domains, there is an increasingly urgent need to deploy these model capabilities directly into real-world scenarios. However, existing benchmarks remain confined to simple single-image tasks, suffering from limited coverage dimensions and an inability to effec…",
+      "summary_zh": "随着图像编辑模型的快速发展及其在各个领域的广泛应用，将这些模型能力直接部署到现实场景中的需求越来越迫切。然而，现有的基准测试仍然仅限于简单的单图像任务，其覆盖范围有限，并且无法有效地区分不同模型之间的性能。因此，他们无法可靠地评估复杂的多图像编辑、高要求的推理指令和实际部署设置中的模型性能。为了解决这些限制，我们提出了 CPI-Bench，这是一个用于现实世界图像编辑的全面、实用和智能的基准。 CPI-Bench由三个核心子集组成：CPI-General-Bench，全面覆盖多样化编辑任务，率先纳入多图像编辑评估； CPI-Practical-Bench，专注于高频真实用户应用场景； CPI-Intelligent-Bench，致力于评估高要求的基于推理的编辑能力。基于CPI-Bench的主流图像编辑模型的评测结果表明，CPI-Bench增强了模型…",
+      "authors": [
+        "Qinye Zhou",
+        "Jun Zheng",
+        "Yongchao Du",
+        "Yuan Wang",
+        "Zhengrui Chen",
+        "Zuan Gao"
+      ],
+      "published": "2026-08-14T17:59:01Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.14546v1",
+      "abs_url": "https://arxiv.org/abs/2608.14546v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14546v1"
+    },
+    {
+      "title": "RecipeNet: A Hierarchical Transformer for Recipe Data",
+      "title_zh": "RecipeNet：食谱数据的分层转换器",
+      "summary": "Recipe data arises in domains such as materials synthesis, pharmaceutical formulation, and industrial manufacturing, where procedures are represented as ordered sequences of steps containing heterogeneous structured fields. Existing tabular learning methods typically flatten this structure into fixed-schema representations, limiting their ability to capture…",
+      "summary_zh": "配方数据出现在材料合成、药物配方和工业制造等领域，其中过程表示为包含异构结构化字段的有序步骤序列。现有的表格学习方法通​​常将这种结构扁平化为固定模式表示，限制了它们捕获分层字段交互和过程依赖性的能力。我们提出了 RecipeNet，这是一种分层 Transformer 架构，它通过堆叠 Transformer 编码器对每个步骤内的字段级交互以及跨步骤的顺序依赖关系进行编码。对多个食谱数据集和任务的实验表明，RecipeNet 始终优于现有的表格模型，凸显了分层和顺序建模对于食谱表示学习的价值。",
+      "authors": [
+        "Pin-Yen Huang",
+        "Sachin Chhabra",
+        "Prasanth Sai Gouripeddi",
+        "Abhinav Kumar",
+        "Baoxin Li"
+      ],
+      "published": "2026-08-14T17:18:36Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.14505v1",
+      "abs_url": "https://arxiv.org/abs/2608.14505v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14505v1"
+    },
+    {
+      "title": "Universal Thermodynamic Interatomic Potentials for Crystalline Materials",
+      "title_zh": "晶体材料的通用热力学原子间势",
+      "summary": "Free energies govern solid-state phase stability, yet computational materials discovery still relies largely on ground-state energies because free energy calculations require ensemble averages. We introduce the thermodynamic interatomic potential (TIP), which extends an interatomic potential from its static energy to a thermodynamically consistent Gibbs fre…",
+      "summary_zh": "自由能控制着固态相稳定性，但计算材料的发现仍然在很大程度上依赖于基态能量，因为自由能计算需要系综平均值。我们引入了热力学原子间势（TIP），它将原子间势从其静态能量扩展到热力学一致的吉布斯自由能模型，并通过自动微分从温度和压力得出热力学响应。我们使用通用势 UMA 实现 TIP[UMA]，在从准谐波到分子动力学保真度的自由能上训练它，并将其校准到更高分辨率的计算或实验。通过一次评估，它返回晶体的状态方程，并定位竞争分支之间的相变，包括动态稳定相。微调将模型扩展到合金溶解度极限和混溶性间隙。 TIP 使自由能与势能一样容易获得，为高通量发现提供了有限温度相稳定性。",
+      "authors": [
+        "Juno Nam",
+        "Bowen Deng",
+        "Xiaochen Du",
+        "Luis Barroso-Luque",
+        "Benjamin Kurt Miller",
+        "Rafael Gómez-Bombarelli"
+      ],
+      "published": "2026-08-14T17:16:27Z",
+      "category": "cond-mat.mtrl-sci",
+      "arxiv_id": "2608.14502v1",
+      "abs_url": "https://arxiv.org/abs/2608.14502v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14502v1"
+    },
+    {
+      "title": "Generating Benchmark Health Data Using a Tabular Diffusion Transformer",
+      "title_zh": "使用表格扩散变压器生成基准健康数据",
+      "summary": "Cross-Tabular Data Generation (CTDG) seeks to learn a generative model from multiple heterogeneous tables and produce new synthetic tabular datasets. However, existing synthetic tabular data generation methods are largely restricted to single-input-table scenarios and struggle to effectively handle multiple heterogeneous tables with diverse feature sets. To…",
+      "summary_zh": "跨表数据生成（CTDG）旨在从多个异构表中学习生成模型并生成新的合成表格数据集。然而，现有的合成表格数据生成方法很大程度上局限于单输入表场景，并且难以有效处理具有不同特征集的多个异构表。为了解决这个限制，我们提出了一个用于跨表数据生成的两阶段框架。在第一阶段，每个异构原始表都被转换为标准化统计表，所有表中的列集相同。每个统计表捕获原始列的边际分布以及它们之间的成对相关性。在第二阶段，训练扩散变换器模型以捕获这些同质统计表的结构模式并生成综合统计表。随后通过多元高斯采样和逆概率积分变换从生成的统计表重建合成原始表。这种两阶段 CTDG 框架能够从多个异构表学习统一的生成模型，并支持生成无限数量的真实合成异构表。实验结果表明，所学习的统计表示具有高保真度，并且生成的合成数据具有良好的保真度-多样性权衡，验证了所提出方法的有效性。",
+      "authors": [
+        "Hao Yan",
+        "Lisa Pilgram",
+        "Dan Liu",
+        "Linglong Kong",
+        "Fida Dankar",
+        "Khaled El Emam"
+      ],
+      "published": "2026-08-14T17:10:44Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.14496v1",
+      "abs_url": "https://arxiv.org/abs/2608.14496v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14496v1"
+    },
+    {
+      "title": "Optimal Scheduling of Road Maintenance Jobs Considering Impact on Traffic Flows",
+      "title_zh": "考虑交通流影响的道路养护作业优化调度",
+      "summary": "Network-level maintenance planning requires repeated evaluations of equilibrium traffic flows under road capacity reductions. While equilibrium traffic assignment models are well established, their repeated solution quickly becomes computationally prohibitive and challenging to embed within maintenance scheduling problems. This paper investigates data-drive…",
+      "summary_zh": "网络级维护规划需要反复评估道路容量减少情况下的平衡交通流。虽然均衡交通分配模型已经很好地建立起来，但它们的重复解决方案很快就变得计算量巨大，并且难以嵌入维护调度问题中。本文研究了数据驱动的替代模型，该模型使用基于优化的平衡解决方案作为基本事实，近似直接从出发地-目的地需求出发的平衡弧流。基于新泽西州纽瓦克地区交通数据的真实案例研究证明了所提出的方法作为未来维护计划框架的可扩展构建块的有效性。",
+      "authors": [
+        "Charitha Nandepu",
+        "Lohitha Kalepu",
+        "Gabriele Ciavarella",
+        "SangWoo Park"
+      ],
+      "published": "2026-08-14T17:07:14Z",
+      "category": "eess.SY",
+      "arxiv_id": "2608.14491v1",
+      "abs_url": "https://arxiv.org/abs/2608.14491v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14491v1"
+    },
+    {
+      "title": "Twin: Playing an Unknown Game with a Test-Time Digital Twin",
+      "title_zh": "双胞胎：使用测试时数字双胞胎玩未知游戏",
+      "summary": "We present a Test-time World-model Inference (Twin) system, in which a frontier coding agent writes an executable world model for completing continual learning tasks, such as ARC-AGI-3 games. Traditional approaches hand-engineer such models, one custom design per task. Each game hides its rules and goal, and our system constructs them from simulation and in…",
+      "summary_zh": "我们提出了一个测试时世界模型推理（双胞胎）系统，其中前沿编码代理编写一个可执行的世界模型来完成持续学习任务，例如 ARC-AGI-3 游戏。传统方法是手工设计此类模型，每个任务一个定制设计。每个游戏都隐藏其规则和目标，我们的系统仅通过模拟和交互来构建它们。其归纳先验优于网格游戏，足以恢复游戏的真实转换和几乎所有级别的目标。重放验证发生在孪生世界模型中。该工具强制要求在程序重现之前观察到的每个游戏转换之前不会执行任何操作。世界模型预测与实际行动结果之间的每一个不匹配都会成为用于修复世界模型的反例。 Twin 通关了 183 个关卡中的 179 个关卡（97.8%），并且在 179 个关卡中的 158 个关卡中比人类更高效（88.3%）。系统在所通关的 156 个关卡（87.2%）中，在任何奖励之前都会推断出目标，并在其余关卡中通过搜索自动发现目标。该…",
+      "authors": [
+        "Alexy Skoutnev",
+        "Kirill Acharya",
+        "Gaston Longhitano",
+        "Madeleine Udell",
+        "Kevin Ellis",
+        "Iddo Drori"
+      ],
+      "published": "2026-08-14T17:06:00Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.14490v1",
+      "abs_url": "https://arxiv.org/abs/2608.14490v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14490v1"
+    },
+    {
+      "title": "LP-NAS: Linear Programming-based Neural Architecture Search",
+      "title_zh": "LP-NAS：基于线性规划的神经架构搜索",
+      "summary": "Neural Architecture Search (NAS) aims to automate neural network architecture design, reducing reliance on human expertise. Among the various NAS methods, differentiable NAS has gained prominence due to its efficiency and accuracy compared to conventional NAS approaches. Since differentiable NAS relaxes the architecture search space into a continuous domain…",
+      "summary_zh": "神经架构搜索（NAS）旨在自动化神经网络架构设计，减少对人类专业知识的依赖。在各种 NAS 方法中，可微分 NAS 因其与传统 NAS 方法相比的效率和准确性而受到关注。由于可微 NAS 将架构搜索空间放宽到连续域，因此可以将连续优化的原理应用于 NAS。在本文中，我们提出了基于线性规划的 NAS（LP-NAS），这是一种基于数学规划的可微 NAS 框架，适用于广泛的连续搜索空间。 LP-NAS 使用验证损失梯度和训练损失 Hessian 制定线性程序 (LP) 来计算架构更新方向，从而在保持模型参数最优性的同时提高泛化能力。通过遵循 LP 导出的下降方向，LP-NAS 可以有效地导航架构搜索空间，从而实现更快、更有效的架构优化。我们引入了 LP-NAS 的两种计算高效的变体，即 S-LP-NAS 和 R-LP-NAS。将 LP-NAS 应用到可微…",
+      "authors": [
+        "Abhishek Shukla",
+        "Ankur Sinha",
+        "Faiz Hamid"
+      ],
+      "published": "2026-08-14T16:53:11Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.14472v1",
+      "abs_url": "https://arxiv.org/abs/2608.14472v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14472v1"
+    },
+    {
+      "title": "You Only Pass Once: Answering and Abstaining Together in a Single Forward Pass of a Frozen Language Model",
+      "title_zh": "你只通过一次：在冻结语言模型的单次前向传递中一起回答和弃权",
+      "summary": "A frozen language model on reasoning tasks has two coupled weaknesses: it under-uses evidence its own residual stream already encodes, and it fails to detect when the input is insufficient to answer, so it confabulates. This paper consolidates two research lines that address these on the same residual stream: a conditional steering probe writes the stream a…",
+      "summary_zh": "推理任务上的冻结语言模型有两个弱点：它没有充分利用自己的残差流已经编码的证据，并且它无法检测输入何时不足以回答，因此它会进行虚构。本文整合了两条在同一残差流上解决这些问题的研究路线：条件引导探针在中间堆栈层写入流并从冻结的主干恢复推理准确性，零样本充分性方向读取流并在信息不足时放弃。在一次前向传递中部署时，它们会产生干扰：转向写入会改变方向读取的状态，在小型模型上花费高达 8 个 AUROC 点的跨域传输；单独的干净传递会使推理成本加倍。我们保持方向固定，并训练一个小型网络来从转向残差重建预转向残差——（转向、干净）对上的均方误差，没有充分标签——并读取重建的方向。由此产生的系统 YOPO（只通过一次）可在冻结的 Qwen2.5 主干网 (1.5B/3B/7B) 的一次前向传递中做出回答、转向和弃权。端到端，三向精度是冻结基线的两倍多（1.5B a…",
+      "authors": [
+        "Ziyang Luo",
+        "Zhongyao Chu",
+        "Xinjie He",
+        "Youting Wang",
+        "Xukui Qin",
+        "Runxiong Wu"
+      ],
+      "published": "2026-08-14T16:44:35Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.14465v1",
+      "abs_url": "https://arxiv.org/abs/2608.14465v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14465v1"
+    },
+    {
+      "title": "Information Satisfaction: A Reader-Centered Axis for Summarization Evaluation",
+      "title_zh": "信息满意度：以读者为中心的摘要评估轴",
+      "summary": "The majority of work on summarization evaluation focuses on general summary quality (e.g., ROUGE, BERTScore) or specific desired properties (e.g., readability, factuality). However, these metrics fail to measure the utility of a summary to an individual user. For example, a biomedical researcher learning about the latest vaccine research will have different…",
+      "summary_zh": "摘要评估的大部分工作侧重于一般摘要质量（例如 ROUGE、BERTScore）或特定的所需属性（例如可读性、真实性）。然而，这些指标无法衡量摘要对单个用户的效用。例如，了解最新疫苗研究的生物医学研究人员将与家庭医生有不同的信息需求。以查询为中心的摘要捕获了部分这种需求，但在实践中，用户很少陈述查询中相关的所有内容：单个简短查询可能不足以区分研究人员的需求和医生的需求。相比之下，读者的背景或角色（他们的角色和专业知识）在查询中相对稳定，并且可以恢复大部分缺失的上下文，这使其成为评估摘要是否满足读者需求的实用信号。在这项工作中，我们评估了流行的摘要指标对信息和角色差异的敏感程度，并发现许多流行的指标（包括强大的法学硕士作为评判指标）未能通过信息内容的基本扰动测试。我们还进行了专家的人工评估，根据给定特定人的背景和用例的信息满意度来衡量摘要偏好。我们发现…",
+      "authors": [
+        "Isabel Cachola",
+        "William Walden",
+        "Reno Kriz",
+        "Mark Dredze"
+      ],
+      "published": "2026-08-14T16:41:23Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.14457v1",
+      "abs_url": "https://arxiv.org/abs/2608.14457v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14457v1"
+    },
+    {
+      "title": "Shift Aware Transfer Learning with Adaptive Dual-Encoder Fusion for PM Forecasting in Data-Limited Environments",
+      "title_zh": "利用自适应双编码器融合进行转变感知迁移学习，用于数据有限环境中的 PM 预测",
+      "summary": "Short-horizon forecasting of fine particulate matter (PM2.5) remains difficult when observations from the target domain are limited and the statistical properties of the source and target domains differ. In these settings, models trained only on local data may not capture complex temporal dynamics, while direct transfer learning can result in negative trans…",
+      "summary_zh": "当目标域的观测有限且源域和目标域的统计特性不同时，细颗粒物 (PM2.5) 的短期预测仍然很困难。在这些设置中，仅在本地数据上训练的模型可能无法捕获复杂的时间动态，而直接迁移学习可能会导致负迁移。本研究开发了一种移位感知双编码器传输框架，将源域知识与特定目标表示学习相结合。源编码器使用来自 10 个美国监控地点的每小时观测数据进行预训练。然后，根据时间顺序的列车验证测试协议，使用台湾 77 个车站两年的每小时观测数据对该框架进行了调整和评估。在四个主要基线中，冻结源双编码器模型取得了最佳性能，MSE = 21.8960，MAE = 3.1597，R^2 = 0.8725。这相当于相对于 TL-v1 的 MSE 降低约 7.1%，相对于 TL-v2 的 MSE 降低约 4.1%。消融分析显示，删除台湾特定分支造成的业绩下降幅度最大。允许源编码器进行调…",
+      "authors": [
+        "Shahab Band",
+        "Hamed Mohammadi"
+      ],
+      "published": "2026-08-14T16:41:16Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.14456v1",
+      "abs_url": "https://arxiv.org/abs/2608.14456v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14456v1"
+    },
+    {
+      "title": "Wyvern: An Agentic Framework for Generating Grounded Multimodal Reports",
+      "title_zh": "Wyvern：生成接地多模态报告的代理框架",
+      "summary": "In the current artificial intelligence-driven innovation era, the pace of knowledge growth is accelerating, and is hard to keep up with. While generative models are increasingly used to synthesize content, they often lack in information grounding. To address these peculiarities of our time, we propose Wyvern, a multi-agent framework for the automated genera…",
+      "summary_zh": "在当前人工智能驱动的创新时代，知识增长的步伐不断加快，且难​​以跟上。虽然生成模型越来越多地用于合成内容，但它们往往缺乏信息基础。为了解决我们这个时代的这些特点，我们提出了 Wyvern，这是一个多代理框架，用于自动生成有依据的多模式技术报告。 Wyvern 允许生成多模式输出，将图像、表格和文本与支持参考集成到统一报告中。此外，特别关注内容的基础，并实施权利要求自动修订阶段。我们进行了一项人类评估研究来评估我们提出的框架的质量。结果表明，在 87% 的情况下，人们认为这些数字的信息量优于最近的基线。此外，在 63% 到 100% 的情况下，Wyvern 的报告被认为比三种替代方法生成的报告更有用。我们还进行了自动评估，结果显示，相对于基线，Wyvern 的引文召回率提高了 2.3$\\times$，引文精确度提高了 1.6$\\times$。",
+      "authors": [
+        "Beatrice Alessandra Motetti",
+        "Emilien Guandalino",
+        "Daniele Jahier Pagliari",
+        "Alessio Burrello",
+        "Lorenz K. Müller",
+        "Konstantin Berestizshevsky"
+      ],
+      "published": "2026-08-14T16:31:43Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.14446v1",
+      "abs_url": "https://arxiv.org/abs/2608.14446v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14446v1"
+    },
+    {
+      "title": "PACE-Bench: Benchmarking Physics Adaptation via Code Evolution in Dynamic Environments",
+      "title_zh": "PACE-Bench：通过动态环境中的代码演化对物理适应进行基准测试",
+      "summary": "Self-evolving agents improve future behavior from interaction experience, yet existing evaluations typically optimize under fixed execution conditions and do not test recovery after those conditions change. To address this gap, we introduce PACE-Bench (Physics Adaptation via Code Evolution), a simulator-grounded benchmark of 144 source-to-target adaptation…",
+      "summary_zh": "自我进化代理通过交互体验改善未来的行为，但现有的评估通常在固定的执行条件下进行优化，并且不会在这些条件发生变化后测试恢复。为了解决这一差距，我们引入了 PACE-Bench（通过代码进化进行物理适应），这是一个基于模拟器的基准，涵盖六个物理领域的 144 个源到目标适应对。每对都将源环境链接到具有相同目标和接口的变异目标环境。在源中成功的代码驱动设计在目标中失败，代理必须在有限的尝试预算内使用诊断沙箱反馈将其迭代地调整为工作目标设计。我们比较了四种范式的十种自我进化方法。基准测试仍远未饱和：Reflexion + Qwen3-14B 仅在 35.9% 的完整基准对上取得成功，而 GPT-5.5 在完整预算下解决了 66.7% 的静态子集。总之，这些结果表明，基于模拟器的反射比未经验证的自我修正更可靠，而记忆将代理锚定到早期设计和广泛的树搜索探索而不…",
+      "authors": [
+        "Yuhao Zhan",
+        "Bingxiang He",
+        "Zecong Tang",
+        "Chaojun Xiao"
+      ],
+      "published": "2026-08-14T16:25:43Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.14441v1",
+      "abs_url": "https://arxiv.org/abs/2608.14441v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14441v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "北京自研大模型网络安全能力实现重大突破 - 北京市人民政府门户网站",
+      "summary": "北京自研大模型网络安全能力实现重大突破 北京市人民政府门户网站",
+      "source": "北京市人民政府门户网站",
+      "lang": "zh",
+      "published": "Mon, 17 Aug 2026 00:39:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9pbUpzd05iU0poOUVDX1JwQXB3MTFCNjVqdlNMR0pTbXZIY0RvV0doMmotYk1jY0hWNVphSHZXalhyNzhxZmVIREd0X0JqZ1pSc1lmdXdXcl8yWTNNSnNNdlRBRTUyekVyem44QmxfamxVRmJNb2ZueFc2TQ?oc=5"
+    },
+    {
+      "title": "筑牢“人工智能+”一号创新工程算力底座 - 四川日报",
+      "summary": "筑牢“人工智能+”一号创新工程算力底座 四川日报",
+      "source": "四川日报",
+      "lang": "zh",
+      "published": "Sun, 16 Aug 2026 22:10:17 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5oOWFrbHMxbHQwU3dYVmNLUHpQd2FFUkNMVmotdU1VOGtVZjNaMExoa3NwamZxbVEyRGVwemY0dFdETE10X2hpWEVPSEpVaTZKNTQ2am53YW1TU0pfOFJYcjZNRC00WWpOVEE?oc=5"
+    },
+    {
+      "title": "AIDC算力升级新范式：云尖信息多样化液冷CDU， 破解高密度散热难题 - 美通社",
+      "summary": "AIDC算力升级新范式：云尖信息多样化液冷CDU， 破解高密度散热难题 美通社",
+      "source": "美通社",
+      "lang": "zh",
+      "published": "Mon, 17 Aug 2026 03:06:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9razVzVWMtc21UbHMxUmU5TV9Tdkx4dFM5M3JkWl9WcEJqMjVlYmF3OXprTDUzb3BoT2h4cEV1U2tSTm4tYkR6VkdkZTZqS01lMjRGeFBZOA?oc=5"
+    },
+    {
+      "title": "中信证券：“十五五”新增智能算力约3000万P 全口径资本开支有望达10万亿量级 - 观点网",
+      "summary": "中信证券：“十五五”新增智能算力约3000万P 全口径资本开支有望达10万亿量级 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Mon, 17 Aug 2026 00:59:39 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBRcTZkZ1NEOEMzNjVhM2tGWllvZU5GTFlsV1llX1NrSDFjb0dlMFIxX2VNTGVFS1lkbllueEpTTDVsQ2EyRXRkMTF3a1dvSFJyWXMyczQwZ2FqdWJSa3dnR0dn?oc=5"
+    },
+    {
+      "title": "上海硅巷13小时激辩：当算力重返增长快车道 产业下一站锚定何方？ - 财联社",
+      "summary": "上海硅巷13小时激辩：当算力重返增长快车道 产业下一站锚定何方？ 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Mon, 17 Aug 2026 02:19:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1wU25JMEJNYXIySUQtNUZtWTE4N3hWMEtPcVdtTkdBOFBsWHZOSlZha0Q4ZElvekJIYzEtUHd1WWxoTUxQX1FPXw?oc=5"
+    },
+    {
+      "title": "471亿！全球最大的大模型中介，卖身了 - zhidx.com",
+      "summary": "471亿！全球最大的大模型中介，卖身了 zhidx.com",
+      "source": "zhidx.com",
+      "lang": "zh",
+      "published": "Mon, 17 Aug 2026 02:27:59 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBwazdqWTdfenJBajZpWm1MS1BhZzZuVHhLclNOdGNIemUxdWRtZ0tyTEQydFdyQk00MVpTNnVpX2FfWk42aVE?oc=5"
+    },
+    {
+      "title": "国内首款即插即用车规级加速芯片量产 - wuhan.gov.cn",
+      "summary": "国内首款即插即用车规级加速芯片量产 wuhan.gov.cn",
+      "source": "wuhan.gov.cn",
+      "lang": "zh",
+      "published": "Sun, 16 Aug 2026 23:23:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1OcHByT2lDbENJVVpycG9KWlUzWVBqSTl5SS01R01aQ1ZTc0JpclFRMnhXZjB1M1l5Q0ZxZW1CbXFFVk1rdnZvR01tMmM1TXBWV3ZxNURkVUNpOXNrU0FIMmxNRDI3Sk1TTHhxLXNNMlE?oc=5"
+    },
+    {
+      "title": "黄仁勋安抚AI算力市场：英伟达可能会“为单个投资项目提供最高25%的残值支持机制” - 东方财富",
+      "summary": "黄仁勋安抚AI算力市场：英伟达可能会“为单个投资项目提供最高25%的残值支持机制” 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Sun, 16 Aug 2026 19:18:23 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5KM09oZkhqbF9qWU93QUNzV1BsUWtLbjlfaG5wTUJ2YmlfMnliMUhHMnU5bjg5djBnbjBiTFJrdC1xaWN5d2x5TkdTTkJ4ejhkLUVCNUJFcy1Hd1J2ZGNGbQ?oc=5"
+    },
+    {
+      "title": "金融业深度运用AI智能体要闯过四关 - 新浪财经",
+      "summary": "金融业深度运用AI智能体要闯过四关 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Sun, 16 Aug 2026 22:58:17 GMT",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1yZEJPcElFU3Z4dVo0OFYxU3FDV2NfVWltRXVvV2ZzeXM3aVN2aU42NjQ4U2tqaTBxRmRnTDhyYzg1VkhiVDlhRE9rOUJHODhreEVPY2l4WTdNamlDY0N4bGZVcHhsUlZ2U2dXcURlcE5kUW9HenV1eg?oc=5"
+    },
+    {
+      "title": "广东省首个词元经济“中银·算力token贷”发布 - gd.chinanews.com.cn",
+      "summary": "广东省首个词元经济“中银·算力token贷”发布 gd.chinanews.com.cn",
+      "source": "gd.chinanews.com.cn",
+      "lang": "zh",
+      "published": "Mon, 17 Aug 2026 02:20:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9Ib1BzbXR4UmxaMVF5YWE2cC1QNGcwNzJHS25IczZYeW1XREhxTkZOS1RWUnU5SjNtZEpRUlpyTGFTQkF1bEdlc3ZvcmpJX2tMUnhOTG1ZRUdlNGZFeXlkSWc3NDVKajR1SHVZ?oc=5"
+    },
+    {
+      "title": "数派数据联合华为在昆发布AI原生企业操作一体机 - yn.yunnan.cn",
+      "summary": "数派数据联合华为在昆发布AI原生企业操作一体机 yn.yunnan.cn",
+      "source": "yn.yunnan.cn",
+      "lang": "zh",
+      "published": "Mon, 17 Aug 2026 02:41:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wZjZWY2xMWndoM3FONlFMOHpPckthTWxqemlLR3NyYTg2UGdyVVR3MndoTnZtTGhtX1dfekVjYXNvekFIUlAxdU1sWVB5NU5HdC1HWE0tRnVyLUVuM2NISnFRRVI?oc=5"
+    },
+    {
+      "title": "涨价开源换打法 大模型一周三更 - 北京商报",
+      "summary": "涨价开源换打法 大模型一周三更 北京商报",
+      "source": "北京商报",
+      "lang": "zh",
+      "published": "Mon, 17 Aug 2026 01:07:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1icWQzZkItXzNLLXpBcC1TYmpBQmFTQUJoRGZmSUk4Yl82YjZCM2lHSy1kUkc5VlVqXzhNMnBsS0lXcFRhUDl6LUZHTnNIMkg1WFNZRU1QclB0LWstNEE?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 92453,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 66546,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57447,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 39161,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 36188,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 386478,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 272873,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 231592,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
