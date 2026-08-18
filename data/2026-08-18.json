@@ -1,0 +1,501 @@
+{
+  "date": "2026-08-18",
+  "generated_at": "2026-08-18T03:35:44.354996+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory",
+      "title_zh": "不要丢掉接力棒：通过代理子任务探索和转换感知记忆进行长视野机器人操作",
+      "summary": "Long-horizon robot manipulation chains many contact-rich skills into one multi-stage task. Vision-language-action (VLA) models increasingly master the individual skills, yet the chain still fails: errors compound beyond the policy's ability to correct, and one subtask silently constrains the next. A promising recipe freezes the VLA and puts an LLM agent in…",
+      "summary_zh": "长视野机器人操作将许多接触丰富的技能链接到一项多阶段任务中。视觉-语言-行动（VLA）模型越来越多地掌握个人技能，但链条仍然失败：错误复合超出了策略的纠正能力，并且一个子任务默默地限制了下一个子任务。一个有前景的方法是冻结 VLA 并让 LLM 代理负责：它以语言进行规划，使用分析基元在自由空间中移动，仅针对接触丰富的片段调用 VLA，并将适应写入语言记忆中。应用于长视野时，它会破裂两次。 （1）能力来自于测试时的全任务探索，其成本是分阶段相乘的：如果一个阶段需要T个episode，那么K阶段的任务需要大约T^K，并且失败并不能揭示是哪个阶段造成的。 (2) 它没有转换的表示：VLA 原语带有退出但没有进入条件，因此子任务可以以其后继者无法使用的形式成功。我们展示了指挥棒。与（1）相反，BATON将子任务作为探索的单元：每个子任务都在廉价的短视野范…",
+      "authors": [
+        "Bingxin Xu",
+        "Yuzhang Shang",
+        "Emilio Ferrara"
+      ],
+      "published": "2026-08-17T17:59:57Z",
+      "category": "cs.RO",
+      "arxiv_id": "2608.16889v1",
+      "abs_url": "https://arxiv.org/abs/2608.16889v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16889v1"
+    },
+    {
+      "title": "AutoSR: Automatic Symbolic Regression by Searching Research States",
+      "title_zh": "AutoSR：通过搜索研究状态自动符号回归",
+      "summary": "We introduce Automatic Symbolic Regression (AutoSR), a fully automated system that instantiates Research-Space Symbolic Regression by searching persistent scientific investigations rather than isolated equations. Finite, noisy data often yield numerically competitive expressions that imply very different behavior outside the observed regime, making numerica…",
+      "summary_zh": "我们引入自动符号回归（AutoSR），这是一个完全自动化的系统，它通过搜索持续的科学研究而不是孤立的方程来实例化研究空间符号回归。有限的、嘈杂的数据通常会产生数值上有竞争力的表达式，这意味着在观察范围之外有非常不同的行为，使得数值拟合和句法复杂性不足以衡量科学可信度。现有的方法主要集中在改进表达上，但搜索通常除了结果公式和分数之外几乎不保留什么，从而丢失了科学记录，例如动机和探索，这些记录告诉下一步要尝试什么。 AutoSR 将此记录保存在 \\textbf{研究状态} 中，将每个候选方程与沿其分支开发的推理、计算证据和独立审查相结合。提案者-评审者代理在渐进式扩大蒙特卡罗树搜索（PW-MCTS）下开发这些状态，该搜索在竞争性调查之间分配计算，而积累的研究记录最终被合成为最终报告，解释主导关系及其选择的基础。在两个基准套件中选定的九个挑战中，Auto…",
+      "authors": [
+        "Kejia Zhang",
+        "Youran Sun",
+        "Xinyu Ren",
+        "Chugang Yi",
+        "Haizhao Yang"
+      ],
+      "published": "2026-08-17T17:55:26Z",
+      "category": "cs.SC",
+      "arxiv_id": "2608.16876v1",
+      "abs_url": "https://arxiv.org/abs/2608.16876v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16876v1"
+    },
+    {
+      "title": "An Analytical-Prior Framework for Data-Efficient Prediction of Sound-Reduction Frequencies in Rectangular Side-Branch Helmholtz Resonators",
+      "title_zh": "用于对矩形侧支亥姆霍兹谐振器中的降噪频率进行数据有效预测的分析先验框架",
+      "summary": "High-fidelity finite-element simulations can provide accurate numerical predictions for side-branch resonators, but large simulation datasets are expensive to generate and purely data-driven surrogates may become unreliable when simulation-labelled data are scarce. This study develops an analytical-prior learning framework that reuses a low-cost analytical…",
+      "summary_zh": "高保真有限元模拟可以为侧支谐振器提供准确的数值预测，但生成大型模拟数据集的成本很高，并且当模拟标记数据稀缺时，纯数据驱动的替代方案可能变得不可靠。本研究开发了一个分析先验学习框架，该框架重用低成本分析模型，以在有限的高保真模拟预算下提高数据效率。考虑两条互补路线。当分析模型在推理时保持可用时，它被保留为显式基线，并且模拟数据仅用于了解分析与模拟的差异。当需要独立的预测器时，首先从丰富的低成本评估中将分析映射提炼为学习先验，然后用有限的模拟数据进行校准。该框架使用 86 个模拟标记的几何形状和 8,998 个非重叠的纯分析几何形状在矩形侧枝亥姆霍兹谐振器上进行评估。分析模型的平均绝对误差 (MAE) 为 1.333 Hz。直接支持向量回归 (SVR) 达到 3.375 Hz，而残余 SVR 将 MAE 降低至 0.426 Hz。直接多层感知器 (ML…",
+      "authors": [
+        "Jiaming Li"
+      ],
+      "published": "2026-08-17T17:53:14Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.16873v1",
+      "abs_url": "https://arxiv.org/abs/2608.16873v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16873v1"
+    },
+    {
+      "title": "Data-Efficient and Interpretable Classification of Circulating Tumor Cell Phenotypes in Microfluidic Devices via Deep Learning",
+      "title_zh": "通过深度学习对微流体装置中的循环肿瘤细胞表型进行数据高效且可解释的分类",
+      "summary": "Accurate classification of circulating tumor cell (CTC) phenotypes can provide valuable information for assessing metastatic potential. Label free microfluidic devices provide a hydrodynamic obstacle course that transforms subtle biophysical characteristics of CTCs, including size and deformability, into distinct kinematic trajectories. However, the highly…",
+      "summary_zh": "循环肿瘤细胞（CTC）表型的准确分类可以为评估转移潜力提供有价值的信息。无标记微流体装置提供了一个流体动力学障碍训练场，将 CTC 的微妙生物物理特征（包括尺寸和可变形性）转化为独特的运动轨迹。然而，控制这些轨迹的高度非线性流体结构相互作用使得从轨迹数据推断细胞表型的逆问题在分析上变得棘手。虽然深度神经网络 (DNN) 已成为解决这一逆问题的强大方法，但其有效性受到轨迹数据有限可用性和缺乏物理可解释性的限制。为了应对这些挑战，我们提出了一种可解释且数据高效的 DNN 框架，用于基于轨迹的 CTC 分类。为了缓解数据的稀缺性，我们开发了子序列（SubSeq），这是一种有针对性的增强策略，可以在训练期间随机提取信息丰富的局部轨迹片段，以促进从局部模式中学习。我们进一步应用梯度加权类激活映射来识别驱动模型预测的微流体装置的轨迹特征和物理区域。实验结果表明…",
+      "authors": [
+        "Serena Su",
+        "Yifan Wang",
+        "Senwei Liang"
+      ],
+      "published": "2026-08-17T17:51:49Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.16870v1",
+      "abs_url": "https://arxiv.org/abs/2608.16870v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16870v1"
+    },
+    {
+      "title": "Towards Computational Provenance: Carrying Causal-State Evidence in Generated Text",
+      "title_zh": "走向计算起源：在生成的文本中携带因果状态证据",
+      "summary": "A language model's output does not by itself provide verifiable evidence about the internal computation that produced it. We study computational provenance: whether generated text can carry detectable evidence of which causally relevant internal state occurred. We test a bounded form of this idea in two controlled architectures: a modular feed-forward neura…",
+      "summary_zh": "语言模型的输出本身并不提供有关生成它的内部计算的可验证证据。我们研究计算起源：生成的文本是否可以携带发生因果相关内部状态的可检测证据。我们在两种受控架构中测试了这个想法的有界形式：模块化前馈神经网络和基于变压器的模型。两种架构都接受相同算术任务的训练，并具有通过两个离散中间状态的强制路径​​，允许不同的内部路径产生相同的答案。我们故意在这些路径之间切换，验证实际使用的状态，并让经过验证的状态确定生成的文本中的微妙统计模式，以便稍后检测到。前馈和变压器系统均在其公共和单独密封保护的端到端评估中通过了所有 128 个匹配对，检测器恢复与经过验证的内部状态相关的信号。所需的因果计算也在五个独立训练的前馈模型和三个独立训练的变压器中重现。在单独的仅回答变压器实验中，我们的线性探针没有恢复自然学习的中间状态。这些结果提供了受控的概念证明，即使答案不变，有关经…",
+      "authors": [
+        "Benjamin Belay"
+      ],
+      "published": "2026-08-17T17:50:04Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.16868v1",
+      "abs_url": "https://arxiv.org/abs/2608.16868v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16868v1"
+    },
+    {
+      "title": "HarnessEval-W: Agentifying the Evaluation of Visual Worlds",
+      "title_zh": "HarnessEval-W：视觉世界评估的代理化",
+      "summary": "A benchmark should deliver more than a scalar score: what makes an evaluation trustworthy is the reasoning that justifies the score. This is especially critical for world models, where judging a rollout requires understanding whether physics, causality, and world state evolve correctly. Humans spot such violations naturally, yet no existing benchmark automa…",
+      "summary_zh": "基准测试应该提供的不仅仅是标量分数：使评估值得信赖的是证明分数合理性的推理。这对于世界模型尤其重要，因为判断模型的推出需要了解物理、因果关系和世界状态是否正确演化。人类会自然地发现此类违规行为，但现有的基准测试还没有自动执行此功能：指标是暴力计算的，没有留下可以检查或验证的推理链。我们推出了 HarnessEval-W，这是一个代理评估管道，它将 LLM 生态系统中的 Harness 范例引入了世界模型基准测试。 HarnessEval-W 不是应用固定的标题，而是解释每个评估案例的上下文，将评估问题分解为可测量的子问题，并生成专门的子代理，每个子代理都配备了定制的上下文和诊断工具来推理自己的子问题。然后，父代理验证收集到的证据并将其总结为最终裁决。这种分层工作流程将每个评估变成一个透明的证据树，其完整的推理链证明了结果的合理性。我们将 Harne…",
+      "authors": [
+        "Weiliang Chen",
+        "Haowen Sun",
+        "Jun Gao",
+        "Jiawei Chi",
+        "Hanyang Wang",
+        "Qiyu Dai"
+      ],
+      "published": "2026-08-17T17:43:24Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.16859v1",
+      "abs_url": "https://arxiv.org/abs/2608.16859v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16859v1"
+    },
+    {
+      "title": "Can Unsupervised Methods Outperform Supervised Deep Learning When Ground Truth Is Sparse? A Case Study of Bronchovascular Bundle Segmentation in Low-Dose CT",
+      "title_zh": "当基本事实稀疏时，无监督方法能否胜过有监督深度学习？低剂量CT支气管血管束分割案例研究",
+      "summary": "Background Lung cancer remains the deadliest cancer worldwide because it is often diagnosed too late. Effective treatment depends on detection at an early screening stage. However, the growing number of patients and the limited number of radiologists lead to prolonged diagnostic waiting times. In very early stage lung cancer, nodule visibility is further re…",
+      "summary_zh": "背景 肺癌仍然是全世界最致命的癌症，因为它常常诊断得太晚。有效的治疗取决于早期筛查阶段的检测。然而，患者数量的不断增加和放射科医生数量的有限导致诊断等待时间延长。在非常早期的肺癌中，邻近的血管和气道壁进一步降低了结节的可见度，因为结节通常与这些结构相连或由这些结构提供。因此，支气管血管束的任务特异性分析对于有效的结节检测非常重要，并且其去除可以增加肺癌筛查的诊断潜力。材料和方法为了评估所提出方法的有效性，我们使用了广泛使用的 LDCT 数据集的系列，包括杜克肺癌筛查 (DLCS) 数据集和试点博美犬肺癌筛查计划。所提出的支气管血管束分割管道 RONALD 对计算机断层扫描图像进行操作，并返回位于肺实质中的血管和支气管的二进制掩模。该方法包括肺、肺叶和纵隔分割的预处理阶段，然后是单独的血管和支气管树分割。结果 与其他分割方法相比，所提出的流程在低剂量…",
+      "authors": [
+        "Anna Mrukwa",
+        "Marek Socha",
+        "Aleksandra Suwalska",
+        "Agata Durawa",
+        "Malgorzata Jelitto",
+        "Katarzyna Dziadziuszko"
+      ],
+      "published": "2026-08-17T17:38:22Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.16855v1",
+      "abs_url": "https://arxiv.org/abs/2608.16855v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16855v1"
+    },
+    {
+      "title": "What Do Compliance Detectors Read? An Audit of Activation Probes and Guard Models",
+      "title_zh": "合规检测器读取什么？激活探针和防护模型的审核",
+      "summary": "Regulatory compliance monitoring in deployed language models is increasingly implemented as a legal and audit control, checking model outputs against written rules spanning data protection, healthcare, financial regulation, and platform policy. Such monitoring is meaningful only if a detector's verdict depends on the stated rule rather than on surface featu…",
+      "summary_zh": "已部署语言模型中的监管合规性监控越来越多地作为法律和审计控制来实施，根据涵盖数据保护、医疗保健、金融监管和平台政策的书面规则检查模型输出。仅当探测器的判断取决于规定的规则而不是场景的表面特征时，这种监视才有意义。我们证明这种情况在当前类别的合规性检测器中失败，我们将这种失败称为规则盲目性。删除、置换或替换控制规则使我们测试的每个防护和激活探测器的检测准确性保持不变，包括正确引用控制条款的策略条件防护，但当该条款交换为其许可对应条款时几乎不会改变其判决。一个专门构建的基准测试跨越两种场景的两个规则，这样既不能单独预测标签，也不能在先前基准测试没有排除的设计下确认失败，并表明逐步推理，而不是我们测试的任何快速检测器，才是逃脱它的原因。大规模审计需要无需重新训练的检测器，因此我们引入了内部合规性评分（ICS）：一种无需训练的激活读数，根据十个标记对进行校…",
+      "authors": [
+        "Saisab Sadhu",
+        "Aadit Sengupta",
+        "Vinay Kumar Sankarapu",
+        "Pratinav Seth"
+      ],
+      "published": "2026-08-17T17:37:07Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.16852v1",
+      "abs_url": "https://arxiv.org/abs/2608.16852v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16852v1"
+    },
+    {
+      "title": "Security of Foundation-Model-Powered Embodied Agents: Attack Surfaces, Attacks, Defenses, and Evaluation",
+      "title_zh": "基础模型驱动的实体代理的安全性：攻击面、攻击、防御和评估",
+      "summary": "Foundation models are increasingly used for perception, reasoning, planning, and action generation in embodied agents, creating security risks that can propagate from digital inputs to physical behavior. Existing surveys often organize threats by mechanisms such as jailbreaks, prompt injection, backdoors, poisoning, or adversarial examples, but these catego…",
+      "summary_zh": "基础模型越来越多地用于实体代理的感知、推理、规划和行动生成，从而产生了从数字输入传播到物理行为的安全风险。现有的调查通常通过越狱、即时注入、后门、中毒或对抗性示例等机制来组织威胁，但这些类别并不能一致地识别对手首先进入具体控制循环的位置。我们提出了一项以信任边界为中心的基础模型驱动的具体代理安全性调查。使用第一妥协信任边界原则，我们将攻击面与攻击机制分开，并将系统组织为五层和十二个攻击面，涵盖模型供应链、用户指令、上下文和内存、物理语义环境、多模态感知、世界状态、内部推理、任务规划、操作接口、中间件、多代理通信和执行控制。基于截至 2026 年 8 月 15 日收集的 58 条攻击记录和 61 条防御记录，我们分析了代表性攻击、跨层传播、防御布局和评估实践。我们的定量分析表明，攻击研究集中在多模态感知和动作接口上，而防御尤其集中在动作级和运行时保护…",
+      "authors": [
+        "Jiawei Liu",
+        "Jiacheng Guo",
+        "Tian Zhang",
+        "Yiwei Xu",
+        "Juan Wang",
+        "Jinlin Fan"
+      ],
+      "published": "2026-08-17T17:28:49Z",
+      "category": "cs.RO",
+      "arxiv_id": "2608.16843v1",
+      "abs_url": "https://arxiv.org/abs/2608.16843v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16843v1"
+    },
+    {
+      "title": "HAF: Adapting Generalist VLAs to Humanoid Whole-Body Loco-manipulation via Hierarchical Action Flow and Spectral Latent RL",
+      "title_zh": "HAF：通过分层动作流和频谱潜在强化学习，使通才 VLA 适应人形全身局部操纵",
+      "summary": "Humanoid robots hold great promise as general-purpose agents in human-centered environments, yet generalist vision-language-action (VLA) foundation models are not readily applicable to humanoid whole-body loco-manipulation. The high dimensionality and interdependence of humanoid motions make it challenging for conventional single-stage VLA architectures to…",
+      "summary_zh": "人形机器人作为以人为中心的环境中的通用代理具有广阔的前景，但通用视觉语言动作（VLA）基础模型并不容易适用于人形全身运动操作。人形运动的高维性和相互依赖性使得传统的单级 VLA 架构难以有效协调运动、腰部姿势和双臂操纵。此外，通过离线行为克隆训练的策略在实际部署过程中可能仍然不是最佳的。虽然在线强化学习可以通过现实世界的交互来完善策略，但直接调整大型 VLA 主干需要过多的计算，并且可能会在真实机器人探索过程中引入安全风险。为了解决这些瓶颈，我们引入了 HAF（人形适应框架），这是一个由 HAF-VLA 和 HAF-Steer 组成的两部分框架，可将现成的通用 VLA 基础模型转移到人形全身局部操纵。 HAF-VLA 是一种基于预训练流匹配 VLA 构建的分层动作流生成器。它将全身动作去噪分为三个连续阶段，并具有阶段嵌入和跨阶段 KV 缓存，保留运…",
+      "authors": [
+        "Langzhe Gu",
+        "Chengkai Hou",
+        "Meng Li",
+        "Xinhua Wang",
+        "Jiaming Liu",
+        "Xinyuan Lv"
+      ],
+      "published": "2026-08-17T17:22:33Z",
+      "category": "cs.RO",
+      "arxiv_id": "2608.16837v1",
+      "abs_url": "https://arxiv.org/abs/2608.16837v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16837v1"
+    },
+    {
+      "title": "Time-Aware Validation of Machine Learning Fuel Consumption Models: Evidence from 1\\,Hz Operational Data, CCGS \\textit{Sir Wilfrid Laurier}",
+      "title_zh": "机器学习燃料消耗模型的时间感知验证：来自 1\\,Hz 操作数据的证据，CCGS \\textit{Sir Wilfrid Laurier}",
+      "summary": "Ship fuel consumption (SFC) prediction supports vessel operation optimisation, emissions estimation, and decision support systems (DSS) for sustainable maritime transportation. Numerous data-driven fuel models have been developed over the past two decades, but a critical and often overlooked limitation lies in their validation practices: most studies evalua…",
+      "summary_zh": "船舶燃油消耗 (SFC) 预测支持船舶运营优化、排放估算和可持续海上运输的决策支持系统 (DSS)。在过去的二十年里，已经开发了许多数据驱动的燃料模型，但一个关键且经常被忽视的局限性在于它们的验证实践：大多数研究使用随机训练-测试分割来评估性能，这种方法应用于高频记录，承认时间泄漏并产生不反映部署条件的乐观结果。本文使用时间感知评估，特别是时间序列交叉验证 (TSCV) 和阻塞 TSCV (BTSCV) 来检查这一差距。使用加拿大海岸警卫队船 (CCGS) \\textit{Sir Wilfrid Laurier} 作为案例研究，在三个时间感知方案和三个特征配置下调整六个回归模型和一个物理基线，然后在从大约 388 万条稳态 1\\,Hz 记录中提取的常见时间顺序保持集上进行评估。",
+      "authors": [
+        "Samarasimha Reddy Chittamuru",
+        "Ayhan Akinturk",
+        "Allison Kennedy",
+        "Joshua Barnes",
+        "Matthew Hamilton"
+      ],
+      "published": "2026-08-17T17:18:05Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.16833v1",
+      "abs_url": "https://arxiv.org/abs/2608.16833v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16833v1"
+    },
+    {
+      "title": "Policy Iteration with Human Feedback: Bringing Post-Training RL to In-context Learning",
+      "title_zh": "具有人类反馈的策略迭代：将训练后强化学习引入情境学习",
+      "summary": "Generative pretraining established reusable task representations; later work on language-based task conditioning and in-context learning showed that a fixed model could adapt its behavior from instructions and demonstrations. Policy Iteration with Human Feedback (PIHF) builds on this development and the recurrent evaluate-and-improve structure of generalize…",
+      "summary_zh": "生成预训练建立了可重用的任务表示；后来基于语言的任务调节和情境学习的研究表明，固定模型可以根据指令和演示来调整其行为。人工反馈策略迭代 (PIHF) 建立在这一发展以及广义策略迭代的循环评估和改进结构的基础上。 PIHF 使用预训练的语言模型作为其执行基础，并将持续修订移至版本化的自然语言策略和工具集。语言模型评论家和临床专家审查完整的面板推理和工具使用轨迹，以定位反复出现的失败并形成候选修订；专家可以重新解释证据并保留接纳和回滚的权力，而 Recall@1 和 Recall@5 则在候选执行后验证结果。在累积消融和超罕见疾病基准方面，源自 PIHF 的策略在一个专有执行器和三个开放权重执行器中改进了 Recall@1，涵盖 3 至 490 亿个活跃参数。 GPT-5.4 的增益为 32.7 个百分点，Qwen3.6-35B 的增益为 31.1 个…",
+      "authors": [
+        "Minh-Ha Nguyen",
+        "Cathy Shyr"
+      ],
+      "published": "2026-08-17T17:16:43Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.16831v1",
+      "abs_url": "https://arxiv.org/abs/2608.16831v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16831v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "广州拟立法促进人工智能发展 建设统一算力调度平台和应用赋能中心 - 广州市人民政府",
+      "summary": "广州拟立法促进人工智能发展 建设统一算力调度平台和应用赋能中心 广州市人民政府",
+      "source": "广州市人民政府",
+      "lang": "zh",
+      "published": "Tue, 18 Aug 2026 03:11:03 GMT",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9TNHI0OGw4azE5S2UwcHktamxGTzdrcDJaLWNTb0ZkdmVZNkFfaVJDanUxdG9qVVRJWnVMTWRZVFluNmhkSVduX1Z6SDNNdlRIN1kzNXNQd2UtVHI3LUdEeGpTeEZfeUhMeFdtV211cw?oc=5"
+    },
+    {
+      "title": "成都“1+N”精准对接（腾讯AI智能体专场）举行 - 成都市委统战部",
+      "summary": "成都“1+N”精准对接（腾讯AI智能体专场）举行 成都市委统战部",
+      "source": "成都市委统战部",
+      "lang": "zh",
+      "published": "Tue, 18 Aug 2026 02:08:57 GMT",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeUFWQkpMWk9ZdmFXaFhDMDZaTUFRekNnalJNX2s2UWVBR1RpN3RQQ1dwS3NYTFNNS3dHYlRkSGtWZGpFSHYyNVNLTTRwUjEtU0xzTzhXZ1ZkRTE5OXpFMTkxZ1poaEplcEFTT05Gek1CMFFKam41MVFVY2M2NFg4dXJoQWtPdEpXRFhsZTVkQWdRZ3pOWXNzZnRUZGNlWFFB?oc=5"
+    },
+    {
+      "title": "云徙科技毛健：以AI超级智能体激活企业数智新动能 - 新华网",
+      "summary": "云徙科技毛健：以AI超级智能体激活企业数智新动能 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Tue, 18 Aug 2026 02:58:18 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE54Wm1pLXdqalFfX3A2UkdkbWZEMGdkdHFQRmVVTlpTdTRmeExYNVhNV3JGVEttYzhmbDZ2TmxtTFBZRnJxTVhlcVdQMkZKTGZEN1ctcDFDUUZxUjB2elpfaExoa2trNUNBb181cHlaTkxTYW11ZXdmcjhuOWs?oc=5"
+    },
+    {
+      "title": "狂欢与危机同在：AI算力盛宴 成了全球资本的“高利率毒药”？ - 财联社",
+      "summary": "狂欢与危机同在：AI算力盛宴 成了全球资本的“高利率毒药”？ 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Tue, 18 Aug 2026 01:09:03 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1hNjkybFp0N1k1T2dEaW9peFFFZG1NMGR6dGx2eEVFVkx2TkxOb29Od2J2VjQyeldod3V3NWtvb0NLdERIZG1Uag?oc=5"
+    },
+    {
+      "title": "蚂蚁集团韩歆毅：智能体商业将迎来爆发--经济·科技 - 人民网",
+      "summary": "蚂蚁集团韩歆毅：智能体商业将迎来爆发--经济·科技 人民网",
+      "source": "人民网",
+      "lang": "zh",
+      "published": "Mon, 17 Aug 2026 11:34:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1MQlN5QmRJbUpjdFJtZWFkX0tHenc4enp5RW4xN3Y3SVV1UWRGSjdlcjhlVkNfZVd3RnFYMGNYXzgwUTRwRU1QNFNjN0FBY2xVRVFHTVJUQXVKN29Uc0NqSzZRc0p4RXBrT3d6RnlR?oc=5"
+    },
+    {
+      "title": "中国AI基础设施的价值洼地：占全球85%的算力流量，仅10%的市场收入 - finance.sina.com.cn",
+      "summary": "中国AI基础设施的价值洼地：占全球85%的算力流量，仅10%的市场收入 finance.sina.com.cn",
+      "source": "finance.sina.com.cn",
+      "lang": "zh",
+      "published": "Tue, 18 Aug 2026 03:33:20 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcGdsNlFNckhRNzNNd3lQMXFpY2pDN0VtemVCOWstYkRpWmd3a0pnVms2bjhOd2NTcWZVWTB5aThUQVoxblY1RGh6T2ttN2ZiNktpN3gwZkt1b1llcFl1cHgwVThTSExmcGI0WkFhSktJQVRHanplOHZaOGk4Rmp3UTN1LUtnZG1VZ3pIVXRn?oc=5"
+    },
+    {
+      "title": "港股AI大模型双雄重挫逾13% 卖空数据创阶段新高 - 东方财富",
+      "summary": "港股AI大模型双雄重挫逾13% 卖空数据创阶段新高 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Tue, 18 Aug 2026 03:28:37 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8tbHZSNFdUeHpaQjlVZ1doUnl3UFVSVzdsbTBnMEF0bFFfVWJBTFZPT2VjUHJmNTR5dmV0czJkNEg3NzZQMjhQUFBEVnYxWXJ5N3BzejZGbmIxaHlmMUtXSEpDRnc3QQ?oc=5"
+    },
+    {
+      "title": "协鑫能科总裁费智：把握算电协同政策窗口 构建源网荷储算一体化零碳算力生态 - 中证网",
+      "summary": "协鑫能科总裁费智：把握算电协同政策窗口 构建源网荷储算一体化零碳算力生态 中证网",
+      "source": "中证网",
+      "lang": "zh",
+      "published": "Mon, 17 Aug 2026 23:48:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1MZGR1X21ieERZamRKMUxKRTZHNjRuZ0lUQnNuejVXaTQtNm5Od3poTnV6SmpPNmhPb2owODhta0JJM2x6dlF5WTVJNHZSZkJtTGEyS05sUjBVMW5uUEhodjE1WC1Gb0J1d2VZaTFUY0ExMkJqdkpDcA?oc=5"
+    },
+    {
+      "title": "AI红利 武汉接得住 - wuhan.gov.cn",
+      "summary": "AI红利 武汉接得住 wuhan.gov.cn",
+      "source": "wuhan.gov.cn",
+      "lang": "zh",
+      "published": "Tue, 18 Aug 2026 00:23:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5JZ1R6Wkp2NjBMdWVtUExaRTU4YnYyVERhb045cTh6bWxiSzNwMzMyTkVBbnkwVWZsREdRVm1abDdycU81UGNlYkRNS084bUFlbkNwcEhxWHI3Y3YzaVVTVVd4YjVXZ0VXdlphWnIwb24?oc=5"
+    },
+    {
+      "title": "大模型上岗 唐钢加速“智”变 - 环渤海新闻网",
+      "summary": "大模型上岗 唐钢加速“智”变 环渤海新闻网",
+      "source": "环渤海新闻网",
+      "lang": "zh",
+      "published": "Tue, 18 Aug 2026 01:02:43 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBETmpZWklGQ1VIdlNRc1htcGtXUFZGckcxTWN4dFJuMUsxQkpZbVdtRGRlNjdhY1Z5bjlQdmFaTHpyekRJZmlhOGdSTUF6Ulk1MERPRkZCc2dzZ0N6OUZvOUV6M2ota2Uwcl9BZXhSN2hRaEdhT2MxRHBB?oc=5"
+    },
+    {
+      "title": "AI算力引爆光器件需求，杰普特卡位光通信核心赛道 - iccsz.com",
+      "summary": "AI算力引爆光器件需求，杰普特卡位光通信核心赛道 iccsz.com",
+      "source": "iccsz.com",
+      "lang": "zh",
+      "published": "Tue, 18 Aug 2026 03:01:12 GMT",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1KdUxfX3A2ZHZBbHM0SUdkVFAxZ3NZNEFUUGJmNU5CR2piOTctOVltTXNkbmV5bGd3VEpLOXRQUTdtWC1SbF9NVnRTUUdzRXdFVGlUZkhRR1lyc3JMWGhSMWtzZ081QUItQjdsVXdkUFBQYmQ1bzAzYg?oc=5"
+    },
+    {
+      "title": "智能体商业爆发在即 支付宝发布国内首个智能体商业底座 - 新京报",
+      "summary": "智能体商业爆发在即 支付宝发布国内首个智能体商业底座 新京报",
+      "source": "新京报",
+      "lang": "zh",
+      "published": "Mon, 17 Aug 2026 12:57:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE55ZUFMWVFtOUVjb0kxVW5yY3dzUVB4NzdIbFNmX3VKaDFaSzhQYVNZU2hQcVlBVFNkakNpMExDWlZrZTZ0bDRZR0dmTjA1SmtnNmZzN25pVnlPM3BteG1KNzM3RlA?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 92495,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 66695,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57446,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 39297,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 36218,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 386572,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 273281,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 232109,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
