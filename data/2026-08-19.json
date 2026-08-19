@@ -1,0 +1,518 @@
+{
+  "date": "2026-08-19",
+  "generated_at": "2026-08-19T03:37:49.780896+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Hydra-0: Action Flow for Generalist World Modeling and Control",
+      "title_zh": "Hydra-0：通用世界建模和控制的操作流程",
+      "summary": "We introduce Hydra-0, a generalist world model conditioned on action flow, which represents robot actions as pixel motion. This shared visual interface enables generalist world modeling and control by learning action consequences across embodiments, tasks, environments, and video-generation backbones. Our best configuration achieves 90.4% lower robot-motion…",
+      "summary_zh": "我们引入 Hydra-0，这是一种以动作流为条件的通用世界模型，它将机器人动作表示为像素运动。这种共享的视觉界面通过学习跨实施例、任务、环境和视频生成主干的动作结果来实现通用的世界建模和控制。与我们的动作条件基线相比，我们的最佳配置实现了机器人运动误差降低 90.4% 和物体运动误差降低 60.2%，同时支持零镜头合成和数据高效适应。在 RoboLab 基准测试中，Hydra-0 在重放成功率和参考成功率之间实现了 r=0.96 的皮尔逊相关性。最后，我们发现了该界面的一种新兴逆模式：一种世界动作模型，可以根据从人类演示传输的所需对象流来预测兼容的机器人运动。经过训练的动作头将产生的潜在特征映射到可执行动作，而不需要特定于任务的专家机器人演示。总之，这些结果证明了动作流作为连接异构训练数据、开环策略评估和机器人控制的共享控制接口的潜力。",
+      "authors": [
+        "Hongyu Li",
+        "Bowen Wen",
+        "Xinghao Zhu",
+        "Yixuan Wang",
+        "Yilun Du",
+        "Yunzhu Li"
+      ],
+      "published": "2026-08-18T17:59:30Z",
+      "category": "cs.RO",
+      "arxiv_id": "2608.18077v1",
+      "abs_url": "https://arxiv.org/abs/2608.18077v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18077v1"
+    },
+    {
+      "title": "From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation",
+      "title_zh": "从语料库到共同进化的能力：以能力为中心的数据设计，用于通用图像生成",
+      "summary": "Large-scale image generation has benefited from advances in data scale, quality, rebalancing, and recaptioning, yet conventional pipelines typically optimize task-specific datasets in isolation. A central challenge is not only how to curate each task-specific corpus, but also how to organize heterogeneous supervision according to the dependencies among gene…",
+      "summary_zh": "大规模图像生成受益于数据规模、质量、重新平衡和重新捕获方面的进步，但传统管道通常单独优化特定于任务的数据集。一个核心挑战不仅是如何管理每个特定任务的语料库，而且是如何根据生成能力之间的依赖关系组织异构监督。我们提出了一个 \\textbf{能力驱动的数据基础设施}，它将特定于能力的监督构建与能力一致的课程安排结合起来。它的三个专业但可互操作的数据引擎为文本图像基础、图像间转换和图像知识关联构建了互补的关系监督，而字幕专家则跨任务和粒度调整 T2I 和编辑监督。多阶段课程沿着能力获取的依赖顺序共同发展任务构成、视觉概念分布、数据质量和图像分辨率，能力感知评估通过有针对性的检索、专家构建和差距感知重采样来闭合循环。在规模上，该框架管理了 4.4 亿图像 T2I 语料库、1.2 亿个编辑对和超过 2700 万个图像实体对。有了这个基础设施，我们从头开始训练…",
+      "authors": [
+        "Xingjian Wang",
+        "Zhao Wang",
+        "Taihang Hu",
+        "Jun Zheng",
+        "Qing Jin",
+        "Qinye Zhou"
+      ],
+      "published": "2026-08-18T17:59:01Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.18076v1",
+      "abs_url": "https://arxiv.org/abs/2608.18076v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18076v1"
+    },
+    {
+      "title": "Multi-Agent AI System for Radiology Report Structuring and Quality Assurance with Independent Radiologist Evaluation",
+      "title_zh": "用于放射学报告构建和质量保证的多智能体人工智能系统以及独立放射科医生评估",
+      "summary": "Purpose: To develop and evaluate a locally deployed multi-agent AI system for radiology report structuring and quality assurance. Materials and Methods: This retrospective study included 638 radiology reports from CT examinations of the chest, abdomen, and pelvis dictated by 15 board-certified radiologists in 2023 and 2024. A multi-agent AI pipeline was dev…",
+      "summary_zh": "目的：开发和评估本地部署的多智能体人工智能系统，用于放射学报告构建和质量保证。材料和方法：这项回顾性研究包括 2023 年和 2024 年由 15 位委员会认证的放射科医生口述的胸部、腹部和骨盆 CT 检查的 638 份放射学报告。开发了多代理 AI 管道来执行报告构建和质量保证 (QA)。该系统使用正则表达式规则和本地大语言模型将报告构建为句子级别的标准化解剖部分。它还检测到结果和印象部分之间或部分内的不匹配；性别解剖学冲突；以及关键发现的无记录沟通。两名获得委员会认证的放射科医生独立评估了 45 份报告子集。结果：多智能体系统将所有报告的结果部分（22,270 个句子）构建为预定义的解剖格式，同时保留原始报告内容。系统标记了 90 份报告（14.1%），最常见的是部分不匹配（80 份报告，12.5%）。在放射科医生评估中，两位评审员都同意 31…",
+      "authors": [
+        "Iryna Hartsock",
+        "Cesar Lam",
+        "Christopher Otteni",
+        "Aliya Qayyum",
+        "Robert Gatenby",
+        "Cyrillo Araujo"
+      ],
+      "published": "2026-08-18T17:57:08Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.18072v1",
+      "abs_url": "https://arxiv.org/abs/2608.18072v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18072v1"
+    },
+    {
+      "title": "On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification",
+      "title_zh": "论自我改进主体的脆弱性：方差、任务顺序和不规范",
+      "summary": "Memory-based self-improving agents--those that learn from an online stream of tasks and improve over time by maintaining a textual memory bank--have shown great promise in recent literature. However, the reliability aspects of these methods have been critically overlooked. In this work, we conduct a comprehensive re-evaluation of two memory-based methods, b…",
+      "summary_zh": "基于记忆的自我改进代理——那些从在线任务流中学习并通过维护文本记忆库随着时间的推移而改进的代理——在最近的文献中显示出了巨大的前景。然而，这些方法的可靠性方面却被严重忽视。在这项工作中，我们对两种基于记忆的方法进行了全面的重新评估，沿着两个轴扩大了评估范围：（1）包括多次运行以量化方差，（2）随机打乱任务以研究任务顺序的影响。通过这些实验，我们提出了两个观察结果，暴露了当前方法的脆弱性：首先，代理评估在复杂环境和多步骤任务中本质上是有噪声的，而在顶部堆叠自我改进循环可以进一步放大这种噪声。其次，智能体的改进高度依赖于任务顺序。之前的作品经常采用默认的顺序，强加隐含的课程，作为成功的隐藏先决条件。为了更好地理解这种脆弱性，我们手动检查智能体的记忆，并假设任务和环境的不规范导致了这种脆弱性。我们通过将能够更好地规范的信息（例如详细的标准和环境反馈）纳入…",
+      "authors": [
+        "Qinyuan Ye",
+        "Yu Li",
+        "Yada Pruksachatkun",
+        "Jiaxin Zhang",
+        "Chien-Sheng Wu"
+      ],
+      "published": "2026-08-18T17:55:07Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.18066v1",
+      "abs_url": "https://arxiv.org/abs/2608.18066v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18066v1"
+    },
+    {
+      "title": "TokEval: A Tokenizer Evaluation Suite",
+      "title_zh": "TokEval：分词器评估套件",
+      "summary": "Language model tokenizers are typically selected with minimal evaluation, despite the fact that their design choices directly impact model capabilities. This can be partly attributed to a limited understanding of which tokenizer properties affect which aspects of downstream performance. We introduce TokEval, a framework of tokenizer evaluation metrics that…",
+      "summary_zh": "尽管语言模型标记器的设计选择直接影响模型功能，但通常会通过最少的评估来选择语言模型标记器。这部分归因于对哪些分词器属性影响下游性能哪些方面的了解有限。我们引入了 TokEval，一个分词器评估指标的框架，它超越了生育率和压缩率等标准衡量标准，以捕获语言和结构上有意义的属性，例如 UTF-8 字符边界完整性和数学中的数字位值边界对齐。为了验证这些指标是否可以预测下游模型性能，我们进行了受控语言模型预训练实验，仅改变分词器的训练数据混合、预分词策略和训练算法。我们根据每字节位数（与分词器无关的困惑版本）和多个基准来评估生成的模型，涵盖语言理解、数学推理和代码生成。我们的实验表明，不同的内在属性对模型能力有不同的影响：信息论指标预测语言建模能力（Spearman rho 高达 0.80），而结构敏感指标（例如测量数字和换行处理的指标）与任务准确性相关。我…",
+      "authors": [
+        "Clara Meister"
+      ],
+      "published": "2026-08-18T17:52:52Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.18062v1",
+      "abs_url": "https://arxiv.org/abs/2608.18062v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18062v1"
+    },
+    {
+      "title": "Primitive Representation Learning for Unsupervised Dynamic Contrast Enhanced MRI Reconstruction",
+      "title_zh": "无监督动态对比增强 MRI 重建的原始表示学习",
+      "summary": "Reliable quantitative analysis of dynamic contrast-enhanced MRI requires high-quality spatiotemporal reconstructions at high undersampling rates. Scan-specific reconstructions using Gaussian and Gabor primitives have shown promising results without the need for large training datasets, but have not addressed the additional dimension of dynamic contrast. We…",
+      "summary_zh": "动态对比增强 MRI 的可靠定量分析需要高欠采样率下的高质量时空重建。使用高斯和 Gabor 原语的扫描特定重建已经显示出有希望的结果，而不需要大型训练数据集，但尚未解决动态对比度的附加维度。我们提出了一种用于动态对比增强 MRI 重建的多维、基于基元的框架，该框架将底层解剖结构、动态对比增强和残余运动分解为单独的时间基函数，从而能够对表示进行几何解释。我们表明，该架构在重建质量以及提取的主动脉和肾脏增强曲线的准确性方面均实现了与传统重建方法相媲美的性能。模块化层设计自然地扩展到额外的动态因素和更高的加速率。代码可在 https://github.com/compai-lab/2026-GaborDCE-spieker 获取。",
+      "authors": [
+        "Veronika Spieker",
+        "Wenqi Huang",
+        "Cemre Ariyurek",
+        "Liam Timms",
+        "Daniel Rueckert",
+        "Onur Afacan"
+      ],
+      "published": "2026-08-18T17:48:22Z",
+      "category": "eess.IV",
+      "arxiv_id": "2608.18055v1",
+      "abs_url": "https://arxiv.org/abs/2608.18055v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18055v1"
+    },
+    {
+      "title": "StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents",
+      "title_zh": "StagedWorkspace：知识工作代理的版本化工作空间",
+      "summary": "AI agents increasingly perform knowledge work (i.e., produce and modify persistent digital artifacts such as code repositories, documents, spreadsheets, slides, reports), yet the parsed views they search, the native files they edit, the changes they review, and the artifacts they submit can refer to different versions of the same work product. We formulate…",
+      "summary_zh": "人工智能代理越来越多地执行知识工作（即，生成和修改持久性数字工件，例如代码存储库、文档、电子表格、幻灯片、报告），但他们搜索的解析视图、他们编辑的本机文件、他们审查的更改以及他们提交的工件可以引用同一工作产品的不同版本。我们将其表述为工作空间状态契约：每个视图都应该明确地与不断变化的工作空间状态的版本相关联。编码代理通过搜索、差异和测试的存储库合同部分满足了这一需求，而类似的合同对于 PDF、电子表格、幻灯片、笔记本和混合格式项目文件夹则不太明确。我们提出了 StagedWorkspace，这是一个用于知识工作代理的版本化工作空间。工作区将解析的记录和审查差异绑定到本机文件更改时的内容哈希。在 OfficeQA Pro 和 APEX-Agents 的固定线束消融中，双解析/本机访问对每个测试模型都有最高的点估计；相对于限制性更强的单一视图，它将 O…",
+      "authors": [
+        "Yining Hua",
+        "Hongbin Na",
+        "Yifan Zhou",
+        "Akshay Kalose",
+        "Cyrus Ayubcha",
+        "Levi Lian"
+      ],
+      "published": "2026-08-18T17:44:18Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.18050v1",
+      "abs_url": "https://arxiv.org/abs/2608.18050v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18050v1"
+    },
+    {
+      "title": "Optimize Your Sampling: Tuned Diffusion Sampling with Bayesian Optimization",
+      "title_zh": "优化您的采样：使用贝叶斯优化调整扩散采样",
+      "summary": "Sampling from a diffusion model typically requires many forward passes through a large neural network, making generation computationally expensive. While much work has focused on efficient solvers and samplers, comparatively little attention has been paid to selecting the sampling timesteps themselves. A recent line of work optimizes theoretically derived s…",
+      "summary_zh": "从扩散模型中采样通常需要通过大型神经网络进行多次前向传递，这使得生成的计算成本很高。虽然很多工作都集中在高效的求解器和采样器上，但相对较少的注意力集中在选择采样时间步长本身。最近的一项工作优化了理论上得出的样本质量替代指标，而不是质量指标本身。我们提出优化采样（OYS），它将时间步选择视为黑盒优化问题，直接使用贝叶斯优化来优化目标指标。在定量和人工评估方面，OYS 在文本到图像生成方面均优于默认计划和“对齐您的步骤”，并且在修复和其他图像任务方面优于默认计划。 OYS 不需要额外的训练，甚至适用于蒸馏模型，并改进了简单和复杂的采样器，例如 Euler 和 DPM-Solver++。 5 步 OYS 计划保留了 50 步计划的 89%-94% 的质量，同时将推理成本降低了 10 倍。",
+      "authors": [
+        "Travis Zhang",
+        "Christian Belardi",
+        "Justin Lovelace",
+        "Jin Peng Zhou",
+        "Saebyeol Shin",
+        "Carla P. Gomes"
+      ],
+      "published": "2026-08-18T17:33:00Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.18040v1",
+      "abs_url": "https://arxiv.org/abs/2608.18040v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18040v1"
+    },
+    {
+      "title": "Harnessing Magnitude-Only and Complex Measurements for Improved Dynamic MRI Reconstruction with Learned Priors",
+      "title_zh": "利用仅幅度和复杂的测量来改进动态 MRI 重建和学习先验",
+      "summary": "MRI reconstruction methods for undersampled k-space data naturally utilize complex-valued measurements. Parallel developments in sparse phase retrieval have shown that magnitude-only measurements may provide complementary information for signal recovery. However, their use in MRI reconstruction remains largely unexplored, due to lack of practical settings w…",
+      "summary_zh": "欠采样 k 空间数据的 MRI 重建方法自然会利用复值测量。稀疏相位检索的并行发展表明，仅幅度测量可以为信号恢复提供补充信息。然而，由于缺乏无需额外扫描时间即可获得信息丰富的震级测量的实际设置，它们在 MRI 重建中的使用在很大程度上仍未得到探索。在这项工作中，我们研究了辅助 k 空间幅度信息用于加速稳态动态 MRI 重建的用途，并证明了 k 空间幅度在不同时间范围内的强一致性。基于这一观察，我们提出了 $\\mathbb{C}+\\text{Mag}$，一种基于幅度的物理驱动的深度学习重建方法。所提出的方法采用基于 ADMM 的展开框架，具有新颖的幅度感知数据保真度公式，其中引入二次平滑优化和基于动量的更新来解决幅度约束的不可微性和非凸性。回顾性欠采样电影 MRI 和相衬流 MRI 数据集以及前瞻性欠采样实时电影 MRI 采集的实验表明，与传统 PD…",
+      "authors": [
+        "Mahdi Saberi",
+        "Yaşar Utku Alçalar",
+        "Merve Gülle",
+        "Chetan Shenoy",
+        "Mehmet Akçakaya"
+      ],
+      "published": "2026-08-18T17:31:07Z",
+      "category": "eess.IV",
+      "arxiv_id": "2608.18036v1",
+      "abs_url": "https://arxiv.org/abs/2608.18036v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18036v1"
+    },
+    {
+      "title": "Plug-and-Play Traffic Element Awareness for End-to-End Autonomous Driving",
+      "title_zh": "用于端到端自动驾驶的即插即用交通要素感知",
+      "summary": "Traffic elements such as traffic lights and road signs play a fundamental role in human driving decisions and should naturally influence end-to-end driving performance. However, existing end-to-end driving research predominantly focuses on dynamic road participants (e.g., vehicles and pedestrians), while the role of traffic elements remains largely unexplor…",
+      "summary_zh": "交通信号灯和路标等交通元素在人类驾驶决策中发挥着重要作用，自然会影响端到端的驾驶性能。然而，现有的端到端驾驶研究主要关注动态道路参与者（例如车辆和行人），而交通要素的作用在很大程度上仍未得到探索。社区仍然缺乏量化其影响的系统研究，很大程度上是因为公共数据集很少提供结构化的交通元素注释，而且现代驾驶系统在架构和训练范式上差异很大。在这项工作中，我们首次对端到端自动驾驶的交通元素感知进行系统研究。我们通过使用全面的交通元素注释增强多个公共驾驶数据集，构建了统一的研究基础设施。为了支持不同的模型系列，我们采用了最小且通用的集成设计，以即插即用的方式将交通元素信号合并到现有管道中，而架构修改可以忽略不计。我们在 nuScenes、NAVSIM-v1、NAVSIM-v2 和 Bench2Drive 上跨现代范式评估这种设计，包括感知-预测-规划管道、视觉-语…",
+      "authors": [
+        "Zongzheng Zhang",
+        "Jijun Wang",
+        "Saining Zhang",
+        "Shuo Wang",
+        "Yiru Wang",
+        "Hai Yang"
+      ],
+      "published": "2026-08-18T17:29:51Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.18035v1",
+      "abs_url": "https://arxiv.org/abs/2608.18035v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18035v1"
+    },
+    {
+      "title": "Deep Academic Survey: Stateful Agentic Closed-Loop Paradigm for Academic Survey Automation",
+      "title_zh": "深度学术调查：学术调查自动化的状态代理闭环范例",
+      "summary": "Academic surveys play a central role in organizing rapidly expanding scholarly literature, yet their construction requires extensive paper analysis, coherent knowledge organization, fine-grained citation support, and reliable manuscript assembly. Existing Deep Research and automated survey generation systems address parts of this process, but typically do n…",
+      "summary_zh": "学术调查在组织迅速扩展的学术文献方面发挥着核心作用，但其构建需要广泛的论文分析、连贯的知识组织、细粒度的引文支持和可靠的手稿组装。现有的深度研究和自动调查生成系统解决了该过程的部分问题，但通常不通过共享的、可修改的状态来协调论文理解、文献组织、基于证据的起草和手稿验证。我们引入 DAS，这是一个用于生成面向出版的学术调查的状态代理框架。其关键思想是将可重复使用的论文分析与特定主题的手稿构建分开。 DAS 建立在 DAS-2M 之上，DAS-2M 是一个动态更新的元数据湖，包含大约 200 万篇论文的面向调查的表示。它的代理通过基于候选人的分类规划、反向纸张到章节的路由以及分层声明和引文规划来维护明确的文献、组织、写作和定稿状态。语义审查仅重新激活受影响的写入状态以进行修复和重新评估，形成具有确定性验证的范围闭环。我们进一步介绍了包含 30 个主题的…",
+      "authors": [
+        "Zhikai Xu",
+        "Zhucun Xue",
+        "Teng Hu",
+        "Yabiao Wang",
+        "Yong Liu",
+        "Jiangning Zhang"
+      ],
+      "published": "2026-08-18T17:29:00Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.18034v1",
+      "abs_url": "https://arxiv.org/abs/2608.18034v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18034v1"
+    },
+    {
+      "title": "Initialization-Free Bundle Adjustment Revisited: A Controlled Experimental Study",
+      "title_zh": "重新审视无初始化捆绑调整：一项受控实验研究",
+      "summary": "Initialization-free bundle adjustment (InitFree BA) aims to recover camera poses and scene structure directly from image observations, avoiding the geometric initialization stages of conventional structure-from-motion pipelines. Recent methods based on Object-Space Error (OSE) formulations and Variable Projection (VarPro) show encouraging optimization behav…",
+      "summary_zh": "无初始化束调整（InitFree BA）旨在直接从图像观测中恢复相机位姿和场景结构，避免传统运动结构管道的几何初始化阶段。最近基于对象空间误差 (OSE) 公式和可变投影 (VarPro) 的方法显示了随机相机配置的令人鼓舞的优化行为。然而，现有的评估主要衡量优化的成功程度，不清楚低 OSE 目标是否会产生有效的度量 3D 重建。我们通过统一的评估框架重新审视 InitFree BA，该框架将现有 OSE 公式的 C++ 实现与基于 Blender 的数据集生成器相结合，提供精确的地面实况和受控的相机配置和观察密度。我们的实验揭示了一个以前被忽视的优化重建差距：具有类似低 OSE 值的投影解决方案可能会在度量升级后导致显着不同的欧几里得重建。我们将初始化先验、地标观测密度和度量升级稳定性确定为控制重建成功的关键因素。总的来说，我们的结果表明 Ini…",
+      "authors": [
+        "Simon Weber",
+        "Mateo de Mayo",
+        "Je Hyeong Hong",
+        "Carl Olsson",
+        "Daniel Cremers",
+        "Ronald Clark"
+      ],
+      "published": "2026-08-18T17:23:06Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.18028v1",
+      "abs_url": "https://arxiv.org/abs/2608.18028v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18028v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "“范蠡大模型4.0”在2026国际智慧渔业和水产大会正式发布 - 中国农业大学新闻网",
+      "summary": "“范蠡大模型4.0”在2026国际智慧渔业和水产大会正式发布 中国农业大学新闻网",
+      "source": "中国农业大学新闻网",
+      "lang": "zh",
+      "published": "Wed, 19 Aug 2026 01:21:18 GMT",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA1RGtHb3Y1bU95dUtzTWpnTzlXQ3pQV3l5VlllUDJfdmtqQ1A1Ml92QVNCWW1SaUhnNlVEcXJ6YXdtWlRiWFRPM0lpTXVRMFRmazkzSHViWjBfb3R5QVhFRWluYnBCU0lyYUxUaGRtbUhNVW0wSFBv?oc=5"
+    },
+    {
+      "title": "中信建投：AI投资转向商业化验证 关注算力与B端应用 - 观点网",
+      "summary": "中信建投：AI投资转向商业化验证 关注算力与B端应用 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Wed, 19 Aug 2026 01:18:08 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBzbnZHNVpXSGZxVWpKTEtCR3gyYnl5RWU0WXVnTVBJNzNnQVBHdnpzZHExNnZZXzVzc0lha09hRkk1X29lanhhOXE4eUtUT2tHQWZLQkJ0NkxQc0UtZnRfVGd3?oc=5"
+    },
+    {
+      "title": "向上突围 锻造广东AI产业硬核底气 - 新浪新闻_手机新浪网",
+      "summary": "向上突围 锻造广东AI产业硬核底气 新浪新闻_手机新浪网",
+      "source": "新浪新闻_手机新浪网",
+      "lang": "zh",
+      "published": "Wed, 19 Aug 2026 02:13:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE41dzE3cl9JR1BVU2xaclNQWDlfUGdDQXBqdUxNcUZpLTd6OHc1Skh6b09vMF9CVWsyOEpBLXJFSV9wTFBiY1d4NlNHMXp5d2hUclg0dFIyd0hLaVdUempVYUJuWGlVT3g1S1l3dldrNF9jdFprNFE?oc=5"
+    },
+    {
+      "title": "拟募资2.93亿元，罗曼股份瞄上智能算力集群项目，提示商誉减值等风险 - 东方财富",
+      "summary": "拟募资2.93亿元，罗曼股份瞄上智能算力集群项目，提示商誉减值等风险 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Wed, 19 Aug 2026 02:31:01 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5XcXZtRkNkM1ZSQUE4SHZrLVA5azNjVXZPZ1FrY0R2WjhiQXEwWkJQaG1qZUxTTHJrUFM5aUo4M21wcWphRjc0UFpRQlBYNmEwMFhNT1BvQVYtRVpYX0pMMVF0U0FVQQ?oc=5"
+    },
+    {
+      "title": "国内首个智能体跨端互联协议发布，智能体加速商业化，商家支付费率打6折 - finance.sina.com.cn",
+      "summary": "国内首个智能体跨端互联协议发布，智能体加速商业化，商家支付费率打6折 finance.sina.com.cn",
+      "source": "finance.sina.com.cn",
+      "lang": "zh",
+      "published": "Wed, 19 Aug 2026 03:22:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOS2ptZlNjRU04bkZnZUxlRWFIcjhGYzZCQjc2YzdCdHd3dEdXb19lSWxGVEdjSjQ4cVBKVFJmRFJITTVwakVmRU11VjRfM0wtbGVvekZNaEZ3NXo2aHZqVk5FU0lkbm1FOE8wVDV4Vmd3NTJqZ0oxYkFtVzFfQmtBdllFX1BPck5NcF9TY0xLLVNObUU2Z2lEUmJ4RXBHY3BMalR6bWJJdw?oc=5"
+    },
+    {
+      "title": "GPT开始免费，DS却涨价了，大模型价格战为何逆转？ - 中华网财经",
+      "summary": "GPT开始免费，DS却涨价了，大模型价格战为何逆转？ 中华网财经",
+      "source": "中华网财经",
+      "lang": "zh",
+      "published": "Wed, 19 Aug 2026 02:07:56 GMT",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA1RDhqTU9QOUlZZlpoaGdQTHllYkM1ai1iVlc1NFliakFXTndDWktOYjd2WWFVajFnaHJDMXhqY2pXSURvd1RDWXZsb1ZjOTd6c21peHpaeDlzX0VQZjV2WlVFeWFJeVdaZzNFbnRB?oc=5"
+    },
+    {
+      "title": "汉企研发AI智能体 让低空任务化繁为简 只需动动嘴，无人机就能飞起来 - 荆楚网",
+      "summary": "汉企研发AI智能体 让低空任务化繁为简 只需动动嘴，无人机就能飞起来 荆楚网",
+      "source": "荆楚网",
+      "lang": "zh",
+      "published": "Wed, 19 Aug 2026 01:05:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1YRmU5RlJXQjZtNHA1aGVEZEZLdm1Fc1pvX2RkLUU1RVA3QnB5YWV6cXFzV1hUZm9mVXVObnJsSzV0RGFLTVppdlJJRmJjRXhqVGhKTk80T0F0dEEyZzdocl9lRWdrRXZJdVBOQ1hvM1U4dw?oc=5"
+    },
+    {
+      "title": "支持3000万元！江西2026年省级算力券（数据券）兑现正式启动 - 凤凰网江西",
+      "summary": "支持3000万元！江西2026年省级算力券（数据券）兑现正式启动 凤凰网江西",
+      "source": "凤凰网江西",
+      "lang": "zh",
+      "published": "Wed, 19 Aug 2026 02:00:06 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE01YTJXeE9kQnlIWktCOVpQdGI1YUZ6YVJ4b3RtV05zOHdpaUJWZV9wSUJ2MlFXbGNTLXUtRDBDajFrZ3hsYm53d2hR?oc=5"
+    },
+    {
+      "title": "以协同创新构筑智能产业新底座——AI Hangzhou 2026 长三角人工智能发展大会在杭举行 - cn.chinadaily.com.cn",
+      "summary": "以协同创新构筑智能产业新底座——AI Hangzhou 2026 长三角人工智能发展大会在杭举行 cn.chinadaily.com.cn",
+      "source": "cn.chinadaily.com.cn",
+      "lang": "zh",
+      "published": "Wed, 19 Aug 2026 02:05:34 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5CRzl4Q2UzdDVleFQydXdraks5VmN6ZU9HaXpwSnp3cDRqTHpiWHEtczhLeVhCZkxWQW9PSWo2b2ZqcFRTS2hqemZxN1QwdjNCVE1GMExIOGh3Wjg2eEVRZWhMT1lYeUhWVTQ0bUR6LXR0Ymhmb2U4WlhqTGU?oc=5"
+    },
+    {
+      "title": "英伟达被低估50%？美银称AI融资风险定价过度 - 华尔街见闻",
+      "summary": "英伟达被低估50%？美银称AI融资风险定价过度 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Tue, 18 Aug 2026 21:09:31 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBIUlI1UDFXejBWWTFqWmxDSmxhdzV5MHVscVRvRzVRekJqd0d6bDRfS3duYnIyY2daSWVTMUpFb21EZnI0aFRmOGNKcWd2a3huclZn?oc=5"
+    },
+    {
+      "title": "新疆维吾尔自治区答新京报贝壳财经：推动算力、词元出海，拓展算力产业发展空间 - 新京报",
+      "summary": "新疆维吾尔自治区答新京报贝壳财经：推动算力、词元出海，拓展算力产业发展空间 新京报",
+      "source": "新京报",
+      "lang": "zh",
+      "published": "Tue, 18 Aug 2026 14:18:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4wamtEUEhnU1FnT2lES2xjeWR0aW5QLUhudHdHd0s5X3MzNTVQMlUzVFkxX0ZtbXRKVE1KNzFRZEt2NU95eEhlWnBUVGl2Qnl5VUYwMUNZYjZSS01ibDFSR3JYdjg?oc=5"
+    },
+    {
+      "title": "小艺即将上线阿宝智能体，查社保、申领证件、收能量一句话轻松搞定 - 飞象网",
+      "summary": "小艺即将上线阿宝智能体，查社保、申领证件、收能量一句话轻松搞定 飞象网",
+      "source": "飞象网",
+      "lang": "zh",
+      "published": "Wed, 19 Aug 2026 01:59:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5XRkNVMXZabXNZUmo3VEJxSnc4VWRRcENMb2VCOTEySTdvS3BvZ1d1dVh2dFlaM1lXREtzNTdQek1KRXJrS0k3VnhlZw?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 92546,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 66811,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57444,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 39446,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 36259,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 386693,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 273749,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 232628,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
