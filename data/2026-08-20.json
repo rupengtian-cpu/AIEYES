@@ -1,0 +1,506 @@
+{
+  "date": "2026-08-20",
+  "generated_at": "2026-08-20T03:37:52.080742+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
+      "title_zh": "SPADE：自适应合成可执行环境中的自我游戏",
+      "summary": "Continuous self-improvement requires an ever-expanding pool of self-generated, diverse, adaptive goals. For language agents, existing training environment pools (hand-curated, statically synthesized, or frozen-verifier) keep the goal distribution fixed as the learner scales. We introduce SPADE (Self-Play in Adaptive Synthetic Executable Environments), a sel…",
+      "summary_zh": "持续的自我完善需要不断扩大的自我生成的、多样化的、适应性的目标。对于语言代理，现有的训练环境池（手工策划、静态合成或冻结验证器）使目标分布随着学习者的扩展而保持固定。我们引入了 SPADE（自适应合成可执行环境中的自我游戏），这是一种自我游戏 RL 框架，其中单个 LLM 扮演两个角色：环境设计师，使用 OpenAI Gym 风格的 reset()/step() 接口将完整的长期训练环境编写为可执行代码，以及学习在其中进行操作的推理代理。每个都是一个有状态的多回合环境（状态转换、奖励函数和验证码），因此一个界面涵盖推理问题和多步骤代理工具的使用。推理代理的遗憾是使用有和没有特权提示的奖励之间的差距来估计的；在优化这种遗憾信号时，环境设计师学会以代理能力边缘的环境为目标，同时保持它们的可行性。通过大量的实验，我们发现了几个对成功至关重要的组件：将环境…",
+      "authors": [
+        "Bo Liu",
+        "Simon Yu",
+        "Yiding Jiang",
+        "Ao Qu",
+        "Andrew Zhao",
+        "Zichen Liu"
+      ],
+      "published": "2026-08-19T17:58:56Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.19197v1",
+      "abs_url": "https://arxiv.org/abs/2608.19197v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19197v1"
+    },
+    {
+      "title": "PartialBiGrasp: Inferring Hidden Local Geometry for Bimanual Grasping from Partial Views",
+      "title_zh": "PartialBiGrasp：从局部视图推断隐藏的局部几何图形以进行双手抓取",
+      "summary": "Dual-arm robotic grasping is essential for manipulating large, heavy, and geometrically complex objects that cannot be reliably handled using a single manipulator. These large objects often contain only sparse graspable regions determined by local geometric properties such as thickness, edge structure, and gripper clearance. Prior bimanual grasping methods…",
+      "summary_zh": "双臂机器人抓取对于操纵大型、重型和几何形状复杂的物体至关重要，而使用单个操纵器无法可靠地处理这些物体。这些大型物体通常仅包含稀疏的可抓取区域，这些区域由局部几何特性（例如厚度、边缘结构和夹具间隙）决定。现有的双手抓取方法假设可以访问对象的完整点云，该点云本质上包含此几何信息，但在实际场景中可能无法访问。这项工作提出了 PartialBiGrasp，一种直接对部分点云观测进行操作的双臂抓取生成框架。我们的模型通过卷积占用网络隐式学习几何特征，从而能够对可抓握性、无碰撞接触区域和物体厚度进行局部推理。我们利用这种理解来生成符合力闭合的抓取对，并使用基于采样的优化进一步细化，以纠正由不完整的几何形状引起的模糊性。我们使用分析力闭合指标、大规模模拟实验以及对新物体的噪声部分点云的真实机器人评估来评估我们的方法，展示了稳健且物理稳定的双臂抓取生成。",
+      "authors": [
+        "Ayush Kaura",
+        "Vignesh Vembar",
+        "Md Faizal Karim",
+        "Keshab Patra",
+        "K Madhava Krishna"
+      ],
+      "published": "2026-08-19T17:56:11Z",
+      "category": "cs.RO",
+      "arxiv_id": "2608.19188v1",
+      "abs_url": "https://arxiv.org/abs/2608.19188v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19188v1"
+    },
+    {
+      "title": "Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning",
+      "title_zh": "超越教师的可能性：用于长上下文推理的群体校准的策略蒸馏",
+      "summary": "On-policy distillation (OPD) trains a student on its own responses using dense token-level guidance from a stronger teacher. In long-context tasks, however, token-level teacher support can favor locally plausible responses that omit evidence distributed across the input or violate global task constraints. Task-specific verifiers, in contrast, evaluate task…",
+      "summary_zh": "在策略蒸馏（OPD）使用更强的老师提供的密集令牌级指导来训练学生自己的反应。然而，在长上下文任务中，令牌级教师支持可能有利于局部合理的响应，从而忽略分布在输入中的证据或违反全局任务限制。相反，特定于任务的验证者在响应级别评估任务完成情况，并可能返回反映部分成功的分级奖励。我们根据两个代表性长上下文证据聚合任务的固定响应来诊断这种不匹配。在较长的输入范围内，轨迹级 OPD 分数与验证者奖励的一致性逐渐降低，表明教师与验证者之间存在分歧。受这一观察的启发，我们引入了组校准按策略蒸馏（GC-OPD）。 GC-OPD 分别对每个推出组内的验证者奖励和轨迹级 OPD 分数进行标准化，并将它们的差异用作签名的教师-验证者分歧残差。基于相对优势的信用分配 (RACA) 根据其相对 OPD 优势将轨迹级残差分配给各个代币，同时保留原始 OPD 信号。在五个长上下文…",
+      "authors": [
+        "Zhu Zhang",
+        "Jixun Wang",
+        "Xiaoang Xu",
+        "Xiaorong Wang",
+        "Zihan Zhou",
+        "Zhiyuan Wang"
+      ],
+      "published": "2026-08-19T17:54:58Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.19181v1",
+      "abs_url": "https://arxiv.org/abs/2608.19181v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19181v1"
+    },
+    {
+      "title": "Image-Guided Pavement Defect Recognition in GPR Data with novel 3D Deep Learning Architecture",
+      "title_zh": "利用新颖的 3D 深度学习架构对探地雷达数据中的图像引导路面缺陷进行识别",
+      "summary": "Ground Penetrating Radar (GPR) is a widely adopted non-destructive sensing technology for subsurface inspection in civil and transportation engineering. Despite its potential for pavement condition assessment, the large-scale application of GPR in automated inspection has two key challenges: the scarcity of annotated real-world datasets and the lack of deep…",
+      "summary_zh": "探地雷达（GPR）是土木和交通工程中广泛采用的地下检测无损传感技术。尽管探地雷达在路面状况评估方面具有潜力，但其在自动检测中的大规模应用面临两个关键挑战：带注释的现实数据集的稀缺以及缺乏针对 3 维 (3D) 探地雷达数据的独特特征而设计的深度学习模型。本研究通过首先引入一种经济高效的数据准备管道来解决这些限制，该管道将正射红绿蓝 (RGB) 图像与 3D GPR 扫描集成以生成带注释的 3D GPR 数据集。该方法使用RGB和GPR数据的对齐片段，使用路面图像作为参考，将表面可见缺陷的标签转移到相应的GPR片段，从而能够在运营中的高速公路路段收集的真实数据集中进行高效的大规模注释。除了数据集贡献之外，我们还提出了一种专门的 3D 卷积神经网络 (CNN) 架构，其中包含残差连接、混合卷积核大小以及深度和通道注意机制，以增强特征表示和缺陷分类。该模…",
+      "authors": [
+        "Yuandong Pan",
+        "Linjun Lu",
+        "Mudan Wang",
+        "Florian Noichl",
+        "Fan Xue",
+        "Brian Sheil"
+      ],
+      "published": "2026-08-19T17:53:54Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.19177v1",
+      "abs_url": "https://arxiv.org/abs/2608.19177v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19177v1"
+    },
+    {
+      "title": "Lévy Attention: Single-Pass Predictive Uncertainty for Continuous-Time Attention",
+      "title_zh": "Lévy Attention：连续时间注意力的单遍预测不确定性",
+      "summary": "Deep models for irregularly-sampled time series answer queries at arbitrary continuous timestamps, yet report nothing about how far each answer should be trusted. We show the attention layer itself can close that gap: with the right stochastic formulation, the pass that makes each prediction also reports, in closed form and at no extra cost, how far it shou…",
+      "summary_zh": "不规则采样时间序列的深度模型会在任意连续时间戳处回答查询，但不会报告每个答案的可信度。我们证明，注意力层本身可以缩小这一差距：通过正确的随机公式，进行每个预测的过程还可以以封闭形式且无需额外成本地报告其可信度。我们引入了 Lévy Attention，一种交叉注意力算子，其输出是针对非齐次泊松随机度量的随机积分：查询键兼容性在连续（时间 x 通道）索引空间上组合强度，度量在其下方分散原子，输出对这些原子处的插值字段进行平均。在预期中，它会减少到安抚的余弦内核注意力，因此它取代了 softmax 层并使用精确的梯度进行训练。 Softmax 丢弃的内容，泊松构造以封闭形式保留：证据 $Λ_q$ （总兼容性质量）和分歧 $\\mathrm{tr}\\,Σ_V(q)$ （值分布）。精确的方差恒等式使得它们的组合 $\\hatσ(q)=\\sqrt{\\mathrm…",
+      "authors": [
+        "Sotirios P. Chatzis",
+        "Loukas Papadoulas"
+      ],
+      "published": "2026-08-19T17:50:16Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.19171v1",
+      "abs_url": "https://arxiv.org/abs/2608.19171v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19171v1"
+    },
+    {
+      "title": "ChildSafeAds Shared Task 2026: Commercial Content in Child-Facing YouTube Videos",
+      "title_zh": "ChildSafeAds 2026 年共享任务：面向儿童的 YouTube 视频中的商业内容",
+      "summary": "ChildSafeAds is a shared task on commercial content in YouTube videos likely to reach children and teenagers. It contains 3,360 videos from 939 channels. Each instance begins with a segment submitted to SponsorBlock, an open-source crowdsourced browser extension whose users mark sponsor segments so that others can skip them. We pair the segment with its ava…",
+      "summary_zh": "ChildSafeAds 是一项针对 YouTube 视频中可能吸引儿童和青少年的商业内容的共享任务。它包含来自 939 个频道的 3,360 个视频。每个实例都以提交给 SponsorBlock 的分段开始，SponsorBlock 是一种开源众包浏览器扩展，其用户标记赞助商分段，以便其他人可以跳过它们。我们将该片段与其可用的文字记录、视频和频道信息以及从视频描述链接的销售或服务页面配对。系统确定正在促销的优惠类型 (ST1)、分配产品类别 (ST2) 并识别法律风险标记 (ST3)。从记录到链接页面，证据分为四个累积访问级别，因此可以将结果与收集数据的成本进行比较。我们的数据中 45.5\\% 的视频未能正确使用平台内广告披露方法（“包含付费促销”标签）。在专家组织者团队审查样本并迭代分类法、提示和模型选择后，GPT-5.4 制作了标签。 GPT…",
+      "authors": [
+        "Thales Bertaglia",
+        "Catalina Goanta",
+        "Gerasimos Spanakis",
+        "Gunes Acar"
+      ],
+      "published": "2026-08-19T17:44:58Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.19165v1",
+      "abs_url": "https://arxiv.org/abs/2608.19165v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19165v1"
+    },
+    {
+      "title": "Interpretable AI predicts a 2026 summer dry anomaly in central China",
+      "title_zh": "可解释的人工智能预测中国中部地区 2026 年夏季将出现干旱异常",
+      "summary": "Seasonal precipitation anomalies are largely regulated by atmospheric circulation, which dynamical models predict with greater reliability than precipitation itself. Here, we employ a deep learning model that translates dynamical circulation predictions into precipitation estimates. Predictions initialized from March to May consistently indicate a dry anoma…",
+      "summary_zh": "季节性降水异常在很大程度上受到大气环流的调节，动力模型对大气环流的预测比降水本身更可靠。在这里，我们采用深度学习模型将动态环流预测转化为降水估计。 3月至5月开始的预测一致表明，2026年夏季中国中部地区将出现干燥异常。回顾性评估显示，模拟年的预测能力较高，而且赤道中部太平洋变暖从前一个冬季持续到夏季也很常见。这种变暖有利于北太平洋西部-南海-华南地区的气旋性环流异常，引发偏北风和水汽辐散，共同抑制华中地区的降水。为了支持这一机制，分层相关性传播（LRP）独立地将这些北风识别为所有模型输入中预测的主要驱动因素。扰动测试支持了这种归因：删除 LRP 识别的特征可以有效消除干燥异常。因此，我们的框架为人工智能得出的区域气候预测提供了物理上可解释的解释，在观测数据可用之前促进基于证据的评估。",
+      "authors": [
+        "Anran Wang",
+        "Wen Shi",
+        "Yong Luo",
+        "Jianbin Huang",
+        "Lijuan Chen",
+        "Junhu Zhao"
+      ],
+      "published": "2026-08-19T17:43:49Z",
+      "category": "physics.ao-ph",
+      "arxiv_id": "2608.19163v1",
+      "abs_url": "https://arxiv.org/abs/2608.19163v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19163v1"
+    },
+    {
+      "title": "Beyond the Transcript: Detecting Covert Co ordination in Latent Multi-Agent Communication",
+      "title_zh": "超越记录：检测潜在多智能体通信中的隐蔽协调",
+      "summary": "Language-model agents can communicate through continuous hidden states that are invisible in public transcripts, creating opportunities for covert harmful coordination. We introduce Verifiable Latent Alignments (VLA), an activation-aware framework for monitoring and steering these private communication channels. For every monitored decision, VLA links the p…",
+      "summary_zh": "语言模型代理可以通过在公共记录中不可见的连续隐藏状态进行通信，从而为隐蔽的有害协调创造机会。我们引入了可验证的潜在对齐（VLA），这是一种激活感知框架，用于监控和引导这些私人通信渠道。对于每个受监控的决策，VLA 使用共享事件标识符将私有潜在状态记录和通道状态链接到最终的公共操作，从而实现匹配的因果分析。我们的第一个贡献是一个仅中性的三层监视器，结合了表示异常检测、反事实动作分布影响和稀疏自动编码器解释支持。我们的第二个贡献是一个涵盖黑盒行为指令和白盒匹配中性反事实的可操纵性框架。我们的第三个贡献是对受控多智能体拍卖基准的评估，涵盖同质和异构模型对、多智能体可扩展性和干预有效性。当文本和潜在共谋行汇集为阳性时，顺序监测器的接受者操作特征曲线下平均面积 (AUROC) 为 0.993（对于同质代理）和 0.854（对于异质对）。在具有 25-100…",
+      "authors": [
+        "Ramneet Kaur",
+        "Pradyumna Chari",
+        "Ramesh Raskar",
+        "Jugad Singh",
+        "Sumit Kumar Jha",
+        "Anirban Roy"
+      ],
+      "published": "2026-08-19T17:43:22Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.19161v1",
+      "abs_url": "https://arxiv.org/abs/2608.19161v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19161v1"
+    },
+    {
+      "title": "Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI PC Fleets",
+      "title_zh": "用于英特尔 AI PC 机群上分布式 LLM 推理的预编译管道分片",
+      "summary": "Modern Intel AI PCs ship capable integrated GPUs and NPUs with 16+ GB of unified memory, and they spend considerable time idle. That is not enough memory to fit a large model such as a 70B-parameter LLM. We show that a handful of AIPCs, working together over an ordinary network, can serve models beyond the capability of any single one. We use pipeline paral…",
+      "summary_zh": "现代英特尔 AI PC 配备功能强大的集成 GPU 和 NPU，以及 16+ GB 的统一内存，并且它们闲置的时间相当长。这不足以容纳大型模型，例如 70B 参数 LLM。我们证明，少数 AIPC 通过普通网络协同工作，可以为超出任何单个 AIPC 的模型提供服务。我们使用管道并行性：模型按层分割为每级分片，每个分片都预编译成 OpenVINO 图，以便每台机器运行一个分片并将激活传递到下一个分片。三种技术可以使其足够快而有用。首先，我们恢复了未分割模型的速度：幼稚的每阶段导出运行速度远低于单片推理，因为它错过了 OpenVINO GPU 优化，并且将 beam_idx Gather 注入每个分片会触发该优化（IndirectKVCache 融合）并使分片达到奇偶校验。其次，我们在有状态的 OpenVINO 模型上利用推测解码。第三，管道通过跨阶段…",
+      "authors": [
+        "Tate Berenbaum",
+        "Muthaiah Venkatachalam"
+      ],
+      "published": "2026-08-19T17:33:28Z",
+      "category": "cs.DC",
+      "arxiv_id": "2608.19147v1",
+      "abs_url": "https://arxiv.org/abs/2608.19147v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19147v1"
+    },
+    {
+      "title": "Geometric Iterative Retrieval for Neural Audio Codec Resynthesis",
+      "title_zh": "神经音频编解码器重新合成的几何迭代检索",
+      "summary": "Neural audio codecs based on Residual Vector Quantization (RVQ) have become the dominant discrete representation for token-based general audio generation, yet resynthesizing high-quality audio from coarse codec tokens remains an open problem and bounds the fidelity of every system that generates them. Prior work has framed resynthesis as a choice between di…",
+      "summary_zh": "基于残差矢量量化 (RVQ) 的神经音频编解码器已成为基于令牌的通用音频生成的主要离散表示，但从粗编解码器令牌重新合成高质量音频仍然是一个悬而未决的问题，并且限制了生成它们的每个系统的保真度。先前的工作将重新综合定义为离散标记预测和连续回归之间的选择。我们认为这种二分法是不完整的，并引入了几何迭代检索，这是一种使用 RVQ 层层次结构本身作为连续码本空间中的自然迭代分解的范例。我们的方法不是对离散词汇进行分类或回归到单个目标向量，而是在密码本的几何空间中执行对比检索。我们在语音和音乐的编解码器恢复任务上评估了我们的方法，并展示了相对于单通令牌预测和一步回归基线的改进。",
+      "authors": [
+        "Leo Schmidt-Traub",
+        "Frédéric Berdoz",
+        "Luca A. Lanzendörfer",
+        "Roger Wattenhofer"
+      ],
+      "published": "2026-08-19T17:29:56Z",
+      "category": "cs.SD",
+      "arxiv_id": "2608.19141v1",
+      "abs_url": "https://arxiv.org/abs/2608.19141v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19141v1"
+    },
+    {
+      "title": "Grouping the Stochastic Machine: Precision, Not Capability, as the Frontier Metric for AI Systems",
+      "title_zh": "将随机机器分组：作为人工智能系统的前沿指标，精度而非能力",
+      "summary": "Frontier language models are compared, marketed, and benchmarked on capability -- what their best or average output can achieve. I argue this measures the wrong axis. The models have saturated accuracy: their mean output lands on the target. What now separates one system from another in practice is precision: how tightly concentrated their outputs are aroun…",
+      "summary_zh": "前沿语言模型的功能进行比较、营销和基准测试——它们的最佳或平均输出可以实现什么。我认为这测量了错误的轴。这些模型具有饱和精度：它们的平均输出落在目标上。现在，在实践中，一个系统与另一个系统的区别在于精度：它们的输出在重复的、相同的请求中围绕该目标的集中程度如何。借用射手的特点，能力就是平均射击的落点。可靠性是群体的规模。我提出三点主张。首先，精度，而不是能力，是系统之间的前沿区分因素，基准文化系统地无法衡量它，报告集中趋势而不是扩散。其次，通过在固定温度下多次运行一组固定的确定性评分任务并计算每个任务结果的一致性，可以廉价且无循环地测量精度，无需模型在环评分器。第三，测量不仅是描述性的，而且是决策指导性的：它将一致的故障（偏离中心的紧密组，可通过论文 1 的操作规则纠正——瞄准镜调整）与分散的故障（宽组，只能通过改变模型或其采样来纠正——步枪问题）…",
+      "authors": [
+        "George Andrikopoulos"
+      ],
+      "published": "2026-08-19T17:29:47Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.19140v1",
+      "abs_url": "https://arxiv.org/abs/2608.19140v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19140v1"
+    },
+    {
+      "title": "SCORE: Subject Coordinate Recovery for Label-Free Cross-Subject EEG-to-Image Retrieval",
+      "title_zh": "SCORE：无标签跨受试者脑电图到图像检索的受试者坐标恢复",
+      "summary": "Accurate visual decoding can reveal how the brain represents visual information and recover perceived content from neural signals such as electroencephalography (EEG), with potential for neural communication. However, current EEG-to-image retrieval methods perform far below their within-subject counterparts for new users without labeled calibration, limitin…",
+      "summary_zh": "准确的视觉解码可以揭示大脑如何表示视觉信息，并从脑电图 (EEG) 等神经信号中恢复感知内容，具有神经通信的潜力。然而，对于没有标记校准的新用户来说，当前的脑电图到图像检索方法的性能远远低于其体内对应方法，限制了现实世界的部署。为了理解这一差距，我们分析了受试者之间的脑电图特征，发现不同的受试者在概念之间保留相似的关系，但沿着不同的坐标方向表达它们。因此，我们提出主题坐标恢复（SCORE），这是一种目标无标签框架，将恢复感知源训练与部署时的坐标对齐相结合。在训练期间，SCORE 将源受试者脑电图与公共图像空间对齐，并通过仅源片段模拟看不见的受试者恢复。在部署时，两个编码器都被冻结，SCORE 通过中心校正匹配选择可靠的 EEG 图像标志，并估计正交变换以在没有源数据或目标标签的情况下恢复目标 EEG 坐标。在两个公共基准的 200 路检索中，SCO…",
+      "authors": [
+        "Zhenyao Cui",
+        "Siyuan Kan",
+        "Siyang Li",
+        "Ziwei Wang",
+        "Dongrui Wu"
+      ],
+      "published": "2026-08-19T17:27:29Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.19134v1",
+      "abs_url": "https://arxiv.org/abs/2608.19134v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19134v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "AI革命下半场：算力即货币 - 日经中文网",
+      "summary": "AI革命下半场：算力即货币 日经中文网",
+      "source": "日经中文网",
+      "lang": "zh",
+      "published": "Wed, 19 Aug 2026 21:04:20 GMT",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPVHQ5TFAxeUJ6MUFmc1hZWjJBQl9XSzVVb0dESTl6Y3h6YVhaaTliSWxGMEhxbTVmcnFsYzBOOGZkd3QwZ2VkWjRQOXN1X1RFSFBvb1otQlo2MDQ0QlRTcHhnd1NpWFJNekFtRGVFZHVrLURmYTkyQXExRS01T3RSRQ?oc=5"
+    },
+    {
+      "title": "赛意信息签下64.5亿元算力大单 曾两度披露对外采购不超60亿元服务器|速读公告 - 财联社",
+      "summary": "赛意信息签下64.5亿元算力大单 曾两度披露对外采购不超60亿元服务器|速读公告 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Wed, 19 Aug 2026 15:09:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1jekpMbGxKMEtHWU56eEpWMWhOdnlmWGFXNFpfNHpTeVVEaEpJRWZ1MXZ0SzZCSWZTeU94U2NQam1aNFNNNnU5MQ?oc=5"
+    },
+    {
+      "title": "反直觉！空调用电将超AI算力，全球迎战“制冷危机” - 上观新闻",
+      "summary": "反直觉！空调用电将超AI算力，全球迎战“制冷危机” 上观新闻",
+      "source": "上观新闻",
+      "lang": "zh",
+      "published": "Wed, 19 Aug 2026 22:30:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBPdEdLdVJramFWdF8yVWhQQ05uazlOSnJkaVVnZ3J4cDF2UWdpSkVfUjlaejA3eE93ZlREUGRQOFVkSWlCV1ByZ3VSVWlna2Fza1hZMEEyTU9vQUE2?oc=5"
+    },
+    {
+      "title": "常瑞华院士：AI算力的下一场竞争是互联，光芯片要走向“快而宽” - 中国科技网",
+      "summary": "常瑞华院士：AI算力的下一场竞争是互联，光芯片要走向“快而宽” 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Wed, 19 Aug 2026 06:47:47 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9OQlBYZmUxQV9rbXVvU2tIdVdNNTI2UDBYRU9MWnFKcXJ5NGFrdDlHeV9uMl9ZRTJfdmgzekx1SHBVLWRoS3hXZUd6ck9PXzNjQXlfSnJaSnBXdVRCQ0RsemlxWkxhQkZCby1WdV92eEM?oc=5"
+    },
+    {
+      "title": "中信证券：国产算力订单预期清晰度有望增强 建议关注头部厂商 - 观点网",
+      "summary": "中信证券：国产算力订单预期清晰度有望增强 建议关注头部厂商 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Thu, 20 Aug 2026 00:48:37 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE10OVVYSXlKRUlKUmlMR3JONUNKbjRXbnh1bVZWN2szdENhdW8xYnBvNWp1YTBoWENFSUlMZ21iQjlMVktVdFNHUlZ5U1VLU3hRb01zeUtCR2NkLVZwQVFkSmFR?oc=5"
+    },
+    {
+      "title": "【中经社信号】从“技术红利”到“生态规则” 大模型竞争步入新阶段 - 中国金融信息网",
+      "summary": "【中经社信号】从“技术红利”到“生态规则” 大模型竞争步入新阶段 中国金融信息网",
+      "source": "中国金融信息网",
+      "lang": "zh",
+      "published": "Thu, 20 Aug 2026 02:49:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBjZXVtT05iYnJCRERkYl85cElZVm02MXNSN1BXOEJBVG1aWVM0YVBveUNobGhGZF85eFllTW1aNFUzZldyaWRxSGVJcktCUG5NMkExTTVoY3R1QjgtYW95TWNHM0FKNFk?oc=5"
+    },
+    {
+      "title": "海外需求“接”进来，中国算力“算”全球|商汤科技|新加坡|芯片|Token|临港_手机新浪网 - 新浪财经",
+      "summary": "海外需求“接”进来，中国算力“算”全球|商汤科技|新加坡|芯片|Token|临港_手机新浪网 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Thu, 20 Aug 2026 02:17:53 GMT",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZmFHM3VUMS0za3d0dDQyX1FmUXFvczYweWhSci1vSlVYSVBELVZqSHNTemRCRGUtUXpfbENmTG5Ua095SjRGbEpZVUhyUV9ta3VaRWN3ODRQUmkzSTk3eEdTeXNGMWRjWWFuVnVSM3NNRTllUnpXRXljMDI1dFhVOGExWlZmQ0xsb1JCRmR0RGU1a2lGY3hyd3pRdUF1dzk5d201N2UtWVJKU1pqYWJ6eV93?oc=5"
+    },
+    {
+      "title": "谷歌在搜索和Gemini中推出多款全新AI学习工具 - 新浪网",
+      "summary": "谷歌在搜索和Gemini中推出多款全新AI学习工具 新浪网",
+      "source": "新浪网",
+      "lang": "zh",
+      "published": "Thu, 20 Aug 2026 03:13:12 GMT",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1fSVM4al8wNS15TTBnTUZBUjVRcUdpTjc4Vk9jSllWbTBSbWRtcFJpQmxUY1o0cVhFdFlqS09vOUlkSUs0VVJYVlFsY2RVbFVkWjRLdFJlTXBWSHlCM0d1LUpTYXdhNGhYSkxLNmMwSkFQZ25OaXZaWjR2V2prTEU?oc=5"
+    },
+    {
+      "title": "常瑞华院士：AI算力竞争转向“快而宽”，VCSEL光芯片迎来发展新机遇 - 证券时报",
+      "summary": "常瑞华院士：AI算力竞争转向“快而宽”，VCSEL光芯片迎来发展新机遇 证券时报",
+      "source": "证券时报",
+      "lang": "zh",
+      "published": "Wed, 19 Aug 2026 16:31:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9qcFIyalV6MGVKelpMNnlxTTZMQzZpVGNpaEZCODhrTlQ4eEhZLUJCTTlCbTdKNW9pWGs2VERzeGxnczFWd25YSnpPclJReHVUQld1c3RBZ1dMeXRx?oc=5"
+    },
+    {
+      "title": "算力正在成为新时代核心抵押物，真AI主线的回踩更偏良性 - 证券之星",
+      "summary": "算力正在成为新时代核心抵押物，真AI主线的回踩更偏良性 证券之星",
+      "source": "证券之星",
+      "lang": "zh",
+      "published": "Thu, 20 Aug 2026 03:19:29 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB6bEd2b1paYlVKeVl6d1dtZGEzczBtRkw3QlYzQ2pFU1pRTW1vWUxZQ01qVUs3YTlLRlNfa29odUxpYmUzSWVSUU9HR0NOeDl3T3JmTXdXZlhUMnlDRHZyYw?oc=5"
+    },
+    {
+      "title": "半年报2 国瓷材料:锚定AI算力赛道,MLCC粉体卡位全球AI算力供应链 - 同花顺财经",
+      "summary": "半年报2 国瓷材料:锚定AI算力赛道,MLCC粉体卡位全球AI算力供应链 同花顺财经",
+      "source": "同花顺财经",
+      "lang": "zh",
+      "published": "Thu, 20 Aug 2026 00:54:16 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA2MDc3VzlyRmZjRHNaWE1uTzhrdXdJdjJBRkxQQ0FiSXBCTEdIVUdrUHlFNnV4REFITHQwOG9Kd3lJTzFIYTJsSWJjRmxxUmViSzhLdFlGSDJPc25jR1Y4TXJn?oc=5"
+    },
+    {
+      "title": "突破视觉大模型瓶颈，新型智能视觉芯片将光信号直接转译为词元 - 中国科技网",
+      "summary": "突破视觉大模型瓶颈，新型智能视觉芯片将光信号直接转译为词元 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Wed, 19 Aug 2026 10:04:47 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5pakZqZ3lEbGFuZW5UOWtfb0ZxMzd1SEhDamNTazFPOUVyV1RDSHJzdlBSU3FFOEU5TmpSVnhsNS1ra1FtUnprY0I5bTVWVWZwTGVDbEk5VWZMWUpZUm00bGhaMEhGNm0tRU8wMnFmYlM?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 92583,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 66914,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57444,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 39593,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 36284,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 386809,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 274379,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 233116,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
