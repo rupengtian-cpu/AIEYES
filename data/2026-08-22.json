@@ -1,0 +1,518 @@
+{
+  "date": "2026-08-22",
+  "generated_at": "2026-08-22T03:34:05.924326+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models",
+      "title_zh": "ConceptGuard：大型语言模型中上下文相关遗忘的基准测试",
+      "summary": "Large Language Models (LLMs) increasingly require selective removal of harmful or sensitive knowledge, called unlearning, yet existing methods and benchmarks fail to evaluate this capability completely. Current approaches rely on disjoint forget and retain sets composed of independent facts, and measure success using simple and direct factual recall. This f…",
+      "summary_zh": "大型语言模型 (LLM) 越来越需要选择性地删除有害或敏感知识，称为“忘却”，但现有的方法和基准无法完全评估这种能力。当前的方法依赖于不相交的遗忘和保留由独立事实组成的集合，并使用简单而直接的事实回忆来衡量成功。这种框架未能抓住遗忘的关键要求，即消除有害行为同时保留良性和有益知识的能力。我们认为，有效的忘却必须在概念层面上进行，确保完全删除不安全的应用程序，同时保持其正确和有用的用法，从而实现概念上有意义和完全的忘却。为了从实用的角度更好地评估遗忘技术，我们引入了双重用途概念的概念：可以在有害和良性环境中使用的概念。基于这些概念，我们构建了一个名为 ConceptGuard 的基准，其中忘记集和保留集在概念使用中明确互补。我们的基准独特地使得能够在概念层面而不是稀疏事实的层面上探索和衡量遗忘，并且评估是意图敏感的，其目标是最大化上下文分离以促进更安…",
+      "authors": [
+        "Sahil Kale",
+        "Ian Harris"
+      ],
+      "published": "2026-08-20T17:59:57Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.20338v1",
+      "abs_url": "https://arxiv.org/abs/2608.20338v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20338v1"
+    },
+    {
+      "title": "4DAnyone: Create Anyone in 4D from a Casual Monocular Video",
+      "title_zh": "4DAnyone：通过休闲单眼视频以 4D 形式创建任何人",
+      "summary": "We present 4DAnyone, a framework for reconstructing 4D humans from an uncalibrated monocular video by generating reconstruction-grade multiview-consistent videos and lifting them into 4D Gaussian Splatting (4DGS). Existing camera-controlled video diffusion models synthesize plausible novel-view videos but fail to maintain consistency when scaled to the tens…",
+      "summary_zh": "我们提出了 4DAnyone，这是一个框架，用于通过生成重建级多视图一致视频并将其提升为 4D 高斯泼溅 (4DGS)，从未经校准的单眼视频重建 4D 人类。现有的摄像机控制视频扩散模型可以合成合理的新颖视图视频，但在扩展到 4DGS 重建所需的数十个目标视图时无法保持一致性。我们将这种失败视为有界注意力上下文问题：当目标视图超过单个 DiT 前向传递的容量时，它们必须分成组，从而暴露两个耦合的瓶颈。在参考上下文方面，对所有先前生成的视图的调节随着 $O(N)$ 增长，削弱了跨视图外观指导。在目标上下文方面，不相交的群体无法直接交换信息，导致全局结构漂移。 4DAnyone 通过两种互补的设计解决了这两个瓶颈：参考上下文打包 (RCP) 将不断增长的参考视图压缩为固定长度的混合分辨率上下文，参考上下文复杂度为 $O(1)$，而目标上下文路由 (TC…",
+      "authors": [
+        "Yudong Jin",
+        "Tao Xie",
+        "Qihang Zhang",
+        "Zehong Shen",
+        "Zhen Xu",
+        "Yujun Shen"
+      ],
+      "published": "2026-08-20T17:59:53Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.20335v1",
+      "abs_url": "https://arxiv.org/abs/2608.20335v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20335v1"
+    },
+    {
+      "title": "WithEveryone: Unified Planning and Identity Grounding for Group Image Generation",
+      "title_zh": "WithEveryone：群体形象生成的统一规划与身份扎根",
+      "summary": "Identity-preserving image generation becomes increasingly unreliable when a scene must contain many specified people. Beyond retaining each identity, the model must bind every reference to a distinct person and location, while training-time identity losses must establish correspondence among several noisy predicted faces. We introduce WithEveryone, a unifie…",
+      "summary_zh": "当场景必须包含许多指定的人时，保留身份的图像生成变得越来越不可靠。除了保留每个身份之外，模型还必须将每个引用绑定到不同的人和位置，而训练时的身份丢失必须在几个有噪声的预测面孔之间建立对应关系。我们推出了 WithEveryone，一个统一的框架，用于生成最多十个参考身份的群组图像。 WithEveryone 将每个选定的身份注入为寻址令牌，预测结构化身份布局计划，并将该计划呈现为视觉条件。其主要目标是 Layout-Grounded ID Loss，使用带注释的人脸区域直接监督预期身份，避免不稳定的基于嵌入的人脸匹配； ID 表示强制在图像合成之前额外训练每个身份的预测。在身份不相交基准上，WithEveryone 实现了最高的目标上下文身份相似度，将 GPT-Image-2 的人脸相似度从 0.462 提高到 0.499，同时将复制粘贴伪影从 0…",
+      "authors": [
+        "Hengyuan Xu",
+        "Qixun Wang",
+        "Yiji Cheng",
+        "Miles Yang",
+        "Zhao Zhong",
+        "Wei Cheng"
+      ],
+      "published": "2026-08-20T17:59:53Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.20336v1",
+      "abs_url": "https://arxiv.org/abs/2608.20336v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20336v1"
+    },
+    {
+      "title": "Swift-Image: Exploring the Performance Frontier of Compact Unified Image Generation Models",
+      "title_zh": "Swift-Image：探索紧凑统一图像生成模型的性能前沿",
+      "summary": "We present Swift-Image, a compact unified model for text-to-image generation, single-image editing, and multi-image editing. Our goal is to explore how far a relatively small visual generator can be pushed through systematic training engineering under a constrained computational budget. Swift-Image adopts an efficient 6B single-stream DiT and a progressive…",
+      "summary_zh": "我们推出了 Swift-Image，这是一个紧凑的统一模型，用于文本到图像生成、单图像编辑和多图像编辑。我们的目标是探索在有限的计算预算下通过系统训练工程可以将相对较小的视觉生成器推到多远。 Swift-Image采用高效的6B单流DiT和渐进式训练管道，从广泛的语义覆盖演进到更高分辨率、更强的视觉质量和统一的生成编辑监督。对于后期训练，我们采用并行专家强化学习，然后采用多教师同策略蒸馏来减轻异构目标之间的干扰。我们使用提示增强器进一步将高级推理与像素级渲染分离，该提示增强器将用户请求转换为与生成器对齐的视觉规范。为了高效部署，结构修剪和几个步骤的蒸馏产生了 3B 和加速变体。 Swift-Image 在仅 6B 参数和 243K GPU 训练小时的评估开源模型中实现了领先的综合性能；压缩的 3B 模型几乎不会造成任何损失，而少步蒸馏则以更少的采样…",
+      "authors": [
+        "Taihang Hu",
+        "Zhao Wang",
+        "Zuan Gao",
+        "Tao Liu",
+        "Hao Yan",
+        "Zhengze Xu"
+      ],
+      "published": "2026-08-20T17:59:52Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.20334v1",
+      "abs_url": "https://arxiv.org/abs/2608.20334v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20334v1"
+    },
+    {
+      "title": "G-CARL: Grounded Checklist-Aligned Reward Learning for Patient-Oriented Medical Report Interpretation",
+      "title_zh": "G-CARL：基于检查表的奖励学习，用于以患者为导向的医疗报告解释",
+      "summary": "Personalized interpretation of medical reports has emerged as an increasingly important need among patients. Addressing this need requires both evidence-grounded medical factuality and context-dependent patient communication, yet existing medical vision-language tasks do not adequately capture these dual requirements. To bridge this gap, we introduce Patien…",
+      "summary_zh": "对医疗报告的个性化解读已成为患者日益重要的需求。满足这一需求需要以证据为基础的医学事实和依赖于上下文的患者沟通，但现有的医学视觉语言任务并不能充分满足这些双重要求。为了弥补这一差距，我们引入了面向患者的医疗报告解释（PMRI），这是一种新颖的开放式多模式生成任务，需要模型根据用户的查询和对话历史以准确且易于理解的语言解释医疗报告。这两个目标在可验证性方面存在根本差异，但仍然紧密耦合，使得它们难以在传统的监督微调和整体强化学习范式下联合优化。为了应对这一挑战，我们提出了 G-CARL，这是一种扎根的、与清单一致的强化学习框架，它将用于原子声明验证的多源检索与用于响应覆盖的上下文感知、特定于实例的加权清单相结合，为事实性、用户需求满意度和表达质量提供结构化监督，而不限制响应多样性。我们进一步构建了 MMedReport，一个真实世界的 PMRI 基准，…",
+      "authors": [
+        "Shiao Xie",
+        "Siyu Chen",
+        "Jianwei Lv",
+        "Bo Yuan",
+        "Yujin Wang",
+        "Xiandong Li"
+      ],
+      "published": "2026-08-20T17:59:46Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.20331v1",
+      "abs_url": "https://arxiv.org/abs/2608.20331v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20331v1"
+    },
+    {
+      "title": "$TCP_α$: Margin-Controlled Confidence estimation for reliable Music Information Retrieval",
+      "title_zh": "$TCP_α$：可靠音乐信息检索的裕度控制置信度估计",
+      "summary": "Deep neural networks are often overconfident, assigning high confidence even to incorrect predictions. Consequently, users lack a reliable signal for deciding when a prediction can be trusted. Post-hoc confidence estimation addresses this by training a lightweight auxiliary head over a frozen classifier. Existing targets, however, suffer from inherent ambig…",
+      "summary_zh": "深度神经网络常常过于自信，甚至对错误的预测也赋予很高的置信度。因此，用户缺乏可靠的信号来决定何时可以信任预测。事后置信度估计通过在冻结分类器上训练轻量级辅助头来解决这个问题。然而，现有目标存在固有的模糊性：它们为正确和错误的预测分配重叠的置信度值，而决策边界附近的错误获得的置信度分数与正确的预测无法区分。在这项工作中，我们提出了 $TCP_α$，这是一种新颖的置信度目标，通过对错误分类的样本引入边际控制惩罚来解决这些限制。我们证明 $TCP_α$ 保证正确和错误预测的目标值之间的完全分离，其分离裕度与类的数量无关，并随着惩罚参数单调增加。由于准确的分类器自然会产生很少的错误，因此学习这些目标会导致严重不平衡的回归问题。因此，我们对这种不平衡下的学习培训策略进行了系统研究，并通过广泛的消融研究确定了有效的培训配置。我们评估了所提出的 rāga 识别方…",
+      "authors": [
+        "Parampreet Singh",
+        "Anushka Singh",
+        "Sumit Kumar",
+        "Vipul Arora"
+      ],
+      "published": "2026-08-20T17:58:50Z",
+      "category": "eess.AS",
+      "arxiv_id": "2608.20326v1",
+      "abs_url": "https://arxiv.org/abs/2608.20326v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20326v1"
+    },
+    {
+      "title": "A comparison between ceiling-mounted FMCW, IR-UWB and Wi-Fi radar for in-bedroom human activity monitoring and sleep interruption detection",
+      "title_zh": "吸顶式 FMCW、IR-UWB 和 Wi-Fi 雷达在卧室人体活动监测和睡眠中断检测方面的比较",
+      "summary": "Despite their growing importance for contact-free radio frequency (RF) based healthcare monitoring, different radio technologies such as frequency-modulated continuous wave (FMCW) radar, impulse radio ultra-wideband (IR-UWB), and Wi-Fi sensing are rarely compared under identical deployment conditions, as existing studies typically differ in hardware, datase…",
+      "summary_zh": "尽管调频连续波 (FMCW) 雷达、脉冲无线电超宽带 (IR-UWB) 和 Wi-Fi 传感等不同无线电技术对于基于非接触式射频 (RF) 的医疗保健监测的重要性日益增加，但很少在相同的部署条件下进行比较，因为现有研究通常在硬件、数据集和评估方法方面存在差异。此外，尽管吸顶式雷达在医疗保健环境中具有实际部署和成本优势，但其性能仍未得到充分开发。因此，本文使用 6 个房间布局中 20 名参与者的同步记录，对吸顶式 FMCW、IR-UWB 和 Wi-Fi 传感进行了受控比较和分析。所有技术均使用相同的卷积神经网络 (CNN) 在细粒度 10 级人类活动识别 (HAR) 任务和粗略 4 级睡眠监测任务上进行评估。 IR-UWB 实现了最高的跨主题活动识别性能（89.0% 宏观 F1），而 FMCW 对看不见的房间布局的概括效果最好（83.8% 宏观 F1…",
+      "authors": [
+        "Anton Lambrecht",
+        "Reda El Hail",
+        "Xianjun Jiao",
+        "Pieter Crombez",
+        "Dominique Schreurs",
+        "Peter Karsmakers"
+      ],
+      "published": "2026-08-20T17:58:22Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.20322v1",
+      "abs_url": "https://arxiv.org/abs/2608.20322v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20322v1"
+    },
+    {
+      "title": "An Agentic Approach for Active Data Collection, Travel Behavior Modeling, and Weather-Sensitive Demand Prediction",
+      "title_zh": "主动数据收集、出行行为建模和天气敏感需求预测的代理方法",
+      "summary": "Travel behavior research increasingly combines digital data collection with predictive modeling, yet these stages are often developed and evaluated separately. This study proposes a three-agent workflow integrating conversational data collection, structured data processing, and behavioral prediction. A chatbot-administered, image-augmented stated-preference…",
+      "summary_zh": "出行行为研究越来越多地将数字数据收集与预测建模结合起来，但这些阶段通常是单独开发和评估的。本研究提出了一种集成会话数据收集、结构化数据处理和行为预测的三代理工作流程。一项由聊天机器人管理、图像增强的陈述偏好调查收集了学生通勤者在五个预定义天气场景中的模式选择，产生了 454 个受访者场景观察结果。使用多项 Logit 模型分析与天气相关的关联，而逻辑回归和随机森林提供了机器学习基准。九个本地部署的大型语言模型 (LLM)，参数范围从 2 到 350 亿个参数，在四个零样本提示和上下文条件下进行评估，并通过角色、少数样本和基于视觉的配置进行扩展。随机森林实现了 69.6% 的五级准确率，而最好的纯文本零样本 LLM 在没有特定任务拟合的情况下达到了 69.9%。习惯性旅行信息产生了最一致的收益，专家框架通常优于角色扮演，当习惯性旅行信息不可用时，角色…",
+      "authors": [
+        "Narges Ahmadi",
+        "Yubo Jiao",
+        "Jônatas Augusto Manzolli",
+        "Jiangbo Yu",
+        "Luis Miranda-Moreno"
+      ],
+      "published": "2026-08-20T17:57:42Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.20320v1",
+      "abs_url": "https://arxiv.org/abs/2608.20320v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20320v1"
+    },
+    {
+      "title": "AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement",
+      "title_zh": "AI4AI-Bench：在递归自我改进的算法设计中对 LLM 代理进行基准测试",
+      "summary": "Recursive self-improvement (RSI) asks whether an AI system can improve the process that produces AI systems, so that the next system inherits the improvement. That process is the training algorithm: a better objective or update rule improves the compute\\mbox{-}capability exchange rate for every subsequent run, including the one that produces the next agent.…",
+      "summary_zh": "递归自我改进（RSI）询问人工智能系统是否可以改进产生人工智能系统的过程，以便下一个系统继承改进。这个过程就是训练算法：更好的目标或更新规则可以提高每次后续运行（包括生成下一个代理的运行）的计算能力交换率。因此，RSI 是否可行取决于智能体是否可以设计训练算法。没有基准测试可以隔离这种能力：现有套件是通过收集数据或调整超参数来赢得的，除了模型学习方式的改变之外，没有任何基准测试可以告诉我们运行执行方式的变化。我们展示了 AI4AI\\mbox{-}Bench，涵盖 10 个训练算法系列的 10 个冻结研究存储库。在每个任务中，智能体有 4 个小时在一台 B300 上重写训练算法；然后，其代码从头开始重新运行长达 12 小时，并由隐藏在代理之外的固定评估器根据相同程序下存储库的原始算法进行评分。由于这 10 个指标是不可通约的，因此每个任务都映射到一个…",
+      "authors": [
+        "Yizhe Chi",
+        "Wenyi Li",
+        "Deyao Hong",
+        "Xiaoqiu Wang",
+        "Mingju Gao",
+        "Kaisen Yang"
+      ],
+      "published": "2026-08-20T17:56:59Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.20318v1",
+      "abs_url": "https://arxiv.org/abs/2608.20318v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20318v1"
+    },
+    {
+      "title": "Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation",
+      "title_zh": "Pandora的AI模型路由盒：高效分配和昂贵的价值估算",
+      "summary": "Heterogeneous AI systems composed of multiple models, architectures, harnesses, or inference-time settings can improve quality and efficiency by routing queries to the specialist who can answer most effectively at the lowest cost. Routing requires estimating each specialist's expected return, but this value estimation has a cost. Cheap estimators (e.g., emb…",
+      "summary_zh": "由多个模型、架构、工具或推理时间设置组成的异构人工智能系统可以通过将查询路由给能够以最低成本最有效地回答的专家来提高质量和效率。路由需要估计每个专家的预期回报，但这种价值估计是有成本的。廉价的估计器（例如，基于嵌入的预测器）速度快但噪音大，而准确的估计器（例如，可以访问检索结果或部分推理轨迹的微调模型）价格昂贵。我们将这种权衡形式化为潘多拉魔盒的一个例子，即带有昂贵检查的最优搜索的经典问题。在高斯信号模型下，生成的策略具有封闭形式的信息价值表达式，用于确定每个专家和输入的细化价值估计是否值得其成本。我们将中心化策略称为潘多拉路由器。我们将其扩展到去中心化的环境，即潘多拉投标者，专家在接受报价以索取查询之前独立决定是否投资自我评估。跨三个领域的实验——标准的多法学硕士基准、检索增强专家和具有可变推理时间推理的法学硕士——表明潘多拉的路由器与详尽估计的…",
+      "authors": [
+        "Adam Fisch",
+        "Shubhendu Trivedi",
+        "Fantine Huot",
+        "William W. Cohen",
+        "Michael Kaisers",
+        "Mirella Lapata"
+      ],
+      "published": "2026-08-20T17:54:37Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.20316v1",
+      "abs_url": "https://arxiv.org/abs/2608.20316v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20316v1"
+    },
+    {
+      "title": "Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records",
+      "title_zh": "用于结构化电子健康记录临床预测任务的可解释变压器模型",
+      "summary": "Predictive models over structured electronic health records (EHRs) remain central to machine learning for healthcare, but few have jointly emphasized quantitative laboratory information and interpretability with respect to input medical events. We present BERT-LER, a BERT-style model for coded EHR timelines pretrained and fine-tuned from a de-identified EHR…",
+      "summary_zh": "结构化电子健康记录 (EHR) 的预测模型仍然是医疗保健机器学习的核心，但很少有人共同强调定量实验室信息和输入医疗事件的可解释性。我们提出了 BERT-LER，这是一种用于编码 EHR 时间线的 BERT 风格模型，根据 7500 万患者的去识别化 EHR 数据集进行了预训练和微调，它将实验室测试结果编码为离散标记，同时通过基于百分位的分箱保留分级信息，并与基于输入 EHR 序列的标记级归因的集成梯度配对。我们根据公共 EHRShot 基准套件和基于真实世界数据的哮喘严重程度进展研究对我们的方法进行基准测试。通过在单一框架中统一实验室值表示和可解释性，同时评估预测性能和解释是否普遍超出标准临床预测任务，解决了 EHR 基础式建模中的方法论差距。在 EHRShot 和哮喘任务中，BERT-LER 实现的预测性能可与公开的基准模型相媲美，并且在实验室相…",
+      "authors": [
+        "Jun Ni Du",
+        "Lukas Adamek",
+        "Maxim Kryukov",
+        "Flavio Dormont",
+        "Ziv Bar-Joseph",
+        "Sven Jager"
+      ],
+      "published": "2026-08-20T17:54:17Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.20315v1",
+      "abs_url": "https://arxiv.org/abs/2608.20315v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20315v1"
+    },
+    {
+      "title": "Inter-X++: A Comprehensive Benchmark for Multimodal Human-Human Interaction Analysis",
+      "title_zh": "Inter-X++：多模式人机交互分析的综合基准",
+      "summary": "The capability to perceive and synthesize human-human interactions is fundamental to developing intelligent digital human systems. However, existing datasets and modeling approaches are fundamentally constrained by low-fidelity kinematics, the omission of dexterous hand gestures and a severe lack of rich multimodal annotations. Furthermore, fragmented inter…",
+      "summary_zh": "感知和综合人与人交互的能力是开发智能数字人类系统的基础。然而，现有的数据集和建模方法从根本上受到低保真运动学、省略灵巧手势以及严重缺乏丰富的多模态注释的限制。此外，分散的交互表示和不一致的评估协议也阻碍了公平和严格的基准测试。为了系统地解决这些瓶颈，我们推出了 Inter-X++，这是一个全面的大规模基准测试，旨在支持多功能 HHI 分析。 Inter-X++ 通过新颖的混合动作捕捉系统捕捉，提供 11,388 个高保真交互序列和超过 810 万帧，具有精确的全身动作和详细的手指关节。同时，我们通过多方面的注释来丰富数据基础，包括分层细粒度文本描述、交互类别、因果交互顺序、主体的关系和个性，以及顶点级接触图和物理正则化约束。利用这些详尽的注释，我们制定了一个统一的测试场，其中包括四类下游任务，这些任务对称地跨越生成范式和感知范式。为了消除基准测试的…",
+      "authors": [
+        "Liang Xu",
+        "Chengqun Yang",
+        "Zili Lin",
+        "Xintao Lv",
+        "Yichao Yan",
+        "Xin Jin"
+      ],
+      "published": "2026-08-20T17:51:48Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.20312v1",
+      "abs_url": "https://arxiv.org/abs/2608.20312v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20312v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "国产AI算力再突破 中诚华隆发布新一代推理芯片及超节点集群 - 新京报",
+      "summary": "国产AI算力再突破 中诚华隆发布新一代推理芯片及超节点集群 新京报",
+      "source": "新京报",
+      "lang": "zh",
+      "published": "Sat, 22 Aug 2026 03:13:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9mMnE4cE1ZZUFlMkpWNHRjWTI1NzNfbk81VDJWVDdRZGxYUFJYa1gxZkkzYXpGYXhBVXN2VEQ2dnZscDVVUjFrczJ6eEw2a2lMVGhIc1dNWTd0dmItYU9YR2I3TEY?oc=5"
+    },
+    {
+      "title": "国产AI算力再突破 中诚华隆发布新一代推理芯片及超节点集群 - 新浪新闻_手机新浪网",
+      "summary": "国产AI算力再突破 中诚华隆发布新一代推理芯片及超节点集群 新浪新闻_手机新浪网",
+      "source": "新浪新闻_手机新浪网",
+      "lang": "zh",
+      "published": "Sat, 22 Aug 2026 03:16:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB1UzBHdk1WejVKaTZDZmYyUDRDWkZXNjFxZUltY0RzS3dSMUhxQUxsR1ZzTVR5MkxvajFoUzkzUzJHdjR1SDFCbXhMR012Q1ZaSUEwN0pockJGTWo2TDdXak9qY0RqUEVabWRWMkJKTFI?oc=5"
+    },
+    {
+      "title": "让AI替你购物，“放权”到哪一步？——智能体商业的演进曲线– McKinsey Greater China - 麦肯锡",
+      "summary": "让AI替你购物，“放权”到哪一步？——智能体商业的演进曲线– McKinsey Greater China 麦肯锡",
+      "source": "麦肯锡",
+      "lang": "zh",
+      "published": "Fri, 21 Aug 2026 13:26:11 GMT",
+      "url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxOQ2h1NXA1dk56WU44ZU5SRDVJd0pQMVpRRFZQUTdwR01rbk1BS0pIOXNqR1VBRnVZb1o3Qjd2NjNzVTBjZzk2a2wzQXZ1RmlhZGdmTUw1bUg5TWktbUc1OVZYMWpqejJxdHFGVEJabXdCUFRVWDNTWm95RVI4VDl2cldOMzRFS3ZmLWJua1l5ZWg5cEVqbkpCZHJpeVlNVFlBVFllOGI1VHdTcWdzaTM1QlNuOGwxZjAtSFBQN1YzakFiR2JGQUFQMjQyWkdNa0szT0laQzhmTDFvNURIaktGSHhhWmJ3a3JtanotZnI4STN4a2dTMDFuTmdqS3g3emVVU0EtN2JmeXlrS3kzZVIzNllncXAtcmVyOXJpOXJRMA?oc=5"
+    },
+    {
+      "title": "AI算力中心分析：PUE、散热和供电技术 - 电子工程专辑",
+      "summary": "AI算力中心分析：PUE、散热和供电技术 电子工程专辑",
+      "source": "电子工程专辑",
+      "lang": "zh",
+      "published": "Fri, 21 Aug 2026 23:42:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5LS0llVy1Nam5iMFBYM19pWG1nLUd6MWxfdkZReWdXQkhzd0c1d1JIeElqbzNwaHVTQjlHXzk5eDVPTkdQQk55VWM3SW50eF9GdGpV?oc=5"
+    },
+    {
+      "title": "从司法重整到6倍股 行云科技“算力生意”考验交付 - 东方财富",
+      "summary": "从司法重整到6倍股 行云科技“算力生意”考验交付 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Fri, 21 Aug 2026 19:02:49 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB0VVZON0JQU1BfUnRjVU5NNnR0dlpEc19IZkc0UXdzTkdnY0kzajdtRzlWSS13UW5rQlk5OW9hT29SREZENVk5MmVyMTFTWGdrLTlsWkFPdjdYNmN4WkF2Rg?oc=5"
+    },
+    {
+      "title": "三大运营商增长换挡：从通信流量转向算力服务 - 21财经",
+      "summary": "三大运营商增长换挡：从通信流量转向算力服务 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Fri, 21 Aug 2026 23:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQdGQ3aWJKVkZuSE5Rb2U0WVlFTWgyUHl5YXpVRHpidFdEaEh5N3ZHM3pfd2h0SnVoYU5YWjNaWDNhalZjQ3hCRW1VamFYUjlwZFFKRHo2RVNUckVlazFWYTFFZEJiR0Z6eU1KWVI4MnZvMHQ3YnFmY0l3ZFQzQmNXcl9XVQ?oc=5"
+    },
+    {
+      "title": "“AI”在余姚丨“AI之眼”与“算力根基”同频闪耀 - 新华网浙江",
+      "summary": "“AI”在余姚丨“AI之眼”与“算力根基”同频闪耀 新华网浙江",
+      "source": "新华网浙江",
+      "lang": "zh",
+      "published": "Fri, 21 Aug 2026 09:30:38 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOby1MNDJkelg0dXM5cDZSS3o1Yk1TZHFtT0lyMnAxeFVnbjNxajZIZ2kyM09aN3d4dnl4R0txSDVBUVlld2hRb1E4dE5GUWJad0hQd1ZWQlNKbFcwU2hOYUZRQ0gyc2pXYmRjbnJ1ZGx1cVA4TkJrVENlcDlWMUhPeWdB?oc=5"
+    },
+    {
+      "title": "北方“双子星”，撑起“算力第一大省”？ - 凤凰网财经",
+      "summary": "北方“双子星”，撑起“算力第一大省”？ 凤凰网财经",
+      "source": "凤凰网财经",
+      "lang": "zh",
+      "published": "Sat, 22 Aug 2026 01:13:25 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE82YjFtN2pLM2NCYUxBZmJHZW5leVlxaUIxVjFSSmhtSUsxUXNQamFKQkNmYVlNbEFqLWNxVUZneWt3MlFFd2hxRV9TblNJSUZh?oc=5"
+    },
+    {
+      "title": "WPS Comate百城AI智能体赋能计划在京启动 - 央广财经",
+      "summary": "WPS Comate百城AI智能体赋能计划在京启动 央广财经",
+      "source": "央广财经",
+      "lang": "zh",
+      "published": "Fri, 21 Aug 2026 14:38:09 GMT",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1oNTlqMnUtaDE4ck53RHFWZXNSMHVTX0Z0Mm1uS1RveXJqUnM2c1Q0N1dpRmtzazhQZHRocFpaZmdlNUxyMmN6WUJUNFFsYTdqQ0NqWDFrdE9Lb1NPZWdDY1JhNGNITktJeE5JRlZtbw?oc=5"
+    },
+    {
+      "title": "8GB 内存也能跑 Kimi K3？2026 本地部署大模型配置全指南 - 爱范儿",
+      "summary": "8GB 内存也能跑 Kimi K3？2026 本地部署大模型配置全指南 爱范儿",
+      "source": "爱范儿",
+      "lang": "zh",
+      "published": "Fri, 21 Aug 2026 23:49:16 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE8tSzNWcUl5NXN0MHZtNmJ5V213UkdwX3JXS2g1dnJXYUI2QXZBRmljdVU4dS03eUg5ajZ0Y05ERXhGR1E?oc=5"
+    },
+    {
+      "title": "算力“即取即用” ，武汉算力公共服务平台3.0版上线- 湖北日报新闻客户端 - 湖北日报传媒集团",
+      "summary": "算力“即取即用” ，武汉算力公共服务平台3.0版上线- 湖北日报新闻客户端 湖北日报传媒集团",
+      "source": "湖北日报传媒集团",
+      "lang": "zh",
+      "published": "Fri, 21 Aug 2026 08:18:56 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE44ZldOZXlhYnlKUHo2UkJHb3BSZXYzV2h1NFJlWHJQQUtoMmNTbUlSbzQ4cnpmUER3VEU1amx4ZnIyZjZSenYxYVF3WVlKT2tCLWZpZFJIV0s?oc=5"
+    },
+    {
+      "title": "【教育新闻直播间】“范蠡大模型4.0”和智慧渔业公开数据集发布 - 中国农业大学新闻网",
+      "summary": "【教育新闻直播间】“范蠡大模型4.0”和智慧渔业公开数据集发布 中国农业大学新闻网",
+      "source": "中国农业大学新闻网",
+      "lang": "zh",
+      "published": "Fri, 21 Aug 2026 14:11:28 GMT",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE94NE1KQ1EtMEZ5SEJpSTdnOHlQbGttcHNrNzdJd2VxZjlWREE1dEZsRXM0YmxDVERvcVN3Sld3aVlxMUx5VUItRlJSZHZmTDJmdEtrLTJ3blEtMWVMbEVKVTdQdUJFTWxYZWRnOUxCbEZZUHpQeUxB?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 92667,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 67124,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57451,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 39818,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 36344,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 387053,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 275704,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 234031,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
