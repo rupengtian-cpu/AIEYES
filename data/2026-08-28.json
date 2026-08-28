@@ -1,0 +1,420 @@
+{
+  "date": "2026-08-28",
+  "generated_at": "2026-08-28T14:43:42.042360+00:00",
+  "paper_count": 12,
+  "news_count": 0,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
+      "title_zh": "",
+      "summary": "Agent skills package specialized knowledge and workflows into reusable resources that extend AI agent capabilities. Recent work automatically discovers such skills from agent experience, which enables agents to progressively adapt through interaction. However, the insights that guide skill development typically remain scattered across optimization histories…",
+      "summary_zh": "",
+      "authors": [
+        "Liyan Tang",
+        "Cyrus Rashtchian",
+        "Chun-Sung Ferng",
+        "Andrew Tomkins",
+        "Da-Cheng Juan",
+        "Tu Vu"
+      ],
+      "published": "2026-08-27T17:59:11Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.27454v1",
+      "abs_url": "https://arxiv.org/abs/2608.27454v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27454v1"
+    },
+    {
+      "title": "SWE-Prime: Fewer Trajectories, Better Performance",
+      "title_zh": "",
+      "summary": "To improve large language models' ability to resolve real-world software issues, prior work has focused on constructing large-scale agent trajectory datasets and performing supervised fine-tuning (SFT) on successful trajectories. However, task success does not guarantee high-quality supervision: successful trajectories may still contain ineffective, redunda…",
+      "summary_zh": "",
+      "authors": [
+        "Dewu Zheng",
+        "Ruizhe Ye",
+        "Yanlin Wang",
+        "Yang Ye",
+        "Hongyu Zhang",
+        "Ensheng Shi"
+      ],
+      "published": "2026-08-27T17:58:10Z",
+      "category": "cs.SE",
+      "arxiv_id": "2608.27449v1",
+      "abs_url": "https://arxiv.org/abs/2608.27449v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27449v1"
+    },
+    {
+      "title": "TTPO: Test-Time Policy Optimization",
+      "title_zh": "",
+      "summary": "Recent prominent post-training methods, such as Reinforcement Learning (RL) and On-Policy Self-Distillation (OPSD), have driven rapid progress in mathematical reasoning for large language models, yet their reliance on ground-truth labels precludes test-time training (TTT). Replacing ground truth with majority-vote pseudo-labels is a natural alternative, yet…",
+      "summary_zh": "",
+      "authors": [
+        "Aozhe Wang",
+        "Zhengxi Lu",
+        "Jianze Wang",
+        "Shangke Lv",
+        "Ying Liu",
+        "Weiming Lu"
+      ],
+      "published": "2026-08-27T17:58:10Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.27448v1",
+      "abs_url": "https://arxiv.org/abs/2608.27448v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27448v1"
+    },
+    {
+      "title": "From Static to Dynamic: Benchmarking Real-World Code Review with MCR-Bench",
+      "title_zh": "",
+      "summary": "In real-world software development, code review typically involves iterative interactions between developers and reviewers to improve software quality, making the process costly and time-consuming. Although recent work explores large language models (LLMs) for automated code review, most approaches oversimplify code review into a single-round, static decisi…",
+      "summary_zh": "",
+      "authors": [
+        "Dewu Zheng",
+        "Yanlin Wang",
+        "Xiwen Wang",
+        "Kefeng Duan",
+        "Hongyu Zhang",
+        "Xilin Liu"
+      ],
+      "published": "2026-08-27T17:56:24Z",
+      "category": "cs.SE",
+      "arxiv_id": "2608.27442v1",
+      "abs_url": "https://arxiv.org/abs/2608.27442v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27442v1"
+    },
+    {
+      "title": "RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution",
+      "title_zh": "",
+      "summary": "LLM-based agents are increasingly deployed in product-level execution harnesses, where jailbreaks can trigger harmful tool use and persistent state changes, creating greater risks than unsafe text generation alone. Existing automatic red-teaming methods often rely on fixed attacks, while recent agentic attackers coordinate multiple jailbreak tools and show…",
+      "summary_zh": "",
+      "authors": [
+        "Junjie Zhang",
+        "Hui Liu",
+        "Kecheng Chen",
+        "Xianbo Mo",
+        "Changsheng Chen",
+        "Haoliang Li"
+      ],
+      "published": "2026-08-27T17:55:33Z",
+      "category": "cs.CR",
+      "arxiv_id": "2608.27439v1",
+      "abs_url": "https://arxiv.org/abs/2608.27439v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27439v1"
+    },
+    {
+      "title": "Mechanistic Reaction Prediction via Discrete Flow Matching on Graph-Structured Electron Occupation",
+      "title_zh": "",
+      "summary": "Chemical reactions are fundamentally transformations in electron space, yet most machine learning approaches model them either through \\textit{de novo} generation of product molecules or through heuristic graph edits that operate directly on molecular topology. We introduce MAELLE (\\textbf{M}ech\\textbf{A}nistic \\textbf{E}dit f\\textbf{L}ow-matching on e\\text…",
+      "summary_zh": "",
+      "authors": [
+        "Nguyen Xuan-Vu",
+        "Octavian Susanu",
+        "Daniel Armstrong",
+        "Philippe Schwaller"
+      ],
+      "published": "2026-08-27T17:50:44Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.27429v1",
+      "abs_url": "https://arxiv.org/abs/2608.27429v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27429v1"
+    },
+    {
+      "title": "Stochastic Estimation of Transduced Language Models",
+      "title_zh": "",
+      "summary": "Transduced language models (TLMs) compose a pretrained \\emph{source} language model with a functional finite-state transducer to induce a language model over \\emph{target} strings. Computing the probability of a target prefix under a TLM amounts to summing the source-model probabilities of all source strings that the transducer maps to target strings beginn…",
+      "summary_zh": "",
+      "authors": [
+        "Vésteinn Snæbjarnarson",
+        "Samuel Kiegeland",
+        "Manuel de Prada Corral",
+        "Ryan Cotterell",
+        "Tim Vieira"
+      ],
+      "published": "2026-08-27T17:50:21Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.27428v1",
+      "abs_url": "https://arxiv.org/abs/2608.27428v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27428v1"
+    },
+    {
+      "title": "Beyond F1: Evaluating Coverage and Failure Recovery in AI Model Security Scanners",
+      "title_zh": "",
+      "summary": "Static scanners are increasingly used to identify executable or otherwise unsafe content in machine- learning artifacts, yet conventional evaluation metrics characterize only cases where a scanner yields a usable security judgment. We evaluate ModelScan, ModelAudit, and Fickling using a controlled, artifact-backed benchmark on a synthetic corpus of 170 Pick…",
+      "summary_zh": "",
+      "authors": [
+        "Qianlong Lan",
+        "Vinothini Pandurangan",
+        "Anuj Kaul",
+        "Indranil Sanyal"
+      ],
+      "published": "2026-08-27T17:49:28Z",
+      "category": "cs.CR",
+      "arxiv_id": "2608.27424v1",
+      "abs_url": "https://arxiv.org/abs/2608.27424v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27424v1"
+    },
+    {
+      "title": "Learning a Continuous Sepsis Severity Score Without Hour-by-Hour Supervision: A Two-Site Retrospective Study",
+      "title_zh": "",
+      "summary": "Currently used sepsis severity indices rely on fixed variables and weights established decades ago, which are coarsely discretized and calibrated to a cohort that no longer reflects contemporary critical care. No alternative learned directly from patient trajectories is in routine use. We conducted a retrospective two-cohort study on a total of 29,116 and 7…",
+      "summary_zh": "目前使用的脓毒症严重程度指数依赖于几十年前建立的固定变量和权重，这些变量和权重被粗略离散化并校准到不再反映当代重症监护的队列。直接从患者轨迹中学习的替代方案目前还没有被日常使用。我们对来自马萨诸塞州和乔治亚州两个医院系统的总共 29,116 名和 7,691 名符合脓毒症-3 标准的成年患者进行了一项回顾性两队列研究。我们在 72 小时治疗窗口内使用 43 个常规绘制的变量制定了脓毒症指数。与之前的研究不同，我们使用死亡率作为治疗水平排名信号，而不是每个州的目标，从而允许信用在时间步长上不均匀地重新分配。使用临床小插图和 Spearman 相关性对永久 20% 测试保留进行评估。通过对整个患者进行引导重采样获得不确定性区间。根据这个排名方案，在基线 SOFA-2 的所有分层中，非幸存者的得分比幸存者高 1.19-1.64 分，在基线 SOFA-2…",
+      "authors": [
+        "Kevin Zhu",
+        "Ryan Zhang",
+        "Baraa Abed",
+        "Tilendra Choudhary",
+        "Malvern Madondo",
+        "Mehak Arora"
+      ],
+      "published": "2026-08-27T17:46:21Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.27421v1",
+      "abs_url": "https://arxiv.org/abs/2608.27421v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27421v1"
+    },
+    {
+      "title": "Boosting LLM Exploration via Weak-Model Guidance in RLVR",
+      "title_zh": "通过 RLVR 中的弱模型指导促进 LLM 探索",
+      "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) significantly improves LLM reasoning but often causes a drop in policy entropy, leading to narrowed reasoning coverage and degraded pass@$k$ for large $k$. While existing methods mitigate this entropy collapse through algorithmic regularizations, cross-model non-parametric perturbation is also neglected.…",
+      "summary_zh": "具有可验证奖励的强化学习 (RLVR) 显着改善了 LLM 推理，但通常会导致策略熵下降，从而导致推理覆盖范围缩小，并且对于较大的 $k$ 而言，pass@$k$ 会降级。虽然现有方法通过算法正则化减轻了这种熵崩溃，但跨模型非参数扰动也被忽略了。在这项工作中，我们提出了一种简单而有效的方法来保护 RLVR 期间法学硕士的生成多样性。我们不是仅仅依靠内部探索，而是迫使目标模型根据较小、较弱的语言模型生成的部分推理轨迹来生成答案。这些不熟悉的前缀有效地打破了过度自信，并鼓励探索不同的推理路径。我们实证研究了外部前缀的潜力，揭示了分布差异对 RLVR 训练中探索动态的影响机制。多个数学基准的实验表明，我们的方法始终优于普通 RLVR。值得注意的是，随着 $k$ 的扩大，性能提升变得越来越明显，这表明推理覆盖范围显着扩大。此外，我们的方法有效地减轻了熵崩溃…",
+      "authors": [
+        "Xingyu Shen",
+        "Huishuai Zhang",
+        "Peng Li",
+        "Yinchun Wang",
+        "Dongyan Zhao"
+      ],
+      "published": "2026-08-27T17:45:50Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.27420v1",
+      "abs_url": "https://arxiv.org/abs/2608.27420v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27420v1"
+    },
+    {
+      "title": "Retrieval Heads Meet Vision: Uncovering How VLMs Locate and Extract Visual Information",
+      "title_zh": "检索头遇见视觉：揭示 VLM 如何定位和提取视觉信息",
+      "summary": "Vision-language models (VLMs) can locate an image region referred to by a text prompt and route the corresponding visual evidence to the output, yet the internal mechanism behind this behavior is not understood. Inspired by retrieval heads in large language models, we ask whether VLMs contain an analogous mechanism for visual retrieval. We answer affirmativ…",
+      "summary_zh": "视觉语言模型（VLM）可以定位文本提示引用的图像区域，并将相应的视觉证据路由到输出，但这种行为背后的内部机制尚不清楚。受到大型语言模型中检索头的启发，我们询问 VLM 是否包含类似的视觉检索机制。我们通过引入视觉检索头（VRH）来给出肯定的回答，它是注意力头的一小部分（约 1.7-2.6%），负责将文本描述接地到图像区域。为了找到它们，我们在查询标记、密钥聚合和跨样本聚合的统一设计空间下重新设计了现有的头部评分方法。然后，我们表明，通过对真实参考区域的总和对输出预测标记的注意力进行评分，可以最可靠地识别因果头。在 11 个 VLM 和 5 个引用表达基准中，仅屏蔽前 20 个 VRH 会使接地准确度降低高达 80 个百分点，而屏蔽相同数量的随机头几乎没有影响。除了复制为文本检索头建立的因果稀疏通用三元组之外，VRH 还表现出一些以前未报道过的属性：…",
+      "authors": [
+        "Chanho Park",
+        "Daehyeon Choi",
+        "Jihyun Lee",
+        "Minhyuk Sung"
+      ],
+      "published": "2026-08-27T17:43:58Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.27417v1",
+      "abs_url": "https://arxiv.org/abs/2608.27417v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27417v1"
+    },
+    {
+      "title": "Consolidating RLVR Capabilities Across Domains: A Deep Dive into Fusion Paradigms",
+      "title_zh": "跨领域整合 RLVR 功能：深入探讨融合范式",
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) improves specific capabilities of large language models, but covering multiple capabilities often involves training separate domain experts and subsequently consolidating them. We organize three fusion paradigms by the artefacts they reuse: Merge combines expert task vectors, Mix RL pools their datasets,…",
+      "summary_zh": "具有可验证奖励的强化学习（RLVR）提高了大型语言模型的特定功能，但覆盖多种功能通常需要培训单独的领域专家并随后对其进行整合。我们根据它们重用的工件组织了三种融合范例：合并结合了专家任务向量，混合 RL 池其数据集，以及多教师策略蒸馏 (MOPD) 使用两者。由于它们在很大程度上是孤立研究的，因此如何比较它们以及如何在它们之间进行选择仍然不清楚。我们使用跨模型规模的共享专家和数据以及多领域基准套件对这三者进行比较。尽管它们的平均性能最多相差 1.4 分，但在单个基准测试中差距达到 8.6 分，域级变化跟踪任务向量几何中可见的跨域关系。训练动态暴露出不同的约束：Mix RL 取决于域混合比例，MOPD 仍然受到其教师的限制，而 Merge 将所有专家更新压缩为一个。这三者都提高了单样本精度，但解决方案覆盖范围没有明显增加，保留能力也没有损失。这些结果…",
+      "authors": [
+        "Siye Wu",
+        "Kai Yang",
+        "Yuchen Cai",
+        "Xin Xu",
+        "Peng-Yuan Wang",
+        "Jiaxuan Wang"
+      ],
+      "published": "2026-08-27T17:38:04Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.27409v1",
+      "abs_url": "https://arxiv.org/abs/2608.27409v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27409v1"
+    }
+  ],
+  "news": [],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 92954,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 67894,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57483,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 40971,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 36575,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 387908,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 278911,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 237609,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
