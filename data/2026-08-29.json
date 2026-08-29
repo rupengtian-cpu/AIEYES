@@ -1,0 +1,517 @@
+{
+  "date": "2026-08-29",
+  "generated_at": "2026-08-29T09:34:52.511750+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
+      "title_zh": "",
+      "summary": "Agent skills package specialized knowledge and workflows into reusable resources that extend AI agent capabilities. Recent work automatically discovers such skills from agent experience, which enables agents to progressively adapt through interaction. However, the insights that guide skill development typically remain scattered across optimization histories…",
+      "summary_zh": "",
+      "authors": [
+        "Liyan Tang",
+        "Cyrus Rashtchian",
+        "Chun-Sung Ferng",
+        "Andrew Tomkins",
+        "Da-Cheng Juan",
+        "Tu Vu"
+      ],
+      "published": "2026-08-27T17:59:11Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.27454v1",
+      "abs_url": "https://arxiv.org/abs/2608.27454v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27454v1"
+    },
+    {
+      "title": "SWE-Prime: Fewer Trajectories, Better Performance",
+      "title_zh": "",
+      "summary": "To improve large language models' ability to resolve real-world software issues, prior work has focused on constructing large-scale agent trajectory datasets and performing supervised fine-tuning (SFT) on successful trajectories. However, task success does not guarantee high-quality supervision: successful trajectories may still contain ineffective, redunda…",
+      "summary_zh": "",
+      "authors": [
+        "Dewu Zheng",
+        "Ruizhe Ye",
+        "Yanlin Wang",
+        "Yang Ye",
+        "Hongyu Zhang",
+        "Ensheng Shi"
+      ],
+      "published": "2026-08-27T17:58:10Z",
+      "category": "cs.SE",
+      "arxiv_id": "2608.27449v1",
+      "abs_url": "https://arxiv.org/abs/2608.27449v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27449v1"
+    },
+    {
+      "title": "TTPO: Test-Time Policy Optimization",
+      "title_zh": "",
+      "summary": "Recent prominent post-training methods, such as Reinforcement Learning (RL) and On-Policy Self-Distillation (OPSD), have driven rapid progress in mathematical reasoning for large language models, yet their reliance on ground-truth labels precludes test-time training (TTT). Replacing ground truth with majority-vote pseudo-labels is a natural alternative, yet…",
+      "summary_zh": "",
+      "authors": [
+        "Aozhe Wang",
+        "Zhengxi Lu",
+        "Jianze Wang",
+        "Shangke Lv",
+        "Ying Liu",
+        "Weiming Lu"
+      ],
+      "published": "2026-08-27T17:58:10Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.27448v1",
+      "abs_url": "https://arxiv.org/abs/2608.27448v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27448v1"
+    },
+    {
+      "title": "From Static to Dynamic: Benchmarking Real-World Code Review with MCR-Bench",
+      "title_zh": "",
+      "summary": "In real-world software development, code review typically involves iterative interactions between developers and reviewers to improve software quality, making the process costly and time-consuming. Although recent work explores large language models (LLMs) for automated code review, most approaches oversimplify code review into a single-round, static decisi…",
+      "summary_zh": "",
+      "authors": [
+        "Dewu Zheng",
+        "Yanlin Wang",
+        "Xiwen Wang",
+        "Kefeng Duan",
+        "Hongyu Zhang",
+        "Xilin Liu"
+      ],
+      "published": "2026-08-27T17:56:24Z",
+      "category": "cs.SE",
+      "arxiv_id": "2608.27442v1",
+      "abs_url": "https://arxiv.org/abs/2608.27442v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27442v1"
+    },
+    {
+      "title": "RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution",
+      "title_zh": "",
+      "summary": "LLM-based agents are increasingly deployed in product-level execution harnesses, where jailbreaks can trigger harmful tool use and persistent state changes, creating greater risks than unsafe text generation alone. Existing automatic red-teaming methods often rely on fixed attacks, while recent agentic attackers coordinate multiple jailbreak tools and show…",
+      "summary_zh": "",
+      "authors": [
+        "Junjie Zhang",
+        "Hui Liu",
+        "Kecheng Chen",
+        "Xianbo Mo",
+        "Changsheng Chen",
+        "Haoliang Li"
+      ],
+      "published": "2026-08-27T17:55:33Z",
+      "category": "cs.CR",
+      "arxiv_id": "2608.27439v1",
+      "abs_url": "https://arxiv.org/abs/2608.27439v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27439v1"
+    },
+    {
+      "title": "Mechanistic Reaction Prediction via Discrete Flow Matching on Graph-Structured Electron Occupation",
+      "title_zh": "",
+      "summary": "Chemical reactions are fundamentally transformations in electron space, yet most machine learning approaches model them either through \\textit{de novo} generation of product molecules or through heuristic graph edits that operate directly on molecular topology. We introduce MAELLE (\\textbf{M}ech\\textbf{A}nistic \\textbf{E}dit f\\textbf{L}ow-matching on e\\text…",
+      "summary_zh": "",
+      "authors": [
+        "Nguyen Xuan-Vu",
+        "Octavian Susanu",
+        "Daniel Armstrong",
+        "Philippe Schwaller"
+      ],
+      "published": "2026-08-27T17:50:44Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.27429v1",
+      "abs_url": "https://arxiv.org/abs/2608.27429v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27429v1"
+    },
+    {
+      "title": "Stochastic Estimation of Transduced Language Models",
+      "title_zh": "",
+      "summary": "Transduced language models (TLMs) compose a pretrained \\emph{source} language model with a functional finite-state transducer to induce a language model over \\emph{target} strings. Computing the probability of a target prefix under a TLM amounts to summing the source-model probabilities of all source strings that the transducer maps to target strings beginn…",
+      "summary_zh": "",
+      "authors": [
+        "Vésteinn Snæbjarnarson",
+        "Samuel Kiegeland",
+        "Manuel de Prada Corral",
+        "Ryan Cotterell",
+        "Tim Vieira"
+      ],
+      "published": "2026-08-27T17:50:21Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.27428v1",
+      "abs_url": "https://arxiv.org/abs/2608.27428v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27428v1"
+    },
+    {
+      "title": "Beyond F1: Evaluating Coverage and Failure Recovery in AI Model Security Scanners",
+      "title_zh": "",
+      "summary": "Static scanners are increasingly used to identify executable or otherwise unsafe content in machine- learning artifacts, yet conventional evaluation metrics characterize only cases where a scanner yields a usable security judgment. We evaluate ModelScan, ModelAudit, and Fickling using a controlled, artifact-backed benchmark on a synthetic corpus of 170 Pick…",
+      "summary_zh": "",
+      "authors": [
+        "Qianlong Lan",
+        "Vinothini Pandurangan",
+        "Anuj Kaul",
+        "Indranil Sanyal"
+      ],
+      "published": "2026-08-27T17:49:28Z",
+      "category": "cs.CR",
+      "arxiv_id": "2608.27424v1",
+      "abs_url": "https://arxiv.org/abs/2608.27424v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27424v1"
+    },
+    {
+      "title": "Learning a Continuous Sepsis Severity Score Without Hour-by-Hour Supervision: A Two-Site Retrospective Study",
+      "title_zh": "",
+      "summary": "Currently used sepsis severity indices rely on fixed variables and weights established decades ago, which are coarsely discretized and calibrated to a cohort that no longer reflects contemporary critical care. No alternative learned directly from patient trajectories is in routine use. We conducted a retrospective two-cohort study on a total of 29,116 and 7…",
+      "summary_zh": "",
+      "authors": [
+        "Kevin Zhu",
+        "Ryan Zhang",
+        "Baraa Abed",
+        "Tilendra Choudhary",
+        "Malvern Madondo",
+        "Mehak Arora"
+      ],
+      "published": "2026-08-27T17:46:21Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.27421v1",
+      "abs_url": "https://arxiv.org/abs/2608.27421v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27421v1"
+    },
+    {
+      "title": "Boosting LLM Exploration via Weak-Model Guidance in RLVR",
+      "title_zh": "",
+      "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) significantly improves LLM reasoning but often causes a drop in policy entropy, leading to narrowed reasoning coverage and degraded pass@$k$ for large $k$. While existing methods mitigate this entropy collapse through algorithmic regularizations, cross-model non-parametric perturbation is also neglected.…",
+      "summary_zh": "",
+      "authors": [
+        "Xingyu Shen",
+        "Huishuai Zhang",
+        "Peng Li",
+        "Yinchun Wang",
+        "Dongyan Zhao"
+      ],
+      "published": "2026-08-27T17:45:50Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.27420v1",
+      "abs_url": "https://arxiv.org/abs/2608.27420v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27420v1"
+    },
+    {
+      "title": "Retrieval Heads Meet Vision: Uncovering How VLMs Locate and Extract Visual Information",
+      "title_zh": "",
+      "summary": "Vision-language models (VLMs) can locate an image region referred to by a text prompt and route the corresponding visual evidence to the output, yet the internal mechanism behind this behavior is not understood. Inspired by retrieval heads in large language models, we ask whether VLMs contain an analogous mechanism for visual retrieval. We answer affirmativ…",
+      "summary_zh": "",
+      "authors": [
+        "Chanho Park",
+        "Daehyeon Choi",
+        "Jihyun Lee",
+        "Minhyuk Sung"
+      ],
+      "published": "2026-08-27T17:43:58Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.27417v1",
+      "abs_url": "https://arxiv.org/abs/2608.27417v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27417v1"
+    },
+    {
+      "title": "Consolidating RLVR Capabilities Across Domains: A Deep Dive into Fusion Paradigms",
+      "title_zh": "",
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) improves specific capabilities of large language models, but covering multiple capabilities often involves training separate domain experts and subsequently consolidating them. We organize three fusion paradigms by the artefacts they reuse: Merge combines expert task vectors, Mix RL pools their datasets,…",
+      "summary_zh": "",
+      "authors": [
+        "Siye Wu",
+        "Kai Yang",
+        "Yuchen Cai",
+        "Xin Xu",
+        "Peng-Yuan Wang",
+        "Jiaxuan Wang"
+      ],
+      "published": "2026-08-27T17:38:04Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.27409v1",
+      "abs_url": "https://arxiv.org/abs/2608.27409v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27409v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "“问草”智能体：让草原用上“AI专家” - 中国科技网",
+      "summary": "“问草”智能体：让草原用上“AI专家” 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Sat, 29 Aug 2026 08:54:04 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0tLVJEU2RsdXV5eHhEQ1c4bGVZUE1vVWpZYnUzQlp6dnNpOS0zRlJLWkQ4eTZUb2RpMGtCNEk3U0FkUWxRZVVscHFyZW5uR1VRRm9tTjlKY2ZfWWU0RkpjZ3I0S0M0V1Q2UkFrQkZHLUg?oc=5"
+    },
+    {
+      "title": "重庆入选国家算力互联互通区域节点建设名单 - 重庆市人民政府",
+      "summary": "重庆入选国家算力互联互通区域节点建设名单 重庆市人民政府",
+      "source": "重庆市人民政府",
+      "lang": "zh",
+      "published": "Fri, 28 Aug 2026 23:42:04 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5mV0E5cnJKM2xabkYtRmY4Z1pmcWtDOVA5dWMxaUZLSzJjT1lHd2dNaks1V05Mdm1PNHFxWXYydVRsUG14TkMzTk9PYUxSYjNQaVlQWmpKellWcTdCbG9ENkJ4XzBjMXJhampBdW01ZEVrai1j?oc=5"
+    },
+    {
+      "title": "AI世界的“原油期货”要来了：芝商所官宣将推出算力期货市场 - 财联社",
+      "summary": "AI世界的“原油期货”要来了：芝商所官宣将推出算力期货市场 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Fri, 28 Aug 2026 22:23:49 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFB1NXZMVWl6N1JYV2xKd0V1ajlGdk1Dem10ajR5RUx6WXJpc1FoV3N4OFJvdHZfdXFjUFJDSi1zR0gxeWhTZWM5Nw?oc=5"
+    },
+    {
+      "title": "国家数据局：算力网与“五张网”形成深度耦合-中新网 - chinanews.com.cn",
+      "summary": "国家数据局：算力网与“五张网”形成深度耦合-中新网 chinanews.com.cn",
+      "source": "chinanews.com.cn",
+      "lang": "zh",
+      "published": "Sat, 29 Aug 2026 05:20:57 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE52YUhXNmNzS0kwZjBkOXhfUWZrQzJUTXdKb0F2bmpveUpxeFhRZy1xMHJoNGFiNkVfRjRObTFFMHd6TkNuaGIwbXVPbW9sVk9oYXI4SE4yZnAySWM3a2NtcS1OVXJqa1Rw?oc=5"
+    },
+    {
+      "title": "我国智能经济发展呈现哪些新特征 - 求是",
+      "summary": "我国智能经济发展呈现哪些新特征 求是",
+      "source": "求是",
+      "lang": "zh",
+      "published": "Sat, 29 Aug 2026 06:25:07 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5HSWNZbTE1MlJYcFprRWJ6RzVPVENoWDJrOGFQQUViZXdOTk03YjViaktIYzVGdldDUVY5ZU12dzFMOC1yVVh6T0hEdlg0WjJwSk5jeGFxeDc5ZFdRYnpHY1d4bk82MkRwcVg3U3Z4RWdSbnZCS0lYcW1oUWE?oc=5"
+    },
+    {
+      "title": "雅安算力产业再迎重磅突破，开启出海新征程！|Token|AI大模型|制造业|雅安市|四川省_手机新浪网 - 新浪财经",
+      "summary": "雅安算力产业再迎重磅突破，开启出海新征程！|Token|AI大模型|制造业|雅安市|四川省_手机新浪网 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Sat, 29 Aug 2026 07:07:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbFd3ZG1sTVY2OS10d0N0MGo2LWEtQkhQZnFBZk1SdnlXTzRuTzJSbXNYNDQ5dndMZ25ScEJaN3I3cG5KdlhDNnowQ2Vsb2ZyaG4wU1c5VzEzLTNiRkhSTlhIYmJCWXppYm9VMm5Iai0wcmVkWGRvWThyYzdseXhiSjI1YjBWSTdqRThwUnF4YjJ4eFpHOUxMQ0pDcklQVVBmZ2ZtUjByOA?oc=5"
+    },
+    {
+      "title": "英伟达财报验证AI景气加速！算力金属概念梳理 - 东方财富",
+      "summary": "英伟达财报验证AI景气加速！算力金属概念梳理 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Sat, 29 Aug 2026 04:24:49 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1MaUR0clRkWTEtM1U1RURaZkp6V2o3YUlxRjduVzRYR3pkUTVLYVktR1pqVXItZkpvRXlHYUFvWGpuTVFnYUR0czRaRk1KdEFpNVhaalR4Nlp0NV9FbTFzZg?oc=5"
+    },
+    {
+      "title": "中国新闻网：破解AI应用落地难题 中国光谷着力培育FDE人才 - wuhan.gov.cn",
+      "summary": "中国新闻网：破解AI应用落地难题 中国光谷着力培育FDE人才 wuhan.gov.cn",
+      "source": "wuhan.gov.cn",
+      "lang": "zh",
+      "published": "Sat, 29 Aug 2026 02:57:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBheEFQQUF2cGEyT1B6elZ5NnFHN0c5emtLLVVhbjZOWVRScGQzeXduc3FjRFdEbk5vWXhEb3hiQUNJMnh0TDgtcEdRV0Q2ODZPWElkSGRyaFhKMXhJajlMQlZiMnJhNnJ3MjAtWGFWaw?oc=5"
+    },
+    {
+      "title": "AI办公智能体高速发展行业探索新标准 - 央广网",
+      "summary": "AI办公智能体高速发展行业探索新标准 央广网",
+      "source": "央广网",
+      "lang": "zh",
+      "published": "Fri, 28 Aug 2026 13:47:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8yMVZKVkltS0JORHN2aHVnMVVGNmFYUnJGZ1FWWTRmaGdqeVhfZ2dqeXY4SmtvY2lkY2drMHNXQThNVlZGT1FuaHhpQXMwaFRLYXVSb3MtNldvWVhENUxPbDA4R1ZTUTNLVU03R2ItWkViQkVBY3p3?oc=5"
+    },
+    {
+      "title": "支付宝拉上手机、汽车、大模型，准备让 AI 办一件大事 - 爱范儿",
+      "summary": "支付宝拉上手机、汽车、大模型，准备让 AI 办一件大事 爱范儿",
+      "source": "爱范儿",
+      "lang": "zh",
+      "published": "Sat, 29 Aug 2026 07:32:17 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1oc0I1a242VE9xVlpHc1p0RF81WXZWakYwc3UtdWVWLXdrWUNoTzF6RkVqRFg5M1N5UWcwem43aFJoM2M?oc=5"
+    },
+    {
+      "title": "今日视点丨AI智能体入侵“抱抱脸”事件调查报告提示，人工智能发展应敲响安防警钟 - 中国科技网",
+      "summary": "今日视点丨AI智能体入侵“抱抱脸”事件调查报告提示，人工智能发展应敲响安防警钟 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Fri, 28 Aug 2026 17:01:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBDYnV5ZDk4VjVHZzF1czNaTm81R0UzSXB5SVpqNkJxcDhJTnNmMHBwbzJGWndEaUx0dGZ3cmUtWEpabFNrX2RtazR4UHpKVk1zQUVhZlFxV2lXWUlnWkVoSEozOWQ0SFVqa2dCeTFiQ0s?oc=5"
+    },
+    {
+      "title": "Meta被曝计划出售算力，AI算力过剩了吗？多家机构发声 - 财联社",
+      "summary": "Meta被曝计划出售算力，AI算力过剩了吗？多家机构发声 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Fri, 28 Aug 2026 17:51:37 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9FOGE3M0FSb0dTSTM4RjNPdDJEVG9ZV0UwLWd6bTRhZlJKRWFNcFFWQ1RfQVJCYW5VWjUxQ2U5MXE4dUtlMDhraw?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "A collection of MCP servers.",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 93016,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 67959,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57482,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 41050,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "Playwright MCP server",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 36596,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 387950,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "An agentic skills framework & software development methodology that works.",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 279181,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "The agent that grows with you",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 237886,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
