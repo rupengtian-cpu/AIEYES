@@ -1,0 +1,491 @@
+{
+  "date": "2026-08-31",
+  "generated_at": "2026-08-31T09:04:54.582300+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "QGPINNs: A Physics-Informed Neural Network Framework for Nonlocal Differential Equations on Quantum Graphs",
+      "title_zh": "",
+      "summary": "We propose QGPINNs, a physics-informed neural network framework developed in PyTorch for the numerical solution of nonlocal differential equations on quantum graphs. The framework is designed as a general computational implementation in which the solution on each edge of the graph is approximated by a neural network, while a unified graph-based loss functio…",
+      "summary_zh": "",
+      "authors": [
+        "Vaibhav Mehandiratta",
+        "Saket Ramchandra"
+      ],
+      "published": "2026-08-28T17:59:47Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.28589v1",
+      "abs_url": "https://arxiv.org/abs/2608.28589v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.28589v1"
+    },
+    {
+      "title": "Blog: Survey of Optimizers",
+      "title_zh": "",
+      "summary": "Neural-network optimization in 2025-2026 is no longer well described as a succession of new Adam variants. The design space has expanded from coordinates to matrices and layers, from fixed training horizons to policies over time, and from mathematical update rules to state representations that must survive sharding and low-precision computation. This survey…",
+      "summary_zh": "",
+      "authors": [
+        "Ruoran Xu"
+      ],
+      "published": "2026-08-28T17:35:11Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.28557v1",
+      "abs_url": "https://arxiv.org/abs/2608.28557v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.28557v1"
+    },
+    {
+      "title": "Advancing Interaction-Sensitive Feature Selection: Novel Relief-Based Algorithms, Expanded Comparisons, and Recommendations for Biomedical Data Mining",
+      "title_zh": "",
+      "summary": "As a precursor to high-dimensional biomedical data modeling, reliable feature selection can reduce computational expense, improve modeling performance, and yield simpler, more interpretable models. However, most filter-based feature selection methods struggle to detect feature interactions, while wrapper or embedded feature selection methods are computation…",
+      "summary_zh": "",
+      "authors": [
+        "Kia Kazemi-Nia",
+        "Harsh Bandhey",
+        "Philip J. Freda",
+        "Ryan J. Urbanowicz"
+      ],
+      "published": "2026-08-28T17:28:50Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.28552v1",
+      "abs_url": "https://arxiv.org/abs/2608.28552v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.28552v1"
+    },
+    {
+      "title": "Video Generative Models as Geometry Learner",
+      "title_zh": "",
+      "summary": "Recent generative approaches to geometry estimation adapt pretrained image diffusion models and treat the task as image-conditioned generation. Leveraging off-the-shelf image diffusion models, they either (i) train task-specific geometry models (for depth and surface normal estimation) independently, losing the opportunity of exploring the intrinsic correla…",
+      "summary_zh": "",
+      "authors": [
+        "Haosen Yang",
+        "Jifei Song",
+        "Zhensong Zhang",
+        "Xiatian Zhu",
+        "Jiankang Deng"
+      ],
+      "published": "2026-08-28T17:25:31Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.28549v1",
+      "abs_url": "https://arxiv.org/abs/2608.28549v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.28549v1"
+    },
+    {
+      "title": "DARTS: Decoder-Aware Representation Tuning via Surgery for Model Merging",
+      "title_zh": "",
+      "summary": "Model merging combines multiple task-specific fine-tuned LLMs into a single multi-task model without additional training. However, merged models are known to suffer from representation bias: systematic drift between the merged model's hidden states and those of each individual source model. Prior work (Yang et al., 2024a) study and mitigate this bias for en…",
+      "summary_zh": "",
+      "authors": [
+        "Aaryan Ajay Sharma",
+        "Sai Nishanth Padala",
+        "Seganrasan Subramanian"
+      ],
+      "published": "2026-08-28T17:22:47Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.28547v1",
+      "abs_url": "https://arxiv.org/abs/2608.28547v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.28547v1"
+    },
+    {
+      "title": "When Robots Mishear Us: Mapping the Safety Risks of Voice-Controlled Embodied AI",
+      "title_zh": "",
+      "summary": "We investigate whether automatic speech recognition (ASR) errors in user input can lead to unsafe outputs from Embodied AI (EAI) models. We find that ASR errors can lead to harmful instructions being accepted and executed by EAI models, thereby reducing safety. We simulate ASR errors and combine them with existing safety benchmarks (SafeAgentBench and POEX)…",
+      "summary_zh": "",
+      "authors": [
+        "Sihan Jia",
+        "Oliver Lemon"
+      ],
+      "published": "2026-08-28T16:55:32Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.28518v1",
+      "abs_url": "https://arxiv.org/abs/2608.28518v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.28518v1"
+    },
+    {
+      "title": "Learning the Target Priors Before Image Translation: A Decoupled Training Paradigm for Cross-Modal Image Translation in Remote Sensing",
+      "title_zh": "",
+      "summary": "Cross-modal image translation in remote sensing must preserve source-observed content while matching the target-domain distribution. Existing methods jointly learn the target prior and cross-modal dependence from scarce paired data, overlooking a key asymmetry: only the latter intrinsically requires cross-modal correspondence. We formalize this distinction…",
+      "summary_zh": "",
+      "authors": [
+        "Keyan Hu",
+        "Mingtao Wang",
+        "Ziyu Zhou",
+        "Tiandong Shi",
+        "Haifeng Li",
+        "Ji Qi"
+      ],
+      "published": "2026-08-28T16:54:19Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.28517v1",
+      "abs_url": "https://arxiv.org/abs/2608.28517v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.28517v1"
+    },
+    {
+      "title": "Conformal Uncertainty Quantification Guarantees for Neural Operators",
+      "title_zh": "",
+      "summary": "Neural operators provide fast surrogate models for approximating operators between function spaces, but their predictions often lack uncertainty quantification. We develop a split conformal framework to guarantee that a calibrated pointwise band around the neural operator output contains the true solution on at least a $1-γ$ fraction of the evaluation domai…",
+      "summary_zh": "",
+      "authors": [
+        "Tom Stent",
+        "Nicolas Boullé"
+      ],
+      "published": "2026-08-28T16:50:57Z",
+      "category": "math.NA",
+      "arxiv_id": "2608.28515v1",
+      "abs_url": "https://arxiv.org/abs/2608.28515v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.28515v1"
+    },
+    {
+      "title": "Training Communication-Efficient Mixture-of-Experts Language Models with Layer Re-Configuration",
+      "title_zh": "",
+      "summary": "When training Mixture-of-Experts (MoE) language models with expert parallelism, all-to-all token dispatch and combine collectives can consume a substantial fraction of end-to-end training time. In this work, we study communication-efficient MoE models (CE-MoE), in which we adopt a heterogeneous layer pattern that decouples token-mixing and channel-mixing de…",
+      "summary_zh": "",
+      "authors": [
+        "Simeng Sun",
+        "Roger Waleffe"
+      ],
+      "published": "2026-08-28T16:44:50Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.28511v1",
+      "abs_url": "https://arxiv.org/abs/2608.28511v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.28511v1"
+    },
+    {
+      "title": "Phoneme- and Word-Level Metrics Using Self-Supervised Speech Representations for Forced Alignment Evaluation",
+      "title_zh": "",
+      "summary": "Forced alignment evaluation typically requires manually annotated timestamps, limiting large-scale and multilingual analysis. We introduce two corpus-level metrics based on self-supervised (SSL) speech representations for reference-free forced alignment evaluation: Phoneme-Cluster Mutual Information (PCMI) and Word Acoustic Consistency Score (WACS). PCMI me…",
+      "summary_zh": "",
+      "authors": [
+        "V. S. D. S. Mahesh Akavarapu",
+        "Michael Daniel",
+        "Gerhard Jäger"
+      ],
+      "published": "2026-08-28T16:39:22Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.28508v1",
+      "abs_url": "https://arxiv.org/abs/2608.28508v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.28508v1"
+    },
+    {
+      "title": "REPLICANT: Learning Policies for Evading and Hardening Malware Detectors",
+      "title_zh": "",
+      "summary": "To determine the real-world effectiveness of machine learning based malware detection, it is vital to evaluate its robustness against highly capable adversaries. However, state-of-the-art attacks do not effectively model realistic adversaries, as they often assume access to privileged information such as the training data, feature space, or confidence score…",
+      "summary_zh": "",
+      "authors": [
+        "Shae McFadden",
+        "Ilias Tsingenopoulos",
+        "Mario D'Onghia",
+        "Alexander Herzog",
+        "Myles Foley",
+        "Chris Hicks"
+      ],
+      "published": "2026-08-28T16:29:17Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.28499v1",
+      "abs_url": "https://arxiv.org/abs/2608.28499v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.28499v1"
+    },
+    {
+      "title": "AcrossVAM1.0: Particle World Modeling for Text-Assisted Robot Video Prediction",
+      "title_zh": "",
+      "summary": "Predicting robot videos requires both precise motion reasoning and preservation of high-frequency appearance, yet monolithic pixel models entangle these objectives and often conceal their progress behind a strong last-frame baseline. We present AcrossVAM1.0, a lightweight, text-assisted video action model that factorizes future prediction into object-centri…",
+      "summary_zh": "",
+      "authors": [
+        "Yafei Zhang",
+        "Nan Wu"
+      ],
+      "published": "2026-08-28T16:19:24Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.28491v1",
+      "abs_url": "https://arxiv.org/abs/2608.28491v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.28491v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "微生物组与活菌药研发专业科研智能体在深圳发布 - 中国科技网",
+      "summary": "微生物组与活菌药研发专业科研智能体在深圳发布 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Mon, 31 Aug 2026 03:31:48 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1jT1BtNGxHbklOVlljd25XS3lCUmxDNm1uWjdldG55NTFCNHVNNUhfeVljMC1oMUZYNHlVc0hmdnFKdGdFWDgwRzNuNG03RkVrWE9XcGhKb1hRSE45YVBoaEtFMHVrYm9RLVZKSGZpMC0?oc=5"
+    },
+    {
+      "title": "AI智能体基础设施公司“以太之心”完成数千万元种子轮融资 - chnfund.com",
+      "summary": "AI智能体基础设施公司“以太之心”完成数千万元种子轮融资 chnfund.com",
+      "source": "chnfund.com",
+      "lang": "zh",
+      "published": "Mon, 31 Aug 2026 06:01:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBqNEprSHBPT2Z3YnpUR0lMb3hsbFlDQ29XZEVsb05ZcGFjTURzMTJ1NXNQZ09JMTQwaUUxMl9sVGdKcHc5TTdYbFFTS1lRSVQ3RzNsRkNjWkE0TzBLZUZ2VExJaTc0aDNSUzdCODY5enQ5NC13ekt5U3N3?oc=5"
+    },
+    {
+      "title": "最新封面报道｜中国AI芯片崛起 - 财新周刊",
+      "summary": "最新封面报道｜中国AI芯片崛起 财新周刊",
+      "source": "财新周刊",
+      "lang": "zh",
+      "published": "Mon, 31 Aug 2026 06:14:09 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1jUnluNVhJNllHRWlEMnNWZjlnTHlzaWV2S0pXQUt1ZkdtNndHLXNmWUFZZ1I2VURzY19lX3UyN2xHNFV3bkxDZWNiLU9QTnBHbkhueFVjaXNYd1Q0NHBRbA?oc=5"
+    },
+    {
+      "title": "全球登顶的大模型“牛来”！出自海淀这家企业—— - ncsti.gov.cn",
+      "summary": "全球登顶的大模型“牛来”！出自海淀这家企业—— ncsti.gov.cn",
+      "source": "ncsti.gov.cn",
+      "lang": "zh",
+      "published": "Mon, 31 Aug 2026 06:34:04 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOM041S3BUVUcyNmZvTUtBYW9jYWNnQk1vcFNvdGdVSl9xRzhJeWRBT2p4VjQwM1F5dG5vNHFnYndNcGxNZUV3ODZ4SHN5VmRrcE11RllYcDVRVjFNbXd3RlZMdElvMGx1ZDVPc0N1ZTdRM2hzMVlTRUNocm9NTW9WazNn?oc=5"
+    },
+    {
+      "title": "2026年全国健康促进与教育大会暨“相约健康智能体2.0”发布会在京举行 - 新华网",
+      "summary": "2026年全国健康促进与教育大会暨“相约健康智能体2.0”发布会在京举行 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Mon, 31 Aug 2026 08:23:12 GMT",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9qYVJFajRILXFjeWFlTFpJZWJfaGY1VHdlR2gyTjZ0Q3lRNzBSMXAwamhFeE9PNlVGTTN3UFBnZnZwN0U0UzlFZE9vNk5JbzNiczdlVDNCQi1YMHZYQkozNWU3QXpET3ZTMi1xNkV5aGkzaHRQelpScHZib3JSblE?oc=5"
+    },
+    {
+      "title": "光向芯片靠拢：NPO与CPO重塑AI算力互联格局，产业链价值加速重分配 - 华尔街见闻",
+      "summary": "光向芯片靠拢：NPO与CPO重塑AI算力互联格局，产业链价值加速重分配 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Mon, 31 Aug 2026 02:30:41 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4ydnI0SUxhamJ4b3JJLWdFU1BfX0wyMjZ6X2xDdFdjSl9KOUpRMkhBZ25yNGM0WmEtOXR2TW94QWFad2tOQ0RqS2tvbVlGN2g0WFNB?oc=5"
+    },
+    {
+      "title": "工信部公布17省入选国家算力互联互通区域节点 - 观点网",
+      "summary": "工信部公布17省入选国家算力互联互通区域节点 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Mon, 31 Aug 2026 07:36:43 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBQUmROUGtvOHRJZk82UGN4UGpfU29ReEpxLUtFSTlYNVNQdm1ick13ZVYxbTVwMm4wMENKanVMbElXT3AyckRtbzdyTHFkMEFDMGYtWkdkaVJwcFJlVm5TNVhR?oc=5"
+    },
+    {
+      "title": "视频丨国产大模型与算力平台“双向奔赴” 带来哪些新机遇？ - 新浪新闻",
+      "summary": "视频丨国产大模型与算力平台“双向奔赴” 带来哪些新机遇？ 新浪新闻",
+      "source": "新浪新闻",
+      "lang": "zh",
+      "published": "Mon, 31 Aug 2026 03:40:05 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBBSkVvVk9vV2hGTVdlZkZMQTZGYUFkUGRfNEwyQU81d0RxSE5yV3dOOHZGWGE4SFRmcHA4UGR3a1JOZzZDOW51UW9iUmIxdUxJSlIwTVVRbkVZVjRzMm5raFFWdUlqRm1mYkIyc3F2bVp3NERyTmc?oc=5"
+    },
+    {
+      "title": "【e公司观察】算力网建设进入攻坚期 - 证券时报",
+      "summary": "【e公司观察】算力网建设进入攻坚期 证券时报",
+      "source": "证券时报",
+      "lang": "zh",
+      "published": "Mon, 31 Aug 2026 04:45:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE80aHQtRVZrSDdvUHI3U25YMEVVWkVoa1lHSjM3YVROeVY1ZTc3V0w1VnRrdm1sS0hrYkItY3JoSElhN0kxajVWMU5XQ1BLcVhPQlJOQmZPdw?oc=5"
+    },
+    {
+      "title": "松江成立天基计算产业基地，发力星载算力基础设施 - 上观新闻",
+      "summary": "松江成立天基计算产业基地，发力星载算力基础设施 上观新闻",
+      "source": "上观新闻",
+      "lang": "zh",
+      "published": "Mon, 31 Aug 2026 03:03:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9NZzR6d2E2dVMwRDJQQ1hlR2RBNHRiQ0RENjlJbW4wejE3M1FiM3FsTGRtR2lKRVhZWHJFZk1yRUZzU29zZ2hLcnFydmQ4YTc3aVRrdmNYSzdWZw?oc=5"
+    },
+    {
+      "title": "AI芯片午后拉升 寒武纪涨近5% - 东方财富",
+      "summary": "AI芯片午后拉升 寒武纪涨近5% 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Mon, 31 Aug 2026 05:34:13 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5aV1NVRFJoZi1IZW1FRHJ0X0hiSW9XZ3oweUkwb0tiLWRjejVrejRENlk4a2FUN3dsQ2hFZ3V1N1FRSG4tUndhemZYYnhuRUxaLThqOF9aVlQ3ampxeWZiQg?oc=5"
+    },
+    {
+      "title": "夯实数字新基建，江苏在用算力中心超300个 - 江苏网信",
+      "summary": "夯实数字新基建，江苏在用算力中心超300个 江苏网信",
+      "source": "江苏网信",
+      "lang": "zh",
+      "published": "Mon, 31 Aug 2026 00:55:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAwM0QyMjNhbkxuM1pNN0ZCeDZibzMza0NBMDRLU0tNLVNwLTFPMFlHRmZ6cTc1NklfclM0VXE4dEFkSi1sN182Zkh4eWdwenJ0eXlTM3FiUjFBcEhBd3B1c3BuSzJ3RDJ5TXFpaHJWcU9reDAySmc?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "A collection of MCP servers.",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 93516,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 68146,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57491,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 41391,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "Playwright MCP server",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 36650,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 388160,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "An agentic skills framework & software development methodology that works.",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 279833,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "The agent that grows with you",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 238684,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
