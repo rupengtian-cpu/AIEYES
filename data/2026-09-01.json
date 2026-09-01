@@ -1,0 +1,508 @@
+{
+  "date": "2026-09-01",
+  "generated_at": "2026-09-01T08:05:59.614601+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Context-Aware Interleaved Batching for WhisperX",
+      "title_zh": "WhisperX 的上下文感知交错批处理",
+      "summary": "While WhisperX accelerates speech transcription via intra-audio batching, it isolates audio segments, losing the historical context needed for coherent punctuation and terminology transcription. Conversely, standard Whisper retains context sequentially but suffers from slow inference and hallucination loops. To achieve the best of both worlds, we propose Co…",
+      "summary_zh": "虽然 WhisperX 通过音频内批处理加速语音转录，但它会隔离音频片段，从而丢失连贯标点符号和术语转录所需的历史上下文。相反，标准 Whisper 会按顺序保留上下文，但会受到缓慢的推理和幻觉循环的影响。为了实现两全其美，我们提出了上下文感知交错批处理。通过使用 VAD 派生的片段边界，我们的算法稳定了 Whisper 的文本调节，使我们能够安全地维护跨批处理音频片段的连续历史上下文。正如长格式音频基准测试所证明的那样，这种方法降低了单词错误率 (WER) 并改进了专有名词转录，同时保持了高吞吐量的推理速度。",
+      "authors": [
+        "Carlos Bain",
+        "Max Bain"
+      ],
+      "published": "2026-08-31T17:59:46Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.31170v1",
+      "abs_url": "https://arxiv.org/abs/2608.31170v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31170v1"
+    },
+    {
+      "title": "BRF-GS: Hyperspectral Bidirectional Reflectance Factor Modeling and Image Generation Based on 3D Gaussian Splatting",
+      "title_zh": "BRF-GS：基于 3D 高斯分布的高光谱双向反射系数建模和图像生成",
+      "summary": "The bidirectional reflectance factor (BRF) characterizes the directional radiative properties of terrestrial surfaces. However, existing three-dimensional (3D) radiative transfer models require complex scene construction and computationally intensive radiative transfer solvers, limiting efficient generation of multi-angle hyperspectral reflectance imagery.…",
+      "summary_zh": "双向反射系数（BRF）表征了地面的定向辐射特性。然而，现有的三维（3D）辐射传输模型需要复杂的场景构建和计算密集型辐射传输求解器，限制了多角度高光谱反射图像的有效生成。 3D 高斯分布 (3DGS) 为神经场景表示和新颖的视图合成提供了一个有效的框架，但其低阶球谐波表示不足以满足复杂的方向反射率，而高光谱数据的高维和带间质量差异带来了额外的挑战。为了应对这些挑战，我们提出了 BRF-GS，这是一种基于 3DGS 的 BRF 建模和高光谱反射图像生成框架。 BRF-GS 引入了混合 BRDF 驱动的内核来表示复杂的方向反射率，选择几何可靠的光谱带进行鲁棒的 3D 场景初始化，并采用两阶段训练策略，将几何优化与光谱建模解耦。我们进一步构建了 AIR-BRF 数据集，这是一个多角度高光谱定向反射率数据集，包含具有不同自然和人工目标的三个场景。实验表明，B…",
+      "authors": [
+        "Yiling Yao",
+        "Wenjuan Zhang",
+        "Bowen Wang",
+        "Bocheng Li",
+        "Wentao Song",
+        "Bing Zhang"
+      ],
+      "published": "2026-08-31T17:56:57Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.31159v1",
+      "abs_url": "https://arxiv.org/abs/2608.31159v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31159v1"
+    },
+    {
+      "title": "Configurable Semantic Chunking for Biomedical Information Extraction in Retrieval-Augmented Generation",
+      "title_zh": "用于检索增强生成中生物医学信息提取的可配置语义分块",
+      "summary": "BioMedRAG introduced retrieval-augmented generation with a learned chunk scorer for biomedical information extraction. However, it relies on fixed-size chunking which can fragment semantic evidence. We propose a configurable semantic chunking framework that addresses this limitation by combining entity-preserving windows, trigger-centered chunking, proposit…",
+      "summary_zh": "BioMedRAG 引入了检索增强生成和学习块评分器，用于生物医学信息提取。然而，它依赖于固定大小的分块，这可能会碎片化语义证据。我们提出了一种可配置的语义分块框架，通过结合实体保留窗口、以触发器为中心的分块、命题优先提取、分层触发优先级和分层关系解析来解决这一限制。该框架与 BioMedRAG 集成，仅替换块构建阶段，同时保留嵌入模型、学习块评分器、生成器和评估协议。我们评估生物医学关系提取基准（GM-CIHT、DDI、ChemProt）和不良事件分类（ADE）的框架。在 GM-CIHT 上，完全混合配置实现了 82.6% F1，在我们的实验设置下比固定尺寸基线 (74.2% F1) 提高了 8.4 个点。跨数据集分析表明，语义分块通过明确的关系线索（例如 GM-CIHT 和 DDI）改进了提取数据集，而固定分块对于密集生化提取和二元分类设置（例…",
+      "authors": [
+        "Riya Ahuja",
+        "Tim Kacprowski",
+        "Roya Shiasi Sardoabi"
+      ],
+      "published": "2026-08-31T17:44:54Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.31139v1",
+      "abs_url": "https://arxiv.org/abs/2608.31139v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31139v1"
+    },
+    {
+      "title": "OntoAligner-Ensemble: Voting-Based Fusion across Heterogeneous Ontology Alignment Techniques",
+      "title_zh": "OntoAligner-Ensemble：跨异构本体对齐技术的基于投票的融合",
+      "summary": "Ontology alignment (OA) has evolved through several methodological paradigms, ranging from lexical and structural aligners to knowledge graph embedding (KGE) models and, more recently, Large Language Model (LLM)-based approaches. Although modern OA frameworks provide unified ecosystems for deploying these heterogeneous aligners, mechanisms for systematicall…",
+      "summary_zh": "本体对齐 (OA) 已经经历了多种方法范式的发展，从词汇和结构对齐器到知识图嵌入 (KGE) 模型，以及最近的基于大型语言模型 (LLM) 的方法。尽管现代 OA 框架为部署这些异构对准器提供了统一的生态系统，但系统地协调其互补且有时相互冲突的预测的机制仍然相对未得到充分探索。我们提出了 OntoAligner-Ensemble，这是一个模块化且与对齐器无关的框架，它通过可配置的两阶段过程组合候选对应关系，该过程包括基于投票的融合策略和融合后选择策略。该框架支持在 OntoAligner 中实现的任何对齐器，生成候选对应关系，从而能够通过统一的决策过程集成不同的对齐范例。为了证明其有效性，我们使用代表性的轻量级字符串对齐器、基于 KGE 的检索增强生成对齐器来实例化该框架，这些对齐器由开放权重和基于 API 的 LLM 提供支持。我们评估了来自五个…",
+      "authors": [
+        "Hamed Babaei Giglou",
+        "Sören Auer",
+        "Peio Popov",
+        "Mahsa Sanaei",
+        "Jennifer D'Souza"
+      ],
+      "published": "2026-08-31T17:44:25Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.31137v1",
+      "abs_url": "https://arxiv.org/abs/2608.31137v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31137v1"
+    },
+    {
+      "title": "Implementing neural network mixed-effects models in Template Model Builder (TMB)",
+      "title_zh": "在模板模型生成器 (TMB) 中实现神经网络混合效应模型",
+      "summary": "Neural network mixed-effects models (NMMs) have gained traction by combining the strong representation and predictive power of artificial neural networks with the capacity of mixed-effects modeling to capture complex correlation structures. However, existing estimation approaches rely heavily on manual derivations of objective functions and gradients, which…",
+      "summary_zh": "神经网络混合效应模型（NMM）通过将人工神经网络的强大表征和预测能力与混合效应建模捕获复杂相关结构的能力相结合而获得了关注。然而，现有的估计方法严重依赖于目标函数和梯度的手动推导，这本质上迫使简化近似并严重限制了 NMM 的复杂性和准确性。在这项工作中，我们介绍了使用模板模型生成器（TMB）实现 NMM 的通用框架。通过利用自动微分和拉普拉斯近似，TMB 要求用户仅指定负联合对数似然和任何正则化项。该框架自动整合随机效应，并评估边际目标函数及其精确梯度，从而无需手动推导或临时近似。我们通过两个数值示例展示了基于 TMB 的 NMM 的效率、灵活性和统计性能，包括单调 NMM 的应用。提供可复制的代码以促进更广泛的采用。",
+      "authors": [
+        "Nan Zheng",
+        "Hoi Yiu Cheung",
+        "Vibhu Sharma",
+        "James T. Thorson",
+        "Noel G. Cadigan"
+      ],
+      "published": "2026-08-31T17:43:02Z",
+      "category": "stat.ML",
+      "arxiv_id": "2608.31133v1",
+      "abs_url": "https://arxiv.org/abs/2608.31133v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31133v1"
+    },
+    {
+      "title": "PaperGym: Rubric-Centered Evolution for Research-Plan Generation",
+      "title_zh": "PaperGym：以Rubric为中心的研究计划生成演进",
+      "summary": "Research planning is the decisive capability of AI scientists. Yet a research plan admits no verifiable answer, so reinforcement learning lacks the environment it requires: tasks paired with a critic. Rubrics extracted from scientific papers can supply the critic. Existing pipelines, however, draw the question and the criteria from the same content, so the…",
+      "summary_zh": "研究规划是AI科学家的决定性能力。然而，研究计划不承认可验证的答案，因此强化学习缺乏它所需的环境：与批评家配对的任务。从科学论文中提取的评价标准可以为评论家提供帮助。然而，现有的管道从相同的内容中提取问题和标准，因此可以通过释义来获得奖励。每次推出时，该标题都会进一步压缩为单个标量。我们推出 PaperGym，这是一个统一的框架，可将每篇研究论文变成一个完整的培训环境。 PaperGym 利用了论文的结构：问题是从研究目标和背景中综合出来的，而标准则是从方法和实验中得出的。该标准涵盖了方法创新和实验设计，标准泄漏率降至 3.7%，而现有数据集中为 11.90% 至 34.10%。培训使用该标题两次：首先作为 OPSD 自学教师的特权背景，然后作为 GRPO 的奖励。在 Qwen3-1.7B/4B/8B 中，该计划的表现优于单独任一阶段的监督微调以及…",
+      "authors": [
+        "Yuhan Wang",
+        "Zhengxi Lu",
+        "Yuchen Yan",
+        "Kaitao Song",
+        "Wenqi Zhang",
+        "Weiming Lu"
+      ],
+      "published": "2026-08-31T17:31:18Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.31119v1",
+      "abs_url": "https://arxiv.org/abs/2608.31119v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31119v1"
+    },
+    {
+      "title": "When Does Bigger Help? A Controlled Study of LLM Scale for Ontology Learning",
+      "title_zh": "更大什么时候有帮助？本体学习法学硕士量表的对照研究",
+      "summary": "The effect of Large Language Model (LLM) scale on ontology learning (OL) performance remains insufficiently characterized. We present a controlled evaluation of 13 models spanning dense and Mixture-of-Experts variants from the Qwen3.5 and Qwen3.6 lineages, together with proprietary GPT release variants, using the OntoLearner retrieval-augmented generation p…",
+      "summary_zh": "大型语言模型（LLM）规模对本体学习（OL）性能的影响仍未得到充分表征。我们使用 OntoLearner 检索增强生成管道，对涵盖 Qwen3.5 和 Qwen3.6 谱系的密集变体和专家混合变体的 13 个模型以及专有的 GPT 发布变体进行了受控评估。所有模型都使用相同的嵌入模型、检索配置、提示模板、解码设置、数据集和术语输入、分类发现和非分类关系提取的度量来评估，涵盖四个生物医学和材料科学与工程本体。在密集的 Qwen3.5 谱系中，增加参数数量主要提高精度而不是召回率，最大增益发生在 9B 和 27B 参数之间。然而，规模效应在任务和领域之间既不是单调的，也不是统一的。密集 27B 模型在术语输入方面优于较大的稀疏模型，而较大的专家混合模型在分类发现方面实现了最强的开放权重结果。跨模型尺度的非分类关系提取仍然很困难，特别是对于材料数据科学本…",
+      "authors": [
+        "Hamed Babaei Giglou",
+        "Sören Auer",
+        "Jennifer D'Souza"
+      ],
+      "published": "2026-08-31T17:30:05Z",
+      "category": "cs.AI",
+      "arxiv_id": "2608.31118v1",
+      "abs_url": "https://arxiv.org/abs/2608.31118v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31118v1"
+    },
+    {
+      "title": "\"Train classical, deploy quantum\" requires rethinking generalization",
+      "title_zh": "“训练经典，部署量子”需要重新思考泛化",
+      "summary": "Generative models have become central across science and industry, from image and text synthesis to the design of molecules and materials. Quantum generative models are considered one of the most promising applications for quantum computers, since a quantum circuit naturally produces samples from the distribution it encodes, and for suitable circuits that d…",
+      "summary_zh": "生成模型已成为科学和工业领域的核心，从图像和文本合成到分子和材料的设计。量子生成模型被认为是量子计算机最有前途的应用之一，因为量子电路自然地从其编码的分布中产生样本，并且对于合适的电路，该分布被认为是任何经典计算机都难以再现的。领先的策略是在经典计算机上训练这些模型，并保留量子设备用于在部署时生成样本。当可以在经典计算机上评估训练损失时，这是可能的。一个主要的例子是最大平均差异 (MMD$^2$)，这是一种矩匹配损失，通过 Pauli-$Z$ 相关性对模型和数据进行比较。迄今为止的研究已经询问此类模型是否可以训练以及它们的采样是否困难；最小化这样的目标是否会产生一个具有概括性的模型，而不是仅仅重现训练统计数据的模型，仍然知之甚少。我们通过直接采样对一系列广泛的量子和经典生成模型进行基准测试，结果表明，使用矩匹配损失训练的模型通常比似然训练模型表现出…",
+      "authors": [
+        "Snehal Raj",
+        "Natansh Mathur",
+        "Alejandro Perdomo-Ortiz"
+      ],
+      "published": "2026-08-31T17:26:27Z",
+      "category": "quant-ph",
+      "arxiv_id": "2608.31117v1",
+      "abs_url": "https://arxiv.org/abs/2608.31117v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31117v1"
+    },
+    {
+      "title": "Aspire: Can Models Self-Evolve from Vague Goals?",
+      "title_zh": "Aspire：模型能否从模糊的目标中自我进化？",
+      "summary": "Many important forms of human learning begin with a vague goal, such as \"become a better physicist\" or \"improve at research.\" Learners must interpret the goal, identify capability gaps, decide how to learn, and determine whether they have actually improved. In contrast, existing work on LLM self-evolution typically begins with tasks and evaluation metrics s…",
+      "summary_zh": "人类学习的许多重要形式都是从一个模糊的目标开始的，例如“成为一名更好的物理学家”或“提高研究水平”。学习者必须解释目标，识别能力差距，决定如何学习，并确定他们是否真正有所提高。相比之下，现有的 LLM 自我进化工作通常从人类指定的任务和评估指标开始，将自我进化减少到优化明确的目标，而不是决定学习什么和如何学习。我们推出了 ASPIRE，一个模糊目标驱动的自我进化基准。 ASPIRE仅提供自然语言能力目标，而下游评估任务仍然隐藏。代理必须通过选择数据和更新方法、构建训练和验证信号以及决定何时评估来实现目标。 ASPIRE 在统一的交互环境中支持模型权重和代理线束的演化，并在一组隐藏的、专家编写的涵盖 6 个目标的 520 个项目上评估生成的系统。我们的实验表明，模糊的目标将搜索努力转向目标解释。当前的智能体通常会完成训练和安全带编辑循环，但重量水平增…",
+      "authors": [
+        "Yuhao Wu",
+        "Jingyuan Zhang",
+        "Jiajun Shi",
+        "Yuxuan Zhang",
+        "Xinping Lei",
+        "Junting Zhou"
+      ],
+      "published": "2026-08-31T17:14:59Z",
+      "category": "cs.CL",
+      "arxiv_id": "2608.31111v1",
+      "abs_url": "https://arxiv.org/abs/2608.31111v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31111v1"
+    },
+    {
+      "title": "Stress-Testing Efficient Responsible-AI Evaluation: When Compute Savings Change Benchmark Conclusions",
+      "title_zh": "压力测试高效负责任的人工智能评估：当计算节省改变基准结论时",
+      "summary": "Efficient evaluation changes the protocol used to support claims about model behavior, yet it is rarely tested whether those claims remain stable after the evaluation itself is made cheaper. We stress-test conclusion robustness in responsible-AI benchmarking by evaluating three dense and mixture-of-experts models on BBQ and BBQ-V under seven conditions span…",
+      "summary_zh": "高效的评估改变了用于支持有关模型行为的声明的协议，但很少测试在评估本身变得更便宜后这些声明是否保持稳定。我们通过在批处理、量化、基准降低及其组合的七个条件下评估 BBQ 和 BBQ-V 上的三个密集和专家混合模型，对负责任的 AI 基准测试中结论的稳健性进行压力测试。我们并没有将保留的聚合准确度视为足够，而是将准确度、偏差严重性和普遍性、推理质量、子组行为、子集成员稳定性、运行时间和测量的 GPU 能量与完整基准 BF16 基线进行比较。较大的批处理可将准确度保持在基线的 0.35 个百分点以内，并产生相对较小的子组变化，同时减少六个模型数据集设置中的五个的能量。 INT8 很大程度上保留了质量，但使用 1.79--4.26$\\times$ 基线能量。 INT4 会导致更大的、依赖于模型和上下文的变化。降低的基准提供了最一致的节省，但非常小的子集对…",
+      "authors": [
+        "Ahmed El Kady",
+        "Aravind Narayanan",
+        "Rehana Noorani",
+        "Yani Ioannou",
+        "Shaina Raza"
+      ],
+      "published": "2026-08-31T17:13:15Z",
+      "category": "cs.LG",
+      "arxiv_id": "2608.31108v1",
+      "abs_url": "https://arxiv.org/abs/2608.31108v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31108v1"
+    },
+    {
+      "title": "VeriCam: A Verification Baseline for the Classification of Unknown Data",
+      "title_zh": "VeriCam：未知数据分类的验证基线",
+      "summary": "The advent of foundation models have enabled a new era in zero-shot classification. Yet, key challenges persist. Despite their impressive generalization power that leverages the immense pre-training knowledge, both foundation models for image and text as well as vision-text hybrids lack the representational power needed for fine-grained, minutiae-based clas…",
+      "summary_zh": "基础模型的出现开启了零样本分类的新时代。然而，关键挑战依然存在。尽管它们具有令人印象深刻的泛化能力，利用了大量的预训练知识，但图像和文本以及视觉文本混合的基础模型都缺乏一些现实世界任务所需的细粒度、基于细节的类分离所需的表征能力。为了解决当前文献中的空白，我们提出了 VeriCam，这是一种旨在学习高度专业化特征的管道，这些特征能够对未见数据中的未知类进行分类。 VeriCam 的工作原理是利用为验证任务训练的图像模型的表示能力，其中模型开发了一个包含细粒度细节的复杂特征空间。通过训练模型来区分来自相同类别和不同类别的图像对，构建关系图，表示数据点之间的类别关系。然后，我们提出两种图聚类方法：朴素算法和莱顿图聚类算法的特定设置。该管道在 LPLCv2 数据集上进行了验证，该数据集包含真实世界的交通监控图像。我们表明，该数据集带有固有的捕获设备偏差，…",
+      "authors": [
+        "Lucas Wojcik",
+        "Gabriel E. Lima",
+        "Sergio M. Silva",
+        "Eduil Nascimento",
+        "David Menotti"
+      ],
+      "published": "2026-08-31T17:12:59Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.31107v1",
+      "abs_url": "https://arxiv.org/abs/2608.31107v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31107v1"
+    },
+    {
+      "title": "DreamX-Creator: Democratizing Native Audio-Video Generation at 2K Resolution",
+      "title_zh": "DreamX-Creator：使 2K 分辨率的原生音频视频生成大众化",
+      "summary": "Recent video generators often omit audio or synthesize it in a separate stage, limiting reciprocal modeling of visual dynamics and acoustic events. We present DreamX-Creator 1.0, a compact native joint audio-video generation system centered on a 7B generator. Conditioned on a first frame and a text prompt, the generator jointly denoises modality-specialized…",
+      "summary_zh": "最近的视频生成器经常省略音频或在单独的阶段中合成音频，从而限制了视觉动态和声学事件的相互建模。我们推出了 DreamX-Creator 1.0，这是一个以 7B 发生器为中心的紧凑型原生联合音视频生成系统。以第一帧和文本提示为条件，生成器联合对模态专用音频和视频流进行去噪。流在网络的前半部分独立处理，并在后半部分通过门控跨模态注意力耦合，其令牌和头部输出门调制每个活动的跨模态注意力头部输出。统一的音频-视频数据系统构建和过滤时间相干的剪辑，生成结构化的多模式注释，并将剪辑组织到面向能力的数据池中。渐进式联合训练包括两个音频视频预训练阶段，然后是高质量微调。音频视频强化学习通过模态感知多模态反馈进一步对生成器进行后训练，将视频、音频和跨模态反馈路由到相应的流。对于高分辨率输出，我们的自回归 1 步 2K 细化流程将双向多步教师调整为自回归多步细化器，…",
+      "authors": [
+        "Jiashu Zhu",
+        "Yanhao Zheng",
+        "Ruitian Tian",
+        "Rujing Dang",
+        "Shen Zhang",
+        "Bingze Song"
+      ],
+      "published": "2026-08-31T17:11:05Z",
+      "category": "cs.CV",
+      "arxiv_id": "2608.31106v1",
+      "abs_url": "https://arxiv.org/abs/2608.31106v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31106v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "最新封面报道｜中国AI芯片崛起 - 财新周刊",
+      "summary": "最新封面报道｜中国AI芯片崛起 财新周刊",
+      "source": "财新周刊",
+      "lang": "zh",
+      "published": "Tue, 01 Sep 2026 04:54:13 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1jUnluNVhJNllHRWlEMnNWZjlnTHlzaWV2S0pXQUt1ZkdtNndHLXNmWUFZZ1I2VURzY19lX3UyN2xHNFV3bkxDZWNiLU9QTnBHbkhueFVjaXNYd1Q0NHBRbA?oc=5"
+    },
+    {
+      "title": "创新奇智：升级工业智能体平台 推动生产级智能体规模化应用 - 新华网",
+      "summary": "创新奇智：升级工业智能体平台 推动生产级智能体规模化应用 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Tue, 01 Sep 2026 03:18:28 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9WRE9FMktVSm03VVhGQVZYT1dRWk5jQjE2ZU1UMVhFTjBsaGVUTmNWa2dMSGl3SHZHUzhFcEhnMXprMG1EY0E1RWsyMHdTa0RpbFdDZWc5a0locE5nSWdreUhETWVtNWQwMkxXU1Q5TGdkMVcxdFU1X2tRWlU?oc=5"
+    },
+    {
+      "title": "底座革新：一座算力中心助推老工业基地乘“数”而上 - 中国网",
+      "summary": "底座革新：一座算力中心助推老工业基地乘“数”而上 中国网",
+      "source": "中国网",
+      "lang": "zh",
+      "published": "Tue, 01 Sep 2026 03:04:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9GTGxhaFlXVkhrUmRZRi13VWVoOEEzandXM2VHaGxUVGRHOFExbUZhYW5vbEE3cUFsRjNieDJ4dWxTckJiRXRIeU9Dd1pDMmNFVzdsRzZ6OEZUSzMzVExtUV9WdG1QWFNiRVVUcEVhQQ?oc=5"
+    },
+    {
+      "title": "算力，看不见的“新基建” - 同花顺",
+      "summary": "算力，看不见的“新基建” 同花顺",
+      "source": "同花顺",
+      "lang": "zh",
+      "published": "Tue, 01 Sep 2026 02:28:18 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9yb092akFKS0pXbVBXeGRkQkdwZjJKMVJlOV9OZTFOX3dGcTBGb3ZqUnlTcHpNcHp5VmpWVW5yX09MNTRXU3NiMXp2YnJEUHhCT25HUFdkOVJNT2tJeVE?oc=5"
+    },
+    {
+      "title": "高校院所企业资源涌入 机器人智能体“加盟” 新学期中小学人工智能通识课升级 - 北京市人民政府门户网站",
+      "summary": "高校院所企业资源涌入 机器人智能体“加盟” 新学期中小学人工智能通识课升级 北京市人民政府门户网站",
+      "source": "北京市人民政府门户网站",
+      "lang": "zh",
+      "published": "Tue, 01 Sep 2026 01:06:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAxQlptNnpkbHlHVXRwOXRqLTlMdm9ocE03N1hjWTBZNVNteUptQlJxSkNWU3VwN1FzQXBTTEI3MUdLMWF6T3JFdHpqdTNNQzVEMzZ0VHNVYlJEeDI2X25hUkpFQVNYUE5pVndjOWNZazdneDBi?oc=5"
+    },
+    {
+      "title": "算力赋能场景落地 助推AI产业蓄势腾飞 - 人民网贵州",
+      "summary": "算力赋能场景落地 助推AI产业蓄势腾飞 人民网贵州",
+      "source": "人民网贵州",
+      "lang": "zh",
+      "published": "Tue, 01 Sep 2026 00:16:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzRks5Z2xZRjJnY3AtWFZvSXJZQV95VFpFeTg5M0llSHhPeGxvMzZQUTg3UHd3OUlPZ19tZGY3TU5jZ29tNUVfNWZKTXdoT0wxckxnODJIYkR3TTlmbkk0RWJZNEh2WUR6c0E?oc=5"
+    },
+    {
+      "title": "落地首笔“算力e贷” 龙岗金融“活水”精准滴灌AI产业-政务动态 - lg.gov.cn",
+      "summary": "落地首笔“算力e贷” 龙岗金融“活水”精准滴灌AI产业-政务动态 lg.gov.cn",
+      "source": "lg.gov.cn",
+      "lang": "zh",
+      "published": "Tue, 01 Sep 2026 02:11:07 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBOT0VJaWF4Q3FOUDVOVEItWVNrLTkyR3FIbjkxa1A0N1Y4ZThTbXl5TlJJS056S3Fhd1lwWWRSS1dGTDdnZU1pWm1BU191YlVFX3BZVEFldFpWVmJkZjU5UmNvOEo0Szg4LU9UVGpOc1o?oc=5"
+    },
+    {
+      "title": "第四届数字新疆创新发展论坛在克拉玛依举办 - 中国科技网",
+      "summary": "第四届数字新疆创新发展论坛在克拉玛依举办 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Tue, 01 Sep 2026 05:56:11 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBhN1Zjc2Y5WVFUakJfV2hIT25pcFdnNTdLMnFjYklxV1puVk9TRUdwSWNGZURYQm1NUi1VVnphODlnTjZGY2ptdG1JamtSa1R0aFd3UGNQOUtzZDNubjhKbmNkXzc0bU1LN0xKOGdTNEI?oc=5"
+    },
+    {
+      "title": "2026年“数智赋能云课堂”第1期“从大模型到智能体时代AI进化新路径”9月3日开播 - acfic.org.cn",
+      "summary": "2026年“数智赋能云课堂”第1期“从大模型到智能体时代AI进化新路径”9月3日开播 acfic.org.cn",
+      "source": "acfic.org.cn",
+      "lang": "zh",
+      "published": "Tue, 01 Sep 2026 07:31:39 GMT",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcGdxbDJSM2U1YWo4S28xelB4RFRQTGE0cG8tNXZwdmNOa01mb2IySDdVNUlJQVpvaS1nSWVBMmQ5Mk9LRk9LTVBCTElQQmpqU1Rldy1pRUxGZWxpSHNqb3R6ZGdJVkpSbUhwQUxsR08wZ3paaWRHWTY0Y2FpNklERFc2MWgzUQ?oc=5"
+    },
+    {
+      "title": "算力，靠抢！百万级产能缺口，订单排到三年后 - 新蓝网",
+      "summary": "算力，靠抢！百万级产能缺口，订单排到三年后 新蓝网",
+      "source": "新蓝网",
+      "lang": "zh",
+      "published": "Mon, 31 Aug 2026 22:33:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1LVXFVdURpSHktV2ZaVjJUTFZiU0RmT29jY29zY2NoV1FfOGIxWTNGMkFnVXdiWGNkQUZaOGJpZUJSTW53RW9faDVXY3NvN3M?oc=5"
+    },
+    {
+      "title": "太空计算的中国时刻， 在松江千帆竞发2026-09-01 - 上海市人民政府",
+      "summary": "太空计算的中国时刻， 在松江千帆竞发2026-09-01 上海市人民政府",
+      "source": "上海市人民政府",
+      "lang": "zh",
+      "published": "Tue, 01 Sep 2026 06:46:26 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPQzNHLUZDelEtSVB1VEhFRG92ZTJvb1VEYmRKOEpxemtjaE4zMlM2N0hTS0RGbmFQN2hHd0hGYTNjZF9MYWRSeXk0WVRKdml2Skx4cXBKUEd6ZV8xU2x5OGpmVkJzMmVHQy1hSlRTd2tiOXN0emRUOVhNWGQyWG5saVJVcW13Y3o4TGc?oc=5"
+    },
+    {
+      "title": "智能体请求暴增 9.4 倍，token 账单却没涨：Uber 公开 AI 软件工厂省钱方法 - InfoQ-CN",
+      "summary": "智能体请求暴增 9.4 倍，token 账单却没涨：Uber 公开 AI 软件工厂省钱方法 InfoQ-CN",
+      "source": "InfoQ-CN",
+      "lang": "zh",
+      "published": "Tue, 01 Sep 2026 02:29:31 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1fLTl4Z0MtUmtyci10N0g4NHdsUnFRRXh2MGpXTHIzcjhPRlRseEZTSlFxcjRxUnBzUnJFUXZ0UFVpdkJLZTJEeWtFTnlTRGF2cGFjWXJrbDl5SENQTGc?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 93622,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 68243,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57488,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 41578,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 36689,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 388400,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 280184,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 239182,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
