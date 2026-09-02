@@ -1,0 +1,502 @@
+{
+  "date": "2026-09-02",
+  "generated_at": "2026-09-02T07:25:26.803719+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in Summarization Evaluation",
+      "title_zh": "超越分数：理解法学硕士在总结评估中的评判机制",
+      "summary": "LLM-based evaluators of natural language generation (NLG) quality are widely deployed as scoring tools and as automated training signals, yet the internal procedure by which they assign a rating remains poorly understood. We investigate this procedure mechanistically through an eight-attack perturbation taxonomy across the Readability and Adequacy dimension…",
+      "summary_zh": "基于法学硕士的自然语言生成（NLG）质量评估器被广泛用作评分工具和自动训练信号，但他们分配评级的内部程序仍然知之甚少。我们通过 NLG 质量的可读性和充分性维度的八次攻击扰动分类法来机械地研究这个过程，一个生成管道，通过受控的错误强度和显式的标记级修改图生成配对的干净和损坏的摘要，以及应用于 Themis (Llama-3-8B) 和 Prometheus 的因果跟踪、logit-lens 词汇投影和注意力头剔除的四组实验。 （米斯特拉尔-7B）。两个评估器都实现了一个结构化、连贯的评估管道，分两个阶段运行：在第 15 层之下，注意力执行局部误差比较并将结果路由到最终输入位置；在其上方，MLP 级联集成信号并写入评级，决策在急剧后期层的残余流中具体化（Themis 上的 L = 26，Prometheus 上的 L = 25）。此外，相同比例的基础…",
+      "authors": [
+        "Himil Vasava",
+        "Ming Jiang"
+      ],
+      "published": "2026-09-01T17:59:49Z",
+      "category": "cs.CL",
+      "arxiv_id": "2609.01604v1",
+      "abs_url": "https://arxiv.org/abs/2609.01604v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01604v1"
+    },
+    {
+      "title": "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation",
+      "title_zh": "通过轨迹感知评估进行高效的 SWE 代理基准测试",
+      "summary": "Evaluating software engineering agents on realistic benchmarks is costly, since each task may require multi-step code exploration, modification, and test execution. Existing efficient evaluation methods select representative subsets to estimate full-benchmark performance, but are largely result-only: they fit historical pass/fail response matrices or static…",
+      "summary_zh": "在实际基准上评估软件工程代理的成本很高，因为每个任务可能需要多步骤的代码探索、修改和测试执行。现有的高效评估方法选择代表性子集来估计全基准性能，但很大程度上仅限于结果：它们适合历史通过/失败响应矩阵或静态任务语义，而忽略了代理如何解决问题。我们提出了 PTA-IRT，一种融合过程和结果信号的特权轨迹感知项目响应理论框架。历史执行轨迹提供超越通过/失败的流程级证据，例如探索的上下文、尝试的编辑和解决路径，PTA-IRT 将其用作校准子集选择和能力估计的特权信息。在较低的校准预算下，PTA-IRT 在四个 SWE 基准的分数和排名恢复方面始终优于之前的 IRT 基线。代码和数据可在 https://github.com/DeepSoftwareAnalytics/PTA-IRT 上公开获取。",
+      "authors": [
+        "Kefeng Duan",
+        "Dewu Zheng",
+        "Yanlin Wang",
+        "Xiwen Wang",
+        "Ensheng Shi",
+        "Xilin Liu"
+      ],
+      "published": "2026-09-01T17:59:46Z",
+      "category": "cs.SE",
+      "arxiv_id": "2609.01603v1",
+      "abs_url": "https://arxiv.org/abs/2609.01603v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01603v1"
+    },
+    {
+      "title": "Adaptive Critical Token-Aware Retrieval for Repository-Level Code Generation",
+      "title_zh": "用于存储库级代码生成的自适应关键令牌感知检索",
+      "summary": "The repository-level code generation task requires synthesizing code that satisfies task requirements while remaining consistent with the target repository context. Since real-world repositories often exceed the input length limits of LLMs, existing approaches commonly adopt retrieval-augmented generation (RAG) to provide repository-specific context. Despit…",
+      "summary_zh": "存储库级代码生成任务需要合成满足任务要求的代码，同时与目标存储库上下文保持一致。由于现实世界的存储库通常超出法学硕士的输入长度限制，因此现有方法通常采用检索增强生成（RAG）来提供存储库特定的上下文。尽管改进了存储库上下文检索，但现有方法通常提供上下文作为任务级支持，而没有明确识别在生成过程中需要细粒度存储库上下文的关键令牌。在LLM的自回归生成过程中，错误往往集中在少数决定性位置：一旦错误生成此类标记，后续代码可能会遵循错误的语义路径，最终导致功能失败。我们将这些位置称为“关键令牌”。在本文中，我们提出了 ACToR，一种用于存储库级代码生成的自适应关键令牌感知检索框架。 ACToR 在生成过程中识别关键令牌，并根据需要触发有针对性的检索，以在这些决定性位置提供存储库上下文。此外，我们为密集检索器设计了一种位置感知加权方法，以优先考虑为生成提供更…",
+      "authors": [
+        "Kefeng Duan",
+        "Dewu Zheng",
+        "Yanlin Wang",
+        "Terry Yue Zhuo",
+        "Mingwei Liu",
+        "Jianxing Yu"
+      ],
+      "published": "2026-09-01T17:59:39Z",
+      "category": "cs.SE",
+      "arxiv_id": "2609.01601v1",
+      "abs_url": "https://arxiv.org/abs/2609.01601v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01601v1"
+    },
+    {
+      "title": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
+      "title_zh": "CordisBench：语言模型可以推理动态代理线束中的组件生命周期吗？",
+      "summary": "Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench, a 1,200-question benchmark of this lifecycle reasoning. It combines a controlled formal setting with programs executed…",
+      "summary_zh": "动态代理工具使语言模型能够改变塑造其自身执行的软件。这种灵活性带来了新的推理负担：本地插件更改可以通过依赖项和清理来传播。我们推出 CordisBench，这是一个包含 1,200 个问题的生命周期推理基准。它将受控的形式设置与针对 Cordis 执行的程序相结合，Cordis 是一个管理组件依赖关系和清理的运行时，并要求模型识别受影响的组件，预测指定拆卸顺序后的状态，确定所有或部分顺序下的条件，并选择执行时成功的重新配置。在这些任务中，我们使用确定性的任务特定评分，以低推理量评估了三种以效率为导向的模型，具有 2、4、8、16、24 或 32 个相关交互。模型通常可以很好地处理小型系统，但随着更多交互变得相关，其可靠性会降低，特别是在预测最终状态和跨拆卸订单进行推理时。额外的推理工作可以为某些模型带来显着的收益。成本是不小的：在我们的 16 个交…",
+      "authors": [
+        "Damien Sileo",
+        "Dimitri Kachler"
+      ],
+      "published": "2026-09-01T17:59:13Z",
+      "category": "cs.CL",
+      "arxiv_id": "2609.01600v1",
+      "abs_url": "https://arxiv.org/abs/2609.01600v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01600v1"
+    },
+    {
+      "title": "UI-VISA: U-Net Initialized Vascular Image Segmentation Architecture",
+      "title_zh": "UI-VISA：U-Net初始化的血管图像分割架构",
+      "summary": "Accurate segmentation of vascular structures in digital subtraction angiography (DSA) images remains challenging due to the thin, elongated, and branching nature of blood vessels. Pixel-wise deep learning approaches such as U-Net achieve strong general-purpose segmentation performance but often produce fragmented or discontinuous predictions in fine vascula…",
+      "summary_zh": "由于血管细、细长和分支的性质，在数字减影血管造影 (DSA) 图像中准确分割血管结构仍然具有挑战性。 U-Net 等像素级深度学习方法实现了强大的通用分割性能，但经常在精细血管区域产生碎片或不连续的预测，因为它们没有明确强制结构连接。区域生长算法保留空间上下文和拓扑连续性，但对种子点初始化高度敏感，并且计算成本可能很高。我们提出了 UI-VISA（U-Net 初始化血管图像分割架构），这是一种结合了两种方法的互补优势的混合管道。 UI-VISA 使用 U-Net 的前景预测作为 CNN 引导的区域生长算法的知情种子点，然后通过强制局部连接并恢复 U-Net 本身容易错过或过度预测的精细血管细节来迭代地细化分割。我们使用 26 个 DSA 图像的 5 倍交叉验证，针对独立的 U-Net 和先前的基于区域增长的方法 (VISA) 来评估 UI-VISA…",
+      "authors": [
+        "Asees Kaur",
+        "Suzanne S. Sindi",
+        "Erica M. Rutter"
+      ],
+      "published": "2026-09-01T17:58:54Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.01598v1",
+      "abs_url": "https://arxiv.org/abs/2609.01598v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01598v1"
+    },
+    {
+      "title": "StudentSim: Training LLM-based Student Simulators",
+      "title_zh": "StudentSim：培训基于 LLM 的学生模拟器",
+      "summary": "AI tutors are most useful when they adapt to each student's strengths, weaknesses, and preferred guidance, but evidence about which guidance works for which student is sparse, slow, and costly to collect from real learners. Student simulators can provide this signal as a proxy, yet existing approaches are limited: state-tracking models fit student behavior…",
+      "summary_zh": "当人工智能导师适应每个学生的优势、劣势和首选指导时，它们是最有用的，但从真实学习者那里收集哪种指导适合哪个学生的证据很少、缓慢且成本高昂。学生模拟器可以提供这种信号作为代理，但现有的方法是有限的：状态跟踪模型适合学生行为，但很难处理解释或纠正，而法学硕士角色扮演可以流畅地遵循指导，但不能可靠地匹配被模仿学生的能力。我们提出了 StudentSim，一个训练框架，通过集中训练和每个学生的专业化，将稀疏的每个学生数据转变为个性化的模拟器。由此产生的模拟器既反映了学生自己的反应，又在导师的指导下更新它们。我们还推出了 StudentSimEval，这是一个标准化协议，涵盖国际象棋、第二语言英语写作和数学领域的 60 名学生，使用公共学习者数据集和共享的去识别化记录以供研究。 StudentSimEval 衡量行为保真度 (F)，或者模拟器与学生反应的匹配…",
+      "authors": [
+        "Ke Yang",
+        "Chenglong Wang",
+        "Michel Galley",
+        "Chandan Singh",
+        "Jeevana Priya Inala",
+        "ChengXiang Zhai"
+      ],
+      "published": "2026-09-01T17:55:10Z",
+      "category": "cs.CL",
+      "arxiv_id": "2609.01591v1",
+      "abs_url": "https://arxiv.org/abs/2609.01591v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01591v1"
+    },
+    {
+      "title": "The Structure of Quantization Damage in LLMs: Why the Next Bit Should Be Spent Globally",
+      "title_zh": "法学硕士中量化损伤的结构：为什么下一步应该在全球范围内花费",
+      "summary": "Post-training quantization (PTQ) is widely used to reduce the cost of serving large language models (LLMs), but its accuracy cost is uneven and is often tuned per model. We study where quantization damage occurs and how to allocate a small additional precision budget. Using causal mixed-precision intervention as ground truth (raise each layer to 8-bit in tu…",
+      "summary_zh": "训练后量化 (PTQ) 被广泛用于降低服务大型语言模型 (LLM) 的成本，但其准确性成本不均匀，并且通常根据模型进行调整。我们研究量化损伤发生的位置以及如何分配少量的额外精度预算。使用因果混合精度干预作为基础事实（依次将每层提高到 8 位并测量其恢复的精度），在 4 个架构系列中的 9 个开放权重模型中，我们测试了 3 个直观的假设：量化损伤存在于模型计算的任务电路中，或存在于权重统计中。他们都没有预测哪些层受益于恢复的精度。相反，恢复是分散的：对于 9 个模型中的 8 个，恢复 75% 的间隙大约需要一半的层数；唯一的例外是 Qwen3-8B，其浓度非常集中。在匹配的精度预算下，全局花费在更精细的量化粒度上，比本地修复所有 8 个 group-128 兼容模型（除 OpenLLaMA 之外的所有模型，其宽度排除了 group-128）的最可恢复…",
+      "authors": [
+        "Jundong Hu",
+        "Shekar Ramachandran"
+      ],
+      "published": "2026-09-01T17:53:41Z",
+      "category": "cs.LG",
+      "arxiv_id": "2609.01587v1",
+      "abs_url": "https://arxiv.org/abs/2609.01587v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01587v1"
+    },
+    {
+      "title": "A Benchmark for Vehicle Attribute Classification in Cross-Domain Surveillance Scenarios",
+      "title_zh": "跨域监控场景车辆属性分类基准",
+      "summary": "Vehicle attribute analysis is a key component of Intelligent Transportation Systems (ITS), supporting applications such as vehicle identification, traffic monitoring, and forensic investigation. However, models trained under controlled conditions often degrade in real surveillance scenarios due to changes in viewpoint, occlusion, illumination, and sensor ch…",
+      "summary_zh": "车辆属性分析是智能交通系统 (ITS) 的关键组成部分，支持车辆识别、交通监控和取证调查等应用。然而，由于视点、遮挡、照明和传感器特性的变化，在受控条件下训练的模型在实际监控场景中通常会退化。本文介绍了无约束车辆识别基准 (UVIB)，这是一个用于评估三个可操作车辆分析任务的基准：前/后方向、车辆制造和型号识别 (VMMR) 与遮挡相关的适用性以及颜色清晰度。该基准包含来自巴西七个公共数据集的 84,835 张车辆图像，分为监视和一般采集领域，并具有原始来源中未共同提供的统一二进制注释。在混合域、跨域和跨数据集协议下评估了四种代表性架构：EfficientNetV2-S、ResNet-50、ViT/B-16 和 YOLO11s-cls。结果表明，域转移比架构选择具有更大的影响，跨域设置显着降低，尤其是 VMMR 适用性和颜色清晰度。虽然方向概括得更…",
+      "authors": [
+        "Sergio M. Silva",
+        "Otavio T. Remer",
+        "Gabriel E. Lima",
+        "Lucas Wojcik",
+        "Rayson Laroca",
+        "David Menotti"
+      ],
+      "published": "2026-09-01T17:48:10Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.01584v1",
+      "abs_url": "https://arxiv.org/abs/2609.01584v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01584v1"
+    },
+    {
+      "title": "From Production Traffic to Post-Training: Building a Self-Hosted LLM That Covers the Corporate Request Mix",
+      "title_zh": "从生产流量到培训后：构建涵盖企业请求组合的自托管法学硕士",
+      "summary": "Data-residency constraints force enterprises to self-host LLMs, but continuous adoption of newer models without decommissioning their predecessors expands the serving fleet, fragmenting a finite GPU pool. We consolidate traffic from over 200 internal applications onto a single model by closing quality gaps identified through production error analysis along…",
+      "summary_zh": "数据驻留限制迫使企业自行托管 LLM，但在不停用其前身的情况下不断采用新模型会扩大服务范围，从而使有限的 GPU 池变得支离破碎。我们通过沿着三个轴（指令跟踪、函数调用和内部任务分配）的生产错误分析来缩小质量差距，从而将来自 200 多个内部应用程序的流量整合到一个模型上。质量通过根据生产流量分层的离线基准进行跟踪，并由确定性验证者或经过校准的法学硕士评委进行评分。我们不是联合优化所有目标，这会引入跨域奖励干扰，而是为每个轴训练一个单独的 GRPO 专家，并通过两阶段 SLERP 合并它们。每个专家的奖励都暴露了一种独特的失败模式，即语义崩溃、过度调用和冗长的黑客攻击，每种模式都需要针对特定​​领域的修复。在非推理模式下，该配方在内部 Arena 上的总参数基线上超过了 ${\\sim}7\\times$，为 69.6 至 65.8，指令跟随为 0.8…",
+      "authors": [
+        "Olga Tsymboi",
+        "Dmitrii Stoianov",
+        "Ramil Latypov",
+        "Danil Taranets",
+        "Daniil Dryabin",
+        "Mikhail Gashkov"
+      ],
+      "published": "2026-09-01T17:39:26Z",
+      "category": "cs.CL",
+      "arxiv_id": "2609.01572v1",
+      "abs_url": "https://arxiv.org/abs/2609.01572v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01572v1"
+    },
+    {
+      "title": "Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers",
+      "title_zh": "通过熵进行选择性代理指导：向不完美的 VLM 教师学习自主策略",
+      "summary": "Vision-Language Models (VLMs) provide useful priors for interactive decision-making, but using them directly as policies is expensive and brittle: they must be queried at every step, do not improve from environment interaction, and can repeat systematic errors. We study how to learn a cheap autonomous policy from an online, expensive, and imperfect but info…",
+      "summary_zh": "视觉语言模型（VLM）为交互式决策提供了有用的先验，但直接将它们用作策略是昂贵且脆弱的：它们必须在每一步都进行查询，不能从环境交互中改进，并且可能会重复系统错误。我们研究如何从在线、昂贵、不完善但信息丰富的 VLM 老师那里学习廉价的自主策略。我们提出了 SAGE（通过熵的选择性代理指导），这是一个框架，仅在学习者不确定时查询 VLM，在训练期间执行建议的操作，并将指导提炼为轻量级强化学习（RL）策略。由于 VLM 建议并不总是可靠，SAGE 可以利用环境衍生的优势来衡量教师行动的提炼，而不是将所有建议视为同样有用。在稀疏奖励视觉推理和导航任务中，SAGE 学习在评估时没有 VLM 指导的情况下执行的策略，并在多种环境中比无指导的 RL 进行了改进，包括学习的策略超过其 VLM 教师的设置。结果表明，当 VLM 可以帮助智能体发现高回报轨迹时，选择…",
+      "authors": [
+        "Matteo Merler",
+        "Giovanni Bonetta",
+        "Davide Zago",
+        "Rossella Cancelliere",
+        "Bernardo Magnini"
+      ],
+      "published": "2026-09-01T17:33:41Z",
+      "category": "cs.AI",
+      "arxiv_id": "2609.01567v1",
+      "abs_url": "https://arxiv.org/abs/2609.01567v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01567v1"
+    },
+    {
+      "title": "From Confusion to Clarity: Confusion-Aware Retrieval and Knowledge Injection for Text Classification",
+      "title_zh": "从混乱到清晰：用于文本分类的混乱感知检索和知识注入",
+      "summary": "Large language models (LLMs) struggle to classify text into taxonomies with many semantically similar labels, as the distinctions are domain-specific and not captured by pre-training. To handle large label spaces, a common approach retrieves top-$K$ candidate labels by embedding similarity and prompt the LLM to choose among them. However, top-$K$ retrieval…",
+      "summary_zh": "大型语言模型 (LLM) 很难将文本分类为具有许多语义相似标签的分类法，因为这些区别是特定于领域的，并且无法通过预训练捕获。为了处理大型标签空间，一种常见的方法是通过嵌入相似性来检索 top-$K$ 候选标签，并提示法学硕士在其中进行选择。然而，top-$K$ 检索减少了候选者的数量，但无助于模型区分相似的候选者。当两个相似的标签都作为候选标签出现时，模型缺乏在它们之间正确选择的信号。我们提出了一个框架，该框架（1）识别模型难以区分哪些标签对，（2）扩展候选集以包括易混淆的标签，以及（3）生成有针对性的规则来区分相似的候选者。该框架不需要微调，生成的规则可以转移到更小、更便宜的模型。在三个基准测试（WOS、Flipkart、LEDGAR）上，我们的方法将 Macro F1 比检索基线提高了 10.0pp，较小的模型 (2B--20B) 通过跨模型传…",
+      "authors": [
+        "Manish Gupta",
+        "Chaitanya Giri",
+        "Jayasimha Talur"
+      ],
+      "published": "2026-09-01T17:31:02Z",
+      "category": "cs.CL",
+      "arxiv_id": "2609.01564v1",
+      "abs_url": "https://arxiv.org/abs/2609.01564v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01564v1"
+    },
+    {
+      "title": "Retrieved but not ranked: surface-form bias in structural retrieval, from mathematics to agent trajectories",
+      "title_zh": "检索但未排名：结构检索中的表面形式偏差，从数学到代理轨迹",
+      "summary": "We evaluate embedding retrieval where surface form and meaning are pulled apart on purpose: retrieving items that share underlying structure but not wording, in two unrelated domains under one protocol, competition mathematics (MathNet-Retrieve; 500 queries, 117,088-item corpus) and embodied-agent trajectories (ALFWorld-derived; 118 queries, 336 trajectorie…",
+      "summary_zh": "我们评估嵌入检索，其中表面形式和含义被故意分开：在一个协议下的两个不相关领域中检索共享底层结构但不共享措辞的项目，竞争数学（MathNet-Retrieve；500 个查询，117,088 个项目语料库）和体现代理轨迹（ALFWorld 衍生；118 个查询，336 个轨迹）。在数学上，失败是彻底的：对于两个生产嵌入器来说，最重伪装层的严格 Hit@1 为 0.0%（引导 95% CI [0.0, 0.0]），而正确的项目几乎总是位于前 10 名，并且在 95.2% 到 99.8% 的失败中，获胜者在词汇上与查询的相似度高于正确答案。在表面变化是偶然的轨迹中，当金子必须涉及不同的对象时，相同的模型会达到或接近超几何机会，而一旦金子必须在对象和容器上有所不同，所有三个嵌入器的机会都低于超几何机会：检索锚定在文字标记上，而不是任务结构上。词汇重新排序控…",
+      "authors": [
+        "Nabira Rashid",
+        "Manolis Kellis"
+      ],
+      "published": "2026-09-01T17:19:57Z",
+      "category": "cs.LG",
+      "arxiv_id": "2609.01556v1",
+      "abs_url": "https://arxiv.org/abs/2609.01556v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.01556v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "喀什：戈壁之上，布局“卫星+算力+数据”发展新动力 - 中国科技网",
+      "summary": "喀什：戈壁之上，布局“卫星+算力+数据”发展新动力 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Wed, 02 Sep 2026 05:18:49 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5wMnJndndFak4xRGhxc1E1eUtDWGlVbGNaRThRY1ItcGRIamNURlNOaklMRFc2Sk1CbDY2OGNmTFBMR28yVW1JWFRVTTROWXJPeU16STNiV3BqZkhZQ0ZtN2ZTdlUtSmJDS1FEWUpaaVc?oc=5"
+    },
+    {
+      "title": "贵州从“算力枢纽”迈向“词元高地” - 中青在线",
+      "summary": "贵州从“算力枢纽”迈向“词元高地” 中青在线",
+      "source": "中青在线",
+      "lang": "zh",
+      "published": "Wed, 02 Sep 2026 01:14:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5QU3JMTGhLMWZ2djRPTFh0dFFTMWdWUkpyMjNSRkVZZ241bWxCb0wwdTQ5cVczS2hlbmVyNWxTcG80c1plY3NkbERnQWlQRjdNSjN1Z1Y2TkRYZ0xYT2RvVGVKZWRHS0s2czBMVkFCNFdKT3d6SHVxQw?oc=5"
+    },
+    {
+      "title": "算力网、工业互联网、低空智联网——在合肥看中国电信的三张网 - news.cn",
+      "summary": "算力网、工业互联网、低空智联网——在合肥看中国电信的三张网 news.cn",
+      "source": "news.cn",
+      "lang": "zh",
+      "published": "Wed, 02 Sep 2026 03:30:04 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5ib212TkFrZEU2Mlo1elRNY003SjFFY2tNSEZuWk5yM1F3ZHRRLWNmbk5kS090bnFRTGxHN1V4OGoybzAtUXVxR0VHV3l5R3pkUXJNNXpIWk51Y0U5Tmtrc1VFT0d0N0JXaFBEUlRDU0tiQjJ3UURrVzZ4eXM?oc=5"
+    },
+    {
+      "title": "中金研报：今年海外开源模型收入将达百亿美元 - 观点网",
+      "summary": "中金研报：今年海外开源模型收入将达百亿美元 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Wed, 02 Sep 2026 01:31:06 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBZNjJ5NVhxZVYwQnhoZjgyS0NsaE9mSUNOOUtERjlOUjd4Wm5FXzV1R3FDenQ2UWZJNnBpQ2gyR29TWFVYeEQtZndiXzRlQkNEdkt1aGRMMkR3TVJaaklTc0xB?oc=5"
+    },
+    {
+      "title": "合见工软发布下一代EDA创新矩阵，AI智能体与三维芯片设计工具双双落地 - 上观新闻",
+      "summary": "合见工软发布下一代EDA创新矩阵，AI智能体与三维芯片设计工具双双落地 上观新闻",
+      "source": "上观新闻",
+      "lang": "zh",
+      "published": "Wed, 02 Sep 2026 06:02:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9TdUVBUERsQlMxQlVTZXo5Wm8xckF0Rmt5bE56UjlxdF9xeVM4a1RWYm5vdUVfSVM0SjVIdm9zZ180N0RObHplUmpXbVpmREs0NjhBcnRYVXg3Zw?oc=5"
+    },
+    {
+      "title": "AI芯片厂为什么会在意游戏市场？ - 国际电子商情",
+      "summary": "AI芯片厂为什么会在意游戏市场？ 国际电子商情",
+      "source": "国际电子商情",
+      "lang": "zh",
+      "published": "Wed, 02 Sep 2026 02:38:10 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBZMENCMnU1RXpXc0pBVXFsVktjRlhNbTJaSGZkM2pWN1Q5dENRMGtyYlNaMzFZazl0X3kxcWtOTXNsX1A5UFRMU1hEeTk5a2txZmc?oc=5"
+    },
+    {
+      "title": "广东AI智能体进厂：既看得了“天书”，又能破解“图纸迷宫” - 21财经",
+      "summary": "广东AI智能体进厂：既看得了“天书”，又能破解“图纸迷宫” 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Tue, 01 Sep 2026 23:31:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPb05INFpXWTFuTi1vdGFVMkdTVjFVRnVBV0xONllWemo0ZmVITGFXaU5SbDd0Y3N0S0J6M3RwVXV3TVlUUl9rc0ZRMDB2a1RoM3RyZ0ZuUFBSMUZiUFhxOU1RcmFRdFd6R09jaTJtN0F2YkxhQzk2RzB0cDhjYUY3eEpJSlkwSUZwcHkyYQ?oc=5"
+    },
+    {
+      "title": "浙江金华：探索算电协同 打造绿色算力枢纽 - 新华网",
+      "summary": "浙江金华：探索算电协同 打造绿色算力枢纽 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Wed, 02 Sep 2026 01:20:13 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9rY0ZrczV3SW40V082aEExeC0zdHhVVGtzLTFiS0RfelZ3R2V5RWJoeGFYcWRTNTFOOHZSNTdHa3ZDamMxYmduQWRIWHFnQTFPaEtUcDhXbl9GSlgzcDVjNVVfeU9RczRLSGg2Z25Xb1B6S0tTcEthWGVpZDFjUQ?oc=5"
+    },
+    {
+      "title": "地球最强大模型也开始强调性价比！Anthropic上新Fable 5.1 - 东方财富",
+      "summary": "地球最强大模型也开始强调性价比！Anthropic上新Fable 5.1 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Tue, 01 Sep 2026 20:49:32 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE16Y0lnQnM3UDZGM1JPb1plTUZlaWdETXVQYzN6QVVqOTZwc3dCTjJGczVfeEZDc1FONmdpWGhqb25iSkF0UmFnejZFd1BnR0dYRHZmVmlEZTF5NV9MZVplUw?oc=5"
+    },
+    {
+      "title": "江苏盐城：推广“绿电+储能+冷能”算力中心建设新模式，力争新建算力项目PUE1.2以内、绿电占比超80% - gdshe.org",
+      "summary": "江苏盐城：推广“绿电+储能+冷能”算力中心建设新模式，力争新建算力项目PUE1.2以内、绿电占比超80% gdshe.org",
+      "source": "gdshe.org",
+      "lang": "zh",
+      "published": "Wed, 02 Sep 2026 02:05:05 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5nSTVlZDhSLW5rRTFoV09ocklvV0wxbnRHelJaWkNNdld6b1BSNm5QenRHUi1JYjVhdFpuRGt6S3FaSjQxVXNuOVktSjRWMlVLVFE?oc=5"
+    },
+    {
+      "title": "《人工智能 智能体互联》国家标准宣贯应用推进（长三角区域）专题会在沪举办 - 新浪网",
+      "summary": "《人工智能 智能体互联》国家标准宣贯应用推进（长三角区域）专题会在沪举办 新浪网",
+      "source": "新浪网",
+      "lang": "zh",
+      "published": "Wed, 02 Sep 2026 02:41:11 GMT",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5SWE9jWndhZlBUeHJXeDVZZUdrLTJBLWdCc0d4Vjh1cDlfMFUyZENSSXRJZ0xSSDJTVnlfZXA4T2VFR0tKald0ZFVleThIWGh3dmdoM1RFUkFLTjRrTVpyQjZrM0VFdkFKUGs1emcyRlZOUWJjZURncVRLWU1PMm8?oc=5"
+    },
+    {
+      "title": "努比亚NaviX Ultra获入网许可，AI智能体手机进入商用新阶段 - cb.com.cn",
+      "summary": "努比亚NaviX Ultra获入网许可，AI智能体手机进入商用新阶段 cb.com.cn",
+      "source": "cb.com.cn",
+      "lang": "zh",
+      "published": "Wed, 02 Sep 2026 01:46:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5NcnZpd0ZnQ20xLWoteTB5RkhCcXBmTms5aUdwYk5xX0toMnY4RHQ3WmhpanFxaGJYc2F3VTJYWGl3cW1YRFUwdW9PNFBKdV9vWFE2UnRBQkJOZEt3c1JZWGpXVQ?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 93752,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 68375,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57490,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 41790,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 36726,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 388567,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 280572,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 239649,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
