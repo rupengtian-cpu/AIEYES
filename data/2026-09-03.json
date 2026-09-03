@@ -1,0 +1,503 @@
+{
+  "date": "2026-09-03",
+  "generated_at": "2026-09-03T07:29:04.958741+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "A Common Measure of Communication for Speech Brain-Computer Interfaces",
+      "title_zh": "语音脑机接口通信的常用测量方法",
+      "summary": "Speech brain-computer interfaces (speech BCIs) translate neural activity into language, offering a path towards restoring speech for people with paralysis and, more broadly, enabling new forms of natural human-computer interaction. Despite this promise, the field lacks a common measure of progress because systems use different datasets, recording methods, t…",
+      "summary_zh": "语音脑机接口（语音 BCI）将神经活动转化为语言，为瘫痪患者恢复语音提供了一条途径，更广泛地说，实现了新形式的自然人机交互。尽管有这样的希望，但该领域缺乏通用的进展衡量标准，因为系统使用不同的数据集、记录方法、语音类型和词汇，因此它们报告的分数很少具有可比性。这个测量问题背后有两个未解决的问题：(i) 语音 BCI 应该使用户能够进行什么样的单词分布，以及 (ii) 系统可以从该分布中传达多少信息。我们通过推导开放词汇互信息（OVMI）来解决这两个问题，OVMI 是一种信息理论量，用于测量解码器传达的信息相对于用户可能希望交流的单词的参考分布。这使得在不同条件下测量的能力（例如不同的词汇）可以在通用的通信范围内进行评估。我们表明，通常报告的准确性、单词错误率 (WER) 和仅根据系统支持的单词计算的其他指标可能会夸大系统可以传达的用户预期语音的数量…",
+      "authors": [
+        "Dulhan Jayalath",
+        "Benjamin Ballyk",
+        "Oiwi Parker Jones"
+      ],
+      "published": "2026-09-02T17:59:46Z",
+      "category": "cs.LG",
+      "arxiv_id": "2609.02887v1",
+      "abs_url": "https://arxiv.org/abs/2609.02887v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02887v1"
+    },
+    {
+      "title": "SolarWM: Open Data and Scalable Training for Long-Horizon Video World Models",
+      "title_zh": "SolarWM：长期视频世界模型的开放数据和可扩展培训",
+      "summary": "We introduce SolarWM, a fully open foundation for building interactive video world models from data preparation through long-horizon inference. Training across heterogeneous data sources and video backbones is challenging: datasets differ in temporal scale, camera geometry, visual quality, motion, and captioning styles, while video generators use distinct r…",
+      "summary_zh": "我们介绍 SolarWM，这是一个完全开放的基础，用于构建从数据准备到长期推理的交互式视频世界模型。跨异构数据源和视频主干的训练具有挑战性：数据集在时间尺度、相机几何、视觉质量、运动和字幕风格方面有所不同，而视频生成器使用不同的表示和架构。因此，简单的数据混合和特定于模型的实现会产生不一致的监督，并使结果难以重现和比较。 SolarWM 通过可重新配置的多源数据引擎和主干原生适配框架解决了这种耦合问题。该引擎将来自 10 个数据集的 143 万个规范剪辑转换为统一的、帧对齐的合同，涵盖视觉观察、度量相机几何、字幕、质量元数据、选择决策和出处，同时将源处理与混合构建解耦。在共享相机调节、训练和推理接口下，我们实例化了基于 Wan2.2、LTX-2.5 和 MiniMax-H3 的四个 5B--33B 模型，同时保留了它们的原生表示和目标。统一的三阶段…",
+      "authors": [
+        "Junchao Huang",
+        "Guian Fang",
+        "Shengju Qian",
+        "Xianghao Kong",
+        "Zhuoran Zhao",
+        "Wei Huang"
+      ],
+      "published": "2026-09-02T17:59:41Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.02886v1",
+      "abs_url": "https://arxiv.org/abs/2609.02886v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02886v1"
+    },
+    {
+      "title": "Discriminative World Models for Web Agents",
+      "title_zh": "Web 代理的判别世界模型",
+      "summary": "Recent web agents use world models for test-time action selection by sampling candidate actions, predicting the resulting web states, and ranking them with a ranker model or a Process Reward Model (PRM). These world models are typically trained via supervised next-state prediction to generate fixed representations like HTML or AXTree snapshots. However, thi…",
+      "summary_zh": "最近的 Web 代理使用世界模型进行测试时操作选择，方法是对候选操作进行采样、预测生成的 Web 状态，并使用排名模型或过程奖励模型 (PRM) 对它们进行排名。这些世界模型通常通过有监督的下一状态预测进行训练，以生成固定的表示形式，例如 HTML 或 AXTree 快照。然而，这个目标与下游排名器不一致，下游排名器依赖于对候选者进行区分的预测状态来准确地对它们进行评分。为了解决这个问题，我们引入了预测状态匹配，这是一个训练目标，其中预测表示必须区分真实的结果状态和替代动作所达到的状态。我们使用源自 WebArena Go-Browse 轨迹的分支网络代理数据集来训练这些模型，其中每个决策点都包含多个替代操作及其结果状态。对我们保留的预测状态匹配基准的实验表明，我们的方法优于经过监督的下一状态预测训练的世界模型。我们进一步表明，与仅采取行动的 PR…",
+      "authors": [
+        "Kelvin Li",
+        "Dhruv Pendharkar",
+        "Anish Pahilajani",
+        "Chuyi Shang",
+        "Leon Oks",
+        "Leonid Karlinsky"
+      ],
+      "published": "2026-09-02T17:59:40Z",
+      "category": "cs.AI",
+      "arxiv_id": "2609.02885v1",
+      "abs_url": "https://arxiv.org/abs/2609.02885v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02885v1"
+    },
+    {
+      "title": "Thinking in Pictures: A Systematic Benchmark for Reasoning-driven Image Generation",
+      "title_zh": "图片思维：推理驱动图像生成的系统基准",
+      "summary": "Recent advancements in unified generative models (UGMs) and world simulators have achieved unprecedented results in visual perception and synthesis. However, these models primarily rely on surface-level event alignment, leaving the capacity for high-level visual reasoning underexplored. True visual generative intelligence demands \"Reasoning-to-Generation\",…",
+      "summary_zh": "统一生成模型（UGM）和世界模拟器的最新进展在视觉感知和合成方面取得了前所未有的成果。然而，这些模型主要依赖于表面级别的事件对齐，而高级视觉推理的能力尚未得到充分开发。真正的视觉生成智能需要“从推理到生成”，即从视觉输入推断潜在规则并通过精确的、逻辑约束的视觉结果推断出明显解决方案的能力。我们推出了 RIG-BENCH，这是一种新颖的综合基准，可系统地评估四个认知需求领域的推理驱动图像生成 (RIG)：基于概念、基于转换、模式与结构以及基于场景。 RIG-BENCH 拥有 2000 个精选样本，可作为 RIG 的严格压力测试。我们对最先进的 UGM 和图像/视频生成模型的广泛评估揭示了显着的推理生成差距，其中模型经常产生局部合理但全局不合逻辑的输出。 RIG-BENCH 提供了一个重要的诊断框架来指导下一代逻辑基础 UGM 和世界模拟器的开发。",
+      "authors": [
+        "Yutong Liu",
+        "Nan Huang",
+        "Xu Cao",
+        "James M. Rehg"
+      ],
+      "published": "2026-09-02T17:48:02Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.02864v1",
+      "abs_url": "https://arxiv.org/abs/2609.02864v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02864v1"
+    },
+    {
+      "title": "Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework",
+      "title_zh": "迈向值得信赖的自主机器人：可解释的基于人工智能的决策框架",
+      "summary": "Autonomous robots powered by deep learning face a fundamental auditability challenge: when incidents occur, investigators cannot reconstruct why the system made specific decisions. This paper presents TRACE (Transparent Reasoning Architecture for Credible Execution), a decision framework that ensures every autonomous action can be traced back to sensor evid…",
+      "summary_zh": "由深度学习驱动的自主机器人面临着基本的可审计性挑战：当事件发生时，调查人员无法重建系统做出特定决策的原因。本文提出了 TRACE（可信执行透明推理架构），这是一个决策框架，可确保每个自主操作都可以通过记录的因果链追溯到传感器证据。该框架将决策组织为四个可审计层：用于基于证据的实体识别的语义感知、使用因果图进行概率状态估计的信念推理、使用反事实文档进行约束感知规划的行动综合以及用于合规性监控的执行验证。 TRACE 与模型无关，但旨在集成基于学习的感知模块（CNN、变压器），同时保留决策级别的可审计性。我们使用三个客观指标来评估该框架：证据可追溯性（传感器到决策的链接）、决策可重构性（事后分析能力）和时间连续性（审计追踪完整性）。对仓库机器人导航的实验评估表明，TRACE 在 500 个模拟决策周期中实现了 98.6% 的证据可追溯性、99.0% 的…",
+      "authors": [
+        "Cagri Temel"
+      ],
+      "published": "2026-09-02T17:44:25Z",
+      "category": "cs.RO",
+      "arxiv_id": "2609.02861v1",
+      "abs_url": "https://arxiv.org/abs/2609.02861v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02861v1"
+    },
+    {
+      "title": "PlantC2USeg: Cross-Scale Consistent Pre-Training for Few-Shot Unified Plant Point Cloud Segmentation",
+      "title_zh": "PlantC2USeg：少样本统一植物点云分割的跨尺度一致预训练",
+      "summary": "Modern crop breeding demands precise organ-level analysis for trait quantification, making plant point cloud segmentation (PPCS) increasingly important. However, conventional deep learning approaches rely heavily on densely annotated datasets that are labor-intensive to acquire. Unified PPCS adaptation from distribution-shifted examples with minimal additio…",
+      "summary_zh": "现代作物育种需要精确的器官水平分析以进行性状量化，这使得植物点云分割（PPCS）变得越来越重要。然而，传统的深度学习方法严重依赖于密集注释的数据集，而这些数据集的获取需要耗费大量人力。通过最少的额外训练从分布转移的示例中进行统一的 PPCS 适应仍然具有挑战性。为了解决这个问题，我们提出了 PlantC2USeg，这是一种深度迁移学习框架，具有跨尺度一致性学习，可以跨空间尺度明确对齐特征，以及信息受限的解码策略，可以防止重建捷径并促进鲁棒适应。由此产生的预训练可以实现跨物种和传感条件的稳定的少数样本泛化，同时使用继承阈值进行统一微调进一步减少了适应开销。在 Soybean3D 的全面监督下，PlantC2USeg 在比较方法中实现了最高的语义 IoU 和实例 mWCov，分别为 91.91% 和 94.62%。在 20 个标记样本的情况下，它在两个…",
+      "authors": [
+        "Yu Tian",
+        "Xintong Jiang",
+        "Jan Franklin Adamowski",
+        "Shiv O. Prasher",
+        "Shangpeng Sun"
+      ],
+      "published": "2026-09-02T17:43:56Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.02860v1",
+      "abs_url": "https://arxiv.org/abs/2609.02860v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02860v1"
+    },
+    {
+      "title": "User Feedback Provides a Unique Signal that LLMs Can not Detect",
+      "title_zh": "用户反馈提供了法学硕士无法检测到的独特信号",
+      "summary": "Harnessing naturally occurring feedback from user interactions offers a promising learning signal for Large Language Models (LLMs). However, recent studies suggest this feedback is inherently noisy and difficult to leverage effectively. We challenge this conception by demonstrating that user feedback is a highly actionable signal for improvement, and that i…",
+      "summary_zh": "利用用户交互中自然发生的反馈为大型语言模型（LLM）提供了有希望的学习信号。然而，最近的研究表明这种反馈本质上是嘈杂的并且难以有效利用。我们通过证明用户反馈是一个高度可行的改进信号来挑战这一概念，并且其感知的无效性源于当前评估范式中的系统偏差。为了隔离反馈的有用性，我们构建了具有明确基础事实的合成数据以及自然数据，以验证我们的发现在现实世界场景中是否成立。通过比较两种设置中访问反馈和不访问反馈时生成的模型修订，我们发现反馈通知修订以明显高于基线修订的速度解决目标问题。最后，我们揭示了评估偏差的根源：当模型完全由于反馈而成功解决问题时，法学硕士法官经常无法识别真正正确的响应，而是系统性地倾向于较差的基线输出。",
+      "authors": [
+        "Shachar Don-Yehiya",
+        "Leshem Choshen",
+        "Omri Abend"
+      ],
+      "published": "2026-09-02T17:42:44Z",
+      "category": "cs.CL",
+      "arxiv_id": "2609.02859v1",
+      "abs_url": "https://arxiv.org/abs/2609.02859v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02859v1"
+    },
+    {
+      "title": "MuyBridge: Mobile Human Center-of-Mass Estimation from Monocular Video via Sparse Fusion",
+      "title_zh": "MuyBridge：通过稀疏融合从单目视频估计移动人体质心",
+      "summary": "The 3D center of mass (CoM) is a primary quantity in the biomechanical analysis of sport, rehabilitation, and clinical movement, yet existing 3D pose tracking, mesh recovery, and multi-view triangulation methods either optimize 3D keypoint accuracy without anatomical constraints or carry compute and capture infrastructure too heavy to deploy where CoM track…",
+      "summary_zh": "3D 质心 (CoM) 是运动、康复和临床运动生物力学分析中的主要量，但现有的 3D 姿态跟踪、网格恢复和多视图三角测量方法要么在没有解剖学限制的情况下优化 3D 关键点精度，要么承载的计算和捕获基础设施过于繁重，无法部署在 CoM 跟踪最有用的地方。因此，教练和运动分析师仍然很难通过运动员训练和比赛的单个摄像机来测量 CoM。在这项工作中，我们介绍了 MuyBridge，这是一种设备上系统，可以根据单个手机摄像头视频流估计运动员的分段质心轨迹。 MuyBridge 通过分析度量融合将紧凑的 2D 姿态网络和精炼的单步单目深度网络结合起来，该融合使用解剖和物理先验来锚定度量 CoM，不需要 3D 或特定于任务的监督。通过对 AthletePose3D 的运动动作（跑步、田径和花样滑冰）进行评估，MuyBridge 在一次性校准下实现了 33-41…",
+      "authors": [
+        "Aidan Bradshaw",
+        "Marco Giordano",
+        "David Rode",
+        "Andreas Habersack",
+        "Elif Basokur",
+        "Annika Kruse"
+      ],
+      "published": "2026-09-02T17:38:36Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.02854v1",
+      "abs_url": "https://arxiv.org/abs/2609.02854v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02854v1"
+    },
+    {
+      "title": "Post-Training Language Models for Gold-Medal Performance in Coding Competitions",
+      "title_zh": "编码比赛金牌表现的训练后语言模型",
+      "summary": "Competitive programming has become a key test of large language model reasoning, with international competitions such as IOI and ICPC representing its most challenging settings. We present an end-to-end specialization pipeline combining large-scale problem curation, synthetic reasoning traces, supervised fine-tuning (SFT), and reinforcement learning (RL). U…",
+      "summary_zh": "竞争性编程已成为大语言模型推理的关键考验，IOI、ICPC等国际竞赛代表了其最具挑战性的场景。我们提出了一个端到端的专业化管道，结合了大规模问题管理、综合推理轨迹、监督微调（SFT）和强化学习（RL）。我们使用 22,000 个策划问题，使用 SFT 和 RL 训练 Nemotron-3-Nano-CC (30B-A3B)，并仅使用 SFT 训练 Nemotron-3-Ultra-CC (550B-A55B)。我们进一步介绍 GenCorrect，这是一种反馈驱动的测试时计算策略，可以迭代地生成、评估和完善不同的解决方案。在 IOI 2025 上，Nano-CC 经过训练后从 130 分提高到 291 分，经过 GenCorrect 提高到 468 分，超过了 438.3 的黄金门槛，而 Ultra-CC 则达到了 502 分。在这些结果的指导下，…",
+      "authors": [
+        "Aleksander Ficek",
+        "Sean Narenthiran",
+        "Mehrzad Samadi",
+        "Somshubra Majumdar",
+        "Boris Ginsburg"
+      ],
+      "published": "2026-09-02T17:33:37Z",
+      "category": "cs.LG",
+      "arxiv_id": "2609.02849v1",
+      "abs_url": "https://arxiv.org/abs/2609.02849v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02849v1"
+    },
+    {
+      "title": "Benchmarking RAW and RGB Restoration in Image Signal Processors",
+      "title_zh": "图像信号处理器中 RAW 和 RGB 恢复的基准测试",
+      "summary": "Modern cameras transform RAW sensor measurements into sRGB images through an image signal processor (ISP). We benchmark two placements for blind restoration around a fixed ISP: (A) pre-ISP restoration in the RAW domain and (B) post-ISP restoration in the sRGB domain. The benchmark covers four smartphone device groups, two learned ISPs, three degradation reg…",
+      "summary_zh": "现代相机通过图像信号处理器 (ISP) 将 RAW 传感器测量结果转换为 sRGB 图像。我们对固定 ISP 周围盲恢复的两个位置进行了基准测试：(A) RAW 域中的 ISP 前恢复和 (B) sRGB 域中的 ISP 后恢复。该基准测试涵盖四个智能手机设备组、两个学习 ISP、三个退化机制（噪声、模糊以及联合噪声和模糊）以及几个具有代表性的 RAW 和 RGB 恢复模型。我们的结果表明，位置本身并不能决定绩效。 RAW 恢复策略优于最好的通用 RGB 恢复模型。然而，考虑 ISP 变换训练的 RGB 恢复模型实现了最佳的整体性能。我们的新颖基准表明，图像重建性能很大程度上取决于恢复模型和目标成像管道之间的对齐。因此，我们建议将恢复放置和 ISP 感知监督报告为关键实验因素。我们的代码可在 https://github.com/mv-lab/AI…",
+      "authors": [
+        "Zihao Lu",
+        "Radu Timofte",
+        "Marcos V. Conde"
+      ],
+      "published": "2026-09-02T17:15:44Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.02831v1",
+      "abs_url": "https://arxiv.org/abs/2609.02831v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02831v1"
+    },
+    {
+      "title": "Toward Robust LiDAR Semantic Segmentation for Real-World Deployment: Evaluation under Coarse Labels, Adverse Conditions, and Domain Shifts",
+      "title_zh": "实现用于现实世界部署的稳健 LiDAR 语义分割：粗略标签、不利条件和域转移下的评估",
+      "summary": "LiDAR-based semantic segmentation is a core perception module for autonomous vehicles and mobile robots. Despite the strong performance of recent state-of-the-art methods on standard benchmarks, existing evaluation protocols remain focused on clean, single-domain settings and fine-grained label taxonomies, leaving deployment readiness largely unassessed. Re…",
+      "summary_zh": "基于激光雷达的语义分割是自动驾驶汽车和移动机器人的核心感知模块。尽管最近最先进的方法在标准基准上表现强劲，但现有的评估协议仍然侧重于干净的单域设置和细粒度的标签分类法，部署准备情况在很大程度上未经评估。现实世界的系统必须处理安全关键的标签语义、退化的传感条件和跨域可变性，但目前还没有统一的协议能够同时解决所有这三个方面。在本文中，我们提出了一种结构化评估协议，该协议沿着三个互补维度评估 LiDAR 语义分割模型的部署准备情况：（i）与自动驾驶安全优先级一致的粗标签评估，揭示标签粒度如何影响不同的方法； (ii) 在八种类型的 LiDAR 损坏下的鲁棒性，旨在模拟现实世界的大气、几何和传感器退化； (iii) 跨数据集的领域泛化，无需适应。该评估包括在嵌入式 Jetson AGX Orin 平台上测量的推理速度，直接反映部署限制。我们的结果表明，细粒…",
+      "authors": [
+        "Samir Abou Haidar",
+        "Alexandre Chariot",
+        "Mehdi Darouich",
+        "Cyril Joly",
+        "Jean-Emmanuel Deschaud"
+      ],
+      "published": "2026-09-02T17:15:07Z",
+      "category": "cs.RO",
+      "arxiv_id": "2609.02830v1",
+      "abs_url": "https://arxiv.org/abs/2609.02830v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02830v1"
+    },
+    {
+      "title": "AI Contextual Measurement for Recovering Individual and Group-Level Effects: Validation Against Survey Measures and an Occupational Application",
+      "title_zh": "用于恢复个人和群体层面影响的人工智能情境测量：针对调查措施和职业应用的验证",
+      "summary": "Researchers increasingly use artificial intelligence to construct measures of social, organizational, and occupational characteristics that are absent from conventional surveys. We propose AICOME, AI COntextual MEasurement, a framework for evaluating whether AI-derived respondent-level measures can recover individual and group-level effects in contextual mo…",
+      "summary_zh": "研究人员越来越多地使用人工智能来构建传统调查中缺乏的社会、组织和职业特征的衡量标准。我们提出了 AICOME（AI 情境测量），这是一个用于评估人工智能衍生的受访者级别测量是否可以在情境模型中恢复个人和群体级别效果的框架。关键思想是，在受访者层面构建的人工智能测量可用于得出其群体层面的总体及其个体偏差，从而使研究人员能够估计群体间和群体内的关联，而不是仅将人工智能测量视为响应预测。我们使用 2022 年中国家庭追踪研究 (CFPS) 验证了该框架，其中职业提供了实证分组结构，几个与工作相关的调查变量提供了验证基准。对于计算机使用、外语使用、每周工作时间和管理职责，我们在响应级别、模型级别、上下文和边界条件验证方面将调查措施与人工智能衍生的措施进行比较。结果表明，当有丰富的受访者和工作特征时，人工智能情境测量可以恢复观察到的调查变量中包含的大部分情境…",
+      "authors": [
+        "Wenxin Jiang",
+        "Xuyang Wang",
+        "Yuxiao Wu"
+      ],
+      "published": "2026-09-02T17:09:30Z",
+      "category": "cs.AI",
+      "arxiv_id": "2609.02821v1",
+      "abs_url": "https://arxiv.org/abs/2609.02821v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.02821v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "Gemini 3.8 Flash 光速发布：干活挺勤快，就是没开窍 - 爱范儿",
+      "summary": "Gemini 3.8 Flash 光速发布：干活挺勤快，就是没开窍 爱范儿",
+      "source": "爱范儿",
+      "lang": "zh",
+      "published": "Thu, 03 Sep 2026 05:52:48 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBqR2hSNzRlYjRObnhDemdXTE83cjQtRlFVVEpWRldnejBhME9SakdISnI4bURqRDk1SWE4M1diX0p0MEE?oc=5"
+    },
+    {
+      "title": "才三周Flash就换代！谷歌上新两款Gemini 3.8：编程与推理能力升级，向RSI迈出一大步 - 华尔街见闻",
+      "summary": "才三周Flash就换代！谷歌上新两款Gemini 3.8：编程与推理能力升级，向RSI迈出一大步 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Wed, 02 Sep 2026 16:47:05 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1JQWk4QjFJSzNRN2JFbThiZHhWd09WU0V4VEZueWpmZzZEZEVhZENLWlI2eVZmR1lzc3lTRTI1ZDFob0loWmZFU3ltbnJ2amJ1UEN3?oc=5"
+    },
+    {
+      "title": "人工智能大模型发展迈入新阶段 - 光明网",
+      "summary": "人工智能大模型发展迈入新阶段 光明网",
+      "source": "光明网",
+      "lang": "zh",
+      "published": "Wed, 02 Sep 2026 20:55:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1RWmpFSHQ2RXFZb0NEcjU0eEVtQ0pYWmgzdW5yUFBGajJfUTdrVFk4MktmX3FOT3dNOGxaR1pIZkQ2bzBWdV9fb0FOQnlEeTlZYVYzUktfZDVVMzgyU3pMVw?oc=5"
+    },
+    {
+      "title": "中兴通讯斩获2026 ODX年度先锋企业 实力领跑算力新赛道 - ZTE",
+      "summary": "中兴通讯斩获2026 ODX年度先锋企业 实力领跑算力新赛道 ZTE",
+      "source": "ZTE",
+      "lang": "zh",
+      "published": "Thu, 03 Sep 2026 06:58:56 GMT",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQM200OXpwOVBVUUoySTNLekxIS0NoRFd0MGM5c2RvZjk3V1ZUcUhYUEVra1FrcVpBSFpPcXJnckZmNW5rRHltY0Z5NG9OQ3VjaWZzM0xQTFRQODZ1NWdnaU40b1lOS21ySndSeEpmb2c2cXdDZVlLUnlGOTBLb2c1SGNibHY1Vnh3Y2dmTXBCalI?oc=5"
+    },
+    {
+      "title": "AI算力的下一场竞争是“生产Token” - 界面新闻",
+      "summary": "AI算力的下一场竞争是“生产Token” 界面新闻",
+      "source": "界面新闻",
+      "lang": "zh",
+      "published": "Thu, 03 Sep 2026 07:08:28 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5LTmJjQXJyaEdCaWdJRnRpRGNkR0h0Y01yM3lCd2xZbHZwN0l1MmVPVjdURFIzWGZ0UWIzX0ZvUDYxVDN3ZzZEeG9SNDFac1FLazFsU3d6TTk?oc=5"
+    },
+    {
+      "title": "谷歌推出 Gemini 3.8 Flash Cyber 模型，内部已全面部署用于代码安全防护 - DoNews",
+      "summary": "谷歌推出 Gemini 3.8 Flash Cyber 模型，内部已全面部署用于代码安全防护 DoNews",
+      "source": "DoNews",
+      "lang": "zh",
+      "published": "Thu, 03 Sep 2026 02:31:19 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9QRnB0NzduX2s1cGtOZEFFaVh6aE0xczJOVDh4Q2dTZnZPVGtQMmhaeGpGM0R6SV9JMlJ3bmNwSzhsM25URFZDUmJlN255VkQwM2hONDJfQjVRY0pGd1E?oc=5"
+    },
+    {
+      "title": "联想集团董事长杨元庆：AI正在创造新的算力消费者 - 东方财富",
+      "summary": "联想集团董事长杨元庆：AI正在创造新的算力消费者 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Thu, 03 Sep 2026 07:20:44 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9yVm1weEx2TVdSdENfblE3Y0poZDBqVEszU3FmT0NhbkFuZ0djc0oyemM0UDVRbnUtelpGQ294eXVoREdHalFxdWJiNm9JdWMwTDA1aTB3Ykp5SE9DbURQSw?oc=5"
+    },
+    {
+      "title": "OpenAI确认开发AI自动控制功能 称用于遏制智能体失控 - 观点网",
+      "summary": "OpenAI确认开发AI自动控制功能 称用于遏制智能体失控 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Thu, 03 Sep 2026 02:48:57 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5ZNzlvWm00S1FLVFZKYkNTb1AtMDBBZ2plOV9tbDZWbVpQMVAxWnptS2tWSzZjdFVkMmFJMUhZVzhxVmh4Ukt5U1U4ekM5Mm9admNXRmpXRzlRaW10MTJNeWRB?oc=5"
+    },
+    {
+      "title": "算力赋能传统制造 “中国模具之乡”迈向数字智造新阶段 - chinanews.com.cn",
+      "summary": "算力赋能传统制造 “中国模具之乡”迈向数字智造新阶段 chinanews.com.cn",
+      "source": "chinanews.com.cn",
+      "lang": "zh",
+      "published": "Thu, 03 Sep 2026 07:23:02 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1rX0k2TEo4bXYwbXdNdW15QzgyV1dPSVZrTl92bUlYbDBSZ1phMXltTG9hTk01QTBnSTc3REc0dGEtVkdiRmVNSXZKRnJadDE2M0dBTkhSaVk2cUhYbUlfVWlPalNxUXlH?oc=5"
+    },
+    {
+      "title": "谷歌又发新模型，Meta AI负责人“挑衅”：Gemini是谁啊？ - 第一财经",
+      "summary": "谷歌又发新模型，Meta AI负责人“挑衅”：Gemini是谁啊？ 第一财经",
+      "source": "第一财经",
+      "lang": "zh",
+      "published": "Thu, 03 Sep 2026 07:11:20 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBYazM0RVV6RXRFUFRTaUJHV252Wm0zcUVQOGZzUThLOGxKa3Y0WVo3RDZ5TERObWJOSjE3eFB4T0ZHc1lMX3ZUZU1LU2V1UEdK?oc=5"
+    },
+    {
+      "title": "大模型厂商，正忙着自备“干粮”|DeepSeek|OpenAI|AI芯片|智谱|Hugging Face_手机新浪网 - finance.sina.com.cn",
+      "summary": "大模型厂商，正忙着自备“干粮”|DeepSeek|OpenAI|AI芯片|智谱|Hugging Face_手机新浪网 finance.sina.com.cn",
+      "source": "finance.sina.com.cn",
+      "lang": "zh",
+      "published": "Thu, 03 Sep 2026 04:18:45 GMT",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWHIxQWlVeC1seG5yQVVPS1hsWmFqcGdhWW5kMFlhOGFqelpJM3JRaGx3TUNpRWt2X3ZkOFIxblh4LVpZTjAwZkh5Y2p6eHlDd1lnQklZd3JDajBqUEdIN1E0TmJYdnFOTkE5N29aclRkWUdmSTNzS1hab01BWlZ5cm80b0NqaFFVVE1oMUhnTE1obmtwUXluQmRGdWxacHJvVXgtUTRacw?oc=5"
+    },
+    {
+      "title": "Token消耗量激增 智能体批量上线 上市银行半年报里的“AI竞赛” - 湖南红网",
+      "summary": "Token消耗量激增 智能体批量上线 上市银行半年报里的“AI竞赛” 湖南红网",
+      "source": "湖南红网",
+      "lang": "zh",
+      "published": "Thu, 03 Sep 2026 01:54:53 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE12OUUyZHF6M2dpeXlLTDZ3dDZFeFFDUmtrTkxuNWtxNVg5X0FhXzVDeEZWUUtVbU4xQk5zTjc5M3FiMDVqa2JuZXVPQWY4NTBqckZKYm4wLTFBUVNyY29Gc0RTUFRZdw?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 93905,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 68669,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57487,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 41978,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 36755,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "您自己的私人人工智能助理。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 388676,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 280970,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 240336,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
