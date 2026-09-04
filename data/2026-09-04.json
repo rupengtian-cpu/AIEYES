@@ -1,0 +1,505 @@
+{
+  "date": "2026-09-04",
+  "generated_at": "2026-09-04T07:31:19.511145+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "TokenMatch: 3D Mesh Correspondence Transformer with Curvature-Guided Tokenisation",
+      "title_zh": "TokenMatch：具有曲率引导标记化的 3D 网格对应转换器",
+      "summary": "While data-driven 3D shape correspondence estimation has recently seen substantial progress, robust matching under partial observations and strong non-isometric deformations remains challenging. Existing learning-based approaches often rely on hand-crafted descriptors or template-based representations, whereas recent generative models over functional maps s…",
+      "summary_zh": "虽然数据驱动的 3D 形状对应估计最近取得了实质性进展，但部分观测和强非等距变形下的鲁棒匹配仍然具有挑战性。现有的基于学习的方法通常依赖于手工制作的描述符或基于模板的表示，而最近基于功能图的生成模型存在推理成本高、可解释性有限以及对部分形状的泛化能力差的问题。针对这些限制，本文引入了 TokenMatch，一种新的基于 Transformer 的统一模型，用于估计 3D 形状对应关系。我们的前馈方法专门在 BeCoS（一个具有挑战性的非等距部分到部分形状匹配数据集）上进行训练，可以推广到匹配完整形状，而无需重新训练或微调。 TokenMatch 使用自注意力机制和交叉注意力机制来有效学习块级和点级关系以及形状对之间的密集对应关系。我们的核心见解是，可以使用形状曲率引导将网格自适应地标记为补丁，从而能够有效学习特定于形状的几何描述符以进行对应估计。我…",
+      "authors": [
+        "Adeela Islam",
+        "Zorah Lähner",
+        "Vittorio Murino",
+        "Vladislav Golyanik"
+      ],
+      "published": "2026-09-03T17:59:55Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.04202v1",
+      "abs_url": "https://arxiv.org/abs/2609.04202v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.04202v1"
+    },
+    {
+      "title": "Principia: Relational Physics Tests for Video Models",
+      "title_zh": "原理：视频模型的关系物理测试",
+      "summary": "Evaluating physical reasoning in video models is difficult because absolute motion measurements depend on frame rate, object scale, and camera calibration, all of which are often ambiguous or unavailable in generated video. We propose a different approach. When two objects in the same scene obey the same physical law, their motions must satisfy predictable…",
+      "summary_zh": "评估视频模型中的物理推理很困难，因为绝对运动测量取决于帧速率、对象比例和相机校准，所有这些在生成的视频中通常是不明确或不可用的。我们提出了一种不同的方法。当同一场景中的两个物体遵循相同的物理定律时，它们的运动必须满足可预测的关系，并且这些关系与校准无关。我们引入了 Principia，这是一个通过配对对象之间的关系一致性来评估牛顿物理学的基准。原理涵盖了八种现象——重力、恢复、摩擦、旋转惯性、抛射运动、动量、摆和质量弹簧振荡——跨越平移、旋转、碰撞和振荡动力学，使用在受控协议下记录的真实世界场景。我们还引入了一种独立于校准的一致性分数，可以直接量化图像空间中的物理违规。在六种最先进的视频生成器的数千代中，尽管所有模型在 VBench 上的得分都在 0.8 左右，但在 Principia 上没有一个模型超过 0.42。视觉语言模型根据其检测关系物理违…",
+      "authors": [
+        "Varun Varma Thozhiyoor",
+        "Shivam Tripathi",
+        "Venkatesh Babu Radhakrishnan",
+        "Anand Bhattad"
+      ],
+      "published": "2026-09-03T17:59:50Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.04200v1",
+      "abs_url": "https://arxiv.org/abs/2609.04200v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.04200v1"
+    },
+    {
+      "title": "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
+      "title_zh": "清洁工程，不稳定的测量：共享端点上黑盒 LLM 观察者的预先注册的可靠性故障",
+      "summary": "Language-model judges now gate training data, score generations, and drive leaderboards. The judge is then a measurement instrument, resting on one rarely stated assumption: the same request, sent to the same model name, reads the same tomorrow. We audited that assumption in two preregistered campaigns with every threshold fixed in advance; neither got past…",
+      "summary_zh": "语言模型评委现在负责控制训练数据、评分生成并推动排行榜。法官是一个测量仪器，基于一个很少提及的假设：相同的请求，发送到相同的型号名称，明天读取相同的结果。我们在两个预先注册的活动中审核了这一假设，每个阈值都是预先确定的；两者都没有通过验证其工具。在 52,988 次经审计的请求尝试中，同一窗口重复排名在 Spearman 0.400 上与要求的 0.90 一致，字节相同的次日重播在 0.78 上与要求的 0.99 上一致，每次执行记录都处于上限。三种机制解释了这种差距：标签到含义的映射，使读数产生与信号一样强烈的偏差；候选者比仪器本身的本底噪声低七个数量级；和字节相同的输入返回不同的排名，这是精确排列读数复合的噪声。度量替换和采样都无法在测试网格上修复它。预先登记的后续行动解决了这个问题：等待对采样的日子没有帮助（0.805 与 0.800，在另外…",
+      "authors": [
+        "Haoyaun Zhu",
+        "Jie Zhang"
+      ],
+      "published": "2026-09-03T17:59:43Z",
+      "category": "cs.AI",
+      "arxiv_id": "2609.04198v1",
+      "abs_url": "https://arxiv.org/abs/2609.04198v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.04198v1"
+    },
+    {
+      "title": "ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize",
+      "title_zh": "ESPO：通过诊断、多样化和稳定进行错误结构提示优化",
+      "summary": "Evolutionary prompt optimizers such as GEPA suffer from prompt bloat: each iteration appends rules and caveats, producing prompts up to 3$\\times$ longer yet no more accurate. We trace this to three deficiencies - incomplete error observation, limited search diversity, and unreliable selection - and propose ESPO (Error-Structured Prompt Optimization), which…",
+      "summary_zh": "诸如 GEPA 之类的进化提示优化器会遭受提示膨胀的困扰：每次迭代都会附加规则和警告，从而产生长达 3$\\times$ 的提示，但并不更准确。我们将其追溯到三个缺陷 - 不完整的错误观察、有限的搜索多样性和不可靠的选择 - 并提出 ESPO（错误结构提示优化），它将提示优化分解为三个阶段： 在一轮中将所有训练错误诊断为结构模式； Propose 通过四种具有独立偏见的互补策略生成候选人；选择应用引导稳定性选择。在七个公共 NLP 基准测试（Tweet、MMLU、GSM8K、HotpotQA、ScoNe、HoVer 和 PUPA）上，ESPO 的平均准确度比最先进的水平提高了 3.76 美元（GEPA 为 74.67% 与 70.91%），在每个数据集上匹配或超过了 GEPA，同时生成的提示缩短了 47%（1,004 个字符与 1,878 个字符）并…",
+      "authors": [
+        "Lihao Liu",
+        "Peng Tang",
+        "Kunwar Yashraj Singh",
+        "Shabnam Ghadar"
+      ],
+      "published": "2026-09-03T17:59:37Z",
+      "category": "cs.CL",
+      "arxiv_id": "2609.04197v1",
+      "abs_url": "https://arxiv.org/abs/2609.04197v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.04197v1"
+    },
+    {
+      "title": "Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States",
+      "title_zh": "Puffin-World：使用原生 3D 世界状态扩展统一多模式模型",
+      "summary": "We propose Puffin-World, a unified multimodal architecture that integrates physical understanding, spatial simulation, and 3D world generation and reconstruction without relying on external offline modules. To reliably construct and interact with 3D worlds, our framework jointly models three native world states: physics (gravity field and latitude), geometr…",
+      "summary_zh": "我们提出了 Puffin-World，这是一种统一的多模态架构，集成了物理理解、空间模拟以及 3D 世界生成和重建，无需依赖外部离线模块。为了可靠地构建 3D 世界并与之交互，我们的框架联合建模了三种原生世界状态：物理（重力场和纬度）、几何（深度）和外观（图像），以及支持多样化任务和灵活运动的统一全向相机表示。除了对这些状态进行建模之外，我们还引入了一种在未来框架中传播物理动力学的策略。通过将绝对相机属性置于现实世界中，Puffin-World 能够生成物理上一致且视觉上稳定的世界。我们进一步将外观和几何图形结合在一个生成过程中，共同合成每个未来视图并重建其底层几何图形。这种统一的范式支持需要跨多个任务协同的交错闭环应用程序，包括模拟和自校准的世界探索。为了将 Puffin-World 扩展到复杂的场景，我们构建了 Puffin-16M，其中包括…",
+      "authors": [
+        "Kang Liao",
+        "Yihang Luo",
+        "Xiao-Ming Wu",
+        "Linyi Jin",
+        "Size Wu",
+        "Chunyu Lin"
+      ],
+      "published": "2026-09-03T17:59:13Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.04196v1",
+      "abs_url": "https://arxiv.org/abs/2609.04196v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.04196v1"
+    },
+    {
+      "title": "Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning",
+      "title_zh": "易读性不是可解释性：比较思维链推理中的判断重要性和实际重要性",
+      "summary": "Reasoning traces from chain-of-thought models appear to offer a legible window into how a model arrives at its answer. A growing body of work treats them as such, using LLM judges to diagnose errors, evaluate faithfulness, and provide step-level supervision via process reward models and generative critics. These practices rely on the text of a reasoning ste…",
+      "summary_zh": "思维链模型的推理痕迹似乎为模型如何得出答案提供了一个清晰的窗口。越来越多的工作也这样对待它们，使用法学硕士法官来诊断错误、评估忠诚度，并通过过程奖励模型和生成批评家提供分级监督。这些实践依赖于推理步骤的文本，其中包含有关其功能角色的信息。但文本实际上编码了有关哪些推理步骤重要的信息吗？我们将推理步骤的重要性作为其优势：预期奖励的变化，例如，通过蒙特卡罗推出估计，从包含该步骤中产生正确的最终答案。基于这些估计的基本事实，我们评估法学硕士法官是否能够识别高优势步骤，并发现有足够能力的法学硕士可以超越流行基线，但远远低于噪音上限。将模型作为步骤级批评家进行微调可以对错误响应产生很大的改进，但距离正确响应的上限仍然很远，这表明步骤重要性只能从推理跟踪的文本中部分恢复。我们的研究结果有助于越来越多的思想链忠实性工作，这些工作警告不要将推理痕迹的易读性视为可解…",
+      "authors": [
+        "Kevin Du",
+        "Alexander Hoyle",
+        "Laura Ruis",
+        "Acyr Locatelli"
+      ],
+      "published": "2026-09-03T17:59:08Z",
+      "category": "cs.CL",
+      "arxiv_id": "2609.04194v1",
+      "abs_url": "https://arxiv.org/abs/2609.04194v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.04194v1"
+    },
+    {
+      "title": "One Editor, Many Edits: A Unified Training-Free Framework for Diverse Video Editing",
+      "title_zh": "一位编辑，多次编辑：多样化视频编辑的统一免培训框架",
+      "summary": "Video editing spans diverse editing paradigms, yet achieving high-quality instruction-guided and subject-guided editing within a single unified framework remains challenging. We introduce EditVid, a training-free framework combining sparse causal memory for local coherence, correspondence-based post-attention token injection for long-range identity preserva…",
+      "summary_zh": "视频编辑跨越不同的编辑范式，但在单一统一框架内实现高质量的指令引导和主题引导编辑仍然具有挑战性。我们引入了 EditVid，这是一个免训练框架，结合了用于局部连贯性的稀疏因果记忆、用于远程身份保存的基于对应的后注意令牌注入以及用于编辑局部性的软潜在混合。同一框架支持指令引导和参考引导编辑，包括样式转换、属性修改、对象插入、部分级编辑和主题替换。在 FiVE 上，EditVid 获得了 78.16 FiVE-Acc，而最强评估的无训练基线为 58.95，同时在 IVEBench 上获得了有竞争力的结果。一项用户研究进一步显示，与 7 种竞争方法相比，EditVid 的整体偏好率为 51.8%。",
+      "authors": [
+        "Adheesh Sunil Juvekar",
+        "Onkar Kishor Susladkar",
+        "Kiet A. Nguyen",
+        "Muntasir Wahed",
+        "Nabeel Bashir",
+        "Xiaona Zhou"
+      ],
+      "published": "2026-09-03T17:59:01Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.04190v1",
+      "abs_url": "https://arxiv.org/abs/2609.04190v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.04190v1"
+    },
+    {
+      "title": "Robust PAC Learning of Concurrent Stochastic Games",
+      "title_zh": "并发随机博弈的鲁棒 PAC 学习",
+      "summary": "We introduce the first Probably Approximately Correct (PAC) learning framework for general-sum concurrent stochastic games (CSGs) with transition uncertainty, while addressing the challenge of Nash equilibrium (NE) existence. Our algorithm maintains data-driven $L^1$ confidence sets over transition kernels and solves a robust CSG to compute a social-welfare…",
+      "summary_zh": "我们为具有转移不确定性的广义和并发随机博弈（CSG）引入了第一个大概正确（PAC）学习框架，同时解决了纳什均衡（NE）存在的挑战。我们的算法在转换内核上维护数据驱动的 $L^1$ 置信集，并解决稳健的 CSG 来计算社会福利最优 $\\varepsilon$-NE，使用稳健的基于 MDP 的探索机制来驱动联合状态动作覆盖。至关重要的是，我们引入了纳什边际表征，可以对均衡存在进行原则性推理：该框架要么返回一个 $\\varepsilon$ 近似的 NE，其社会福利值 $\\varepsilon$ 接近最优，要么提供一个可靠的证明，表明不存在确切的 NE。在相关状态-动作对的最小可达性条件 $p_{\\mathrm{reach}}>0$ 下，算法在多项式轨迹样本后终止，样本复杂度为 $\\widetilde{O}\\left( {R_{\\max}^2 H^4 |S…",
+      "authors": [
+        "Angel Y. He",
+        "David Parker"
+      ],
+      "published": "2026-09-03T17:58:57Z",
+      "category": "cs.LG",
+      "arxiv_id": "2609.04189v1",
+      "abs_url": "https://arxiv.org/abs/2609.04189v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.04189v1"
+    },
+    {
+      "title": "A Computationally Feasible Framework for Causal Probabilistic Explanation",
+      "title_zh": "因果概率解释的计算可行框架",
+      "summary": "Explaining why a specific outcome occurred, and which inputs deserve the blame or credit, is central to philosophical, scientific, and policy analysis. Existing tools split into two camps. The theory of actual causality (AC) gives principled verdicts, but only for toy-sized models, because computing them requires enumerating counterfactual scenarios. Scalab…",
+      "summary_zh": "解释为什么会发生特定的结果，以及哪些输入应该受到指责或赞扬，是哲学、科学和政策分析的核心。现有工具分为两个阵营。实际因果关系理论（AC）给出了原则性的结论，但仅限于玩具大小的模型，因为计算它们需要枚举反事实场景。像 SHAP（甚至因果 SHAP）这样的可扩展归因方法至少部分忽略了生成数据的因果结构，并且可能给出与仔细的因果分析相冲突的答案。我们通过概率因果影响 (PCI) 缩小了这一差距。 PCI 建立在实际因果关系以及 Pearl 的必要性和充分性概率概念的基础上，但将可解释性问题重新定义为概率因果模型上的估计问题，该模型可以通过蒙特卡洛轻松近似。通过指定“候选解释”的分布、反事实值的分布以及评分函数，PCI 提供了易于处理的、有因果关系的、分级的解释，将 AC 和 Pearl 的因果关系概率概括为退化案例。我们在合成和现实世界的例子中评估 PC…",
+      "authors": [
+        "Rafal Urbaniak",
+        "Sam Witty",
+        "Daniel Waxman",
+        "Andy Zane",
+        "Poorva Garg",
+        "Emily Bunnapradist"
+      ],
+      "published": "2026-09-03T17:55:43Z",
+      "category": "cs.AI",
+      "arxiv_id": "2609.04177v1",
+      "abs_url": "https://arxiv.org/abs/2609.04177v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.04177v1"
+    },
+    {
+      "title": "Zero-Shot Novel Depth Synthesis Using 3D Foundation Models Scene Representations",
+      "title_zh": "使用 3D 基础模型场景表示的零样本新颖深度合成",
+      "summary": "3D Foundation Models (3DFMs) such as VGGT have recently pushed the boundaries of 3D vision by predicting rich unified representations with feed-foward transformers. The scene representations learned by these models enable strong performance on multiple 3D vision tasks. In this paper, we investigate using their internal representations to infer 3D in the sce…",
+      "summary_zh": "VGGT 等 3D 基础模型 (3DFM) 最近通过使用前馈变压器预测丰富的统一表示，突破了 3D 视觉的界限。这些模型学习的场景表示能够在多个 3D 视觉任务上发挥出色的性能。在本文中，我们研究使用它们的内部表示从新视图推断场景中的 3D。我们的假设是，为了解决 3D 重建的任务，这些模型需要学习包含大量有关 3D 场景的一般知识的表示。在证明可以从内部 3DFM 表示解码隐藏表面之后，我们提出了一种方法 Z3D，该方法通过对 3DFM 表示进行潜在扩散来估计未见视图中的点图。我们证明 Z3D 可以预测跨多个数据集的新视图的真实深度图。",
+      "authors": [
+        "Denis M. Akola",
+        "David F. Fouhey"
+      ],
+      "published": "2026-09-03T17:54:52Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.04174v1",
+      "abs_url": "https://arxiv.org/abs/2609.04174v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.04174v1"
+    },
+    {
+      "title": "Last Translation Benchmark",
+      "title_zh": "最后的翻译基准",
+      "summary": "For scientific progress, we need benchmarks that test the limits of state-of-the-art models, and evaluation methods that inform us about failure cases. As models get stronger, standard benchmarks for machine translation are approaching saturation. Further, automatic translation metrics are unreliable, vulnerable to reward-hacking, and provide unactionable a…",
+      "summary_zh": "为了科学进步，我们需要测试最先进模型极限的基准，以及告诉我们失败案例的评估方法。随着模型变得越来越强大，机器翻译的标准基准正在接近饱和。此外，自动翻译指标不可靠，容易受到奖励黑客攻击，并且提供不可操作的评估。即使是黄金人工评估也不是没有问题的，因为它往往缺乏可重复性、客观性和可扩展性。总体而言，这使我们无法跟踪该领域的客观进展并确定改进途径。我们推出了 Last Translation Benchmark，这是一组由人类创作和同行评审的示例（文本、图像、音频、视频），这些示例打破了领先的机器翻译模型。我们还提出了一种新的评估方法：每个示例都带有手工制作的验证规则，描述该示例的具体失败案例，因此允许可靠且可操作的未来评估。最后的翻译基准是一个实时数据集，接受持续的贡献。最新版本是 LTBv1，包含 2026 年 9 月 1 日之前已接受的贡献，随着不…",
+      "authors": [
+        "Vilém Zouhar",
+        "Niyati Bafna",
+        "Mukund Choudhary",
+        "Maike Züfle",
+        "Sara Rajaee",
+        "Pinzhen Chen"
+      ],
+      "published": "2026-09-03T17:54:45Z",
+      "category": "cs.CL",
+      "arxiv_id": "2609.04173v1",
+      "abs_url": "https://arxiv.org/abs/2609.04173v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.04173v1"
+    },
+    {
+      "title": "Rethinking On-Policy Distillation of Large Language Models II: One Training Example",
+      "title_zh": "重新思考大型语言模型的在策略蒸馏 II：一个训练示例",
+      "summary": "On-policy distillation (OPD) combines student-generated rollouts with dense token-level supervision from a teacher. Existing work has mainly studied its algorithmic behavior, leaving the role of training data unclear. We examine this role at the data-minimal limit by training on a single query. One-shot OPD keeps improving for hundreds of steps and recovers…",
+      "summary_zh": "在政策蒸馏（OPD）将学生生成的部署与教师的密集代币级监督结合起来。现有的工作主要研究其算法行为，而训练数据的作用尚不清楚。我们通过对单个查询进行训练来在数据最小限制下检查此角色。一次性 OPD 持续改进数百步，并恢复跨任务域和模型系列的大部分全数据 OPD 增益。我们通过训练期间访问的状态以及学生与老师的一致率来解释这个结果。我们测量\\emph{州覆盖率}，即查询集的推出所达到的州全数据 OPD 访问的比例。单个查询已达到 \\(71.5\\%\\)，其中大部分在前 100 步内。添加语义上不同的查询可以同时提高覆盖率和验证准确性，直到 16 个查询达到 \\(98.9\\%\\) 并匹配全数据训练。然而，无论 OPD 是针对一个查询还是针对整个数据集进行训练，对齐速度都会以相似的速度减慢，甚至一组固定的状态也需要数百步才能吸收。因此，OPD 数据过剩但算法…",
+      "authors": [
+        "Zixuan Fu",
+        "Bingxiang He",
+        "Yuxin Zuo",
+        "Haohuan Huang",
+        "Jinqian Zhang",
+        "Ruhang Xiao"
+      ],
+      "published": "2026-09-03T17:54:38Z",
+      "category": "cs.AI",
+      "arxiv_id": "2609.04172v1",
+      "abs_url": "https://arxiv.org/abs/2609.04172v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.04172v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "GPT-6 Astra发布，自称“全球最智能、最对齐的模型” - 新京报",
+      "summary": "GPT-6 Astra发布，自称“全球最智能、最对齐的模型” 新京报",
+      "source": "新京报",
+      "lang": "zh",
+      "published": "Fri, 04 Sep 2026 01:03:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBUQ0g3ajdHTTF2MndzWDNRc01jZF83V2xERXBlbmg1bk1kQm9RNWotelpXUldBR191VElxMWk2TTJBUmdmRWk0Sk1jcEtGQi1Pclk0Q0syQlRpQkJvcC13R1pNWjU?oc=5"
+    },
+    {
+      "title": "GPT-6 Astra 正式发布：性能 AGI，贵到要负债 - ifanr.com",
+      "summary": "GPT-6 Astra 正式发布：性能 AGI，贵到要负债 ifanr.com",
+      "source": "ifanr.com",
+      "lang": "zh",
+      "published": "Fri, 04 Sep 2026 01:19:55 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5SQklkWXlYWjI2SkRfcU5aRktEbTZqQWRneDhZcE5sWDdUT0xhMkpQVlVOUUdMY0ZZUEJhaXViWjJLbjA?oc=5"
+    },
+    {
+      "title": "“欢迎进入AGI时代”！OpenAI发布GPT-6 Astra，10万GPU训练，网安能力首达“关键”级 - 华尔街见闻",
+      "summary": "“欢迎进入AGI时代”！OpenAI发布GPT-6 Astra，10万GPU训练，网安能力首达“关键”级 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Thu, 03 Sep 2026 18:00:52 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0yYTFUbUlkeGVTa052TTZvZ3BhYkdlZ2RHcGdPVmJwN2dHNHhaNWR0QnBFX1JhRkVHYWdUSTZISU1ybGNqTHN2REpxOUl2bGk2eG8w?oc=5"
+    },
+    {
+      "title": "OpenAI发布地球最强大模型GPT-6 并宣告“欢迎来到AGI时代” - 东方财富",
+      "summary": "OpenAI发布地球最强大模型GPT-6 并宣告“欢迎来到AGI时代” 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Fri, 04 Sep 2026 03:30:48 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8tU1FMejI5QWxuYW9TSnZUSjBTZTlVWEVHU2V2Z3llblhXc25POHJWUmR3bGRjdjBldm52cXFPcUFCRVUyTkg2OS1HSVJmaGVDZXV4b3JSQ09CMnVxaE1rYw?oc=5"
+    },
+    {
+      "title": "百度智能云千帆大模型武汉创新中心打造AI产业生态圈 - wuhan.gov.cn",
+      "summary": "百度智能云千帆大模型武汉创新中心打造AI产业生态圈 wuhan.gov.cn",
+      "source": "wuhan.gov.cn",
+      "lang": "zh",
+      "published": "Thu, 03 Sep 2026 23:29:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE8tZm5xenliVHBVcDZEQVA3ZWR1eG1YWnIzTi1aSnh3QV8tTE5KMmV2OGlCdmdETFZkNlZJdUZOc0V1T2p3c2lTSXBpMzJmRkVORVZsVVV6Zi10MU1uMER6akljc0d2QWpKN0NqVkhsX1o?oc=5"
+    },
+    {
+      "title": "OpenAI推出新模型GPT‑6 Astra API提价 - 财新",
+      "summary": "OpenAI推出新模型GPT‑6 Astra API提价 财新",
+      "source": "财新",
+      "lang": "zh",
+      "published": "Fri, 04 Sep 2026 06:20:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5ZTU9hRi11U0tOUFh1bHpUdW82TGJoNkNaN0lyTDdGeDkxYklYbzdPX1dTVmVOenpKOGFOS1ZTdF9SdzZrUldNQVZibEVFMWJLZmxfNjlSS09XODBmRzZPUjBOckg?oc=5"
+    },
+    {
+      "title": "迅策科技推出TokenCloud平台 覆盖算力至应用全环节 - 观点网",
+      "summary": "迅策科技推出TokenCloud平台 覆盖算力至应用全环节 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Fri, 04 Sep 2026 04:37:34 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5QZURlLXM5aHRkaG9NLUE4eEpXRjVlWVBjS1h5VmpySTdTSzZWMVR2Mkw3bjdmWEhHekduckNvMC1Zei1qTnhZMW9sWlhreTVyRzA3aGNiVjAwekdIZmFZWEdB?oc=5"
+    },
+    {
+      "title": "AI智能体遭恶意“投毒” 专家解读网络安全防护新方法 - cnr.cn",
+      "summary": "AI智能体遭恶意“投毒” 专家解读网络安全防护新方法 cnr.cn",
+      "source": "cnr.cn",
+      "lang": "zh",
+      "published": "Fri, 04 Sep 2026 01:14:54 GMT",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE56X1lzMlk1dTJZYXI4cFduN3VxNHhnRlRZY043R0hKSkJDeGdfX245V0VJM2c0eU9pYnBXbmZBN01nZ0g3NXIyN1VvNjRJWVVqd1RwTkdkUVFWc2hXNmV3bEdnTm5VUDRFR2VyRE1R?oc=5"
+    },
+    {
+      "title": "让水风光带来澎湃绿色算力 探寻算电协同四川实践 - 通信世界网",
+      "summary": "让水风光带来澎湃绿色算力 探寻算电协同四川实践 通信世界网",
+      "source": "通信世界网",
+      "lang": "zh",
+      "published": "Fri, 04 Sep 2026 07:16:46 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB3WGEtTDg2WVFhaWJJRXlkU2JZQzI3SmJ2UVFzZmx4aGdHTXNyNk9mOGNnQ1JpTkR1dkFtaHBJZGFNMXRnY29rOUl1anB2RHM0VHc?oc=5"
+    },
+    {
+      "title": "英伟达发力“本地AI”！N1X设备10月上架 家庭算力路由器亮相 - 财联社",
+      "summary": "英伟达发力“本地AI”！N1X设备10月上架 家庭算力路由器亮相 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Thu, 03 Sep 2026 19:04:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9uRk5IcnFRU3MtSkhjZWFtdlBuVmZZUS1tZnRqcFdKOFFxMWl6dzVSUXBEMVh4dHlKbktUTjdzQzB1RzN6ck5TZw?oc=5"
+    },
+    {
+      "title": "GPT-6 Astra 正式登场：烧了 10 万块 GPU、多项跑分逼近满分，OpenAI 开启“AGI 时代” - infoq.cn",
+      "summary": "GPT-6 Astra 正式登场：烧了 10 万块 GPU、多项跑分逼近满分，OpenAI 开启“AGI 时代” infoq.cn",
+      "source": "infoq.cn",
+      "lang": "zh",
+      "published": "Fri, 04 Sep 2026 05:02:11 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE44TnA4cGhQa2tZM0tOMXVSMHlYS3Z2OS02Y0ZYdllIZm40MXF5R1JtOTNsS1luWmQ1VGMtXzJMOUhCSnR0V0pTZTZWTUFmU0Z4aFdvXzdRU09BVWlHNkE?oc=5"
+    },
+    {
+      "title": "OpenAI发布新款模型GPT-6 Astra - 新京报",
+      "summary": "OpenAI发布新款模型GPT-6 Astra 新京报",
+      "source": "新京报",
+      "lang": "zh",
+      "published": "Fri, 04 Sep 2026 04:38:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0yYlFMVFF0R3QtQXVFcC0xY3RkLWQyV1BHc3NKZGdNUTd3QW92aFZhbVVfT0MwQ3h1bnJhWTJTcVhDUEg4eXVianVRMm9TSnVlZi1YQXpRVTJVdHNpeFlXbUpvbVY?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 94051,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 68858,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57492,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 42138,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 36784,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 388799,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 281509,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 241062,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
