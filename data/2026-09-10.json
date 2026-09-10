@@ -1,0 +1,504 @@
+{
+  "date": "2026-09-10",
+  "generated_at": "2026-09-10T07:38:40.816036+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Programmable World Model",
+      "title_zh": "",
+      "summary": "Recent video world models generate increasingly realistic and interactive visual experiences, yet lack reliable mechanisms for maintaining persistent world state and enforcing programmable rules over extended interactions. We introduce Programmable World Model, a framework that decouples world-state evolution from visual observation generation. An agent tra…",
+      "summary_zh": "",
+      "authors": [
+        "Zheng-Hui Huang",
+        "Guixu Lin",
+        "Jiacheng Lin",
+        "Yi-Chuan Huang",
+        "Ruihan Yu",
+        "Muyao Niu"
+      ],
+      "published": "2026-09-09T17:59:32Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.10540v1",
+      "abs_url": "https://arxiv.org/abs/2609.10540v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.10540v1"
+    },
+    {
+      "title": "IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications",
+      "title_zh": "",
+      "summary": "A research idea may be novel, coherent, and scientifically plausible, yet its proposed method may remain insufficiently specified for faithful implementation. We study the codification readiness of implementation-facing research-method specifications, defined by whether they provide sufficient methodological information for a competent implementer or coding…",
+      "summary_zh": "",
+      "authors": [
+        "Yiling Ma",
+        "Yilun Zhao",
+        "Sihong Wu",
+        "Manasi Patwardhan",
+        "Arman Cohan"
+      ],
+      "published": "2026-09-09T17:59:04Z",
+      "category": "cs.CL",
+      "arxiv_id": "2609.10539v1",
+      "abs_url": "https://arxiv.org/abs/2609.10539v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.10539v1"
+    },
+    {
+      "title": "Precision in Rice Variety Classification using Stacking-Based Ensemble Learning",
+      "title_zh": "",
+      "summary": "Rice, a staple food for a significant portion of the global population, exhibits remarkable diversity in its varieties, presenting substantial challenges for accurate identification by consumers, traders, and farmers. This complexity often facilitates fraudulent practices, such as the unauthorized mixing of rice types, which undermines quality and trust in…",
+      "summary_zh": "",
+      "authors": [
+        "Md. Masudul Islam",
+        "Galib Muhammad Shahriar Himel",
+        "Md. Golam Moazzam",
+        "Mohammad Shorif Uddin"
+      ],
+      "published": "2026-09-09T17:53:50Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.10524v1",
+      "abs_url": "https://arxiv.org/abs/2609.10524v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.10524v1"
+    },
+    {
+      "title": "BrainTaskonomy: Learning How to Pretrain and What to Transfer in fMRI Foundation Models",
+      "title_zh": "",
+      "summary": "fMRI foundation models increasingly aggregate heterogeneous data across brain states, cohorts, and acquisition settings, yet pretraining domains are commonly treated as a flat mixture and downstream tasks are adapted independently. We study whether measured learning relations can organize both stages without modifying the backbone. During pretraining, a lig…",
+      "summary_zh": "",
+      "authors": [
+        "Junfeng Xia",
+        "Wenhao Ye",
+        "Junxiang Zhang",
+        "Jiayu Zuo",
+        "Mo Wang",
+        "Quanying Liu"
+      ],
+      "published": "2026-09-09T17:50:39Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.10518v1",
+      "abs_url": "https://arxiv.org/abs/2609.10518v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.10518v1"
+    },
+    {
+      "title": "DUET-DINO: Simultaneous Cross-View World Modeling for Latent Planning in Robot Manipulation",
+      "title_zh": "",
+      "summary": "Action-conditioned latent world models predict future visual representations, enabling zero-shot goal-conditioned robot planning and control. However, their predictions for fine-grained spatial and rotational actions are unreliable for full 7-DoF end-effector control. To address this gap, we introduce DUET-DINO, a simultaneous cross-view latent world model…",
+      "summary_zh": "",
+      "authors": [
+        "Nisarga Nilavadi",
+        "Ralf Römer",
+        "Moritz Reuss",
+        "Michael Krawez",
+        "Tobias Jülg",
+        "Angela P. Schoellig"
+      ],
+      "published": "2026-09-09T17:41:38Z",
+      "category": "cs.RO",
+      "arxiv_id": "2609.10506v1",
+      "abs_url": "https://arxiv.org/abs/2609.10506v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.10506v1"
+    },
+    {
+      "title": "Quantum Feature Engineering for Credit Default Prediction: When and Why IQP Circuits Help Linear Classifiers",
+      "title_zh": "",
+      "summary": "Credit default prediction is a tabular classification problem in which modest gains in F1 translate directly into reduced financial exposure. We ask whether Instantaneous Quantum Polynomial-time (IQP) circuits can produce features that improve a classifier over both its raw classical baseline and Kernel PCA - the strongest unsupervised classical non-linear…",
+      "summary_zh": "",
+      "authors": [
+        "Menachem Finkelstein",
+        "Diana Legziel Levy",
+        "Zohar Yakhini",
+        "Sarel Cohen"
+      ],
+      "published": "2026-09-09T17:41:27Z",
+      "category": "cs.LG",
+      "arxiv_id": "2609.10505v1",
+      "abs_url": "https://arxiv.org/abs/2609.10505v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.10505v1"
+    },
+    {
+      "title": "Field Converter: Geometry-Initialized Temporal Residual Refinement for World-Grounded Player Pose Estimation from Soccer Broadcasts",
+      "title_zh": "",
+      "summary": "Recovering 3D human pose from monocular sports broadcasts remains challenging when players must be localized in a shared metric world coordinate system rather than only reconstructed relative to their own body. We introduce Field Converter, a geometry-initialized temporal residual framework for world-grounded 3D player pose estimation from calibrated soccer…",
+      "summary_zh": "",
+      "authors": [
+        "Simon Khan",
+        "Laurent Gajny",
+        "Jennyfer Lecompte",
+        "Sébastien Laporte"
+      ],
+      "published": "2026-09-09T17:35:16Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.10498v1",
+      "abs_url": "https://arxiv.org/abs/2609.10498v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.10498v1"
+    },
+    {
+      "title": "Cross-Model Agreement as a Deployment-Time Reliability Signal for Automatic Polyp Segmentation",
+      "title_zh": "",
+      "summary": "In real-time colonoscopy, ground-truth annotations are unavailable at inference, so polyp segmentation models can fail silently. We propose Referee-Based Quality Estimation (RBQE), a reference-free framework measuring agreement between a primary segmentation model and an independently trained referee on the same image. RBQE is evaluated on a standardized 1,…",
+      "summary_zh": "",
+      "authors": [
+        "Siddharth Gupta",
+        "Jitin Singla"
+      ],
+      "published": "2026-09-09T17:32:43Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.10495v1",
+      "abs_url": "https://arxiv.org/abs/2609.10495v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.10495v1"
+    },
+    {
+      "title": "IBIB: A Protocol for Measuring Enterprise AI Systems by Serving Route, Not Model Identifier",
+      "title_zh": "",
+      "summary": "Enterprises deploy systems, not checkpoints. Usable capability depends jointly on weights, serving route, precision, output contract, and harness, yet all 18 audited benchmarks score advertised model identifiers. We treat this as measurement error and give a protocol that makes it reportable. It has three parts. A gold-blind capability-binding preflight ver…",
+      "summary_zh": "",
+      "authors": [
+        "Blake Stenstrom",
+        "Charangan Vasantharajan",
+        "Brian Sathianathan"
+      ],
+      "published": "2026-09-09T17:31:29Z",
+      "category": "cs.CL",
+      "arxiv_id": "2609.10494v1",
+      "abs_url": "https://arxiv.org/abs/2609.10494v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.10494v1"
+    },
+    {
+      "title": "Learning with Covariance Matrices: Principal Component Analysis Meets Learning with Graphs",
+      "title_zh": "",
+      "summary": "This feature article provides an overview of the theoretical foundations for coVariance neural networks (VNNs), i.e., graph neural networks (GNNs) operating on covariance matrices as graphs. Covariance matrices are ubiquitous across domains, and hence, the deployment of GNNs often leverages graphs of pairwise statistical dependencies. Existing theoretical c…",
+      "summary_zh": "",
+      "authors": [
+        "Saurabh Sihag",
+        "Andrea Cavallo",
+        "Elvin Isufi",
+        "Gonzalo Mateos",
+        "Alejandro Ribeiro"
+      ],
+      "published": "2026-09-09T17:28:46Z",
+      "category": "cs.LG",
+      "arxiv_id": "2609.10490v1",
+      "abs_url": "https://arxiv.org/abs/2609.10490v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.10490v1"
+    },
+    {
+      "title": "Artificial Intelligence Literacy and Sustainable Development: An Ethical Governance and Development Goals Framework",
+      "title_zh": "",
+      "summary": "AI literacy provides foundational competencies that support ethical, transparent, and sustainable technological development, although higher-order capabilities such as governance, critical evaluation, and strategic decision-making extend beyond basic literacy into advanced levels of AI competency. This study positions AI literacy as a governance capacity th…",
+      "summary_zh": "",
+      "authors": [
+        "Md. Masudul Islam",
+        "Mirza Niaz Morshed",
+        "Md. Shafiqul Islam"
+      ],
+      "published": "2026-09-09T17:28:08Z",
+      "category": "cs.CV",
+      "arxiv_id": "2609.10489v1",
+      "abs_url": "https://arxiv.org/abs/2609.10489v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.10489v1"
+    },
+    {
+      "title": "Deep Learning-Based Detection of Electrical Faults and Power Quality Disturbances in Aerospace Power Systems",
+      "title_zh": "",
+      "summary": "More Electric Aircraft require fast and reliable monitoring of high-frequency electrical networks, yet most power quality disturbance and fault diagnosis methods are developed for conventional 50 or 60 Hz grids. This work presents a hardware-aware deep learning framework for multiclass detection of electrical faults and power quality disturbances in a 400 H…",
+      "summary_zh": "",
+      "authors": [
+        "Ian C. Guzmán",
+        "Radu Babiceanu",
+        "Berker Peköz"
+      ],
+      "published": "2026-09-09T17:19:14Z",
+      "category": "eess.SP",
+      "arxiv_id": "2609.10479v1",
+      "abs_url": "https://arxiv.org/abs/2609.10479v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.10479v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "总编辑圈点丨AI智能体八十八小时解出千禧年难题之一，引起“抢发”数学家成果争议 - 中国科技网",
+      "summary": "总编辑圈点丨AI智能体八十八小时解出千禧年难题之一，引起“抢发”数学家成果争议 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Wed, 09 Sep 2026 23:42:15 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1mWnJ1eGV3UmU5cjJQWlpCSlVrMkJtNGxGWUFYMHNQZWo2TVdUOXZiQWdIRjhrZGxCcmtHSzVVVjRqVkVvd3ZwSUkzS0x6VUpmcE1aXzFQc3ZwQjlsTXA4Y3prUmJjSUxDZVNEWFJuZkw?oc=5"
+    },
+    {
+      "title": "沐曦股份创始人：需求侧仍有极大算力短缺 大模型参数迈向十万亿级 - 观点网",
+      "summary": "沐曦股份创始人：需求侧仍有极大算力短缺 大模型参数迈向十万亿级 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Thu, 10 Sep 2026 04:56:46 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1mbzNOZmlYQk5TTGNreHMwd3FVVGNxbmFBMzU3ZG82RkN5N1VtajVUSjc3YTVZa1R2dnVmdWIyZkx0cWx3eC1jODBKTUI3UGFHWmZWYWxKZTRULXY1QmVLbGpR?oc=5"
+    },
+    {
+      "title": "蚂蚁集团CEO韩歆毅：蚂蚁将推出激励政策加快智能体供需生态建设 - 新浪财经",
+      "summary": "蚂蚁集团CEO韩歆毅：蚂蚁将推出激励政策加快智能体供需生态建设 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Thu, 10 Sep 2026 05:20:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBkeEk1YWVJQWQ2VV9wQ1pfam1naElZM3h4YW5vVWVUNTQ4OVh1UGRhQjMtU0JWVG9ybU5nVC10bDJxalk1WWJ1OUxlTDBGZDYwbGVPVEpCcGc1bmpqM21FREZJclNtY0dDckt4cXRad3lvZ0RWRkUxMQ?oc=5"
+    },
+    {
+      "title": "GPT-6 Astra 正式发布：性能 AGI，贵到要负债 - 爱范儿",
+      "summary": "GPT-6 Astra 正式发布：性能 AGI，贵到要负债 爱范儿",
+      "source": "爱范儿",
+      "lang": "zh",
+      "published": "Wed, 09 Sep 2026 15:47:46 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5SQklkWXlYWjI2SkRfcU5aRktEbTZqQWRneDhZcE5sWDdUT0xhMkpQVlVOUUdMY0ZZUEJhaXViWjJLbjA?oc=5"
+    },
+    {
+      "title": "AI算力引爆供求缺口 PCB产业链涨价潮持续 最新融资客抢筹股名单出炉 - 东方财富",
+      "summary": "AI算力引爆供求缺口 PCB产业链涨价潮持续 最新融资客抢筹股名单出炉 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Thu, 10 Sep 2026 04:07:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB0dzFnS0VMSWlGLVJEdFRPZTczY09YY1JKaS1ITDFJN05hMGJYRm54TTZGV1VMbURfbWdnUDFILWgxME5xd1VMQ1d4ZTVRUUtjaXNDeGNhd1d2TndHZU5ZeA?oc=5"
+    },
+    {
+      "title": "中际旭创领涨光模块，算力行情再启 - 21财经",
+      "summary": "中际旭创领涨光模块，算力行情再启 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Thu, 10 Sep 2026 05:38:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQndLX0JWTlQ4Q2pVZ0RxcHRidHRrblZ0QWRjRGx5SjkwT2tyRjhoUHdqcEg0QktHZTUxQndQcjRUWlpNLUdDUEVOV2lwUVh1VGFVWmdlYlNRcWxPRGdzT0pKYlh4Tl9vOTBPa19RWkFIR0NIbzA4TzF6OGhhV01IUGRyRjZqYWpUVktIVw?oc=5"
+    },
+    {
+      "title": "财跃星辰金融AI布局集中落地 外滩大会发布智能体矩阵 - 财联社",
+      "summary": "财跃星辰金融AI布局集中落地 外滩大会发布智能体矩阵 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Thu, 10 Sep 2026 01:21:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9nVE5FNnZwYnV2Y2NoYmlNakQ5V1F1RTBrTUZOalhza2s3Z3BfR2k3c292cGJvQjBnX2JNa04wY0J0MjQ1eDFuNQ?oc=5"
+    },
+    {
+      "title": "两项智能体安全团体标准启动，共筑智能体规模化应用安全基线 - 新浪网",
+      "summary": "两项智能体安全团体标准启动，共筑智能体规模化应用安全基线 新浪网",
+      "source": "新浪网",
+      "lang": "zh",
+      "published": "Thu, 10 Sep 2026 07:27:01 GMT",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9iOGV2a3JLOGRpSjBDU0QxOTVjNk1IakJmNkZUZHhub05NaWZNdmR2OWRLSVN4U01YYkYtZkNfMXZWZlFDRWMzWkpCVWlqQmhzXy11VkhqYnJqYUtHSzYzY3BpS2diSEJ5SUtvSWNucG5uck93dHE5Yg?oc=5"
+    },
+    {
+      "title": "算力需求驱动电子行业利润激增 - 光明网",
+      "summary": "算力需求驱动电子行业利润激增 光明网",
+      "source": "光明网",
+      "lang": "zh",
+      "published": "Thu, 10 Sep 2026 01:49:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE95UDNxc19ZVTFTVk5CV1VuNmhFM0dQck9URldRTTBJc1BYYUhQSXVLcmpFRWFUNEpBNDhpa1NTLTItTkxQZERfQURYei0yNUp4eGtVaGJBaG96RHRUcXd6T0FneW4?oc=5"
+    },
+    {
+      "title": "厦门举办词元出海算力服务对接会 24家产业链主体共启产业联盟 - 东南网",
+      "summary": "厦门举办词元出海算力服务对接会 24家产业链主体共启产业联盟 东南网",
+      "source": "东南网",
+      "lang": "zh",
+      "published": "Thu, 10 Sep 2026 01:12:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1JTmN5QkpPaWR6ZHZFY3RJRFJaS2FuMlRCQ3F4Y1ZTbG1EZEZpNUhtLVk0RjQxbXVsbnljRS1LSXJkYkJ1NDVxSmJaN29jS1lBV2xHQ2I5bEZBckJ4OW96Mg?oc=5"
+    },
+    {
+      "title": "蚂蚁韩歆毅：智能体供需两端尚未形成正循环 支付宝将推智能体激励政策 - 观点网",
+      "summary": "蚂蚁韩歆毅：智能体供需两端尚未形成正循环 支付宝将推智能体激励政策 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Thu, 10 Sep 2026 06:28:50 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9SMktQQ09vT3AwVUNteFhveUVvNjYtMnZPZk90aE54Ql9UaG5BbllacU55dzBrTlJ3S0lOdlRPY3JRZklBSFVfVXJFYVJDRGVPRVBjUlVLT1hjTlU0eFdhMkRB?oc=5"
+    },
+    {
+      "title": "商务部回应美国“AI蒸馏”指控：反对搞算力垄断、打压竞争 - 东方财富",
+      "summary": "商务部回应美国“AI蒸馏”指控：反对搞算力垄断、打压竞争 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Thu, 10 Sep 2026 06:33:06 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5qcVd6LTF3NW1xeUFMX2NRQnFmVC11YzJrQWZtUDItSnNrb0FpUUF0SUpPMEFuSUp5RWdtUS1kM2R3T3pVMzU0TDg1M2Y2RWw4NG82SlpLa2Nxa0xtSlFGRHpCWVdnQQ?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "A collection of MCP servers.",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 94721,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 71168,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57501,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 42812,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "Playwright MCP server",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 36946,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 389331,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "An agentic skills framework & software development methodology that works.",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 284224,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "The agent that grows with you",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 243973,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
