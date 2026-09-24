@@ -1,0 +1,296 @@
+{
+  "date": "2026-09-24",
+  "generated_at": "2026-09-24T07:56:26.176622+00:00",
+  "paper_count": 0,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [],
+  "news": [
+    {
+      "title": "DeepSeek最新智能体论文：梁文锋署名 - 科学网—新闻",
+      "summary": "DeepSeek最新智能体论文：梁文锋署名 科学网—新闻",
+      "source": "科学网—新闻",
+      "lang": "zh",
+      "published": "Thu, 24 Sep 2026 02:25:03 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9lUkc2U3BkTjVQWHZUN3pSeGlHY3FkajBxNG95cGliQkhxVWhHSzIwb1RMSE1iWG1XNFprWUpZek94LUZTTUhZQXF2bzhoOEVyWWlJUnBycmEtcEx0MS1TRmdJX2Y?oc=5"
+    },
+    {
+      "title": "不只规模扩容 我国算力产业迎来绿色、协同、全链条升级 - 21财经",
+      "summary": "不只规模扩容 我国算力产业迎来绿色、协同、全链条升级 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Thu, 24 Sep 2026 06:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOaDQ0RW1TNHFkWnZlZHdjTjlqdFJ5WG84anEwc2xpaWN4MUxmVVRwS1BfRGhxVmFpQzMwZFdEVm1oNlRkNUEtQzBrbnN4bEhOUm41alhlNm5VZXNpMEw2ZlZUVGVpbXJnMlB6SUZJbkQ1eVZieGFnalU4UTVHeFNaOVZLemtUc2RwdGM2bU1hdw?oc=5"
+    },
+    {
+      "title": "OpenAI智能体入侵澳洲政府网站窃取资料 官方两月后才发觉 - BBC",
+      "summary": "OpenAI智能体入侵澳洲政府网站窃取资料 官方两月后才发觉 BBC",
+      "source": "BBC",
+      "lang": "zh",
+      "published": "Thu, 24 Sep 2026 06:56:11 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBjcm56dnk4ZkNjUzExUkFyenl6aGV0MnlIQ194ZUJ5bTFhNkVBSlE5bkFmdWVrNmhUbFlXNWtrVHZNRUxQQV9PeU41M2wxcTRUTzc2d3AxaGl6UDZheTFURWVDV1ZfME3SAWxBVV95cUxPRTRWeWZaQ1poNzU5cnVILW5oR1F0ZVZuWmQxRW1yQklXYjVSNm5vQW5VMmlVNVAxMG81Q3ZEU3ZNR3FabXBwNkFuc3BfQVdaQzNJWVdxeWdKbEhrbFlwTkdKc2E5QUlNOGhseGo?oc=5"
+    },
+    {
+      "title": "谷歌据悉即将发布旗舰AI模型Gemini 4 - 东方财富",
+      "summary": "谷歌据悉即将发布旗舰AI模型Gemini 4 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Thu, 24 Sep 2026 02:48:25 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9ib2R4VGVEMm1ZOGgzaHBZVjE4cHdXQ1o3b2YxdWl3M0ktaFRtQTgwYWR6MDVNcFB6Tkc4NnBLakp2TFFSa0g4V0pLaWJzQnlwdFpvY3NuRTNzcmRnS2Q5d1JYYlctZw?oc=5"
+    },
+    {
+      "title": "智能算力、先进存力，齐头并进（未来5年信息通信新图景②） - 人民网",
+      "summary": "智能算力、先进存力，齐头并进（未来5年信息通信新图景②） 人民网",
+      "source": "人民网",
+      "lang": "zh",
+      "published": "Thu, 24 Sep 2026 00:55:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE52WDI0VGl1Q3BVVGMtT0V4NndTbnc2aWxRd3N1TlMyUWxfbldRcEM5QnRkdUU2cmZpSzNhX2ZsTG4tdmp3ZVRNQTVxN3kzdGdreGFINUlmVFNxcFJQVHNNc2IyWFphbkZvUWc?oc=5"
+    },
+    {
+      "title": "AMD市值首破万亿美元！Meta智能体热潮点燃CPU行情 - 财联社",
+      "summary": "AMD市值首破万亿美元！Meta智能体热潮点燃CPU行情 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Thu, 24 Sep 2026 00:25:10 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1Tel9pZ25jLWo3aG54MUFMUUs5Nldfc3FfSHVtSUdfYm1zQ3Z5SHlQWnRlN3VLOWdWQVVTN1FsMnc5R3BjT2hrWA?oc=5"
+    },
+    {
+      "title": "AI赋能“智”造 工业AI大模型给出产线难题新解法 - 光明网",
+      "summary": "AI赋能“智”造 工业AI大模型给出产线难题新解法 光明网",
+      "source": "光明网",
+      "lang": "zh",
+      "published": "Thu, 24 Sep 2026 06:37:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBhV2NaeW05dEJyWXpaYU9ya1dTZVdJVXFXMm1CQTBTQjJQNHRpZlJJd28wUUhrblpzclQ5UGp1a19SdnBrN2lMY3RzUWVkZWk2ekd5S0wxY0RaZ3V5VjZycXc5UWZWLTQ?oc=5"
+    },
+    {
+      "title": "智能体能力持续升级 多场景落地应用提速 互联网大厂加大AI基础设施建设投入 - 央广网",
+      "summary": "智能体能力持续升级 多场景落地应用提速 互联网大厂加大AI基础设施建设投入 央广网",
+      "source": "央广网",
+      "lang": "zh",
+      "published": "Wed, 23 Sep 2026 12:01:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE00YnVuX3M0TGg4dHZjS0oyc0lFR1UyMVQtdjZ5M3FMZm4tM3BQOFdwVkxtZmRPQ211VWxrRU8zRzJ2NHhJWDIwUHhOVElWdUdnZ1VuTFkwa2w1ZUt6dDRQZHh6ZklYTk1wTDR2V0Q0a2UyYTQ?oc=5"
+    },
+    {
+      "title": "智能体标识与身份网络暨智能体可信互联中心（厦门）正式启动试运行 - 中国网",
+      "summary": "智能体标识与身份网络暨智能体可信互联中心（厦门）正式启动试运行 中国网",
+      "source": "中国网",
+      "lang": "zh",
+      "published": "Thu, 24 Sep 2026 07:44:31 GMT",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1XbFQ2c3V5eWJpSjVVMEQtYUFzTVVsQ2hoRDV5aDBibDhoMC0yeWtIZ0dWenBjcWJydFRlMnI0SDlQSnllUmNuMl8tTlBUOUNETGlDb2JBaDNSY1V2TnZoOVp2ZnFoWk03M0dZdWppTQ?oc=5"
+    },
+    {
+      "title": "央视专访马斯克，谈中国算力和芯片 - 电子工程专辑",
+      "summary": "央视专访马斯克，谈中国算力和芯片 电子工程专辑",
+      "source": "电子工程专辑",
+      "lang": "zh",
+      "published": "Thu, 24 Sep 2026 02:46:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9pS3poSkZMVVBxWlFzaUN0Z0hBUnhJTl84bVNPOW81cWtuSmNIR0NfcllMcDZLeG8wWEp5XzFBRjdYNkE2RW15azhiVzd1dnVqcEpJ?oc=5"
+    },
+    {
+      "title": "小推车上路，大模型突围，续航破纪录——三位产业先锋走进中国人民大学 - 人大新闻网",
+      "summary": "小推车上路，大模型突围，续航破纪录——三位产业先锋走进中国人民大学 人大新闻网",
+      "source": "人大新闻网",
+      "lang": "zh",
+      "published": "Thu, 24 Sep 2026 04:33:47 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBNbnRpa3FESkt6eDJ2QkprQUhLSFBuckNfR2lyNlF1TXhVcGlTQW1FRUNWdjUzNmN1RURDVldDV29nWkVDVnRxM3ZXTG5YTW5SZV84dlItdHY0UHdS?oc=5"
+    },
+    {
+      "title": "GPT-6 猛砍价，Opus 5.5 忙“变好用”：模型价格战，已经不能只看 API 定价 - InfoQ-CN",
+      "summary": "GPT-6 猛砍价，Opus 5.5 忙“变好用”：模型价格战，已经不能只看 API 定价 InfoQ-CN",
+      "source": "InfoQ-CN",
+      "lang": "zh",
+      "published": "Thu, 24 Sep 2026 05:50:48 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE02WF9ZYkN6MzcwOXdKTTBBanZwQ05KaVgwZHRmSkJRS2RJR2lwaGhhMDVXV1M0NnhqYnQ4SkFiUHBXcUtZUHlnM255SjFXWVlIWnJGMmZuS2tCdw?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 95475,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 73672,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57526,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 44718,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 37529,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 390364,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 290886,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 248520,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
