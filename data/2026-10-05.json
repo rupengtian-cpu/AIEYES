@@ -1,0 +1,507 @@
+{
+  "date": "2026-10-05",
+  "generated_at": "2026-10-05T09:47:47.478394+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "MoSE3: Learning World-Space SE(3) at Every Pixel",
+      "title_zh": "MoSE3：在每个像素处学习世界空间 SE(3)",
+      "summary": "Dense 3D point tracking has been a prominent paradigm for modeling motion in dynamic scenes, but a point track is just a 3-DoF translation curve per pixel: it captures where pixels go, not the rotation of the underlying part, nor which pixels move together as one body. We propose MoSE3, the first feed-forward model that predicts dense SE(3) motion from mono…",
+      "summary_zh": "密集 3D 点跟踪一直是动态场景中运动建模的重要范例，但点跟踪只是每个像素的 3-DoF 平移曲线：它捕获像素的移动位置，而不是底层部分的旋转，也不是哪些像素作为一个整体一起移动。我们提出了 MoSE3，这是第一个前馈模型，可以从单目 RGB 视频中预测密集 SE(3) 运动，从而在世界空间中的每个像素上产生完整的 6-DoF 刚性变换。每像素 SE(3) 运动提供了更丰富的场景移动视图：同时旋转、平移和分组。直接预测 SE(3) 具有挑战性：旋转位于不适合欧几里德回归的弯曲流形上，并且 SE(3) 的注释特别难以获取。为了应对这些挑战，MoSE3 通过两个联合学习的中间体、3D 点轨迹和刚性嵌入来预测每像素 SE(3)，并通过在每个软刚性簇内进行可微分拟合变换来恢复 SE(3)，从而实现端到端预测和监督。为了缩小数据差距，我们引入了 Art-Ku…",
+      "authors": [
+        "Jiahuan Cheng",
+        "Zhiyi Li",
+        "Tian Xia",
+        "Ruojin Cai",
+        "Yilun Du",
+        "Qianqian Wang"
+      ],
+      "published": "2026-10-02T17:58:52Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.03716v1",
+      "abs_url": "https://arxiv.org/abs/2610.03716v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03716v1"
+    },
+    {
+      "title": "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes",
+      "title_zh": "4DCodeBench：动态场景逆向图形基准测试代理",
+      "summary": "We introduce 4DCodeBench, a benchmark for 4D inverse graphics through code generation, in which agents reconstruct dynamic scenes from video as executable graphics programs. To accomplish this, agents must translate visual observations into compact representations of scene structure and dynamics, by implementing abstractions such as physical simulations to…",
+      "summary_zh": "我们引入了 4DCodeBench，这是通过代码生成进行 4D 逆向图形的基准，其中代理将视频中的动态场景重建为可执行图形程序。为了实现这一目标，代理必须通过实现物理模拟等抽象来重现复杂的行为，将视觉观察转化为场景结构和动态的紧凑表示。为了评估这种能力，我们策划了一组真实世界的视频，并构建了涵盖变形、流体流动和断裂等多种物理现象的合成场景。我们对前沿模型进行了广泛的基准测试，发现强大的静态重建能力尚未转化为复杂动态的可靠重建。 4DCodeBench 提供了一个测试平台，用于跟踪可以通过代码解释世界动态的代理的进度。我们的基准测试可在 https://github.com/4DCodeBench/4DCodeBench 上找到",
+      "authors": [
+        "Ruihong Shen",
+        "Žiga Kovačič",
+        "Peter Kulits",
+        "Xingrui Wang",
+        "Zizhang Li",
+        "Joshua B. Tenenbaum"
+      ],
+      "published": "2026-10-02T17:58:49Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.03715v1",
+      "abs_url": "https://arxiv.org/abs/2610.03715v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03715v1"
+    },
+    {
+      "title": "What Should World Models Forget? Stratified Retention for Continual Adaptation",
+      "title_zh": "世界模特应该忘记什么？分层保留以持续适应",
+      "summary": "Continual learning treats degradation on previously seen data as evidence of failure, a convention inherited from settings with a stationary prediction target, where a correct label remains correct indefinitely. World models do not satisfy this condition. Their prediction target is the environment, which changes, so knowledge that was accurate when acquired…",
+      "summary_zh": "持续学习将先前看到的数据的退化视为失败的证据，这是从具有固定预测目标的设置继承的约定，其中正确的标签无限期地保持正确。世界模型不满足这个条件。他们的预测目标是环境，环境会发生变化，因此获得时正确的知识后来可能会变得错误，而丢弃它是必需的行为而不是缺陷。非平稳基本事实在概念漂移文献和语言模型的时间事实性中得到了很好的研究，但还没有为世界模型制定，其独特之处在于它们还编码永远不能修改的知识。我们认为，连续世界模型需要按不变性时间尺度分层保留，将永远不能修改的物理和对象持久性等不变性与环境变化后应立即修改的实例级事实分开。标准的遗忘指标无法区分正确修改过时知识的世界模型和遭受灾难性遗忘的世界模型，因此将冻结模型排名最高，而现有的物理推理基准仅评估冻结的检查点。我们提出了差异保留，它报告了整个适应流的不变回归测试以及修订延迟，而不需要聚合。",
+      "authors": [
+        "Nishit Anand",
+        "Ramani Duraiswami",
+        "Dinesh Manocha"
+      ],
+      "published": "2026-10-02T17:58:14Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.03713v1",
+      "abs_url": "https://arxiv.org/abs/2610.03713v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03713v1"
+    },
+    {
+      "title": "RNADyn: A Benchmark for Generating and Understanding RNA Dynamics",
+      "title_zh": "RNADyn：生成和理解 RNA 动力学的基准",
+      "summary": "Ribonucleic acid (RNA) functions through conformational changes that are not fully captured by static structures. However, large-scale standardized RNA dynamics data remain limited, and existing approaches typically treat trajectory generation and dynamics understanding as separate objectives. Here, we introduce RNADynBench, a standardized RNA molecular dyn…",
+      "summary_zh": "核糖核酸 (RNA) 通过构象变化发挥作用，而静态结构无法完全捕获这些变化。然而，大规模标准化 RNA 动力学数据仍然有限，现有方法通常将轨迹生成和动力学理解视为单独的目标。在这里，我们介绍 RNADynBench，这是一种标准化的 RNA 分子动力学 (MD) 基准，具有 2585 个质量控制的 100 纳秒全原子轨迹和泄漏控制的分裂。在 RNADynBench 的基础上，我们开发了 RNADynNet，这是一种用于 RNA 动力学学习的统一模型，它使用共享主干从单个构象异构体中进行轨迹生成和动态指纹提取。它结合了坐标去噪、单帧到轨迹对齐和物理基础，将全原子轨迹生成与动态表示学习连接起来。物理接地改善了生成的动态以及可从这些指纹中恢复的物理信息。在两个测试集（包括高灵活性挑战集）中，生成的轨迹实现了 0.875 和 0.766 的 RMSF 相关…",
+      "authors": [
+        "Yiming Huang",
+        "Lennart Bastian",
+        "Hanqun Cao",
+        "Luis Vollmers",
+        "Tolga Birdal"
+      ],
+      "published": "2026-10-02T17:58:08Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.03712v1",
+      "abs_url": "https://arxiv.org/abs/2610.03712v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03712v1"
+    },
+    {
+      "title": "From Mixing to Tearing: Graph Decomposition in Decentralized Optimization via Message Passing",
+      "title_zh": "从混合到撕裂：通过消息传递进行去中心化优化中的图分解",
+      "summary": "We study the minimization of sums of smooth strongly convex functions over undirected graphs, with each function held by one agent and communication restricted to neighbors in the graph. Existing decentralized methods, whether based on gossip or on routing over spanning trees, typically use the network to mix or aggregate information to enable {\\it prescrib…",
+      "summary_zh": "我们研究无向图上平滑强凸函数之和的最小化，每个函数由一个代理持有，并且通信仅限于图中的邻居。现有的去中心化方法，无论是基于八卦还是基于生成树路由，通常都使用网络来混合或聚合信息以实现本地优化更新。这种以通信为中心的观点缺乏的是一个通用框架，该框架使用图结构来{\\联合}设计优化子问题以及智能体通过协作计算和通信来协作解决它们。我们从第一原理出发开发这样的框架，共同设计协议约束的线性表示、所得双变量的块（联合优化）以及协作解决指定子图上的每个块子问题的连接的代理集群。 GATE（图撕裂消息传递）是该框架的第一个实例：每个边和树块一个变量。在每次迭代中，代理通过最小化两个端点成本消息的总和并放宽结果来更新其分配的边缘变量。消息通过树递归后的局部最小化进行更新。为了减少每次迭代的计算和通信成本，我们开发了 GATE-S，这是一种使用易处理的本地模型和轻量级…",
+      "authors": [
+        "Kuangyu Ding",
+        "Gesualdo Scutari"
+      ],
+      "published": "2026-10-02T17:57:50Z",
+      "category": "math.OC",
+      "arxiv_id": "2610.03709v1",
+      "abs_url": "https://arxiv.org/abs/2610.03709v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03709v1"
+    },
+    {
+      "title": "LESSER: Post-Training Data Selection with Output-Layer Gradients",
+      "title_zh": "LESSER：使用输出层梯度进行训练后数据选择",
+      "summary": "The choice of post-training data for large language models substantially affects downstream performance. Gradient-based data selection is a popular approach that ranks training data by how well their gradients align with those of a small validation set. However, ranking with full-parameter gradients requires an expensive backward pass on every sample, makin…",
+      "summary_zh": "大型语言模型的训练后数据的选择会极大地影响下游性能。基于梯度的数据选择是一种流行的方法，它根据训练数据的梯度与小型验证集的梯度对齐程度对训练数据进行排名。然而，使用全参数梯度进行排名需要对每个样本进行昂贵的后向传递，这使得大型候选池的计算变得困难。这就提出了一个自然的问题：我们能否以一小部分成本来近似全梯度特征？方便的是，我们发现输出层梯度足以进行有效的数据选择，但只需要更便宜的前向传递。我们将其实现为 LESSER，这是一种选择方法的嵌入式包装器，可将 SFT 的特征提取 FLOP 成本降低 9.7 美元，将 RL 基准降低 3.0 美元，同时跟踪下游任务的全梯度性能。根据经验，我们发现即使输出层和全梯度对各个样本进行不同的排名，它们也会选择具有对齐梯度的批次。",
+      "authors": [
+        "Lyuxin David Zhang",
+        "Eric Wong",
+        "Surbhi Goel",
+        "Anton Xue"
+      ],
+      "published": "2026-10-02T17:55:42Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.03702v1",
+      "abs_url": "https://arxiv.org/abs/2610.03702v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03702v1"
+    },
+    {
+      "title": "Language Models that Play Chess and Explain Their Moves",
+      "title_zh": "下棋并解释其走法的语言模型",
+      "summary": "Modern chess engines are silent experts: they play at a superhuman level, but do not offer explanations for their play. On the other hand, language models (LMs) can generate plausible-sounding explanations, but their weak playing strength limits the utility of their explanations. We introduce Queen, a 4B-parameter chess-language model that can explain its m…",
+      "summary_zh": "现代国际象棋引擎是沉默的专家：它们以超人的水平下棋，但不提供其下棋的解释。另一方面，语言模型（LM）可以生成听起来合理的解释，但其较弱的发挥能力限制了其解释的实用性。我们介绍 Queen，一个 4B 参数国际象棋语言模型，可以在典型大师水平下棋时解释其走法和计划。我们的新颖框架通过互补组件实现特定领域的推理：编码器-解码器架构和迭代蒸馏算法。该架构通过交叉注意力将静默专家国际象棋编码器与指令调整的 LM 集成在一起，我们通过问答课程对其进行训练，以从编码器的表示中提取国际象棋概念。在此领域适应模型的基础上，我们通过贝尔曼更新的自然语言模拟来迭代改进其解释：模型分析其最佳候选移动后的位置，并将它们合并为当前位置的解释，然后将其提炼回模型中。经过七次迭代，我们的模型获得了超过 900 个 Elo 点（1782 到 2697），尽管参数少了三个数量级，但…",
+      "authors": [
+        "Adithya Bhaskar",
+        "Jeffrey Cheng",
+        "Danqi Chen"
+      ],
+      "published": "2026-10-02T17:54:22Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.03695v1",
+      "abs_url": "https://arxiv.org/abs/2610.03695v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03695v1"
+    },
+    {
+      "title": "Transcriptome-informed multi-modal AI for predicting neoadjuvant therapy response from breast cancer biopsies",
+      "title_zh": "基于转录组的多模式 AI 用于预测乳腺癌活检的新辅助治疗反应",
+      "summary": "Scarcity of labeled data limits development of deep learning biomarkers in oncology. We develop a two-stage AI model predicting pathological complete response (pCR) to neoadjuvant therapy in breast cancer. The first stage learns the transcriptome from histopathology using 8,742 patients across 32 cancer types, corroborated by pathologist review and spatial…",
+      "summary_zh": "标记数据的稀缺限制了肿瘤学中深度学习生物标志物的发展。我们开发了一个两阶段 AI 模型，预测乳腺癌新辅助治疗的病理完全缓解 (pCR)。第一阶段使用 32 种癌症类型的 8,742 名患者从组织病理学中了解转录组，并通过病理学家审查和与测量表达的空间一致性得到证实。这简化了第二阶段，即根据推断的表达和临床变量预测 pCR。该模型使用 1,080 名患者（五个队列）开发并在 1,412 名患者（九个队列）中进行评估，其汇总 AUROC 为 0.79（95% CI，0.73-0.85），可区分分子亚型内的反应者。它优于组织病理学生物标志物，在肿瘤内取样和最少的活检组织中保持稳定。消融显示，全转录组推断提高了对单独临床变量或一阶段病理模型的辨别力，并通过避免基因组测定的基因选择限制而提高了鲁棒性。这些结果表明，生物学信息压缩可以推广到精准肿瘤学中的数据稀…",
+      "authors": [
+        "Jungkyu Park",
+        "Dhruva Biswas",
+        "Joseph Cappadona",
+        "Cerise Tang",
+        "Ken G. Zeng",
+        "Bartosz Machura"
+      ],
+      "published": "2026-10-02T17:52:57Z",
+      "category": "cs.AI",
+      "arxiv_id": "2610.03693v1",
+      "abs_url": "https://arxiv.org/abs/2610.03693v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03693v1"
+    },
+    {
+      "title": "FlowHMR: Physically Plausible Motion Capture from Video",
+      "title_zh": "FlowHMR：从视频中捕捉物理上合理的动作",
+      "summary": "We present FlowHMR, a framework for recovering physically plausible global 3D human motion from monocular video. Previous learning-based methods typically regress human motion directly from video and train the network with geometric supervision. However, recovering human motion from monocular video is inherently ambiguous in depth, and direct regression ten…",
+      "summary_zh": "我们提出了 FlowHMR，一个用于从单目视频中恢复物理上合理的全局 3D 人体运动的框架。以前基于学习的方法通常直接从视频中回归人体运动，并通过几何监督来训练网络。然而，从单目视频中恢复人体运动在深度上本质上是不明确的，直接回归往往会崩溃到平均解。此外，恢复的运动不能保证在物理上合理，因此基于物理的跟踪通常会失败。为了解决这些挑战，我们将视频运动捕捉制定为视频条件运动生成问题，并首先为此任务预训练流匹配模型。给定输入视频，预训练模型会生成不同的运动候选者，但并非所有运动候选者都忠实于视频或物理上可跟踪。因此，我们使用组相对策略优化（GRPO）对模型进行后训练，并提供两个奖励。保真度奖励鼓励与输入视频的一致性。跟踪奖励有利于基于物理的控制器可以成功跟踪的运动。这些奖励共同改变了模型的输出偏好，因此训练后的模型保持忠实于输入视频，同时产生更物理上合理…",
+      "authors": [
+        "Zhanke Wang",
+        "Chengfeng Zhao",
+        "Qing Shuai",
+        "Jingzhong Lin",
+        "Heng Li",
+        "Zeyu Ling"
+      ],
+      "published": "2026-10-02T17:52:48Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.03691v1",
+      "abs_url": "https://arxiv.org/abs/2610.03691v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03691v1"
+    },
+    {
+      "title": "SigLIP2 for aerial fire risk classification",
+      "title_zh": "用于空中火灾风险分类的 SigLIP2",
+      "summary": "We examine the transfer of a pretrained SigLIP2 image encoder to seven class fire risk classification from aerial imagery. We introduce a reproducible partition of the public FireRisk training mirror and an implementation that records data provenance, preprocessing and model selection. Two initial runs compare a frozen encoder probe with full model adaptati…",
+      "summary_zh": "我们研究了将预训练的 SigLIP2 图像编码器转移到航空图像的七类火灾风险分类。我们引入了公共 FireRisk 训练镜像的可重复分区以及记录数据来源、预处理和模型选择的实现。两次初始运行将冻结编码器探针与完整模型自适应进行比较。在验证分区上，完全适应的准确度达到 63.05%，宏 F1 达到 58.94%，而探针的准确度为 55.95% 和 50.19%。两次运行都使用一个训练种子并在同一验证分区上选择其检查点。这些开发结果支持对 SigLIP2 的进一步评估，但并未在独立测试集或未见过的区域上建立性能。随附的代码提供了一个通用框架，用于重复实验以及与其他视觉编码器的比较。",
+      "authors": [
+        "Yunus Serhat Bıçakçı"
+      ],
+      "published": "2026-10-02T17:52:34Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.03689v1",
+      "abs_url": "https://arxiv.org/abs/2610.03689v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03689v1"
+    },
+    {
+      "title": "Simulation-Free Learning of Population Dynamics with Wasserstein Lagrangian Residuals",
+      "title_zh": "使用 Wasserstein 拉格朗日残差进行群体动态的无仿真学习",
+      "summary": "The dynamics of cells, organisms, and fluids are often modeled as probability distributions evolving over time. Reconstructing and extrapolating this evolution from unpaired snapshots requires assumptions about the underlying process. Wasserstein gradient flows are a common choice, but they cannot describe conservative or periodic dynamics. Lagrangian mecha…",
+      "summary_zh": "细胞、生物体和流体的动力学通常被建模为随时间变化的概率分布。从不成对的快照重建和推断这种演变需要对底层过程进行假设。 Wasserstein 梯度流是常见的选择，但它们无法描述保守或周期性动态。 Wasserstein 空间中的拉格朗日力学涵盖了两者，但现有的学习方法是基于模拟的：它们在每个训练步骤中运行数值求解器，这使得训练成本高昂。我们提出了 Double-Stitch，这是一种无需模拟的方法，通过沿着学习的总体路径惩罚运动方程的残差来学习这些力学。我们从不需要梯度速度的 Clebsch 变分原理推导出这个方程，并表明当方程成立时，残差恰好消失。我们在合成、单细胞和海洋涡流数据集上测试了 Double-Stitch，发现它在大多数任务上匹配或优于梯度流方法和基于模拟的 WLM，同时训练速度比 WLM 快 4-14 倍。我们在 https://g…",
+      "authors": [
+        "Fedor Sergeev",
+        "Markus Heinonen",
+        "Daniel Waxman",
+        "Tim Cooijmans",
+        "Ricardo Baptista",
+        "Dmitry Batenkov"
+      ],
+      "published": "2026-10-02T17:46:52Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.03679v1",
+      "abs_url": "https://arxiv.org/abs/2610.03679v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03679v1"
+    },
+    {
+      "title": "FrugalEvo: Towards Cost-Aware LLM-Guided Program Evolution",
+      "title_zh": "FrugalEvo：迈向具有成本意识的法学硕士指导项目发展",
+      "summary": "LLM-guided evolutionary methods, such as AlphaEvolve, have emerged as powerful approaches for challenging computational optimization problems, such as circle packing. However, prior work typically optimizes performance gain over a fixed number of iterations. We argue that practical optimization should maximize gain per unit cost. To this end, we propose Fru…",
+      "summary_zh": "LLM 引导的进化方法（例如 AlphaEvolve）已成为解决循环堆积等计算优化问题的强大方法。然而，先前的工作通常会在固定次数的迭代中优化性能增益。我们认为，实际优化应该最大化每单位成本的收益。为此，我们提出了 FrugalEvo，这是一个成本感知的进化框架，其中更强大、成本更高的 LLM 探索解决方案策略，而更便宜的 LLM 则实现这些策略并迭代地完善生成的代码。我们还设计了一个高效缓存的演化过程，其中我们的利用和提示最大限度地跨不同演化步骤共享前缀，以提高缓存重用。为了衡量整个固定成本预算的解决方案质量，我们引入了预算感知曲线下面积 (BA-AUC)，定义为迄今为止最佳评估分数曲线下相对于累积 LLM 成本（直至预算）的面积。在 10 项数学和系统优化任务中，FrugalEvo 在最终解决方案质量方面匹配或超越了最先进的基线，包括 Open…",
+      "authors": [
+        "Hui Chen",
+        "Xuan Qi",
+        "James Xu Zhao",
+        "Zhaopeng Feng",
+        "Shilong Liu",
+        "Kuang Xu"
+      ],
+      "published": "2026-10-02T17:44:05Z",
+      "category": "cs.NE",
+      "arxiv_id": "2610.03675v1",
+      "abs_url": "https://arxiv.org/abs/2610.03675v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03675v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "‍⁤​‌‍⁢⁡⁢⁣‌‌﻿⁡⁡​⁤​​﻿⁢⁡⁡​‍⁣​​﻿⁤⁡‍​⁡‌⁣⁡⁣​⁡⁤刚刚，GPT-6 新模型掀桌！「白菜价」杀进DeepSeek 腹地 - ifanr.com",
+      "summary": "‍⁤​‌‍⁢⁡⁢⁣‌‌﻿⁡⁡​⁤​​﻿⁢⁡⁡​‍⁣​​﻿⁤⁡‍​⁡‌⁣⁡⁣​⁡⁤刚刚，GPT-6 新模型掀桌！「白菜价」杀进DeepSeek 腹地 ifanr.com",
+      "source": "ifanr.com",
+      "lang": "zh",
+      "published": "Sun, 04 Oct 2026 19:37:33 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5fM3FfRk5xZzFsQlBGTUtLcTU5eTJZT05Bck9pWk5vV3JCZ21OZWJjdTRDbi1HcUVxWTV3cUFHSFZTQ2s?oc=5"
+    },
+    {
+      "title": "突发，谷歌关停大批免费Gemini模型！ - 智源社区",
+      "summary": "突发，谷歌关停大批免费Gemini模型！ 智源社区",
+      "source": "智源社区",
+      "lang": "zh",
+      "published": "Mon, 05 Oct 2026 08:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE50bVh1R3dIQU1DS3pxMmtKNi11ZkpWeV80V0ozdmtKSXNVdnZNNTAwQUN3N3V0b3VlSkVrNDlBYV9GaXJTcEVQMg?oc=5"
+    },
+    {
+      "title": "全球大模型第一股，大涨 - 财联社",
+      "summary": "全球大模型第一股，大涨 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Mon, 05 Oct 2026 03:59:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9zQjEyNGZUWG53blk5MHM4NUZMOS1ZUkJza3k5TFA4SVhwWlAzcDNGQUpHOUE5NEFoRjNnNVN2TjBHNnRJVWl2VA?oc=5"
+    },
+    {
+      "title": "AI算力硬件，全线爆发！PCB板块领涨 - 搜狐网",
+      "summary": "AI算力硬件，全线爆发！PCB板块领涨 搜狐网",
+      "source": "搜狐网",
+      "lang": "zh",
+      "published": "Mon, 05 Oct 2026 09:05:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeFE4eDhVaWVNVzJxTm5lYzZRQmdQek1WNHJpUWJfS0hGQ0NzX3BPQnhyNFBYb2JrSHY4ckhoU3RBMzdra0lGX29CYjItMXZPSGFlOXhLVVhPNXQ5eGl2OWtzRWZXMWVHOWlQZ1BCRThxcEdMckJrd2xhM3ZIVnJKVWRNTmZBVWplc0lEczNhbw?oc=5"
+    },
+    {
+      "title": "美国等17国支持《京都愿景》：扩大科研AI与算力使用，推动科研资助改革 - finance.sina.com.cn",
+      "summary": "美国等17国支持《京都愿景》：扩大科研AI与算力使用，推动科研资助改革 finance.sina.com.cn",
+      "source": "finance.sina.com.cn",
+      "lang": "zh",
+      "published": "Mon, 05 Oct 2026 07:19:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWmZFdW81aGVubmRjeVdIMTZyRHZDUjFDLWxhdnlFcV92T3dyRmh6aVVLWlFFT2dxMWszWFEySVhhMDAwVUs2ODl2TU9PVDZiYUczb2RDZkY0RmhVXzRaWFkyb2pnMGEzVWpyTFJTNktrQ3BWaG5qeHpDemtfOEk5WUxPQ1QwWVE?oc=5"
+    },
+    {
+      "title": "你的Mac跑大模型时，到底在吃谁的内存？ - techwalker.com",
+      "summary": "你的Mac跑大模型时，到底在吃谁的内存？ techwalker.com",
+      "source": "techwalker.com",
+      "lang": "zh",
+      "published": "Mon, 05 Oct 2026 05:28:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBpbWEtSmRySlJfajRnc2tLZUIzVFMxRDY3NDFFVUJSRE5mcnlDZ1c0RGNubEE0dmxQZVpzSXI4c3BiNU9XQjIycEJBQnNlTEI1MUVHQTF6dzQ5eUd4OThR?oc=5"
+    },
+    {
+      "title": "《海东市新质生产力引领数字海东发展“十五五”规划》出台打造服务全省、辐射全国的“算力绿洲”-政务公开 - qinghai.gov.cn",
+      "summary": "《海东市新质生产力引领数字海东发展“十五五”规划》出台打造服务全省、辐射全国的“算力绿洲”-政务公开 qinghai.gov.cn",
+      "source": "qinghai.gov.cn",
+      "lang": "zh",
+      "published": "Sun, 04 Oct 2026 22:54:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1RWDI2SkJSUW92UWVtRWJzQXlzY2Exb2Zoc0czak1CZWlITE9LLWR3SnBUaEpnZkJ1YVV3Q0F5b3pMd1lHTnVWSXdublZ2RmhCYzlYSUl5YkNqZ1MtOWxLc0xwVWhlRG5jdGtWdExsVGViQQ?oc=5"
+    },
+    {
+      "title": "Googlebook正式开售：联想集团等厂商进入首发阵容智能体PC赛道加速升温_公司新闻_财经 - 证券之星",
+      "summary": "Googlebook正式开售：联想集团等厂商进入首发阵容智能体PC赛道加速升温_公司新闻_财经 证券之星",
+      "source": "证券之星",
+      "lang": "zh",
+      "published": "Mon, 05 Oct 2026 08:18:35 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkM1hKWEZFRmtRcGdORlJsVW82bkNCcm83WTJ0bFlRbk1iQ0RjMGY3ZENUSmhybEwtM2xzUV80RnNQT3RFQ0NuLThLbVdiY05qSUhHZldKSVpSdjc0b0xtVQ?oc=5"
+    },
+    {
+      "title": "7万亿大盘展开，南方电网起笔“六网协同” - 21jingji.com",
+      "summary": "7万亿大盘展开，南方电网起笔“六网协同” 21jingji.com",
+      "source": "21jingji.com",
+      "lang": "zh",
+      "published": "Mon, 05 Oct 2026 05:11:09 GMT",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSjh5RUl2cjdpUEF5VXU2OGRjem9ORXhySkFBeUZ2WnpWOURiUTEwVks1OXNCMWcwcElsa1RvbWowcFJwUE0wN0lQT2VMRHlwM0pLTmVqaTNoQXJOaTN3R1FGSWxkM2FtdHBUeFdsc0JENEJQZVQyYkJidGJNWmtBSkViSjJjVldEUXNselhuTm1LbzhD?oc=5"
+    },
+    {
+      "title": "OpenAI ChatGPT 负责人：手写 Loop 的时代将终结，智能体正接管互联网-AI应用 - 至顶网",
+      "summary": "OpenAI ChatGPT 负责人：手写 Loop 的时代将终结，智能体正接管互联网-AI应用 至顶网",
+      "source": "至顶网",
+      "lang": "zh",
+      "published": "Mon, 05 Oct 2026 08:37:05 GMT",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5yaVpwdE8xUGwyU1lZSVJLbjRpYk5ubHJnZnBIWHFHdWMxY1pPTmxfWGlNM3haLUJmTVRFWHdlUmZhRUJRVVJvNVBHcmJUc3p0ejlCUFBMeWEwLWtWUDF3TGRFS0ZzcHQwTDRDSi12Yw?oc=5"
+    },
+    {
+      "title": "腾讯70亿美元租甲骨文的算力， 是一步险棋 - 虎嗅网",
+      "summary": "腾讯70亿美元租甲骨文的算力， 是一步险棋 虎嗅网",
+      "source": "虎嗅网",
+      "lang": "zh",
+      "published": "Mon, 05 Oct 2026 08:20:38 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9iT09BeE1Oa1Jra2FCd0FLdTJiOWNEVDcybUtyWi0ta1h3U3l6QVIyZm4yR2ZEMXFlV05FRktDNmwxbUd6eklFcnpTWFpvVGZkUmJqRllEUU9zeDlUcktZ?oc=5"
+    },
+    {
+      "title": "何恺明团队新作：给大模型加上“视觉记忆”，AGI基准测试从40分升到100分 - 新浪财经",
+      "summary": "何恺明团队新作：给大模型加上“视觉记忆”，AGI基准测试从40分升到100分 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Mon, 05 Oct 2026 09:25:46 GMT",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQM1lPLXhidlM0X1pUZm5LX28xSWZBNUhQZlRua0YxN28yMzBXS1VDbnRKdnhXUlY4S3VocVltOVhlTkFYRlZrWlh4bXl5ZVFsR204TDJQRnJ2andGV3IzS1BQRkxLRWd3T1JJZ3dCcExDc1A3bk5YaWVFSWtocHNKakQ4NUx5d0NSWjFMem5RUjVPRnV0eWZXSFRPVzRxaUxUcXVQOGJmWQ?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 95832,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 74439,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57556,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 45802,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 37827,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 391410,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 295419,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 251289,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
