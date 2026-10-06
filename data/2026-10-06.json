@@ -1,0 +1,511 @@
+{
+  "date": "2026-10-06",
+  "generated_at": "2026-10-06T09:35:34.790226+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "One Figure, Every Canvas: Editable Flowchart Relayout via Agentic Pipeline",
+      "title_zh": "一张图，每一张画布：通过 Agentic Pipeline 进行可编辑流程图重新布局",
+      "summary": "Pipeline figures in ML papers must be repurposed across many canvases, including paper columns, 16:9 slides, portrait posters, 1:1 social teasers, 9:16 phone previews. Each format imposes a different aspect ratio on the same computational graph, where any silently broken connection misrepresents the method. We formulate aspect-ratio-adaptive flowchart relay…",
+      "summary_zh": "ML 论文中的管道图必须在许多画布上重新利用，包括论文专栏、16:9 幻灯片、肖像海报、1:1 社交预告片、9:16 手机预览。每种格式在同一计算图上施加不同的纵横比，其中任何无声地断开的连接都会歪曲该方法。我们将纵横比自适应流程图重新布局制定为一项独特的任务：给定光栅流程图和目标比率，产生结构忠实、无幻觉、可编辑的布局。现有方法的失败特征是：图像到图像模型拉伸块并拒绝极端比例，文本到图像代理系统产生幻觉内容，解析然后渲染系统错误路由边缘。我们提出了一个分解为解析、样式和布局阶段的代理管道，每个阶段将一个主代理与一个评论家配对，将确定性约束检查与 VLM 视觉反馈相结合，以便显式检查连接性并防止被悄悄破坏。输出是draw.io-可编辑的mxGraph XML。在由 Gemini 3.1 Pro 评估并根据人类判断进行验证的 100 个流程图、五个长…",
+      "authors": [
+        "Shih-Chen Tseng",
+        "Chih-Hsuan Chen",
+        "Ryan Yang",
+        "Hsi-An Chen",
+        "Chun-Wei Tuan Mu",
+        "Yu-Lun Liu"
+      ],
+      "published": "2026-10-05T17:59:54Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.06852v1",
+      "abs_url": "https://arxiv.org/abs/2610.06852v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06852v1"
+    },
+    {
+      "title": "InterMimicGen: Scaling Humanoid Loco-Manipulation through Self-Evolving Motion Imitation",
+      "title_zh": "InterMimicGen：通过自我进化运动模仿扩展人形机器人操控",
+      "summary": "Captured human-object interactions provide rich supervision for humanoid loco-manipulation, but they are sparse, heterogeneous, and not directly executable by robots. We introduce InterMimicGen, a self-evolving motion-imitation framework in which robot motion data and a tracking policy improve each other. First, we consolidate motion-captured human-object i…",
+      "summary_zh": "捕获的人与物体的交互为人形机器人操作提供了丰富的监督，但它们是稀疏的、异构的，并且不能由机器人直接执行。我们介绍了 InterMimicGen，这是一种自我进化的运动模仿框架，其中机器人运动数据和跟踪策略可以相互改进。首先，我们整合运动捕捉的人与物体交互数据集，并将它们重新定位为人形机器人参考，同时保留全身协调性和灵巧的手与物体关系。这产生了一个庞大且多样化的人形机器人参考集合，用于灵巧的全身局部操作。其次，我们训练一个基于物理的多面手跟踪器，该跟踪器在具有灵巧双手的人形机器人上模拟执行这些参考，其范围和多样性超出了先前用于局部操纵的人形跟踪系统。第三，我们关闭数据飞轮：每一轮都会对交互发生的位置以及身体如何执行交互进行小的、保留任务的更改，微调它们上的跟踪器，并仅保留其模拟执行完成任务的变体，这些变体为下一轮提供种子。通过更多的迭代，这些小的编辑…",
+      "authors": [
+        "Yucheng Zhang",
+        "Sirui Xu",
+        "Jinhong Li",
+        "Liuyu Bian",
+        "Anatulya Nandi",
+        "Derek Zhang"
+      ],
+      "published": "2026-10-05T17:59:50Z",
+      "category": "cs.RO",
+      "arxiv_id": "2610.06850v1",
+      "abs_url": "https://arxiv.org/abs/2610.06850v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06850v1"
+    },
+    {
+      "title": "BiasFlow: Geometric Monitoring and Backbone Regularization for Spurious Feature Reliance",
+      "title_zh": "BiasFlow：用于虚假特征依赖的几何监控和主干正则化",
+      "summary": "Worst-group accuracy (WGA) evaluates a trained predictor but does not characterize how its frozen backbone behaves when a new head is learned. We introduce BiasFlow, a hook-based toolkit for monitoring class-attribute centroid alignment (IBMI), within-class centroid separation (W-IBMI), and feature-projection sensitivity. IBMI is confounded by class-attribu…",
+      "summary_zh": "最差组准确度（WGA）评估训练有素的预测器，但不能表征学习新头部时其冻结骨干网的行为方式。我们引入了 BiasFlow，这是一个基于钩子的工具包，用于监控类属性质心对齐 (IBI)、类内质心分离 (W-IBI) 和特征投影敏感性。 IBMI 受到类别属性相关性的影响，并且不是因果特征依赖性的衡量标准。我们将这些诊断与 BiasFlow 正则化 (BFR) 配对，这是一种有监督的、可组合的类条件质心对齐惩罚。 W-IBI验证BFR优化的数量；它是尺度相关的并且不独立地建立属性移除。在报告的小规模基准中，添加 BFR 可以改善或保持 WGA 平均值，UrbanCars 的增益高达 +26.0 pp。主要的独立压力测试冻结了 CelebA-Std 的主干，并根据有偏差的数据训练新的头脑：BFR+GroupDRO 将 WGA 从 40.7% 提高到 64.…",
+      "authors": [
+        "Haojin Deng",
+        "Zhiping Lin",
+        "Yimin Yang"
+      ],
+      "published": "2026-10-05T17:59:28Z",
+      "category": "cs.AI",
+      "arxiv_id": "2610.06846v1",
+      "abs_url": "https://arxiv.org/abs/2610.06846v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06846v1"
+    },
+    {
+      "title": "Direct Intermediate Initialization for Tilted Diffusion Samplers",
+      "title_zh": "倾斜扩散采样器的直接中间初始化",
+      "summary": "Some diffusion posterior samplers construct Gaussian-tilted intermediate distributions along the reverse process. We observe that these targets can be pulled back to clean-space posteriors with weaker conditioning, with samples transported analytically to the corresponding noisy-space target through a Gaussian bridge. For the sequential Monte Carlo (SMC) sa…",
+      "summary_zh": "一些扩散后采样器沿相反过程构造高斯倾斜的中间分布。我们观察到，这些目标可以通过较弱的条件被拉回干净空间后验，样本通过高斯桥分析传输到相应的噪声空间目标。对于顺序蒙特卡罗 (SMC) 采样器 MCGDiff，此拉回问题的有效观测方差高达扩散噪声方差的两倍。我们利用此结构在中间时间直接初始化 MCGDiff：近似求解器对软化的洁净空间后验进行采样，高斯桥将这些样本映射到倾斜目标，并且仅运行剩余的 SMC 后缀。这会牺牲渐近一致性来换取有限粒子性能。使用矩匹配后验采样（MMPS）作为求解器，在结构化高斯混合逆问题上，混合算法在匹配粒子数时将切片 Wasserstein 距离提高了大约 $2\\times$，而当后验相关模式在先验条件下很少见时，则提高了一个数量级以上。保留桥但放弃洁净空间调节的预先初始化控制表明，在 MCGDiff 的标准高斯混合基准上，大…",
+      "authors": [
+        "Gregory D. Bellchambers"
+      ],
+      "published": "2026-10-05T17:58:18Z",
+      "category": "stat.ML",
+      "arxiv_id": "2610.06834v1",
+      "abs_url": "https://arxiv.org/abs/2610.06834v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06834v1"
+    },
+    {
+      "title": "UniSlider: Perceptually Uniform Sliders for Continuous Image Editing",
+      "title_zh": "UniSlider：用于连续图像编辑的感知均匀滑块",
+      "summary": "Sliders provide an intuitive interface for continuous image editing. In current generative approaches, however, the slider is simply a rescaling of the method's strength parameter, such as an adapter coefficient, a prompt weight, or an interpolation factor. This strength relates poorly to perceptual change. The image can partially revert as the slider moves…",
+      "summary_zh": "滑块为连续图像编辑提供了直观的界面。然而，在当前的生成方法中，滑块只是方法强度参数的重新调整，例如适配器系数、提示权重或插值因子。这种强度与感知变化关系不大。当滑块移动时，图像可以部分恢复，较长的范围不会产生明显的差异，而较短的间隔会突然改变图像。重新映射强度可以解决这种不均匀的速度，但前提是轨迹是单调的，而当前的方法并不能强制执行这一点。因此，我们将滑块与强度区分开来，并要求与输入的感知距离随着滑块值线性增长。我们引入了 UniSlider，这是一种在几步编辑主干上进行训练的轻量级 LoRA，使其强度接近这个理想的滑块。少步采样让我们可以在像素空间中实现这一目标，而无需中间的地面实况，并且骨干网的输出以全部强度保留。然而，低阶适配器无法使强度完全均匀。因此，我们的滑块是通过自适应采样获得的强度的推理时间重新映射。由于训练优化使轨迹单调，因此这种重…",
+      "authors": [
+        "David Serrano-Lozano",
+        "Duygu Ceylan",
+        "Yannick Hold-Geoffroy",
+        "Iliyan Georgiev",
+        "Javier Vazquez-Corral",
+        "Anna Frühstück"
+      ],
+      "published": "2026-10-05T17:58:11Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.06831v1",
+      "abs_url": "https://arxiv.org/abs/2610.06831v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06831v1"
+    },
+    {
+      "title": "MemPilot: Orchestrating On-Demand Multimodal Memory Curation for LLM Agents",
+      "title_zh": "MemPilot：为 LLM 代理编排按需多模式内存管理",
+      "summary": "Memory has become integral to the LLM agent ecosystem, supporting information retention and reuse across interactions. However, most existing agent memory systems construct memory in a query-agnostic manner, which can incur unnecessary preprocessing cost and discard details that later prove essential. Recent studies have begun shifting memory processing tow…",
+      "summary_zh": "内存已成为 LLM 代理生态系统不可或缺的一部分，支持跨交互的信息保留和重用。然而，大多数现有的代理内存系统以与查询无关的方式构建内存，这可能会产生不必要的预处理成本，并丢弃后来证明是重要的细节。最近的研究已经开始将内存处理转向运行时适应，但通常专注于特定操作或固定处理方案，而对性能、成本和延迟的灵活控制在很大程度上尚未得到充分探索。为了应对这一挑战，我们提出了 \\textbf{MemPilot}，这是一个灵活的框架，可以在不同的性能-成本-延迟偏好下协调按需内存管理。具体来说，我们通过强化学习优化多步骤 LLM 策略，以迭代地选择从与查询无关的内存检索和将原始多模态历史的查询特定管理委托给异构 LLM 和 VLM。该策略共同控制证据量、管理指令、模型选择和视觉访问，从而实现运行时计算的细粒度分配。为了在竞争目标下优化该策略，我们通过在聚合之前单独…",
+      "authors": [
+        "Haozhen Zhang",
+        "Haodong Yue",
+        "Quanyu Long",
+        "Jianzhu Bao",
+        "Qingyuan Liu",
+        "Tao Feng"
+      ],
+      "published": "2026-10-05T17:58:06Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.06830v1",
+      "abs_url": "https://arxiv.org/abs/2610.06830v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06830v1"
+    },
+    {
+      "title": "CLIFT: Conformal Self-Verification for Web Agent Training and Test-Time Scaling",
+      "title_zh": "CLIFT：网络代理训练和测试时间扩展的保形自我验证",
+      "summary": "Open-source web agents are now strong enough to execute realistic browser tasks, but training them with reinforcement learning still depends on weak supervision: binary task success is too sparse for credit assignment, while frontier-language-model judges are too expensive to call at every step and cannot be assumed available at deployment. We introduce CLI…",
+      "summary_zh": "开源网络代理现在已经足够强大，可以执行现实的浏览器任务，但是用强化学习来训练它们仍然依赖于弱监督：二进制任务的成功对于信用分配来说太稀疏了，而前沿语言模型法官在每一步都调用成本太高，并且不能假设在部署时可用。我们引入 CLIFT，一种围绕保形自我验证构建的训练和测试时间缩放方法。在训练期间，代理回答有关其自身部署的自然语言验证问题；组合适形验证者仅保留其 URL 条件证据与训练时判断一致的问题信号，通过极性感知提升分配签名信任权重，并将所得验证者分数以永远不会从判断基线中减去的方式混合到每步奖励中。在测试时，同一家经过认证的银行被冻结并重新用作保形轨迹选择（CTS）的结构化证据：代理对贪婪的推出和一次或多次不同的重试进行采样，自验证器总结每个 URL 跟踪，并且保守的多数投票规则选择是否从当前的现任银行中交换出来，而无需调用任何外部法官。这个单一机…",
+      "authors": [
+        "Yifan Zhang",
+        "Yutong Dai",
+        "Viraj Prabhu",
+        "Zhiyuan Hu",
+        "Ran Xu",
+        "Zeyuan Chen"
+      ],
+      "published": "2026-10-05T17:57:51Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.06829v1",
+      "abs_url": "https://arxiv.org/abs/2610.06829v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06829v1"
+    },
+    {
+      "title": "PlotGround: Grounding Plot Digitization in Real Scientific Figures and Their Source Data",
+      "title_zh": "PlotGround：真实科学图形及其源数据中的绘图数字化基础",
+      "summary": "Scientific figures often encode quantitative results that are not readily available in machine-readable form, making accurate plot digitization important for verifying and reusing published findings. Yet it remains unclear how accurately current models recover plotted values from real scientific figures, as existing benchmarks rely largely on synthetic char…",
+      "summary_zh": "科学数据通常对定量结果进行编码，而这些结果不容易以机器可读的形式获得，这使得准确的绘图数字化对于验证和重用已发表的发现非常重要。然而，目前尚不清楚当前模型如何准确地从真实的科学数据中恢复绘制的值，因为现有的基准主要依赖于合成图表或仅涵盖有限范围的图表类型。我们介绍 PlotGround，这是一个自动化管道，用于根据真实的科学数据及其作者发布的源数据构建绘图数字化基准。 PlotGround 将数字映射到源表，识别可重构面板，并使用基于源的参考值生成定量问题。我们使用 PlotGround 构建了 PlotGround-1k，这是一个经过人工验证的基准，包含来自 1,066 个 bioRxiv 预印本的 1,119 个问题。在 16 个多模态模型中，最好的精度达到 87.5%，相对误差容限为 $\\pm 5\\%$。将公差收紧至 $\\pm 2\\%$ 会使…",
+      "authors": [
+        "Yaohui Zhang",
+        "Binxu Li",
+        "Haoyi Duan",
+        "Jiacheng Miao",
+        "Yixin Wang",
+        "Xinran Du"
+      ],
+      "published": "2026-10-05T17:57:19Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.06825v1",
+      "abs_url": "https://arxiv.org/abs/2610.06825v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06825v1"
+    },
+    {
+      "title": "TasteVal: Measuring the Experimental Research Taste of AI Systems Against Human Experts",
+      "title_zh": "TasteVal：衡量人工智能系统与人类专家的实验研究品味",
+      "summary": "We introduce TasteVal, a benchmark to evaluate the experimental research taste of frontier models. We define research taste as the ability to pick interesting problems to solve, design experiments, and interpret experimental results. TasteVal measures the experimental component of research taste; given a fixed research problem, we measure how well a model i…",
+      "summary_zh": "我们引入了 TasteVal，一个评估前沿模型实验研究品味的基准。我们将研究品味定义为选择有趣的问题来解决、设计实验和解释实验结果的能力。 TasteVal 衡量研究品味的实验成分；给定一个固定的研究问题，我们衡量模型迭代设计实验并从结果中得出结论的效果。我们将实验研究品味运作为计算效率；使用一半的串行实验计算达到与专家相同的分数的研究人员具有两倍的实验品味。因此，实验品味充当了实验计算的乘数，使其成为预测人工智能进展的关键输入。 TasteVal 包含 8 个代表前沿人工智能研发的新颖、具有挑战性、开放式任务。为了将品味与编码能力分开，接受评估的模型充当研究员，迭代地设计实验，同时固定的编码器代理实现它们并报告其结果。研究人员一直执行，直到 40 H100 小时或 120 个挂钟小时预算用完。我们招募 24 名人类专家，每个任务至少 2 名，并以…",
+      "authors": [
+        "Oliver Jaffe",
+        "Dane Sherburn"
+      ],
+      "published": "2026-10-05T17:57:15Z",
+      "category": "cs.AI",
+      "arxiv_id": "2610.06824v1",
+      "abs_url": "https://arxiv.org/abs/2610.06824v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06824v1"
+    },
+    {
+      "title": "Deep Learning for Sleep Heart Rate Estimation from Accelerometers: Toward Population-Scale Cardiac Insight Without Optical Sensors",
+      "title_zh": "利用加速度计进行睡眠心率估计的深度学习：无需光学传感器即可实现人口规模的心脏洞察",
+      "summary": "Large longitudinal cohorts often contain wrist accelerometry without optical heart-rate sensing, motivating recovery of cardiac information from motion signals already collected during sleep. We present SeqSmoother, a transformer-based temporal corrector for sleep heart rate (HR) estimation from wrist accelerometry. SeqSmoother combines spectral descriptors…",
+      "summary_zh": "大型纵向队列通常包含没有光学心率传感的手腕加速度计，从而促进从睡眠期间收集的运动信号中恢复心脏信息。我们推出了 SeqSmoother，这是一种基于变压器的时间校正器，用于通过手腕加速度测量估计睡眠心率 (HR)。 SeqSmoother 将频谱描述符与中间 Nightbeat 衍生的频率锚和旨在识别谐波频率锁定的物理驱动的子谐波特征相结合。所有推理时间特征均源自手腕加速度测量，而 ECG 仅用于构建参考 HR 标签和训练标签质量权重。我们使用 13 个参与者不相交的保留折叠来评估 SeqSmoother，并将其与匹配的 60 秒窗口和 15 秒步骤协议下的官方 Nightbeat 实现进行比较。在所有非折叠预测中，SeqSmoother 实现了 1.60 bpm 的参与者宏 MAE。在 Nightbeat 保留的匹配间隔上，Nightbeat 的…",
+      "authors": [
+        "Tanbin Islam Rohan",
+        "Pranjol Sen Gupta",
+        "Tanusree Debi",
+        "Nazmus Sakib"
+      ],
+      "published": "2026-10-05T17:56:57Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.06823v1",
+      "abs_url": "https://arxiv.org/abs/2610.06823v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06823v1"
+    },
+    {
+      "title": "TAPDreamer: Transferable Adversarial Patches for World Action Models",
+      "title_zh": "TAPDreamer：世界行动模型的可转移对抗补丁",
+      "summary": "World models learn to predict how their environment will evolve, making them an important foundation for general-purpose robotic control. Yet world action models depend on camera inputs whose manipulation can corrupt the visual representations used across tasks and action policies. Existing attacks on these models optimize against the victim's actions or pr…",
+      "summary_zh": "世界模型学习预测其环境将如何演变，使它们成为通用机器人控制的重要基础。然而，世界行动模型依赖于摄像机输入，其操作可能会破坏任务和行动策略中使用的视觉表示。对这些模型的现有攻击针对受害者的行为或预测的未来进行优化，因此需要访问目标模型输出。在本文中，我们提出了一种针对世界动作模型的攻击 TAPDreamer，该攻击仅使用公共编码器来构建跨任务和动作架构传输的固定局部扰动。 TAPDreamer 不需要目标策略查询。我们的主要见解是，补丁引起的注意力权重和价值向量变化之间的相互作用会广播出几乎相同的表示变化，远远超出了补丁足迹，并且这种变化在任务观察中保持稳定。在这一见解的指导下，TAPDreamer 使用来自一个源任务的六个帧来最大化干净编码器表示和修补编码器表示之间的全局 L1 距离。在闭环评估中，每个基准测试一个冻结补丁，覆盖约 6.5% 的输入…",
+      "authors": [
+        "Xuanyu Lu",
+        "Fengqing Jiang",
+        "Kaiyuan Zheng",
+        "Yichen Feng",
+        "Yaorui Ding",
+        "Yuetai Li"
+      ],
+      "published": "2026-10-05T17:55:21Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.06814v1",
+      "abs_url": "https://arxiv.org/abs/2610.06814v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06814v1"
+    },
+    {
+      "title": "Less Context, Better Geometry: Masked Geometric Encoder for Robust 3D Foundation Models",
+      "title_zh": "更少的上下文，更好的几何：用于稳健 3D 基础模型的掩码几何编码器",
+      "summary": "Recent progress in 3D foundation models has enabled rapid 3D reconstruction and camera calibration by leveraging learned 3D priors from vast amount of spatial data. However, the all-to-all global attention design leads to quadratic complexity and limits long-sequence inference; unconstrained cross-view interactions also can propagate unreliable evidence fro…",
+      "summary_zh": "3D 基础模型的最新进展通过利用从大量空间数据中学习到的 3D 先验知识，实现了快速 3D 重建和相机校准。然而，all-to-all全局注意力设计导致二次复杂度并限制了长序列推理；不受约束的跨视图交互还可能从遮挡或视觉上相似但几何上遥远的视图传播不可靠的证据。在本文中，我们介绍了一种掩码几何编码器（MGE），它促进了不完整的跨视图上下文下鲁棒几何表示的学习。在训练过程中，MGE 策略性地从全局注意力中删除框架标记，并从预训练的全上下文教师模型中提取内容。这使得模型能够学习本质上更丰富的每帧表示，同时提供足够的中间监督以避免性能下降。通过大量的实验，我们表明 MGE 在遮挡和分身视图下具有更强的性能，同时在标准基准上保持高性能。这种更丰富的帧表示还可以在推理过程中更有效地减少标记。为此，我们开发了一种新颖的锚引导自适应标记合并技术，该技术保留代表性…",
+      "authors": [
+        "Zhimin Shao",
+        "Xijun Liu",
+        "Zhaoliang Zhang",
+        "Yutao Tang",
+        "Abhay Yadav",
+        "Rama Chellappa"
+      ],
+      "published": "2026-10-05T17:55:06Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.06813v1",
+      "abs_url": "https://arxiv.org/abs/2610.06813v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06813v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "隆重推出 GPT-6 Sol 和 Luna - OpenAI",
+      "summary": "隆重推出 GPT-6 Sol 和 Luna OpenAI",
+      "source": "OpenAI",
+      "lang": "zh",
+      "published": "Tue, 06 Oct 2026 06:31:29 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBlM2NrMUY4MnZ1NUVpXzVWYkozUDNBQ1plVWtFLWlQQkpnVTdzVnhmd2ptZTVTeGpBWGZXLVlWUmFiZVMzTExFeEJ1UVZSWVRBRVg2RE5YVDlyUGlPQlJvclBPNzZBN1lUazAtdEVQSXVwRVRwZkE?oc=5"
+    },
+    {
+      "title": "视频丨“算力工厂”为何扎堆内蒙古？ - 京报网",
+      "summary": "视频丨“算力工厂”为何扎堆内蒙古？ 京报网",
+      "source": "京报网",
+      "lang": "zh",
+      "published": "Tue, 06 Oct 2026 07:24:52 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0yY1l1TnNHNXktVGRxTDlFSkplNGxxaTE0R0tfWnNOemdJSDdUclBrcWV0WWllUExqcjhqODl0VVBGOGRKd2p4NWdlTnVOMXI3VVd2OVpHU01BbW5LX2c?oc=5"
+    },
+    {
+      "title": "东京电子副总裁讲透\"用 AI 制造 AI 芯片\"的完整闭环逻辑 - 电子工程专辑",
+      "summary": "东京电子副总裁讲透\"用 AI 制造 AI 芯片\"的完整闭环逻辑 电子工程专辑",
+      "source": "电子工程专辑",
+      "lang": "zh",
+      "published": "Tue, 06 Oct 2026 03:27:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9pSFRvOWgtbmVmYUkwWmdZSnVYZGxVWk82QmNFWXdSVFpaYmpITllEOVpCVmpnWUU3Q0xQZmJFVnNSUE9FWnhBaS04bHoySElOeEFZ?oc=5"
+    },
+    {
+      "title": "AI研究智能体的自我进化实验：当代码开始改写自己 - techwalker.com",
+      "summary": "AI研究智能体的自我进化实验：当代码开始改写自己 techwalker.com",
+      "source": "techwalker.com",
+      "lang": "zh",
+      "published": "Tue, 06 Oct 2026 00:10:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBzUUdKQTZyQmYzSzF5RjZlVDRhaWpJVUVCNi1HVVFUcFVvajJTMnJ3RUJHRjZ6eUFNalkzLVREb3JyRm1vanQydzZvT1RyNjVLTGxJa2ZoRFJZOTFKdDFJ?oc=5"
+    },
+    {
+      "title": "GLM-5.3 上架亚马逊 AWS 旗下大模型平台，智谱打开海外收入分成通道 - 同花顺财经",
+      "summary": "GLM-5.3 上架亚马逊 AWS 旗下大模型平台，智谱打开海外收入分成通道 同花顺财经",
+      "source": "同花顺财经",
+      "lang": "zh",
+      "published": "Tue, 06 Oct 2026 06:22:14 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9xUHpuenBaWkpyRjNoVU42ZzlxTVRkeTVuR2hYVjhsTlM3VjVYckh6Vm40X1RwRnBnbDdXdThGVGp5amo3M3ZodGc3dHp3OTJOaEdwQXFEMDZzRmNOemc?oc=5"
+    },
+    {
+      "title": "创纪录AI芯片融资启动分销：420亿高级债靠博通信用背书，180亿次级债要等Anthropic IPO - 华尔街见闻",
+      "summary": "创纪录AI芯片融资启动分销：420亿高级债靠博通信用背书，180亿次级债要等Anthropic IPO 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Tue, 06 Oct 2026 00:15:48 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAyZ3I0djVWUDN1OXBBUGJrZ2hPYnQ0aXRPbjlneWtySzUwbWxzRExfN0xsX2FnUGxXY3FYejRrRnluRk95clJwLURsaHAxcXBTUVJv?oc=5"
+    },
+    {
+      "title": "7亿用户成为AI产业巨大底盘 - 中国经济网",
+      "summary": "7亿用户成为AI产业巨大底盘 中国经济网",
+      "source": "中国经济网",
+      "lang": "zh",
+      "published": "Tue, 06 Oct 2026 02:01:13 GMT",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ya2RHcU1wVVNjZlBUZC1ibFh3ajVnYnRfbGNpclJma2ZUSWdtd2tnMm5kSlZzSjV0dkw5bFZNenlyVzBMOUdTV3BGbXBmZXlFWDV6eXdyTS1uMFZOOWFyLVVwYVpRM1ZDRkVN?oc=5"
+    },
+    {
+      "title": "卡位智能体，英特尔开打翻身仗了|AI智能|大模型|GPU|Agent|产业 - 新浪财经",
+      "summary": "卡位智能体，英特尔开打翻身仗了|AI智能|大模型|GPU|Agent|产业 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Mon, 05 Oct 2026 23:29:53 GMT",
+      "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxORmtFNXNTVF82U000YnNwUUZXQ3l5WFFPMDltWE5zcFZuY3lUZEZGUXl4QWhuLVpXcVc1R21PZ3RsMktLNko1TGx6Ym1zcmpBeE5relRrcE92aGZRRk1xVGc3OERPVWs5ZGR5MmR0OGN6ZnBOVFl5NFNtU0lKeU85TTFRcW1qWDI4Q0hOZ1BDX3JVQ1M3c1dCQVJmRzRlZkw5X1FjU0hIOF9sZ2lQTGxTYzVCbS1VUU8tLXBMNG55aEkzdnpBeW5LN0VEV3EyLVZ6UTFmMHF4WktyemdCaUVSc19EM2p1VmdWUTNGVkxjVHJselE0S1BxaExUUUM3Y21yMGVza21Uc1ZvZmNEQ1ctTkZ2YjFsZWh3Qkh5ZVpLWTlLSzJ4Wm9ETVJFMG9DY1F5YzgxaEVIc2lpMmlQaThhT3hiNEdWX190bXhYUGFGaXVUZzBKR2lhbi1NUTlsUQ?oc=5"
+    },
+    {
+      "title": "智能体越狱频发：OpenAI踩刹车取消GPT-6.1 Astra发布，Meta猛踩油门边开边修 - 虎嗅网",
+      "summary": "智能体越狱频发：OpenAI踩刹车取消GPT-6.1 Astra发布，Meta猛踩油门边开边修 虎嗅网",
+      "source": "虎嗅网",
+      "lang": "zh",
+      "published": "Tue, 06 Oct 2026 04:32:06 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBBajNoUFdaZm9WaGcyVWl0T3VOakhyc1RycC1nSkR2T0lSTDBpZ0V4WXctQzEzV1g2ZTZxQ1ZEOFJQYnB5OHQzOTNOOVRheU1nV245Ng?oc=5"
+    },
+    {
+      "title": "基于双智能体架构大语言模型智能体用于问诊前病史采集的随机对照临床试验 - 生物通",
+      "summary": "基于双智能体架构大语言模型智能体用于问诊前病史采集的随机对照临床试验 生物通",
+      "source": "生物通",
+      "lang": "zh",
+      "published": "Tue, 06 Oct 2026 01:25:14 GMT",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1CLVhvaUZxZXc0RmNGb2NLbjlEd3ZxZ0ZnekUyR0FHWjI2cnpWbVU0Nmx4WVhHYVRueG9UVWJ0MnF3QThKU3RsSGI3UFNMam9tc3BIdXlBSlcxa0FWeGwzZDBVd1hTRElpaGZiXy1B?oc=5"
+    },
+    {
+      "title": "AI智能体要替你打理生活，你该让它们接手吗？ - 华尔街日报中文版",
+      "summary": "AI智能体要替你打理生活，你该让它们接手吗？ 华尔街日报中文版",
+      "source": "华尔街日报中文版",
+      "lang": "zh",
+      "published": "Tue, 06 Oct 2026 03:39:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9YQ240VmduUzlZV1NTTWdxOHBhMVNMZDFuejNhOWJ4ZFF5anZQUjNRYXZwNlcyOHNBdzl3R0lGYnk2N1pyMWt3b1BCY0w4UlhLaENyeWtrZnF6RGIwTUlGYWNB?oc=5"
+    },
+    {
+      "title": "利好！全球大模型第一股，直线拉升 - 同花顺财经",
+      "summary": "利好！全球大模型第一股，直线拉升 同花顺财经",
+      "source": "同花顺财经",
+      "lang": "zh",
+      "published": "Tue, 06 Oct 2026 03:07:46 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBrTFdmMC1Lbm1RQ1pwS1dBOXdQY0kwaWFxNHhxTHNOYklJcC14Z1FCLTczSVE2anBiZEUtOUF2WW4xZ3k3YUxUV1g3MFNJY25YQm9HV2VTczJNS2VXUGc?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 95863,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 74472,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57559,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 45864,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 37854,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 391480,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 295792,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 251536,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
