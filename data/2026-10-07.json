@@ -1,0 +1,510 @@
+{
+  "date": "2026-10-07",
+  "generated_at": "2026-10-07T09:31:12.346211+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "World Models' Last Exam in Physics",
+      "title_zh": "世界模特的最后一次物理考试",
+      "summary": "Video world models can produce visually convincing yet physically inconsistent sequences, raising concerns about their reliability for prediction and planning in embodied AI systems. Existing evaluations often rely on model-based judgments or reference videos, while direct physical tests largely focus on mechanics. We introduce World Models' Last Exam in Ph…",
+      "summary_zh": "视频世界模型可以产生视觉上令人信服但物理上不一致的序列，引发人们对其在具体人工智能系统中预测和规划的可靠性的担忧。现有的评估往往依赖于基于模型的判断或参考视频，而直接的物理测试主要侧重于力学。我们介绍了世界模型的物理学最后考试，这是一种基于测量的基准，用于评估视频世界模型中的物理一致性。该基准测试包括 40 项受控任务，涵盖力学、光学、流体、热和相变现象、电磁和表面张力。每个任务将初始图像和生成提示与预定义的物理标准配对，从而无需参考视频即可对可观察的物理关系进行可解释的测试。其评估器将任务可观察性筛选与特定任务的定量物理测量相结合。对 1,280 个视频中的 8 个视频生成模型进行的实验揭示了任务之间持续的物理不一致和显着变化，最佳模型的总体得分为 57.76（满分 100）。对具有已知物理关系的合成视频的评估为受控条件下测量模块的有效性提供了证…",
+      "authors": [
+        "Mingju Gao",
+        "Qingle Liu",
+        "Yuzhao Peng",
+        "Xinjie Lin",
+        "Ziming Qin",
+        "Zheng Jiang"
+      ],
+      "published": "2026-10-06T17:59:56Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.08791v1",
+      "abs_url": "https://arxiv.org/abs/2610.08791v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08791v1"
+    },
+    {
+      "title": "Building Rome from a Single Image",
+      "title_zh": "从单一图像构建罗马",
+      "summary": "Single-image scene generation aims to produce a complete 3D scene mesh from a single image, including surfaces the camera did not observe. While pretrained 3D object generators encode a strong shape prior, they are mainly designed for isolated objects in a fixed canonical volume and focus mostly on indoor scenes, since diverse 3D data for outdoor scenes are…",
+      "summary_zh": "单图像场景生成旨在从单个图像生成完整的 3D 场景网格，包括相机未观察到的表面。虽然预训练的 3D 对象生成器先对强形状进行编码，但它们主要是针对固定规范体积中的孤立对象而设计的，并且主要关注室内场景，因为室外场景的各种 3D 数据非常有限。在这项工作中，我们提出了一种重新设计这种以对象为中心的生成器的方法，例如 Trellis 2，可以在室内和室外场景上工作，同时保留其先验。我们通过以下方式实现这一点：(a) 将场景划分为自适应块，这些块相对于到相机的距离进行缩放；附近的块具有较小的尺寸以保持更精细的细节，而远处的结构（例如建筑物）则被大块覆盖； (b) 通过提升图像特征并使模型了解自由空间、观察表面和未观察区域，使生成器捕获明确的 2D-3D 对应关系； (c) 合成大约 4,000 个室外场景以扩大训练数据，因为现有场景数据集主要是室内的。对…",
+      "authors": [
+        "Jiraphon Yenphraphai",
+        "Fang Li",
+        "Tianshuo Xu",
+        "Depu Meng",
+        "Quentin Herau",
+        "Yihan Hu"
+      ],
+      "published": "2026-10-06T17:59:50Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.08790v1",
+      "abs_url": "https://arxiv.org/abs/2610.08790v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08790v1"
+    },
+    {
+      "title": "4D-HOF: Hand-Object Flow Matching for Feed-Forward 4D Interaction Reconstruction",
+      "title_zh": "4D-HOF：用于前馈 4D 交互重建的手-物体流匹配",
+      "summary": "Existing methods for 4D hand-object reconstruction often rely on costly per-sequence optimization, while generative approaches typically synthesize interactions from random noise, which can lead to unstable interaction prediction. We introduce 4D-HOF, a feed-forward framework that reconstructs 4D hand-object interactions from coarse but informative estimate…",
+      "summary_zh": "现有的 4D 手部物体重建方法通常依赖于成本高昂的每个序列优化，而生成方法通常从随机噪声中合成交互，这可能导致交互预测不稳定。我们引入了 4D-HOF，这是一种前馈框架，可以根据视觉基础模型生成的粗略但信息丰富的估计来重建 4D 手部物体交互。具体来说，我们学习了一种条件流匹配模型，该模型将基础模型派生的手部对象状态传输到交互流形，从而允许模型以前馈方式纠正平移、旋转和对齐中的错误。我们的生成公式的一个关键优势是它自然地能够在运输过程中提供测试时间指导。我们没有在重建后应用单独的事后优化，而是使用物理交互约束和观察到的二维证据直接引导不断演变的生成状态，从而允许重建作为生成过程本身的一部分进行细化。通过在不同的数据集上训练生成模型，4D-HOF 可以稳健地推广到具有挑战性的野外场景。域外基准测试表明 4D-HOF 实现了最先进的性能，产生更稳定、更…",
+      "authors": [
+        "Shiqi Li",
+        "Sean Cho",
+        "Yijie Li",
+        "Fengzhi Guo",
+        "Bowen Wen",
+        "Cheng Zhang"
+      ],
+      "published": "2026-10-06T17:59:02Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.08782v1",
+      "abs_url": "https://arxiv.org/abs/2610.08782v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08782v1"
+    },
+    {
+      "title": "DepthWorld: 3D World Model for Robot Manipulation",
+      "title_zh": "DepthWorld：机器人操纵的 3D 世界模型",
+      "summary": "World models offer a data-driven alternative to traditional simulators for robotics, with applications spanning policy evaluation, improvement, and planning. All of these uses depend on faithful 3D geometry, yet current video-based world models are trained on RGB alone and produce rollouts that look correct frame-by-frame but do not compose into a consisten…",
+      "summary_zh": "世界模型提供了传统机器人模拟器的数据驱动替代方案，其应用涵盖政策评估、改进和规划。所有这些用途都依赖于忠实的 3D 几何体，但当前基于视频的世界模型仅在 RGB 上进行训练，并生成逐帧看起来正确的卷展栏，但无法组成一致的 3D 世界。缩小这一差距需要在两个方面取得进展：大规模 3D 操作监督，以及能够在不干扰强大的预训练视频先验的情况下吸收监督的架构。我们引入了一个校准管道，它将学习的立体深度与联合因子图相结合，汇集从同一物理机器人收集的所有情节，以恢复其共享的运动学参数以及每个场景的外部参数。应用于 DROID 数据集，这会产生 DROID-3D，这是一个校准的 3D 数据集，提供密集的度量深度和重新校准的多视图外部特性（在外部摄像机的 90% 的剧集上实现 <0.7 px 重投影误差）。然后，我们训练 DepthWorld，这是一种基于稳定视频…",
+      "authors": [
+        "Jai Bardhan",
+        "Josef Sivic",
+        "Vladimir Petrik"
+      ],
+      "published": "2026-10-06T17:59:00Z",
+      "category": "cs.RO",
+      "arxiv_id": "2610.08780v1",
+      "abs_url": "https://arxiv.org/abs/2610.08780v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08780v1"
+    },
+    {
+      "title": "ALIVE: Interaction-Aligned Object Insertion for First-Frame-Guided Video Editing",
+      "title_zh": "ALIVE：用于第一帧引导视频编辑的交互对齐对象插入",
+      "summary": "Current video editors can insert objects but often struggle to make them participate in interactions such as being picked up or manipulated. We introduce ALIVE, a framework that makes inserted objects \"alive\" through coherent interactions with the source video's contents, using an edited first frame and an instruction naming only the added object. We curate…",
+      "summary_zh": "当前的视频编辑器可以插入对象，但通常很难让它们参与交互，例如被拾取或操纵。我们引入了 ALIVE，一个框架，它使用编辑后的第一帧和仅命名添加对象的指令，通过与源视频内容的连贯交互使插入的对象“活跃”。我们策划了 35,800 个编辑对，将 3D 渲染、模型生成和真实世界的视频与 ROSE 的一般编辑对相结合。每对目标对象的存在都不同，同时保留了周围的动作，教导编辑者协调对象行为和源保存。我们进一步训练视觉语言模型（VLM）来预测来自相同输入的交互指导。我们引入了 ALIVE 交互基准，使用基于 VLM 的统一协议来评估交互保真度、源保留和视觉连贯性，并在通用视频对象插入基准上进行评估。在没有 VLM 指导的情况下，ALIVE 在两个基准上的整体性能比最强评估基准分别提高了 43.9% 和 4.4%。 VLM 预测指导进一步将 ALIVE 交互得分提…",
+      "authors": [
+        "Zhenghong Zhou",
+        "Zhe Lin",
+        "Jiebo Luo",
+        "Yuqian Zhou"
+      ],
+      "published": "2026-10-06T17:58:51Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.08779v1",
+      "abs_url": "https://arxiv.org/abs/2610.08779v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08779v1"
+    },
+    {
+      "title": "Sherpa: Teaching LLMs to Teach Adaptively",
+      "title_zh": "夏尔巴协作：教授法学硕士进行适应性教学",
+      "summary": "Large language models (LLMs) have become increasingly capable problem solvers, but being able to solve a problem is not the same as being able to teach it. Existing approaches to training LLMs as teachers rely on demonstrations, preference data, or predefined pedagogical criteria that specify what good teaching looks like. However, these signals are often n…",
+      "summary_zh": "大型语言模型 (LLM) 已经成为越来越有能力的问题解决者，但能够解决问题并不等于能够教授问题。现有的法学硕士教师培训方法依赖于演示、偏好数据或预定义的教学标准，这些标准指定了良好的教学是什么样子。然而，这些信号通常并不以学生个体的学习成果为基础，有效的教学策略可能因学习者的不同而存在很大差异。为了解决这个问题，我们引入了 Sherpa，这是一个多轮强化学习框架，它根据不同的学习偏好实例化具有法学硕士的多个学生原型，并训练教师模型通过直接最大化他们的学习成果来调整其教学。受过 Sherpa 培训的法学硕士教师在所有原型中的表现平均提高了 20.5 个百分点。根据MathTutorBench的评估，Sherpa将整体教学得分从52.5%提高到79.2%，教学效果更好。我们的人类研究表明，在 79.6% 的成对比较中，受过训练的教师优于基础模型。 Sh…",
+      "authors": [
+        "Weixian Xu",
+        "Yanzhe Zhang",
+        "Zora Zhiruo Wang",
+        "Changyu Chen",
+        "Diyi Yang"
+      ],
+      "published": "2026-10-06T17:58:18Z",
+      "category": "cs.AI",
+      "arxiv_id": "2610.08778v1",
+      "abs_url": "https://arxiv.org/abs/2610.08778v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08778v1"
+    },
+    {
+      "title": "CtrlCache: Accelerating Interactive Video World Models with Control-Aware Caching",
+      "title_zh": "CtrlCache：通过控制感知缓存加速交互式视频世界模型",
+      "summary": "Interactive video world models need to generate each video chunk efficiently while responding faithfully to user controls. Many systems use chunk-wise autoregressive generation with few-step denoising, but each chunk still requires several costly denoising iterations. Training-free caching can reduce this cost, yet existing policies make reuse decisions pri…",
+      "summary_zh": "交互式视频世界模型需要有效地生成每个视频块，同时忠实地响应用户控制。许多系统使用分块自回归生成和几步去噪，但每个块仍然需要几次昂贵的去噪迭代。免训练缓存可以降低这种成本，但现有策略主要根据模型内部去噪动态做出重用决策，并且没有明确考虑控制转换。实际上，交互式生成显式地公开了他们不使用的信号：块的控制在去噪之前到达，因此从它们派生的时间表不需要前向传递。为此，我们分析了不同控制机制下的相邻块，发现结构相似性随着动作变化而下降，而低频结构仍然比高频细节更持久。受这些观察的启发，我们提出了 CtrlCache，这是一种免训练的控制感知缓存框架，可以使计算适应当前的控制序列。具体来说，动作感知调度和刷新策略检测块之间和块内的动作变化，并将每个块标记为初始、过渡、转向或稳定状态。在一个选定的内部去噪步骤中，初始块和过渡块保留完整计算，而转动块和稳定块重用来自…",
+      "authors": [
+        "Shangye Song",
+        "Dong Gong",
+        "Hong Jia",
+        "Yun Sing Koh",
+        "Xinyu Zhang"
+      ],
+      "published": "2026-10-06T17:57:29Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.08777v1",
+      "abs_url": "https://arxiv.org/abs/2610.08777v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08777v1"
+    },
+    {
+      "title": "Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?",
+      "title_zh": "瓶中代理：LLM 代理能否将其能力转化为廉价、可扩展的产品？",
+      "summary": "Large language models (LLMs) can solve many narrow tasks, but querying them separately for millions of related instances can be prohibitively expensive. Can LLM agents autonomously create cheaper solutions for such workloads? We call this ability \"bottling\": the ability to turn general capabilities into task-specific solutions that balance answer quality an…",
+      "summary_zh": "大型语言模型 (LLM) 可以解决许多狭窄的任务，但单独查询它们以获取数百万个相关实例可能会非常昂贵。 LLM 代理可以自主为此类工作负载创建更便宜的解决方案吗？我们将这种能力称为“装瓶”：将一般能力转化为特定于任务的解决方案的能力，以平衡答案质量和摊销成本。我们引入了 BOTTLED，这是一个基准，代理接收整个未标记的工作负载，并且必须在固定时间、计算和 LLM API 预算下完成它。代理选择自己的方法，例如训练小模型或编写可重用的程序。在十个模型和三个任务中，我们发现强大的零样本任务性能并不能可靠地转化为强大的装瓶能力。具有相似零样本分数的模型在装瓶后可能会有很大差异，并且 60 次装瓶运行中的 48 次得分低于其模型零样本性能的 95% 置信区间的下限。此外，60 次运行中有 31 次的表现低于具有相同代币预算的两个小模型蒸馏基线中较强的一个…",
+      "authors": [
+        "Ankit Sonthalia",
+        "Haritz Puerto",
+        "Alexander Rubinstein",
+        "Martin Gubri",
+        "Seong Joon Oh"
+      ],
+      "published": "2026-10-06T17:57:19Z",
+      "category": "cs.AI",
+      "arxiv_id": "2610.08775v1",
+      "abs_url": "https://arxiv.org/abs/2610.08775v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08775v1"
+    },
+    {
+      "title": "Mission-Aware Attestation Envelopes for Time-Critical Autonomous Action: A Hardware-in-the-Loop V2I Study",
+      "title_zh": "用于时间关键的自主操作的任务感知证明信封：硬件在环 V2I 研究",
+      "summary": "An autonomous system that asks for a privileged physical action is usually gated on integrity evidence: a platform proves what it is running, and the request is granted or refused on that basis. Such a gate is normally treated as a predicate, yet the evidence behind it has an age, the decision that consumes it has a latency, and the physical system that wai…",
+      "summary_zh": "请求特权物理操作的自治系统通常基于完整性证据：平台证明其正在运行的内容，并在此基础上批准或拒绝请求。这样的门通常被视为谓词，但它背后的证据有一个年龄，使用它的决策有一个延迟，等待它的物理系统有一个最后期限。我们将任务感知证明制定为运行时保证合约，仅当完整性有效、证据足够新鲜且决策在从当前物理状态得出的预算内完成时才有效。该合约产生四种操作结果，其中二元门产生两种，将由篡改引起的拒绝与由陈旧证据引起的拒绝和由延迟决定引起的拒绝区分开。我们在硬件在环车辆到基础设施平台上对其进行评估：驾驶模拟器提供物理状态和授权期限，而微控制器车载单元和运行 Linux 完整性测量的 TPM 支持的路边单元提供保证证据。安全盲模型承认整个操作空间和硬件通知的四分之三的操作空间，并且它拒绝的每一点都未达到新鲜度裕度而不是响应裕度。将证明间隔移动到验证者允许的范围内，成本大…",
+      "authors": [
+        "Dimitrios Nikou",
+        "Nikolaos Kekatos",
+        "Sophia Petridou",
+        "Stylianos Basagiannis"
+      ],
+      "published": "2026-10-06T17:55:18Z",
+      "category": "cs.CR",
+      "arxiv_id": "2610.08771v1",
+      "abs_url": "https://arxiv.org/abs/2610.08771v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08771v1"
+    },
+    {
+      "title": "Data Leakage in Patch-Based Hyperspectral Image Classification: Quantifying the Impact of Spatial Overlap",
+      "title_zh": "基于补丁的高光谱图像分类中的数据泄漏：量化空间重叠的影响",
+      "summary": "Patch-based learning improves hyperspectral image (HSI) classification by exploiting local spectral-spatial information, but random train-test sampling from the same image can cause spatial patch overlap, leading to data leakage and optimistic performance estimates. This paper investigates same-class train-test spatial overlap in patch-based HSI classificat…",
+      "summary_zh": "基于补丁的学习通过利用局部光谱空间信息改进了高光谱图像 (HSI) 分类，但来自同一图像的随机训练测试采样可能会导致空间补丁重叠，从而导致数据泄漏和乐观的性能估计。本文使用两种测量方法研究基于斑块的 HSI 分类中的同类训练-测试空间重叠：重叠百分比 (OP)，量化重叠测试斑块像素的全局量；平均重叠率 (AOR)，测量受影响测试斑块之间的局部严重性。在帕维亚大学数据集上进行的实验使用 SVM、MLP、2D-CNN、3D-CNN、ViT 和 MorpMamba 比较了随机和非随机空间采样。结果表明，基于深度补丁的模型在随机采样下实现了较高的准确率，3D-CNN 达到了 96.17% 的总体准确率（OA），但在非随机空间采样下大幅下降，其中 3D-CNN 下降至 55.20%，ViT 和 2D-​​CNN 分别下降了 40.71 和 38.81 个百分…",
+      "authors": [
+        "Mohammed Q. Alkhatib"
+      ],
+      "published": "2026-10-06T17:55:05Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.08770v1",
+      "abs_url": "https://arxiv.org/abs/2610.08770v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08770v1"
+    },
+    {
+      "title": "VeriFine: Scaling Verification for Self-Improvement in Embodied Reasoning",
+      "title_zh": "VeriFine：具身推理自我改进的规模验证",
+      "summary": "Self-improving policies continually expose new failure patterns, changing what their judges must be able to verify. However, current fixed judges constrain both optimization feedback and the discovery of useful training examples, limiting further self-improvement. This challenge is even more acute in embodied reasoning, where reliable evaluation must accoun…",
+      "summary_zh": "自我完善的政策不断暴露新的失败模式，改变法官必须能够验证的内容。然而，当前的固定法官限制了优化反馈和有用训练示例的发现，限制了进一步的自我改进。这一挑战在具身推理中更为严峻，可靠的评估必须考虑空间基础、因果推理和安全意识决策。我们引入了 VeriFine，这是一个代理框架，通过政策、培训课程和法官的共同进化来扩展验证。政策改进循环使用评分标准来诊断反复出现的失败、构建适应性课程并优化政策。当进展停滞和验证成为瓶颈时，法官改进循环有选择地询问人类对信息丰富的失败案例的指导，并通过交互校准来完善法官，其中人类和代理解决分歧并朝着物理推理的客观规则收敛。修改后的判断再指导下一阶段的数据选择和政策优化。驾驶和机器人导航任务的实验表明，通过强化和监督微调，政策和判断能力不断自我提高。这些结果表明，随着政策失败模式的发展，扩展验证如何支持持续的自我改进。",
+      "authors": [
+        "Zewei Zhou",
+        "Rachel Luo",
+        "Yulong Cao",
+        "Chaowei Xiao",
+        "Chensheng Peng",
+        "Boyi Li"
+      ],
+      "published": "2026-10-06T17:50:29Z",
+      "category": "cs.AI",
+      "arxiv_id": "2610.08761v1",
+      "abs_url": "https://arxiv.org/abs/2610.08761v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08761v1"
+    },
+    {
+      "title": "WorldSonus: Bringing Sound to Worlds",
+      "title_zh": "WorldSonus：将声音带入世界",
+      "summary": "Recent advances in world models have enabled increasingly realistic visual synthesis. However, these generated environments remain largely silent. Bringing sound to world models poses three core challenges: real-time generation to keep pace with interactive video streams, interactive control to respond to mid-stream sound instructions, and spatially aligned…",
+      "summary_zh": "世界模型的最新进展使得视觉合成变得越来越真实。然而，这些生成的环境基本上保持沉默。将声音引入世界模型面临三个核心挑战：实时生成以跟上交互式视频流的步伐，交互式控制以响应中流声音指令，以及空间对齐的立体声以反映场景几何形状和摄像机运动。为了满足这些需求，我们引入了 WorldSonus，这是一种交互式视频到音频框架，专为世界模型中的实时空间声音合成而设计。对于实时生成，WorldSonus 采用流式因果自回归扩散架构，以 0.41 的低实时因子 (RTF) 合成音频块。对于交互式控制，我们将以音频为中心的字幕管道与块索引提示调度相结合，从而在生成过程中动态操作声音事件。对于空间对齐，我们利用从不同的立体声和环绕声数据中策划的高质量立体声监督。大量实验表明，在针对世界模型量身定制的同时，WorldSonus 可以有效地推广到开放域视频到音频基准，在声学…",
+      "authors": [
+        "Pengjun Fang",
+        "Jingyi Fa",
+        "Kam Man Wu",
+        "Jiaming Wang",
+        "Haoyuan Huang",
+        "Yaguang Wu"
+      ],
+      "published": "2026-10-06T17:50:18Z",
+      "category": "cs.SD",
+      "arxiv_id": "2610.08760v1",
+      "abs_url": "https://arxiv.org/abs/2610.08760v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.08760v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "隆重推出 GPT-6 Sol 和 Luna - OpenAI",
+      "summary": "隆重推出 GPT-6 Sol 和 Luna OpenAI",
+      "source": "OpenAI",
+      "lang": "zh",
+      "published": "Wed, 07 Oct 2026 03:41:41 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBlM2NrMUY4MnZ1NUVpXzVWYkozUDNBQ1plVWtFLWlQQkpnVTdzVnhmd2ptZTVTeGpBWGZXLVlWUmFiZVMzTExFeEJ1UVZSWVRBRVg2RE5YVDlyUGlPQlJvclBPNzZBN1lUazAtdEVQSXVwRVRwZkE?oc=5"
+    },
+    {
+      "title": "罗曼股份：子公司签订2.77亿元算力设备采购合同 - 新京报",
+      "summary": "罗曼股份：子公司签订2.77亿元算力设备采购合同 新京报",
+      "source": "新京报",
+      "lang": "zh",
+      "published": "Wed, 07 Oct 2026 08:50:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBLOW5oSnFCY0Y2YnNGcEVZeWN1MkNZeEFJNTNXZTZqaGZOMjltcFJieFBmVGtQOUUxVnhudldWQWZhdWdaV0NYR3pWM3hyV3RVUmt2eC1tcE92bVppZ1hYU3pka18?oc=5"
+    },
+    {
+      "title": "AI智能体做长任务时为什么会\"失忆\"？这篇论文给出了一种新解法 - 科技行者",
+      "summary": "AI智能体做长任务时为什么会\"失忆\"？这篇论文给出了一种新解法 科技行者",
+      "source": "科技行者",
+      "lang": "zh",
+      "published": "Wed, 07 Oct 2026 08:12:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9LSDRGdDZtWmRxTmtRRy1PNHVPalI1ei1iVzhzbG9LM1JQQmtOOS12aXloSU9qZHhnMmJndEhuX0dmM1d0YVpvNUphNXJreWhfZFBYUFIydTViOHZuTy1Z?oc=5"
+    },
+    {
+      "title": "AI芯片测试需求旺 矽格确认涨价 已有存储客户加价锁产能 - 财联社",
+      "summary": "AI芯片测试需求旺 矽格确认涨价 已有存储客户加价锁产能 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Wed, 07 Oct 2026 02:04:44 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5aZDRDeUJ4YkZfWWgzZE1HRXJ1OTNaVG1aaGdTc25DMDg2Zm5LOEk4WUZmTkMtWXdrRWFGQjRTaFBKRkppR1puLQ?oc=5"
+    },
+    {
+      "title": "DeepSeek新一轮融资或达千亿，“豪赌”国产算力预训练 - 21财经",
+      "summary": "DeepSeek新一轮融资或达千亿，“豪赌”国产算力预训练 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Wed, 07 Oct 2026 08:34:22 GMT",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNaUo5UWdkSHl0VTNETzJvSUNzQjZXQzQ4NUJfSjdtMTdEOG5iZjZPT0ZmS2l0NFU5MUJKdlFuRk1OZUk1Y3NTV1lDT0lDUWRlb2hOVGhhYmh3M1cwODEyd294VmtkdWJQc0ZURTU2RHRPLWZKcTMzTjl3QXIxZVRHTXl3M0tVejM1bFpHOWdXZHRjUFZp?oc=5"
+    },
+    {
+      "title": "港股小幅收涨！AI算力硬件全线爆发 PCB板块领涨 - 东方财富",
+      "summary": "港股小幅收涨！AI算力硬件全线爆发 PCB板块领涨 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Tue, 06 Oct 2026 19:10:31 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9UVFh5RVgxX3JFd2c0eFZJVEdCZGd3UVlSaFQwZWJfRmtaS1p2WGw2czFFdlhRRUE0dGxGdWk3ZEE2T1NwVjB1dVFyQmNjUHJwU25TTDFQTjJFem1XMkRxNw?oc=5"
+    },
+    {
+      "title": "算力难挑大梁，华孚时尚上半年扣非盈利依然单薄 - 同花顺财经",
+      "summary": "算力难挑大梁，华孚时尚上半年扣非盈利依然单薄 同花顺财经",
+      "source": "同花顺财经",
+      "lang": "zh",
+      "published": "Wed, 07 Oct 2026 07:07:21 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9wdVZyNlE4M3NqZjFXOEx6eTVDRDFtU2R5dDZrVWR3YkZTc1BqdDBEY3JTMy11dFdoRE9vdVVGaG15V0hzTUVSQWpCSVVJOGx3TmM0UjJEZzV2ZlExUDlwRkxB?oc=5"
+    },
+    {
+      "title": "GPT-6还没玩明白，OpenAI高管：八九成研究已押向GPT-7、GPT-8！ - 智源社区",
+      "summary": "GPT-6还没玩明白，OpenAI高管：八九成研究已押向GPT-7、GPT-8！ 智源社区",
+      "source": "智源社区",
+      "lang": "zh",
+      "published": "Wed, 07 Oct 2026 02:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1YSF9TMkl2MU5yTEpIYjJyQmwwbm4tbzRfTW04ZGR6Z2VLcXBSeV9PVm01V2NRMlY2MDgyUDc5QVdBLW5DVFRMUw?oc=5"
+    },
+    {
+      "title": "智能新消费 | 能办事、会陪聊、懂拍照 AI“搭子”打开假日消费新方式 - 中青在线",
+      "summary": "智能新消费 | 能办事、会陪聊、懂拍照 AI“搭子”打开假日消费新方式 中青在线",
+      "source": "中青在线",
+      "lang": "zh",
+      "published": "Wed, 07 Oct 2026 04:09:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0wWTJXTl9oM09EWGRtTnA3OExqZjQ4Z25HOXRQN3dSbnAxbDRGLU1nbEktQVNpUGxfMHpBWG9KUHMzZ1ZMbnppT21WZTlmSzFyTXUyeG4wbUJJUVF2STlpZE9ubXpRUWNLOUNWZTFwb1AwZTN5OHRjYmY4OWc?oc=5"
+    },
+    {
+      "title": "翻倍算力牛股，严正声明 - 凤凰网财经",
+      "summary": "翻倍算力牛股，严正声明 凤凰网财经",
+      "source": "凤凰网财经",
+      "lang": "zh",
+      "published": "Wed, 07 Oct 2026 06:27:40 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBsdGcwU3ZLSnlrRmN5Q3VIWHgtS0RwcGlVT0pLVkcyMHFBTUh4c2IxNGZWNURRbGQzbFBGamFJd0JmU3pVMlVjYVRYZTZadFdC?oc=5"
+    },
+    {
+      "title": "罗曼股份(605289.SH)子公司签订2.77亿元算力设备采购合同_公司新闻 - 证券之星",
+      "summary": "罗曼股份(605289.SH)子公司签订2.77亿元算力设备采购合同_公司新闻 证券之星",
+      "source": "证券之星",
+      "lang": "zh",
+      "published": "Wed, 07 Oct 2026 07:41:47 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5DNEcwbWt3UlhodG5vX1cyUU52N0VqM1pHTUxvM1p0QXpCYkF3UEJZM3E4MTY2OTIyWWVhOW9ZV1RGTmlpRVY3VHR6X3BOSEc0T2djNm1PT0ZsbXlEOFBsNE1n?oc=5"
+    },
+    {
+      "title": "AI算力订单暴增至500亿美元！英伟达支持的Lambda拟融资40亿美元冲刺IPO - 财联社",
+      "summary": "AI算力订单暴增至500亿美元！英伟达支持的Lambda拟融资40亿美元冲刺IPO 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Tue, 06 Oct 2026 22:04:09 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9QWTFiay1LRjU3QkRoYlhVeVI4X1hKaHNXRE9WS1IzOWFSdXNueG1MRk9jRGtlR3JKOVJJWnpyTDBrOG00dlU2YQ?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 95894,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 74546,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57561,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 45933,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 37890,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 391546,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 296152,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 251782,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
