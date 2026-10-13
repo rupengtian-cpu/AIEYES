@@ -1,0 +1,503 @@
+{
+  "date": "2026-10-13",
+  "generated_at": "2026-10-13T09:52:07.953477+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Can Language Models Play the Wikipedia Game?",
+      "title_zh": "语言模型可以玩维基百科游戏吗？",
+      "summary": "Language models increasingly support or automate information retrieval from document collections too large to index. This task is difficult when it requires specialist linguistic or scientific knowledge. We used the Wikipedia Game to test language models on an analogous information retrieval task. In the game, players must reach a target article using only…",
+      "summary_zh": "语言模型越来越多地支持或自动化从太大而无法索引的文档集合中进行信息检索。当需要专业的语言或科学知识时，这项任务就很困难。我们使用维基百科游戏来测试类似信息检索任务的语言模型。在游戏中，玩家必须仅使用文章链接到达目标文章。我们比较了五种维基百科语言和五个学术文献数据集的句子嵌入模型和法学硕士。我们使用 OpenAlex 构建非常大的维基百科页面和论文引用的本地图表，并提供构建和导航它们的代码。这样就可以在不依赖第三方 API 的情况下研究语言模型的导航功能。我们将这些模型与人类和 TF-IDF 基准进行了比较。维基百科游戏格式可以实现跨技术、语言和领域的稳健比较。尽管最好的模型（GPT-o3 mini、GPT-4o、QwQ:32B 和 DeepSeek-R1:70B）取得了相当的成功，但没有任何模型显着优于人类。不同语言和主题的表现和排名各不相同，这…",
+      "authors": [
+        "Alexander Hickey",
+        "Joanna Knight",
+        "James Bishop"
+      ],
+      "published": "2026-10-09T17:59:56Z",
+      "category": "cs.AI",
+      "arxiv_id": "2610.13948v1",
+      "abs_url": "https://arxiv.org/abs/2610.13948v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13948v1"
+    },
+    {
+      "title": "Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark",
+      "title_zh": "迈向物理接地的铰接 3D 资产：多代理管道和基准",
+      "summary": "In this paper, we study physically grounded articulated 3D asset generation---moving the goal from reproducing how objects look to capturing how they move and function. Inspired by the literature on procedural and agentic generation, we present Artisan, a system that extends the latest method Articraft by introducing a multi-agent pipeline with physical sim…",
+      "summary_zh": "在本文中，我们研究基于物理的铰接式 3D 资产生成，将目标从再现对象的外观转变为捕获它们的移动和功能方式。受程序和代理生成文献的启发，我们提出了 Artisan，这是一个通过引入具有物理模拟反馈的多代理管道来扩展最新方法 Articraft 的系统，支持几何、外观和物理上合理的关节之外的综合属性，例如无碰撞运动、重力下的稳定性以及精确的质量和材料属性。此外，我们构建了一个涵盖四个关键方面的统一基准：空间保真度、物理合理性、下游任务性能和整体质量。该基准包含来自 ArtVIP 和 LightWheel 的 100 个参考资产、50 个稳定性提示和 50 个具有参考质量的 ABO 对象，以及评估各种指标的协议。通过对 10 多个代表性模型的广泛评估，Artisan 实现了有竞争力的空间保真度，同时在评估方法中实现了最低的碰撞率和最高的稳定性率。我们的系…",
+      "authors": [
+        "Xudong Cai",
+        "Ruijie Zhu",
+        "Haoliang Shang",
+        "Ruining Li",
+        "Marc Pollefeys",
+        "Shangzhe Wu"
+      ],
+      "published": "2026-10-09T17:59:41Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.13947v1",
+      "abs_url": "https://arxiv.org/abs/2610.13947v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13947v1"
+    },
+    {
+      "title": "Images Talk Back: Guiding MMDiTs by Suppressing Image-to-Text Feedback",
+      "title_zh": "图像回话：通过抑制图像到文本的反馈来指导 MMDiT",
+      "summary": "Multimodal diffusion transformers (MMDiTs) allow the evolving image to update internal text representations through joint attention. These representations then guide subsequent image updates, raising a question: does this feedback help correct deviations from the prompt, or preserve them? We find that image-to-text (I2T) feedback can preserve the objects an…",
+      "summary_zh": "多模态扩散变换器（MMDiT）允许不断演变的图像通过联合注意力来更新内部文本表示。然后，这些表示指导后续的图像更新，并提出一个问题：这种反馈是否有助于纠正与提示的偏差，或保留它们？我们发现图像到文本（I2T）反馈可以保留不断演变的图像中已经表示的对象和属性，包括错误。移植 I2T 消息可以挽救失败或破坏成功。在匹配的干预强度下，抑制 I2T 反馈的影响可以改善生成，而相反的控制则会降低生成。这些发现激发了语义反馈引导（SFG），它通过引导远离加强这种反馈并削弱文本到图像调节的辅助分支来抑制 I2T 反馈的影响。就地变体 iSFG 直接抑制 I2T 反馈并增强文本到图像调节，无需额外的模型评估。时间干预会激励在图像采样步骤的前 20% 期间运行 SFG 分支，在没有无分类器指导 (CFG) 的情况下，需要大约 1.2 美元\\乘以基本 NFE 的费用。…",
+      "authors": [
+        "Yucheng Yang",
+        "Xiaoxiao Sun",
+        "Shusheng Yang",
+        "Jiakang Chen",
+        "Serena Yeung-Levy"
+      ],
+      "published": "2026-10-09T17:58:15Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.13941v1",
+      "abs_url": "https://arxiv.org/abs/2610.13941v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13941v1"
+    },
+    {
+      "title": "Hide and Seek: HIDE Concepts to SEEK explanations for black box models",
+      "title_zh": "捉迷藏：隐藏概念以寻求黑盒模型的解释",
+      "summary": "Interpreting machine learning model predictions is a central challenge, particularly for black-box vision models. Concept-based attribution methods interpret models using human-understandable concepts. Existing concept-based methods can only interpret classification and regression models. They require access to model weights or large concept-annotated datas…",
+      "summary_zh": "解释机器学习模型预测是一个核心挑战，特别是对于黑盒视觉模型。基于概念的归因方法使用人类可理解的概念来解释模型。现有的基于概念的方法只能解释分类和回归模型。它们需要访问模型权重或大型概念注释数据集，并且大多数方法无法提供图像级归因。我们提出了隐藏和寻找（HnS），这是一种概念级归因的新方法，不需要访问模型权重或标记的概念数据集。 HnS 可以解释多种视觉模型。给定概念和图像集，HnS 使用视觉语言模型检索概念对齐的图像，在每个图像中定位概念，屏蔽局部区域，并根据原始图像和屏蔽图像之间黑盒模型输出的变化来测量归因。这可以通过直接测量模型的行为并支持本地归因来实现忠实归因。我们在 CelebA 和 COCO-Stuff 上验证了 HnS。与现有方法相比，HnS 与真实归因表现出更好的一致性。我们展示了 HnS 在各种任务上的适用性，包括图像字幕和卫星图像…",
+      "authors": [
+        "Bhanu Tokas",
+        "Rahul Nair",
+        "Rockwell Jackson",
+        "Hannah Kerner"
+      ],
+      "published": "2026-10-09T17:56:59Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.13935v1",
+      "abs_url": "https://arxiv.org/abs/2610.13935v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13935v1"
+    },
+    {
+      "title": "AI Models Can Provably Hide Arbitrary Capabilities",
+      "title_zh": "人工智能模型可以证明隐藏任意功能",
+      "summary": "Capability evaluations aim to surface dangerous model behaviors before deployment, but their reliability depends on the assumption that hidden capabilities can be elicited. We show this assumption does not hold under adversarial conditions by constructing backdoor attacks that embed encrypted neural networks within host model weights, decrypting and executi…",
+      "summary_zh": "能力评估的目的是在部署之前暴露危险的模型行为，但其可靠性取决于可以引出隐藏能力的假设。我们通过构建将加密神经网络嵌入到主机模型权重中的后门攻击，仅在收到秘密触发器时解密并执行它们，证明了这一假设在对抗条件下并不成立。使用数字储物柜，即使在完全访问模型权重的情况下，这些隐藏电路仍然难以在密码假设下导出和解释，从而将先前的工作从隐藏固定字符串扩展到任意计算。我们在 PyTorch 中实现概念验证结构，并通过微调、权重噪声、基于梯度的触发搜索和小型化学反应预测任务（CBRN 相关能力的代理）的潜在对抗训练来评估启发。我们的结果证明了对这些方法的抵制，并与我们的加密保证一起揭示了基于启发的能力审计的局限性。我们发布我们的模型来支持防御能力的改进。",
+      "authors": [
+        "Andis Draguns",
+        "Sumeet Ramesh Motwani",
+        "Raymond Douglas",
+        "Christian Schroeder de Witt"
+      ],
+      "published": "2026-10-09T17:55:06Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.13928v1",
+      "abs_url": "https://arxiv.org/abs/2610.13928v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13928v1"
+    },
+    {
+      "title": "Can machines reason non-verbally?",
+      "title_zh": "机器可以进行非语言推理吗？",
+      "summary": "Modern machines can solve equations, follow logic and reason through language, yet they still struggle with problems that require visual non-verbal reasoning. This is evident even in advanced systems such as DeepSeek, ChatGPT and Gemini, which remain limited on visual tasks such as completing abstract patterns or delineating ambiguous regions-of-interest. U…",
+      "summary_zh": "现代机器可以解决方程，通过语言遵循逻辑和推理，但它们仍然难以解决需要视觉非语言推理的问题。即使在 DeepSeek、ChatGPT 和 Gemini 等先进系统中，这一点也很明显，这些系统在完成抽象模式或描绘模糊的兴趣区域等视觉任务方面仍然受到限制。与可以通过逻辑或自动测试验证的口头推理中的显式中间步骤不同，视觉推理涉及隐式中间步骤，没有明确的验证方法。因此，非语言推理对建模具有挑战性，因此仍然是当前机器智能的基本限制。在这里，我们介绍 GenVerOpt，一个通用框架，它将生成、验证和优化统一到机器的推理管道中。通过生成候选解决方案、验证其正确性并迭代完善它们，GenVerOpt 可以实现每个样本的优化，而不是仅仅依赖于模型训练期间捕获的数据集级趋势。这个过程反映了人类解决问题的过程，其中多种可能性被想象、评估和完善，直到出现正确的解决方案。在不…",
+      "authors": [
+        "Shaheer U. Saeed",
+        "Zion Tse",
+        "Gregory Slabaugh",
+        "Daniel C. Alexander",
+        "Yipeng Hu"
+      ],
+      "published": "2026-10-09T17:54:36Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.13925v1",
+      "abs_url": "https://arxiv.org/abs/2610.13925v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13925v1"
+    },
+    {
+      "title": "Designing Protein Structures from Natural Language",
+      "title_zh": "从自然语言设计蛋白质结构",
+      "summary": "A central challenge in de novo protein design is generating proteins with desired structural and functional properties. Existing design models typically require a dedicated input representation for each property, limiting the design objectives they support. We develop Prompteina, the first all-atom structure generation model that supports new and broader de…",
+      "summary_zh": "从头蛋白质设计的一个核心挑战是生成具有所需结构和功能特性的蛋白质。现有的设计模型通常需要每个属性的专用输入表示，从而限制了它们支持的设计目标。我们开发了 Prompteina，这是第一个全原子结构生成模型，支持以自然语言指定的新的、更广泛的设计目标，类似于文本到图像的生成。为了训练 Prompteina，我们构建了 Prompteina-Data，这是一个配对的文本-蛋白质结构数据集，包含 180 万个结构和 5000 万多个描述全局和残基特异性结构和功能特性的说明文字。我们通过文本条件预训练和微调来调整 Proteina-Complexa（一种预训练的结构生成模型），将残基与其相应的文本对齐。 Prompteina 在 18 种结构特性中的 15 种上优于基线，并生成与其预期功能描述更匹配的蛋白质。在活页夹设计中，它在 20 个目标中的至少 13…",
+      "authors": [
+        "Joseph Lee",
+        "Yanjing Li",
+        "Bo Qiang",
+        "Gregory Lau",
+        "Allyson Ettinger",
+        "Noah A. Smith"
+      ],
+      "published": "2026-10-09T17:51:55Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.13917v1",
+      "abs_url": "https://arxiv.org/abs/2610.13917v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13917v1"
+    },
+    {
+      "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+      "title_zh": "RSI-Anything：用世界模型解锁递归自我改进",
+      "summary": "Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predictions may become unreliable as policies evolve. We introduce RSI-Anything, a domain-general framework built on JEPA-Anything that uses predictive world models to guide action and learning-data selectio…",
+      "summary_zh": "递归自我改进（RSI）旨在将交互体验转化为持续改进，但外部反馈成本高昂，并且随着政策的发展，世界模型预测可能变得不可靠。我们引入 RSI-Anything，这是一个基于 JEPA-Anything 构建的领域通用框架，它使用预测世界模型来指导行动和学习数据选择。观察到的反馈推动策略或工作流程改进以及有条件的世界模型适应，而组件和兼容性检查则控制更新策略模型对的保留。在不同的计算和科学领域，RSI-Anything 展示了巨大的收益。在代码修复中，在编码器固定的情况下，在可比较的测试使用情况下，通过预测选择，成功率从静态验证器的 26.3% 提高到 29.2%，世界模型适应后提高到 31.2%。图形用户界面 (GUI) 评估显示任务完成率更高，而平均操作次数减少了 39.4%。在连续五个政策版本中，实验室规划得分翻了一番多，从 21.80% 增至 4…",
+      "authors": [
+        "Taoyong Cui",
+        "Pinxian Zeng",
+        "Wanghan Xu",
+        "Hao Xiao",
+        "Shuhan Xue",
+        "Qiang Gao"
+      ],
+      "published": "2026-10-09T17:50:30Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.13912v1",
+      "abs_url": "https://arxiv.org/abs/2610.13912v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13912v1"
+    },
+    {
+      "title": "When VLMs Destroy What They Know: Spatial Representations Fall Below Lexical Priors",
+      "title_zh": "当 VLM 破坏了他们所知道的东西时：空间表示低于词汇先验",
+      "summary": "Vision-Language Models (VLMs) increasingly analyze and reason about images, yet it remains unclear whether their internal representations faithfully encode the structured relations required for such reasoning. We introduce EICS (Evaluation-Invariant Concept Stability), a metric for testing whether representations consistently encode concepts under controlle…",
+      "summary_zh": "视觉语言模型（VLM）越来越多地对图像进行分析和推理，但仍不清楚它们的内部表示是否忠实地编码了此类推理所需的结构化关系。我们引入了 EICS（评估不变概念稳定性），一种用于测试表征在受控单一概念干预下是否一致地编码概念的指标，以及 CASP-VL（视觉语言模型的因果控制空间扰动），这是从视觉基因组场景图导出的因果控制空间扰动的基准。在多个 VLM 架构中，我们发现空间关系的表示远不如词汇信息忠实，即使相同的模型在组合基准上的得分远高于机会。进一步的分析表明，这种关系在谓词自己的标记处是可识别的，但当句子聚合成全局表示时，无论是通过 (EOS) 标记还是通过均值池，这种关系就会丢失。这些发现揭示了基于输出的评估所看不见的系统性故障：VLM 在下游使用的表示中不保留其自身输入中存在的关系信息。",
+      "authors": [
+        "Shubh Garg",
+        "Chen Shani"
+      ],
+      "published": "2026-10-09T17:50:03Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.13910v1",
+      "abs_url": "https://arxiv.org/abs/2610.13910v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13910v1"
+    },
+    {
+      "title": "Revisiting Tabular Deep Regression: Objectives and the Limits of Global Early Stopping",
+      "title_zh": "重新审视表格深度回归：全局提前停止的目标和局限性",
+      "summary": "While deep learning models for tabular data have recently received significant research attention, the choice of objective functions for regression tasks remains an understudied degree of freedom. Several lines of research offer alternatives to the standard Mean Squared Error (MSE), but differences in datasets, backbones, and evaluation protocols make their…",
+      "summary_zh": "虽然表格数据的深度学习模型最近受到了广泛的研究关注，但回归任务的目标函数的选择仍然是一个未被充分研究的自由度。多项研究提供了标准均方误差 (MSE) 的替代方案，但数据集、主干网和评估协议的差异使得它们的实际效益难以比较。在这项工作中，我们通过在广泛的已建立的表格数据集和多个神经主干中对回归目标进行系统的重新评估来解决这一差距。我们的比较表明，许多提出的目标在适当调整的 MSE 基线上提供了有限或不一致的增益，而分位数损失在测试的主干上产生了相对于 MSE 的一致的总体改进。然后，我们发现即使有了这个强大的目标，仍然存在一个限制：具有不同目标噪声水平的区域可以在不同的训练时期达到最佳预测性能。因此，即使目标可以代表异方差目标分布，单个全局早期停止检查点也可以在不确定性区域之间进行折衷。受此限制的启发，我们引入了分位数损失的异方差感知扩展，该扩展使用…",
+      "authors": [
+        "Danil Rudenko",
+        "Georgii Bulgakov",
+        "Nikolay Kartashev",
+        "Ivan Rubachev",
+        "Daniil Krasylnikov",
+        "Artem Babenko"
+      ],
+      "published": "2026-10-09T17:49:32Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.13909v1",
+      "abs_url": "https://arxiv.org/abs/2610.13909v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13909v1"
+    },
+    {
+      "title": "Structural Automata for Neural Semantic Parsing",
+      "title_zh": "用于神经语义解析的结构自动机",
+      "summary": "Neural semantic parsers generate meaning representations token by token, yet well-formedness depends on references, scope, and graph relations that unfold during generation. Constrained decoding prevents locally invalid tokens but does not guarantee that a valid prefix can be completed within a fixed output-length limit. We investigate structural automata a…",
+      "summary_zh": "神经语义解析器逐个生成意义表示，但格式良好取决于生成过程中展开的引用、范围和图形关系。约束解码可防止本地无效令牌，但不能保证可以在固定输出长度限制内完成有效前缀。我们研究了 DRS 解析三个阶段（解码、事后处理和训练）的结构自动机，并另外评估了 AMR 的解码。对于解码，我们引入了接受路径解码（APD），它在剩余长度限制内保持经过验证的完成，并在该令牌也可以完成时遵循模型的首选令牌。 APD 保证在不撤回令牌的情况下接受输出。在严格的长度限制下，与本地屏蔽相比，它在 DRS 上将 Smatch++ 提高了 5.1 和 2.4 个点，在 AMR 上将 Smatch++ 提高了 6.4 和 3.2 个点，与相同限制下的回滚（收回令牌）相当。对于事后处理，无效输出集中在相同的输入上：对于训练数据有限的输入，8 个不受约束的样本有 10.2% 没有产生有效…",
+      "authors": [
+        "Xiao Zhang"
+      ],
+      "published": "2026-10-09T17:42:14Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.13896v1",
+      "abs_url": "https://arxiv.org/abs/2610.13896v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13896v1"
+    },
+    {
+      "title": "Beyond the Snowflakes: Disentangling Weather Effects from Confounding Meta-Factors in LiDAR Object Detection",
+      "title_zh": "超越雪花：从 LiDAR 物体检测中的混杂元因素中解开天气影响",
+      "summary": "Light Detection and Ranging (LiDAR) is critical for autonomous perception, yet its performance is known to degrade in adverse weather. While existing literature models snow as atmospheric noise that degrades performance, our granular evaluation on the WADS-3D and CADC datasets reveals a counter-intuitive phenomenon: detection accuracy consistently improves…",
+      "summary_zh": "光探测和测距 (LiDAR) 对于自主感知至关重要，但众所周知，其性能会在恶劣天气下降低。虽然现有文献将雪建模为会降低性能的大气噪声，但我们对 WADS-3D 和 CADC 数据集的精细评估揭示了一个违反直觉的现象：随着雪强度的增加，检测精度不断提高。通过消融研究和元信息分析，我们通过确认虽然落雪起到了噪音的作用，但其负面影响被一个主要的并发因素所抵消：对象点数量显着增加，从而协调了这一点。我们假设这种对象点计数增加起到了几何增强的作用，这是由积雪增加车辆表面积以及从镜面反射到漫反射的转变所驱动的。我们的研究结果表明，使用广泛的天气严重性分类来评估感知系统而不考虑相关的对象级数据可能会导致关于探测器鲁棒性的误导性结论。我们得出的结论是，准确的评估需要将大气噪声与表面累积效应解耦，并概述了验证这些物理模型的未来研究。 WADS-3D 数据集可从以下网…",
+      "authors": [
+        "Yiming Yang",
+        "Jeremy P. Bos"
+      ],
+      "published": "2026-10-09T17:38:30Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.13891v1",
+      "abs_url": "https://arxiv.org/abs/2610.13891v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13891v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "磐石大模型牵手天穹超算赋能科学研究 - 新华网",
+      "summary": "磐石大模型牵手天穹超算赋能科学研究 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Tue, 13 Oct 2026 09:39:51 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNS2x2cFp5eDVOYWFIMWxaRmVQVXEtRDZpNV9NLWFOcnZqREs1T1h5RlFnSXNobGFLeFZJSUR4eWs2UHRVTnMtQ09GRmVJcDFReXEwbHN3N2o1dDRKQmg2UXBCLV9CTlBNQkhNY3FEMnVpODZVN09ELVBvX24wVzE2M3NR?oc=5"
+    },
+    {
+      "title": "字节跳动单独设立大模型安全部门 把控智能体风险 - 财新",
+      "summary": "字节跳动单独设立大模型安全部门 把控智能体风险 财新",
+      "source": "财新",
+      "lang": "zh",
+      "published": "Tue, 13 Oct 2026 06:36:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1vZnN4QTJxSHpQYVppZmY1Y0FYSWhCQ0NfejVvUkFqWENjeDBvX1l0QXZqMXFyRF9RazhxUkFITXFfUjR1TmN3aGtuSmVQRWhxRjZMSlAzQWo3NWozSFhiZnh2eUw?oc=5"
+    },
+    {
+      "title": "新质生产力意见明确AI安全底线 网安企业加速布局智能体防护 - 21财经",
+      "summary": "新质生产力意见明确AI安全底线 网安企业加速布局智能体防护 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Tue, 13 Oct 2026 05:52:23 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTUwtYlZvSUJJZkIxeG9GM3JOWkI5aXNXcTBISW5JSFdRc0JsYkZ4Z1gwYVBFTVlxdjFtLUxqVVhfbXAtZ2k2V1kzdEliOWhweTVUYjhBX1ZvWXhaNHFLaDVRYzhWSXVPcWdtTG5jUnhQakU3ekpSd2xyOUh5X0VRaE5KVi05dGp0VWlmbGZ3VQ?oc=5"
+    },
+    {
+      "title": "千年文脉注入澎湃“算力”——杭州上城聚力打造AI赋能新高地 - 新华网浙江",
+      "summary": "千年文脉注入澎湃“算力”——杭州上城聚力打造AI赋能新高地 新华网浙江",
+      "source": "新华网浙江",
+      "lang": "zh",
+      "published": "Tue, 13 Oct 2026 01:28:44 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUmk1a044eGM4UWlrUXVDWHZTWXpYYnhLSUtpU3hMUHQxRFByR3JTVVlIelhhMUJma18xRTRvNGtMQ2dWQUFOWldPMHhfc1ZVeTBVRXBpU3BHdnRBTXh4cFlzZW5wZ1ZnbjEyakEyTEppM3FNSnl5YUREUjRwQU5vXzRn?oc=5"
+    },
+    {
+      "title": "IDC报告：英伟达在华数据中心AI芯片份额降至34% - 观点网",
+      "summary": "IDC报告：英伟达在华数据中心AI芯片份额降至34% 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Tue, 13 Oct 2026 07:39:27 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBFWlpZVDdEd0NWekt2TTFnSlFid3BrcVl4Mms1RHFmQ3c1ekJ5YVU0OTBDUk9mRlQ2QkhEam5rci1YNHNXMkJjSC1Mc1RzdFpIWnU1Q0JBano1SFZBMU5Bek5n?oc=5"
+    },
+    {
+      "title": "AI 智能体正在重新定义 CPU 性能的评估标准 - EDN China",
+      "summary": "AI 智能体正在重新定义 CPU 性能的评估标准 EDN China",
+      "source": "EDN China",
+      "lang": "zh",
+      "published": "Tue, 13 Oct 2026 09:21:47 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5fTUhNTWVHcHhadUZwWEEzXy14ZldkLXo2TFZYQlZvLXV0NUZYb2IzZ05zX2FJOTUzT3pYcmxxOHBtT09jaVRQSHFROEZXdE4xVTBj?oc=5"
+    },
+    {
+      "title": "AI4S、具身智能、算力芯片，人工智能哪类项目最受市场青睐？ - 证券之星",
+      "summary": "AI4S、具身智能、算力芯片，人工智能哪类项目最受市场青睐？ 证券之星",
+      "source": "证券之星",
+      "lang": "zh",
+      "published": "Tue, 13 Oct 2026 06:33:34 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1laVlOV0RkRTBnT0NfazdQTF95bHh4Mm84dUlacjJ5X3RWMlVlQWJjdUl6VXN2TGxkTXY3dmU0WHkydW5iODVZM2Utc2hCeFpjMDd0UzdYTHh5TTluWldpVw?oc=5"
+    },
+    {
+      "title": "推理需求持续释放 算力租赁行业景气度有望攀升 - 财联社",
+      "summary": "推理需求持续释放 算力租赁行业景气度有望攀升 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Mon, 12 Oct 2026 23:42:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1BSEdMWlVfWVpURG5KcWI1Zkp3MVJ5MkF0ajRIbG01eGZlbDNxSi13bWhfSnBkbTNpV3hZdjdxVE9RNWt0SHVBcA?oc=5"
+    },
+    {
+      "title": "AMD推出Helion智能体AI机架设计，最高支持32768核，思科戴尔等八厂商联合背书 - 华尔街见闻",
+      "summary": "AMD推出Helion智能体AI机架设计，最高支持32768核，思科戴尔等八厂商联合背书 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Tue, 13 Oct 2026 03:40:06 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1tbW1kMElDV19ZMEtRa1lOd1MySE9scTg1dXVqSG5MVGRMZ2Q2S2VfME1XZ1FpN0wzS3YyemQtWUhOVzQ1TTJtWEZZc3lnWnVfV3NR?oc=5"
+    },
+    {
+      "title": "AI融入F1赛事 智能体辅助比赛决策 - 东方财富",
+      "summary": "AI融入F1赛事 智能体辅助比赛决策 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Tue, 13 Oct 2026 08:57:22 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1xVkpwTmdYejEyOXpxSHNZVmt2QUNOSDg1eTNqUUpRWjdleWluMGppNFgxTFpRYTRTTmx3c1M1NGRvOURXa1hqb2dDblFTMWdWbVpmZnlqZXlRdmRidDEyZg?oc=5"
+    },
+    {
+      "title": "微软2027年推出新型AI半导体，算力提高40% - 日经中文网",
+      "summary": "微软2027年推出新型AI半导体，算力提高40% 日经中文网",
+      "source": "日经中文网",
+      "lang": "zh",
+      "published": "Tue, 13 Oct 2026 07:53:06 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY0lwQ2NXV0hrWDJabFhVVXlZNHJQaU16bnh4ZlBUS2Z0N1Z5U1o2b2NPdVhfNEkxR0NmRWU0bG9Oa0tyUWNCd0tHQUQtTm1rdDFZbEZqTHlFU2lkRTdXWUNIcGxCdFk1dllmRmN4NUZmOWQxWnVVSlVmelozek11b2owaGZtcmZicFE?oc=5"
+    },
+    {
+      "title": "近 20 亿 B 轮融资！蓝芯算力冲刺RISC‑V AI服务器芯片 - 电子工程专辑",
+      "summary": "近 20 亿 B 轮融资！蓝芯算力冲刺RISC‑V AI服务器芯片 电子工程专辑",
+      "source": "电子工程专辑",
+      "lang": "zh",
+      "published": "Tue, 13 Oct 2026 05:35:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1kOFM5c1BpZHJTQ1RGTFVOM1AxNG5iWUJxOU04cWxrdVZOeDJrOXVkTmRFaVQxMjJsajN5bEpKVkJBaHUxZ25UUllXWHJFYzhLOW80?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 96260,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 75172,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57573,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 46470,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 38087,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 391828,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 298401,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 253293,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
