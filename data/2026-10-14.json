@@ -1,0 +1,515 @@
+{
+  "date": "2026-10-14",
+  "generated_at": "2026-10-14T08:09:57.572161+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "LoopWAM: Closed-Loop Generalist Policy Improvement from Deployment Rollouts",
+      "title_zh": "LoopWAM：部署部署带来的闭环通才策略改进",
+      "summary": "Scaling expert demonstrations alone does not enable generalist robot policies to improve from deployment. Real-world rollouts contain successes, suboptimal behavior, and failures: imitating every recorded action can reinforce poor behavior, while filtering out failures discards evidence of physical interactions and their consequences. We introduce \\textbf{L…",
+      "summary_zh": "仅扩大专家演示并不能改善通用机器人策略的部署。现实世界的部署包含成功、次优行为和失败：模仿每一个记录的动作可能会强化不良行为，而过滤掉失败会丢弃物理交互及其后果的证据。我们引入了 \\textbf{LoopWAM}，这是一种闭环世界动作模型，它使用自身和其他部署策略的推出，直接从这个完整的质量范围中学习。依赖于源的噪声采样将行为学习和动作条件世界建模统一起来，而质量指导和质量加权监督则保留了跨质量的完整视频监督并规范了动作模仿。视频和动作标记在并行去噪过程中相互作用，允许学习的结果直接通知动作生成。在 RoboChallenge Table30-V2 上，三轮部署和训练成功率从 23.67% 提高到 43.33%，提高了 19.7 个百分点，最终得分为 56.80。 LoopWAM 还在 RoboTwin~2.0 上实现了 94.5% 的平均成功率，…",
+      "authors": [
+        "Wenxuan Guo",
+        "Yingping Liang",
+        "Zhaoguo Wang",
+        "Ziyuan Li",
+        "Angyuan Ma",
+        "Zhenyu Wu"
+      ],
+      "published": "2026-10-13T17:59:56Z",
+      "category": "cs.RO",
+      "arxiv_id": "2610.18873v1",
+      "abs_url": "https://arxiv.org/abs/2610.18873v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18873v1"
+    },
+    {
+      "title": "EgoExplorer: A Vision-Motion-Touch Observatory for Human Loco-Manipulation In Situ",
+      "title_zh": "EgoExplorer：用于人体原位操纵的视觉-运动-触摸观测站",
+      "summary": "Learning humanoid loco-manipulation from human demonstrations rests on observing how locomotion, posture, and object interaction evolve together as tasks unfold. Scaling collection across diverse environments, in turn, favors lightweight, portable capture systems. Yet, existing datasets provide only partial views of this coordination. Thus, we introduce Ego…",
+      "summary_zh": "从人类演示中学习人形机器人的运动操控取决于观察运动、姿势和物体交互如何随着任务的展开而共同演变。反过来，跨不同环境扩展收集有利于轻型、便携式捕获系统。然而，现有的数据集仅提供了这种协调的部分视图。因此，我们推出了 EgoExplorer，这是一个使用可穿戴系统构建的 100 小时视觉-动作-触摸人体操纵观测站。其连续录制强调专业活动，将自我中心的视频与重建的全身运动、细粒度的手指关节和触觉观察相结合，并附有逐步描述。为了通过稀疏人体传感实现这种覆盖范围，我们开发了校准-完整-约束管道。具体来说，可重复使用的校准在运动推断之前修复参与者的几何形状和传感器附件，以消除关节中的安装偏移。然后，时间先验完成未观察到的关节运动，而分层约束则促进测量一致性、时间连续性和几何一致性，而运动合理性本身并不能保证这些属性。与跟踪器安装的参考相比，该方法相对于最强基线…",
+      "authors": [
+        "Yunsong Zhou",
+        "Xuekun Jiang",
+        "Haiqi Shen",
+        "Hangxu Liu",
+        "Chaojian Shi",
+        "Yujie Liu"
+      ],
+      "published": "2026-10-13T17:59:55Z",
+      "category": "cs.RO",
+      "arxiv_id": "2610.18872v1",
+      "abs_url": "https://arxiv.org/abs/2610.18872v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18872v1"
+    },
+    {
+      "title": "Dog-Breed Text-to-image Flow Matching from Pretraining to Fine-Tuning on 4 Consumer GPUs",
+      "title_zh": "在 4 个消费级 GPU 上进行从预训练到微调的狗品种文本到图像流匹配",
+      "summary": "We generally perceive that training text-to-image diffusion models requires heavy compute: it is true if we aim at a comprehensive frontier model. This understanding prevents people from training their own models when getting started in the field. We develop MiniDog, a framework that enables pretraining diffusion transformers in 55 minutes and fine-tuning i…",
+      "summary_zh": "我们通常认为训练文本到图像的扩散模型需要大量计算：如果我们的目标是综合前沿模型，则确实如此。这种理解阻止人们在开始该领域时训练自己的模型。我们开发了 MiniDog，这是一个框架，可以在 55 分钟内预训练扩散变换器，并在另外 15 分钟内在四个 3090 GPU 上进行微调。对于数据，我们使用 ImageNet 中的 26k 狗图像并为其添加标题以进行预训练，并使用 FLUX.1-schnell 生成的 2k 图像进行微调。我们预先计算图像和文本特征并缓存它们以提高效率。对于架构，我们使用 E2E-INVAE 来实现其语义潜在空间、一个具有 22M 参数的小型转换器、一个用于文本编码的小型 Qwen 模型以及上下文条件调节。对于训练，我们使用 iREPA 和 EUPE 感知编码器进行加速。对于评估，我们的存储库支持 FID、HPSv2 分数、Pi…",
+      "authors": [
+        "Reyhaneh Esmailizadeh",
+        "Xingjian Leng",
+        "Zhanhao Liang",
+        "Liang Zheng"
+      ],
+      "published": "2026-10-13T17:59:53Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.18870v1",
+      "abs_url": "https://arxiv.org/abs/2610.18870v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18870v1"
+    },
+    {
+      "title": "Cepheid: Decoupling Scale from Structure for Cross-Family Motion Completion",
+      "title_zh": "Cepheid：将尺度与结构解耦以完成跨系列运动",
+      "summary": "Sparse-to-dense motion completion recovers dense mesh motion from sparse vertex displacements. Residual priors trained on one geometry family frequently fail to beat parameter-free harmonic extension off-family. Moreover, cross-family training meets a scaling barrier: residual amplitude varies by more than an order of magnitude across geometry families and…",
+      "summary_zh": "稀疏到密集运动完成从稀疏顶点位移中恢复密集网格运动。在一个几何族上训练的剩余先验经常无法击败族外的无参数谐波扩展。此外，跨族训练遇到了缩放障碍：残余振幅在几何族之间变化超过一个数量级，并且随着观察变得更加密集而崩溃。由于该尺度取决于未知的目标运动，因此无法在测试时直接测量。我们通过学习无量纲先验、根据可观测值估计振幅以及仅在训练源上拟合的轻量级校正，将残差结构与物理尺度解耦。我们的统一模型超越了所有评估系列的谐波扩展，包括看不见的布料和有腿的身体，没有骨骼、配准或交叉网格对应。同样的先验也适用于无需重新训练的点跟踪动物视频和抓取软体的机器人。项目页面：https://su-terry.github.io/cepheid-website/",
+      "authors": [
+        "Chih-Hai Su",
+        "Tsung-Wei Ke",
+        "Yu-Lun Liu"
+      ],
+      "published": "2026-10-13T17:59:53Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.18871v1",
+      "abs_url": "https://arxiv.org/abs/2610.18871v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18871v1"
+    },
+    {
+      "title": "What Matters in Quality-Aware VLA Pretraining: A Benchmark and Empirical Study",
+      "title_zh": "质量意识 VLA 预训练中最重要的是什么：基准和实证研究",
+      "summary": "How should demonstration quality be used during vision-language-action (VLA) pretraining to improve performance after target-task fine-tuning? We compare weighting, filtering, and conditioning across reward definitions and label granularities using 5,000 naturally suboptimal human demonstrations and 24 target tasks. Within each VLA, we match demonstrations…",
+      "summary_zh": "在视觉-语言-动作（VLA）预训练期间应如何使用演示质量来提高目标任务微调后的性能？我们使用 5,000 个自然次优的人类演示和 24 个目标任务来比较奖励定义和标签粒度的权重、过滤和调节。在每个 VLA 中，我们都会匹配演示和培训预算。其他比较检查预训练数据大小以及质量标签在微调和推理过程中的作用。在三个 VLA 中，我们发现接近感知事件调节比普通行为克隆提高了平均成功率；平均而言，调节和过滤分别支持情节和块标签，并具有依赖于模型的逆转；恒定标签微调可提高使用标记或未标记推理进行条件预训练后的平均成功率。我们引入 AXIS-Bench 来支持这些受控比较。它建立在众包模拟演示的基础上，提供记录的对象和接触状态，用于重新计算共享轨迹上的质量标签。可重播的轨迹支持工作区对齐的渲染和用户定义的现实世界目标任务。在我们的现实实验中，模拟预训练将成功率从…",
+      "authors": [
+        "Mingxuan Yan",
+        "Litian Gong",
+        "Dihong Huang",
+        "Zhixu Li",
+        "Tianyu Zhang",
+        "Wenqian Zhang"
+      ],
+      "published": "2026-10-13T17:59:52Z",
+      "category": "cs.RO",
+      "arxiv_id": "2610.18869v1",
+      "abs_url": "https://arxiv.org/abs/2610.18869v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18869v1"
+    },
+    {
+      "title": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
+      "title_zh": "Tev：通过密集的进度奖励扩展长期代理环境",
+      "summary": "Long-horizon agents have drawn growing attention for their ability to work autonomously -- from hours to days -- on economically valuable tasks, a capability essential to automated discovery and recursive self-improvement (RSI). Yet open-source models still struggle on long-horizon tasks, largely for lack of both training data and a working recipe, and scal…",
+      "summary_zh": "长视野代理因其在经济上有价值的任务上自主工作（从几小时到几天）的能力而受到越来越多的关注，这是自动发现和递归自我改进（RSI）所必需的能力。然而，开源模型在长期任务上仍然举步维艰，主要是因为缺乏训练数据和工作方案，而且扩展这两者都很困难：长期、复杂的任务很难策划和验证，而且回报也很少。我们解决这两个问题。首先，我们介绍 Tev-Gym，这是第一个具有可验证、密集、渐进奖励的长期智能体训练数据集——跨 7 个领域的 1,170 个经过验证的任务环境。它建立在潜在世界优先的方法之上，首先构建一个潜在世界：任务域、工作流程和每个步骤后的预期状态的完整且正确的隐藏规范。然后，每个任务都会从此规范逐步呈现到面向代理的环境中，从而实现可控的复杂性和自然的进度指标。其次，我们将此指标转化为训练配方：通过进度-潜在奖励塑造（PPRS），我们将进度转化为密集的每步奖…",
+      "authors": [
+        "Wenbo Hu",
+        "Shraman Pramanick",
+        "Krishna Kumar Singh",
+        "Nanyun Peng",
+        "Kai-Wei Chang",
+        "Yong Jae Lee"
+      ],
+      "published": "2026-10-13T17:59:51Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.18868v1",
+      "abs_url": "https://arxiv.org/abs/2610.18868v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18868v1"
+    },
+    {
+      "title": "PLAYGROUND: Progressive Layout Generation with Render-Grounded Planning",
+      "title_zh": "PLAYGROUND：基于渲染的规划的渐进式布局生成",
+      "summary": "Generating editable graphic designs requires arranging visual and textual elements into a coherent composition while preserving their content and editability. Although recent MLLM-based approaches employ iterative generation and visual refinement to reflect the real-world design workflows, their high-level plans are predetermined prior to execution, limitin…",
+      "summary_zh": "生成可编辑的图形设计需要将视觉和文本元素排列成连贯的组合，同时保留其内容和可编辑性。尽管最近基于 MLLM 的方法采用迭代生成和视觉细化来反映现实世界的设计工作流程，但它们的高级计划是在执行之前预先确定的，限制了它们随着设计发展的适应性。为了解决这个限制，我们提出了 PlayGround，一个渐进式布局生成框架，可以动态适应当前渲染的画布。 PlayGround 建立了一个渐进式设计循环，包括渐进式规划器、布局生成器和视觉验证器，并由结构感知检索器引导。给定一组初始无序元素，结构感知检索器最初推断出粗略的布局结构，以检索结构相似的参考设计。随后，在每个回合，渐进式规划器都会检查当前渲染的画布以及其余元素，形成下一个功能组，并规划其组成。然后布局生成器预测可编辑的布局属性，而视觉验证器评估渲染的候选者并在需要细化时提供反馈。为了通过逐步监督来训练渐进…",
+      "authors": [
+        "Jaeho Lee",
+        "Junhwan Heo",
+        "Junghyun Park",
+        "WonJun Moon",
+        "Eunju Yang",
+        "Seungho Jang"
+      ],
+      "published": "2026-10-13T17:59:50Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.18865v1",
+      "abs_url": "https://arxiv.org/abs/2610.18865v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18865v1"
+    },
+    {
+      "title": "AutoAgent0: An Agentic Runtime for Safe Closed-Loop Driving",
+      "title_zh": "AutoAgent0：用于安全闭环驾驶的代理运行时",
+      "summary": "Safe autonomous driving requires more than accurate planning at a single frame: it demands reliable closed-loop execution in dynamic environments. Although end-to-end driving policies have advanced rapidly, the accumulated closed-loop errors, especially in unseen scenarios, can push vehicles into states from which the same policy struggles to recover. We ad…",
+      "summary_zh": "安全的自动驾驶需要的不仅仅是单帧的精确规划：它需要在动态环境中可靠的闭环执行。尽管端到端驾驶策略进展迅速，但累积的闭环错误，尤其是在未见过的情况下，可能会将车辆推入相同策略难以恢复的状态。我们通过将闭环驾驶安全视为测试时执行问题来应对这一挑战。我们推出了 AutoAgent0，这是一个代理运行时和利用框架，可以通过互补的检测技能、基于规则的操作验证和反馈驱动的恢复来增强现有的驾驶专家。为了解决不准确的场景感知问题，独立的检测模块使用互补的感知技能构建场景上下文，并且基于规则的验证器在执行之前根据该上下文检查建议的轨迹。当标称轨迹不可靠时，运行时的协调器会激活恢复计划，其中代理循环根据操作原语构建替代操作建议，并使用验证反馈迭代地完善它们。该设计将独立场景评估与可行性检查和在线恢复相结合，解决了感知错误和个别专家恢复能力有限的问题。对 Fail2Dr…",
+      "authors": [
+        "Jiageng Liu",
+        "Seth Z. Zhao",
+        "Zewei Zhou",
+        "Alejandro Huerta",
+        "Aidan Bayer-Calvert",
+        "Yuxin Bao"
+      ],
+      "published": "2026-10-13T17:59:50Z",
+      "category": "cs.RO",
+      "arxiv_id": "2610.18866v1",
+      "abs_url": "https://arxiv.org/abs/2610.18866v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18866v1"
+    },
+    {
+      "title": "Data Free Training of Diffusion Models for Lattice Field Theories",
+      "title_zh": "晶格场论扩散模型的无数据训练",
+      "summary": "Sampling equilibrium field configurations remains a major computational bottleneck in lattice field theory, motivating the development of generative samplers that can produce independent configurations. Diffusion models are promising for this purpose, but their standard denoising score matching objective requires samples from the target distribution, seemin…",
+      "summary_zh": "采样平衡场配置仍然是晶格场理论中的主要计算瓶颈，推动了可以产生独立配置的生成采样器的开发。扩散模型对此很有希望，但其标准去噪分数匹配目标需要来自目标分布的样本，似乎重新引入了原始采样问题。在这里，我们表明，扩散模型可以使用目标分数标识从它们自己生成的样本中进行训练，并提供对非标准化概率密度的访问。该身份的重要性加权公式在整个训练过程中产生一致的目标，而未加权的变体定义了自洽的定点训练方案。我们对二维 \\(φ^4\\) 理论中的不同方法进行基准测试，并确定有效的选择，从而能够在对称、临界和破碎阶段进行有效的训练和采样。最终，我们的无数据训练方法实现了与 HMC 参考数据训练相当的性能。",
+      "authors": [
+        "Dennis Grinwald",
+        "Ankur Singha",
+        "Khaled Kahouli",
+        "Karl Jansen",
+        "Shinichi Nakajima"
+      ],
+      "published": "2026-10-13T17:59:33Z",
+      "category": "hep-lat",
+      "arxiv_id": "2610.18863v1",
+      "abs_url": "https://arxiv.org/abs/2610.18863v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18863v1"
+    },
+    {
+      "title": "DoubtLess: Training-Free Contrastive Decoding for Efficient Reasoning",
+      "title_zh": "毫无疑问：无需训练的对比解码即可实现高效推理",
+      "summary": "Reasoning models achieve strong performance through long chains of thought (CoT), but often spend more tokens than needed to solve a problem. Existing ways to shorten the CoT require additional training for each model, add a fixed steering vector to the model's hidden states, or use decoding heuristics such as stopping early or banning words like \"wait\", wh…",
+      "summary_zh": "推理模型通过长的思维链（CoT）实现了强大的性能，但通常花费比解决问题所需的更多的代币。缩短 CoT 的现有方法需要对每个模型进行额外的训练，向模型的隐藏状态添加固定的引导向量，或者使用解码启发式方法，例如提前停止或禁止“等待”等单词，这些都会降低准确性。我们提出了 DoubtLess，一种免训练的解码方法，其中较小的推理模型引导较大的推理模型变得简洁。到目前为止，小模型读取大型模型的 CoT 两次，一次提示为简短（简短思考者），一次提示为详细（详细思考者），并且其两个 logit 向量之间的差异（按强度缩放）在 CoT 的每一步都添加到大模型的 logits 中。在竞赛数学、研究生水平科学和竞赛性编程的七个基准上，DoubtLess 将 Qwen3-32B 的 CoT 缩短了 31%，而准确性不变，优于五个推理时间基准。我们还表明，在任务性能不变…",
+      "authors": [
+        "Minghao Luo",
+        "Liang Chen"
+      ],
+      "published": "2026-10-13T17:59:32Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.18862v1",
+      "abs_url": "https://arxiv.org/abs/2610.18862v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18862v1"
+    },
+    {
+      "title": "AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards",
+      "title_zh": "AesCode：具有解耦跨模式奖励的美观代码生成",
+      "summary": "Generating information-rich visual artifacts such as slides, posters, and dashboards as code is appealing because the outputs are structured, editable, and verifiable. Yet code models cannot see how their choices of layout and color come together on the canvas, often limiting spatial planning and aesthetic quality. Image generators excel at visual design bu…",
+      "summary_zh": "以代码形式生成幻灯片、海报和仪表板等信息丰富的视觉工件很有吸引力，因为输出是结构化的、可编辑的和可验证的。然而，代码模型无法看到它们对布局和颜色的选择如何在画布上组合在一起，这通常会限制空间规划和美学质量。图像生成器擅长视觉设计，但可能会错误渲染请求的内容，使其输出成为直接复制的不可靠目标。因此，我们引入了 AesCode，它生成基于内容提示的代码，同时使用从同一提示生成的图像作为美学指导。为此，AesCode 将目标表示为设计图，该设计图描述整个画布并使每个属性可归因。从该图中，我们得出互补的跨模式奖励：确定性验证者对可从代码和渲染中解析的属性进行评分，而 VLM 法官则使用与图元素和关系相关的特定于样本的视觉图评分标准 (VGR) 来评估不可解析的属性。我们通过强化学习和每通道标准化来优化这些解耦的奖励，以共同改善空间规划、美学质量和可验证的正…",
+      "authors": [
+        "Xin Gao",
+        "Yifan Yang",
+        "Xin Li",
+        "Pan Wang",
+        "Yan Li",
+        "Muzhao Tian"
+      ],
+      "published": "2026-10-13T17:59:31Z",
+      "category": "cs.AI",
+      "arxiv_id": "2610.18860v1",
+      "abs_url": "https://arxiv.org/abs/2610.18860v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18860v1"
+    },
+    {
+      "title": "Hybrid Reasoning Agents",
+      "title_zh": "混合推理代理",
+      "summary": "How can we build an agent that thinks beyond human language, yet still acts through it in the external environment? Modern LLM agents still reason and interact through text, while latent reasoning offers an efficient internal medium but lacks native tool access and reasoning transparency. We bridge these two directions with Hybrid Reasoning Agents (HybridAg…",
+      "summary_zh": "我们如何才能构建一个超越人类语言思考、但仍能在外部环境中通过人类语言行动的智能体？现代 LLM 代理仍然通过文本进行推理和交互，而潜在推理提供了有效的内部媒介，但缺乏本地工具访问和推理透明度。我们通过混合推理代理（HybridAgents）将这两个方向联系起来，它在整个统一的生成过程中动态地在潜在推理和基于文本的交互之间导航。从架构上讲，轻量级 HybridLink 可实现文本模式和潜在模式之间的无缝转换，而代理的连续工作记忆可在多个回合中保留无损混合上下文。这些设计保留了工具集成的代理功能，同时使潜在的想法可以直接检查。在此架构的基础上，我们进一步开发了用于混合推理的专用后训练算法：HybridSFT 通过教导骨干网与 HybridLink 协调来稳定工具集成的混合生成，然后 HybridRL 通过学习何时在潜在空间中思考以及何时通过文本采取行动…",
+      "authors": [
+        "Jiaru Zou",
+        "Yunzhe Qi",
+        "Sirui Chen",
+        "Federico Bianchi",
+        "Shang Zhu",
+        "Pan Lu"
+      ],
+      "published": "2026-10-13T17:59:31Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.18861v1",
+      "abs_url": "https://arxiv.org/abs/2610.18861v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.18861v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "‌​‌⁤‌⁢​​​​​⁣⁣⁢⁢⁡⁡⁢​⁡‌​‍⁤⁢‌﻿⁡⁤⁡⁣⁡⁤﻿​‌​⁢​⁤⁤‌⁢​⁣⁡刚刚，Gemini 4 发布！性价比「斩杀」GPT-6 和 Opus 5.5，重回御三家 - 爱范儿",
+      "summary": "‌​‌⁤‌⁢​​​​​⁣⁣⁢⁢⁡⁡⁢​⁡‌​‍⁤⁢‌﻿⁡⁤⁡⁣⁡⁤﻿​‌​⁢​⁤⁤‌⁢​⁣⁡刚刚，Gemini 4 发布！性价比「斩杀」GPT-6 和 Opus 5.5，重回御三家 爱范儿",
+      "source": "爱范儿",
+      "lang": "zh",
+      "published": "Wed, 14 Oct 2026 02:56:48 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE01R0k0b2MwdjRPQUpFNWZjMFlUZDNSdlJuTGVuM1dDVlZXWGpCMzRBc2hBbTlJblJMTHVTY0lCeXZRaXc?oc=5"
+    },
+    {
+      "title": "【理响中国·幸福有“理”】筑牢算力底座，炼成数字福建“超级大脑” - 光明网理论",
+      "summary": "【理响中国·幸福有“理”】筑牢算力底座，炼成数字福建“超级大脑” 光明网理论",
+      "source": "光明网理论",
+      "lang": "zh",
+      "published": "Wed, 14 Oct 2026 01:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE52UzVfSVluc25rUlVLRHY2VGVHUGNhbkExRjBYT3pNSEJoOGZIOUNKc09iZnNvWWlrVkQ0NDNFdGQ0RjNvTWNPSkJ1Y2k2N0tPTGNoY2ZKSDBaQVJlYzI0S2FpSQ?oc=5"
+    },
+    {
+      "title": "天智大模型：“智能兵团” 撑起一座工厂 - 山东省工业和信息化厅",
+      "summary": "天智大模型：“智能兵团” 撑起一座工厂 山东省工业和信息化厅",
+      "source": "山东省工业和信息化厅",
+      "lang": "zh",
+      "published": "Wed, 14 Oct 2026 01:08:19 GMT",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5XVEFwQUs1VnpkcFd1Ti1CQ2FCOWQ4Qzd5NU5SRUZvaGI5clViRVF6TVVWRkFqMVNENXhaUHRoRGpzcmZOaUVKejZwQWdrdDl5MWJzNlo5LXhjbjF0djhWRUVXVGtRTURUNUljZWtPQXFJcGs?oc=5"
+    },
+    {
+      "title": "谷歌Gemini 4 Argon全球上线，推广价截至11月底，Pro用户可在搜索AI模式体验 - 华尔街见闻",
+      "summary": "谷歌Gemini 4 Argon全球上线，推广价截至11月底，Pro用户可在搜索AI模式体验 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Tue, 13 Oct 2026 23:03:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBpOGx4amxkS2FvcUNYVl9pUnB4aWpSV09HY0dDUUZFS1gxUFR1SGxYTm9aNXpvS0hheGdFSzd1YXA3Wnd2TmlwQ1RlXzQyUGRQUjJ3?oc=5"
+    },
+    {
+      "title": "全球AI投资提速，我国算力和电力设备出口大增 - 21财经",
+      "summary": "全球AI投资提速，我国算力和电力设备出口大增 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Wed, 14 Oct 2026 05:13:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNllxZnJ5SjFKbjM0UTRiSnJtZnRLdXZWbm8xSzk3eWg5UWNDZFpfRklZTkN6S2pqUW9uZDlZaTFmVjBmczcxOGRmQ0JBNEFoZEpGTkVHV2xybkU1QzVYRVdXNEs1OUdTM0RsNG5hZmU3YUZYTmhHbjNrUFhzRXJqbG9SQkY3ZEZ3QVE1YnBTTQ?oc=5"
+    },
+    {
+      "title": "前沿AI模型“四国大战”打响！谷歌Gemini 4 Argon全面上架 - 财联社",
+      "summary": "前沿AI模型“四国大战”打响！谷歌Gemini 4 Argon全面上架 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Tue, 13 Oct 2026 18:32:52 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBIdDhncVp3NWhlSGNOV2FMYnZXV25KQ0liWXdleTBHa2ZNR3VfRFNGZEZPT1h0MENKTm5HY2h4ZGpHT19JWHVoYg?oc=5"
+    },
+    {
+      "title": "广州成立市算力公司 南方电网数字电网集团控股 - 观点网",
+      "summary": "广州成立市算力公司 南方电网数字电网集团控股 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Wed, 14 Oct 2026 05:06:15 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1WRGtpVUlDNFJYUHVvanlKVUNRamVlWDVFZlBlTG5rT1JVTXdaSGxvZlZwV2pSVFNDOGN0VW9hUkhTZ1VpaFF4RDNfazlZRHJ4WVpNVm5LcjNidml0UF9PS05n?oc=5"
+    },
+    {
+      "title": "电动汽车还在增长！这种算力核心载体增长更快，“中国造”加速走向全球 - 中国科技网",
+      "summary": "电动汽车还在增长！这种算力核心载体增长更快，“中国造”加速走向全球 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Wed, 14 Oct 2026 05:51:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4tVXVCQWgzTEF3SnZ2RkVCOVA5Tnk1UGlMQXZ4eVBwVVFmVUhVbms5UWRjWk1ld2xCdGxQWnp0UzZXT2Q2Z1ZtRTdibm54NXlxVkdITGlpUjJsX1RDYkFSYm9LY0FvSEJrRFFxUld4aUo?oc=5"
+    },
+    {
+      "title": "微软计划将算力规模扩大超两倍 数据中心需求迎来乐观支撑 - 东方财富",
+      "summary": "微软计划将算力规模扩大超两倍 数据中心需求迎来乐观支撑 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Wed, 14 Oct 2026 03:03:57 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBuYWVXTEU4YXFjc0IzNzlxb25BU0RCbGNSblpaZ2NvYW9MZHQ2QzdnYlUzUTNmUGpKVzVBQV93TU5ZTXU4R2xZcXpmTDYyUTUwMkliVG1jdWZJYXlKeTllTldMQ3VjQQ?oc=5"
+    },
+    {
+      "title": "腾讯AI办公智能体WorkBuddy打通企业微信 - 财新",
+      "summary": "腾讯AI办公智能体WorkBuddy打通企业微信 财新",
+      "source": "财新",
+      "lang": "zh",
+      "published": "Wed, 14 Oct 2026 03:34:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5xdVlrMEw2YlB5cHR3U3BtZ2N2bEdibU5fck5Td1AzM0hDUVpIb0gtXzR3czkzMHRDQWNDNng4V0oteEdzSGgxUjgwMkJzZ1ZqMHJyR0psdjdJeUEtWTZHcWZEek8?oc=5"
+    },
+    {
+      "title": "山东的大模型有点“轴” - 人民网",
+      "summary": "山东的大模型有点“轴” 人民网",
+      "source": "人民网",
+      "lang": "zh",
+      "published": "Wed, 14 Oct 2026 01:36:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0waDlTaXhuVnBIUzlBRUVJcTlPWnRrQndOWHlCTWg5aHM1ZUdxbVNUZkJuejJqT0NQdHV2eWgyT0NFUF9kWDhrSE5EQ21IWGdLNkhDSmpsTFgxNHcxT2czZzBCZzV2ZEJDZWc?oc=5"
+    },
+    {
+      "title": "全球算力、电力需求双增长，中企立大功！ - 电子工程专辑",
+      "summary": "全球算力、电力需求双增长，中企立大功！ 电子工程专辑",
+      "source": "电子工程专辑",
+      "lang": "zh",
+      "published": "Wed, 14 Oct 2026 04:20:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5fV2JBaDctVC13QmU2dWVKeUZIRS1MUDBrYkFWWnV2b1lvS3ZEUmtnUEVwMW5la05wOEc2WHgwV0tSRzZVa3Vnclc5cnNNRVZoWlBB?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 96313,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 75300,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57575,
+      "language": "Python"
+    },
+    {
+      "title": "codebase-memory-mcp",
+      "type": "GitHub",
+      "summary_en": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "summary": "高性能代码智能MCP服务器。将代码库索引到持久知识图谱中——以毫秒为单位的平均存储库。 158 种语言，亚毫秒级查询，标记减少 99%。单个静态二进制文件，零依赖性。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "author": "DeusData",
+      "stars": 46544,
+      "language": "C"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 38117,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 391936,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 298826,
+      "language": "Shell"
+    },
+    {
+      "title": "hermes-agent",
+      "type": "GitHub",
+      "summary_en": "The agent that grows with you",
+      "summary": "与您共同成长的代理商",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "author": "NousResearch",
+      "stars": 253599,
+      "language": "Python"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
