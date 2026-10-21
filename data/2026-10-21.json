@@ -1,0 +1,508 @@
+{
+  "date": "2026-10-21",
+  "generated_at": "2026-10-21T08:06:45.791180+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Joints, Camera, Action! Co-Generating 3D Motion and Video for Arbitrary Rigs",
+      "title_zh": "关节、相机、动作！为任意装备共同生成 3D 运动和视频",
+      "summary": "Video generation models can now depict remarkably realistic motion. Yet it is unclear how to use this motion beyond pixels: to animate a specific 3D asset and replay the animation in its 3D scene. For instance, a video model can show a monkey jumping over a crossbar, but it cannot return that jump as replayable 3D motion placed in the 3D scene. Here we pres…",
+      "summary_zh": "",
+      "authors": [
+        "Noam Rotstein",
+        "Yoad Tewel",
+        "Chen Tessler",
+        "Haggai Maron",
+        "Gal Chechik",
+        "Or Litany"
+      ],
+      "published": "2026-10-20T17:59:56Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.28632v1",
+      "abs_url": "https://arxiv.org/abs/2610.28632v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.28632v1"
+    },
+    {
+      "title": "AEON: Unifying Video and 3D World Models",
+      "title_zh": "AEON：统一视频和 3D 世界模型",
+      "summary": "Current world models for explicit world simulation typically follow two distinct pathways: (1) video generative models (e.g., Sora), which simulate realistic appearances but fail to preserve 3D consistency; and (2) 3D generative models (e.g., Marble), which generate geometrically consistent scenes but often yield static, less realistic observations. We pres…",
+      "summary_zh": "",
+      "authors": [
+        "Weiqi Zhang",
+        "Wenyuan Zhang",
+        "Yu-Shen Liu",
+        "Junsheng Zhou"
+      ],
+      "published": "2026-10-20T17:59:51Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.28631v1",
+      "abs_url": "https://arxiv.org/abs/2610.28631v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.28631v1"
+    },
+    {
+      "title": "SolarRenderer: Few-Step Generative Reference Rendering",
+      "title_zh": "SolarRenderer：少步生成参考渲染",
+      "summary": "Game engines and coding agents can specify the layout, motion, and camera of a scene, yet turning such coarse structure into realistic video requires a renderer that follows the structure and completes the appearance it leaves open. Existing renderers are tied to the representation of one engine, need tens of denoising steps or a costly distillation of thei…",
+      "summary_zh": "游戏引擎和编码代理可以指定场景的布局、运动和摄像机，但是将这种粗糙的结构转变为逼真的视频需要一个渲染器来遵循该结构并完成其开放的外观。现有的渲染器与一个引擎的表示绑定在一起，需要数十个去噪步骤或昂贵的自身蒸馏，并从与目标视频不相符的条件中学习。我们推出 SolarRenderer，这是一种结构调节视频渲染器，它采用带有两个轻量级 LoRA 的冻结 MiniMax-H3 33B 主干网。结构视频在它们描述的帧的位置进入主干的本机参考路径，没有类型标识符并且仅以纯文本描述，因此单个控制 LoRA 遵循任意结构表示。从预训练的四步 LoRA 开始，结构引导的分布匹配分四步进行渲染，比 50 步采样快 12.3 倍，同时保留学习的控制。块因果变体将相同的设计扩展到流媒体并实时渲染 768p 视频。为了训练模型，我们构建了一个由游戏引擎、模拟器和 YouTu…",
+      "authors": [
+        "Guian Fang",
+        "Shengju Qian",
+        "Dongyue Lu",
+        "Junchao Huang",
+        "Lutao Jiang",
+        "Xin Wang"
+      ],
+      "published": "2026-10-20T17:59:48Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.28630v1",
+      "abs_url": "https://arxiv.org/abs/2610.28630v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.28630v1"
+    },
+    {
+      "title": "PsycheMME: A Psychology-Informed Benchmark for Social Understanding and Interaction in Videos",
+      "title_zh": "PsycheMME：视频中社会理解和交互的心理学基准",
+      "summary": "Understanding human needs and selecting responses require distinct judgments that aggregate accuracy can obscure. We introduce PsycheMME, a video benchmark informed by psychology, with eight capabilities spanning grounding, states, needs, interaction decisions, memory, and risk. Drawing on Social Information Processing and the Perception-Action Cycle, this…",
+      "summary_zh": "了解人类需求和选择响应需要不同的判断，而这些判断的汇总准确性可能会变得模糊。我们推出 PsycheMME，这是一个以心理学为基础的视频基准，具有八项功能，涵盖基础、状态、需求、交互决策、记忆和风险。该组织利用社会信息处理和感知-行动循环，将人类理解与响应选择分开。我们通过独立回答（保留建议的参考文献）和专家评审，从 630 个剧集中构建了 1,000 个问题。我们的推理验证协议通过明确的理由与注释线索的支持和逻辑一致性来权重回答信用。在 17 个模型中，Timing 的验证分数和信用保留率最低，对正确 Timing 答案的支持判断较弱。具有相似需求分数的模型在开放问题的答案完整性方面仍然存在差异。输入控制和 SFT/GRPO 检查上下文依赖性和适应性。评估答案和基本原理可以找出模型在理解、响应选择和论证方面失败的地方。",
+      "authors": [
+        "Heran Hu",
+        "Yuhang Dong",
+        "Zhucun Xue",
+        "Kaiwei Chen",
+        "Yong Liu",
+        "Jiangning Zhang"
+      ],
+      "published": "2026-10-20T17:59:00Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.28625v1",
+      "abs_url": "https://arxiv.org/abs/2610.28625v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.28625v1"
+    },
+    {
+      "title": "Planning under Noise with Neural Operators",
+      "title_zh": "使用神经算子在噪声下进行规划",
+      "summary": "Planning under uncertain control execution noise requires reliable feedback policies across diverse environments. We introduce Planning Under Noise (PUN), a neural operator that learns noise-aware value fields for planning in unseen geometries. Building on an established screened-Poisson formulation of stochastic optimal control, we address two challenges:…",
+      "summary_zh": "在不确定的控制执行噪声下进行规划需要跨不同环境的可靠反馈策略。我们引入了噪声下规划（PUN），这是一种神经算子，可以学习噪声感知值域，以便在不可见的几何形状中进行规划。基于已建立的随机最优控制筛选泊松公式，我们解决了两个挑战：指定支持跨不同几何形状导航的边界条件以及具有可靠梯度的高效计算场。零狄利克雷障碍边界终止了墙壁上的采样路径，削弱了长路线上的目标信号，并使其更难以可靠估计。相反，我们对障碍物施加反映诺依曼条件，对目标施加狄利克雷条件，允许采样路径继续探索自由空间，直到到达目标。为了在没有配置空间网格的情况下求解所得的偏微分方程，我们将蒙特卡罗 (MC) 求解器、Walk on Stars (WoSt) 扩展到更高的维度。然而，局部 MC 波动可能会反转估计的梯度方向并导致规划失败，使得直接规划需要昂贵的采样。 PUN 通过从嘈杂的、部分收敛的…",
+      "authors": [
+        "Michael Chen",
+        "Hong Chul Nam",
+        "Xi Deng",
+        "Anima Anandkumar"
+      ],
+      "published": "2026-10-20T17:58:30Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.28623v1",
+      "abs_url": "https://arxiv.org/abs/2610.28623v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.28623v1"
+    },
+    {
+      "title": "MindView: Benchmarking Generative Multi-View Spatial Intelligence",
+      "title_zh": "MindView：生成多视图空间智能基准测试",
+      "summary": "Spatial intelligence has recently been assessed through generative tasks such as spatially grounded image editing, yet language-guided generation of spatially consistent views from partial multi-view observations remains underexplored. We introduce MindView, a benchmark for generative multi-view spatial intelligence with 1,500 samples from 513 scenes across…",
+      "summary_zh": "最近，人们通过空间图像编辑等生成任务来评估空间智能，但从部分多视图观察中语言引导生成空间一致视图的方法仍未得到充分探索。我们引入了 MindView，它是生成多视图空间智能的基准，包含来自三个室内数据集的 513 个场景的 1,500 个样本。它的七个任务形成两个系列：几何主导任务指定相机位置和方向的变化，而语义主导任务需要通过接地参考对象并解释空间关系和参考框架线索来推断目标视点。对 11 个生成器的评估揭示了 MindView 的巨大改进空间。配对上下文分析进一步表明，所有 11 个生成器在扩展上下文设置下获得较低的总体分数。这些发现促使我们研究特定任务的监督是否可以改善目标视图的生成，以及模型是否可以有效地使用额外的多视图证据。因此，我们在 MindView 训练数据集上对 BAGEL 进行了微调，将其总体得分提高了 24.3 分，并在所有七…",
+      "authors": [
+        "Yanbo Wang",
+        "Siqi Luo",
+        "Siyu Zhang",
+        "Chenming Zhu",
+        "Wenzhao Zheng",
+        "Qian Yu"
+      ],
+      "published": "2026-10-20T17:58:25Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.28622v1",
+      "abs_url": "https://arxiv.org/abs/2610.28622v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.28622v1"
+    },
+    {
+      "title": "Adaptive Multi-Token Prediction: How far should we go?",
+      "title_zh": "自适应多令牌预测：我们应该走多远？",
+      "summary": "Multi-token prediction (MTP) can accelerate language-model decoding by drafting several tokens and verifying them in a single target-model pass. However, the best speculation horizon changes with context: longer drafts offer greater amortization when reliable, but can waste compute on suffixes discarded after a rejection. Unlike autoregressive drafting, whe…",
+      "summary_zh": "多标记预测 (MTP) 可以通过起草多个标记并在单个目标模型传递中验证它们来加速语言模型解码。然而，最佳的投机范围会随着环境的变化而变化：较长的草稿在可靠时提供更大的摊销，但可能会浪费计算在拒绝后丢弃的后缀上。与自回归起草不同，在自回归起草中，停止规则可以逐个决定令牌，MTP 必须在起草之前固定视野，因为所有头都在同一个前向传递中开火。因此，我们将水平选择制定为在线控制问题，使用验证反馈来了解草稿在每个上下文中的可信程度，并引入自适应多令牌预测（AMTP）：一种无需重新训练且保持精确验证者不变的轻量级控制器。为了指导水平选择，我们通过接受生存（草稿前缀被完全接受的概率）来描述每个水平上提交的令牌的预期数量。在每一轮之前，AMTP 都会预测选秀可能存活多远，并选择每秒期望代币最高的范围，从每次验证通过中自由学习。从理论上讲，我们表明，任何在线学习者的…",
+      "authors": [
+        "Emile Anand",
+        "Mohammed Rehan Parwani",
+        "Xinyuan Cao"
+      ],
+      "published": "2026-10-20T17:56:32Z",
+      "category": "cs.AI",
+      "arxiv_id": "2610.28619v1",
+      "abs_url": "https://arxiv.org/abs/2610.28619v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.28619v1"
+    },
+    {
+      "title": "NarraSpace: Multimodal Scene-Grounded Evidence for Picture-Description Dementia Classification",
+      "title_zh": "NarraSpace：用于图片描述痴呆症分类的多模态场景证据",
+      "summary": "Picture-description dementia classification uses a shared visual scene, but a transcript-level prediction alone does not identify the scene evidence underlying its inputs. NarraSpace links words and speech times to named picture elements and retrieves utterances for predefined scene events. Narrative-spatial descriptors summarize coverage and temporal organ…",
+      "summary_zh": "图片描述痴呆症分类使用共享的视觉场景，但单独的转录水平预测并不能识别其输入背后的场景证据。 NarraSpace 将单词和语音时间链接到命名的图片元素，并检索预定义场景事件的话语。叙事空间描述符总结了覆盖范围和时间组织。冻结的语言模型将每个事件的文本与阿尔茨海默病和健康对照培训参与者的示例以及转录结果和覆盖率测量进行对比。保留的源记录将事件分数与其源话语、语音间隔和词汇匹配联系起来。在通过自发语音基准进行阿尔茨海默病痴呆症识别的官方 48 名参与者测试集上，固定支持向量分类器在 50 个种子上实现了 $80.88\\%\\pm2.56\\%$ 平均准确率；平均概率产生 $81.25\\%$ 准确度和 $91.32\\%$ 接收者操作特征曲线下面积。 NarraSpace 通过将事件索引的语言模型测量与其源话语、语音计时和提取记录连接起来，使场景链接的分类输入…",
+      "authors": [
+        "Qingming Li",
+        "Ruiyan Sun",
+        "Satoshi Nakamura"
+      ],
+      "published": "2026-10-20T17:55:44Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.28616v1",
+      "abs_url": "https://arxiv.org/abs/2610.28616v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.28616v1"
+    },
+    {
+      "title": "KoalaGS: Complexity-Aware Continuous Level of Detail for Gaussian Splatting",
+      "title_zh": "KoalaGS：高斯泼溅的复杂性感知连续细节级别",
+      "summary": "Deploying a trained 3D Gaussian Splatting scene under shrinking compute budgets requires one primitive set to remain effective when rendered at smaller prefixes. In this continuous level of detail (LoD) setting, the challenge is to decide which Gaussians should retain capacity as the budget decreases. A pilot study on 3DGS-MCMC reconstructions shows that im…",
+      "summary_zh": "在计算预算缩减的情况下部署训练有素的 3D 高斯泼溅场景需要一组基元在以较小的前缀渲染时保持有效。在这种连续细节级别 (LoD) 设置中，面临的挑战是确定哪些高斯模型应在预算减少时保留容量。关于 3DGS-MCMC 重建的试点研究表明，根据优化前的输入视图计算出的图像复杂度可以预测重建误差集中在图像和 3D 空间中的位置。它还揭示了简单区域包含太多高斯分布，并且在较低预算下其退化程度与复杂区域一样多，尽管其本质上表示起来更便宜。随后，在 KoalaGS 中，在训练期间，我们在将偏差重新定位到重建不良的区域之前使用这种复杂性，同时确保跨 LoD 的平滑降级。然后，原始重要性得分可以在低容量下进行推理，同时保留场景结构。经过三个数据集的测试，KoalaGS 保持了具有竞争力的全容量质量，同时显着提高了预算范围内的质量，在 LoD 之间实现了更平滑的过渡…",
+      "authors": [
+        "Radu Beche",
+        "Raoul de Charette"
+      ],
+      "published": "2026-10-20T17:55:06Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.28615v1",
+      "abs_url": "https://arxiv.org/abs/2610.28615v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.28615v1"
+    },
+    {
+      "title": "Physical Canvas: A Vision Tactile World Model For Robot Policy Evaluation And Learning",
+      "title_zh": "物理画布：用于机器人政策评估和学习的视觉触觉世界模型",
+      "summary": "Evaluating and post-training robot policies through physical interaction is costly and difficult to scale, motivating action-conditioned world models as interactive simulators. However, visually plausible predictions can misrepresent contact dynamics, providing unreliable feedback for policy evaluation and learning. We introduce PhysCanvas, a state-consiste…",
+      "summary_zh": "通过物理交互评估和后训练机器人策略成本高昂且难以扩展，从而激发了将动作条件世界模型作为交互式模拟器的兴趣。然而，视觉上合理的预测可能会歪曲接触动态，为政策评估和学习提供不可靠的反馈。我们介绍 PhysCanvas，这是一种状态一致的视觉触觉世界模型，用于接触丰富的机器人操作。 PhysCanvas 在统一的视觉空间内统一了多视图 RGB、触觉图像、标记位移、任务状态和动作。所有模式共享视频 VAE 和预训练的生成主干，允许光学触摸重用视觉和时间先验。通过正向运动学和相机投影导出的运动图像提供了空间对齐的动作调节，而初始 RGB 锚点和更新的参考观察指导顺序生成。我们的一致性意识后训练使用冻结的场景奖励模型、模态奖励模型和状态奖励模型来监督场景保存、视觉触觉兼容性以及与真实任务结果的一致性。由此产生的世界模型支持闭环政策推出进行评估，并为 GRPO…",
+      "authors": [
+        "Zebin Xing",
+        "Yuhang Zheng",
+        "Yupeng Zheng",
+        "Yichen Zhang",
+        "Zichen Li",
+        "Shangqing Zhou"
+      ],
+      "published": "2026-10-20T17:54:03Z",
+      "category": "cs.RO",
+      "arxiv_id": "2610.28613v1",
+      "abs_url": "https://arxiv.org/abs/2610.28613v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.28613v1"
+    },
+    {
+      "title": "Semantic Observability for Autonomous Systems Diagnostics",
+      "title_zh": "自主系统诊断的语义可观察性",
+      "summary": "Modern distributed microservice deployments generate massive volumes of heterogeneous, multi-format observability logs across physically and logically partitioned infrastructure. Isolating root causes during cascading failures remains an arduous task for Site Reliability Engineers (SREs), bottlenecked by manual keyword filtering and disjointed temporal corr…",
+      "summary_zh": "现代分布式微服务部署在物理和逻辑分区的基础设施中生成大量异构、多格式的可观​​测性日志​​。对于站点可靠性工程师 (SRE) 来说，在级联故障期间隔离根本原因仍然是一项艰巨的任务，其瓶颈在于手动关键字过滤和监控仪表板之间脱节的时间关联。我们引入了语义可观察性，这是一个自治多代理框架，它将不同的日志流统一到动态的、可查询的属性图数据库中。通过将物理基础设施拓扑、逻辑软件依赖性和按时间顺序排列的事件序列建模为属性节点和有向关系，它弥合了平面、非结构化日志存储库固有的语义差距。在此统一基础上，我们部署了通过有向循环图（DCG）编排的有状态多代理系统。该系统自动导航拓扑，应用因果图算法和时间回溯来隔离异常的精确爆炸半径。然后，大型语言模型 (LLM) 推理引擎会对修剪后的子图进行解释，以生成上下文化的代码级根本原因分析 (RCA) 和可行的补救措施。本文建…",
+      "authors": [
+        "Jitendra Solanki",
+        "Anand Todkar",
+        "Ziran Min"
+      ],
+      "published": "2026-10-20T17:53:32Z",
+      "category": "cs.AI",
+      "arxiv_id": "2610.28611v1",
+      "abs_url": "https://arxiv.org/abs/2610.28611v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.28611v1"
+    },
+    {
+      "title": "Benchmarking Arabic Dialects for Math Problems",
+      "title_zh": "针对数学问题对阿拉伯语方言进行基准测试",
+      "summary": "Mathematical reasoning remains underexplored for low-resource languages, including Dialectal Arabic. To bridge this gap, we introduce the DAR-MGSM (Dialectal Arabic Multilingual Grade School Math) Benchmark, the first manually curated benchmark for evaluating mathematical reasoning in Dialectal Arabic. DAR-MGSM consists of math word problems (MWPs) requirin…",
+      "summary_zh": "对于包括方言阿拉伯语在内的低资源语言，数学推理仍未得到充分探索。为了弥补这一差距，我们引入了 DAR-MGSM（阿拉伯语方言多语言小学数学）基准，这是第一个手动策划的用于评估阿拉伯语方言数学推理的基准。 DAR-MGSM 包含需要多步推理的数学应用题 (MWP)，涵盖五种主要阿拉伯语方言以及现代标准阿拉伯语 (MSA)。该基准包括两个并行版本：仅翻译版本和翻译及文化本地化版本。后一个版本根据区域品种调整了实体和参考。我们在 DAR-MGSM 上评估了 11 个以阿拉伯语为中心的多语言大语言模型。结果表明，本地化版本的性能普遍下降，凸显了基于文化的改编带来的挑战。然而，这种影响的程度因模型而异，以阿拉伯语为中心的模型对本地化表现出不同程度的敏感度。机械可解释性分析表明，即使总体准确性保持相似，相同 MWP 的翻译和本地化变体通常会引发不同的内部推理轨…",
+      "authors": [
+        "Noor Abo Mokh",
+        "Teresa Lynn",
+        "Nizar Habash",
+        "Ahmed Elshabrawy",
+        "Sara Alhajeri",
+        "Alaa Elsetohy"
+      ],
+      "published": "2026-10-20T17:50:13Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.28607v1",
+      "abs_url": "https://arxiv.org/abs/2610.28607v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.28607v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "绿电筑底 算力向新 浙企运达扎根乌兰察布筑牢“算电协同”绿电底座 - 新华网浙江",
+      "summary": "绿电筑底 算力向新 浙企运达扎根乌兰察布筑牢“算电协同”绿电底座 新华网浙江",
+      "source": "新华网浙江",
+      "lang": "zh",
+      "published": "Wed, 21 Oct 2026 04:19:50 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPRDlsRGpUOFNDaklBMkVnYzJURGdrOFZrRnhWdk1ZY0xEMnBxMUl0WUluWVBGQkN2a3lIcE9tMldQN2J4U1g0dlQtNi1mbklnamkzMnowYWo4cjZZQU9pbTdBZWw1Qk5UWWRKUXljVllzVTdrdkJCVmNwR0Nrc19wSk9n?oc=5"
+    },
+    {
+      "title": "马斯克、皮查伊与格里芬的AI算力分歧：硅谷强调眼下供不应求，华尔街追问供给追上需求后回报能否持续 - 华尔街见闻",
+      "summary": "马斯克、皮查伊与格里芬的AI算力分歧：硅谷强调眼下供不应求，华尔街追问供给追上需求后回报能否持续 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Wed, 21 Oct 2026 06:07:18 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5Hb3Jyb3FweTd3cWtfTkZHRDJHZ2JlLV90aHMzU3pQOEZEQWt0UDMwRXE0T1BvV2RDZmd3UkJFeTJ1c0VvR1FGanpMTTc3Rm44aGFj?oc=5"
+    },
+    {
+      "title": "算力狂飙、星舰高飞！SpaceX财报会：马斯克夸口万亿美元收入目标 正探讨特斯拉合并可能性 - 财联社",
+      "summary": "算力狂飙、星舰高飞！SpaceX财报会：马斯克夸口万亿美元收入目标 正探讨特斯拉合并可能性 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Wed, 21 Oct 2026 02:48:36 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5JNHh1eG1lRU84dnlXMVpYaHNyTTZjSVZ5b3k0UDNMeUFsNjQ0MzBRZEswQ211azlLWnRiYWZnWjdCMDYxLVhBNg?oc=5"
+    },
+    {
+      "title": "简牍领域垂域大模型“简问”发布 - 人民日报",
+      "summary": "简牍领域垂域大模型“简问”发布 人民日报",
+      "source": "人民日报",
+      "lang": "zh",
+      "published": "Wed, 21 Oct 2026 02:58:48 GMT",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOV0tMYmdrbjByYTF0NktVZ244WVFjdlo5MHQtQnFmR1B0UkdqRHBjY3loaFpLZm1tb283TUhzcGxtRXJkOG1RaFNmV0ZIcGZmNHdBT1Roc0dpSDg1SkpVNjF5aTdTbl9GbDcyM0tzNnozWklkMEVjbC0tSTBYVk5Oa3VLTQ?oc=5"
+    },
+    {
+      "title": "总编辑圈点丨没有人类教授语言，没有预设交流规则，AI智能体可自发形成一套词汇体系 - 中国科技网",
+      "summary": "总编辑圈点丨没有人类教授语言，没有预设交流规则，AI智能体可自发形成一套词汇体系 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Tue, 20 Oct 2026 17:45:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1LYnFGNTV0d0FwUFBVZkJDeGlTMElNS0dVY1hZWHF4UEZqRy1tdTNaTlBnajB0eUU0TEtMc1lQTGRqOXJvNG1nUmVWb25EYVc4dnVlalpiR0VkdDF0THBIbGVPRXpSNW96VnYxYTJuMFY?oc=5"
+    },
+    {
+      "title": "算力泡沫破裂，一场精心计划的合谋 - 观察者网",
+      "summary": "算力泡沫破裂，一场精心计划的合谋 观察者网",
+      "source": "观察者网",
+      "lang": "zh",
+      "published": "Wed, 21 Oct 2026 01:51:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1tT0pLVDRER1J4d1FiMF9uM1lGdlBmcW5fVjNEbElrSnNFb082U3ROQ0NXZUhsTkJXc0Z1U2VfTDVtZ1dRYzBEX0FWc3hSYVFpZm8yd090SEh1VzBGUklwcTJ1eTBzd245X3c?oc=5"
+    },
+    {
+      "title": "字节跳动回应算力争议 刘星称仅约10%总算力用于视频生成 - 观点网",
+      "summary": "字节跳动回应算力争议 刘星称仅约10%总算力用于视频生成 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Wed, 21 Oct 2026 03:19:32 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBEb3Y5aTNWVE53QnhsN2xWWFNWVm1hZGRvOWRHTGo3aW1pX2dEc2dnNjVGcU5PamVfREhsbVNuSDQ4WUQxLTdKU0xldmo4eXVFLTB6c1c4YU5MMDdNMWtfdUNR?oc=5"
+    },
+    {
+      "title": "算力相当，功耗仅竞品一半？爱芯元智边缘AI芯片的“均衡艺术” - 电子工程专辑",
+      "summary": "算力相当，功耗仅竞品一半？爱芯元智边缘AI芯片的“均衡艺术” 电子工程专辑",
+      "source": "电子工程专辑",
+      "lang": "zh",
+      "published": "Wed, 21 Oct 2026 03:38:59 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB2T0g4a3NvZ1FtSmtFXzdDVXktZXFPYlZud00tdkphUy01WEJvcUdqSjR6aVBNd052TXZodHJYdWZGanFpUFF4ZHkyNnRzLXhiZVZlN0FiZGxqekVh?oc=5"
+    },
+    {
+      "title": "面向智能体时代，知道创宇 AiPy 亮相香港峰会，共探 AI 生产力新边界 - 凤凰网",
+      "summary": "面向智能体时代，知道创宇 AiPy 亮相香港峰会，共探 AI 生产力新边界 凤凰网",
+      "source": "凤凰网",
+      "lang": "zh",
+      "published": "Wed, 21 Oct 2026 06:45:26 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4tV3pBLWFqQXhkc19VSVhaOE9KaFVHMGpjMzhjNDFQOG1xYlRvQm8tWXl5cnlSZXNySkRrX3N1RXU4Rk5qNEs4RFVfaE05cjA?oc=5"
+    },
+    {
+      "title": "【中经社信号】从“会聊天”到“能干活” 工业智能体加速规模化落地- 中国金融信息网 - 中国金融信息网",
+      "summary": "【中经社信号】从“会聊天”到“能干活” 工业智能体加速规模化落地- 中国金融信息网 中国金融信息网",
+      "source": "中国金融信息网",
+      "lang": "zh",
+      "published": "Wed, 21 Oct 2026 02:16:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0tRWxJbUJEVUotdlp6VkVkNThpQ3JzRVhRal9BT1ZiOGM2Z0J6dnlrLXlwUnZOT0E2bHR1elJZRVhmM0tLT1ZycHF1aEtfbjdMM2tPVGIyTzhlaUplY29nNWVjUXJ5eGl6WkE?oc=5"
+    },
+    {
+      "title": "相关部门披露我国智能算力规模达2592 EFLOPS同比增长146%，将加快算力设施扩容提质，南方基金司南投顾关注算力基础设施的景气延续 - 界面新闻",
+      "summary": "相关部门披露我国智能算力规模达2592 EFLOPS同比增长146%，将加快算力设施扩容提质，南方基金司南投顾关注算力基础设施的景气延续 界面新闻",
+      "source": "界面新闻",
+      "lang": "zh",
+      "published": "Wed, 21 Oct 2026 07:11:11 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1OVkRQSVp0bDQzcDBsSTQyT2FFcGdQUG5sVEJUNHZBemNDODhrU3prZHVTX2NFeEdLdFVkSDd5UlV0eHBCcm1ZbF92V0RibTFxZVNpSUltQTA?oc=5"
+    },
+    {
+      "title": "ManageEngine卓豪发布30+智能体，零Token使用成本，用于自主IT运维 - 新浪新闻_手机新浪网",
+      "summary": "ManageEngine卓豪发布30+智能体，零Token使用成本，用于自主IT运维 新浪新闻_手机新浪网",
+      "source": "新浪新闻_手机新浪网",
+      "lang": "zh",
+      "published": "Wed, 21 Oct 2026 04:47:03 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQb0FQZFBuRWpJeGM3TkF3djlFclR4Q1ZYdlcwb3BCN2lKSVVnY3ZIMWE0bkRVaTJSYnpKSk4wbEYwU05wSUVDajlCajJFNm1KTTBvcklhM0lnVlRraTk5Zmt6TE1ILS1TLURKSFViOTEwcndNa1VSRTdRRmhGbzlKYjFrd0JQbHRaQWtVSHdEa3BXSDVtdDktSkhaQkNvZ2g1MXBQQU1FZ2dtV05KTTJ5YzJEcS1BTnZDTFhzbzBlcy01OVpwcUh3MWdzTQ?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 96682,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 76906,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57601,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 38452,
+      "language": "TypeScript"
+    },
+    {
+      "title": "next-ai-draw-io",
+      "type": "GitHub",
+      "summary_en": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "summary": "通过与人工智能聊天来绘制和编辑draw.io图表。 Web 应用程序、桌面应用程序以及用于 Claude Code、Cursor、Codex 和 VS Code 的 MCP 服务器。",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "author": "DayuanJiang",
+      "stars": 36330,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 392709,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 302745,
+      "language": "Shell"
+    },
+    {
+      "title": "deepseek-harness",
+      "type": "GitHub",
+      "summary_en": "DeepSeek Harness: Everything is a Plugin.",
+      "summary": "DeepSeek Harness：一切都是插件。",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "author": "deepseek-ai",
+      "stars": 256388,
+      "language": "TypeScript"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
