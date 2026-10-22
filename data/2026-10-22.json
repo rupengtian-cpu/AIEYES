@@ -1,0 +1,512 @@
+{
+  "date": "2026-10-22",
+  "generated_at": "2026-10-22T08:06:07.551200+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Agentic World Action Models",
+      "title_zh": "代理世界行动模型",
+      "summary": "Recent world action models provide visual foresight and future prediction for robot manipulation, but lack explicit mechanisms for compositional skill reuse. Agentic robotics combines code-based planning and reasoning with reusable skills, but often lacks predictive grounding in physical dynamics. We introduce AW-0, an agentic world action model framework t…",
+      "summary_zh": "最近的世界动作模型为机器人操作提供了视觉远见和未来预测，但缺乏用于组合技能重用的明确机制。代理机器人技术将基于代码的规划和推理与可重用的技能结合起来，但通常缺乏物理动力学的预测基础。我们介绍 AW-0，一种代理世界动作模型框架，它将基于代码的规划与联合视频和动作预测相集成。我们将代码、未来视频和机器人动作联合建模为统一的混合变压器架构中的三个耦合生成流。在此架构中，代码专家生成参数化的技能例程和控制逻辑，而视频和动作专家生成未来的视觉状态和低级运动命令。代码具有两个互补的作用：它在世界模型中构建多步骤预测和控制，并将技能表示为可重用程序以供后续代理执行。我们进一步引入了一个自动管理管道，该管道使用对齐的程序来标记机器人和人类视频轨迹，并将重复的例程整合到可重用的技能库中。对 RoboTwin 2.0 和物理双手操作任务的评估显示，任务性能比 VLA…",
+      "authors": [
+        "Zhuoyang Liu",
+        "Dantong Niu",
+        "Botong Zhang",
+        "Boning Shao",
+        "Jing Wang",
+        "Ruijie Zheng"
+      ],
+      "published": "2026-10-21T17:59:56Z",
+      "category": "cs.RO",
+      "arxiv_id": "2610.30136v1",
+      "abs_url": "https://arxiv.org/abs/2610.30136v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30136v1"
+    },
+    {
+      "title": "LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data",
+      "title_zh": "LongZero：从零数据增强法学硕士的长上下文推理",
+      "summary": "Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are long, diverse, challenging, and verifiable. Human annotation of such data is expensive, naturally occurring data are too scarce to sustain RL, and existing synthesis methods depend on external corpora…",
+      "summary_zh": "强化学习（RL）是强化大型语言模型（LLM）长上下文推理的有效方法，但它需要长、多样化、具有挑战性和可验证的训练数据。此类数据的人工注释成本高昂，自然发生的数据太稀缺而无法维持强化学习，现有的合成方法依赖于外部语料库或更强大的教师模型，而随着训练模型变得更强，这些模型变得更难获得。最近，从零数据开始的强化学习，其中模型从它自己提出的任务中学习，已经取得了优异的性能，但现有的方法针对的是短上下文任务。因此，我们提出$\\textbf{LongZero}$，一种让法学硕士无需任何外部数据即可改进其自身长上下文推理的方法。 LongZero 不是在现有文档上编写问题和答案，而是首先让模型以紧凑的结构化形式综合问题和答案及其支持证据，然后才将证据单独扩展为长的多文档上下文。 LongZero将这些自写的多跳推理任务与自写的多轮检索任务结合起来，并使用GRPO…",
+      "authors": [
+        "Zhennan Wan",
+        "Jianfei Chen"
+      ],
+      "published": "2026-10-21T17:59:14Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.30132v1",
+      "abs_url": "https://arxiv.org/abs/2610.30132v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30132v1"
+    },
+    {
+      "title": "Rethinking Video Autoencoders for Interactive World Models",
+      "title_zh": "重新思考交互式世界模型的视频自动编码器",
+      "summary": "Video world models predict future frames from past frames and actions. They serve as simulators in which agents train, plan or are evaluated, and that humans can control interactively. They generate in the latent space of a video autoencoder, whose compression sets their cost per frame and how long each action waits to take effect. Yet world models often re…",
+      "summary_zh": "视频世界模型根据过去的帧和动作预测未来的帧。它们充当模拟器，代理在其中进行训练、计划或评估，并且人类可以交互控制。它们在视频自动编码器的潜在空间中生成，其压缩设置了每帧的成本以及每个动作等待生效的时间。然而，世界模型通常会重用文本到视频生成器的自动编码器，这些自动编码器是为离线生成而构建的，无需代理等待，并且在没有训练数据和代码的情况下，无法在其他压缩中重新训练。因此，我们要问世界模型应该如何、在哪里以及压缩多少。我们构建了 CADRE，一个开放的因果扩散表示自动编码器家族，跨越多个时空压缩。其成员的区别仅在于冻结特征上的一个小瓶颈，并共享一个自蒸馏到一个或几个步骤的扩散解码器。我们在操作和导航两个域中的每个自动编码器上训练相同的世界模型，每个域都有两个环境。 CADRE 形成了大部分延迟质量前沿，尤其是在使用移动摄像机时。我们的研究还得出了四项发…",
+      "authors": [
+        "Adrien Ramanana Rahary",
+        "Yutong Bai",
+        "Nicolas Dufour",
+        "Patrick Pérez",
+        "David Picard"
+      ],
+      "published": "2026-10-21T17:58:11Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.30129v1",
+      "abs_url": "https://arxiv.org/abs/2610.30129v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30129v1"
+    },
+    {
+      "title": "Think Harder Where It Matters: Item-Level Adaptive Recursion for Sequential Recommendation",
+      "title_zh": "在重要的地方更加努力地思考：用于顺序推荐的项目级自适应递归",
+      "summary": "Existing sequential recommenders usually allocate a fixed computational budget to every item in a user's interaction history, regardless of the item's contribution to the final prediction. We challenge this de facto design with two diagnostic findings. (1) Non-uniform computational need: items within the same sequence vary drastically in how much computatio…",
+      "summary_zh": "现有的顺序推荐器通常为用户交互历史中的每个项目分配固定的计算预算，而不管该项目对最终预测的贡献如何。我们用两个诊断结果挑战了这种事实上的设计。 (1) 计算需求不均匀：同一序列中的项目所需的计算量差异很大。大多数在浅层处理后收敛，而关键的少数仅在全深度稳定。 （2）固定分配的次优性：在预言机访问目标项目的情况下，非均匀深度分配始终优于固定深度分配，这表明现有的统一计算既浪费了已收敛项目的容量，又牺牲了整体推荐质量。这些观察结果推动了从固定深度计算向项目级自适应推理的转变。为此，我们提出LoopRec。 LoopRec 递归地应用单个权重共享块，并在每个递归边界引入一个轻量级门，该门独立地为每个项目做出二进制退出或继续决策。表示已经足够成熟的项目会提前退出，而那些需要更深入推理的项目则继续进行后续递归。这种设计将固定的全局深度转换为学习的、每项属性，…",
+      "authors": [
+        "Zhanshuo Cao",
+        "Jiakai Tang",
+        "Yuqi Zhou",
+        "Sunhao Dai",
+        "Jun Xu"
+      ],
+      "published": "2026-10-21T17:58:06Z",
+      "category": "cs.IR",
+      "arxiv_id": "2610.30128v1",
+      "abs_url": "https://arxiv.org/abs/2610.30128v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30128v1"
+    },
+    {
+      "title": "VoxProg: 3D Spatial Reasoning through Voxel Programming",
+      "title_zh": "VoxProg：通过体素编程进行 3D 空间推理",
+      "summary": "Language models' abilities to interpret tasks and generate programs offer a promising basis for 3D spatial reasoning. Yet following spatial instructions in 3D scenes requires programs to construct geometric references that language leaves implicit. In this work, we introduce VoxProg, which formulates 3D object placement through voxel programming: a language…",
+      "summary_zh": "语言模型解释任务和生成程序的能力为 3D 空间推理提供了有前景的基础。然而，遵循 3D 场景中的空间指令需要程序来构造语言隐含的几何参考。在这项工作中，我们介绍了 VoxProg，它通过体素编程制定 3D 对象放置：语言模型将任务解释翻译为场景表面局部体素视图上的可执行程序。由于这些视图在具有明确坐标和邻域关系的规则网格上索引表面几何图形，因此证据程序可以直接从场景网格中分离出任务相关区域和边界，下游姿势程序可以测量生成的几何图形以计算目标 $SE(3)$ 姿势。执行过程中的视觉和数字反馈使模型能够检查中间选择和候选位置，以迭代地修改其代码。为了评估跨功能使用、几何拟合和上下文安排的开放式布局，我们引入了 71 项任务的 VoxProg-Bench 基准测试以及配对感知意图对齐和 3D 物理有效性的评估套件。在 VoxProg-Bench 和外部基…",
+      "authors": [
+        "Zhichao Zhai",
+        "Menglei Zhao",
+        "Guikun Chen",
+        "Zihao Yan",
+        "Kanzhi Wu",
+        "Wenguan Wang"
+      ],
+      "published": "2026-10-21T17:58:05Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.30127v1",
+      "abs_url": "https://arxiv.org/abs/2610.30127v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30127v1"
+    },
+    {
+      "title": "PhysiCalWorld: In-Context Physics Calibration for World Models",
+      "title_zh": "PhysiCalWorld：世界模型的上下文物理校准",
+      "summary": "Existing world models typically perceive a scene through current visual frame or a narrow history window. However, these observations may not reveal the physics properties that determine transition dynamics, such as an object's mass distribution, joint damping, or surface friction. Without calibrating these physics factors for world models, predictions tend…",
+      "summary_zh": "现有的世界模型通常通过当前的视觉框架或狭窄的历史窗口来感知场景。然而，这些观察结果可能无法揭示决定过渡动力学的物理特性，例如物体的质量分布、关节阻尼或表面摩擦。如果不针对世界模型校准这些物理因素，预测往往会回归到经验先验，并在新的测试场景中引起严重的漂移。为此，我们提出了 PhysiCalWorld，它通过上下文提示将动作条件世界模型校准到特定于实例的动态，而无需微调或分析物理建模。我们的方法将测试场景中收集的探索性交互片段编码为紧凑的物理描述符标记，这为后续预测场景的实际物理行为奠定了基础。 PhysiCalWorld 仅使用潜在预测损失进行端到端训练，没有物理标签。在推理时，描述符令牌被提取一次，并且可以在各个部署中重复使用，而计算开销可以忽略不计。我们在涵盖不同物理变化的四种环境中评估 PhysiCalWorld，并表明它大大提高了推出预测的…",
+      "authors": [
+        "Yunhao Luo",
+        "Wentao He",
+        "Yinpei Dai",
+        "Hyelin Nam",
+        "Hongze Fu",
+        "Joyce Chai"
+      ],
+      "published": "2026-10-21T17:57:59Z",
+      "category": "cs.RO",
+      "arxiv_id": "2610.30125v1",
+      "abs_url": "https://arxiv.org/abs/2610.30125v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30125v1"
+    },
+    {
+      "title": "Geometric Algebra for Neural Networks: A Survey",
+      "title_zh": "神经网络的几何代数：调查",
+      "summary": "Geometric algebra (GA) unifies geometric primitives and transformations in a single algebraic framework. Neural networks designed around this framework often represent features as multivectors and constrain layer operations to respect the algebraic structure, enabling principled treatment of geometric transformations and, in many cases, built-in equivarianc…",
+      "summary_zh": "几何代数 (GA) 将几何基元和变换统一在一个代数框架中。围绕该框架设计的神经网络通常将特征表示为多向量，并约束层运算以尊重代数结构，从而能够原则性地处理几何变换，并且在许多情况下，实现内置等方差。这项调查回顾了几何代数神经网络，包括它们的构建模块、等变属性、应用领域、经验性能和软件支持。我们提供代数选择指南、基于 GA 和其他等效架构的实证比较，以及涵盖训练病理、部署约束和性能限制的故障模式分析。在调查的文献中，基于 GA 的架构的最有力证据出现在具有显式几何对称性和异构几何实体的环境中；在参数效率、可解释性和密集预测方面具有更广泛优势的证据相对有限且不均匀。因此，我们得出结论，几何代数神经网络并不普遍优于经过良好调整的非 GA 等变基线，并概述了代数选择、数值稳定性、可扩展实施和可重复评估方面的开放问题。",
+      "authors": [
+        "Tao Zhong",
+        "Kaison Fong",
+        "Keqin Wang",
+        "Christine Allen-Blanchette"
+      ],
+      "published": "2026-10-21T17:57:13Z",
+      "category": "eess.IV",
+      "arxiv_id": "2610.30121v1",
+      "abs_url": "https://arxiv.org/abs/2610.30121v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30121v1"
+    },
+    {
+      "title": "ALPS: Visual State Encoders for World Models",
+      "title_zh": "ALPS：世界模型的视觉状态编码器",
+      "summary": "World models turn visual representations into predictions and actions. We argue that their visual foundation should combine physical-state information, native language alignment, and pixel reconstruction, so that a single representation can support prediction, instruction, and inspection. However, existing encoders typically specialize in only one or two of…",
+      "summary_zh": "世界模型将视觉表征转化为预测和行动。我们认为，它们的视觉基础应该结合物理状态信息、母语对齐和像素重建，以便单一表示可以支持预测、指令和检查。然而，现有的编码器通常只专注于其中的一两个功能；因此，我们引入了 ALPS，一种预训练的视觉状态编码器，它将所有三个编码器统一在一组补丁标记中。我们仅使用静态图像和文本，从头开始对 ViT-B/16 进行语言、重建和空间对应目标的预训练，然后通过跨视图自蒸馏对其进行改进。在对 15 个公共编码器进行的统一评估中，ALPS 在 ViT-B 模型中实现了最低的 LIBERO 状态探测总误差（与大 3.5 倍的 V-JEPA 2-L 相匹配），同时保持了强大的语言对齐和准确的像素重建。下游，冻结的 ALPS 代币与我们的原生文本塔配合使用时，在 LIBERO 上达到最高平均策略成功率 (85.5%)，在 PushT、…",
+      "authors": [
+        "Yanqing Liu",
+        "Letian Zhang",
+        "Chengzhi Liu",
+        "Zijun Wang",
+        "Jieru Mei",
+        "Hongliang Fei"
+      ],
+      "published": "2026-10-21T17:57:11Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.30120v1",
+      "abs_url": "https://arxiv.org/abs/2610.30120v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30120v1"
+    },
+    {
+      "title": "The role of locality and weight sharing in convolutional neural networks",
+      "title_zh": "局部性和权重共享在卷积神经网络中的作用",
+      "summary": "The success of convolutional neural networks is often attributed to locality and weight sharing. However, how these two properties separately shape learning, and how their effects depend on the spatial correlations of natural images, remain poorly understood. We address these questions in a teacher-student model with a convolutional teacher acting on $P$ in…",
+      "summary_zh": "卷积神经网络的成功通常归因于局部性和权重共享。然而，这两个属性如何分别影响学习，以及它们的效果如何取决于自然图像的空间相关性，人们仍然知之甚少。我们在师生模型中解决这些问题，其中卷积教师作用于 $P$ 输入位置，位置之间具有相关性 $c$。我们比较了通过在线随机梯度下降训练的卷积学生和局部连接学生，并推导出常微分方程，在大特征维度 $D$ 的限制下准确地描述它们的动态。对于不相关的位置 ($c = 0$)，两个学生遵循相同的学习轨迹，而卷积学生的学习速度恰好是 $P$ 倍。我们还发现局部性会影响样本复杂性：与教师核大小相匹配的学生可以从 $\\mathcal{O}_{D}(D)$ 样本中恢复样本，而 $\\mathcal{O}_{D}(D\\log(D))$ 样本则需要较大的核。对于 $c > 0$，空间相关性会降低权重共享的优势。卷积学生的渐近误差随着…",
+      "authors": [
+        "Francesco Mori",
+        "Melanie Weber"
+      ],
+      "published": "2026-10-21T17:56:22Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.30118v1",
+      "abs_url": "https://arxiv.org/abs/2610.30118v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30118v1"
+    },
+    {
+      "title": "Environment Duels: A Microcosm of LLM Co-Evolution",
+      "title_zh": "环境对决：LLM共同进化的缩影",
+      "summary": "Through a tangle of real-world interactions, from synthetic training pipelines to data shared on the open web, frontier LLMs absorb what their predecessors and competitors create. How well does each model play its role in this ecosystem, as a creator and as a solver? We introduce Environment Duels, a dynamic agentic benchmark that evaluates both capabilitie…",
+      "summary_zh": "通过一系列现实世界的互动，从综合培训管道到开放网络上共享的数据，前沿法学硕士吸收了他们的前辈和竞争对手创造的东西。每个模型作为创建者和解决者在这个生态系统中发挥的作用如何？我们引入了环境决斗，这是一种动态代理基准，可以评估交互式环境中的两种功能。每个模型都会编写环境，每个环境都有一个特权提示，旨在解决那些有能力的求解器在没有提示的情况下失败并通过提示的任务。在九个前沿法学硕士中，解决问题和创作被证明是不同的技能：最强大的解决者并不是最强大的作者，而较小的模型可以从其他人的玩法中学到更多，并编写最困难的环境和最有用的提示。除了分数之外，成对的相互作用形成了模型如何相互影响的缩影。面对面的结果是可传递的，因此会产生稳定的排名；独立作者趋于相同的设计；在 Qwen3.8-27B 的强化学习研究中，学习者对作者环境的提示提升跟踪了这些环境中的训练在坚持推理…",
+      "authors": [
+        "Shibo Jin",
+        "Zhiqiu Xu",
+        "Yiling Zou",
+        "Shangyu Gong",
+        "Mayur Naik"
+      ],
+      "published": "2026-10-21T17:55:31Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.30116v1",
+      "abs_url": "https://arxiv.org/abs/2610.30116v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30116v1"
+    },
+    {
+      "title": "The End of Consensus Research?",
+      "title_zh": "共识研究的终结？",
+      "summary": "Consensus is a fundamental problem in distributed computing and at the core of state machine replication (SMR). Despite decades of active human research, discovering practical low-latency solutions to the problem is still open, as it requires combining protocol knowledge, correctness reasoning, implementation, and experimental evaluation. We report on how A…",
+      "summary_zh": "共识是分布式计算中的一个基本问题，也是状态机复制（SMR）的核心。尽管人类研究进行了数十年，但发现该问题的实用低延迟解决方案仍然是开放的，因为它需要结合协议知识、正确性推理、实施和实验评估。我们报告了人工智能如何帮助我们发现 A-greement，这是一种用于地理复制状态机的新共识协议，其性能显着优于最先进的解决方案。在具有 5 个或 9 个副本的 6 个部署中进行平均后，A-greement 在写入密集型和读取密集型工作负载上将地理分布式键值存储的平均延迟在最快基线上分别降低了 12.2% 和 33.3%，并与只读工作负载上的最快基线相匹配。 A-greement 结合了租赁授权的本地读取、针对领导者有序写入的直接客户端学习以及根据网络拓扑和工作负载进行选择的快速固定仲裁每键写入路径。我们发现的核心是 AI-greement，它是一种用于“自主”…",
+      "authors": [
+        "Clément Burgelin",
+        "Rachid Guerraoui",
+        "Zicong Hong",
+        "Yinan Hu",
+        "Anne-Marie Kermarrec",
+        "Rafael Pires"
+      ],
+      "published": "2026-10-21T17:55:19Z",
+      "category": "cs.DC",
+      "arxiv_id": "2610.30114v1",
+      "abs_url": "https://arxiv.org/abs/2610.30114v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30114v1"
+    },
+    {
+      "title": "Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research",
+      "title_zh": "Quant-Arena：量化交易研究 LLM 代理的基准测试",
+      "summary": "Quantitative research is an iterative loop: a researcher proposes a market hypothesis, implements it as an executable signal, tests it on historical data, and decides what to keep. Existing benchmarks score formulas, code, or individual trading decisions, leaving open whether large language models (LLMs) can complete this loop and produce strategies that wo…",
+      "summary_zh": "定量研究是一个迭代循环：研究人员提出市场假设，将其作为可执行信号实施，在历史数据上进行测试，并决定保留什么。现有的基准对公式、代码或个人交易决策进行评分，而大型语言模型 (LLM) 是否能够完成这个循环并产生在研究期之外有效的策略尚不确定。我们推出Quant-Arena，这是一个对真实A股市场数据进行端到端定量研究的基准和公共排行榜。模型构建特征和股票评分代码，仅接收 2022--2023 年的反馈，并冻结一项策略以在 2024 年密封的年份进行评估。现金账户评估器应用交易限制和成本，包括从模拟订单簿估计的市场影响。分数以实现的超额收益为主，并以信号质量和策略使用的功能多样性为补充。我们评估了九个前沿模型，其中 GPT-6 Astra 得分最高；然而，到 2024 年，没有任何模型能够击败同等权重市场。Quant-Arena 开放接受任何模型或代理…",
+      "authors": [
+        "Houde Qian",
+        "Zheng Jiang",
+        "Wenyi Li",
+        "Chenxi Xu",
+        "Xinjie Lin",
+        "Yuzhao Peng"
+      ],
+      "published": "2026-10-21T17:54:01Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.30113v1",
+      "abs_url": "https://arxiv.org/abs/2610.30113v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30113v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "豆包否认一半算力烧给爽剧 - 21财经",
+      "summary": "豆包否认一半算力烧给爽剧 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Thu, 22 Oct 2026 07:24:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQVBoNFhvNUZoNnhwbGx0amVlVXdSSWdxRkFjMmpoU05nZkdNMks4MVFUcnlWby1VRVNCSzFPR2lBdjZGNnVWR25QSXMxbFBCbElXNzY0WDJIeHhVWTRHMGpObjBrbVBJRHlfbTR0WWVFbnkycHlrZWRGWkh4OHIydGxkRHQyYnE4NmdYU3Zidw?oc=5"
+    },
+    {
+      "title": "沐曦陈维良：算力价值要在产业应用中检验 - 东方财富",
+      "summary": "沐曦陈维良：算力价值要在产业应用中检验 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Thu, 22 Oct 2026 04:07:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9QV3JhUmJOSHRTT0RsVUpUN181Y2FwLUY1cVk0Wkd6X3BMcGtTTWhpVy1za09TaDdDckZvSTJqRkk3NFY1NmhPOXJ0RVVBV0pObXBGOW52YWY0d0E5VFJrZUNhRVp1UQ?oc=5"
+    },
+    {
+      "title": "Muse点燃AI增长新叙事！Meta财报会：一年内算力效率将提升十倍 数年内实现高额盈利 - 财联社",
+      "summary": "Muse点燃AI增长新叙事！Meta财报会：一年内算力效率将提升十倍 数年内实现高额盈利 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Thu, 22 Oct 2026 00:53:57 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBaVGdrWm51aGdKNlBBN0tHUXh0ZXhUOE9VMEtSek90Vmt4SmxpTWNVQVBqTENFcTJ6XzhCdWZ2RWgyQmdhYl92NQ?oc=5"
+    },
+    {
+      "title": "《浙江省工业智能体平台建设指南（试行）》印发：包含基础设施、核心引擎、智能体构建、应用交互四大核心模块 - 智慧城市行业分析",
+      "summary": "《浙江省工业智能体平台建设指南（试行）》印发：包含基础设施、核心引擎、智能体构建、应用交互四大核心模块 智慧城市行业分析",
+      "source": "智慧城市行业分析",
+      "lang": "zh",
+      "published": "Thu, 22 Oct 2026 07:34:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxOZHJXbDU5ZExVV0xmS2ZUSUlvSV83OEFraVg5dlZ1YTBTbE1LNWhFaFhPZVFDTHpDY0Vha28xeTZEU3BVcm9aZzJqWVFDaW9UcGh5a1pScjBVWjEzSFVtcjgybW11TU1kQk1BSGZJTWZvLTEzbUh6U0diSkEta2ZpUTFQUVJJQjJTZWpHYmFpRU1ud0JObXV4bnZYeFlHNjdDV2JiTjQ3cmItYzdadzFtWFdaNDVyUXpmUWhmYVA5TDJESWJoQUNiS0JsVHNfX1B4TXJmeE5pTTY3N3YyS29EOXpKWnk2OXQzc0c0M1lmM2R0T01ScjhlaEp6N1hGb1A3NUZWM1JLck90UkdFQ3ZRazdYYkdlNThwS2xqTDUxUU9CUWUwZXMzcVlLbGlVTHc4UnZvVU5IUWJZQ0xRbVdV?oc=5"
+    },
+    {
+      "title": "OpenAI 模型即将登陆 Google Cloud - OpenAI",
+      "summary": "OpenAI 模型即将登陆 Google Cloud OpenAI",
+      "source": "OpenAI",
+      "lang": "zh",
+      "published": "Thu, 22 Oct 2026 00:45:37 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBqSnQ3aG1DY295dnpWczd0czVkc3BLMXlWNThsYVgwZHg1bjdrbEZmTEZjQ0xYcUplN0dkZ1RQXzcxLW9ubGp1SzhjR0loY1hpajZSTm41NDhJUGtVZEJfYUxUakdST204S2hCRDlxNkU?oc=5"
+    },
+    {
+      "title": "Spark 登陆欧洲：本地智能驱动新一轮智能体发展 - NVIDIA",
+      "summary": "Spark 登陆欧洲：本地智能驱动新一轮智能体发展 NVIDIA",
+      "source": "NVIDIA",
+      "lang": "zh",
+      "published": "Thu, 22 Oct 2026 03:14:18 GMT",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5ra1dBeFZzUUlZaUJFNm9KdklXcEdMOVFtWGFSZ2hGSzlxQ0xZcGlIcGxnVk0yUTk2bVZHa05JTF9VNkw1d0Vzd1FSVU41NEZVaVFLR2NSbUdDeGlmOGxxbm81UnNER1ZtR0p4QnVadkU1WmhXS2FfZQ?oc=5"
+    },
+    {
+      "title": "半年亏807亿美元、算力豪赌7500亿，Anthropic破产概率为何仅被定价17% - 华尔街见闻",
+      "summary": "半年亏807亿美元、算力豪赌7500亿，Anthropic破产概率为何仅被定价17% 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Thu, 22 Oct 2026 07:24:26 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9HTEFpdzFoU2N0ZFh6LWtGZkk4aE1mSUtfajJMRzU0NElqTGRDQnhmNVh1NEdNQlk5eUR5a1I5QkZhZmVpTDNSWHNXaHl2ZWQ2anY4?oc=5"
+    },
+    {
+      "title": "创业板算力ETF鹏华(158057)交投活跃，相关部门加快行业算力网络统一布局 - 界面新闻",
+      "summary": "创业板算力ETF鹏华(158057)交投活跃，相关部门加快行业算力网络统一布局 界面新闻",
+      "source": "界面新闻",
+      "lang": "zh",
+      "published": "Thu, 22 Oct 2026 05:44:32 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBxaldfQ1dEYnRGalNEajN4Ql9MTU1nX1MxWjZxWUdmQVZ3MXhrTF9lRTF6RU5SU2dKNjM5cWdST1pYSXVyTWZkNlJEb2phcVYycVZRQWdENHo?oc=5"
+    },
+    {
+      "title": "亚马逊封锁AI智能体之际 沃尔玛敞开大门欢迎 - Moomoo",
+      "summary": "亚马逊封锁AI智能体之际 沃尔玛敞开大门欢迎 Moomoo",
+      "source": "Moomoo",
+      "lang": "zh",
+      "published": "Thu, 22 Oct 2026 07:49:53 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1yOG9uS2tUZUU5RTBGcDlWRHlEMjVUdDR6QnBKY3ZiR2wwYWUwbW14TTVrZDRVMkI5Nk9MUktnSWVxZVVUY1E5Mnl0eHQzSmU5YlhvcDlpV3I2ZWFM?oc=5"
+    },
+    {
+      "title": "四个Gemini智能体自主通关《我的世界》，27小时击败末影龙 - ThePaper.cn",
+      "summary": "四个Gemini智能体自主通关《我的世界》，27小时击败末影龙 ThePaper.cn",
+      "source": "ThePaper.cn",
+      "lang": "zh",
+      "published": "Thu, 22 Oct 2026 03:30:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1WLTJFYkRES1QyMkx5d21pa1dfTno1c3RRZ2xzMXJHWHpyV053TjlLR1ZxUmxxUzg1bC1OcVRRcWdaTGo0TzRpbFF3c1dtUGNubks1REU0dDljdE1Wdmp6Mg?oc=5"
+    },
+    {
+      "title": "谷歌CEO称明年算力租赁新增需求极难满足，行业迈入千亿级高景气黄金期丨盘中雷达 - 21财经",
+      "summary": "谷歌CEO称明年算力租赁新增需求极难满足，行业迈入千亿级高景气黄金期丨盘中雷达 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Thu, 22 Oct 2026 03:21:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbHc5aU9Ody1Nang5bE9YN2VHY29rTlhZVWlMZlRVUTA5eHRSRER5VmxVTmQ5ZXc2R3BaTzZmZDYyd3g5X3BDSHlmdVNFUGJiRU9JOWw1akY2NDdudzhsUG9HU0ZzaDJINEdkdDZTOVR5ZmYyZ3pxcjZSX0xld3E4Ym5XbjA4bEtid1lmQ0l5UQ?oc=5"
+    },
+    {
+      "title": "Anthropic杀入AI智能体战场：Claude Duet重磅亮相 - 东方财富",
+      "summary": "Anthropic杀入AI智能体战场：Claude Duet重磅亮相 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Thu, 22 Oct 2026 02:38:11 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBJV1FreV9QaUNHeUNJVDBnblBmNTIzdFRIZmVtQUp3cXE5NC1VSE1OTmJjZ1NHMUwwOVczaU0waUN3N3VQOHd0TFRWdlBpT0c5MnppQ0owMnlwdXJ5ZmVfUnpoeVhuQQ?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 96736,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 77436,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57602,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 38490,
+      "language": "TypeScript"
+    },
+    {
+      "title": "next-ai-draw-io",
+      "type": "GitHub",
+      "summary_en": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "summary": "通过与人工智能聊天来绘制和编辑draw.io图表。 Web 应用程序、桌面应用程序以及用于 Claude Code、Cursor、Codex 和 VS Code 的 MCP 服务器。",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "author": "DayuanJiang",
+      "stars": 36360,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 392723,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 303324,
+      "language": "Shell"
+    },
+    {
+      "title": "deepseek-harness",
+      "type": "GitHub",
+      "summary_en": "DeepSeek Harness: Everything is a Plugin.",
+      "summary": "DeepSeek Harness：一切都是插件。",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "author": "deepseek-ai",
+      "stars": 257514,
+      "language": "TypeScript"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
