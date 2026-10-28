@@ -1,0 +1,510 @@
+{
+  "date": "2026-10-28",
+  "generated_at": "2026-10-28T09:08:39.083296+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
+      "title_zh": "Honeycomb-Surfels：用于高效场景渲染和重建的紧凑六边形基元",
+      "summary": "Novel view synthesis and 3D reconstruction have advanced rapidly with radiance fields and splatting, yet their memory and computational demands limit their use in resource-constrained settings. We introduce Hexels: novel planar hexagonal surface elements with a first-order spatial color field for efficient 3D scene and 2D image representation. Hexels exploi…",
+      "summary_zh": "新颖的视图合成和 3D 重建在辐射场和泼溅方面取得了迅速发展，但它们的内存和计算需求限制了它们在资源有限的环境中的使用。我们推出 Hexels：新颖的平面六边形表面元素，具有一阶空间色域，可实现高效的 3D 场景和 2D 图像表示。六角形利用更少、更大的图元来平滑地改变外观的局部平面区域。它们的六边形支撑提供了区域和边界有效的域，而局部色域捕获每个基元内的外观变化。在 34 个场景中，Hexels 将数据集的 PSNR 比内存匹配的 2DGS 提高了 4.53-7.38 dB，同时需要较低的训练 VRAM。我们进一步消除了 Hexels，结果表明，在使用较低训练 VRAM 且 FPS 快 2.31 倍的情况下，每个图元的 Hexels 性能均优于 2DGS 高达 4.74 dB。即使在不受限制的环境中，Hexels 也可以提供互补的质量与内存权衡。…",
+      "authors": [
+        "Prakhar Kaushik",
+        "Soumava Paul",
+        "Alan Yuille"
+      ],
+      "published": "2026-10-27T17:59:59Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.37668v1",
+      "abs_url": "https://arxiv.org/abs/2610.37668v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37668v1"
+    },
+    {
+      "title": "When Should We Intervene at Test Time?",
+      "title_zh": "我们应该在测试时什么时候进行干预？",
+      "summary": "Test-time adaptation helps a deployed model respond to changing inputs, but the same intervention can rescue one batch and damage the next. Updating normalization statistics, for example, can improve corrupted images yet fail when a batch contains mostly one class. Average accuracy hides these failures and cannot tell a model when to use an intervention. Ta…",
+      "summary_zh": "测试时适应有助于部署的模型响应不断变化的输入，但同样的干预可能会挽救一批模型并损坏下一批模型。例如，更新标准化统计数据可以改善损坏的图像，但当批次主要包含一个类时会失败。平均准确度隐藏了这些失败，并且无法告诉模型何时使用干预措施。目标标签可以指导这一决定，但它们很少，而且一些选择已经很明确。我们引入了 PORTAL，一个控制器，它选择何时部署干预、哪些输入要标记以及何时停止查询。每个可用的预测规则都是一个候选规则，其预测在当前反馈到达之前是固定的。因此，每个获得的标签都会根据相同的输入评估所有候选者。 PORTAL 结合了这些共享的比较，并将查询引导至仍然可以超越当前领先者的候选人。当剩余标签无法更改选择或可能的准确性增益不再证明另一个查询合理时，它就会停止。我们的分析将所需的反馈与准确性差距和共同错误联系起来，解释了为什么某些选择需要更少的证据。…",
+      "authors": [
+        "Jiahao Zhang",
+        "Xinling Wen",
+        "Liangliang Li",
+        "Yu Chen"
+      ],
+      "published": "2026-10-27T17:58:53Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.37658v1",
+      "abs_url": "https://arxiv.org/abs/2610.37658v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37658v1"
+    },
+    {
+      "title": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+      "title_zh": "安全主管：学习注意力门可提高即时注入的稳健性",
+      "summary": "We introduce Heads of Security (HoS), a prompt injection defense that enforces instruction-data separation via a small set of learned per-head attention gates. HoS learns how each head should redistribute attention between trusted and untrusted tokens, enabling models to reason over untrusted content without following injected instructions. We evaluate HoS…",
+      "summary_zh": "我们引入了安全头（HoS），这是一种即时注入防御，它通过一小组学习的每头注意力门来强制指令数据分离。 HoS 学习每个头应如何在可信和不可信令牌之间重新分配注意力，使模型能够在不遵循注入指令的情况下推理不可信内容。我们在 Llama-3.3-70B-Instruct 和 GPT-OSS-20B 上评估 HoS。我们将其与 SecAlign++（一种最先进的基于微调的防御）和 ASIDE（一种与我们的防御一样，将指令数据分离构建到模型架构中）进行比较。我们表明，HoS 对自适应攻击提供了更强的鲁棒性，在标准实用程序基准上具有更好的性能，并且在标准代理提示注入基准上具有最佳性能。更具体地说，黑盒 RL-Hammer 攻击针对 GPT-OSS-20B 的 ASR 达到 97%，针对 SecAlign 的 ASR 达到 85%，但针对 HoS 的 ASR…",
+      "authors": [
+        "Igor Shilov",
+        "Xiaoxue Yang",
+        "Alexander Panfilov",
+        "Evgenii Kortukov",
+        "Matthieu Meeus",
+        "Peter Romov"
+      ],
+      "published": "2026-10-27T17:58:52Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.37657v1",
+      "abs_url": "https://arxiv.org/abs/2610.37657v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37657v1"
+    },
+    {
+      "title": "KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry",
+      "title_zh": "KPPax：用于大气化学机器学习的预处理可微分动力学常微分方程",
+      "summary": "Atmospheric chemical mechanisms are commonly distributed in the language of the Kinetic PreProcessor (KPP), which generates efficient Fortran or C code but does not fit into the differentiable programming frameworks in which machine-learning models are developed. We present KPPax, a kinetic preprocessor that generates differentiable, just-in-time compiled,…",
+      "summary_zh": "大气化学机制通常以动力学预处理器 (KPP) 语言分布，该语言可生成高效的 Fortran 或 C 代码，但不适合开发机器学习模型的可微分编程框架。我们提出了 KPPax，一种动力学预处理器，它根据用 KPP 语言编写的机制在 JAX 中生成可微分、即时编译和可矢量化的化学代码。 KPPax 在对数空间中使用稀疏运算评估速率定律，使其保持可微分，并将刚性系统与隐式求解器以及 \\texttt{diffrax} 库的正向和反向模式伴随集成在一起，从而无需手动导出伴随代码即可获得精确的灵敏度。我们使用 POLLU 基准测试机制演示了两个应用程序。首先，在任何拟合之前，根据自动微分雅可比行列式计算的费舍尔信息矩阵预测流管式设计可以识别 25 个速率系数中的哪一个，并且噪声综合估计将九个可识别速率系数的预测不确定性确认在大约 30% 之内，同时揭示了仅比率受…",
+      "authors": [
+        "Wenqing Peng",
+        "Michael Boy",
+        "Zhi-Song Liu"
+      ],
+      "published": "2026-10-27T17:58:40Z",
+      "category": "cs.AI",
+      "arxiv_id": "2610.37655v1",
+      "abs_url": "https://arxiv.org/abs/2610.37655v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37655v1"
+    },
+    {
+      "title": "Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well",
+      "title_zh": "提高手持物体姿势的灵活性和安全性，效果非常好",
+      "summary": "Dexterous manipulation with multi-fingered hands is the next frontier of robotics, yet learned hand skills remain limited to simple grasps or basic repeated motions, such as rotating an object. As robots attempt more demanding in-hand maneuvers, safety, such as not dropping the object, becomes critical, yet it is rarely measured. We study in-hand object pos…",
+      "summary_zh": "多指手的灵巧操作是机器人技术的下一个前沿领域，但学到的手部技能仍然仅限于简单的抓握或基本的重复动作，例如旋转物体。随着机器人尝试更高要求的手动操作，安全性（例如不掉落物体）变得至关重要，但很少对其进行测量。我们研究手中的物体姿势，这是一项需要多样化且困难的抓握的任务：通过长序列的连续目标，将物体移动到手指所能触及的几乎任何位置和方向，以任何手腕方向。我们提出了一种在没有人类数据的情况下在模拟中训练此类策略的方法，该方法建立在一系列见解的基础上，从通过生成的掌握数据集的不同重置和目标到自适应摩擦课程。通过仔细的系统识别，这些策略可以使用动作捕捉或单个腕式深度相机将零镜头转移到真手，并证明其功能非常强大且稳健。在任务策略之上，我们添加了一个具有可调节保守性的学习残留安全过滤器，让我们能够调整性能和安全性之间的平衡，并大大减少对象丢失。在 13.3 小时…",
+      "authors": [
+        "Ian Chuang",
+        "Hiya Shah",
+        "Vamsi Chilamkur",
+        "Iman Soltani",
+        "Claire Tomlin"
+      ],
+      "published": "2026-10-27T17:58:20Z",
+      "category": "cs.RO",
+      "arxiv_id": "2610.37652v1",
+      "abs_url": "https://arxiv.org/abs/2610.37652v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37652v1"
+    },
+    {
+      "title": "GEPA-Curator: Curated Learning for Self Improving Agents",
+      "title_zh": "GEPA-Curator：自我改进代理的策划学习",
+      "summary": "Large Language Models (LLMs) are increasingly used in multi-turn agentic workloads that require sustained interaction with complex environments. Existing reflective prompt optimizers such as GEPA learn from failed rollouts, but agentic failures can also come from prompt weaknesses, harness limitations, stochastic execution, or noisy judges. We argue that su…",
+      "summary_zh": "大型语言模型 (LLM) 越来越多地用于需要与复杂环境持续交互的多轮代理工作负载。现有的反射提示优化器（例如 GEPA）可以从失败的部署中学习，但代理失败也可能来自提示弱点、利用限制、随机执行或嘈杂的判断。我们认为，这种失败可能无法提供有用的学习信号，甚至可能是有害的；因此，必须策划向提示优化器提供哪些任务以获得更好的性能。我们引入了 GEPA-Curator，这是一个增强提示优化器的框架，可以选择哪些代理体验应该塑造提示优化。特别是，GEPA-Curator 由两个组件组成：任务管理（过滤掉可能提供嘈杂或不可靠学习信号的任务）和先前成功检索（有选择地检索任务过去的成功轨迹并将其作为提示优化器的附加上下文提供）。我们使用 Gemini 3.1 Pro 和 Claude Opus 5 作为优化器模型，在 GoBrowse、ALFWorld、AppWo…",
+      "authors": [
+        "Zack Yu",
+        "Nicholas Lee",
+        "Minjae Lee",
+        "Lakshya Agarwal",
+        "Luca Manolache",
+        "Wonjun Kang"
+      ],
+      "published": "2026-10-27T17:58:11Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.37651v1",
+      "abs_url": "https://arxiv.org/abs/2610.37651v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37651v1"
+    },
+    {
+      "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+      "title_zh": "法学硕士能否通过自由探索发现隐藏的物理定律？",
+      "summary": "Scientific discovery often begins with an unexpected observation that prompts a new research question. In a world with altered physical laws, can large language models (LLMs) notice unexpected behavior, such as heavier objects falling more slowly, and discover the law through experiments without being told what to investigate? To evaluate this ability, we i…",
+      "summary_zh": "科学发现通常始于意外的观察，从而引发新的研究问题。在物理定律发生变化的世界中，大型语言模型 (LLM) 能否注意到意外行为（例如较重的物体下落速度更慢），并通过实验发现定律，而无需被告知要研究什么？为了评估这种能力，我们引入了 LongChang，这是一种自动化框架，可以创建具有改变的物理原理的模拟世界，其中一个或多个定律不同于普通物理定律。接受评估的法学硕士充当探索者，操纵物体并构建工具来调查自己的问题，而无需研究任务或有关这些定律的提示。单独的法学硕士代理生成和审查场景，审查工具设计，并使用改变的物理定律和勘探记录评估报告的正确性和实验支持。这些记录指导场景演变以进行进一步的探索，从而使整个周期无需人工干预即可运行。在 12 个法学硕士中，GPT-6-Astra 的发现率为 16.7%，而其他 11 个法学硕士的发现率为 0%。勘探记录揭示了未…",
+      "authors": [
+        "Zhen Yang",
+        "Wen Wang",
+        "Xander Xu",
+        "Ying-Cong Chen"
+      ],
+      "published": "2026-10-27T17:57:00Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.37649v1",
+      "abs_url": "https://arxiv.org/abs/2610.37649v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37649v1"
+    },
+    {
+      "title": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
+      "title_zh": "通过可控环境合成的工具使用代理的缩放定律",
+      "summary": "We explore how to build performant large language model (LLM) tool-use agents that complete complex, multi-step tasks. Specifically, we study how data composition in synthetically generated tool-use environments affects the training of such agents. To do so, we propose the SynthAPI pipeline, which explicitly controls the diversity of generated environments…",
+      "summary_zh": "我们探索如何构建高性能的大语言模型（LLM）工具使用代理来完成复杂的多步骤任务。具体来说，我们研究综合生成的工具使用环境中的数据组合如何影响此类代理的训练。为此，我们提出了 SynthAPI 管道，它沿着工具、任务和工具运行的数据库的轴明确控制生成环境的多样性。通过系统地改变 SynthAPI 在 849 个经过训练的四种不同规模模型的 458,752 个任务中的生成控制，我们得出了一个缩放法则，可以根据合成环境的规模和组成来预测下游工具使用代理的泛化。这些可预测的关系揭示了扩展工具使用代理数据的几个教训。随着数据预算的增长，扩展工具和数据库多样性变得比增加任务数量更有效，并且增加数据复杂性会产生更大的收益。根据这些发现进行扩展所产生的代理，其性能优于基于大规模工具使用代理和跨四个评估基准的合成环境生成的先前工作数据训练的模型。",
+      "authors": [
+        "Andrew Szot",
+        "Samira Abnar",
+        "Omar Attia",
+        "Abbas Kazerouni",
+        "Michael Kirchhof",
+        "Cheng-Yu Hsieh"
+      ],
+      "published": "2026-10-27T17:56:46Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.37648v1",
+      "abs_url": "https://arxiv.org/abs/2610.37648v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37648v1"
+    },
+    {
+      "title": "Metacognitive Decoding: Efficient Inference for Diffusion Language Agents",
+      "title_zh": "元认知解码：扩散语言智能体的有效推理",
+      "summary": "Diffusion language models offer a promising path to efficient agents through parallel token generation. However, efficient interaction requires adapting both where computation is spent and how much text is generated. We introduce a metacognitive controller that guides diffusion generation according to the needs of the current response and the agent's intera…",
+      "summary_zh": "扩散语言模型通过并行令牌生成为高效代理提供了一条有希望的途径。然而，有效的交互需要适应计算的花费位置和生成的文本量。我们引入了一个元认知控制器，它根据当前响应的需要以及代理与环境的交互来指导扩散生成。它了解何时最终确定令牌以及生成应扩展多远，从而减少响应中的总体计算。我们的控制器是一个用于扩散主干的轻量级插件，在代理轨迹上进行训练，以平衡正确性和生成成本。这种方法将代理的生成过程与代理服务的交互连接起来。五个基准测试的实验表明，与最有效的基准相比，我们的方法平均将推理失败次数减少了 20.6%，同时保持了有竞争力的任务准确性。消融研究进一步验证了我们方法的有效性。",
+      "authors": [
+        "Mingyu Zhao",
+        "Shuhang Lin",
+        "Ligong Han",
+        "Xiaojing Yu",
+        "Zhenting Wang",
+        "Yifei Pang"
+      ],
+      "published": "2026-10-27T17:55:24Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.37642v1",
+      "abs_url": "https://arxiv.org/abs/2610.37642v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37642v1"
+    },
+    {
+      "title": "What Improves During Pretraining? Tracking Knowledge Acquisition with Point-in-Time Models",
+      "title_zh": "预训练期间有何改进？使用时间点模型跟踪知识获取",
+      "summary": "Language models pretrained on web corpora collected over multiple years learn both general and domain-specific knowledge. How these different kinds of knowledge are learned as pretraining progresses remains unclear. Recent point-in-time models trained on web snapshots from different years provide a way to probe how knowledge prevalence varies over time. Usi…",
+      "summary_zh": "在多年来收集的网络语料库上进行预训练的语言模型可以学习一般知识和特定领域的知识。随着预训练的进行，这些不同类型的知识是如何学习的仍不清楚。最近根据不同年份的网络快照训练的时间点模型提供了一种探索知识流行程度如何随时间变化的方法。使用这些模型，我们提出了时间变异性得分（TVS），定义为跨模型的项目负对数似然的变异系数。分数越高表明知识在多年的网络文本中可能表现得不太一致。我们使用来自多个开源模型系列的六个模型来评估涵盖不同主题的六个基准。我们发现，低 TVS 项目和高 TVS 项目在训练早期的学习情况类似，但高 TVS 项目后来提高得更快。在预训练运行结束时，在 36 个模型基准设置中的 34 个中，高 TVS 项目的表现优于低 TVS 项目，平均机会归一化准确度优势为 7.3 个点。即使在比较相似难度的项目时，这种模式对于知识密集型任务也是最稳健的…",
+      "authors": [
+        "Chang Su",
+        "Bin Wu",
+        "Emine Yilmaz",
+        "Yao Lu"
+      ],
+      "published": "2026-10-27T17:52:38Z",
+      "category": "cs.AI",
+      "arxiv_id": "2610.37631v1",
+      "abs_url": "https://arxiv.org/abs/2610.37631v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37631v1"
+    },
+    {
+      "title": "Rare, Relevant, and Still Wrong: How Memory Fails LLM Group Decisions",
+      "title_zh": "罕见、相关但仍然错误：记忆如何导致法学硕士小组决策失败",
+      "summary": "When an LLM group's discussion is compressed into a short memory for a final decision maker, what should the memory keep? Two natural heuristics keep the rarest claims or the claims relevant to the decision criteria. On hidden-profile tasks both look attractive, because how widely a fact is held is confounded with whether it helps. We introduce CrossProfile…",
+      "summary_zh": "当LLM小组的讨论被压缩到最终决策者的短暂记忆中时，记忆应该保留什么？两种自然启发法保留最罕见的主张或与决策标准相关的主张。在隐藏的任务中，两者看起来都很有吸引力，因为事实的持有范围有多广与它是否有帮助是混淆的。我们引入了 CrossProfile，这是一个包含 60 个模板的诊断基准，具有自动验证的答案键，其中支持、诱饵和不相关事实的所有权被交叉，而其文本保持固定（480 个任务）。在 Qwen2.5-7B、Llama-3.1-8B 和两个 DeepSeek 模型中，两种启发式方法都在可预测的地方失败。通过相关性重新选择诱饵，因为诱饵是主题性的：即使是完美的相关性过滤器也会在经典的隐藏配置文件配置中比稀有优先的选择失去 23 到 31 点。平均而言，最稀有优先的选择并不比随机选择更好，并且只有在稀有事实恰好是有用的情况下才会获胜。在这两种情况下，…",
+      "authors": [
+        "Anouar Imel",
+        "Imad Charradi",
+        "Abderrahman Sghir",
+        "Khalil El Khammar"
+      ],
+      "published": "2026-10-27T17:49:39Z",
+      "category": "cs.AI",
+      "arxiv_id": "2610.37624v1",
+      "abs_url": "https://arxiv.org/abs/2610.37624v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37624v1"
+    },
+    {
+      "title": "Perceiving and Predicting Dynamic Sports: Spatiotemporal Intelligence in Vision Models for Egocentric Tennis Video",
+      "title_zh": "感知和预测动态运动：以自我为中心的网球视频视觉模型中的时空智能",
+      "summary": "Agile robots require spatiotemporal intelligence to interpret scenes, reason about interactions, and anticipate future events. Yet it remains unclear how well foundation vision models support these capabilities, particularly from a moving egocentric camera, which is a natural view for robots. To investigate this, we collect an annotated tennis dataset and t…",
+      "summary_zh": "敏捷机器人需要时空智能来解释场景、推理交互并预测未来事件。然而，目前尚不清楚基础视觉模型对这些功能的支持程度如何，特别是通过移动的以自我为中心的相机，这是机器人的自然视野。为了研究这个问题，我们收集了一个带注释的网球数据集，并训练了一套关于时空任务的视觉模型。我们的数据集包含与五个非中心视频同步的以自我为中心的视频、估计的全局位置、标记的接触时间和注释的笔划类型。然后，我们从以自我为中心的图像中评估七个预测任务：2D 自我球员和 3D 球定位、未来球员和球轨迹、正手或反手击球预期、下一次自我球员触球的时间以及该接触时的 3D 球位置。我们将图像编码器、视频编码器和视觉语言模型与联合训练的预测头进行比较。表现最佳的模型在 1.1 秒内实现自我球员的平均当前帧定位误差为 0.14 m，球的平均当前帧定位误差为 0.54 m，自我球员的未来预测误差为 0…",
+      "authors": [
+        "Tudor Braicu",
+        "Joseph DelPreto",
+        "Jared Boyer",
+        "Mónika Farsang",
+        "Maximilian Stölzle",
+        "Tim Niklas Seyde"
+      ],
+      "published": "2026-10-27T17:47:14Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.37619v1",
+      "abs_url": "https://arxiv.org/abs/2610.37619v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37619v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "“东数西算”工程算力网加速织就 八大国家算力枢纽节点各展所长 - 新华网",
+      "summary": "“东数西算”工程算力网加速织就 八大国家算力枢纽节点各展所长 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Wed, 28 Oct 2026 07:18:03 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQU3lsR0JIMFdqMlNiMC1sWDlWQXhTNGM5MFoyOGw5U2l5ZEVvRGhXR2hHV3FfMVVQQXdLdktrNkFEWFhpTlk0dTl0MjRaSjZFZWRfWEg3RXBseF9feGtaME1fY0xLN0RqYm0tLWU5SURtbGdQd2tGVVJmMDJ1YzBGNFVR?oc=5"
+    },
+    {
+      "title": "思特威全新子公司「威云创达」携三款AI算力新品正式亮相 - 东方财富",
+      "summary": "思特威全新子公司「威云创达」携三款AI算力新品正式亮相 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Wed, 28 Oct 2026 06:45:45 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5HYkJSQWw4WkZTZXI3eVlhVnp3OHRtZFZUcWdDdWpneEFVeW1iNWNiRXFIUHVKRGhxdlV4eFg1eXdtcmZLZlFSRUhXbHBUNW8yRHczNllfMUtKNHZBNzRoWQ?oc=5"
+    },
+    {
+      "title": "事关算力定价权！英伟达头号梦魇，藏在Anthropic招股书中 - 财联社",
+      "summary": "事关算力定价权！英伟达头号梦魇，藏在Anthropic招股书中 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Wed, 28 Oct 2026 01:02:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5IcmVNWl9fNGVMU3pvZ1ZrRktqUmtuQ0FXekRMaTZkbmkxR3hraTJpTVpjdmczbmYzd1dmSmZzWEE2X1QzcF9zSQ?oc=5"
+    },
+    {
+      "title": "视频丨1556万架标准机架、智能算力规模全球第二！一批算力项目迎来新进展 - 新浪新闻_手机新浪网",
+      "summary": "视频丨1556万架标准机架、智能算力规模全球第二！一批算力项目迎来新进展 新浪新闻_手机新浪网",
+      "source": "新浪新闻_手机新浪网",
+      "lang": "zh",
+      "published": "Wed, 28 Oct 2026 07:03:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE44LWpLU2p5Wlc1R2lscmdEem5FXzVXSjFxWHMwYmVZT1Z5Z1BqVUM2djFvankwMVZrZ3JEODJpUnlBMTVJWEtGS2dEOFEzSnA0M2MzOVJ0OTFyNkFXc1ZUZ0N1amRxT0lXajNPQk9JcmJoa0VrX1E?oc=5"
+    },
+    {
+      "title": "推出 GPT-6.1 Terra - OpenAI",
+      "summary": "推出 GPT-6.1 Terra OpenAI",
+      "source": "OpenAI",
+      "lang": "zh",
+      "published": "Tue, 27 Oct 2026 02:23:07 GMT",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE93YmVHaWJqanR4N0hqVmMtQ2NGMlRiSG1IOWRHRkg5UnIxWDNONk15ektvNk1RdEx3MmgycjFuUGVsQnZ0bnJwdmRCTkpvTWRRWHhDeDJUQTJlUzlTWkdaQ0pRRWhNclZlSnAyelBkUQ?oc=5"
+    },
+    {
+      "title": "大摩“量化团队”：AI芯片股还没跌完，建议“逢反弹减仓” - 华尔街见闻",
+      "summary": "大摩“量化团队”：AI芯片股还没跌完，建议“逢反弹减仓” 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Wed, 28 Oct 2026 04:07:09 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBUSm42UkhkLWZhZVdEXzcxYzdURTF6cmZEVkdTaUtKSGtOTzZYM29fOWFNOG1EZ1R6d0JvbTlKUjJkbGVROHU4cXJ3eG5tMTFBX05R?oc=5"
+    },
+    {
+      "title": "谷歌更新 Android Bench 榜单：自家 Gemini 4 Argon 编程能力大幅落后于 Claude 与 GPT - DoNews",
+      "summary": "谷歌更新 Android Bench 榜单：自家 Gemini 4 Argon 编程能力大幅落后于 Claude 与 GPT DoNews",
+      "source": "DoNews",
+      "lang": "zh",
+      "published": "Wed, 28 Oct 2026 02:18:29 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE04eUVtWFNPUUhkZFZhMmZKSHpUOWFORHBtTk50Z1A4WFVsY2kzMWwtdTQtZ0EzTG0tSW9Ba2dhWmUza2J0LWJnbGxRZ2t5RmNBT1VoOENaZ0pGM2s5eFE?oc=5"
+    },
+    {
+      "title": "GPT-6.1 Terra 发布：比旗舰快 3 倍，价格仅1/10！事实错误率暴降近 70% - InfoQ-CN",
+      "summary": "GPT-6.1 Terra 发布：比旗舰快 3 倍，价格仅1/10！事实错误率暴降近 70% InfoQ-CN",
+      "source": "InfoQ-CN",
+      "lang": "zh",
+      "published": "Wed, 28 Oct 2026 02:42:24 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9XWm1VUGJ4NzlZR1hRT0dhc19KTDNoSWVBcWYzVmhwaDBMQlN3WWpuMlpyeEU0QlE3YWM2LVhONG54MVJUNUYwTE9ZQmR1S2FEckhfeDRVeU9rMkl3T2c?oc=5"
+    },
+    {
+      "title": "新型算力基础设施赋能产业数字化创新发展交流会即将启幕 - 国际科技创新中心",
+      "summary": "新型算力基础设施赋能产业数字化创新发展交流会即将启幕 国际科技创新中心",
+      "source": "国际科技创新中心",
+      "lang": "zh",
+      "published": "Wed, 28 Oct 2026 03:18:55 GMT",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9zUFdHYlhaUlZrZGpocTlvN1M5SUhUZXRmdm90ZkxNNWZfMXB4Y0tNc2hkMlRRaVZZVU5hdmx1RjdRRmNwMHBLMVBQWEkwYmRnNGxFWElsS3Rpa3piR0R4dkRrZzdyTlRtdUFZWUhZZzJEUmdYTEtN?oc=5"
+    },
+    {
+      "title": "“国企担当，科技为民”东风风神L8+用心守护万家灯火 - 新华网客户端",
+      "summary": "“国企担当，科技为民”东风风神L8+用心守护万家灯火 新华网客户端",
+      "source": "新华网客户端",
+      "lang": "zh",
+      "published": "Wed, 28 Oct 2026 08:48:04 GMT",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRy1WLW5uMGFPa1lYZTdJbUFTdGEzejJ6YlFhamJIQU40WTAtVFZQYmdpOUFjZlo3RmswbFhtamo5b3JJRXVxbVVSTk1mVFhzckwwaFB4eVVMeWZHb3piRVhtV0xOcGhYVndReS1oSnplY2lOdUwxNUh0WTByYVdteGhDcTZaU2lCM180VnV4LThOQVF6SGc1Z2Fn?oc=5"
+    },
+    {
+      "title": "十年磨一剑，京津冀共“织”算力网 - 河北广播电视台",
+      "summary": "十年磨一剑，京津冀共“织”算力网 河北广播电视台",
+      "source": "河北广播电视台",
+      "lang": "zh",
+      "published": "Wed, 28 Oct 2026 03:17:41 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9OR3hsWHJxdDg5eXI1MGU3SUFwYUR5QVlaRWZCR3p0d2FXeGRMdE83Rmt0TkUzTEstMjRCWWd4TkFnb2phNS12WHZRS1JxZmhjYjR0VHdyd3VEeEIxMHR4RlJldkd2Tmc0Mmc?oc=5"
+    },
+    {
+      "title": "招商进入AI时代 广东将发布产业招商大模型 - 21财经",
+      "summary": "招商进入AI时代 广东将发布产业招商大模型 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Wed, 28 Oct 2026 06:53:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOMkNOcDlvUlZzVjJFQlpOWk51LWl4ZTZ2Ry13UE50Q2ROOC1OMk5BckZ2QnN6bVpDZHM1czgwU1hJalJERWJUNGhESDc0ZUc5aGplbEs4YjJVUnNGMVlkQjhmcnVqeldtZTBKYU03dDU5M0JOcmZob3dTR1VmZ0JjSjNsYzR5aUtkRFhoS09kRQ?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 96967,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 78080,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57614,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 38740,
+      "language": "TypeScript"
+    },
+    {
+      "title": "next-ai-draw-io",
+      "type": "GitHub",
+      "summary_en": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "summary": "通过与人工智能聊天来绘制和编辑draw.io图表。 Web 应用程序、桌面应用程序以及用于 Claude Code、Cursor、Codex 和 VS Code 的 MCP 服务器。",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "author": "DayuanJiang",
+      "stars": 36456,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 393242,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 306797,
+      "language": "Shell"
+    },
+    {
+      "title": "deepseek-harness",
+      "type": "GitHub",
+      "summary_en": "DeepSeek Harness: Everything is a Plugin.",
+      "summary": "DeepSeek Harness：一切都是插件。",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "author": "deepseek-ai",
+      "stars": 264267,
+      "language": "TypeScript"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
