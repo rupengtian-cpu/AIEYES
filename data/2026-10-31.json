@@ -1,0 +1,507 @@
+{
+  "date": "2026-10-31",
+  "generated_at": "2026-10-31T09:03:22.880476+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Elucidating the Design Space of LM Data Attribution",
+      "title_zh": "阐明LM数据归因的设计空间",
+      "summary": "Data attribution methods for Language Models (LMs) are typically evaluated using downstream tasks like fact retrieval. However, existing evaluations vary multiple dataset properties simultaneously, making it impossible to isolate exactly why an attribution algorithm fails. To diagnose these failures, we explore the design space of LLM data attribution, with…",
+      "summary_zh": "语言模型 (LM) 的数据归因方法通常使用事实检索等下游任务进行评估。然而，现有的评估同时改变多个数据集属性，因此无法准确找出归因算法失败的原因。为了诊断这些失败，我们探索了 LLM 数据归因的设计空间，主要关注评估。我们引入了用于事实追踪的受控归因基准（CATT），其中我们根据完全虚构的知识对法学硕士进行微调，为归因提供明确的基本事实。这种综合设置使我们能够一次系统地更改一个数据集配置，例如文档冗余和词汇干扰项。通过这种可配置的评估，我们证明冗余和干扰因素会持续降低归因绩效。我们没有提出一个新的估计器，而是检查了两个尚未充分探索的设计选择：用于计算梯度的损失以及如何将每个标记的归因分数聚合到文档分数中。我们发现训练文档中的真正因果证据是高度本地化的，但标准方法通过对整个文档的归因分数进行平均，将这些证据稀释成噪音。我们发现，用负对数赔率梯度替换标…",
+      "authors": [
+        "Steven Yu",
+        "Sheng-Yu Wang",
+        "Kimia Hamidieh",
+        "Antonio Torralba",
+        "David Bau"
+      ],
+      "published": "2026-10-29T17:59:53Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.40655v1",
+      "abs_url": "https://arxiv.org/abs/2610.40655v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40655v1"
+    },
+    {
+      "title": "Propose-Filter-Release: Scaling Noise to Typical Sensitivity via Private Filtering",
+      "title_zh": "建议-过滤器-发布：通过专用过滤将噪声缩放至典型灵敏度",
+      "summary": "An estimator can be accurate and stable on typical data, yet sensitive to a few possible records. Differentially private mechanisms commonly scale their noise to the worst-case influence of a single record, which lets these records dictate the noise even when the remaining data would allow far less. Removing them first would restore the smaller scale, but t…",
+      "summary_zh": "估算器对于典型数据可以是准确和稳定的，但对一些可能的记录很敏感。差分私有机制通常将其噪声扩展到单个记录的最坏情况影响，这使得这些记录决定噪声，即使剩余数据允许的噪声要少得多。首先移除它们可以恢复较小的规模，但移除本身必须是私人的。我们引入了 \\emph{propose-filter-release} (PFR)，它通过私下过滤其输入，将一种保护添加或删除典型记录（适合剩余数据的记录）的机制转变为标准意义上的差异私有记录（在每个输入上）。使用我们新颖的过滤步骤，PFR 仅需要一个凹友好性分数（衡量记录与数据集的拟合程度），以及友好的 DP 发布机制，即当更改的记录适合剩余数据时是私有的。对于每一个这样的评分和发布机制，它都保证了公共条件下记录数量上的差异隐私，因此它是一个通用的隐私原语，类似于提议-测试-发布，FriendlyCore可以被视为其实现…",
+      "authors": [
+        "Moshe Shenfeld",
+        "Eliad Tsfadia",
+        "Katrina Ligett"
+      ],
+      "published": "2026-10-29T17:59:49Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.40654v1",
+      "abs_url": "https://arxiv.org/abs/2610.40654v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40654v1"
+    },
+    {
+      "title": "Luggage re-identification: A study of strategies towards a real-world application",
+      "title_zh": "行李重新识别：现实世界应用策略的研究",
+      "summary": "Luggage re-identification (ReID) is a critical task in video surveillance for forensics, security or border management (suspicious or abandoned luggage recognition), as well as luggage management (lost luggage recovery). It enables the association of observations of the same luggage across disjoint camera views in complex environments such as airports, trai…",
+      "summary_zh": "行李重新识别 (ReID) 是取证、安全或边境管理（可疑或遗弃行李识别）以及行李管理（丢失行李找回）视频监控中的一项关键任务。它能够在机场、火车站和边境口岸等复杂环境中通过不相交的摄像机视图关联相同行李的观察结果。虽然现有的方法主要关注相对干净的条件下基于外观的裁剪图像匹配，但现实场景的特点是频繁的遮挡、杂乱的背景和拥挤的场景，这会显着降低性能。然而，利用不同视频流的多个镜头和视图的互补性的策略却被忽视了。在本文中，我们研究了端到端管道的策略，该管道通过多个视频流进行操作以检测和重新识别行李。我们评估在现实环境中获取的基准数据集的不同变体，以解决选择和合并同一行李的不同视图和镜头的问题，以及对不同环境数据集进行训练，以提高实际应用中的整体 ReID 性能。",
+      "authors": [
+        "Quentin Dhôte",
+        "Romaric Audigier"
+      ],
+      "published": "2026-10-29T17:58:59Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.40643v1",
+      "abs_url": "https://arxiv.org/abs/2610.40643v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40643v1"
+    },
+    {
+      "title": "SonoWorld4D: From One Video to a 4D Audio-Visual Scene via Diffusion Synchronization",
+      "title_zh": "SonoWorld4D：通过扩散同步从一个视频到 4D 视听场景",
+      "summary": "Recent progress in visual scene generation has extended beyond static 3D scenes toward the more challenging problem of generating dynamic 4D scenes from minimal input. However, sound, despite being intrinsically coupled with dynamic objects and events, remains largely unmodeled in prior work. We introduce Video-to-4DAVScene, a new task that turns a video in…",
+      "summary_zh": "视觉场景生成方面的最新进展已超越静态 3D 场景，转向更具挑战性的问题，即从最少的输入生成动态 4D 场景。然而，尽管声音本质上与动态对象和事件耦合，但在之前的工作中很大程度上仍然没有建模。我们介绍了 Video-to-4DAVScene，这是一项新任务，可将视频转换为可探索的、随时间变化的 4D 视听场景，并介绍了该任务的 SonoWorld4D 框架。给定单目视频，我们的方法生成 360 度静态背景，重建动态发声前景物体的显式运动轨迹，并通过双空间音频扩散同步合成跨多个源一致的物理接地声场。由此产生的 4D 场景支持实时小说视图视觉和空间音频渲染。对现实世界动态场景的评估和用户研究表明，SonoWorld4D 可生成 4D 视听场景，具有与场景几何和视觉内容一致的感知逼真、物理接地的空间音频。",
+      "authors": [
+        "Derong Jin",
+        "Xiyi Chen",
+        "Ming C. Lin",
+        "Ruohan Gao"
+      ],
+      "published": "2026-10-29T17:58:45Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.40640v1",
+      "abs_url": "https://arxiv.org/abs/2610.40640v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40640v1"
+    },
+    {
+      "title": "world2vec: Mechanistic world models through latent dynamics learning",
+      "title_zh": "world2vec：通过潜在动力学学习的机械世界模型",
+      "summary": "World models can achieve strong control performance without faithfully capturing the dynamics of their environment, limiting their potential for mechanistic interpretability and scientific discovery. Here, we introduce world2vec to learn mechanistic world models without reward information directly from observations and actions. World2vec learns latent dynam…",
+      "summary_zh": "世界模型可以在不忠实捕捉环境动态的情况下实现强大的控制性能，从而限制了其机械解释和科学发现的潜力。在这里，我们引入 world2vec 来学习机械世界模型，而无需直接从观察和行动中获取奖励信息。 World2vec 学习潜在的动力学，可以在较长的预测范围内忠实地再现真实系统，其参数比 DreamerV3、TD-MPC2 和 LeWM 至少少一个数量级。这使得在通过像素控制连续环境和跨 71 个吸引子基准的准确系统识别方面实现最先进的性能，展示了世界模型如何服从于科学发现。",
+      "authors": [
+        "Tobias Schmidt",
+        "Rodrigo Gonzalez Laiz",
+        "Krisztián Szuppinger",
+        "Steffen Schneider"
+      ],
+      "published": "2026-10-29T17:58:23Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.40637v1",
+      "abs_url": "https://arxiv.org/abs/2610.40637v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40637v1"
+    },
+    {
+      "title": "Probing Spatial State Representations in Visual Foundation Models",
+      "title_zh": "探索视觉基础模型中的空间状态表示",
+      "summary": "An observer sees only part of the surrounding world, yet must keep track of what lies beyond the current view. Spatial perception therefore involves more than recognizing individual images: it calls for a persistent spatial state that is updated under self-motion and used to guide action. Do visual foundation models provide representations that support such…",
+      "summary_zh": "观察者只能看到周围世界的一部分，但必须跟踪当前视野之外的事物。因此，空间感知不仅仅涉及识别单个图像：它需要持续的空间状态，该状态在自我运动下更新并用于指导行动。视觉基础模型是否提供支持这种状态的表示？我们通过四个级别的空间能力（空间结构、对象持久性、预测空间更新和可操作性）来研究这个问题，在静态室内环境的流式自我中心观察下，使用冻结特征探针对十种表示进行研究。生成的功能配置文件因任务、网络层和前缀长度而异：可见场景的强读出并不能确保准确的对象持久性或未来特征检索。匹配的控件将读数准确性与对视觉历史和运动的依赖分开。本机未来预测保留了可恢复的空间结构，但接受真实特征训练的空间读取器不会不变地转移到预测特征。最后，依赖于目标的候选者选择并不能建立可靠的连续行动效用：预测行动响应目标变化，但提供正确的目标并不能可靠地提高进度。在这四个级别中，对象持久性和…",
+      "authors": [
+        "Baiqiao Yin",
+        "Zhongang Cai",
+        "Ruisi Wang",
+        "Qiwei Liang",
+        "Lei Yang",
+        "Ziwei Liu"
+      ],
+      "published": "2026-10-29T17:58:16Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.40636v1",
+      "abs_url": "https://arxiv.org/abs/2610.40636v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40636v1"
+    },
+    {
+      "title": "SymAnt: Grounding Long-Horizon Action Anticipation with Adaptable Symbolic Priors",
+      "title_zh": "SymAnt：以适应性强的符号先验为长期行动预期奠定基础",
+      "summary": "As robots and intelligent systems increasingly interact with humans, they must anticipate long sequences of future actions from only brief observations. While purely neural models typically require extensive observations to predict future actions and remain difficult to interpret and adjust, symbolic priors offer a structured alternative. To this end, we in…",
+      "summary_zh": "随着机器人和智能系统越来越多地与人类互动，它们必须仅通过简短的观察来预测未来一系列的行动。虽然纯神经模型通常需要大量观察来预测未来的行为，并且仍然难以解释和调整，但符号先验提供了一种结构化的替代方案。为此，我们引入了 SymAnt，一种新颖的神经符号方法，它将神经网络的表达能力与场景和知识图的结构化推理相结合。给定一个短视频，SymAnt 对两个图执行联合搜索以构建符号上下文，从而实现对空间关系、对象属性、可供性和相关操作的统一推理。该符号上下文充当迭代细化过程的先验，逐步生成并改进未来操作的顺序。通过将预测建立在符号上下文中，SymAnt 以参数有效的方式从短观察窗口预测长期行为，同时使用户能够直接编辑基础知识来调整预测，而无需进一步训练。通过我们的实验，我们在五个不同的数据集（Breakfast、50 Salads、EPIC-KITCHENS、…",
+      "authors": [
+        "Fnu Aryan",
+        "Yaqi Xie",
+        "Joseph Campbell",
+        "Woojun Kim",
+        "Kwonjoon Lee",
+        "Hossein Nourkhiz Mahjoub"
+      ],
+      "published": "2026-10-29T17:58:00Z",
+      "category": "cs.RO",
+      "arxiv_id": "2610.40632v1",
+      "abs_url": "https://arxiv.org/abs/2610.40632v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40632v1"
+    },
+    {
+      "title": "ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender",
+      "title_zh": "ShallowDefend：利用浅安全对准进行多回合防御",
+      "summary": "Safety alignment has enabled large language models to reliably refuse harmful requests directly, yet the same request distributed across a multi-turn conversation still succeeds far too often. This brittleness has a mechanistic root: Alignment is shallow, with safety behavior concentrated in a model's first few output tokens, and existing defenses inherit t…",
+      "summary_zh": "安全对齐使大型语言模型能够可靠地直接拒绝有害请求，但在多轮对话中分发的同一请求仍然经常成功。这种脆弱性有一个机械根源：对齐很浅，安全行为集中在模型的前几个输出标记中，而现有的防御继承了这个弱点，监督响应的表面形式，而不给模型一个明确的安全决策来学习。我们对浅度持相反的看法：如果一个短跨度决定了整个反应的轨迹，那么这个跨度就是干预的最高杠杆位置，防守者可以首先占领它。我们提出了 Assess $\\to$ Decide $\\to$ Respond，这是一个框架，防御者可以在其中评估用户的意图，做出明确的、可解析的安全决策，然后才生成以此为条件的回复，并在有效负载回合通过强化学习训练承诺。因为决策是一个令牌跨度，所以奖励可以是一条规则：自我验证的奖励根据对话的已知性质检查提交的标签，不需要法官和注释，而相同的格式还支持在分级决策空间上作为法官的 LLM…",
+      "authors": [
+        "Qiyao Ma",
+        "Xiaodong Liu",
+        "Weiwei Yang",
+        "Mingqian Feng",
+        "Chengquan Guo",
+        "Jialin Song"
+      ],
+      "published": "2026-10-29T17:56:53Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.40627v1",
+      "abs_url": "https://arxiv.org/abs/2610.40627v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40627v1"
+    },
+    {
+      "title": "Testimony from Timelines: Evidence-Grounded Significance Testing of Temporal Clinical Hypotheses",
+      "title_zh": "来自时间线的证词：时间临床假设的循证显着性检验",
+      "summary": "Ask a language model whether sales tend to dip after a product recall, or whether one side effect tends to follow another after a vaccine, and it answers in a fluent sentence that reads like a finding, with no test behind it. Assertions about how events unfold across many cases fill the Web, and each is a temporal hypothesis that only a significance test ov…",
+      "summary_zh": "询问语言模型，产品召回后销量是否会下降，或者疫苗接种后是否会出现一种副作用，它会用流利的句子回答，读起来就像一个发现，背后没有任何测试。关于事件如何在许多案例中展开的断言充斥着网络，每一个都是一个时间假设，只有对正确记录进行显着性检验才能解决。验证者必须指定零值，选择检验并决定哪些记录与假设相符，这些选择中的任何一个都可能出错，但结论仍然正确。然而，语言模型数据分析的基准仅对结论进行评分，并移交了相关数据。我们研究健康领域的问题，错误的判决代价高昂，并提出了 STRATA，这是一个对判决过程中的每个决定进行评分的基准：针对疫苗不良事件报告的临床时间表的 8,735 个假设，以及根据已发布的密码本导出并由确定性预言机复制的黄金计划、证据集、p 值和判决。我们还提出了 ART（清晰、检索、测试），这是一种分阶段范例，将每个决策公开为可检查的输出。对五种…",
+      "authors": [
+        "Chengyang He",
+        "Wenlong Zhang",
+        "Koduvayur Subbalakshmi",
+        "Ping Wang"
+      ],
+      "published": "2026-10-29T17:55:30Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.40619v1",
+      "abs_url": "https://arxiv.org/abs/2610.40619v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40619v1"
+    },
+    {
+      "title": "An ODE-based Sampler for Discrete Diffusion Models",
+      "title_zh": "基于常微分方程的离散扩散模型采样器",
+      "summary": "The marginals of a continuous diffusion model can be reproduced by a deterministic ordinary differential equation (ODE), known as the probability flow ODE, which provides a foundation for accelerated sampling and consistency distillation. In this paper we address the question whether an analogous formulation exists for discrete diffusion models and answer i…",
+      "summary_zh": "连续扩散模型的边际可以通过确定性常微分方程 (ODE) 来重现，称为概率流 ODE，它为加速采样和一致性蒸馏提供了基础。在本文中，我们解决了离散扩散模型是否存在类似公式的问题，并通过引入指数剩余流（ERF）给出了肯定的答案。我们的框架通过每个标记和位置的连续残差变量来增强离散状态。这些残差根据分段定义的 ODE 确定性地演化，其向量场取决于当前离散状态以及指定扩散模型的前向和后向速率矩阵。每当残差达到零时，离散状态就会发生变化。我们证明这种构造保留了原始扩散的边缘。我们对采样器进行了实用的离散化，并将其专门用于屏蔽和均匀扩散。 ERF 的确定性轨迹支持一致性蒸馏，并在各种基准（包括代码和文本生成任务）上比以前的方法产生了实证改进。",
+      "authors": [
+        "Samson Gourevitch",
+        "Yazid Janati",
+        "Eric Moulines",
+        "Eric P. Xing",
+        "Alain Durmus",
+        "Giacomo Zanella"
+      ],
+      "published": "2026-10-29T17:55:25Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.40618v1",
+      "abs_url": "https://arxiv.org/abs/2610.40618v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40618v1"
+    },
+    {
+      "title": "Difficulty Calibration Across Time for Membership Inference in Diffusion Models",
+      "title_zh": "扩散模型中成员资格推断随时间的难度校准",
+      "summary": "Modern diffusion models are trained on massive datasets that often include copyrighted or private images. Membership inference attacks (MIAs) address this by testing whether a given image was in a model's training set. The standard approach scores an image by its reconstruction loss and flags low-loss images as members. This often fails because some images…",
+      "summary_zh": "现代扩散模型是在大量数据集上进行训练的，这些数据集通常包括受版权保护或私人图像。成员推理攻击 (MIA) 通过测试给定图像是否在模型的训练集中来解决这个问题。标准方法通过重建损失对图像进行评分，并将低损失图像标记为成员。这通常会失败，因为某些图像比其他图像更容易重建，因此简单的看不见的图像可以比复杂的训练图像获得更低的损失。难度校准将记忆与图像开始的难度分开。我们展示了如何沿着两个时间轴进行校准：训练时间和扩散时间。首先，在整个训练过程中，我们引入了参考模型校准（RMC），它将微调模型的损失与早期检查点进行比较。这可以干净地隔离新记忆的数据，并提供近乎完美的审核，即使没有文本标题。由于早期的检查点并不总是可用，因此我们接下来提出时间自校准（TSC），它仅使用单个模型来跨扩散时间进行校准。我们的主要观察结果是，图像的难度在不同噪声水平下都持续存在，而…",
+      "authors": [
+        "Michael Joseph",
+        "Yedid Hoshen"
+      ],
+      "published": "2026-10-29T17:54:54Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.40616v1",
+      "abs_url": "https://arxiv.org/abs/2610.40616v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40616v1"
+    },
+    {
+      "title": "TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races",
+      "title_zh": "TextSeal2：具有 Copula 混合和无记忆竞赛的无失真 LLM 水印",
+      "summary": "We present TextSeal2, a distortion-free watermark for large language models that keeps its signal under speculative decoding: tokens that replace rejected drafts remain watermarked with the same keys, and the acceptance rate is unchanged. It also preserves output diversity and adds no measurable inference latency. Its predecessor, TextSeal, restores diversi…",
+      "summary_zh": "我们提出了 TextSeal2，这是一种用于大型语言模型的无失真水印，可将其信号保持在推测解码下：替换被拒绝草稿的令牌仍使用相同的密钥加有水印，并且接受率保持不变。它还保留了输出多样性，并且不会增加可测量的推理延迟。它的前身 TextSeal 通过抛硬币将每个令牌路由到两个密钥之一，从而恢复了 Gumbel-max 方案的多样性。这是次优的，因为检测器在不知道使用哪个键的情况下对两个键的分数进行平均。相反，TextSeal2 将两个或多个键合并为一个虚拟键，并通过 AutoMark 的高斯联结函数将其与新噪声耦合。可以通过这种方式合并任意数量的密钥，包括公开共享的密钥，而不会削弱检测。在推测性解码下，TextSeal2 通过另一场指数竞赛来验证密钥草稿，并在草稿竞赛的剩余部分上运行。通过无记忆，这场竞赛重现了区块验证，因此输出完全遵循目标模型。我们…",
+      "authors": [
+        "Tom Sander",
+        "Pierre Fernandez",
+        "Itai Gat",
+        "Haiming Bao",
+        "Jiaxin Shi",
+        "Jason Park"
+      ],
+      "published": "2026-10-29T17:54:12Z",
+      "category": "cs.CR",
+      "arxiv_id": "2610.40613v1",
+      "abs_url": "https://arxiv.org/abs/2610.40613v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.40613v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "天地一体化太空算力云平台在京发布 覆盖40余颗卫星算力资源 - 中国科技网",
+      "summary": "天地一体化太空算力云平台在京发布 覆盖40余颗卫星算力资源 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Sat, 31 Oct 2026 06:49:25 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBYcHVoZ2doOC0zdUhfdUpYR1ZnNnc2VFpSV0V3dzFqZDU0bXhJdjc3SWxmeXM1N3prbjBxSVpVOEtJQ3puMG1ob3V1LXdjdU55Umtqajh0NzA4NU9QTWRRUlplUVVJbWR3UDJaZmhvLVE?oc=5"
+    },
+    {
+      "title": "经济观察丨算力网建设为中国西部撑起数字未来 - 新华网",
+      "summary": "经济观察丨算力网建设为中国西部撑起数字未来 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Fri, 30 Oct 2026 23:59:28 GMT",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9SMVZWbUdLSnpuallHMTA2RXhyQW1sRTdlbnZ5R1hjZ0UzQkhHMzdhd3IteTFaTWN1Rlhuc0k1YTJXdWc5VjRCbDYyQXVBbF83SWlScEZ0OWsxa3ZTOGZJdENHVkI1a051MTdRYlFyWjVJdVRWZVBR?oc=5"
+    },
+    {
+      "title": "中国“慧眼”植被健康智能体发布 深度结合人工智能与空天信息 - 新浪财经",
+      "summary": "中国“慧眼”植被健康智能体发布 深度结合人工智能与空天信息 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Sat, 31 Oct 2026 06:33:01 GMT",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE83UmZwOU9wMnBMdV9KeGF6TzVzTENTLV9mMHpONW4tZmJFLUpFRzlXeUVuLXc0T0ZqRjJKTTVMVk5CRjFSV2xPYWRkZk5GSGFMSlhqSjYwQ2NlUUtVN1EzeEtzUXFqQXlGa0U4UGQxMVVNT0VrbExEZg?oc=5"
+    },
+    {
+      "title": "天地一体化太空算力云平台在京发布 覆盖40余颗卫星算力资源 - 中国新闻网",
+      "summary": "天地一体化太空算力云平台在京发布 覆盖40余颗卫星算力资源 中国新闻网",
+      "source": "中国新闻网",
+      "lang": "zh",
+      "published": "Sat, 31 Oct 2026 01:32:45 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9Jc3lKaGQwbVJoZ21Kdmp0NzdpejVWdVQ4VVJZOEJHbXdILTZOZkdJMVF2cWd5UGE5dlk4elNGeElaTVFYblBMR2Nqa2w2VzBneHlPT0hhblktZkdzN1FaZkNFcDBFaW4x?oc=5"
+    },
+    {
+      "title": "港股大模型双雄齐遭“杀估值” 为何空头资金却在加速大撤退？ - 财联社",
+      "summary": "港股大模型双雄齐遭“杀估值” 为何空头资金却在加速大撤退？ 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Sat, 31 Oct 2026 01:56:26 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE04S0JYLVE2c2Eza1QtTk9JZ3RzdE5pSHlHSTdZazg3bzhUaWpYQTEtRDRpU0Z4OU1HUTAxS096T3VwUkxpV0FSag?oc=5"
+    },
+    {
+      "title": "XHEART发布大模型芯片 升级智驾体验 - 苏州新闻",
+      "summary": "XHEART发布大模型芯片 升级智驾体验 苏州新闻",
+      "source": "苏州新闻",
+      "lang": "zh",
+      "published": "Sat, 31 Oct 2026 01:40:42 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBQQmZsWXZ4ZW9BbmMxT0p3d1dPN3hGLXlON2FSVUJFdUxjamNGdkNpOEQzekxja0pqV3pvN3BCM29ETW51VUFxeGdHblg0ZllNenhqcWhadElxTE5VV1FTRFNR?oc=5"
+    },
+    {
+      "title": "南方财经全媒体集团 - 南方财经",
+      "summary": "南方财经全媒体集团 南方财经",
+      "source": "南方财经",
+      "lang": "zh",
+      "published": "Sat, 31 Oct 2026 05:46:24 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1yeF9oZWxKYVdvWE9MeU9XbUpTTXhGMDIya1hLSkpoM1U0RjBUbml6R01mRHZ4TXdkQTcyTG1qTjJ5emlUR2N5SGczbGRQT3dHaWRjR3hlMG94VGZSOHZpWXg0UzV4ZXM?oc=5"
+    },
+    {
+      "title": "世界模型首次指导设计芯片！超大核NPU700TOPS，99%算力可用 - Moomoo",
+      "summary": "世界模型首次指导设计芯片！超大核NPU700TOPS，99%算力可用 Moomoo",
+      "source": "Moomoo",
+      "lang": "zh",
+      "published": "Sat, 31 Oct 2026 04:45:16 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBpS1daNjFuVHVsZkx1MEhQMjhYbTZZMmJIV3oxNFdETE01VWxvbnpEZV9qVGJqMXJScmh5aHRia1dLaXBCWDZPWDk2R29xVzAxbmNFeXAxbjNNZXpT?oc=5"
+    },
+    {
+      "title": "地平线创始人余凯：很多自研智驾芯片宣传的都是“吹牛算力” - 驱动之家",
+      "summary": "地平线创始人余凯：很多自研智驾芯片宣传的都是“吹牛算力” 驱动之家",
+      "source": "驱动之家",
+      "lang": "zh",
+      "published": "Fri, 30 Oct 2026 23:58:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1hVG9KckFDRWkzQWFpUTh0ZVZOdW0wWnh2cGtoaTh0cHVXYXBwdlNSMU84UGFjWllSNjF0clFaeGdOdzVwUkF5MW1JVW93RzRoSU1uem1KaW4?oc=5"
+    },
+    {
+      "title": "铜梁：加快推进“龙小天”气象服务智能体建设 - 华龙网",
+      "summary": "铜梁：加快推进“龙小天”气象服务智能体建设 华龙网",
+      "source": "华龙网",
+      "lang": "zh",
+      "published": "Fri, 30 Oct 2026 22:30:43 GMT",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBtMlRDYmpFdDJkZWtXbVZBeE52RFJDTWs3NjdBRTFXbGtPQmJpTkpCaDlpSnRQZ3FQYnkxa1JnR3FzRnA0SFdOd0VaTlB3em95N01MYUx1TXJGTnF6V0t6TWs5VnAycTk5TEhj?oc=5"
+    },
+    {
+      "title": "报告称长三角形成从底层算力、核心算法到终端应用的完整产业生态 - 中国新闻网",
+      "summary": "报告称长三角形成从底层算力、核心算法到终端应用的完整产业生态 中国新闻网",
+      "source": "中国新闻网",
+      "lang": "zh",
+      "published": "Sat, 31 Oct 2026 01:12:10 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9mbHdDNi1jSm9ISjVPb3pxRHl5LTY1NVM0S3ctYkJJTllGQ1NGZW45WldyYVJFbVRvaWhFVTVDd2NMVW1hb08wMmRlX1dTMldwUTU3MWczNm1LbGlkQ1BjQVdRN1Q1OGlS?oc=5"
+    },
+    {
+      "title": "Gemini安卓版更新全面推开：助手弹层更醒目，聊天内可直接生成和编辑文件 - 新浪财经",
+      "summary": "Gemini安卓版更新全面推开：助手弹层更醒目，聊天内可直接生成和编辑文件 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Sat, 31 Oct 2026 06:03:37 GMT",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1aSnhQdng5bndOdzloYmoyZmlxcF81Qk43R2VSZ2hFYVlHSkNWNVhHWkRxcTg3VDBjREJaaDBkcmItUXozeXZYRElEVGJQUVZiLUpxR25jMFdUS2EzZzJUWG5GeVpoR1p4aHlhVUMwNkxQMU4zbVk5dA?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 97106,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 78413,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57621,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 38884,
+      "language": "TypeScript"
+    },
+    {
+      "title": "next-ai-draw-io",
+      "type": "GitHub",
+      "summary_en": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "summary": "通过与人工智能聊天来绘制和编辑draw.io图表。 Web 应用程序、桌面应用程序以及用于 Claude Code、Cursor、Codex 和 VS Code 的 MCP 服务器。",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "author": "DayuanJiang",
+      "stars": 36512,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 393512,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 309632,
+      "language": "Shell"
+    },
+    {
+      "title": "deepseek-harness",
+      "type": "GitHub",
+      "summary_en": "DeepSeek Harness: Everything is a Plugin.",
+      "summary": "DeepSeek Harness：一切都是插件。",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "author": "deepseek-ai",
+      "stars": 266970,
+      "language": "TypeScript"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
