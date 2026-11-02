@@ -1,0 +1,508 @@
+{
+  "date": "2026-11-02",
+  "generated_at": "2026-11-02T10:16:23.933839+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "GazeRIB: Systematic Evaluation of Multi-Reader Gaze-Guided Chest X-ray Learning",
+      "title_zh": "GazeRIB：多读者凝视引导胸部 X 射线学习的系统评估",
+      "summary": "Radiologists' visual attention can supervise medical image learning, but how reader panel composition affects its value remains untested. We evaluated GazeRIB (Gaze-guided Radiologist-Informed Blackout), which masks unviewed regions during training and uses unmasked images at inference. Eight experts repeatedly read the same 80 chest X-rays (CXRs). We compa…",
+      "summary_zh": "放射科医生的视觉注意力可以监督医学图像学习，但读者小组的组成如何影响其价值仍有待测试。我们评估了 GazeRIB（凝视引导放射科医生知情停电），它在训练期间屏蔽未观察的区域，并在推理时使用未屏蔽的图像。八位专家重复读取相同的 80 张胸部 X 光片 (CXR)。我们将单个读取器与跨 7 个架构和 10 个种子的三、五和八个读取器面板进行了比较，评估了单独的 2,897-CXR 队列上的 910 个模型，以进行四级严重性预测。每个小组的宏观 F1 都比无注视基线提高了 5.33-7.47 个百分点（pp；Bonferroni 调整后的 p < 0.007）；没有个别读者在这个终点上达到重要意义。三个读取器捕获了宏 F1 中八个读取器增益的 73-80%、接收者操作特征曲线下的面积 (ROC-AUC) 和精确召回曲线下的面积 (AU-PRC)。在未经重…",
+      "authors": [
+        "Nattakorn Kittisut",
+        "Roy M. Gabriel",
+        "Marly van Assen",
+        "Mohammadreza Zandehshahvar",
+        "Carlo N. De Cecco",
+        "Elizabeth A. Krupinski"
+      ],
+      "published": "2026-10-30T17:59:59Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.42152v1",
+      "abs_url": "https://arxiv.org/abs/2610.42152v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42152v1"
+    },
+    {
+      "title": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
+      "title_zh": "统一多模态模型连续空间中的潜在推理",
+      "summary": "Unified Multimodal Models (UMMs) achieve remarkable success on diverse multimodal understanding and generation tasks, yet they still struggle to effectively leverage language-based chain-of-thought reasoning for image generation. As a result, existing reasoning-augmented UMMs often fail to inherit the test-time scaling and fine-grained controllability obser…",
+      "summary_zh": "统一多模态模型（UMM）在不同的多模态理解和生成任务上取得了显着的成功，但它们仍然难以有效地利用基于语言的思想链推理来生成图像。因此，现有的推理增强 UMM 通常无法继承大型语言模型中观察到的测试时间缩放和细粒度可控性。我们将这种失败归因于基本的模态不匹配：推理是在离散的标记空间中执行的，而图像生成是在连续的空间中进行的。为了弥补这一差距，我们引入了连续空间中的潜在推理框架（LARC），它通过对连续隐藏状态进行推理来缓解令牌级瓶颈。具体来说，训练框架由两个阶段组成：（i）课程监督微调（SFT）和（ii）信息增益强化学习（RL）。首先，课程SFT阶段逐渐将token级推理转化为潜在推理。随后，信息增益强化学习阶段在没有地面实况监督的情况下自我进化潜在推理。跨不同文本到图像生成基准的实验表明，LARC 持续提高生成质量、提示跟随性和构图保真度。值得注意…",
+      "authors": [
+        "Byungwoo Jeon",
+        "Yoonwoo Jeong",
+        "Hyunseok Lee",
+        "Minsu Cho",
+        "Jinwoo Shin"
+      ],
+      "published": "2026-10-30T17:59:43Z",
+      "category": "cs.CV",
+      "arxiv_id": "2610.42149v1",
+      "abs_url": "https://arxiv.org/abs/2610.42149v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42149v1"
+    },
+    {
+      "title": "Flide: Accelerating Decision Inference with Exact State Forking",
+      "title_zh": "Flide：通过精确的状态分叉加速决策推理",
+      "summary": "Decision models such as Jev have emerged as a highly promising paradigm for LLM agent systems, providing lightweight and reliable categorical reasoning for rapid System One execution. However, existing generation-oriented inference engines fail to support these workloads effectively, suffering from severe prefix recomputation overheads or distorted output p…",
+      "summary_zh": "Jev 等决策模型已成为 LLM 代理系统的一种非常有前途的范例，为快速 System One 执行提供轻量级且可靠的分类推理。然而，现有的面向生成的推理引擎无法有效地支持这些工作负载，遭受严重的前缀重新计算开销或扭曲的输出概率。为了应对这一挑战，我们提出了 Flide，这是一种高效且精确的推理引擎，它将决策请求的逻辑树结构与其在单个扁平令牌流中的物理执行分离。通过 ForkAttention，Flide 使用 GPU 驻留索引跨标准注意力层和循环门控 DeltaNet 层来导航请求依赖关系，从而在精确的算术中保证每个查询分支的计算结果与隔离的前向传递相同。通过直接在 GPU 驻留元数据中表达分支拓扑，Flide 通过一组紧凑的预先记录的执行图来容纳不同的请求混合，同时允许扩展代理历史记录从早期传递中保存的检查点恢复。对公共混合和决策模型的广泛评估…",
+      "authors": [
+        "Bobo Li",
+        "Jiajia Song",
+        "Hao Fei",
+        "Wynne Hsu",
+        "Mong Li Lee"
+      ],
+      "published": "2026-10-30T17:59:38Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.42148v1",
+      "abs_url": "https://arxiv.org/abs/2610.42148v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42148v1"
+    },
+    {
+      "title": "SemEllipsoid: Semantic-aware Shape Abstraction with Ellipsoid",
+      "title_zh": "SemEllipsoid：使用椭圆体进行语义感知形状抽象",
+      "summary": "Representing 3D shapes using a set of primitives - known as shape abstraction - is an actively studied problem in computer graphics with wide applications in shape understanding, analysis, and simulation due to the compactness and computational efficiency of the primitive-based representation. Prior work has primarily focused on geometry-aware shape abstrac…",
+      "summary_zh": "使用一组图元表示 3D 形状（称为形状抽象）是计算机图形学中一个积极研究的问题，由于基于图元的表示的紧凑性和计算效率，在形状理解、分析和模拟中具有广泛的应用。之前的工作主要集中在几何感知形状抽象上，其目标是用最少的图元集近似输入形状，同时保持几何保真度。然而，这些方法常常忽视语义一致性，不可避免地导致原语跨越多个语义部分。这种不一致可能会在下游任务（例如零件级形状编辑或操作）中导致不良的伪影。在本文中，我们引入了一项新任务——语义感知形状抽象，其目标是产生几何忠实且语义一致的抽象，确保每个基元严格遵守单个语义部分而不跨越语义边界。我们提出了 SemEllipsoid，这是一种使用椭圆体基元来解决此问题的新方法。核心思想是利用大规模基础模型中语义线索的可用性，将语义约束注入到原始优化过程中。我们设计了一种完全可微的投影混合评估方案来测量针对输入语义掩…",
+      "authors": [
+        "Kuankuan Cheng",
+        "Haocheng Yuan",
+        "Changjian Li"
+      ],
+      "published": "2026-10-30T17:59:14Z",
+      "category": "cs.GR",
+      "arxiv_id": "2610.42145v1",
+      "abs_url": "https://arxiv.org/abs/2610.42145v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42145v1"
+    },
+    {
+      "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+      "title_zh": "RoboArchitect：利用持久内存自动设计机器人代理",
+      "summary": "Recent work shows that a frozen robot policy performs far better inside an agent harness, where control code decides when to query the policy, consult vision tools, or command the arm directly. Yet today these harnesses are built by hand and redesigned for each new robot or benchmark. We show that harness design can be automated, offering a strong alternati…",
+      "summary_zh": "最近的研究表明，冻结的机器人策略在代理线束中的表现要好得多，其中控制代码决定何时查询策略、查阅视觉工具或直接命令手臂。然而如今，这些线束都是手工制作的，并针对每个新机器人或基准进行重新设计。我们展示了线束设计可以自动化，为新颖设置的微调提供了强有力的替代方案。在 RoboArchitect 中，编码模型观察机器人的部署、诊断故障，并围绕冻结策略迭代修改控制。该工具在一组情节上不断发展以进行优化，并根据保留的场景和任务进行评估。在不更新任何模型权重的情况下，RoboArchitect 在多个基准和策略中将未见场景的平均成功率从 9.7% 提高到 43.3%（4.5 倍），将未见任务的平均成功率从 12.7% 提高到 40.2%（3.2 倍）。当基准远离策略的训练数据时，收益是最大的：通过包装通用策略，进化后的工具产生了一个专家，其性能通常甚至优于经过…",
+      "authors": [
+        "Shengguang Wu",
+        "Suning Huang",
+        "Cherie Ho",
+        "Ria Doshi",
+        "Hao Zhu",
+        "Serena Yeung-Levy"
+      ],
+      "published": "2026-10-30T17:58:48Z",
+      "category": "cs.RO",
+      "arxiv_id": "2610.42141v1",
+      "abs_url": "https://arxiv.org/abs/2610.42141v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42141v1"
+    },
+    {
+      "title": "DecisionRank: On-Policy Distillation for Decision-Model Rerankers",
+      "title_zh": "DecisionRank：决策模型重排序器的策略蒸馏",
+      "summary": "Decision models target structured tasks by directly predicting choices or scores, avoiding autoregressive decoding latency. However, transferring a generative LLM's ranking knowledge to a decision model remains challenging: the teacher expresses preferences through a ranked list of document ID sequences, while the student determines the ranking using scores…",
+      "summary_zh": "决策模型通过直接预测选择或分数来定位结构化任务，避免自回归解码延迟。然而，将生成式 LLM 的排名知识转移到决策模型仍然具有挑战性：教师通过文档 ID 序列的排名列表表达偏好，而学生则使用第一个标记位置的分数来确定排名。为了弥补这一差距，我们引入了 DecisionRank，这是一种通过项目空间在策略蒸馏 (OPD) 训练的决策模型。项目空间 OPD 通过将文档分数排序为排名序列来构建学生的展示。生成式教师将生成的排名列表作为输入，并提供条件反馈来直接监督这些分数。与离线排名监督相结合，DecisionRank 在 TREC DL、BEIR 和 BRIGHT 等一般检索和推理密集型检索基准上均实现了最先进的性能。在四个基准中，项目空间 OPD 始终优于替代培训目标。即使在 1.7B 参数下，DecisionRank 在 TREC DL19--23…",
+      "authors": [
+        "Yanran Wu",
+        "Dian Yu",
+        "Chongyang Bai",
+        "Jieyi Zhang",
+        "Rui Liu",
+        "Tianyi Chen"
+      ],
+      "published": "2026-10-30T17:56:58Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.42128v1",
+      "abs_url": "https://arxiv.org/abs/2610.42128v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42128v1"
+    },
+    {
+      "title": "Physiological Trajectories and Observation Patterns in ICU Mortality Prediction: Transportability Under Changing Measurement Conditions",
+      "title_zh": "ICU 死亡率预测中的生理轨迹和观察模式：变化的测量条件下的可运输性",
+      "summary": "Objective: To distinguish the transferable predictive value of physiological trajectories from that of observation patterns in ICU mortality prediction, and to assess whether measurement timing affects performance independently of observation quantity. Materials and Methods: In-hospital mortality was predicted at 48 hours using MIMIC-III, MIMIC-IV, and eICU…",
+      "summary_zh": "目的：区分 ICU 死亡率预测中生理轨迹的可转移预测价值与观察模式的可转移预测价值，并评估测量时机是否独立于观察数量影响绩效。材料和方法：使用 MIMIC-III、MIMIC-IV 和 eICU 预测 48 小时的院内死亡率。嵌套表示逐步集成最新值快照 (R1)、纵向生理摘要 (R2) 以及测量频率和计时特征 (R3)。在 204 家医院的 21,682 名 MIMIC-IV 患者和 43,878 名 eICU 患者中评估了安装在 7,762 名 MetaVision 患者身上的模型。在保持保留观测值数量不变的情况下评估测量时机的影响。结果：生理轨迹改善了 eICU 的外部预测（R2-R1 对数损失差 -0.00922，95% CI -0.01148 至 -0.00704）。观察模式特征改进了本地开发的 eICU 模型（R3-R2 -0.00257…",
+      "authors": [
+        "Benjamin T. Pike"
+      ],
+      "published": "2026-10-30T17:56:10Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.42126v1",
+      "abs_url": "https://arxiv.org/abs/2610.42126v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42126v1"
+    },
+    {
+      "title": "ACCT: Asymmetric Cross-LLM Context Transfer",
+      "title_zh": "ACCT：非对称跨法学硕士上下文转移",
+      "summary": "In real-world deployments, large language model (LLM) systems are increasingly evolving from single-model invocation toward heterogeneous deployments in which different models are dynamically invoked for inference. When the same context is reused across models, however, each newly selected target model typically has to process it again, repeatedly incurring…",
+      "summary_zh": "在现实世界的部署中，大型语言模型（LLM）系统日益从单一模型调用发展到动态调用不同模型进行推理的异构部署。然而，当跨模型重复使用相同的上下文时，每个新选择的目标模型通常必须再次处理它，从而反复产生大量的计算成本。因此，我们提出了ACCT（非对称跨LLM上下文传输），其目标是同一模型族内不同规模的模型之间的KV缓存传输。 ACCT将源模型产生的KV缓存转换为目标模型可以直接使用的稀疏KV状态，从而实现上下文计算的跨模型重用，并将上下文计算与下游推理解耦。 ACCT 由三个轻量级组件组成：Cartographer 识别每个目标层和 KV 头的查询相关上下文标记；分配器确定每个目标层和 KV 头在共享的总 KV 预算下保留多少个上下文令牌； Compiler将选定的源KV转换为稀疏的目标KV。因此，目标模型可以使用传输的 KV 进行推理，而无需重新处理原…",
+      "authors": [
+        "Yuzhe Liu",
+        "Haolin Tian",
+        "Tonghan Wang"
+      ],
+      "published": "2026-10-30T17:50:49Z",
+      "category": "cs.AI",
+      "arxiv_id": "2610.42116v1",
+      "abs_url": "https://arxiv.org/abs/2610.42116v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42116v1"
+    },
+    {
+      "title": "Subquadratic Attention with a Hierarchical Tree-Structured Indexer",
+      "title_zh": "使用分层树结构索引器进行次二次注意力",
+      "summary": "The quadratic scaling of attention is a fundamental bottleneck limiting the long-context capabilities of large language models (LLMs). A variety of approaches have attempted to circumvent this, but they either fail to match attention's expressiveness (e.g., sliding-window or linear attention variants with fixed-size state) or only achieve constant-factor sp…",
+      "summary_zh": "注意力的二次缩放是限制大型语言模型（LLM）的长上下文能力的基本瓶颈。各种方法试图规避这一点，但它们要么无法匹配注意力的表达能力（例如，滑动窗口或具有固定大小状态的线性注意力变体），要么只能实现恒定因子的加速（例如，索引器本身按二次方缩放的稀疏注意力方法）。在本文中，我们推导了一种基于分层树结构索引器的渐近次二次稀疏注意力方法，我们将其称为 Zyphra 分层注意力（ZHA）。 ZHA 在 KV 缓存上构造一棵递归压缩的键摘要树，未来的查询从上到下遍历该树以检索键的稀疏子集。至关重要的是，通过迭代地增加树的深度，包括路由和最终注意力的总成本在序列长度上呈次线性增长，从而导致注意力的整体次二次（但超线性）缩放。我们证明，ZHA 可以廉价地应用于现有的预训练模型，只需经过数十亿个令牌的简短 KL 蒸馏训练阶段，并保持长上下文检索和具有挑战性的推理、数学…",
+      "authors": [
+        "Leon Lufkin",
+        "Cutter Dawes",
+        "Alexander Speicher",
+        "Kamesh Krishnamurthy",
+        "Tomás Figliolia",
+        "Beren Millidge"
+      ],
+      "published": "2026-10-30T17:48:37Z",
+      "category": "cs.CL",
+      "arxiv_id": "2610.42112v1",
+      "abs_url": "https://arxiv.org/abs/2610.42112v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42112v1"
+    },
+    {
+      "title": "SATFRONT: Detecting Atmospheric Fronts with Satellite Data using Machine Learning",
+      "title_zh": "SATFRONT：利用机器学习利用卫星数据检测大气锋",
+      "summary": "Atmospheric fronts are associated with much of the high-impact weather in the mid-latitudes, yet their identification and classification remain largely manual and subjective. Existing deep learning approaches rely primarily on gridded reanalysis or forecast data, limiting their applicability to satellite observations available for time-critical applications…",
+      "summary_zh": "大气锋与中纬度地区的许多高影响天气有关，但其识别和分类很大程度上仍然是手动和主观的。现有的深度学习方法主要依赖于网格再分析或预测数据，限制了它们对时间关键型应用的卫星观测的适用性。我们引入了 SATFRONT，这是一种机器学习框架，用于通过对地静止卫星观测来检测欧洲上空的冷锋、暖锋和遮挡锋，并以再分析数据作为可选的附加输入。该模型根据来自五个欧洲国家气象部门的锋面分析进行训练，并根据英国气象局 2024 年的分析进行评估。仅使用卫星观测，SATFRONT 在 150 公里容差下实现了 0.428 的关键成功指数 (CSI)，在不同气象部门分析之间的一致性范围内 (0.277-0.501)，并且高于使用卫星数据的基于操作规则的前沿探测器 (0.133)。添加 ERA5 重新分析将 CSI 提高至 0.591。 ERA5 极大地改善了各个锋面的位置，尽…",
+      "authors": [
+        "Ioannis Dravilas",
+        "Miruna Stoicescu",
+        "Roope Tervo",
+        "Carlos Horn",
+        "Oriol Hinojo Comellas",
+        "Sina Montazeri"
+      ],
+      "published": "2026-10-30T17:48:20Z",
+      "category": "physics.ao-ph",
+      "arxiv_id": "2610.42111v1",
+      "abs_url": "https://arxiv.org/abs/2610.42111v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42111v1"
+    },
+    {
+      "title": "Hyperbolic Inverse Reinforcement Learning",
+      "title_zh": "双曲逆强化学习",
+      "summary": "Inverse reinforcement learning (IRL) seeks to infer the reward function underlying observed behavior, but its predictive accuracy and interpretability depend on how that reward is computed from the underlying features. While prior IRL reward functions have been implemented through a variety of techniques including linear weights, neural networks, or other f…",
+      "summary_zh": "逆强化学习（IRL）旨在推断观察到的行为背后的奖励函数，但其​​预测准确性和可解释性取决于如何根据潜在特征计算奖励。虽然之前的 IRL 奖励函数已经通过各种技术实现，包括线性权重、神经网络或其他函数逼近器，但没有一个对底层特征空间的几何形状做出假设。受神经回路中观察到的几何组织的启发，我们引入了双曲逆强化学习（Hyperbolic IRL），它将奖励参数化为特征向量和学习参数向量之间的双曲距离及其欧几里德距离变体的函数。我们在确定性和随机策略下针对一系列线性和非线性 IRL 基线测试了我们的方法。我们的双曲线方法在既定基准上实现了与最先进模型相当的性能，并且在低数据限制和密集环境中表现出色。应用于博物馆房间内多个展品之间的人类导航时，双曲线 IRL 揭示了奖励结构，该结构不仅取决于单个展品距离特征，还取决于它们之间不可分离的连接。总之，这些结果表明…",
+      "authors": [
+        "Iulia Rusu",
+        "Anoop Praturu",
+        "Sergei Gepshtein",
+        "Tatyana Sharpee"
+      ],
+      "published": "2026-10-30T17:46:04Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.42104v1",
+      "abs_url": "https://arxiv.org/abs/2610.42104v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42104v1"
+    },
+    {
+      "title": "Cost-Aware Stopping for Freeze-Thaw Bayesian Optimization: When Does One-Step Lookahead Suffice?",
+      "title_zh": "冻融贝叶斯优化的成本感知停止：何时一步前瞻就足够了？",
+      "summary": "Freeze-thaw Bayesian optimization (BO) evaluates candidates in resumable increments but usually stops at a budget or convergence test. We maximize a budget-free utility, the best observed score minus a cost per increment, with a one-step lookahead: advance the candidate with the largest expected improvement (EI) under a fixed surrogate, and stop once no EI…",
+      "summary_zh": "冻融贝叶斯优化 (BO) 以可恢复的增量评估候选者，但通常在预算或收敛测试处停止。我们最大化无预算效用，即最好的观察到的分数减去每次增量的成本，并进行一步前瞻：在固定替代项下推进具有最大预期改进（EI）的候选者，一旦没有 EI 超过成本就停止。 EI 停止这条规则的预期效用永远不会低于立即停止，但它可能会过早停止。我们构建了一个证书，即两步前瞻值的下限，证明这样的停止为时过早，并且重复这种修正永远不会降低替代项下的预期效用。在替代方案下，EI 停止在低成本时平均而言是过早的，而在高成本时损失很小。在三个超参数优化基准上，预先注册的测试发现，在大多数高成本设置中，EI 停止不劣于校正，而在这三个设置中的两个上，校正在低成本下增益；代孕者中更多的信息共享提高了 EI 停止的效用。根据两种已发布方法的替代方法，EI 停止会以较低的分数换取较少的训练增量。…",
+      "authors": [
+        "Long Vu",
+        "Jongseong Brad Choi",
+        "Binoy Ravindran",
+        "Zhoulai Fu"
+      ],
+      "published": "2026-10-30T17:36:06Z",
+      "category": "cs.LG",
+      "arxiv_id": "2610.42085v1",
+      "abs_url": "https://arxiv.org/abs/2610.42085v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42085v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "天地一体化太空算力云平台在京发布 ，覆盖40余颗卫星算力资源 - 国际科技创新中心",
+      "summary": "天地一体化太空算力云平台在京发布 ，覆盖40余颗卫星算力资源 国际科技创新中心",
+      "source": "国际科技创新中心",
+      "lang": "zh",
+      "published": "Mon, 02 Nov 2026 07:55:46 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBZbHk0ODNHQTY1WVdpNldubDBKTHdxaWQ0T3JGRTlRbldqME1zcVd4TG1MUVNWMEZzeG1CZG00SXZMRzlHbmdfbzlUTTA5WE5RNmpqdzlBaEM0RVREUVZYVTRHSkRNelVtR1BKNk1saF8?oc=5"
+    },
+    {
+      "title": "美团发布LongCat-2.5大模型，“国模国芯”实现新突破 - Meituan",
+      "summary": "美团发布LongCat-2.5大模型，“国模国芯”实现新突破 Meituan",
+      "source": "Meituan",
+      "lang": "zh",
+      "published": "Mon, 02 Nov 2026 07:52:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1nR3AyYTdwNDNEMWozWE5NSHhPbXdDT3pvWno3N3RMTHR2U29FbE9ka05EbTRvYThaWGlqRHpadERoTTBrSjAzbWR1NEEydFhyLWZqVXY5MTRvQQ?oc=5"
+    },
+    {
+      "title": "空天院研制的\"慧眼\"植被健康智能体正式发布 - 中国日报网",
+      "summary": "空天院研制的\"慧眼\"植被健康智能体正式发布 中国日报网",
+      "source": "中国日报网",
+      "lang": "zh",
+      "published": "Mon, 02 Nov 2026 03:54:07 GMT",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE50ZFJmeFhQT2FOcHdtaTRZSjFuMEljNzROS2tHNjNnZVRad0F4WHJoR2xOV3JUbzR1SEhSSHJRWVhHdS1wYTVkNElreEUzMjZLMndISjdLYXpvZWM0cThZeHhyWS1zaXMxcFhHOG5UdDAzVmFEUjdBY0VTRQ?oc=5"
+    },
+    {
+      "title": "格创东智是做什么的？详解工业智能体落地破局之道 - 新华报业网",
+      "summary": "格创东智是做什么的？详解工业智能体落地破局之道 新华报业网",
+      "source": "新华报业网",
+      "lang": "zh",
+      "published": "Mon, 02 Nov 2026 09:36:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9xUDVGNThLMXRzamxtSTZjM0hrd1Z5bUZHTGM3X3FqY00wc1JvZ3ZaLTVKcTVLZ1JfUlNXazhpUkgzQTI5NXFWRGN2c3JSVmZrWEFaZWR0OFZlRzBiZk1IakhwRnUxeTNDVVg0?oc=5"
+    },
+    {
+      "title": "OpenRouter测算：中国大模型周调用量连续27周超美国 - 观点网",
+      "summary": "OpenRouter测算：中国大模型周调用量连续27周超美国 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Mon, 02 Nov 2026 06:18:04 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBpOWtsc0pQMVJ4OUFHWHdyMDkzRDlabjU1WlF6VFlWWkhmZ1pKR0Q2ODZsSUFFdEM0S3JUMmcza2liZmdBTEFkVDBlU1RfUm1Hd2t2WUozZDAycVdxY0JrLWdn?oc=5"
+    },
+    {
+      "title": "永赢基金斥资近1487万元购买国产算力服务器 - 中国基金报",
+      "summary": "永赢基金斥资近1487万元购买国产算力服务器 中国基金报",
+      "source": "中国基金报",
+      "lang": "zh",
+      "published": "Mon, 02 Nov 2026 09:15:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1oNDE1QVNEVDZHbjNodlREOUE4UjJDaWJqZGZuZDUwZlVpSFloUEZKbk9CMWllSjhkRnFlS1hvQ2NEUHIxcGR2a2lKUVdqMlN5WHh6M1NLbGtLdERta2tkX1pBTmVqbFV2OWtvR3NXNTB4cGxpT0N5TDNn?oc=5"
+    },
+    {
+      "title": "太空算力遇现实“冷水” 谷歌能源主管：其成本可达地面数据中心100倍 - 东方财富",
+      "summary": "太空算力遇现实“冷水” 谷歌能源主管：其成本可达地面数据中心100倍 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Mon, 02 Nov 2026 09:16:24 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBSV1JJQUk5aHZwSkd3cmRVUlZoQlBxNW1uVnhCZ3lkSmFrdkVJN1J4Y1RGcnlXdExZcWVLQmJjUzRXVXlYM2NoMmItMmhDOE10a2ktaldzVnQ0NE85WVJwOFpYMmdoZw?oc=5"
+    },
+    {
+      "title": "马斯克预测2029年近地轨道AI与云计算算力将远超地面算力 - 虎嗅网",
+      "summary": "马斯克预测2029年近地轨道AI与云计算算力将远超地面算力 虎嗅网",
+      "source": "虎嗅网",
+      "lang": "zh",
+      "published": "Mon, 02 Nov 2026 08:30:29 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ZNlUwdlBoRlVMT1dyakdSTTJoUWhsYnkxWERLSWlsVGtDa1IwdjZVOUxCMVZmVFVpdTFNTmlLcEQzdlpvOWZXUm5jZGlVZXJZTXppMQ?oc=5"
+    },
+    {
+      "title": "外媒关注中国算力基础设施发展：中国“算”就是行 - 中国新闻网",
+      "summary": "外媒关注中国算力基础设施发展：中国“算”就是行 中国新闻网",
+      "source": "中国新闻网",
+      "lang": "zh",
+      "published": "Mon, 02 Nov 2026 01:49:48 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5kWDVndFNoLU1ZM0ZHTW1raUZYYjJRV3pRcHRKUGNPQ3BNLTI4TkkxSUd6bXgzNUVQRE5UaXpGOVdZYWw3VnFNSERSQm1YWEl5Sm5Za3BrZkdZYkRoVDIyQlFUQWtfNi0z?oc=5"
+    },
+    {
+      "title": "Token工厂迈入2.0：燧弘华创升级算力底座，加速布局物理智能新赛道 - 中宏网",
+      "summary": "Token工厂迈入2.0：燧弘华创升级算力底座，加速布局物理智能新赛道 中宏网",
+      "source": "中宏网",
+      "lang": "zh",
+      "published": "Mon, 02 Nov 2026 06:50:49 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5EZlF0QXJqVWNCeVFGdjBCZXFnMEtFZXZNNXJOVGxwZmVHeXVrZzJVdEp1SjJITTF6RzEtaElOOE1JZTZTa1ZUNkUwb3QyUm5WX3BGS09xVWJObDU5V3ZRNzRB?oc=5"
+    },
+    {
+      "title": "AI智能体“上岗”今年进博会！24小时保障场馆通信顺畅 - 中青在线",
+      "summary": "AI智能体“上岗”今年进博会！24小时保障场馆通信顺畅 中青在线",
+      "source": "中青在线",
+      "lang": "zh",
+      "published": "Mon, 02 Nov 2026 09:15:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9idDE2dUpreHhBT05DajhNNzZfNkZMVE0tYm1jUHRUY2swZUdkSm1wRERaQ3BiN0FCcXJ6MzRCc1dialJiZ2VWMXluMHdHd1o2TkY1bDJLQUJzQm50OVVzY3RGSFBHOUhfSXlJV19BRDlESTd2d2dPWg?oc=5"
+    },
+    {
+      "title": "算力网加速织就，我国一批算力项目建设迎来新进展 - CPEM全国电力设备管理网",
+      "summary": "算力网加速织就，我国一批算力项目建设迎来新进展 CPEM全国电力设备管理网",
+      "source": "CPEM全国电力设备管理网",
+      "lang": "zh",
+      "published": "Mon, 02 Nov 2026 09:13:54 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9JeW93Qk1qUkVHckN4TkZWR0NuWVhudVV6ck9MWXpmdGZ1X290TzVwZlI5V2NKNU9LTVl1MnZkX1p5NVpwX1l6aFIyMlp3VkpkeEdN?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 97187,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 78610,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57625,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 38972,
+      "language": "TypeScript"
+    },
+    {
+      "title": "next-ai-draw-io",
+      "type": "GitHub",
+      "summary_en": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "summary": "通过与人工智能聊天来绘制和编辑draw.io图表。 Web 应用程序、桌面应用程序以及用于 Claude Code、Cursor、Codex 和 VS Code 的 MCP 服务器。",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "author": "DayuanJiang",
+      "stars": 36569,
+      "language": "TypeScript"
+    },
+    {
+      "title": "rea",
+      "type": "GitHub",
+      "summary_en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "summary": "使用代理对任何内容进行逆向工程，从应用程序行为到本机二进制文件。",
+      "url": "https://github.com/morluto/rea",
+      "author": "morluto",
+      "stars": 420564,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 393689,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 310891,
+      "language": "Shell"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
