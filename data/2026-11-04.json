@@ -1,0 +1,504 @@
+{
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T10:08:38.331363+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Aligning Language Models with General Preferences: An Empirical Study of Direct Nash Optimization",
+      "title_zh": "使语言模型与一般偏好保持一致：直接纳什优化的实证研究",
+      "summary": "Direct Nash Optimization (DNO) aligns a language model to a general preference function by approximating the Nash equilibrium of a two-player preference game. Its practical variant, DNO-Prct, iterates on-policy sampling, LLM-based rating of the samples together with a teacher's gold response, large-margin preference-pair selection and a DPO-style contrastiv…",
+      "summary_zh": "直接纳什优化 (DNO) 通过近似两人偏好博弈的纳什均衡，将语言模型与一般偏好函数对齐。其实用变体 DNO-Prct 迭代策略抽样、基于 LLM 的样本评级以及教师的黄金响应、大利润偏好对选择和 DPO 风格的对比更新。我们独立重新实现了 DNO-Prct，并在两种开放权重指令模型（Llama 3.1 8B Instruct 和 Mistral 7B Instruct v0.1）上进行研究，并使用 GPT-4o 或同系列的更大开放权重模型作为注释器。在以 GPT-4o 作为判断的 AlpacaEval 2.0 上，三个迭代将 Llama 对 GPT-4o 的长度控制 (LC) 胜率从 31.7% 提高到 45.3%，将 Mistral 从 6.8% 提高到 18.4%，并且调整后的 8B 模型得分高于 Llama 3.1 70B 对每个报告的胜率进…",
+      "authors": [
+        "Austin Tsai",
+        "Saurav Nanda",
+        "Ganapathy Parthasarathy",
+        "Bhuvnesh Kumar",
+        "Parivesh Choudhary"
+      ],
+      "published": "2026-11-03T18:59:15Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.05373v1",
+      "abs_url": "https://arxiv.org/abs/2611.05373v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05373v1"
+    },
+    {
+      "title": "GUILD: Guided Iterative Data Collection for Imitation Learning",
+      "title_zh": "GUILD：模仿学习的引导迭代数据收集",
+      "summary": "Imitation learning policies in robotics are trained on datasets collected through costly real-world teleoperation. Often, the data-collection process is unguided, relying on the teleoperator's intuition, resulting in data that contributes little to overall policy performance. Recent work has shown that curating such unguided datasets can substantially impro…",
+      "summary_zh": "机器人技术中的模仿学习策略是根据通过昂贵的现实世界远程操作收集的数据集进行训练的。通常，数据收集过程是无指导的，依赖于远程操作员的直觉，导致数据对整体政策绩效贡献甚微。最近的工作表明，整理此类无指导的数据集可以显着提高政策绩效，但这些方法是通过在收集后过滤现有数据集来操作的，因此不会阻止获取无信息数据。在这项工作中，我们提出了 GUILD，一种新颖的引导数据收集（GDC）方法，它主动推理应该收集哪些数据以最大化下游政策绩效。我们引入了一个迭代框架，该框架在 1) 任务建议和数据收集和 2) 数据评估之间交替，以形成闭环。对于任务建议，我们利用视觉语言模型的语义先验来识别相关环境、对象配置和数据收集目标。然而，由于语义相关性并不意味着政策改进，因此我们进行数据评估。通过利用预测数据归因，我们可以估算收集的轨迹如何影响目标部署设置的策略性能。然后将该信…",
+      "authors": [
+        "Shivin Dass",
+        "Kevin Nguyen",
+        "Rohan Yelandur",
+        "Junhong Xu",
+        "Roberto Martín-Martín"
+      ],
+      "published": "2026-11-03T18:57:35Z",
+      "category": "cs.RO",
+      "arxiv_id": "2611.05368v1",
+      "abs_url": "https://arxiv.org/abs/2611.05368v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05368v1"
+    },
+    {
+      "title": "Visibility-Aware Reference Generation for Benchmarking Visual 3D Reconstruction in Vegetation-Rich Environments",
+      "title_zh": "用于在植被丰富的环境中进行视觉 3D 重建基准测试的可见性感知参考生成",
+      "summary": "Reliable evaluation of visual 3D reconstruction and depth estimation in vegetation-rich outdoor environments is limited by the scarcity of geometric ground-truth data and the cost of complete scanner surveys. We present a LiDARbased reference-generation pipeline for evaluating the zero-shot performance of feed-forward visual-geometry models alongside conven…",
+      "summary_zh": "在植被丰富的室外环境中，视觉 3D 重建和深度估计的可靠评估受到几何地面实况数据的稀缺和完整扫描仪调查成本的限制。我们提出了一种基于 LiDAR 的参考生成管道，用于评估前馈视觉几何模型以及传统的运动结构（SfM）方法的零射击性能。该管道重复使用相机图像、LiDAR 扫描和现有多传感器定位数据集中的参考姿势来生成每个视图的深度图和可见参考点云。为了解决累积 LiDAR 扫描中的可见性错误，我们引入了大深度间隙可见性评分 (LDGVS)，用于隐藏点去除 (HPR) 中的逐点可见性过滤和自动比例选择。 TartanAirV2 和 TartanGround 上的实验表明，与适合完成扫描测量的泊松曲面重建方法相比，HPR 和 LDGVS 组合滤波在相当的绝对相对误差下保留了大约三倍的点密度。我们还将该流程应用于 BotanicGarden 数据集，以系统地…",
+      "authors": [
+        "Zhipeng Zhong",
+        "Matthew Coombes",
+        "Cunjia Liu"
+      ],
+      "published": "2026-11-03T18:54:52Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.05361v1",
+      "abs_url": "https://arxiv.org/abs/2611.05361v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05361v1"
+    },
+    {
+      "title": "Suppressing Misaligned Behaviors in Language Models, Durably",
+      "title_zh": "持久抑制语言模型中的失调行为",
+      "summary": "Undesired model behaviors can emerge or re-emerge at any stage of training. Once observed, how effectively can we suppress them? To study this question, we first construct two model organisms--language models deliberately trained to exhibit a specific misalignment--that differ in what triggers the behavior. The narrow-trigger organism misbehaves only when t…",
+      "summary_zh": "不需要的模型行为可能在训练的任何阶段出现或重新出现。一旦观察到，我们如何有效地抑制它们？为了研究这个问题，我们首先构建了两种模型生物体——经过刻意训练以表现出特定失调的语言模型——它们在触发行为的因素上有所不同。只有当提示包含特定提示时，窄触发有机体才会行为不当：它通过遵循指向错误答案的植入提示来在多项选择题中作弊，否则行为正常。广泛触发的有机体没有这样的提示：在对不安全的代码进行微调后，它会在各种开放式提示中给出有害的响应。然后，我们将事后行为抑制形式化，并根据三个标准评估方法：立即抑制目标行为、进一步训练下的持久性以及一般能力的保留。我们沿着这些维度比较标准方法——SFT、GRPO 和梯度上升遗忘。基于先前关于对准浅度的工作，我们假设更持久的抑制需要能够从更广泛的未对准状态中恢复。我们引入了前缀扩展对抗强化学习（PEARL），这是一种 GRPO…",
+      "authors": [
+        "Luxi He",
+        "Pengcheng Jiang",
+        "Jifan Zhang",
+        "Jiawei Han",
+        "Danqi Chen"
+      ],
+      "published": "2026-11-03T18:54:08Z",
+      "category": "cs.CL",
+      "arxiv_id": "2611.05358v1",
+      "abs_url": "https://arxiv.org/abs/2611.05358v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05358v1"
+    },
+    {
+      "title": "OpenBrain: An Auditable Generated-Label Release for Whole-Brain MRI Parcellation",
+      "title_zh": "OpenBrain：用于全脑 MRI 分割的可审核生成标签版本",
+      "summary": "Automatic tools can now generate whole-brain MRI parcellations at cohort scale, but generated-label releases often provide little evidence about which cases are reliable enough to reuse. We introduce OpenBrain, a confidence-aware release of 35,838 provenance-verified OpenNeuro T1w cases from 607 source datasets. OpenBrain is organized as an auditable case-r…",
+      "summary_zh": "自动工具现在可以在队列规模上生成全脑 MRI 分区，但生成的标签发布通常无法提供关于哪些病例足够可靠、可以重复使用的证据。我们推出了 OpenBrain，这是一个可信版本，包含来自 607 个源数据集的 35,838 个经过来源验证的 OpenNeuro T1w 案例。 OpenBrain 被组织为可审计的案例记录版本，而不是独立分段文件的目录：每个记录链接一个主要分区、两个委员会分区、源/许可证出处、原始 QC-7 测量、百分位风险、组合风险评分 R 和置信层。 QC-7 是一个关于标签几何形状、图像标签一致性和委员会分歧的无参考可靠性面板，因此用户可以过滤、加权、审核或重新阈值生成的标签，而无需重新运行推理。我们根据冻结协议评估已发布的证据。在外部队列中，较低的 QC-7 风险对应于较高的生成标签质量；在固定预算训练中，较低风险的选择比随机选择…",
+      "authors": [
+        "Qizhen Lan",
+        "Yu-Chun Hsu",
+        "Yuxiang Wei",
+        "Lijing Zhu",
+        "Zenan Sun",
+        "Liang He"
+      ],
+      "published": "2026-11-03T18:47:53Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.05348v1",
+      "abs_url": "https://arxiv.org/abs/2611.05348v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05348v1"
+    },
+    {
+      "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+      "title_zh": "对抗性推测推理改善了长视野智能体",
+      "summary": "Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solely on acceptance rate. We argue that this view does not hold true for long-horizon agent reasoning. Measuring frontier o…",
+      "summary_zh": "推测解码纯粹被视为一种系统优化，可以在不改变模型行为的情况下加速大型语言模型解码。根据这种观点，越来越多的训练更好选秀模型的努力仅仅集中在接受率上。我们认为，这种观点对于长期代理推理来说并不成立。使用不同的推测性解码方法测量复杂代理任务上的前沿开放权重模型，我们发现数值噪声在验证窗口内增长，并且思维过程的草稿接受结果可以在 30 个步骤后改变模型的输出分布，从而显着影响长视野代理在随机方向上的推理准确性。在这项工作中，我们通过控制此类噪声来提高目标模型的推理能力。虽然我们无法改变目标模型验证的整体令牌分布，但我们可以通过训练要拒绝的草稿模型来以最高精度编码关键推理。我们在代理追踪中识别这些点，并训练草稿模型以支持对抗性偏好。在推理时，经过训练的草稿和目标在这些决策点精确分开，验证重新启动，以便从目标模型中采样批判性思维标记，并在其噪声最小的条件下进…",
+      "authors": [
+        "Hongyin Luo",
+        "Wei Fang",
+        "Lijie Yang",
+        "Owen Stepan",
+        "Daniel Suit",
+        "Jeff Krapf"
+      ],
+      "published": "2026-11-03T18:45:23Z",
+      "category": "cs.AI",
+      "arxiv_id": "2611.05345v1",
+      "abs_url": "https://arxiv.org/abs/2611.05345v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05345v1"
+    },
+    {
+      "title": "MedPhysBench: A Benchmark for Evaluating Language Models on Medical Physics Calculations and Error Detection",
+      "title_zh": "MedPhysBench：评估医学物理计算和错误检测语言模型的基准",
+      "summary": "Medical physicists turn a prescription into a delivered dose and check one another's calculations, because one error in a beam calibration or a monitor-unit (MU) calculation can affect every patient treated with it. MedPhysBench has ten seeded generators of calculation items in radiation therapy, diagnostic imaging, nuclear medicine and radiation protection…",
+      "summary_zh": "医学物理学家将处方转化为交付剂量并检查彼此的计算，因为光束校准或监测单元 (MU) 计算中的一个错误可能会影响每一位接受治疗的患者。 MedPhysBench 拥有 10 个计算项目种子生成器，涵盖放射治疗、诊断成像、核医学和辐射防护，直至 TG-51 校准工作表等临床任务。参考答案来自实施管理协议的代码，分级机转换单位并应用公差带。根据相同的输入，单独的检查项目测试错误检测，显示同事的工作表或仅显示同事的结果，一半正确，一半有一个错误。在 1,200 个项目（两个模型各占一半）的测试中，12 个模型的计算得分为 33.3% 至 100.0%。在九个答案中，四个最好的答案被评为不正确 (99.3-100.0%)，其中五个包含模型错误，四个遵循 NCRP 报告 151，我们的项目错误陈述或未解决。在它们之下，大多数模型在 3 级临床任务上表现最差，并…",
+      "authors": [
+        "Omar Nusrat"
+      ],
+      "published": "2026-11-03T18:40:35Z",
+      "category": "physics.med-ph",
+      "arxiv_id": "2611.05340v1",
+      "abs_url": "https://arxiv.org/abs/2611.05340v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05340v1"
+    },
+    {
+      "title": "CATF: A Manager-Worker Framework for Context-Aware Time-Series Forecasting",
+      "title_zh": "CATF：上下文感知时间序列预测的管理者-工作者框架",
+      "summary": "We study context-aware time-series forecasting, in which a single target variable is predicted from its own history and a set of contextual variables, such as weather and calendar information. As the context becomes more diverse, a single model struggles to capture all of its regimes, while ensemble learning and Mixture-of-Experts approaches rely on manual…",
+      "summary_zh": "我们研究上下文感知时间序列预测，其中单个目标变量根据其自身的历史和一组上下文变量（例如天气和日历信息）进行预测。随着环境变得更加多样化，单一模型难以捕获其所有状态，而集成学习和专家混合方法依赖于手动数据分区或软路由，这增加了推理成本并阻碍了可解释性。我们提出 CATF，一种基于 Manager-Worker 架构构建的上下文感知时间序列预测框架：基于 Transformer 的 Manager 根据上下文将每个输入路由到单个 Worker，在训练和推理期间使用硬路由。因此，Workers 无需手动数据分区即可专业化，任何单模型预测器都可以充当 Worker。在五个上下文丰富的数据集、四个视野和两个归一化方案上，CATF 在 200 个比较中的 162 个中比其独立对应模型有所改进，最佳 CATF 增强模型在 20 个设置中的 19 个中优于最佳独立…",
+      "authors": [
+        "Yueqiao Chen",
+        "Dongyu Liu"
+      ],
+      "published": "2026-11-03T18:28:04Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.05325v1",
+      "abs_url": "https://arxiv.org/abs/2611.05325v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05325v1"
+    },
+    {
+      "title": "HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation",
+      "title_zh": "HARP：基于 LLM 推荐的免培训双配置代理通信",
+      "summary": "In LLM-based recommendation, memory acts as a user-level agent in a memory-augmented backbone. Yet users and items remain asymmetric: only the user is given a structured profile; it enters a bandwidth-limited reranker prompt; and it is frozen after warmup. We recast LLM-based recommendation as an agentic-communication process in four stages: BUILD a self-de…",
+      "summary_zh": "在基于 LLM 的推荐中，内存充当内存增强主干中的用户级代理。然而，用户和项目仍然不对称：只有用户被赋予结构化的配置文件；它进入带宽限制重排序提示；并在预热后冻结。我们将基于 LLM 的推荐重塑为一个代理通信过程，分四个阶段：构建自我描述、沿着协作图传输它、理解另一方，并从下一次交互中同步它。这一表述揭示了三个未解决的沟通挑战：项目方从未产生可比较的自我描述（片面构建）；配置文件级信号仅进入带宽限制的重新排名器提示而不是检索，在检索中它们不会竞争上下文令牌（提示陷阱理解）；用户的描述在预热后被冻结，没有原则性的更新规则（缺少 SYNC）。我们将缺失的阶段实例化为 HARP（通过双配置文件的同质感知代理推荐），这是对冻结 LLM 主干的免训练、三操作员补充：规则提取的对称项目配置文件（零额外的 LLM 调用）、在检索时而不是在重排序提示内消耗的通道可…",
+      "authors": [
+        "Zhen Tao",
+        "Xun Zhou",
+        "Xuhui Chen",
+        "Ziyue Qiao",
+        "Qingqiang Sun"
+      ],
+      "published": "2026-11-03T18:24:20Z",
+      "category": "cs.IR",
+      "arxiv_id": "2611.05319v1",
+      "abs_url": "https://arxiv.org/abs/2611.05319v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05319v1"
+    },
+    {
+      "title": "MDSKILL: Learning to Internalize Skill Memory through Multi-View Distillation for Efficient Dynamic Agent Self-Evolution",
+      "title_zh": "MDSKILL：通过多视图蒸馏学习内化技能记忆以实现高效的动态代理自我进化",
+      "summary": "Skill memories encode past experiences as textual prompts to improve reinforcement learning (RL) for self-evolving agents. Complementing RL, On-Policy Self-Distillation (OPSD) provides dense, fine-grained supervision to internalize knowledge from skill-guided trajectories and accelerate policy learning. However, self-generated memories often contain noisy s…",
+      "summary_zh": "技能记忆将过去的经验编码为文本提示，以改进自我进化代理的强化学习（RL）。作为 RL 的补充，政策自蒸馏 (OPSD) 提供密集、细粒度的监督，以内化技能引导轨迹中的知识并加速政策学习。然而，自生成的记忆通常包含嘈杂的监督和功能上纠缠、冗余或冲突的知识，使得直接蒸馏变得困难。在有限的培训预算下，这些问题可能会阻碍知识内化，甚至降低绩效。为了解决这个问题，我们提出了 MDSKILL，一种用于技能记忆内化的多视图蒸馏方法。 MDSKILL 将技能记忆组织成三个互补的功能视图（状态基础、行动规划和执行控制），并使用动态指标选择高质量技能来构建特定于视图的集成推理分支。然后，OPSD 将这些分支之间的互补经验知识转移并整合到共享策略中，从而实现高效的技能内化和持续的代理自我进化。我们根据 RL、技能增强和自我蒸馏基线的三个代理基准来评估 MDSKILL，这…",
+      "authors": [
+        "Dian Jin",
+        "Jinluan Yang",
+        "Kairong Han",
+        "Baohong Li",
+        "Zijing Hu",
+        "Yi He"
+      ],
+      "published": "2026-11-03T18:19:55Z",
+      "category": "cs.CL",
+      "arxiv_id": "2611.05313v1",
+      "abs_url": "https://arxiv.org/abs/2611.05313v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05313v1"
+    },
+    {
+      "title": "$Φ$asmaNet: A Staged Spectral Token-Refinement Architecture for Fast Gravitational-Wave Signal-to-Noise Ratio Prediction",
+      "title_zh": "$Φ$asmaNet：用于快速引力波信噪比预测的分阶段频谱令牌细化架构",
+      "summary": "Quantifying selection effects in gravitational-wave population studies requires millions of costly signal-to-noise ratio (SNR) calculations. We present $Φ$asmaNet, a compact neural architecture for structured tabular regression, with staged spectral refinement as an explicit architectural prior. Learned input tokens are refined through ordered attention-bas…",
+      "summary_zh": "量化引力波群体研究中的选择效应需要数百万次昂贵的信噪比（SNR）计算。我们提出了$Φ$asmaNet，一种用于结构化表格回归的紧凑神经架构，以分阶段谱细化作为显式架构先验。学习的输入标记通过基于有序注意力的 $Φ$-阶段进行细化，每个阶段都通过 $Φ$-Refractor 子空间混合模块进行增强，然后通过门控自上而下的 $Φ$-反馈进行重新访问。应用于进动、高模二元黑洞信号 (IMRPhenomXPHM) 的 11 维参数，它可以预测固定高级 LIGO 设计灵敏度下单个探测器的相位平均最佳 SNR。它具有大约 732k 参数，在 $10^5$--$10^6$ 样本的匹配训练下，其性能优于 MLP、1D-ResNet 和 Transformer-encoder 基线。在 $10^6$ 样本中，它在保留测试集上实现了 $100-\\mathrm{MAPE…",
+      "authors": [
+        "Ioannis Tsioulis",
+        "Anastasios Tefas",
+        "Nikolaos Stergioulas"
+      ],
+      "published": "2026-11-03T18:19:11Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.05309v1",
+      "abs_url": "https://arxiv.org/abs/2611.05309v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05309v1"
+    },
+    {
+      "title": "GSBR: Geometric Support Behavior Regularization for Online RL",
+      "title_zh": "GSBR：在线强化学习的几何支持行为正则化",
+      "summary": "Regularizing online reinforcement learning (RL) toward a pretrained base policy can improve sample efficiency and learning stability, but regularization that is too restrictive limits how much the policy can improve. Base policies -- typically diffusion or flow-matching models trained by imitation learning on large, diverse datasets -- capture many behavior…",
+      "summary_zh": "针对预训练的基础策略对在线强化学习（RL）进行正则化可以提高样本效率和学习稳定性，但正则化限制性太大限制了策略的改进程度。基本策略——通常是通过模仿学习在大型、多样化的数据集上训练的扩散或流量匹配模型——捕获许多合理但次优的行为。使用此类基本策略的现有正则化器在以下两种方式之一上限制过多：行为克隆正则化器将参与者拉向完整的基本策略分布，并因丢弃次优模式而对其进行惩罚，而硬支持约束则禁止在基本策略支持之外进行改进。我们提出几何支持行为正则化（GSBR），它根据行为与基本策略支持的距离来惩罚行为。支持范围内的动作不会受到惩罚，因此演员可以专注于高价值模式；在支持之外，价值估计不太可靠，惩罚随着距离的增加而平稳增长，同时当获得的价值超过惩罚时仍然允许改进。 GSBR 估计与一组有限的基本策略样本的距离，因此它只需要对基本策略的样本访问。在四个机器人基准测…",
+      "authors": [
+        "Charles Xu",
+        "Jacob Berg",
+        "Liyiming Ke",
+        "Sergey Levine"
+      ],
+      "published": "2026-11-03T18:08:32Z",
+      "category": "cs.RO",
+      "arxiv_id": "2611.05295v1",
+      "abs_url": "https://arxiv.org/abs/2611.05295v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05295v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "从“建算力”到“建能力”：中孚恒升科技定义AI产业下一站 - 中国日报网",
+      "summary": "从“建算力”到“建能力”：中孚恒升科技定义AI产业下一站 中国日报网",
+      "source": "中国日报网",
+      "lang": "zh",
+      "published": "Wed, 04 Nov 2026 05:48:37 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBZdmlsN0RqN2NwSWNoM0JJS05MaklnQWNZamRhOTh2LVNTU001UkhKMTI3QldNTHQ4UkJtTWVMWkhnWER2R0JnRlI0cmRZRkd0TXd6bU9TS3NUR0Y5RnkyRm5Gd0Q4aktMOW5MMWttbGhjUi03cDBjYlk4cXU?oc=5"
+    },
+    {
+      "title": "SemiAnalysis拆解算力荒：OpenAI与Anthropic正在抢光全球新增算力 - 华尔街见闻",
+      "summary": "SemiAnalysis拆解算力荒：OpenAI与Anthropic正在抢光全球新增算力 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Wed, 04 Nov 2026 04:26:02 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB2OU5MRkx3c2xCLWg1WVRNMnhIZW5CTWQ4aDJhTWFjd1c1VkZhbU9uRmROczlHMlZ6YW45VXlFLWxHUEtTSjVmTFBCRzF1N2xiNTVJ?oc=5"
+    },
+    {
+      "title": "华为云智果AgentArts获中国信通院企业级智能体平台最高等级4+级评级 - 观点网",
+      "summary": "华为云智果AgentArts获中国信通院企业级智能体平台最高等级4+级评级 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Wed, 04 Nov 2026 08:36:24 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE53bEI3VDVxcVNUeGdpZlVTS3ZMWXJrS1U1WlMxR0NWdGFBSVdvclRoT093eEk4MWl6WUx6TW80SzViaWlKN3ExVFNBQlhzb0hWRzVCczl2ckYtSVIxTENVWEpR?oc=5"
+    },
+    {
+      "title": "2026人工智能+大会启动央企场景共创，发布国产算力与物理AI新成果 - 国际科技创新中心",
+      "summary": "2026人工智能+大会启动央企场景共创，发布国产算力与物理AI新成果 国际科技创新中心",
+      "source": "国际科技创新中心",
+      "lang": "zh",
+      "published": "Wed, 04 Nov 2026 02:51:48 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQTDZZbmJuc0s2MkNUTEZmNjIydEZmU2F4V3RlWERoS0tnUTRieXJzNDUyOUxZN3FBTU1XQm51RzRvM1ZsZTRsZERYSjdCOUtVdjRUWGVtNmdsZnpPT3pBUlRQV0R6d1V1Z2JuTjhkQnFSendfMVVIMVBZNWFacFR0Wk9R?oc=5"
+    },
+    {
+      "title": "DeepSeek发布智能体新架构：让AI管AI - 财联社",
+      "summary": "DeepSeek发布智能体新架构：让AI管AI 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Wed, 04 Nov 2026 04:18:07 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE8tVGhFWW9MZ1kzOUZWUHdzeFU0S2duT1Uxd01TZExUYmFMUjBLYnJBODZTY05FSk5QdUVMYlR6SnVqdlo3R3dvQg?oc=5"
+    },
+    {
+      "title": "厦门算力“落地” 让中小企业“用得起、用得好”AI _新闻频道 - 厦门网",
+      "summary": "厦门算力“落地” 让中小企业“用得起、用得好”AI _新闻频道 厦门网",
+      "source": "厦门网",
+      "lang": "zh",
+      "published": "Wed, 04 Nov 2026 01:25:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1FcW1tQ1d5Qi1ENTN6UUNMUlR6bXg0R2VaeGtUNV9iaE5YSFdHWFBhWVR6SnhfeVpYbF82RWVldVNNUjdrS20wXzlEOVBBdjFOc3hhcG1WMnVtT1lZdU1OU3RIMWlHY3Z4clE?oc=5"
+    },
+    {
+      "title": "筑牢算力根基，推动人工智能走进现实场景 - 央广网",
+      "summary": "筑牢算力根基，推动人工智能走进现实场景 央广网",
+      "source": "央广网",
+      "lang": "zh",
+      "published": "Wed, 04 Nov 2026 03:11:40 GMT",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1raXJVQ0U0QXIzRTRIX3dyQktjckdLQ3ZyNWduMTl4UUZxdnBta0daamloNW5ZcjBSeEMxQWFXcjRBT2dYb1QxbEEtcjVKeWRuSnlsUnlHY0ZjRXVBVFJRWWt4TmlsdzN3ZDBXTGVIRmVDLTg?oc=5"
+    },
+    {
+      "title": "为何选择开源路线？多家大模型负责人：加速通用人工智能到来 - 东方财富",
+      "summary": "为何选择开源路线？多家大模型负责人：加速通用人工智能到来 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Wed, 04 Nov 2026 02:58:34 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA2UmVXRDNBNlpkTXBUS05SM1VWMlNoLXVpNkZNMDlReE1yUTNhVFlNSzBXVjRJWXVfWFNSbHNRTXVoaDlpYWRPaGFfOTZhc09xTVdCdWhfYllYcng2WnlFd083am9lQQ?oc=5"
+    },
+    {
+      "title": "异构算力\"堆叠\"提升利用效率助力国家算力网建设——训练要\"聚\"、应用要\"近\"，算力\"最后一公里\"受到关注 - 品玩",
+      "summary": "异构算力\"堆叠\"提升利用效率助力国家算力网建设——训练要\"聚\"、应用要\"近\"，算力\"最后一公里\"受到关注 品玩",
+      "source": "品玩",
+      "lang": "zh",
+      "published": "Wed, 04 Nov 2026 09:30:41 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5XejR6NzNwMXYyOHFEb3BoMmFiOWtCTEd6UHJBc2owS3pKMnVwNHpVTG9Pc2dxSXUxSEp0RWZ2UkJvQUgzaXpucA?oc=5"
+    },
+    {
+      "title": "身在河北 服务北京！环京算力供给走廊加快构建 - 北京市人民政府门户网站",
+      "summary": "身在河北 服务北京！环京算力供给走廊加快构建 北京市人民政府门户网站",
+      "source": "北京市人民政府门户网站",
+      "lang": "zh",
+      "published": "Wed, 04 Nov 2026 02:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTHk3a0xnLV9oeE1DUDJPTDUwdzd5QTc3akYyY29GUDdtSWVxTXl6TW9xV1RtNDFoaGxfTUxwOTZNMlRYRFlIRC1ySlNzVlRBUk42T3BjRk5pRXRDMFFpTW1RS0liZkFhVUFFcEF0Ymg4UElxdkI4YVVtejJHUW4yMlNMU3k?oc=5"
+    },
+    {
+      "title": "“六张网”里探潜力③｜算力“结”网，夯实数字新基建底座 - 中国江苏网",
+      "summary": "“六张网”里探潜力③｜算力“结”网，夯实数字新基建底座 中国江苏网",
+      "source": "中国江苏网",
+      "lang": "zh",
+      "published": "Wed, 04 Nov 2026 00:47:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQeXo1blY3Qm9DTHVGaXdkZlpqM2p2ZlFzLVVabmJUOVZnZ1E5MWNHbzhYVTlnX0dPRUh4M2lUdl8wSlJkUVdyV1lNZ2t6ekQtZ0kxSEFSQjBrc3p4RWh1RmR5T2hCV2NXM3JlaXdtWlFfeVFiUnBQZ0dCUmVnUU43alA2U0xPZlkwRWY4?oc=5"
+    },
+    {
+      "title": "第三届人工智能与智慧治理论坛举办 - 人大新闻网",
+      "summary": "第三届人工智能与智慧治理论坛举办 人大新闻网",
+      "source": "人大新闻网",
+      "lang": "zh",
+      "published": "Wed, 04 Nov 2026 09:00:28 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1aSzREVm9sUk96S2Rhd1owejNJTE9jTVQ2a1BJWHJJNXFqaFRhNWZuMXBMejR5X1QtNTVxUk03ckFQcV9mMHZ3R1p2aHR5ZWJFWi1xT3BMSXJLd001?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 97276,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 78802,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57628,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 39162,
+      "language": "TypeScript"
+    },
+    {
+      "title": "next-ai-draw-io",
+      "type": "GitHub",
+      "summary_en": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "summary": "通过与人工智能聊天来绘制和编辑draw.io图表。 Web 应用程序、桌面应用程序以及用于 Claude Code、Cursor、Codex 和 VS Code 的 MCP 服务器。",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "author": "DayuanJiang",
+      "stars": 36671,
+      "language": "TypeScript"
+    },
+    {
+      "title": "rea",
+      "type": "GitHub",
+      "summary_en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "summary": "使用代理对任何内容进行逆向工程，从应用程序行为到本机二进制文件。",
+      "url": "https://github.com/morluto/rea",
+      "author": "morluto",
+      "stars": 428791,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 393878,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 312090,
+      "language": "Shell"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
