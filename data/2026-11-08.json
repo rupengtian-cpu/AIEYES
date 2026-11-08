@@ -1,0 +1,508 @@
+{
+  "date": "2026-11-08",
+  "generated_at": "2026-11-08T09:41:48.230737+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "User Embeddings are Superpositions of Interpretable Behavioral Modes",
+      "title_zh": "用户嵌入是可解释行为模式的叠加",
+      "summary": "User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compactly encode rich behavioral information, they are inherently dense and opaque, limiting interpretability. To address this gap, we argue that user embeddings can be understood as sparse superpositions of interpre…",
+      "summary_zh": "用户嵌入是现代推荐、个性化和行为建模系统的核心组成部分。尽管这些嵌入可以紧凑地编码丰富的行为信息，但它们本质上是密集且不透明的，限制了可解释性。为了解决这一差距，我们认为用户嵌入可以理解为可解释行为模式的稀疏叠加。这种结构是通过线性嵌入的用户行为生成模型直接预测的，并通过叠加假设近似扩展到深度学习表示。叠加模式自然可以通过稀疏字典学习方法（例如稀疏自动编码器（SAE））来恢复，并且恢复的模式可以用自然语言自动命名和查询。我们根据合成数据上的已知地面事实验证模式恢复，其中 SAE 比经典稀疏基线更好地恢复模式，包括在变压器编码嵌入上。然后，我们将该方法应用于来自两个现实世界数据集的经典和基于变压器的用户嵌入。我们还展示了相应的自然语言标签如何在从未接受过文本训练的嵌入上实现零样本受众检索和表征。该框架是事后且与模型无关的，不需要对上游嵌入系统进行修改。",
+      "authors": [
+        "Jonathan Kozaczuk",
+        "Zheng Dong",
+        "Noyan Evirgen",
+        "Keivan Majidi",
+        "Eddie K. H. Ng",
+        "Chris Porter"
+      ],
+      "published": "2026-11-05T18:59:42Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.08487v1",
+      "abs_url": "https://arxiv.org/abs/2611.08487v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08487v1"
+    },
+    {
+      "title": "Do You Miss the Nights We Spent Crafting Figures? Rethinking Teaser and Framework Figures in the Age of Generative AI",
+      "title_zh": "你怀念我们制作人物的那些夜晚吗？重新思考生成人工智能时代的预告片和框架图",
+      "summary": "Scientific figures give research ideas a visual form through choices of abstraction, composition, and emphasis. Generative AI offers new ways to realize these choices, raising questions about explanatory clarity and purposeful visual expression. We examine these questions through a visual retrospective of 371 motivation and framework figures from 200 papers…",
+      "summary_zh": "科学人物通过抽象、构图和重点的选择，为研究思想提供了视觉形式。生成人工智能提供了实现这些选择的新方法，提出了关于解释清晰度和有目的的视觉表达的问题。我们通过对 200 篇论文中 371 个动机和框架数据的直观回顾来审视这些问题。该语料库包括一个基于配额的主要样本（涵盖四个时间段的 160 篇论文）和一个单独的有目的的风格对比样本（包含 40 篇论文）。一位多模式评委评估沟通和设计的六个维度，每个图重复进行三个评判。我们尝试对所有 371 个数字进行源限制修订，其中 369 个通过了记录的保真度检查。原始数字收视率显示各个时期的收视率并没有统一下降。修订后的平均清晰度等级提高了 0.428 分，审美一致性等级降低了 0.111 分（五分制）。主样本动机数据的六维平均收益比框架的收益更大。案例分析表明，添加解释可以澄清比较，同时使版式层次结构和视觉经济…",
+      "authors": [
+        "Xiaoqi Zhao",
+        "Youwei Pang",
+        "Kailai Zhou"
+      ],
+      "published": "2026-11-05T18:59:33Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.08486v1",
+      "abs_url": "https://arxiv.org/abs/2611.08486v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08486v1"
+    },
+    {
+      "title": "Where and Why is Grounded Reasoning Useful?",
+      "title_zh": "扎根推理在哪里以及为什么有用？",
+      "summary": "Grounded reasoning, where a model outputs text coordinates of relevant locations in chain-of-thought reasoning, is a common strategy for solving complex visual reasoning problems. However, the benefits and limitations of grounded reasoning are understudied. We study where and why grounded reasoning is most useful. To do so, we introduce a chain-of-thought a…",
+      "summary_zh": "扎根推理，即模型输出思维链推理中相关位置的文本坐标，是解决复杂视觉推理问题的常见策略。然而，扎根推理的好处和局限性尚未得到充分研究。我们研究扎根推理在何处以及为何最有用。为此，我们引入了一种思想链分析方法来测量模型在其思维轨迹中使用其输出基础的程度，并对扎根推理训练方法进行详细的消融研究。我们发现，扎根推理可以改善计数，但在没有跨广泛空间推理和感知基准的坐标扎根的情况下，与基线相比没有显着增益。通过使用几个综合任务，我们表明，当任务需要难以描述的参考（这是难以用语言描述的视觉概念）时，扎根推理是最有用的。然而，我们观察到许多现有的视觉推理基准只需可描述的文本参考即可解决。为了缩小这一差距，我们引入了 BrickVision，这是一个新的基准测试，需要解决难以描述的视觉参考问题。",
+      "authors": [
+        "David Yan",
+        "Le Xue",
+        "Forrest Huang",
+        "Qiuyi Zhang",
+        "Dustin Tran",
+        "Andrew M. Dai"
+      ],
+      "published": "2026-11-05T18:59:32Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.08485v1",
+      "abs_url": "https://arxiv.org/abs/2611.08485v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08485v1"
+    },
+    {
+      "title": "Scientist World: Grow a Research World for AI-Scientists",
+      "title_zh": "科学家世界：为人工智能科学家打造一个研究世界",
+      "summary": "AI-Scientists arrived, but a world for them to grow in did not. Human scientists take theirs for granted $-$ centuries of open problems and shared ideas, waiting in the scientific literature. To AI-Scientists, that world is readable but not runnable, so we build Scientist World for them: every research paper becomes an executable environment. Our autonomous…",
+      "summary_zh": "人工智能科学家已经到来，但他们成长的世界却没有出现。人类科学家认为他们理所当然地认为，数个世纪以来，科学文献中等待着开放的问题和共同的想法。对于人工智能科学家来说，这个世界是可读的，但不可运行，因此我们为他们构建了科学家世界：每一篇研究论文都成为一个可执行环境。我们的自主管道提取每篇论文的开放式研究问题，并重现其提出的方法作为基线；进入环境的人工智能科学家将根据人类作者所取得的成就进行评估。我们发布了前 1,000 个经过验证的环境。以世界为评价，我们发现前沿的AI科学家已经可以在74%的时间里超越人类研究人员。作为人工智能如何进行科学研究的记录，它包含 6,400 小时的研究痕迹，包括每一个想法、实验、失败和成功。作为训练场，我们能够提出（+158%）一个小模型来匹配研究构思中的前沿模型。最后，人工智能科学家自己的世界已经到来，它源于科学本身，并…",
+      "authors": [
+        "Taiming Lu",
+        "Sachin Konan",
+        "Zhuang Liu"
+      ],
+      "published": "2026-11-05T18:58:17Z",
+      "category": "cs.AI",
+      "arxiv_id": "2611.08478v1",
+      "abs_url": "https://arxiv.org/abs/2611.08478v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08478v1"
+    },
+    {
+      "title": "XStack: A Benchmark for ML Repo Migration",
+      "title_zh": "XStack：ML 存储库迁移的基准",
+      "summary": "ML code should run where researchers choose, not where it was first written. Today, machine learning code mainly lives in two ecosystems, PyTorch on NVIDIA GPUs and JAX on Google TPUs. Migrating repositories between them means building and testing across frameworks and hardware. This migration is (1) a practical need, since it unlocks different hardware for…",
+      "summary_zh": "机器学习代码应该在研究人员选择的地方运行，而不是在最初编写的地方运行。如今，机器学习代码主要存在于两个生态系统中：NVIDIA GPU 上的 PyTorch 和 Google TPU 上的 JAX。在它们之间迁移存储库意味着跨框架和硬件进行构建和测试。这种迁移是（1）实际需要，因为它为研究人员解锁了不同的硬件，（2）自然基准：它涉及不同的框架和硬件，覆盖整个存储库，并且是长期的和具有挑战性的。我们引入了 XStack，这是一个评估代理在这两个生态系统之间迁移 ML 存储库的基准。每个代理都会收到一个 PyTorch 存储库和一个干净的 TPU 机器，并且必须提供一个 JAX 存储库。如果它的输出符合我们的评分标准（基于源存储库的发布结果，并由我们进行身份验证和校准），则它的输出通过。代理的迁移仍然不可靠：Claude Opus 5 通过了 75%，…",
+      "authors": [
+        "Linrong Cai",
+        "Taiming Lu",
+        "Haozhe Chen",
+        "Zhuang Liu"
+      ],
+      "published": "2026-11-05T18:55:54Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.08472v1",
+      "abs_url": "https://arxiv.org/abs/2611.08472v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08472v1"
+    },
+    {
+      "title": "ReproBridge: Building Reproducibility into ML Research Artifacts",
+      "title_zh": "ReproBridge：将可重复性构建到 ML 研究工件中",
+      "summary": "Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and supporting artifacts. For coding agents, reproduction success can therefore depend on their ability to fill in missing details, rather than on the released artifacts alone. We ask whether preserving recovered procedures an…",
+      "summary_zh": "重现机器学习实验需要根据分散在论文、发布的代码和支持工件中的信息来重建程序。因此，对于编码代理来说，复制成功可能取决于他们填补缺失细节的能力，而不是仅仅取决于发布的工件。我们询问保留恢复的程序和决策是否可以改善后续的独立复制。我们定义了一个标准化的工件设计，包括精炼的代码库、环境设置、实验启动器和再现指南，并引入了 ReproBridge，这是一个用于构建这些精炼的可再现工件的代理工作流程。 ReproBridge-Bench 提供了来自 36 篇论文的 387 个实验的 1,029 个任务，每个任务以五个经过人工验证的参考分数为基础。代理在新的会话中使用原始代码或精炼的工件尝试任务；单独的审计员检查执行证据。在四个评估模型中，精致的工件将平均复制成功率从 76.4% 提高到 92.6%，并将下游 API 支出平均减少 19.7%。跨模型成功率差距…",
+      "authors": [
+        "Yubo Wang",
+        "Rui Meng",
+        "Jaehyun Nam",
+        "Tomas Pfister",
+        "Jinsung Yoon"
+      ],
+      "published": "2026-11-05T18:45:36Z",
+      "category": "cs.AI",
+      "arxiv_id": "2611.08452v1",
+      "abs_url": "https://arxiv.org/abs/2611.08452v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08452v1"
+    },
+    {
+      "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+      "title_zh": "VFlash：通过 Flash 基元解码快速、准确的视觉规划",
+      "summary": "Models for physical AI tasks, such as robotics and autonomous driving, need not reason solely in language. They can use visual plans--points, bounding boxes, and trajectories--to represent spatial goals and anticipate motion. However, autoregressive vision-language models generate these plans one coordinate token at a time, making richer predictions increas…",
+      "summary_zh": "机器人和自动驾驶等物理人工智能任务的模型不需要仅用语言进行推理。他们可以使用视觉计划——点、边界框和轨迹——来表示空间目标并预测运动。然而，自回归视觉语言模型一次生成一个坐标标记，从而使更丰富的预测成本越来越高。我们介绍 VFlash，这是一种通过 Flash 基元解码进行快速、准确的视觉规划的方法。 VFlash 利用视觉图元的已知结构来联合预测它们的坐标，使用轻量级绘图器在一次前向传递中生成整个图元。布局适应图元的类型、维度和长度，支持紧凑的盒子和长的、可变长度的轨迹。至关重要的是，空间准确性不需要再现自回归模型的精确标记序列。因此，VFlash 在带注释的基元上进行训练，并直接接受结构上有效的预测，而无需目标令牌协议。在评估的 2D 和 3D 机器人轨迹任务中，VFlash 始终减少了相对于自回归解码的预测误差。初步的单次推出测量表明 3D…",
+      "authors": [
+        "Yu-Cheng Chou",
+        "Shihao Wang",
+        "Jin Huang",
+        "Chi-Pin Huang",
+        "Chiao-An Yang",
+        "Xianzhe Fan"
+      ],
+      "published": "2026-11-05T18:44:43Z",
+      "category": "cs.RO",
+      "arxiv_id": "2611.08449v1",
+      "abs_url": "https://arxiv.org/abs/2611.08449v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08449v1"
+    },
+    {
+      "title": "A Hidden Markov Preference Model for Online Prediction of Adversary Actions",
+      "title_zh": "用于在线预测对手行为的隐马尔可夫偏好模型",
+      "summary": "A defender anticipating an attacker needs a probability distribution over the attacker's next action from information available before that action occurs. Two structures complicate this: the attacker's behavioral regime persists and can switch within an episode, and each action combines an operation with state-dependent arguments whose feasible values chang…",
+      "summary_zh": "预测攻击者的防御者需要根据该操作发生之前的可用信息来了解攻击者下一个操作的概率分布。两种结构使这一情况变得复杂：攻击者的行为机制持续存在，并且可以在一次事件中切换，并且每个操作都将一个操作与状态相关的参数相结合，这些参数的可行值会随着时间的推移而变化。我们用隐马尔可夫模型来捕获两者，该模型的潜在状态是活动状态，其状态条件行动法则是在可执行行动的可行性屏蔽树上定义的。相同的可能性形成下一个动作分布，并在看到该动作后更新政权信念，并且部分观察到的前缀贡献其解析的局部因素。估计分为凸逻辑拟合，当政权未标记时，鲍姆-韦尔奇会重复使用这些凸逻辑拟合。我们导出了机制信息的到达加权节点 KL 表达式、切换机制路径的序列对数损失界限以及统一的回退保证。在 CAGE 2 网络防御基准测试中，过滤后的潜在状态每步价值 0.8 nat，在控制器切换后，损失开始分三步下降…",
+      "authors": [
+        "Angel Daruna",
+        "Michael Cogswell",
+        "Tixiao Shan",
+        "Yi Yao",
+        "Han-Pang Chiu",
+        "Ajay Divakaran"
+      ],
+      "published": "2026-11-05T18:37:07Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.08445v1",
+      "abs_url": "https://arxiv.org/abs/2611.08445v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08445v1"
+    },
+    {
+      "title": "Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes",
+      "title_zh": "类型化决策编码器中的标签措辞增强：在不熟悉的单词上增强，而不是在缩写或代码上增强",
+      "summary": "Typed-decision models score options that the caller supplies at request time, so their accuracy depends on label wording that the model's developer does not control. We compare two releases of a 307M-parameter multilingual cross-encoder, Ru-Jev, trained on thirteen Russian-language tasks; the later release adds an augmentation that presents labels in severa…",
+      "summary_zh": "类型化决策模型对调用者在请求时提供的选项进行评分，因此其准确性取决于模型开发人员无法控制的标签措辞。我们比较了 307M 参数的多语言交叉编码器 Ru-Jev 的两个版本，该编码器经过 13 种俄语任务的训练；后续版本添加了增强功能，以多种表面形式呈现标签。保持问题固定并仅改变十八个路由标签的措辞方式，我们评估由三个独立过程生成的十个标签词汇表，并检查与训练数据的重叠，每个问题有五个候选者，其中八个也有十八个候选者。对于由普通词或借用词（源自英语的行话、办公室俚语、部门名称）组成的保留词汇，增强发布在每种设置下都更加准确，最高可达 0.24。这 14 个增益中有 11 个在 Holm 校正中幸存下来（俚语有 18 个候选，描述性句子有 5 个没有），并且对于所有标签上的行话，标签级间隔在两种设置中都排除零。在缩写和不透明代码上，它没有提供任何可用的…",
+      "authors": [
+        "Vladimir Beskorovainyi"
+      ],
+      "published": "2026-11-05T18:31:24Z",
+      "category": "cs.CL",
+      "arxiv_id": "2611.08439v1",
+      "abs_url": "https://arxiv.org/abs/2611.08439v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08439v1"
+    },
+    {
+      "title": "Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety",
+      "title_zh": "从内部理解人工智能：人工智能安全的机械解释状态",
+      "summary": "Neural networks are likely to be among the most consequential artefacts in human history. As these systems become more capable and autonomous, their potential to cause societal harm also grows, making AI safety one of the defining challenges of our time. Yet we continue to build increasingly powerful systems without fully understanding how they work, how th…",
+      "summary_zh": "神经网络可能是人类历史上最重要的人工制品之一。随着这些系统变得更加强大和自主，它们造成社会危害的可能性也随之增加，使得人工智能安全成为我们这个时代的决定性挑战之一。然而，我们继续构建越来越强大的系统，却没有完全理解它们如何工作、它们在不熟悉的情况下将如何表现，或者如何可靠地控制它们。机械可解释性提供了一条通过研究这些系统的内部表示和计算来理解这些系统的途径，目的是评估、预测和控制行为。我们调查人工智能安全的机械解释性，以回答以下问题：了解模型的工作原理是否真的能让它们更安全？我们将机械可解释性置于可解释性研究的更广泛背景下，并将其机械证据与行为评估进行比较。我们介绍机械可解释性的基础，包括特征、多语义、变压器计算和电路，以及特征提取和分析、电路发现和因果验证的调查方法，解释自然语言的中间表示、学习动态和训练数据归因。除了调查现有方法之外，我们还提出…",
+      "authors": [
+        "Fazl Barez",
+        "Tung-Yu Wu",
+        "Hunar Batra",
+        "Gabriele Dominici",
+        "Florent Draye",
+        "Yanai Elazar"
+      ],
+      "published": "2026-11-05T18:30:54Z",
+      "category": "cs.CL",
+      "arxiv_id": "2611.08438v1",
+      "abs_url": "https://arxiv.org/abs/2611.08438v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08438v1"
+    },
+    {
+      "title": "SM4RT: Cascaded Feed-forward Model for 4D Reconstruction",
+      "title_zh": "SM4RT：用于 4D 重建的级联前馈模型",
+      "summary": "We introduce SM4RT, a multi-task cascade feed-forward model for dynamic scene reconstruction from RGB videos. While existing feed-forward approaches typically address geometry reconstruction and motion estimation separately--and often predict motions in a single coordinate frame that must account for camera movement--SM4RT solves these tasks sequentially by…",
+      "summary_zh": "我们介绍了 SM4RT，这是一种用于 RGB 视频动态场景重建的多任务级联前馈模型。虽然现有的前馈方法通常分别解决几何重建和运动估计，并且通常在必须考虑相机运动的单个坐标系中预测运动，但 SM4RT 通过首先重建 3D 几何，然后从预测结构引导运动估计来顺序解决这些任务。通过在其相应的相机帧中表达每个像素的 3D 运动，SM4RT 减少了相机运动引起的模糊性。为了解决现实世界运动标签的稀疏性，SM4RT 进一步结合了弱监督损失，使用其他时间步的标记点位置来规范未标记点运动。我们在三个动态场景数据集（Kubric、Waymo 和 Point Odyssey）上评估运动估计，与之前的基线相比，SM4RT 在大多数指标上实现了最佳性能。我们还在五个动态场景数据集上对几何重建进行了基准测试，并表明 SM4RT 通过最先进的方法实现了具有竞争力的性能。总的来…",
+      "authors": [
+        "Pang-Chi Lo",
+        "Jhao-Syun Lai",
+        "Tsung-Wei Ke"
+      ],
+      "published": "2026-11-05T18:28:38Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.08436v1",
+      "abs_url": "https://arxiv.org/abs/2611.08436v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08436v1"
+    },
+    {
+      "title": "Failure Prediction and Classification in Vision-Language-Action Models Via Calibrated Latent Probing",
+      "title_zh": "通过校准潜在探测进行视觉-语言-动作模型中的故障预测和分类",
+      "summary": "Vision-Language-Action models (VLAs) enable general-purpose embodied intelligence, but their performance is brittle under distribution shift, where unanticipated failures can damage equipment or endanger people. Deploying VLAs in real-world systems therefore requires a runtime monitor that is timely, calibrated, and informative while being efficient enough…",
+      "summary_zh": "视觉-语言-动作模型（VLA）可实现通用的体现智能，但它们的性能在分布转移下很脆弱，其中意外故障可能会损坏设备或危及人员。因此，在现实系统中部署 VLA 需要一个及时、经过校准且信息丰富的运行时监视器，同时足够高效以在边缘运行。现有方法无法满足这些要求。我们推出了 VLA-Tug，这是一种针对 VLA 主干的潜在层的轻量级探测器，可改善早期故障检测并限制漏检率和误报率，同时将推理开销降至最低。我们表明，对轨迹的故障前部分进行监督，可以将匹配误报率的早期故障检测率比最强的学习基线提高高达 30%。在转向看不见的任务的情况下，漏检率和误报率的界限在高达 86% 的运行中仍然有效，而基线最多为 21%。与现有方法不同，VLA-Tug 可以预测故障模式以采取纠正措施，将未见过的任务的 top-3 准确率比大多数基线提高高达 44%。 VLA-Tug 可实现…",
+      "authors": [
+        "Michal P. Podolinsky",
+        "Yunhao Yang",
+        "Daniel Little",
+        "Hong Lu",
+        "Rohan Siva",
+        "Olin Goudey"
+      ],
+      "published": "2026-11-05T18:21:07Z",
+      "category": "cs.RO",
+      "arxiv_id": "2611.08425v1",
+      "abs_url": "https://arxiv.org/abs/2611.08425v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.08425v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "英伟达大劫案！超7600万元AI芯片和硬件离奇失踪，嫌疑人尚未抓获 - 华尔街见闻",
+      "summary": "英伟达大劫案！超7600万元AI芯片和硬件离奇失踪，嫌疑人尚未抓获 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Sun, 08 Nov 2026 07:40:45 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1iNnFXRnJMYnZtbGFmbXlfaE5GWFFXOGNkanhFTHZ1REVLRVp6cXdoeEFrTEtEM2JfcVZrMGpHTnJfZFpac3R0M2IxTkFlVGo3VVpv?oc=5"
+    },
+    {
+      "title": "通用大模型能力突进，世界模型经历关键转折_国内经济 - 证券之星",
+      "summary": "通用大模型能力突进，世界模型经历关键转折_国内经济 证券之星",
+      "source": "证券之星",
+      "lang": "zh",
+      "published": "Sun, 08 Nov 2026 05:04:19 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9oelE1ZDMwTE9scEloMjJSTUZSOUVFNnRkaHFkUU9YSTFZVkR1NGY0VXdyVWc0MHZxMnB1RHhWVmljLUd1RDlXN1BoNEpXQmxVWUp0UHZ1TFdKQ1RGUWhEcXlYTTk?oc=5"
+    },
+    {
+      "title": "浙江上线“出海质量通”智能体 为企业出海提供“AI参谋” - 杭州网",
+      "summary": "浙江上线“出海质量通”智能体 为企业出海提供“AI参谋” 杭州网",
+      "source": "杭州网",
+      "lang": "zh",
+      "published": "Sun, 08 Nov 2026 06:04:16 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9IVlM3U1E4M2g1ZWJqT1BFRHdQWm83cHdqd1RFS3ZybGh6NDRCemVrcHBLZHNfRDNsclR2OFhBLTFua3MwX1hwLWRMaFFCNTBfbkNCZFR5dWRjODkzcnRvWi1OOUZza09scEVOQm5ZRkp3OVNtQW1yZHh1Vkozdw?oc=5"
+    },
+    {
+      "title": "半小时卖出10万份！AI“Token”到底该不该囤？ - 上观新闻",
+      "summary": "半小时卖出10万份！AI“Token”到底该不该囤？ 上观新闻",
+      "source": "上观新闻",
+      "lang": "zh",
+      "published": "Sun, 08 Nov 2026 07:03:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rSHFqQ2p1cEVjejNRdEUwUXJLRUNkREpnMEtoZEl1RWtTdTlCUHU1TUVxVmRIZzZlWmpFZnJyR2U1ODlLRWdOZVItd283QUVzc2M0QkJrN25KUQ?oc=5"
+    },
+    {
+      "title": "从“会算账”到“会驾驭智能体”：这场大赛把企业真实业务搬进考场 - 华龙网",
+      "summary": "从“会算账”到“会驾驭智能体”：这场大赛把企业真实业务搬进考场 华龙网",
+      "source": "华龙网",
+      "lang": "zh",
+      "published": "Sun, 08 Nov 2026 02:44:33 GMT",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBRODU4dHpMLWxJN0Y1VnFTbXQ2bXIwOHo2aFZrLTJaQWtUb1Y4bXBVcGlmTUZHZE9pYjZhNHpWaU9tOEJwYUE1cUpkUXR3VWkyVTNOcnkzaWtMUVg1RW9nTThvUFhKdm9NLVJZ?oc=5"
+    },
+    {
+      "title": "掘金生成式视频算力赛道，凌川科技打造多模态大模型国产算力底座 - 央广网",
+      "summary": "掘金生成式视频算力赛道，凌川科技打造多模态大模型国产算力底座 央广网",
+      "source": "央广网",
+      "lang": "zh",
+      "published": "Sat, 07 Nov 2026 14:39:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5KbHBsbUxCRzR3bG9VTG9tQXhHWjNsdlVITjJTVktvQnRZbFpBcnZMTE9vVk90c1VjdUhJZkhjNUZiUU1xU0c3eFo5Q2JsWGVMaW9fY21qbDRBeDBFdS1zZ0p1eE9JcW05U1VObjJuRDRHOXM?oc=5"
+    },
+    {
+      "title": "算力风口之下，IDC不能只做“烧电的机器” - 观点网",
+      "summary": "算力风口之下，IDC不能只做“烧电的机器” 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Sat, 07 Nov 2026 16:29:13 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1hUUF2M0pjaEptUkd1N3l4YUhXY1V6aUp3a1VaR3l4RzBNMXloMHh2LW5pUTAyMUZiWHBPTzk1LVNMZEp0Z0ExSTBaYTNOQQ?oc=5"
+    },
+    {
+      "title": "大模型跌成这样 还是贵？ - 东方财富",
+      "summary": "大模型跌成这样 还是贵？ 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Sat, 07 Nov 2026 16:36:09 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBGSnJzWmNfenRJM2hfbTlFcmFxdnRUbU80b2dmMkQ2aFMyMmJqcDA3bU43aE44cnkxRWdTNVhOb1VjZjlfdGFwQmMzQWR1Z3o1SG1rQ0lDV2M0cWE0anluQQ?oc=5"
+    },
+    {
+      "title": "你我身边的“六张网”丨用算力培育智慧牧场 - 新华网",
+      "summary": "你我身边的“六张网”丨用算力培育智慧牧场 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Sat, 07 Nov 2026 03:51:22 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE00cjRBelBfd3Z1WmJaQWlxaXl5SHQ1cjZDNXRfSWlXSG8tSGpsaG1xRkdJUEluWVBCRXZjNkgyREdqYVFudGFSOWxPNk02dzBTaFUyREtVRGJyc1RkdHRDWmdVTGtGQjJQVlZtOW1uWC1TUE9wdjVQQjFiUmFXQQ?oc=5"
+    },
+    {
+      "title": "Gemini Omni 1.2Flash发布 ！PixPix全网首发接入 - 凤凰网",
+      "summary": "Gemini Omni 1.2Flash发布 ！PixPix全网首发接入 凤凰网",
+      "source": "凤凰网",
+      "lang": "zh",
+      "published": "Sun, 08 Nov 2026 07:12:27 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE90V0FIS3BMNy05U2JFV2lwUGprSkZlQmp6cTlrbTBzX29xcWtYMnpZZzYyWmR4RWlHM3g2UVBUSk9wLVAxLUEtYWEyV08?oc=5"
+    },
+    {
+      "title": "超49亿元超级大单！杰创智能拿下5年算力服务合同 - https://www.itdcw.com/",
+      "summary": "超49亿元超级大单！杰创智能拿下5年算力服务合同 https://www.itdcw.com/",
+      "source": "https://www.itdcw.com/",
+      "lang": "zh",
+      "published": "Sun, 08 Nov 2026 05:31:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1JYzRNTHRhY3lCdHNGSnllZXlMWjF4OW1JSWpmZ0ZQMnhWeFRkTEhqTGZkaURMOVdkR0ZGY0RKZjNrTmxFZ1ZRMkVqQmhUM1RkTDlobVpubGVITGdLRUE?oc=5"
+    },
+    {
+      "title": "微软终止甲骨文算力租约：旧一代英伟达GPU不再符合要求 - 驱动之家",
+      "summary": "微软终止甲骨文算力租约：旧一代英伟达GPU不再符合要求 驱动之家",
+      "source": "驱动之家",
+      "lang": "zh",
+      "published": "Sun, 08 Nov 2026 05:50:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE02NExWTnhnQ3hPNERrVXQya1dFTGxMOXNWV3N0VUJnRjZSMmllMkZqUnNpb2g1VU9FSUt5azFDZXhHQ3BIcFM0TWg0bkk1WDByenVPLTB5bXc?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 97456,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 79106,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57632,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 39318,
+      "language": "TypeScript"
+    },
+    {
+      "title": "next-ai-draw-io",
+      "type": "GitHub",
+      "summary_en": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "summary": "通过与人工智能聊天来绘制和编辑draw.io图表。 Web 应用程序、桌面应用程序以及用于 Claude Code、Cursor、Codex 和 VS Code 的 MCP 服务器。",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "author": "DayuanJiang",
+      "stars": 36783,
+      "language": "TypeScript"
+    },
+    {
+      "title": "rea",
+      "type": "GitHub",
+      "summary_en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "summary": "使用代理对任何内容进行逆向工程，从应用程序行为到本机二进制文件。",
+      "url": "https://github.com/morluto/rea",
+      "author": "morluto",
+      "stars": 442020,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 394168,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 314304,
+      "language": "Shell"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
