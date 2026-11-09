@@ -1,0 +1,511 @@
+{
+  "date": "2026-11-09",
+  "generated_at": "2026-11-09T10:36:11.444602+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Video-Coder: Reinforcing Agentic Coding for Video Generation",
+      "title_zh": "Video-Coder：增强视频生成的代理编码",
+      "summary": "Recent years have witnessed remarkable progress in video generation in terms of visual quality and temporal consistency. However, generating videos with precise spatial structure, coherent motion dynamics, and controllable scene composition remains challenging. In this paper, we introduce Video-Coder, the first attempt to train a code-driven video generatio…",
+      "summary_zh": "近年来，视频生成在视觉质量和时间一致性方面取得了显着进步。然而，生成具有精确空间结构、连贯运动动力学和可控场景组成的视频仍然具有挑战性。在本文中，我们介绍了 Video-Coder，这是训练代码驱动的视频生成代理的首次尝试，它自主编写和执行代码来构建动态 3D 场景（视频草稿），为下游视频生成器提供结构和运动信号。为了支持这种范例，我们设计了一个专用的数据管道，并策划了两个高质量的数据集：Video-Coder-SFT-6k 和 Video-Coder-RL-2k，其中包含不同的提示和真实参考视频。我们进一步开发了 VideoCoder Harness，这是一个集成了代码执行、3D 场景渲染以及用于代理训练和推理的执行反馈的统一交互环境。然后，我们使用 SFT 训练 Video-Coder，然后利用具有双重奖励反馈的原生代理强化学习，其中结合了基于…",
+      "authors": [
+        "Chaoyang Wang",
+        "Sicheng Gao",
+        "Junan Hu",
+        "Kunyang Li",
+        "Dongyang Chen",
+        "Yiyang Zhou"
+      ],
+      "published": "2026-11-06T18:59:57Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.09894v1",
+      "abs_url": "https://arxiv.org/abs/2611.09894v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09894v1"
+    },
+    {
+      "title": "On Agentic Manipulation Policies",
+      "title_zh": "论代理操纵政策",
+      "summary": "Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more reliably than specialist policies such as vision-language-action models (VLAs) and world-action models (WAMs). We systematically analyze agentic manipulation policies (AMPs), in which a generalist AI…",
+      "summary_zh": "最近关于机器人操纵的工作主要集中在经过示范培训的专业政策上。我们证明，通才人工智能模型可以比视觉语言动作模型（VLA）和世界动作模型（WAM）等专业策略更可靠地控制操纵器。我们系统地分析了代理操纵策略（AMP），其中通用人工智能模型直接命令操纵器，随着任务的展开调整其动作。我们推出了 AMP1，这是一款参考线束，可在单臂、双手和移动操作中保持不变。 AMP1 在 RoboLab-120 和 CaP-Gym 基准测试中取得了最先进的结果，无需演示或针对特定任务的培训。在 RoboLab-120 上，AMP1 的零射击成功率达到 85.6%，而领先的 VLA 和 WAM 策略的成功率分别为 49.2% 和 42.9%。该代理在涵盖 12 个任务和三个机器人实例的 108 次现实世界试验中的 104 次中取得了零成功，相对于强大的 VLA 和 WAM 基…",
+      "authors": [
+        "Chen Chen",
+        "Omid Bagherieh",
+        "Naveen Nikamanth Appiah Balaji",
+        "Jesse T. Gonzalez",
+        "Negin Heravi",
+        "Fahad Islam"
+      ],
+      "published": "2026-11-06T18:59:34Z",
+      "category": "cs.RO",
+      "arxiv_id": "2611.09892v1",
+      "abs_url": "https://arxiv.org/abs/2611.09892v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09892v1"
+    },
+    {
+      "title": "Scenario Orchestration for Closed-loop Policy Evaluation of Autonomous Driving",
+      "title_zh": "自动驾驶闭环政策评估场景编排",
+      "summary": "Scenario-based simulation is central to evaluating autonomous-driving policies, but a scenario scripted before execution (i.e., with predetermined, fixed actor routes and speeds) may not preserve its intended interaction once the tested ego policy responds in closed loop. Scripted scenarios cannot adapt to unanticipated ego behavior, while learned traffic a…",
+      "summary_zh": "基于场景的模拟是评估自动驾驶策略的核心，但是一旦测试的自我策略在闭环中响应，执行前编写的场景（即具有预定的、固定的参与者路线和速度）可能无法保留其预期的交互。脚本化场景无法适应意料之外的自我行为，而学习到的流量参与者可能会在无法可靠地实现特定场景意图的情况下保持反应。我们引入了一个场景编排器，它持续监控联合流量状态，并通过重新计时、重新路由和角色重新分配来调整非自我参与者，以创建特定的场景意图。在每个步骤中，编排器都会解决一个约束优化问题，在限制干预并保持流量可行性的同时保留预期的交互。我们进一步区分场景实现和策略失败，允许首先根据预期的交互是否发生，然后根据自我策略的响应方式来判断测试。 CARLA 模拟器中跨多个场景系列和驱动策略的实验表明，编排比脚本化和学习的参与者级基线更可靠地实现有针对性的交互，特别是在初始条件和自我行为变化的情况下。这些…",
+      "authors": [
+        "Frieda Rong",
+        "Zhaoyue Wang",
+        "Veer Kapadia",
+        "Vishaka Rajani",
+        "Aren A. Babikian",
+        "Xujie Si"
+      ],
+      "published": "2026-11-06T18:58:27Z",
+      "category": "cs.RO",
+      "arxiv_id": "2611.09888v1",
+      "abs_url": "https://arxiv.org/abs/2611.09888v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09888v1"
+    },
+    {
+      "title": "FlowMoP: Stochastic Multi-Person Motion Prediction",
+      "title_zh": "FlowMoP：随机多人运动预测",
+      "summary": "Predicting the future motion of multiple people is inherently stochastic: the same observed history admits many plausible continuations depending on intent, coordination, and social context. Yet the dominant paradigm in multi-person 3D motion prediction remains deterministic, with existing methods producing a fixed number of outputs per agent. In contrast,…",
+      "summary_zh": "预测多人的未来运动本质上是随机的：根据意图、协调和社会背景，相同的观察到的历史允许许多合理的延续。然而，多人 3D 运动预测的主导范例仍然是确定性的，现有方法为每个智能体生成固定数量的输出。相比之下，我们提出了一个条件流匹配框架，可以为多个智能体联合生成不同的未来运动，对全局轨迹和根相对姿势进行建模。 B样条重新参数化压缩生成状态空间，同时增强时间平滑性，双流变换器调节每个智能体对观察到的邻居运动的预测，以进行交互感知预测。我们的方法在 CMU-Mocap (UMPM) 和 3DPW 上实现了最先进的性能，尽管产生了完整的预测分布，但在关节位置误差、姿态误差和最终位移误差方面优于确定性基线。我们还在大型职业足球数据集 WorldPose 上建立了第一个运动预测基线，其中社会调节明显地将预测不确定性集中在交互受限的方向上。",
+      "authors": [
+        "Aadya Agrawal",
+        "Ho Kei Cheng",
+        "Alexander Schwing"
+      ],
+      "published": "2026-11-06T18:56:41Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.09882v1",
+      "abs_url": "https://arxiv.org/abs/2611.09882v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09882v1"
+    },
+    {
+      "title": "ZeoBench: A Benchmark for Self-Supervised Learning on 3D Zeolite Representations",
+      "title_zh": "ZeoBench：3D 沸石表示自监督学习的基准",
+      "summary": "Zeolites are an important class of porous crystalline materials with broad applications in gas storage, separations, and catalysis. Although hundreds of thousands of experimentally realized and hypothetical zeolite structures are known, identifying materials optimized for a target application remains challenging because property labels are expensive to obta…",
+      "summary_zh": "沸石是一类重要的多孔晶体材料，在气体储存、分离和催化领域具有广泛的应用。尽管已知数十万种通过实验实现的和假设的沸石结构，但识别针对目标应用优化的材料仍然具有挑战性，因为属性标签的获取成本昂贵，并且仅适用于有限的结构-分子对。虽然之前的工作已经证明 3D 神经表征可以有效地预测沸石特性，但仍不清楚哪种表征学习策略在与材料发现相关的低数据状态下最有效。我们提出了 ZeoBench，这是全硅沸石密集 3D 表示的自监督学习基准，并在一系列训练集大小上评估了六个现有下游吸附性能预测任务的结果特征。我们的研究比较了体积沸石数据的自监督 3D 预训练、图像预训练的 2D ConvNet 和视觉转换器通过多视图和通道膨胀策略对 3D 的适应，以及在域外体积数据集上预训练的 3D ConvNet，以及手工制作的描述符和监督基线。使用我们的预训练和评估框架，我们发现…",
+      "authors": [
+        "Aaron Sun",
+        "Yachan Liu",
+        "Ping Yang",
+        "Peng Bai",
+        "Subhransu Maji"
+      ],
+      "published": "2026-11-06T18:55:34Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.09880v1",
+      "abs_url": "https://arxiv.org/abs/2611.09880v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09880v1"
+    },
+    {
+      "title": "Locating Contact on Tendon-Driven Continuum Robots From Tendon Measurements Alone via Constrained Moving Horizon Estimation",
+      "title_zh": "通过约束移动地平线估计仅通过肌腱测量来定位肌腱驱动连续体机器人上的接触点",
+      "summary": "Tendon-driven continuum robots can reach through constrained spaces, but contact along their bodies is invisible to the sensors at their motors. We show that this is a structural limitation rather than a tuning problem: the map from contact forces to tendon measurements has a null space of dimension at least seven, so no estimator that leaves the contact su…",
+      "summary_zh": "肌腱驱动的连续体机器人可以穿过受限空间，但其身体上的接触对于其电机上的传感器来说是不可见的。我们证明这是一个结构限制而不是一个调整问题：从接触力到肌腱测量的映射具有至少七维的零空间，因此没有自由接触支撑的估计器可以定位接触。然而，当障碍物几何形状已知时，非穿透性和互补性使得接触力可以局部识别，并且我们证明具有未知接触输入的所得系统是局部指数强可检测的。我们提出了一种约束移动水平估计器（MHE），它对这些条件进行编码，并作为每个样本的一个二次程序实时运行，并为其提供局部、模式稳健的稳定性结果。在两部分机器人在墙壁上按压和滑动的有限元基准中，估计器将接触定位为 0.9 mm，估计接触力为 0.22 N，而具有状态投影的调谐扩展卡尔曼滤波器 (EKF) 的接触力为 65 mm 和 0.72 N。估算器可以容忍障碍物位置和未建模的墙壁摩擦力的毫米级误差，在…",
+      "authors": [
+        "Haitham El-Hussieny"
+      ],
+      "published": "2026-11-06T18:53:10Z",
+      "category": "cs.RO",
+      "arxiv_id": "2611.09877v1",
+      "abs_url": "https://arxiv.org/abs/2611.09877v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09877v1"
+    },
+    {
+      "title": "On the Reliability of Majority-Vote Pseudo-Labels in Test-Time Reinforcement Learning",
+      "title_zh": "关于测试时强化学习中多数投票伪标签的可靠性",
+      "summary": "Test-time reinforcement learning (TTRL) adapts pretrained language models to unlabeled target-domain data using self-generated pseudo-labels, whose reliability remains poorly understood. We analyze majority-vote supervision for TTRL with online Direct Preference Optimization (DPO) and decompose its error into population-majority bias and prompt-dependent fi…",
+      "summary_zh": "测试时强化学习（TTRL）使用自行生成的伪标签将预训练的语言模型适应未标记的目标域数据，但其可靠性仍然知之甚少。我们通过在线直接偏好优化（DPO）分析了 TTRL 的多数投票监督，并将其误差分解为总体多数偏差和提示相关的有限推出变化。由于如果没有外部监督，人口多数偏差通常无法识别，因此我们专注于减轻有限推出变化的下游影响。我们提出 \\emph{Prompt-Conditional Distributionally Robust DPO (PC-Dr.DPO)}，它对观察到的投票可靠性进行提示内稳健重新加权，以使采样敏感提示的更新更加保守。我们进一步引入基于缓存的机制来减少在线适应过程中的自监督遗忘。在 6 个数学和知识密集型推理基准以及 5 个模型主干中，PC-Dr.DPO 在 30 个设置中的 24 个设置中匹配或优于最强的 TTRL 基线。",
+      "authors": [
+        "Haoyu Wang",
+        "Ru Wang",
+        "Yuanyuan Wang",
+        "Jiaxian Guo",
+        "Mingming Gong"
+      ],
+      "published": "2026-11-06T18:49:02Z",
+      "category": "cs.AI",
+      "arxiv_id": "2611.09872v1",
+      "abs_url": "https://arxiv.org/abs/2611.09872v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09872v1"
+    },
+    {
+      "title": "CodeQuant2: Enhanced Outlier Mitigation and Adaptive Clustering for Low-Precision LRMs",
+      "title_zh": "CodeQuant2：针对低精度 LRM 的增强型异常值缓解和自适应聚类",
+      "summary": "Large reasoning models (LRMs) improve task performance by generating longer intermediate reasoning traces, but this substantially increases inference costs and makes low-precision quantization increasingly important. However, aggressively quantized models often perform poorly on reasoning tasks. We observe larger activation fluctuations during the first dec…",
+      "summary_zh": "大型推理模型（LRM）通过生成更长的中间推理轨迹来提高任务性能，但这大大增加了推理成本，并使低精度量化变得越来越重要。然而，激进的量化模型在推理任务上通常表现不佳。我们在推理的第一个解码步骤中观察到较大的激活波动。忽略这些早期状态的校准可能会错过它们的激活波动。为了解决这些特定于推理的量化挑战，我们提出了 \\textbf{CodeQuant2}，这是一种用于低精度大型推理模型的基于聚类的 LUT 量化框架。 CodeQuant2 通过旋转和缩放来减轻激活异常值，使用聚类来表示非均匀权重分布，并根据每层的量化难度调整码本大小。在我们对推理时间激活行为的观察的指导下，CodeQuant2 进一步改进了校准样本选择，以更好地匹配实际的解码统计数据。与我们定制的 LUT CUDA 内核相结合，CodeQuant2 显着提高了推理基准的准确性，同时比 BF1…",
+      "authors": [
+        "Xingyu Liu",
+        "Xiangyang Yin",
+        "Tianhua Xia",
+        "Haiyu Wang",
+        "Sai Qian Zhang"
+      ],
+      "published": "2026-11-06T18:48:04Z",
+      "category": "cs.CL",
+      "arxiv_id": "2611.09868v1",
+      "abs_url": "https://arxiv.org/abs/2611.09868v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09868v1"
+    },
+    {
+      "title": "GRAC: Graph-Based Retrieval-Augmented Captioning for Surgical Scene Description",
+      "title_zh": "GRAC：基于图形的手术场景描述检索增强字幕",
+      "summary": "Purpose: Surgical operative reports support procedural documentation, surgical training, performance assessment, and workflow review. However, extracting meaningful information often requires extensive manual review and clinical expertise. Automated surgical scene descriptions could reduce this burden by leveraging recurring surgical activities and prior kn…",
+      "summary_zh": "目的：手术报告支持程序记录、手术培训、绩效评估和工作流程审查。然而，提取有意义的信息通常需要大量的人工审查和临床专业知识。自动化手术场景描述可以通过利用重复的手术活动和先验知识来减轻这种负担。方法：我们提出了 GRAC（基于图形的检索增强字幕），这是一种将手术场景表示为捕获仪器、动作和解剖结构之间关系的图形的框架。给定输入场景图，GRAC 学习从训练数据中检索相关的图-标题对。它比较检索到的示例和输入场景之间的仪器-组织相互作用，使用比较功能来在生成过程中条件检索到的标题表示。结果：在 EndoVis-18 基准测试中，GRAC 的 CIDEr-D 为 5.88，而 SGT 为 4.23，最强传统 Transformer 基准为 3.36。精确的仪器-动作-目标三重组准确率达到 52.6%，而 SGT 为 32.7%，最强传统基线为 26.2%。这…",
+      "authors": [
+        "Rochak Dhakal",
+        "Chen Zhao",
+        "Soup Cobb",
+        "Xin Qian",
+        "Xiaofeng Yang",
+        "Weihua Zhou"
+      ],
+      "published": "2026-11-06T18:47:23Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.09866v1",
+      "abs_url": "https://arxiv.org/abs/2611.09866v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09866v1"
+    },
+    {
+      "title": "Grasp-TAGS: Task-Aware Grasp Selection via Critic Distillation for Prehensile Loco-Manipulation",
+      "title_zh": "Grasp-TAGS：通过临界点蒸馏进行任务感知的抓取选择以进行预先的局部操作",
+      "summary": "Loco-manipulation, which requires mobile manipulators to coordinate locomotion and manipulation over long horizons, is a key capability for large-object rearrangement in applications such as service robotics and warehouse automation. Despite recent progress, reliably executing these tasks remains challenging because performance depends on complex robot-obje…",
+      "summary_zh": "运动操纵需要移动操纵器在长范围内协调运动和操纵，是服务机器人和仓库自动化等应用中大型物体重新排列的关键功能。尽管最近取得了进展，但可靠地执行这些任务仍然具有挑战性，因为性能取决于复杂的机器人-物体和物体-环境交互动力学。现有的方法要么通过基于模型的方法（通常需要准确的动力学模型），要么通过基于学习的方法来解决这一挑战，这些方法减少了这一要求，但通常假设固定或预定义的初始掌握。然而，不同的几何稳定抓握可能会导致下游操纵性能的显着不同。因此，我们提出了 Grasp-TAGS，一种用于目标条件大对象重新排列的任务感知抓取选择框架。我们跨多个初始抓取配置训练一个统一的基于 PPO 的强化学习策略，并将学习到的批评者提炼成一个轻量级抓取实用网络，该网络仅使用候选抓取配置和目标信息对候选抓取进行排名。在推理时，我们甚至在进行联系之前，就为下游策略选择具有最高预…",
+      "authors": [
+        "Xun Tu",
+        "Minghao Zou",
+        "Karthik Desingh"
+      ],
+      "published": "2026-11-06T18:44:33Z",
+      "category": "cs.RO",
+      "arxiv_id": "2611.09864v1",
+      "abs_url": "https://arxiv.org/abs/2611.09864v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09864v1"
+    },
+    {
+      "title": "Flow-Guided Target-Space Alignment via Path Consistency",
+      "title_zh": "通过路径一致性进行流引导目标空间对齐",
+      "summary": "Many multimodal alignment problems require mapping a source modality into a fixed space defined by a target modality, where the target space is not merely an intermediate embedding but is used directly for downstream analysis. In this setting, successful alignment should preserve both the global structure of the target distribution and the instance-level co…",
+      "summary_zh": "许多多模态对齐问题需要将源模态映射到目标模态定义的固定空间，其中目标空间不仅仅是中间嵌入，而且直接用于下游分析。在这种情况下，成功的对齐应该保留目标分布的全局结构以及在成对的源-目标训练数据中观察到的实例级对应关系。现有目标通常仅解决该目标的一部分：对比损失鼓励相对相似性，分布匹配损失提高边际一致性，点回归将每个源样本与其配对目标相匹配，而无需显式建模目标空间路径几何形状。我们提出了 FlowAlign，一种流引导的目标空间对齐方法，它将条件流匹配重新用作训练时间对齐信号而不是推理时间传输模型。 FlowAlign 使用学习到的流场来指导源端表示与固定目标空间的对齐，鼓励它们保留配对对应关系，同时保持与全局目标空间结构的兼容。我们进一步提供理论分析，展示 FlowAlign 如何通过控制端点精度和捕获局部目标空间几何形状来帮助改善配对对应关系。对合…",
+      "authors": [
+        "Ruizhi Yuan",
+        "Zeqiu Yu",
+        "Wei Gao",
+        "Wei Chen",
+        "Xiwei Tang",
+        "Lu Tang"
+      ],
+      "published": "2026-11-06T18:44:08Z",
+      "category": "cs.AI",
+      "arxiv_id": "2611.09863v1",
+      "abs_url": "https://arxiv.org/abs/2611.09863v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09863v1"
+    },
+    {
+      "title": "Health-System-Wide Mapping of Demographic Information in Routine Clinical Histopathology",
+      "title_zh": "常规临床组织病理学中整个卫生系统人口统计信息的绘制",
+      "summary": "The extent to which demographic-associated information is detectable across organs and disease states in routine clinical histopathology remains unclear. Here, we analyzed 1.3 million hematoxylin and eosin whole-slide images from 257,322 patients across 25 organs, using pathology foundation-model representations and multiple-instance learning to systematica…",
+      "summary_zh": "在常规临床组织病理学中，跨器官和疾病状态的人口统计相关信息的可检测程度仍不清楚。在这里，我们分析了来自 257,322 名患者 25 个器官的 130 万张苏木精和伊红全玻片图像，使用病理学基础模型表示和多实例学习来系统地绘制与性别、年龄组和自我报告种族相关的信息。在 69 个器官-人口统计组合中，人口统计属性大致可恢复，性别的泛器官平均 AUROC 为 0.828，年龄组的泛器官平均 AUROC 为 0.733，自我报告的种族为 0.662，并且器官之间存在显着差异。人口统计类别平衡产生的性能变化相对较小，而诊断文本集群内的评估则显示出适度的衰减。在基于诊断的分组训练下，人口统计相关信号在多个器官中仍然可检测到，包括胃组织中的性别（AUROC 0.865）、乳房中的年龄组（0.816）和皮肤中自我报告的种族（0.728）。对这些设置的文献引导分析…",
+      "authors": [
+        "Shengjia Chen",
+        "Ruchika Verma",
+        "Kevin Clare",
+        "Paula Restrepo",
+        "Jannes Jegminat",
+        "Eugenia Alleva"
+      ],
+      "published": "2026-11-06T18:34:51Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.09851v1",
+      "abs_url": "https://arxiv.org/abs/2611.09851v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09851v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "四维图新创想大会 | 以数据与算力为基，SEEWAY.AI驶向新一站 - 新华网客户端",
+      "summary": "四维图新创想大会 | 以数据与算力为基，SEEWAY.AI驶向新一站 新华网客户端",
+      "source": "新华网客户端",
+      "lang": "zh",
+      "published": "Mon, 09 Nov 2026 06:50:41 GMT",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPek5fYVF0U2NqU3p3OVJYSzdyMHIzcWJMeGRmQmJLTzREbTJKTmRkRDJONVoyNXZpZHpRcE9jMlUzcUVSX0NKTjlEOGREdmpka2VheGtUd3EyN1YweFZpQ2lzWDRURUJ5TUJXYzFBc1VneGR5dHEyVXJDNFdTdUdROTJLNm1BQ1lLbWtZRzYtUnkzNnRjY1hkOGNB?oc=5"
+    },
+    {
+      "title": "“星云星座计划”发布 我国太空算力网加快部署 - 东方财富",
+      "summary": "“星云星座计划”发布 我国太空算力网加快部署 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Mon, 09 Nov 2026 08:19:35 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBfaFVpNllGV3BvMWhmeWU4a0ZxYVVZcmM1OVhEOVRaV3JaUzIzWmhDNHZUZDVKVzJPMzJPMzRUTGQ0cWROdmM4dHRwWnRoMFktandKc1kwQm5CUmp0Mzcteg?oc=5"
+    },
+    {
+      "title": "“数字关员”AI智能体助企开展风险校验 - 中国新闻网",
+      "summary": "“数字关员”AI智能体助企开展风险校验 中国新闻网",
+      "source": "中国新闻网",
+      "lang": "zh",
+      "published": "Mon, 09 Nov 2026 07:43:07 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8xUlBQNlMzc0NCY0IyZmRNSWFEcXk1ajh5VW1LcTZldVBvaXl5N1FKU2s1Qlh4eU52VXNQN3ljLUhpRkx4VFVUeE02RVAyRlpQMFZDcnpCRUdEU3NTZlExOFhmUUpHdjFn?oc=5"
+    },
+    {
+      "title": "三诺生物连续九年进博“全勤” 小诺智能体呈现数智健康新实践 - 新华报业网",
+      "summary": "三诺生物连续九年进博“全勤” 小诺智能体呈现数智健康新实践 新华报业网",
+      "source": "新华报业网",
+      "lang": "zh",
+      "published": "Mon, 09 Nov 2026 09:05:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5rNHZFWUs4YVlFQkQxYlhZbU9NeGhiNVlNdjR5M0ROaXdaXzY1c2FMdjBVLU1vdHEwZnlJTGNZZnF4SzZIRVM4eE9HLWdfV3hLQV9fWklyMS1pdmRvLWgxTnNHQVV0ZHBvUFFz?oc=5"
+    },
+    {
+      "title": "走出算力圈，制造业也能用Token贷款了？ - 21财经",
+      "summary": "走出算力圈，制造业也能用Token贷款了？ 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Mon, 09 Nov 2026 09:52:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPQVl0NGFlNkl5bVVFeVkyMlA3SEk2MGF6ODVUcDJITjZjN3dvX0duQ0EwdUJyYzRVYVlVa0xNRWtUSDdlRkhmcGh4VnNMdDk4SlJsR3JBeDU2N0stRE5wT1hUenh4WHZlLURjQ2huYy1QaVJnY0ZnR1ZPRi1ueVlvYmc3b1pDM0NjVTF2TEwtcw?oc=5"
+    },
+    {
+      "title": "电报解读 - 财联社",
+      "summary": "电报解读 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Mon, 09 Nov 2026 10:17:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE94VDlYY01BNkhMNjNZQUpwSm9ZWlg1MWZyb1JsNTRVTXoxZ1ZoSDN5b2V0dnk2Nm5qOU1uQ2l3S1JtSUdxOXEzag?oc=5"
+    },
+    {
+      "title": "NeurIPS'26 | 只干预10个维度，给智能体穿上安全机甲，准确率超97% - 智源社区",
+      "summary": "NeurIPS'26 | 只干预10个维度，给智能体穿上安全机甲，准确率超97% 智源社区",
+      "source": "智源社区",
+      "lang": "zh",
+      "published": "Mon, 09 Nov 2026 10:20:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1FUHUwLWhGWnR6Y3I0SXlpLTZmVnFnN1E5VHh6YXJXUE5IRVRKOFhJN1lJUTdxeUp2dnVQVE50T0toZGwtZ3V2Wg?oc=5"
+    },
+    {
+      "title": "不能把整个安全体系押在大模型上：AI 分诊 CVE，人工审查仍不能少 - InfoQ.cn",
+      "summary": "不能把整个安全体系押在大模型上：AI 分诊 CVE，人工审查仍不能少 InfoQ.cn",
+      "source": "InfoQ.cn",
+      "lang": "zh",
+      "published": "Mon, 09 Nov 2026 08:04:58 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1FOVQwMGNzUjI2YmtNLS1JTmNyaE5FWlVkZ3pWM25CN1M2Y3UtNklCc0lvNzRpNVh3SVllTzdHTi11d2p6S1RqdTBYalB3VXgxQ1FsdS1VYktYRTNNZlE?oc=5"
+    },
+    {
+      "title": "2026移动网络大会 | 慧博云通与宝德计算联展，全面呈现“算力+算法+场景应用”全栈能力 - 中国日报网",
+      "summary": "2026移动网络大会 | 慧博云通与宝德计算联展，全面呈现“算力+算法+场景应用”全栈能力 中国日报网",
+      "source": "中国日报网",
+      "lang": "zh",
+      "published": "Mon, 09 Nov 2026 03:19:24 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5tY0xzZFJMdFJhQWJHQl9IZGdkbUFkSzAyQWV2SlU3aXFSQW9pWm56MkFXcmpyUlY3S0RmYXQxRTZQRUNnMVVKN1NRWEJldG5heHBoRWRIMXl6OFRhZDFqRk1ydlowX0sxXzZnR09ieGdDb3ZOLVJNbVVRYWo?oc=5"
+    },
+    {
+      "title": "全球AI大模型周调用量榜单中国产品拿下前五中四席，Q3公募基金加仓大模型龙头丨盘中雷达 - 东方财富",
+      "summary": "全球AI大模型周调用量榜单中国产品拿下前五中四席，Q3公募基金加仓大模型龙头丨盘中雷达 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Mon, 09 Nov 2026 06:19:11 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9vU3RGZkt5Vm5oSU8zQzNRaFZ5eEM5cWdrWHJJZFdDMjk2cmdNbmJRN3pnVVBvRG9TcGI0SVdIR3laWUJrckZHNEhNbFRRZWZ1NU5DWXBxZzJUUXhoSkNGOVlpdjMwZw?oc=5"
+    },
+    {
+      "title": "马斯克回应SpaceX与Anthropic算力合约争议 称交易为双向约束 - 观点网",
+      "summary": "马斯克回应SpaceX与Anthropic算力合约争议 称交易为双向约束 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Mon, 09 Nov 2026 09:44:46 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9WRGxYbVZLbUMzQVlCS3lTZ0FPcjJ5dFFTb0V6Mnl5STBub3ZZUTU1V0xKMW52N2czUVoyWEhMOXRRbjY2aks5MHpfeTdxdmh0ajNKQUxjek5fT1VhUUtKZkpR?oc=5"
+    },
+    {
+      "title": "AI算力采购潮起 公募数智化转型提速 - 21财经",
+      "summary": "AI算力采购潮起 公募数智化转型提速 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Mon, 09 Nov 2026 02:23:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQcUtOb3Ixcks0LXVYLTBGRS1OT3NYNXJkMlVIRktuRGdsbjRoamNleUtISElIRGF2a2xlZE1tMWhOX0t2Wm92ZU9PZnhIR0wwQTBxblpuVUxkbG5Ya29uVFJFX0FjTDVJelNMY040OFFOZlAxNlBZcDhmbXlINDV1RXMzOVRTRWdxTDE3Wlhadw?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 97510,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 79195,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57633,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 39366,
+      "language": "TypeScript"
+    },
+    {
+      "title": "next-ai-draw-io",
+      "type": "GitHub",
+      "summary_en": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "summary": "通过与人工智能聊天来绘制和编辑draw.io图表。 Web 应用程序、桌面应用程序以及用于 Claude Code、Cursor、Codex 和 VS Code 的 MCP 服务器。",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "author": "DayuanJiang",
+      "stars": 36813,
+      "language": "TypeScript"
+    },
+    {
+      "title": "rea",
+      "type": "GitHub",
+      "summary_en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "summary": "使用代理对任何内容进行逆向工程，从应用程序行为到本机二进制文件。",
+      "url": "https://github.com/morluto/rea",
+      "author": "morluto",
+      "stars": 445231,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 394230,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 314790,
+      "language": "Shell"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
