@@ -1,0 +1,502 @@
+{
+  "date": "2026-11-10",
+  "generated_at": "2026-11-10T10:36:32.421144+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
+      "title_zh": "重构：用于代理视觉推理的观察对齐多教师策略蒸馏",
+      "summary": "Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook useful tool-returned observations, while poorly grounded actions can limit the evidence available for subsequent distillation. We introduce…",
+      "summary_zh": "代理强化学习 (RL) 和多教师策略蒸馏 (MOPD) 为后期培训提供了补充途径。然而，对于视觉代理来说，工具的使用带来了两个相关的挑战。模型可能会忽略有用的工具返回的观察结果，而缺乏基础的行动可能会限制后续蒸馏可用的证据。我们引入了 Reframe，这是一个训练后框架，它将观察状态（而不仅仅是输出分布）视为对齐对象。首先，Ground-Drop-GRPO（GD-GRPO）通过证据感知奖励和随机删除原始视觉输入来训练空间和时间专家，鼓励他们获取有根据的证据并使用返回的观察结果。其次，观察门控 MOPD (OG-MOPD) 在推出过程中用规范的工具操作替换有缺陷的工具操作，并从修复的观察中恢复蒸馏。这两个阶段相辅相成，因为学习依赖工具返回的观测结果可以帮助政策从观测修复中受益。这两个阶段都不需要特定于任务的 SFT 冷启动。超过 14 个图像和视频基…",
+      "authors": [
+        "Haozhi Yuan",
+        "Handong Li",
+        "Yifan Zhang",
+        "Qianshan Wei"
+      ],
+      "published": "2026-11-09T18:59:54Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.12886v1",
+      "abs_url": "https://arxiv.org/abs/2611.12886v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.12886v1"
+    },
+    {
+      "title": "Beyond Modality Preference: Controlling Multimodal Arbitration under Modality Conflict in MLLMs",
+      "title_zh": "超越模态偏好：在 MLLM 模态冲突下控制多模态仲裁",
+      "summary": "Multimodal large language models (MLLMs) integrate information across modalities, but become unreliable when those modalities disagree. Under conflicting inputs, MLLMs may favor modalities that are not the most reliable for the task, thus motivating inference-time control of modality arbitration. We identify a small set of attention heads, termed arbitratio…",
+      "summary_zh": "多模态大语言模型 (MLLM) 集成了跨模态的信息，但当这些模态不一致时就会变得不可靠。在相互冲突的输入下，MLLM 可能会偏向于对任务来说不是最可靠的模态，从而激发模态仲裁的推理时间控制。我们确定了一小部分注意力头，称为仲裁头，它们会因果影响预测是否遵循视觉证据或文本证据。在此基础上，我们引入了一种轻量级、免训练的干预措施，使这些头在推理时偏向指定的可信模式。所识别的头部在校准集大小上是稳定的，并且在设置上是通用的，并且引导它们可以跨不同基准对模态依赖进行有效的双向控制。我们的研究结果确定了一种有效的控制机制，使 MLLM 预测与任务指定的模态优先级保持一致。代码可在 https://github.com/zhaoyingpan/modality- Arbitration 获取。",
+      "authors": [
+        "Zhaoying Pan",
+        "Shenyu Lu",
+        "Jun Hui Wong",
+        "Junyi Chai",
+        "Xiaoqian Wang"
+      ],
+      "published": "2026-11-09T18:59:36Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.12883v1",
+      "abs_url": "https://arxiv.org/abs/2611.12883v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.12883v1"
+    },
+    {
+      "title": "Grasping the Future: Joint 3D Hand-Object Forecasting From Internet Videos",
+      "title_zh": "把握未来：基于互联网视频的联合 3D 手部物体预测",
+      "summary": "To interact with an object, we need to anticipate both how it will move and how our hands should move with it. Human videos capture these relationships across everyday activities, offering a natural source for learning to predict future interactions. Learning from them requires recovering motion from completed interactions and using it to anticipate what co…",
+      "summary_zh": "为了与物体交互，我们需要预测它如何移动以及我们的手应该如何随之移动。人类视频捕捉了日常活动中的这些关系，为学习预测未来的互动提供了天然的来源。向它们学习需要从已完成的交互中恢复运动，并用它来预测接下来会发生什么。我们提出了 $\\textit{Grasping-the-Future}$，一个联合 3D 手部物体运动的统一生成模型，包括手腕运动、手指关节以及物体位置和方向。通过掩码时空完成和流匹配，我们为多个预测任务训练单个模型：预测未来的交互、预测给定物体运动的手部运动（反之亦然）、生成朝向所需最终物体姿势的两条轨迹，以及完成部分观察到的交互。我们明确地模拟手与物体的关系，并结合接触约束，以帮助在运动过程中保持抓握关系。为了从互联网视频中获得 3D 监督，我们开发了一个可扩展的管道，它将预训练的感知模型与联合几何优化相结合，以重建完整的交互。我们将这…",
+      "authors": [
+        "Rustin Soraki",
+        "Matthew Wallingford",
+        "Ryan Aby",
+        "Brandon Chee",
+        "Jason Ren",
+        "Ali Farhadi"
+      ],
+      "published": "2026-11-09T18:59:01Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.12879v1",
+      "abs_url": "https://arxiv.org/abs/2611.12879v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.12879v1"
+    },
+    {
+      "title": "Adaptive Quantization Preserves Fast Rates for TD Learning over Rate-Limited Channels",
+      "title_zh": "自适应量化在速率受限的通道上保持 TD 学习的快速速率",
+      "summary": "Motivated by reinforcement learning subject to communication constraints, we study a policy evaluation problem with linear function approximation over a rate-limited channel. In our setup, an agent interacting with an unknown environment (modeled as a Markov Decision Process) transmits quantized estimates of a temporal-difference (TD) learning update direct…",
+      "summary_zh": "在受通信约束的强化学习的推动下，我们研究了限速通道上线性函数逼近的策略评估问题。在我们的设置中，与未知环境交互的代理（建模为马尔可夫决策过程）通过有限容量通道将时间差（TD）学习更新方向的量化估计传输到服务器。我们的目标是研究当信道具有无限容量时可以在多大程度上保持可实现的统计收敛率。为此，我们提出了一种称为批量自适应量化 TD (BAQ-TD) 的新算法，该算法使用批处理来减少传输信息的方差，并使用自适应量化来编码创新。我们证明了 BAQ-TD 的高概率有限时间误差界限，并表明，在一定的有限信道容量之上，BAQ-TD 可以将未量化 TD 的收敛速度保持在对数因子范围内。具体来说，对于 $d$ 维值函数参数，我们确定在长度 $T$ 的范围内传输总共 $\\mathcal{O}(d \\log(T))$ 位足以实现 $\\tilde{\\mathcal{O}…",
+      "authors": [
+        "Sreejeet Maity",
+        "Aritra Mitra"
+      ],
+      "published": "2026-11-09T18:58:41Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.12878v1",
+      "abs_url": "https://arxiv.org/abs/2611.12878v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.12878v1"
+    },
+    {
+      "title": "Click3R: Interactive Stereo 3D Reconstruction with Sparse Correspondence Clicks",
+      "title_zh": "Click3R：具有稀疏对应点击的交互式立体 3D 重建",
+      "summary": "Despite impressive progress, existing feed-forward large 3D reconstruction models produce a single, irrevocable prediction. When these models fail, there is no mechanism to correct their mistakes. To address this limitation, we introduce Click3R, a framework for interactive geometric correction of feed-forward models using sparse human correspondence clicks…",
+      "summary_zh": "尽管取得了令人瞩目的进展，但现有的前馈大型 3D 重建模型只能产生单一的、不可撤销的预测。当这些模型失败时，没有机制可以纠正它们的错误。为了解决这个限制，我们引入了 Click3R，这是一个使用稀疏人类对应点击对前馈模型进行交互式几何校正的框架。给定用户提供的图像对和一小组跨视点对应，Click3R 通过轻量级点对应适配器将几何约束注入 3D 重建网络，使模型能够解决具有挑战性的场景中的歧义，例如重复纹理、对称结构、大视点变化或无纹理区域。为了评估交互式重建，我们策划了一个具有挑战性的基准，专门设计用于揭示现有前馈 3D 重建方法的故障模式。实验表明，Click3R 只需一次对应点击即可减少重建误差，从而提高标准基准和我们策划的基准测试的性能。我们的结果强调，稀疏的人类交互为纠正几何重建错误提供了有效且实用的机制。",
+      "authors": [
+        "Hao Gu",
+        "Jin Yao",
+        "Zezhou Cheng"
+      ],
+      "published": "2026-11-09T18:58:02Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.12875v1",
+      "abs_url": "https://arxiv.org/abs/2611.12875v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.12875v1"
+    },
+    {
+      "title": "HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents",
+      "title_zh": "HiVe-Mem：多模式代理的交错水平内存扩展和垂直证据组合",
+      "summary": "As multimodal agents accumulate increasingly long interaction histories, effectively retrieving and utilizing past information becomes critical for long-term interaction. Existing memory systems typically rely on semantic retrieval over compressed memories and expose predefined representations, which may miss relevant memories and overlook heterogeneous evi…",
+      "summary_zh": "随着多模式代理积累越来越长的交互历史，有效检索和利用过去的信息对于长期交互变得至关重要。现有的记忆系统通常依赖于压缩记忆的语义检索并公开预定义的表示，这可能会丢失相关记忆并忽略跨查询的异构证据需求。我们引入 \\textbf{\\hivemem}，一种多模态记忆框架，它将 \\textbf{\\textsc{H}} 或 \\textbf{\\textsc{i}} 区域记忆扩展与 \\textbf{\\textsc{Ve}} 真实证据组合交织在一起。对于水平记忆扩展，\\hivemem 使用文本和视觉锚点将记忆片段组织成关系图，通过相关邻居扩展语义检索的种子以恢复补充信息。对于垂直证据构成，每个检索到的记忆都保留多种证据形式，包括紧凑的摘要、标题、基础视觉视图、原始图像和交互历史。轻量级可训练选择器独立地为每个检索到的内存组成一个证据子集，从而实现异构多模态信息的查询…",
+      "authors": [
+        "Haozhen Zhang",
+        "Bohan Liu",
+        "Jianzhu Bao",
+        "Qingyuan Liu",
+        "Haodong Yue",
+        "Xiao Li"
+      ],
+      "published": "2026-11-09T18:57:00Z",
+      "category": "cs.CL",
+      "arxiv_id": "2611.12872v1",
+      "abs_url": "https://arxiv.org/abs/2611.12872v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.12872v1"
+    },
+    {
+      "title": "Vendi Anomaly Scores for Efficient and Accurate Anomaly Detection",
+      "title_zh": "Vendi 异常评分可实现高效、准确的异常检测",
+      "summary": "Anomaly detection (AD) is a critical for trustworthy machine learning and scientific discovery. Existing methods typically define anomalies through local density, isolation heuristics, or distance from a fitted distribution, making them sensitive to neighborhood scale, partitioning choices, or restrictive distributional assumptions. In this work, we introdu…",
+      "summary_zh": "异常检测 (AD) 对于值得信赖的机器学习和科学发现至关重要。现有方法通常通过局部密度、隔离启发式或距拟合分布的距离来定义异常，这使得它们对邻域尺度、分区选择或限制性分布假设敏感。在这项工作中，我们通过从多样性角度制定异常检测来引入新的范例。我们提出 $\\textit{Vendi 异常得分}$ (VAS)，它通过量化样本在删除时对数据集多样性的改变程度（通过 Vendi 得分来衡量）来检测异常。 VAS 捕获局部冗余和全局数据结构，而不依赖于密度估计或分区启发法。此外，VAS 不需要超参数调整，而是自动适应数据的频谱结构。 VAS 是非参数的，并且随数据集大小线性缩放。在源自 10 个源数据集和 4 个嵌入架构的 148 个基准嵌入数据集中，VAS 实现了最先进的 AD 性能。我们在大规模 ImageNet 实验中进一步验证了 VAS，随着污染率和…",
+      "authors": [
+        "Amey Pasarkar",
+        "Adji Bousso Dieng"
+      ],
+      "published": "2026-11-09T18:56:15Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.12871v1",
+      "abs_url": "https://arxiv.org/abs/2611.12871v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.12871v1"
+    },
+    {
+      "title": "Where Does Alignment Emerge and What Does It Mean? A Closer Look at the Platonic Representation Hypothesis",
+      "title_zh": "对齐在哪里出现以及意味着什么？仔细看看柏拉图表示假说",
+      "summary": "The Platonic Representation Hypothesis (PRH) suggests that neural networks are converging toward similar representation spaces. As language models become more capable, their representations are aligning with those of vision models. However, recent work has questioned whether this trend continues to hold for newer language models. Moreover, it has been shown…",
+      "summary_zh": "柏拉图表示假说（PRH）表明神经网络正在向相似的表示空间收敛。随着语言模型变得更加强大，它们的表示与视觉模型的表示一致。然而，最近的研究质疑这种趋势是否继续适用于较新的语言模型。此外，研究表明，表示相似性度量可能会受到模型深度和宽度的影响，需要适当的基线进行解释。在这项工作中，我们首先研究跨模型层和表示维度的单峰模型之间出现对齐的位置。接下来，我们发现，只要标题足够清晰且信息丰富，新模型的 PRH 能力调整趋势就会持续存在。最后，我们将跨模态对齐置于上下文中，在各种数据集上引入单模态和多模态基线。我们的结果表明，单模态模型的跨模态表示对齐可以超越显式对齐的视觉语言模型，但仍然远远落后于相同模态模型观察到的对齐。代码可在 https://github.com/ExplainableML/prh-closer-look 获取。",
+      "authors": [
+        "Julia Herbst",
+        "Simon Roschmann",
+        "Quentin Bouniot",
+        "Zeynep Akata"
+      ],
+      "published": "2026-11-09T18:53:57Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.12869v1",
+      "abs_url": "https://arxiv.org/abs/2611.12869v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.12869v1"
+    },
+    {
+      "title": "WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems",
+      "title_zh": "WorkflowArena：基于 LLM 的多代理系统中可执行工作流编排的基准测试",
+      "summary": "Large language model agents are increasingly deployed as multi-agent systems rather than as a standalone model operating within a single context. Recent agent harnesses allow the model to instantiate worker agents and to author the executable workflow that coordinates them, shifting the design of system structure from developers to the model at run time. Th…",
+      "summary_zh": "大型语言模型代理越来越多地部署为多代理系统，而不是作为在单个上下文中运行的独立模型。最近的代理工具允许模型实例化工作代理并编写协调它们的可执行工作流，从而在运行时将系统结构的设计从开发人员转移到模型。因此，该组织的质量构成了一种独特的能力，但现有的基准要么衡量端到端任务的完成情况，要么评估预先指定的结构下的协调。我们将这种功能正式化为工作流编排，并推出了 WorkflowArena，这是涵盖 8 个专业领域（从软件工程和形式数学到法律分析和 3D 制作）的 145 项长期任务的基准。每个任务指定一个初始工作空间和一个由相互依赖的组件组成的集成可交付成果，由隐藏的验证者进行评估。代理自主决定是否以及如何委派，并且所有委派都会被记录，从而能够对可交付成果的质量和基础工作的组织进行联合评估。对九个模型的实验表明，没有任何一种配置能够在所有领域中表现最佳，…",
+      "authors": [
+        "Zheng Jiang",
+        "Fang Niu",
+        "Bo Peng",
+        "Houde Qian",
+        "Wenyi Li",
+        "Deyao Hong"
+      ],
+      "published": "2026-11-09T18:45:28Z",
+      "category": "cs.CL",
+      "arxiv_id": "2611.12856v1",
+      "abs_url": "https://arxiv.org/abs/2611.12856v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.12856v1"
+    },
+    {
+      "title": "Mitigating Agentic Deception via Evaluation-Side Partially Observable Games",
+      "title_zh": "通过评估端部分可观察游戏减轻代理欺骗",
+      "summary": "As large language models become more capable agents, they can exhibit deceptive behaviors, cheating human for higher rewards while appearing helpful. We attribute this failure to evaluation-side partial observability, where models are evaluated mainly from final outcome, without checking the faithfulness of underlying reasoning, tool use, and environmental…",
+      "summary_zh": "随着大型语言模型变得更有能力，它们可以表现出欺骗行为，欺骗人类以获得更高的奖励，同时看起来很有帮助。我们将这种失败归因于评估方的部分可观察性，其中模型主要根据最终结果进行评估，而不检查潜在推理、工具使用和环境影响的真实性。先前的缓解措施通过预定义的评估者潜在信念空间或一次性监控来解决这种部分可观察性问题，这些方法不会扩展到自由形式的语言空间，并且容易受到逃避简单监控的更强欺骗的影响。在这项工作中，我们将欺骗缓解制定为评估方部分可观察的扩展形式博弈（e-PoG），这是一个最大最小框架，其中代理最大化奖励，监视器通过从完整交互轨迹中暴露欺骗来最小化代理的收益，以及固定验证器验证监视器的声明并将其转换为惩罚。我们将解决方案的概念定义为代理和监视器之间的子博弈完美监督均衡（SPOE），并证明了其在有限博弈中的存在性。拥有完善的验证者，每一个SPOE都是忠实…",
+      "authors": [
+        "Hanxiao Li",
+        "Shutong Liu",
+        "Yongjia Ma",
+        "Jiaming Ji",
+        "Juntao Dai",
+        "Shuning Zhang"
+      ],
+      "published": "2026-11-09T18:33:13Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.12835v1",
+      "abs_url": "https://arxiv.org/abs/2611.12835v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.12835v1"
+    },
+    {
+      "title": "Programming Prescience: Issues in Human Construction of Forecasting Bots",
+      "title_zh": "编程预见：预测机器人的人类构建问题",
+      "summary": "AI models' growing capacity for complex reasoning has made them attractive tools for forecasting, or the systematic prediction of the future based on past and present data. However, should AI forecasting systems be adopted, human builders will shoulder the work of building and evaluating them. In this paper, we explore what this work looks like with a quali…",
+      "summary_zh": "人工智能模型复杂推理能力的不断增强，使其成为有吸引力的预测工具，或者根据过去和现在的数据对未来进行系统预测。然而，如果采用人工智能预测系统，人类建设者将承担构建和评估它们的工作。在本文中，我们通过对 15 名预测机器人构建者进行定性访谈研究来探讨这项工作的内容，这些构建者是从最近一次人工智能预测竞赛的成功参与者中抽取的。我们的分析揭示了围绕以下方面的挑战：（1）调整机器人以获取事实研究，（2）实施连贯推理，以及（3）了解机器人的实际表现。在他们的工作过程中，构建者经常引入没有回报的复杂性，并以机会主义和零碎的方式进行测试。我们对他们面临的挑战的详细描述有助于澄清在即将到来的流程、工具和人类-人工智能团队预测创新中应针对哪些问题。",
+      "authors": [
+        "Priya Dhawka",
+        "Benjamin Wilson",
+        "Andrew Head"
+      ],
+      "published": "2026-11-09T18:33:13Z",
+      "category": "cs.HC",
+      "arxiv_id": "2611.12834v1",
+      "abs_url": "https://arxiv.org/abs/2611.12834v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.12834v1"
+    },
+    {
+      "title": "What the Loss Curve Misses: FP4 Pretraining Slows the Acquisition of Rare Facts",
+      "title_zh": "损失曲线遗漏了什么：FP4 预训练减慢了稀有事实的获取速度",
+      "summary": "Low-precision pretraining is usually judged by validation loss. We ask whether matching loss also means learning rare facts as efficiently. We train transformers from scratch with emulated 4-bit matrix multiplications on synthetic biographies with controlled exposure counts, on their own and mixed into web text. NVFP4 needs 1.32$\\times$ and 1.52$\\times$ as…",
+      "summary_zh": "低精度预训练通常通过验证损失来判断。我们询问匹配损失是否也意味着有效地学习稀有事实。我们从头开始训练变形金刚，在合成传记上进行模拟 4 位矩阵乘法，并控制曝光次数，将其单独训练并混合到网络文本中。 NVFP4 需要 1.32$\\times$ 和 1.52$\\times$ 的暴露次数来匹配 BF16 的召回率，而验证损失仅相差 0.5% 和 2%，当使用 BF16 矩阵乘法评估两个模型时，NVFP4 需要 1.26$\\times$ 和 1.30$\\times$。根据我们的初步数据，在匹配损失下，曝光成本约为 1.2 美元\\次$。零均值梯度噪声再现了仅量化后向传递的成本，这几乎不会改变损失。在两倍 NVFP4 误差的受控实验中，仅馈送到 Adam 的二阶矩估计的噪声会降低学习率，并且其成本会逐渐消失，而更新中的噪声会降低其信噪比，并在训练结束时带来约三…",
+      "authors": [
+        "Chang Lu",
+        "Mengjiao Zhang"
+      ],
+      "published": "2026-11-09T18:30:41Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.12832v1",
+      "abs_url": "https://arxiv.org/abs/2611.12832v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.12832v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "港股大模型双雄齐遭“杀估值” 为何空头资金却在加速大撤退？ - 财联社",
+      "summary": "港股大模型双雄齐遭“杀估值” 为何空头资金却在加速大撤退？ 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Tue, 10 Nov 2026 03:35:25 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE04S0JYLVE2c2Eza1QtTk9JZ3RzdE5pSHlHSTdZazg3bzhUaWpYQTEtRDRpU0Z4OU1HUTAxS096T3VwUkxpV0FSag?oc=5"
+    },
+    {
+      "title": "AI招商智能体“聚荷”首发 荷花池国际商贸产业园发布《产业地图》 - 四川新闻",
+      "summary": "AI招商智能体“聚荷”首发 荷花池国际商贸产业园发布《产业地图》 四川新闻",
+      "source": "四川新闻",
+      "lang": "zh",
+      "published": "Tue, 10 Nov 2026 09:45:23 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9mS3M1WXFmUE52VU8xa1p0UFBTN3UtWjRyT3NVenFEdXAwSEc1cGV3VVduTmVGQkxNYjJIeGE4TGYtMEdNMGQ0WnhyMFRCQ3lwd3Q3WEhXbGlrNjdZcHA3MmpzOA?oc=5"
+    },
+    {
+      "title": "国际中文教育智能体“汉桥”发布会在我校举行 - 北京语言大学新闻网",
+      "summary": "国际中文教育智能体“汉桥”发布会在我校举行 北京语言大学新闻网",
+      "source": "北京语言大学新闻网",
+      "lang": "zh",
+      "published": "Tue, 10 Nov 2026 10:05:09 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAteVhmSDlYa29pS3E1d3Z2TVd3MHZORXpnaXIxZlVybjMzWjkwQjhSdzIxdUVnRXp5a29zNEVwTEpZNXpteFFtTW96TFdkX3BQbks5dFZaQQ?oc=5"
+    },
+    {
+      "title": "国内头部运营商千亿算力投资落地 创业板算力ETF广发（158049）成交持续放量 - 证券之星",
+      "summary": "国内头部运营商千亿算力投资落地 创业板算力ETF广发（158049）成交持续放量 证券之星",
+      "source": "证券之星",
+      "lang": "zh",
+      "published": "Tue, 10 Nov 2026 05:28:56 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBYTzhqV01vTHZLVnc0bWd6TWV1OTkybkFmc3ZiMWJ3YzJvVVA5T1M4LUpteWVCemhYSTZzdnpHaU8yc18yYjg2eVNiX2dETXQ3RWVobzB4TE1yazc5b0xTRA?oc=5"
+    },
+    {
+      "title": "210万亿Token！全球AI大模型周调用量榜单出炉 中国产品拿下前五中四席 - 东方财富",
+      "summary": "210万亿Token！全球AI大模型周调用量榜单出炉 中国产品拿下前五中四席 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Tue, 10 Nov 2026 07:52:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB0T2RaWlNCZjB0dUtDMjZYZGpmNE5OalBuVFZOSVZpQ1U0RkZDZ0VoNUU4ZUI5V01ZajNoS2VfSF9KWHBuRmJhb1lKdlBNeVk3a1ViYnpNME9WSmtYdXBqck9weXhpUQ?oc=5"
+    },
+    {
+      "title": "好好聊聊“大模型” - 求是",
+      "summary": "好好聊聊“大模型” 求是",
+      "source": "求是",
+      "lang": "zh",
+      "published": "Tue, 10 Nov 2026 03:19:33 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBNbDhYYVkxWkFBc1NtRkdFRl82eDlhcUxOckw2UEZaSjdTblE3eWs4ejZEU3BkWjNCcXpPMVVpVzlsaXJwOWt5MWpGdFYySWVTRTRNQlBadU1LSlVOcFAzZHZET2lLSV9fZjlwYml1WGxCMHdzTEZ1YU9fYno?oc=5"
+    },
+    {
+      "title": "澜起科技称AI发展将带动算力存储及高速互连芯片需求持续增长 - 观点网",
+      "summary": "澜起科技称AI发展将带动算力存储及高速互连芯片需求持续增长 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Tue, 10 Nov 2026 08:08:11 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5jZXAwRzN0czBjcGVCb0xCVG5KWFdPbTJPNmJXQlRLNUZBbVdvbEtIQXhnb2ZybkVHcFRQMXI0SmgzQzVEX0lyQWdlXy1xc3ZEQjZYc2JtYksyd0cxcHhTaUVn?oc=5"
+    },
+    {
+      "title": "打造“AI查询智能体” 解锁“智能秒解”新技能 - 中国钢铁新闻网",
+      "summary": "打造“AI查询智能体” 解锁“智能秒解”新技能 中国钢铁新闻网",
+      "source": "中国钢铁新闻网",
+      "lang": "zh",
+      "published": "Tue, 10 Nov 2026 09:08:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE80X1lpUy1tMS1uRnlyUDI5V001OXdZeFhuMlhOdmNnRk56ZE01MlNWVzhQWDZXbkFqUloxOGNmdnQ0V0RQQk12S0sxSGpnY2c2Q2NzWVZ6UjdWQjdaLXdKdTh3SGZ6SzJ4dzZNODhpR1ozQQ?oc=5"
+    },
+    {
+      "title": "贯通数据、算力、场景，广西移动以“双网”联动促“六网”协同 - 广西新闻网",
+      "summary": "贯通数据、算力、场景，广西移动以“双网”联动促“六网”协同 广西新闻网",
+      "source": "广西新闻网",
+      "lang": "zh",
+      "published": "Tue, 10 Nov 2026 05:34:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE15TzdqdldBRTRWLW1BVXJ0M3g3MGgwYW9PRFB4b2JKWno1TkZ0Vy0xemtLUG5mYlRFRENnc2NwRGhxZjJBdHliazFTU1BQU3lhQmxPLXBUcHRjVGVCbEhPZmRES0lCbkpmUFhCQmJQaDJtX2RVcTZkTFByNEdCYWs?oc=5"
+    },
+    {
+      "title": "河北数字大脑赋能环京智算集群 - 首都文明网",
+      "summary": "河北数字大脑赋能环京智算集群 首都文明网",
+      "source": "首都文明网",
+      "lang": "zh",
+      "published": "Tue, 10 Nov 2026 08:00:40 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8zcHBVcFNPbjBGTGpITGNkSXM1NWJuQ29QRGdzS0JCMzJRdGpneE9sUENZbWMxemY5MzhrLTZHMWdqQjF0VklyeTF4Vl9tX1U2dTNtX0pTb1JxWUk?oc=5"
+    },
+    {
+      "title": "双11，AI替你砍价、下单还能防翻车？鼎捷这款“国家级”神器火了！ - 同花顺",
+      "summary": "双11，AI替你砍价、下单还能防翻车？鼎捷这款“国家级”神器火了！ 同花顺",
+      "source": "同花顺",
+      "lang": "zh",
+      "published": "Tue, 10 Nov 2026 10:05:07 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ZTVl6RmNiYno5c3AwdkxDV2RjekFkLTVFazY4YlBjVE92UWM5OS1Ha1RRaU1ldzVWUGJ6MmN1b3FGU2tEWTVaa0g5a09Bc3pOUmVHN1RxTWdhMnhSY2ItN3Rn?oc=5"
+    },
+    {
+      "title": "四维图新创想大会 | 以数据与算力为基，SEEWAY.AI驶向新一站 - 雷峰网",
+      "summary": "四维图新创想大会 | 以数据与算力为基，SEEWAY.AI驶向新一站 雷峰网",
+      "source": "雷峰网",
+      "lang": "zh",
+      "published": "Tue, 10 Nov 2026 07:23:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1iWXA4a1Q2c28zT3Qtb3YzRXV2WjJHVlVNRUdmZEVDWEstZU9ZRElNVlJNZ2JSZVBCZFhkb2FsU0NvakFoY1lQX3gyTWFpRk9NS1FUeHhKTGZuc0ZVNjNoQkE0d2FEOUF2S2ZpOFNLemxrQUdt?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 97554,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 79283,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57634,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 39402,
+      "language": "TypeScript"
+    },
+    {
+      "title": "next-ai-draw-io",
+      "type": "GitHub",
+      "summary_en": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "summary": "通过与人工智能聊天来绘制和编辑draw.io图表。 Web 应用程序、桌面应用程序以及用于 Claude Code、Cursor、Codex 和 VS Code 的 MCP 服务器。",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "author": "DayuanJiang",
+      "stars": 36854,
+      "language": "TypeScript"
+    },
+    {
+      "title": "rea",
+      "type": "GitHub",
+      "summary_en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "summary": "使用代理对任何内容进行逆向工程，从应用程序行为到本机二进制文件。",
+      "url": "https://github.com/morluto/rea",
+      "author": "morluto",
+      "stars": 448388,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 394274,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 315376,
+      "language": "Shell"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
