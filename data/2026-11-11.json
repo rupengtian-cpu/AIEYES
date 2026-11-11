@@ -1,0 +1,502 @@
+{
+  "date": "2026-11-11",
+  "generated_at": "2026-11-11T10:00:01.463537+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Training",
+      "title_zh": "医学图像分割：基础模型适应与特定任务训练",
+      "summary": "Foundation models pretrained on large natural-image collections are increasingly adapted for medical image segmentation, in the expectation that they will replace models trained for each task. Most comparisons, however, use data from the training distribution and a single task-specific baseline whose configuration is rarely justified, and therefore provide…",
+      "summary_zh": "在大型自然图像集合上预训练的基础模型越来越适合医学图像分割，期望它们将取代针对每个任务训练的模型。然而，大多数比较都使用来自训练分布的数据和单个特定于任务的基线，其配置很少合理，因此在新临床站点提供的性能证据有限。目前还不清楚基础模型的多少部分必须进行调整，以及是什么决定了这一点。我们采用了基础模型 DINOv2，其策略范围从仅调整其偏差项到全面微调，并将其与从头开始训练的 U-Net 和 ResU-Net 进行比较。实验涵盖结肠镜检查、乳腺超声检查和皮肤镜检查，并对来自培训源的保留数据和来自其他机构的独立数据集进行测试。改编后的基础模型在每个外部数据集上都具有更好的泛化能力。在训练分布中，当训练数据丰富时，特定任务模型仍然具有竞争力，并且更精确地描绘边界，而基础模型更经常错过小病变。只有一小部分基础模型需要自适应，并且所需的容量由成像领域而不是自…",
+      "authors": [
+        "Emre Kutlusan",
+        "Yongmin Li"
+      ],
+      "published": "2026-11-10T18:59:54Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.14519v1",
+      "abs_url": "https://arxiv.org/abs/2611.14519v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14519v1"
+    },
+    {
+      "title": "Toward Foundation Detection Models via Example-Based Grounding in EM-DETR",
+      "title_zh": "通过 EM-DETR 中基于示例的接地建立基础检测模型",
+      "summary": "DeepLearning (DL)-based Computer-Aided Diagnostic (CAD) systems have shown great promise in supporting clinicians, but their performance heavily depends on the availability of large, well-annotated datasets. In medical lesion detection, the scarcity of comprehensive, stan dardized annotations and the heterogeneity of existing datasets limit the development…",
+      "summary_zh": "基于深度学习 (DL) 的计算机辅助诊断 (CAD) 系统在支持临床医生方面显示出巨大的前景，但其性能在很大程度上取决于大型且注释良好的数据集的可用性。在医学病变检测中，全面、标准化注释的缺乏以及现有数据集的异质性限制了稳健基础模型的发展。在这项工作中，我们介绍了一种新颖的方法，通过集成针对解剖结构和异常注释的不同医学图像数据集来构建用于病变检测的多域基础模型。我们首先提出了一种学生-教师培训策略，以有效地将数据集与异构标签空间结合起来，减轻灾难性遗忘，并改进特征学习。此外，在我们之前提出的基于示例的 EM-DETR 框架的基础上，我们对其进行调整，以从多个特定领域的数据集中共同学习，从而实现跨模式的细粒度、示例驱动的检测。我们的模型实现了最先进的 (SOTA) 结果，在 CXR 的四个关键发现上，图像级 AUC 分数比之前的 SOTA 高出 1%…",
+      "authors": [
+        "Sheethal Bhat",
+        "Bogdan Georgescu",
+        "Awais Mansoor",
+        "Florin C. Ghesu",
+        "Sasa Grbic",
+        "Andreas Maier"
+      ],
+      "published": "2026-11-10T18:59:17Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.14518v1",
+      "abs_url": "https://arxiv.org/abs/2611.14518v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14518v1"
+    },
+    {
+      "title": "TorchCurves: Differentiable Parametric Curves",
+      "title_zh": "TorchCurves：可微参数曲线",
+      "summary": "We present TorchCurves, a PyTorch library that treats vector-valued parametric curves as learnable primitives. Its central operation maps batches of scalar inputs to points on curves represented in B-spline or Legendre polynomial bases, with differentiation through both inputs and coefficients. Curve coefficients can be optimized jointly with the surroundin…",
+      "summary_zh": "我们推出了 TorchCurves，这是一个 PyTorch 库，它将向量值参数曲线视为可学习的基元。其中心操作将批量标量输入映射到以 B 样条或勒让德多项式基表示的曲线上的点，并通过输入和系数进行区分。曲线系数可以与周围模型联合优化或由另一个网络生成。该库提供可训练的模块、可重用的基础模块和功能接口，支持从连续特征嵌入到 Kolmogorov-Arnold 网络和功能回归的应用程序。其实现将经典评估算法与矢量化 PyTorch 操作相结合，强调无需定制硬件内核的可读性和可维护性。时序实验将曲线评估与 NumPy 和 SciPy 进行比较，并将 KAN 训练与 EfficientKAN 进行比较，涵盖一系列问题规模。结果表明，这种通用性在计算上仍然可行，而开销却很大。该库可在 GitHub 上找到：https://github.com/alexsh…",
+      "authors": [
+        "Alex Shtoff"
+      ],
+      "published": "2026-11-10T18:58:52Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.14516v1",
+      "abs_url": "https://arxiv.org/abs/2611.14516v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14516v1"
+    },
+    {
+      "title": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
+      "title_zh": "AutoScaffold：用于语言模型强化学习的人工智能引导脚手架",
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) produces rich training experience, yet outcome rewards reduce each attempt to a single number and leave most of this information unused. Training-time scaffolds, such as strategies or hints added to the prompt during training, offer a natural way to turn this information into guidance, but their design a…",
+      "summary_zh": "具有可验证奖励的强化学习（RLVR）可产生丰富的训练经验，但结果奖励将每次尝试减少为单一数字，并且大部分信息未被使用。训练时的支架，例如在训练期间添加到提示中的策略或提示，提供了一种将这些信息转化为指导的自然方式，但它们的设计和适应很大程度上留给人类并针对特定领域进行定制。我们推出了 AutoScaffold，这是一个统一的 AI-for-AI 框架，可将学生的培训体验转变为自适应支架，只需极少的特定领域信息，并且在培训期间无需人工干预。冻结的教师会定期检查这种体验，诊断瓶颈，并以两种形式设计支架：（i）在一类任务中共享的策略，以及（ii）针对个人困难任务的提示，在学生学习时调整支持的内容和数量。评估时移除支架。我们将相同的框架应用于 ALFWorld、基于搜索的 QA、数学推理和 GPU 内核生成。在不使用脚手架的情况下进行评估时，使用 Auto…",
+      "authors": [
+        "Zijian Zhang",
+        "Rizhen Hu",
+        "Jiangweizhi Peng",
+        "Shiyang Li",
+        "Sujay Bhatt",
+        "Sihan Zeng"
+      ],
+      "published": "2026-11-10T18:58:46Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.14515v1",
+      "abs_url": "https://arxiv.org/abs/2611.14515v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14515v1"
+    },
+    {
+      "title": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
+      "title_zh": "对比发现：开放式科学发现与竞争性解释的比较",
+      "summary": "LLM agents are increasingly used for open-ended, data-driven scientific discovery, yet most of them evaluate hypotheses pointwise, testing an empirical claim $h$ only against its complement $\\neg h$. When evidence rejects $h$, the agent learns that one explanation is unlikely but not which alternative the evidence supports. To recover that alternative, we i…",
+      "summary_zh": "LLM 代理人越来越多地用于开放式、数据驱动的科学发现，但他们中的大多数人逐点评估假设，仅根据其补充 $\\neg h$ 测试经验主张 $h$。当证据拒绝 $h$ 时，智能体了解到一种解释不太可能，但不知道证据支持哪种替代方案。为了恢复这种替代方案，我们引入了对比发现，它用对比集取代了单一假设，这是一个与相互排斥和集体详尽的竞争解释配对的科学问题。每个实验都根据其证据如何在整个集合中重新分配信念来评分，当信念集中于一种解释时，问题就得到了解决。由于对比集仅更改智能体建议和评分的单位，因此现有智能体可以使用它们来重新评估其已收集的证据或指导其搜索。在六个领域中，信念变化最大的逐点候选者中，$89\\%$ 被拒绝。根据相同的证据，对比集将这些候选者中的 $73\\%$ 解析为特定的替代方案。当对比设置引导搜索时，在相同的实验预算下，代理比逐点惊喜多解决了 $…",
+      "authors": [
+        "Ziang Liu",
+        "James J. Kim",
+        "Yijia Dai",
+        "Jennifer J. Sun"
+      ],
+      "published": "2026-11-10T18:58:43Z",
+      "category": "cs.AI",
+      "arxiv_id": "2611.14514v1",
+      "abs_url": "https://arxiv.org/abs/2611.14514v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14514v1"
+    },
+    {
+      "title": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents",
+      "title_zh": "Pyrite：蛋白质配体姿势排名代理的构建和基准测试",
+      "summary": "Predicting how a ligand binds to its target is central to small-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains challenging. We introduce Pyrite, a pairwise pose-ranking benchmark comprising 1,500 pose pairs across diverse protein-ligand complexes. Expert chemists equipped…",
+      "summary_zh": "预测配体如何与其靶标结合是小分子药物发现的核心。现代折叠模型可以生成不同的候选姿势，但对这些候选姿势进行可靠排名仍然具有挑战性。我们引入了 Pyrite，这是一种成对姿势排名基准，包含跨不同蛋白质-配体复合物的 1,500 个姿势对。配备 3D 可视化工具和基于物理的评分的专业化学家的表现几乎是偶然的，这凸显了解释可用化学信号的难度。为了研究自动排名，我们引入了 PyriteRep（分子几何、蛋白质-配体相互作用和理化评分的结构化表示），并开发了两种基于 LLM 的代理：PyriteReasoner（通过基于文本的推理直接比较姿势）和 PyriteFeaturizer（生成可执行代码来构造逻辑回归的特征），可以选择合并从 LLM 子调用派生的特征。这些代理的准确率分别高达 67% 和 74%，超过了观察到的专家表现。 LLM 引导的特征发现通常优于…",
+      "authors": [
+        "Megha Srivastava",
+        "Michael H. Lim",
+        "Allison M. Keys",
+        "Pranav Murugan",
+        "Nate Gruver"
+      ],
+      "published": "2026-11-10T18:56:32Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.14511v1",
+      "abs_url": "https://arxiv.org/abs/2611.14511v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14511v1"
+    },
+    {
+      "title": "Continual-ARC: Measuring Skill Acquisition over a Working Lifetime",
+      "title_zh": "Continual-ARC：衡量工作生涯中技能的获取",
+      "summary": "Agent harnesses have emerged as a promising mechanism for continual learning, alongside test-time parametric learning. However, the current benchmarks have several limitations: they generally focus on a single applied domain, serve each instance only once, and assume a single family of learner, so memory-based and weight-based systems are rarely compared on…",
+      "summary_zh": "代理工具已成为一种有前途的持续学习机制，以及测试时参数学习。然而，当前的基准测试有几个局限性：它们通常专注于单个应用领域，仅为每个实例提供一次服务，并假设单个学习器家族，因此基于内存和基于权重的系统很少在同一规模上进行比较。我们提出了 Continual-ARC，这是一个由三个 ARC-AGI 版本构建的终身流，其任务不需要领域知识。相同的任务在休眠间隙后返回新实例，而新任务不断到达。在每种情况下，学习者都可以付费进行演示、提交答案或在安全带内进行操作，如果提交错误，则允许重试，这是付费的。每个实例都根据消耗的反馈预算份额进行评分。由于学习者可能会在实例之间保留任何内容，因此基于记忆的系统和基于权重的系统会按相同的标准进行评分。流结束后，学习者被冻结并在其遇到的任务的新实例上进行测试，以衡量记忆力，并在未见过的任务上进行测试，以衡量泛化能力。我们在…",
+      "authors": [
+        "Daniel Lenton"
+      ],
+      "published": "2026-11-10T18:55:01Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.14505v1",
+      "abs_url": "https://arxiv.org/abs/2611.14505v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14505v1"
+    },
+    {
+      "title": "Emergent Biological Capabilities in a Foundation Model for Molecular Interactions",
+      "title_zh": "分子相互作用基础模型中的新兴生物能力",
+      "summary": "Foundation models trained on large unlabeled corpora develop emergent capabilities, tasks that go beyond the training objective. We extend this paradigm to multimodal biology with Bonbon, a foundation model for molecular interactions trained on approximately 3.2 trillion tokens of paired protein-ligand sequences. From a single representation space, Bonbon e…",
+      "summary_zh": "在大型未标记语料库上训练的基础模型会开发出超出训练目标的突发能力和任务。我们利用 Bonbon 将这种范式扩展到多模态生物学，Bonbon 是一种分子相互作用的基础模型，经过约 3.2 万亿个配对蛋白质-配体序列标记的训练。从单个表示空间来看，Bonbon 在分辨率层次上表现出三种零样本涌现能力：功能（作用机制）、残基（结合位点定位，包括正构/变构辨别）和键（共价与非共价接合）。所有这三种功能都可以推广到分布外的复合体。 Bonbon 仅接受蛋白质配体序列的训练，没有任何特定任务的监督，也没有结构坐标。我们在 6 个模型尺度（从 42M 到 1.6B 参数）上进行了受控尺度实验；即使预训练损失平稳下降，评估的每项能力都在连续指标上显示出最大程度的急剧跳跃。这表明仅基于损失的缩放法则不足以预测零样本紧急能力何时可用。这里报告的功能是在以 1:2,00…",
+      "authors": [
+        "Adi Mashiach"
+      ],
+      "published": "2026-11-10T18:53:01Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.14504v1",
+      "abs_url": "https://arxiv.org/abs/2611.14504v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14504v1"
+    },
+    {
+      "title": "Measuring Robustness and Efficiency in a Connectome-Constrained Fly Visual System Model: Linking an Adversarial and a Perceptual Illusion",
+      "title_zh": "测量连接组约束的飞行视觉系统模型的鲁棒性和效率：将对抗性错觉和知觉错觉联系起来",
+      "summary": "Biological visual systems compute reliably under tight metabolic and wiring constraints, whereas artificial vision systems consume far more energy and can be sensitive to adversarial perturbations. Whether networks with brain-like wiring are more robust at lower computational cost is unclear. We address this by benchmarking a task-optimized, continuous-time…",
+      "summary_zh": "生物视觉系统在严格的代谢和布线限制下可靠地计算，而人工视觉系统消耗更多的能量并且对对抗性扰动敏感。具有类脑连接的网络是否在计算成本较低的情况下更强大尚不清楚。我们通过对受突触连接组 (FlyNet) 约束的飞行视觉系统的任务优化、连续时间循环神经网络与人工神经网络进行基准测试来解决这个问题。我们将其与 CNN、RAFT 和没有详细连接组约束的连续时间循环神经网络（sCTRNN、CTRNN）在可微 3D 渲染管道内的碰撞检测任务上进行比较。 FlyNet 在对抗上很容易受到攻击，但相对于其计算能力，它比 RAFT 更能抵抗常见的视频损坏，同时使用的 FLOP 数最多可减少五个数量级。在几乎所有测试的扰动中，CTRNN 仍然比 FlyNet 更稳健，这表明连接组限制通过其低边数而不是稳健性而有利于效率。重复性提高了 RAFT 中对白盒攻击的鲁棒性，而时…",
+      "authors": [
+        "Alexandre Garcia-Duran",
+        "Alejandro Rodriguez-Garcia",
+        "Manuel Molano-Mazón",
+        "Alexandre Hyafil",
+        "Srikanth Ramaswamy",
+        "Janne K. Lappalainen"
+      ],
+      "published": "2026-11-10T18:51:31Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.14498v1",
+      "abs_url": "https://arxiv.org/abs/2611.14498v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14498v1"
+    },
+    {
+      "title": "RS-JEPA: Remote Sensing Joint-Embedding Predictive Architecture with Scan-Path Views for Cross-Sensor Image Retrieval",
+      "title_zh": "RS-JEPA：具有扫描路径视图的遥感联合嵌入预测架构，用于跨传感器图像检索",
+      "summary": "Cross-sensor remote sensing image retrieval aims to find scenes with the same content across heterogeneous sensors, such as SAR and optical or panchromatic (PAN) and multispectral (MS) imagery, without manual labels. Existing self-supervised methods either reconstruct sensor-specific pixel detail, align each image only with its co-registered twin, or rely o…",
+      "summary_zh": "跨传感器遥感图像检索旨在跨异构传感器（例如 SAR 和光学或全色 (PAN) 和多光谱 (MS) 图像）查找具有相同内容的场景，而无需手动标记。现有的自监督方法要么重建传感器特定的像素细节，仅将每个图像与其共同配准的孪生图像对齐，要么依赖具有 118-173M 参数（最多 398M）的大型转换器。我们引入了 RS-JEPA，这是一个紧凑的联合嵌入预测框架，构建在两个传感器共享的 Vision Mamba 编码器上。由于状态空间编码器将图像读取为有序的补丁序列，因此我们提出了扫描路径视图，它将同一图像的两个读取顺序视为具有相同像素的两个视图，并按照一个顺序从另一个可见补丁中预测隐藏补丁。为了保持这种预测的挑战性，我们提出了对抗视图耦合（AVC），它学习可见补丁的最难分割，以及对齐两个传感器的场景相似性的邻域共识损失。对 SAR 光学（BEN-14K、…",
+      "authors": [
+        "Tanishq Rachamalla",
+        "Srishti Kaushik",
+        "Muhammad Attique Khan",
+        "Gustau Camps-Valls",
+        "Swalpa Kumar Roy"
+      ],
+      "published": "2026-11-10T18:51:05Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.14496v1",
+      "abs_url": "https://arxiv.org/abs/2611.14496v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14496v1"
+    },
+    {
+      "title": "Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents",
+      "title_zh": "代理评估框架的比较分析：企业分析代理的稳定性、检测和发现",
+      "summary": "Deploying LLM-based analytics agents in enterprise settings requires evaluation frameworks that can reliably detect failures across complex, multi-tool workflows. We present a three-phase comparative study of three evaluation frameworks, each representing a distinct evaluation paradigm (trace-based LLM judging, text-only LLM judging with red-teaming, and de…",
+      "summary_zh": "在企业环境中部署基于 LLM 的分析代理需要能够跨复杂的多工具工作流程可靠地检测故障的评估框架。我们提出了三个评估框架的三阶段比较研究，每个评估框架代表一种不同的评估范式（基于跟踪的 LLM 判断、带有红队的纯文本 LLM 判断以及确定性启发法），应用于使用冻结执行跟踪的受控研究环境中的两个分析代理。第一阶段通过重复测量来量化评估安全带的稳定性，发现 97% 的配置满足稳定性阈值，并且稳定性模式与代理无关。第 2 阶段测量 72 个真实测试用例的已知风险检测，其中基于跟踪的框架实现了最佳的精确率-召回率平衡 (F1=0.90)，而纯文本评估与召回率相匹配，但产生的误报增加了 5 倍。第 3 阶段评估未知风险发现，发现 24 个新故障，功能测试和安全红队之间的重叠为零。我们的结果表明，(1) 评估工具可用的信息决定了评估质量，(2) 功能和安全评估是…",
+      "authors": [
+        "Howard Zhang",
+        "Chuck Arvin",
+        "Logan Brown",
+        "Mihir Bhatia",
+        "Neelu Choudhary",
+        "Lily Miao"
+      ],
+      "published": "2026-11-10T18:50:06Z",
+      "category": "cs.AI",
+      "arxiv_id": "2611.14493v1",
+      "abs_url": "https://arxiv.org/abs/2611.14493v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14493v1"
+    },
+    {
+      "title": "Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game",
+      "title_zh": "重新搜索：通过两人提问游戏剖析法学硕士理念",
+      "summary": "Research ideation is iterative: researchers refine their ideas step by step based on feedback. Yet existing evaluations obscure this search process, making it difficult to understand how LLMs explore the space of research ideas and what limits their progress. We introduce Re-Search, which adapts the format of Twenty Questions to research ideation: given onl…",
+      "summary_zh": "研究构思是迭代的：研究人员根据反馈逐步完善他们的想法。然而，现有的评估掩盖了这一搜索过程，使得人们很难理解法学硕士如何探索研究思想的空间以及是什么限制了他们的进展。我们引入了重新搜索，它将二十个问题的格式适应研究构思：仅给出已发表论文的研究问题，模型必须通过询问是或否问题来重新发现论文的核心思想。 Re-Search 以 200 篇 ICML 2026 论文为基础，跟踪模型的想法在提出问题和接收二进制预言反馈时如何演变，从而将构思与执行隔离开来。在最近的 6 个法学硕士中，几乎所有进展都发生在 100 个问题中的前 30 个问题中，这在很大程度上决定了游戏的结局；此后，大多数模型都趋于稳定。通过对候选问题和假设空间的受控干预，我们发现瓶颈在于生成，而不是判断：模型在提出一个好想法或一个好问题时识别出一个好想法或一个好问题，但通常无法自行生成。我们进…",
+      "authors": [
+        "Muhan Gao",
+        "Hangxiao Zhu",
+        "Xinqi Su",
+        "Yu Zhang",
+        "Daniel Khashabi",
+        "Kuan-Hao Huang"
+      ],
+      "published": "2026-11-10T18:47:22Z",
+      "category": "cs.AI",
+      "arxiv_id": "2611.14487v1",
+      "abs_url": "https://arxiv.org/abs/2611.14487v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14487v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "减少对海量训练数据和人工编程的依赖，AI智能体让机器人快速掌握新技能 - 中国科技网",
+      "summary": "减少对海量训练数据和人工编程的依赖，AI智能体让机器人快速掌握新技能 中国科技网",
+      "source": "中国科技网",
+      "lang": "zh",
+      "published": "Wed, 11 Nov 2026 07:47:46 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5TYmlGSDVhWG5TOGx4OElleFpYSDhBZjloQU9xd2gyU3BnRWFkZnp4LXRXbHpaSzVNMUQ0UHVycldmTXZrMm5ENkZBYjNITF81Y2FWQlZ6ck95VjRwaFMtREJ4TkJua3lKcTFpNzhhWng?oc=5"
+    },
+    {
+      "title": "港股大模型双雄齐遭“杀估值” 为何空头资金却在加速大撤退？ - 财联社",
+      "summary": "港股大模型双雄齐遭“杀估值” 为何空头资金却在加速大撤退？ 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Wed, 11 Nov 2026 05:03:44 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE04S0JYLVE2c2Eza1QtTk9JZ3RzdE5pSHlHSTdZazg3bzhUaWpYQTEtRDRpU0Z4OU1HUTAxS096T3VwUkxpV0FSag?oc=5"
+    },
+    {
+      "title": "国际中文教育智能体“汉桥”在北京语言大学上线 - 新华网客户端",
+      "summary": "国际中文教育智能体“汉桥”在北京语言大学上线 新华网客户端",
+      "source": "新华网客户端",
+      "lang": "zh",
+      "published": "Wed, 11 Nov 2026 09:04:28 GMT",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcS1UY3ctb0UtazBXTUhIUWFnUXU4SUJUbTd4eUZLNTVYOEZyN3VTY2ZFTHJuQmpSanplNG80TFo1T1VJb3cwZEN5Si1oX1dTSEVSRXBIbDdtZU9Ta3VRUnRtU3F6QkVfN3dEUi1XNzFmaVlXaU05cWU3aXM1OGRsMFhqSkJTZ1V4UTlMQ0ZvaDRTYWs4dHNrdGRR?oc=5"
+    },
+    {
+      "title": "AI智能体科学家协作平台科学幻方1.5上线 - 中国科学院",
+      "summary": "AI智能体科学家协作平台科学幻方1.5上线 中国科学院",
+      "source": "中国科学院",
+      "lang": "zh",
+      "published": "Wed, 11 Nov 2026 07:22:44 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5aMUFRTVQ5YUtzZy10QzRRTVRQaTdfRGdkRll4cUk5S1liY2I1cFlrbXV5NU94RFJaZXJjanp5NXRoMWQ4WVVCNDB5VlBrTk1COVV0RXFvaG85QjZRLTZEcTFR?oc=5"
+    },
+    {
+      "title": "阿里确认分拆平头哥独立上市，国内AI芯片出货第二 - 观察者网",
+      "summary": "阿里确认分拆平头哥独立上市，国内AI芯片出货第二 观察者网",
+      "source": "观察者网",
+      "lang": "zh",
+      "published": "Wed, 11 Nov 2026 04:06:38 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBWVXFVaTI1Q3hRV1h2U2Q5VS1Ed01WY3FMdWQxM2p6Q3VaZWFnVnY5MENiY3EtY3VVczI2RjVZdUdOdEpFRXN3aUlSSDZ2ck8wbHZGeUVGX05OVEVoZUFMM2VMZHY?oc=5"
+    },
+    {
+      "title": "今天起，Gemini 4 Carbon 正式上线，但不是所有人都用得上 - 爱范儿",
+      "summary": "今天起，Gemini 4 Carbon 正式上线，但不是所有人都用得上 爱范儿",
+      "source": "爱范儿",
+      "lang": "zh",
+      "published": "Wed, 11 Nov 2026 00:26:39 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1vYW9QNEtHS3RsTEdaemkxaGIzelNuZlJLWUhpRTFRTld2S19xVjQtS19CRUtOSnBHWWVEUk5XTGF3Mk0?oc=5"
+    },
+    {
+      "title": "当海外算力链开始“算账”，A股AI机会何在？ - 21财经",
+      "summary": "当海外算力链开始“算账”，A股AI机会何在？ 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Wed, 11 Nov 2026 09:19:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOWnNuTG1iRXpBeTZSUzAxbjcxX2M4Q2lKU0p0dElpSzJtMVZFUjctbC01WTJ5cElPbFJYY2lYa0tpNGMzaXZjUERTdmRtOGhWcl9tc1RNNkJGXy1HVm8xTHZTaHIxb1BOdHB3QW53TzFEZDN2aC1nbVlwNFdobXVSRkhuQ1p3UlNWREtZcHQ3UQ?oc=5"
+    },
+    {
+      "title": "A股“逼空”！三大利好突袭 算力硬件股大幅反弹 - 东方财富",
+      "summary": "A股“逼空”！三大利好突袭 算力硬件股大幅反弹 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Wed, 11 Nov 2026 08:03:45 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBnS25YTmdrU0lWZkRqN2E0c29tYkNzRXN4RmpSRC01WFNZam9ERGpYWTVVNEVvOWl6S0NFZG9KdlF1YkpMaEtra3ZrSUVMeGlQSDZESjVIcmp0M1pvTG5OZ1g4Q0RIZw?oc=5"
+    },
+    {
+      "title": "银行布局算力基础设施 资源利用效率与运营成本受关注 - 中国经营网",
+      "summary": "银行布局算力基础设施 资源利用效率与运营成本受关注 中国经营网",
+      "source": "中国经营网",
+      "lang": "zh",
+      "published": "Wed, 11 Nov 2026 03:31:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JXzg1Z3JTLXFJZHE1N19NaDdXTXN0ZEFWWl9SNnFZWHM5eEd2RDBSM2luTGpMMjNjeFExMjJyeGRaTm1qLWNkWTBxTFZqa3ZvTFZKX19zSXFuZDFFWFNKQVN3?oc=5"
+    },
+    {
+      "title": "港科大研发自闭症儿童支援AI智能体 助力早期筛查与干预 - 中国新闻网",
+      "summary": "港科大研发自闭症儿童支援AI智能体 助力早期筛查与干预 中国新闻网",
+      "source": "中国新闻网",
+      "lang": "zh",
+      "published": "Wed, 11 Nov 2026 08:09:47 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE51bzAxN3E5S0Rtc215MnRKZURmem1GeDlpOTlBVmo1OGhUUDFlN1FicDRCRUdqR1lqYi1MNDJtVFhSdmxEc01MNjh5NU5NZGpwOFVUSVR6UjFHQWtFc1YtejQtaHNlUjBETHc?oc=5"
+    },
+    {
+      "title": "汉得 AI 中台入选 IDC 中国智能体平台领导者象限，让 AI 放手做，企业放心用！ - 同花顺",
+      "summary": "汉得 AI 中台入选 IDC 中国智能体平台领导者象限，让 AI 放手做，企业放心用！ 同花顺",
+      "source": "同花顺",
+      "lang": "zh",
+      "published": "Wed, 11 Nov 2026 04:41:57 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9wNE9xVThjWGlhelBwOEQxV0Jsd3ZRVlV4RVJERVVWa1dHUV90aUtENWxyd3dBMExqM2NtN2FLOEZiSjlfRU1zUXhEckczLXBFS2xVQ1drYVNpTllfM0JEQ0Vn?oc=5"
+    },
+    {
+      "title": "阿里造芯八年，长出一家百亿公司：平头哥六成GPU算力卖给外部 - 华尔街见闻",
+      "summary": "阿里造芯八年，长出一家百亿公司：平头哥六成GPU算力卖给外部 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Wed, 11 Nov 2026 06:30:24 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBPM1BMMkxyd2NZWDBwZ3E3bHFTeUJ1SzlqTlJEYzZJc3l3eXp3eEljX1NrbWxyQXg2SEtyaGhyYnZMX2xTaVJ0RlBDelNSYTZmemYw?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 97594,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 79338,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57632,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 39485,
+      "language": "TypeScript"
+    },
+    {
+      "title": "next-ai-draw-io",
+      "type": "GitHub",
+      "summary_en": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "summary": "通过与人工智能聊天来绘制和编辑draw.io图表。 Web 应用程序、桌面应用程序以及用于 Claude Code、Cursor、Codex 和 VS Code 的 MCP 服务器。",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "author": "DayuanJiang",
+      "stars": 36881,
+      "language": "TypeScript"
+    },
+    {
+      "title": "rea",
+      "type": "GitHub",
+      "summary_en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "summary": "使用代理对任何内容进行逆向工程，从应用程序行为到本机二进制文件。",
+      "url": "https://github.com/morluto/rea",
+      "author": "morluto",
+      "stars": 451211,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 394318,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 315966,
+      "language": "Shell"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
