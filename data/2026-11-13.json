@@ -1,0 +1,503 @@
+{
+  "date": "2026-11-13",
+  "generated_at": "2026-11-13T10:19:28.467670+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Unbundling Multimodal Vision Encoding",
+      "title_zh": "分拆多模态视觉编码",
+      "summary": "How multimodal language models should encode visual input remains up for debate. Most models use a pretrained vision encoder, while some recent recipes train the encoder from scratch with the language model or remove it entirely. Vision encoders bundle together three design choices: a visual prior from upstream pretraining, dedicated vision capacity, and pr…",
+      "summary_zh": "多模态语言模型应如何编码视觉输入仍有争议。大多数模型使用预训练的视觉编码器，而最近的一些方法使用语言模型从头开始训练编码器或完全删除它。视觉编码器将三种设计选择捆绑在一起：来自上游预训练的视觉先验、专用视觉容量以及该容量的预融合放置（即在多模式主干之前）。由于已发布的模型在数据、架构和计算方面也有所不同，因此对它们进行比较并不能隔离每个选择的效果。我们通过一个受控框架来理清这些选择，在该框架中，我们在通用数据上从头开始对所有模型进行预训练，并在匹配的生命周期计算中将它们与视觉问答和语言基准进行比较。我们发现视觉先验是不必要的；从头开始联合训练的编码器与预训练的编码器相当，无需单独的训练阶段。相反，重要的是专用的视觉能力：即使编码器的参数计数扩大了其主干网，无编码器的模型在视觉理解上仍落后。然而，这种能力不需要先于多模态融合，因为在早期骨干层中添加融…",
+      "authors": [
+        "Ellis Brown",
+        "Chris Hoang",
+        "Shengyi Qian",
+        "Shang-Wen Li",
+        "Mike Lewis",
+        "Marjan Ghazvininejad"
+      ],
+      "published": "2026-11-12T18:59:54Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.17334v1",
+      "abs_url": "https://arxiv.org/abs/2611.17334v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17334v1"
+    },
+    {
+      "title": "TTB: Test-time Baking for Efficient Rendering of Decoder-only View Synthesis Models",
+      "title_zh": "TTB：用于高效渲染仅解码器视图合成模型的测试时烘焙",
+      "summary": "Decoder-only Large View Synthesis Models (LVSMs) with KV-cache have recently achieved state-of-the-art quality by regressing novel views from neural networks without reconstructing 3D geometry, while Test-Time Training (TTT) layers save computation but sacrifice quality. We propose Test-Time Baking (TTB), a strategy that learns to bake global scene informat…",
+      "summary_zh": "具有 KV 缓存的仅解码器大视图综合模型 (LVSM) 最近通过从神经网络回归新视图而无需重建 3D 几何结构，实现了最先进的质量，而测试时训练 (TTT) 层节省了计算量，但牺牲了质量。我们提出了 Test-Time Baking (TTB)，这是一种学习将跨视图注意力的全局场景信息烘焙到轻量级 MLP 中的策略，从而实现快速、高保真的新颖视图解码。第一个关键是重新利用 TTT 的快速权重 MLP，从其输入输出对中明确学习跨视图注意力映射，而不是完全替换注意力，从而实现与 TTT 相同的渲染效率，同时提供更高的质量。第二个关键解决了上下文预填充和新颖视图渲染之间的模态不一致问题：我们将上下文标记分解为仅相机上下文渲染标记，作为 TTB 输入，并将具有图像内容的上下文真实标记作为 TTB 映射目标，确保烘焙的 MLP 免受上下文和新颖视图处理之间的…",
+      "authors": [
+        "Chin-Yang Lin",
+        "Ryo Hachiuma",
+        "Jaesung Choe",
+        "Min-Hung Chen",
+        "Yu-Chiang Frank Wang",
+        "Yen-Yu Lin"
+      ],
+      "published": "2026-11-12T18:59:52Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.17331v1",
+      "abs_url": "https://arxiv.org/abs/2611.17331v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17331v1"
+    },
+    {
+      "title": "ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research",
+      "title_zh": "ArchSpace：记录、回顾和引用 LLM 架构研究",
+      "summary": "Model architecture shapes the scaling behavior, training efficiency, and inference cost of LLMs, making it a central focus of both industry and academia. In industry, teams such as those behind DeepSeek, Qwen, and Kimi routinely introduce architectural innovations, yet public reports rarely document which ideas succeeded, which were abandoned, and why. In a…",
+      "summary_zh": "模型架构决定了法学硕士的扩展行为、训练效率和推理成本，使其成为行业和学术界的焦点。在业界，DeepSeek、Qwen 和 Kimi 等团队经常引入架构创新，但公开报告很少记录哪些想法成功、哪些想法被放弃以及原因。在学术界，有限的计算和不一致的基线通常将评估限制在小规模、单点比较，因此很难确定改进是否能在更大范围内保持或转化为更广泛的影响。 ArchSpace 作为记录、审查和引用架构研究的公共平台解决了这两个问题：每个提案都记录了其实验和推理，由社区审查，并由以后的工作引用。为了在昂贵的大规模训练之前评估想法，ArchSpace 利用缩放定律通过较小的实验来预测较大规模的模型损失，这是业界广泛采用的做法。我们提供使平台可用的初始参考：Qwen3.5 和 OLMo3 基线、拟合缩放法则以及可重复使用的训练配方。通过这次审查验证的想法反过来可以成为新的…",
+      "authors": [
+        "Jie Wang",
+        "Tong Zhu",
+        "JiaHao Kuang",
+        "Zhe Xu",
+        "Yunkai Chai",
+        "Dehong Zheng"
+      ],
+      "published": "2026-11-12T18:59:52Z",
+      "category": "cs.CL",
+      "arxiv_id": "2611.17332v1",
+      "abs_url": "https://arxiv.org/abs/2611.17332v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17332v1"
+    },
+    {
+      "title": "K2V: Generative Keyframing For Physically Plausible Video Generation",
+      "title_zh": "K2V：用于生成物理上合理的视频的生成关键帧",
+      "summary": "Video diffusion models are able to generate samples with high-quality appearance and textural qualities. However, content produced by these methods is known to exhibit significant physical errors. This is because, in a classical video generation setting, all physical reasoning must take place simultaneously and exclusively within the diffusion process.We pr…",
+      "summary_zh": "视频扩散模型能够生成具有高质量外观和纹理质量的样本。然而，众所周知，通过这些方法生成的内容会出现严重的物理错误。这是因为，在经典的视频生成设置中，所有物理推理必须同时且仅在扩散过程中进行。我们建议通过将物理推理任务重新分配到语言模型支持的关键帧生成模块上来解决这些问题，该模块允许在语言中进行显式推理，并在视频中的重要时刻对视频的外观进行细粒度控制。然后，我们使用这些关键帧来调节视频生成模型，将扩散模型的作用简化为在物理正确的中间状态之间进行插值的更简单的任务，而不是通过扩散来推断整个序列。结果表明，我们的方法明显优于现有方法，在Physics-IQ Verified 基准和 PhyGenBench 上实现了最先进的性能。",
+      "authors": [
+        "Felix O'Mahony",
+        "Daniel Olmeda Reino",
+        "Roberto Cipolla",
+        "Ayush Tewari"
+      ],
+      "published": "2026-11-12T18:59:09Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.17324v1",
+      "abs_url": "https://arxiv.org/abs/2611.17324v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17324v1"
+    },
+    {
+      "title": "AgentSSL: Can MLE Agents Leverage Unlabeled Data?",
+      "title_zh": "AgentSSL：MLE 代理可以利用未标记的数据吗？",
+      "summary": "Applying machine learning systems to new domains introduces bottlenecks in both labeled data acquisition and manual pipeline engineering. While recent MLE agents show promise in automating pipeline design, they have been studied almost exclusively in fully supervised settings, leaving them untested in realistic regimes where labeled data is scarce but unlab…",
+      "summary_zh": "将机器学习系统应用于新领域会在标记数据采集和手动管道工程中引入瓶颈。虽然最近的 MLE 代理在自动化管道设计方面表现出了希望，但它们几乎完全是在完全监督的环境中进行研究的，而没有在标记数据稀缺但未标记数据丰富的现实环境中进行测试。在这项工作中，我们引入了代理半监督学习（AgentSSL），将 SSL 视为一个程序搜索问题，并研究代理如何在有限的监督下导航这个空间。我们发现，即使在弱反馈和匹配计算的情况下，代理也可以合成结合和适应已建立的 SSL 技术的代码，在 12 种设置中的 8 种设置中超过最强的人类工程基线高达 +21.8%。然而，我们的结果表明程序选择是 AgentSSL 的关键瓶颈，根据代理的反馈指标进行选择时，性能下降多达 47%。为了系统地研究这一瓶颈，我们引入了 ProgramSelectBench，这是一个大规模基准测试，共有 1…",
+      "authors": [
+        "Ethan Lin",
+        "Akanksha Sarkar",
+        "Ziang Liu",
+        "Kristin Branson",
+        "Jennifer J. Sun"
+      ],
+      "published": "2026-11-12T18:59:06Z",
+      "category": "cs.AI",
+      "arxiv_id": "2611.17323v1",
+      "abs_url": "https://arxiv.org/abs/2611.17323v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17323v1"
+    },
+    {
+      "title": "Learning When Diffusion Language Models Should Regenerate",
+      "title_zh": "学习扩散语言模型何时应该再生",
+      "summary": "Remasking allows diffusion language models to revisit generated text, but effective correction requires knowing when and what to revise. Our diagnosis on Sudoku reveals two gaps. Hidden states contain error information that token confidence does not reliably expose, and remasking an isolated error usually reproduces it when the surrounding context remains f…",
+      "summary_zh": "重新掩码允许扩散语言模型重新访问生成的文本，但有效的纠正需要知道何时以及修改什么。我们对数独的诊断揭示了两个差距。隐藏状态包含令牌置信度无法可靠暴露的错误信息，并且当周围上下文保持固定时，重新屏蔽孤立的错误通常会重现该错误。这些发现激励了 DiVR，这是一个验证器，可以预测部分生成的序列是否会得出正确的答案。 DiVR 根据模型自身轨迹的最终正确性进行训练，决定何时重新生成块以及保留哪种替代方案，同时生成器本身保持不变。在使用 LLaDA-8B-Base 的五个推理基准上，DiVR 将微调生成器的平均准确度从 35.3\\% 提高到 43.4\\%，贪婪解码的成本为 $1.9$-$3.5\\times$，高于使用 $3.8$-$7.4\\times$ 的搜索基线。它还补充了监督微调和强化学习等后期训练，并推广到其他生成器，包括 Dream。",
+      "authors": [
+        "Minhae Oh",
+        "Jeonghye Kim",
+        "Jinwoo Koo",
+        "Yeongoon Kim",
+        "Jimin Seo",
+        "Minsik Seol"
+      ],
+      "published": "2026-11-12T18:58:50Z",
+      "category": "cs.CL",
+      "arxiv_id": "2611.17320v1",
+      "abs_url": "https://arxiv.org/abs/2611.17320v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17320v1"
+    },
+    {
+      "title": "Spatial Foundry: A Multimodal Dataset for Spatial Intelligence",
+      "title_zh": "Spatial Foundry：空间智能的多模态数据集",
+      "summary": "Spatial intelligence requires connecting visual observations to the geometry, objects, and persistent state of an environment. Images alone leave these relationships implicit, while disconnected annotations make it difficult to study appearance, camera motion, and scene changes under a common reference. We introduce Spatial Foundry, a collection of 5,280 fu…",
+      "summary_zh": "空间智能需要将视觉观察与环境的几何形状、物体和持久状态联系起来。单独的图像使这些关系隐式存在，而断开的注释使得在共同参考下研究外观、相机运动和场景变化变得困难。我们推出 Spatial Foundry，它是 5,280 个带家具的住宅 3D 场景配置的集合，具有可编辑资产和对齐的视觉、几何和时间数据。其模式包括平面图、透视和全景 RGB、公制深度、点云、网格、实例级 3D 边界框以及与视频配对的相机轨迹。共享场景坐标将跨视图和时间的观察结果链接起来；可编辑的源场景支持额外的摄像机路径和受控对象更改。我们描述了数据表示和构建工作流程，并讨论了平面图条件 3D 生成、几何重建、实例级感知、相机条件视频生成、共享世界建模和场景编辑中的应用。受控的摄像机和场景变化支持空间感知和世界模型研究。公共项目页面提供视频和交互式彩色点云预览。",
+      "authors": [
+        "Ethan Lin",
+        "Yang Song"
+      ],
+      "published": "2026-11-12T18:58:36Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.17318v1",
+      "abs_url": "https://arxiv.org/abs/2611.17318v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17318v1"
+    },
+    {
+      "title": "Sketching Language Models for Context Attribution",
+      "title_zh": "绘制上下文归因的语言模型",
+      "summary": "Context attribution asks how removing parts of a prompt changes a language model's output. We study leave-one-out (LOO) attribution for a prompt of $n$ tokens and a fixed measurement function. Computing all LOO values directly requires $n$ model evaluations. Under a stability assumption, our algorithm estimates all LOO values to error proportional to $\\vare…",
+      "summary_zh": "上下文归因询问删除部分提示如何改变语言模型的输出。我们研究了 $n$ 代币提示和固定测量函数的留一法 (LOO) 归因。直接计算所有 LOO 值需要 $n$ 模型评估。在稳定性假设下，我们的算法使用 $O(\\sqrt{\\log(1/\\varepsilon)}/\\varepsilon)$ 评估调用以恒定概率估计所有 LOO 值，其误差与 $\\varepsilon$ 成比例。为了补充我们的上限，我们证明了预言机模型中评估调用数量的匹配 $Ω(\\sqrt{\\log(1/\\varepsilon)}/\\varepsilon)$ 下限。根据经验，我们验证系数衰减与稳定性一致，并评估我们的草图算法在小型语言模型检索任务上的性能。从技术上讲，我们的结果基于算术电路的草图算法，其泰勒系数满足 Gunn [Gun26] 最近引入的稳定性条件。直接调整其前向微分草图将需…",
+      "authors": [
+        "Christopher Liaw",
+        "Aranyak Mehta",
+        "Grigoris Velegkas",
+        "Felix Zhou"
+      ],
+      "published": "2026-11-12T18:57:48Z",
+      "category": "cs.DS",
+      "arxiv_id": "2611.17313v1",
+      "abs_url": "https://arxiv.org/abs/2611.17313v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17313v1"
+    },
+    {
+      "title": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
+      "title_zh": "经典能量学习推理的速度比循环模型快 1,000 倍",
+      "summary": "Looped models have emerged as a prominent paradigm for reasoning, with successes on simple reasoning puzzles such as Sudoku-Extreme and Maze-Unique. However, these models can be unstable, slow to train, and use many parameters and FLOPs to solve simple puzzles. Descent on an energy not only mitigates these issues but also offers advantages: built-in early s…",
+      "summary_zh": "循环模型已成为推理的重要范式，并在简单的推理难题（例如数独-极限和迷宫-独特）上取得了成功。然而，这些模型可能不稳定，训练速度慢，并且使用许多参数和失败次数来解决简单的难题。能量下降不仅可以缓解这些问题，而且还具有以下优势：内置提前停止、适应问题难度的计算、无需通过求解器进行区分的快速训练，以及学习谜题约束的可解释权重。在这里，我们用 80 年代 Hopfield & Tank 能量的学习版本（我们称之为 CRAM）来演示这一点，在一个 GPU 上进行 42 毫秒和 132 毫秒的训练后，解决了 99.996% 的 Sudoku-Extreme 和 100% 的 Maze-Unique 测试难题，在这些任务上比循环模型快至少 1,000 倍。 CRAM 还在 Sudoku-Extreme 上以最高精度匹配基线循环模型，使用至少减少 282 倍的推理…",
+      "authors": [
+        "Benjamin Hoover",
+        "Hugh Blayney",
+        "James C. R. Whittington"
+      ],
+      "published": "2026-11-12T18:56:56Z",
+      "category": "cs.AI",
+      "arxiv_id": "2611.17309v1",
+      "abs_url": "https://arxiv.org/abs/2611.17309v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17309v1"
+    },
+    {
+      "title": "Quantifying structural stability of transparent models for general insurance pricing",
+      "title_zh": "量化一般保险定价透明模型的结构稳定性",
+      "summary": "The short duration of general insurance contracts leads to rapid distributional shifts in the data, warranting regular model updates. This process may yield a post-update model that differs considerably from the pre-update model in both predictions and structure. Structural stability is upstream of predictive stability, yet existing structural stability met…",
+      "summary_zh": "一般保险合同的期限短导致数据分布快速变化，需要定期更新模型。此过程可能会产生更新后模型，该模型在预测和结构方面与更新前模型有很大不同。结构稳定性位于预测稳定性的上游，但现有的结构稳定性指标大多仅限于简单的决策树。因此，我们首先引入函数透明度的概念，用预测函数来表征模型，该预测函数可以表示为主效应的单变量函数和成对相互作用的双变量函数的总和。然后，我们提出了均方形状函数距离，这是一种量化功能透明模型的结构稳定性的度量，这在精算科学中特别重要。使用三个公共汽车保险数据集，我们提出了一项基准研究，以证明我们的指标在识别稳定且准确的透明模型方面的有用性。具有中心数值协变量的广义线性模型是稳定的，可解释的增强机 (EBM) 提供了稳定性和性能之间的折衷。我们还发现，顺序建模和固定超参数等稳定策略可以显着提高 EBM 和 XGBoost 模型的稳定性，而对性能…",
+      "authors": [
+        "Félix Côté",
+        "Marie-Pier Côté"
+      ],
+      "published": "2026-11-12T18:56:54Z",
+      "category": "stat.ML",
+      "arxiv_id": "2611.17308v1",
+      "abs_url": "https://arxiv.org/abs/2611.17308v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17308v1"
+    },
+    {
+      "title": "Towards a Theory of Learnability via Debate",
+      "title_zh": "通过辩论走向可学习性理论",
+      "summary": "Debate has been recently proposed as a training protocol that is hoped to produce more aligned models even as model capabilities scale. The idea is that the human, instead of providing supervision in the form of labels, judges a debate between two models that compete to prove the correctness of opposite labels. It can be shown that functions of a much highe…",
+      "summary_zh": "最近有人提出辩论作为一种训练协议，希望即使在模型能力扩展的情况下也能产生更一致的模型。这个想法是，人类不是以标签的形式提供监督，而是判断两个模型之间的辩论，这两个模型竞争以证明相反标签的正确性。可以证明，与可以使用计算弱评估器直接评估的函数的复杂性相比，可以通过这种方式正确判断计算复杂性高得多的函数。这表明也许辩论可以用来向模型教授非常复杂的函数。然而，之前的工作在很大程度上忽略了这是一个训练协议这一事实，只是简单地为已知的法官分析了两名辩手之间正在进行的比赛。我们通过将其表述为在线学习问题，迈出了理解协议中隐含的学习问题的第一步。我们表明，一旦我们精确地表述了学习问题，在某些情况下，在与法官接触的情况下，最佳的学习方式不同于进行对抗性辩论。这促使我们定义协议的合作版本，我们使用组合维度来表征其可学习性。我们还考虑人类法官可能会犯错，有时会错误地判…",
+      "authors": [
+        "Tosca Lechner",
+        "Vinayak Pathak",
+        "Sivan Sabato",
+        "Ruth Urner"
+      ],
+      "published": "2026-11-12T18:55:58Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.17303v1",
+      "abs_url": "https://arxiv.org/abs/2611.17303v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17303v1"
+    },
+    {
+      "title": "FLEX-LBP: Learning Local Binary Patterns with Exact Binary Inference for Texture Classification",
+      "title_zh": "FLEX-LBP：通过精确的二元推理学习局部二元模式以进行纹理分类",
+      "summary": "Local Binary Patterns (LBP) remain among the most widely used texture descriptors, from industrial inspection to medical imaging. Yet their radius, sampling angles, color transform and thresholds are fixed by hand for each dataset. We present FLEX-LBP, which learns these parameters by backpropagation while every forward pass computes exact binary codes and…",
+      "summary_zh": "局部二值模式 (LBP) 仍然是从工业检查到医学成像中使用最广泛的纹理描述符之一。然而，每个数据集的半径、采样角度、颜色变换和阈值都是手动固定的。我们提出了 FLEX-LBP，它通过反向传播来学习这些参数，同时每次前向传递都计算精确的二进制代码和硬直方图计数。直通估计器仅在后向传递中起作用，因此部署的描述符是一个可解释的硬二进制 LBP，具有 90 个可学习参数和不变的推理成本。在六种颜色纹理基准的受控消融中，值得学习的组件是依赖于数据集的。一种配置在任何地方都保持不变，可以在冻结颜色变换的情况下学习几何形状和阈值。它在五个种子上平均将相同固定描述符的最近邻精度提高了 3.55 个点，在六个基准测试中的五个上显着提高，并且从未显着恶化。通过线性判别读出，获得 0.9 分；完全学习的描述符增益 2.7 并且具有最高的平均值。在六个基准测试中的五个上，…",
+      "authors": [
+        "Mohamed Alimoussa",
+        "Amal El Kaid"
+      ],
+      "published": "2026-11-12T18:55:56Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.17302v1",
+      "abs_url": "https://arxiv.org/abs/2611.17302v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17302v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "美股AI芯片板块集体上涨，安谋涨12.05%丨美股复盘 - 21财经",
+      "summary": "美股AI芯片板块集体上涨，安谋涨12.05%丨美股复盘 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Fri, 13 Nov 2026 08:29:42 GMT",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQl9XRkZWYWlud1NLbDlnV29SRzJPd3pkYzZ1a3dJbzZRa0RTaUdHRXNPYndBOG9qNHl0V2dKQ051Yl8tUldHRWs3bUtoR3oyNk15d3ZWMzI2ZkNsRUVQejRYcHdLYnZGNGVPZG9KTnBadmRlZXRWYjc3anhHYTRDZHpzbVVTbVZrMXZTRUxNbkV6TExZ?oc=5"
+    },
+    {
+      "title": "马来西亚拟立法加强数据中心监管 防止先进AI芯片转出口 - 财新",
+      "summary": "马来西亚拟立法加强数据中心监管 防止先进AI芯片转出口 财新",
+      "source": "财新",
+      "lang": "zh",
+      "published": "Fri, 13 Nov 2026 08:20:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1RUU1RSHZTQ0tfM1Q0clp3WXNmY3QzMFk3U0RjSnhzVkozMGhYLTdwYmpCQncxaktnaTJMLXAwTXdzOHpraEFMYnlrTmkwTFo2c0ZUOGdKSWF5Q3p3Q1pRanlwb01KbDQ?oc=5"
+    },
+    {
+      "title": "百度发布两款应用模型，李彦宏：会持续研发基础大模型 - 国际科技创新中心",
+      "summary": "百度发布两款应用模型，李彦宏：会持续研发基础大模型 国际科技创新中心",
+      "source": "国际科技创新中心",
+      "lang": "zh",
+      "published": "Fri, 13 Nov 2026 05:46:22 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1IY3BMR3pidGpDM0RpMFpXVmh2VGJsYTcyVmNpcXY2OTNVSG1pTkZxNEpmYzR1WmRhS1FTNmRseWFxZm5zejltUVMzT3FzcEtuT0x4enZ0YVFHU2lvcjVjTTFyVHZZZ2hLX21HWWYxc0k?oc=5"
+    },
+    {
+      "title": "自变量机器人GreatWall通用具身大模型完成备案 - 经济参考报",
+      "summary": "自变量机器人GreatWall通用具身大模型完成备案 经济参考报",
+      "source": "经济参考报",
+      "lang": "zh",
+      "published": "Fri, 13 Nov 2026 06:18:46 GMT",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxObzB3LV9lZm1MNnZTLXNGb0FPcV9nT3hXQXJfZkdSUldhZkJiMmdaaTlKVUlyOXFyV1NyR21vam5FM3p5OTJXMDluc0gzcUFMOTgwd3VWQ2pqUnp1NHhZekhYZnQxYWx3NENFNGxuUFZNRUdKX28yUGJpeGRJSTFwaA?oc=5"
+    },
+    {
+      "title": "AI芯片初创公司Cerebras上调全年业绩指引，盘前大涨超16% - 东方财富",
+      "summary": "AI芯片初创公司Cerebras上调全年业绩指引，盘前大涨超16% 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Fri, 13 Nov 2026 10:11:16 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1wbk9BVHQ3bGRlZ0l6V1JMVlR0YjB5TlFYeG9GVFcxeUQ1cDhOTTNoTEptUHlBWHhSZDBjX3hmMFpCeUhqa000R1Rrbk5SWk82Y181ckxSMFBwTVlzUGZNM2hpbUNpZw?oc=5"
+    },
+    {
+      "title": "AI系列之模型速评：Google：Gemini 4 Carbon面向付费用户开放，多工作流基准登顶并上线多智能体编排 - 证券之星",
+      "summary": "AI系列之模型速评：Google：Gemini 4 Carbon面向付费用户开放，多工作流基准登顶并上线多智能体编排 证券之星",
+      "source": "证券之星",
+      "lang": "zh",
+      "published": "Fri, 13 Nov 2026 07:12:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5DVXF3LU91SjdvaGx0VTh4d3VzdVRmc2ZZUll0QUh1TUxvMHEwRDhkcVRmUFZ6LWdhelNtTlV4cktudFZQWHJDSVdWcUQxazl6QUJmdVFxQ3ZMenhhSUNpZktB?oc=5"
+    },
+    {
+      "title": "2026世界中文大会发布国际中文教育垂直大模型 - 中国新闻网",
+      "summary": "2026世界中文大会发布国际中文教育垂直大模型 中国新闻网",
+      "source": "中国新闻网",
+      "lang": "zh",
+      "published": "Fri, 13 Nov 2026 07:51:25 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sbTNpeGN3MXBkY1gwTEhGRDI0cW0yTWplYVJIbml2N1ByakdnSTRUTlllNnNpeGFkWlRXaFEzLWJwVm54RElCQlpWNXJaQjlxMktlQ3RCQUlkUWptSkY4OXhtSnJNRlFa?oc=5"
+    },
+    {
+      "title": "盐城市公共算力服务平台上线 - www.ycnews.cn",
+      "summary": "盐城市公共算力服务平台上线 www.ycnews.cn",
+      "source": "www.ycnews.cn",
+      "lang": "zh",
+      "published": "Fri, 13 Nov 2026 09:41:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBZTFUybkxMa3ZDNUk2YWtmWWpoVFQ5bUNjbnA1cnhWdlF1X3dDT2x6cndVS0E0eGV6NEZWb2oza1BxTmhaREc3bFFjSDFySHFFUXFMbnJJX0JNdTV0T2pBVg?oc=5"
+    },
+    {
+      "title": "中国开源模型在全球产业端加速落地 - 人民日报",
+      "summary": "中国开源模型在全球产业端加速落地 人民日报",
+      "source": "人民日报",
+      "lang": "zh",
+      "published": "Thu, 12 Nov 2026 20:58:39 GMT",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPaEJwbXB3d0EtWU5tdkNObjZGS3BVZXJRODlyQU9ESjZsWWFlOElXNXViZDJ3eXFfcmhSYW82cmk1Mk92eVRrbk12SGQ4OG41XzVPRkEtVGNSZEJBRHM4S1hQMmxSWUhPeWU3NDFGa094RHZhY01fOGRmcmNwbVBPZ2VKSQ?oc=5"
+    },
+    {
+      "title": "Docker 呼吁通过隔离与治理保障智能体安全 - InfoQ 中文",
+      "summary": "Docker 呼吁通过隔离与治理保障智能体安全 InfoQ 中文",
+      "source": "InfoQ 中文",
+      "lang": "zh",
+      "published": "Fri, 13 Nov 2026 03:59:45 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBCZjVPV2lkRURtUGoxVGFFUEFVdUxNblZZcEhfQkpmSDFOY1BvYU5ocC0xSlJXX2FPdVgyTm5qcjZibTNqcGxaNWJhT3I1R19GajBlSUJkeFR3Z1RscWc?oc=5"
+    },
+    {
+      "title": "智能体加速落地，“数字员工”走进千行百业 - 新浪财经_金融信息服务商",
+      "summary": "智能体加速落地，“数字员工”走进千行百业 新浪财经_金融信息服务商",
+      "source": "新浪财经_金融信息服务商",
+      "lang": "zh",
+      "published": "Fri, 13 Nov 2026 09:49:28 GMT",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeWdqNjBLaE9iVzBjT0dTQm8wMlotN2QyU2dyRDN6VlJKT1h5T1BmVEZJcUpKVnlnUnFVYndzUWdlZWZJM3lZQVRmeFh0OHA2cHE3STRHUzNaTElSZFZFQjh6eFQ1MnlfWnBHWkpRN2g4emhhTmx3MldkT0dHMkhSWXlQTGkycFJXakxaTnozOEJxMUk1bGxtMw?oc=5"
+    },
+    {
+      "title": "Anthropic估值缩水，压力给到国内大模型公司 - ThePaper.cn",
+      "summary": "Anthropic估值缩水，压力给到国内大模型公司 ThePaper.cn",
+      "source": "ThePaper.cn",
+      "lang": "zh",
+      "published": "Fri, 13 Nov 2026 07:14:02 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE85VllTLUt2bUhCMnp2dW1oRWc5bjBsa1o2UVFsWGhuUlNuODV3QWh1YXNZRk9JaXlGSDlFR0dpbTJ5OXl1SGVSNHl5Q090OVRBcmthaVBCU0UxWHJ4VmU4TQ?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 97676,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 79528,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57636,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 39582,
+      "language": "TypeScript"
+    },
+    {
+      "title": "next-ai-draw-io",
+      "type": "GitHub",
+      "summary_en": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "summary": "通过与人工智能聊天来绘制和编辑draw.io图表。 Web 应用程序、桌面应用程序以及用于 Claude Code、Cursor、Codex 和 VS Code 的 MCP 服务器。",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "author": "DayuanJiang",
+      "stars": 36926,
+      "language": "TypeScript"
+    },
+    {
+      "title": "rea",
+      "type": "GitHub",
+      "summary_en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "summary": "使用代理对任何内容进行逆向工程，从应用程序行为到本机二进制文件。",
+      "url": "https://github.com/morluto/rea",
+      "author": "morluto",
+      "stars": 456323,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 394426,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 316988,
+      "language": "Shell"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
