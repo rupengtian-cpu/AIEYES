@@ -1,0 +1,503 @@
+{
+  "date": "2026-11-14",
+  "generated_at": "2026-11-14T09:39:42.201538+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Unbundling Multimodal Vision Encoding",
+      "title_zh": "",
+      "summary": "How multimodal language models should encode visual input remains up for debate. Most models use a pretrained vision encoder, while some recent recipes train the encoder from scratch with the language model or remove it entirely. Vision encoders bundle together three design choices: a visual prior from upstream pretraining, dedicated vision capacity, and pr…",
+      "summary_zh": "",
+      "authors": [
+        "Ellis Brown",
+        "Chris Hoang",
+        "Shengyi Qian",
+        "Shang-Wen Li",
+        "Mike Lewis",
+        "Marjan Ghazvininejad"
+      ],
+      "published": "2026-11-12T18:59:54Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.17334v1",
+      "abs_url": "https://arxiv.org/abs/2611.17334v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17334v1"
+    },
+    {
+      "title": "TTB: Test-time Baking for Efficient Rendering of Decoder-only View Synthesis Models",
+      "title_zh": "",
+      "summary": "Decoder-only Large View Synthesis Models (LVSMs) with KV-cache have recently achieved state-of-the-art quality by regressing novel views from neural networks without reconstructing 3D geometry, while Test-Time Training (TTT) layers save computation but sacrifice quality. We propose Test-Time Baking (TTB), a strategy that learns to bake global scene informat…",
+      "summary_zh": "",
+      "authors": [
+        "Chin-Yang Lin",
+        "Ryo Hachiuma",
+        "Jaesung Choe",
+        "Min-Hung Chen",
+        "Yu-Chiang Frank Wang",
+        "Yen-Yu Lin"
+      ],
+      "published": "2026-11-12T18:59:52Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.17331v1",
+      "abs_url": "https://arxiv.org/abs/2611.17331v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17331v1"
+    },
+    {
+      "title": "ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research",
+      "title_zh": "",
+      "summary": "Model architecture shapes the scaling behavior, training efficiency, and inference cost of LLMs, making it a central focus of both industry and academia. In industry, teams such as those behind DeepSeek, Qwen, and Kimi routinely introduce architectural innovations, yet public reports rarely document which ideas succeeded, which were abandoned, and why. In a…",
+      "summary_zh": "",
+      "authors": [
+        "Jie Wang",
+        "Tong Zhu",
+        "JiaHao Kuang",
+        "Zhe Xu",
+        "Yunkai Chai",
+        "Dehong Zheng"
+      ],
+      "published": "2026-11-12T18:59:52Z",
+      "category": "cs.CL",
+      "arxiv_id": "2611.17332v1",
+      "abs_url": "https://arxiv.org/abs/2611.17332v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17332v1"
+    },
+    {
+      "title": "K2V: Generative Keyframing For Physically Plausible Video Generation",
+      "title_zh": "",
+      "summary": "Video diffusion models are able to generate samples with high-quality appearance and textural qualities. However, content produced by these methods is known to exhibit significant physical errors. This is because, in a classical video generation setting, all physical reasoning must take place simultaneously and exclusively within the diffusion process.We pr…",
+      "summary_zh": "",
+      "authors": [
+        "Felix O'Mahony",
+        "Daniel Olmeda Reino",
+        "Roberto Cipolla",
+        "Ayush Tewari"
+      ],
+      "published": "2026-11-12T18:59:09Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.17324v1",
+      "abs_url": "https://arxiv.org/abs/2611.17324v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17324v1"
+    },
+    {
+      "title": "AgentSSL: Can MLE Agents Leverage Unlabeled Data?",
+      "title_zh": "",
+      "summary": "Applying machine learning systems to new domains introduces bottlenecks in both labeled data acquisition and manual pipeline engineering. While recent MLE agents show promise in automating pipeline design, they have been studied almost exclusively in fully supervised settings, leaving them untested in realistic regimes where labeled data is scarce but unlab…",
+      "summary_zh": "",
+      "authors": [
+        "Ethan Lin",
+        "Akanksha Sarkar",
+        "Ziang Liu",
+        "Kristin Branson",
+        "Jennifer J. Sun"
+      ],
+      "published": "2026-11-12T18:59:06Z",
+      "category": "cs.AI",
+      "arxiv_id": "2611.17323v1",
+      "abs_url": "https://arxiv.org/abs/2611.17323v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17323v1"
+    },
+    {
+      "title": "Learning When Diffusion Language Models Should Regenerate",
+      "title_zh": "",
+      "summary": "Remasking allows diffusion language models to revisit generated text, but effective correction requires knowing when and what to revise. Our diagnosis on Sudoku reveals two gaps. Hidden states contain error information that token confidence does not reliably expose, and remasking an isolated error usually reproduces it when the surrounding context remains f…",
+      "summary_zh": "",
+      "authors": [
+        "Minhae Oh",
+        "Jeonghye Kim",
+        "Jinwoo Koo",
+        "Yeongoon Kim",
+        "Jimin Seo",
+        "Minsik Seol"
+      ],
+      "published": "2026-11-12T18:58:50Z",
+      "category": "cs.CL",
+      "arxiv_id": "2611.17320v1",
+      "abs_url": "https://arxiv.org/abs/2611.17320v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17320v1"
+    },
+    {
+      "title": "Spatial Foundry: A Multimodal Dataset for Spatial Intelligence",
+      "title_zh": "",
+      "summary": "Spatial intelligence requires connecting visual observations to the geometry, objects, and persistent state of an environment. Images alone leave these relationships implicit, while disconnected annotations make it difficult to study appearance, camera motion, and scene changes under a common reference. We introduce Spatial Foundry, a collection of 5,280 fu…",
+      "summary_zh": "",
+      "authors": [
+        "Ethan Lin",
+        "Yang Song"
+      ],
+      "published": "2026-11-12T18:58:36Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.17318v1",
+      "abs_url": "https://arxiv.org/abs/2611.17318v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17318v1"
+    },
+    {
+      "title": "Sketching Language Models for Context Attribution",
+      "title_zh": "",
+      "summary": "Context attribution asks how removing parts of a prompt changes a language model's output. We study leave-one-out (LOO) attribution for a prompt of $n$ tokens and a fixed measurement function. Computing all LOO values directly requires $n$ model evaluations. Under a stability assumption, our algorithm estimates all LOO values to error proportional to $\\vare…",
+      "summary_zh": "",
+      "authors": [
+        "Christopher Liaw",
+        "Aranyak Mehta",
+        "Grigoris Velegkas",
+        "Felix Zhou"
+      ],
+      "published": "2026-11-12T18:57:48Z",
+      "category": "cs.DS",
+      "arxiv_id": "2611.17313v1",
+      "abs_url": "https://arxiv.org/abs/2611.17313v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17313v1"
+    },
+    {
+      "title": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
+      "title_zh": "",
+      "summary": "Looped models have emerged as a prominent paradigm for reasoning, with successes on simple reasoning puzzles such as Sudoku-Extreme and Maze-Unique. However, these models can be unstable, slow to train, and use many parameters and FLOPs to solve simple puzzles. Descent on an energy not only mitigates these issues but also offers advantages: built-in early s…",
+      "summary_zh": "",
+      "authors": [
+        "Benjamin Hoover",
+        "Hugh Blayney",
+        "James C. R. Whittington"
+      ],
+      "published": "2026-11-12T18:56:56Z",
+      "category": "cs.AI",
+      "arxiv_id": "2611.17309v1",
+      "abs_url": "https://arxiv.org/abs/2611.17309v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17309v1"
+    },
+    {
+      "title": "Quantifying structural stability of transparent models for general insurance pricing",
+      "title_zh": "",
+      "summary": "The short duration of general insurance contracts leads to rapid distributional shifts in the data, warranting regular model updates. This process may yield a post-update model that differs considerably from the pre-update model in both predictions and structure. Structural stability is upstream of predictive stability, yet existing structural stability met…",
+      "summary_zh": "",
+      "authors": [
+        "Félix Côté",
+        "Marie-Pier Côté"
+      ],
+      "published": "2026-11-12T18:56:54Z",
+      "category": "stat.ML",
+      "arxiv_id": "2611.17308v1",
+      "abs_url": "https://arxiv.org/abs/2611.17308v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17308v1"
+    },
+    {
+      "title": "Towards a Theory of Learnability via Debate",
+      "title_zh": "",
+      "summary": "Debate has been recently proposed as a training protocol that is hoped to produce more aligned models even as model capabilities scale. The idea is that the human, instead of providing supervision in the form of labels, judges a debate between two models that compete to prove the correctness of opposite labels. It can be shown that functions of a much highe…",
+      "summary_zh": "",
+      "authors": [
+        "Tosca Lechner",
+        "Vinayak Pathak",
+        "Sivan Sabato",
+        "Ruth Urner"
+      ],
+      "published": "2026-11-12T18:55:58Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.17303v1",
+      "abs_url": "https://arxiv.org/abs/2611.17303v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17303v1"
+    },
+    {
+      "title": "FLEX-LBP: Learning Local Binary Patterns with Exact Binary Inference for Texture Classification",
+      "title_zh": "",
+      "summary": "Local Binary Patterns (LBP) remain among the most widely used texture descriptors, from industrial inspection to medical imaging. Yet their radius, sampling angles, color transform and thresholds are fixed by hand for each dataset. We present FLEX-LBP, which learns these parameters by backpropagation while every forward pass computes exact binary codes and…",
+      "summary_zh": "",
+      "authors": [
+        "Mohamed Alimoussa",
+        "Amal El Kaid"
+      ],
+      "published": "2026-11-12T18:55:56Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.17302v1",
+      "abs_url": "https://arxiv.org/abs/2611.17302v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.17302v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "银行算力账单变厚之后：从买设备到买能力，产业链角色正在改写 - 同花顺财经",
+      "summary": "银行算力账单变厚之后：从买设备到买能力，产业链角色正在改写 同花顺财经",
+      "source": "同花顺财经",
+      "lang": "zh",
+      "published": "Sat, 14 Nov 2026 08:35:01 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1mWVM2WHBjd0ZvZ3JMMkNTZDhFbHVKUW1DREdFVF9oMXltZ2pNRW1FekFRUG9HMFpLNU1RTHBueFo4ZVdYZ1hWbUlVeEJMTm9PSHlkdFpyVEp6MEV6cUdnaA?oc=5"
+    },
+    {
+      "title": "签订49亿元算力大单 杰创智能拓展智算云服务 - 东方财富",
+      "summary": "签订49亿元算力大单 杰创智能拓展智算云服务 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Sat, 14 Nov 2026 03:28:46 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9KSEt3a2JCeWFPSDBNUFBvV193Wl82bDQ1aDNseF9lYldjMXM2YThORVVhNkZGY1N6REpZaTNGRnM2ZnBldlNMTjdJUGNZVXV5bS1LZFpMYUdaMWpMOTU3ODJwTkg?oc=5"
+    },
+    {
+      "title": "算力紧缺，联想建词元工厂-证券之星 - 证券之星",
+      "summary": "算力紧缺，联想建词元工厂-证券之星 证券之星",
+      "source": "证券之星",
+      "lang": "zh",
+      "published": "Sat, 14 Nov 2026 05:39:18 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0ycC1kMUZQbTd6blJEWVZEcDlJU0g2Wm9GNmVSbGtMZ0YtWkJRZnlMOGUtV282OUNkY0tBQk5HckxIZXoxNzBqbEY3NWdDazdMQmlwZlU0YThxNFFnUlE?oc=5"
+    },
+    {
+      "title": "贾光：以坚实能源保障支撑绿色算力产业发展 - 新华网",
+      "summary": "贾光：以坚实能源保障支撑绿色算力产业发展 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Sat, 14 Nov 2026 04:26:47 GMT",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPd050SGhvNXJnNk5qLTdPdzFPTVBvY1Zsc3NReHhkX09LZzZ0SlNTaWJ0VmRYR01EM2xSbjVld29zTHYtd2kyc0Q3VVBIa0QtTjBNbFBkZDU4ejkwbmhvQTdPSU5fQlFibVM2Ujk3VTBfQWV4WUFfdEVjcThXLTA5enExQQ?oc=5"
+    },
+    {
+      "title": "高难盲测超越GPT-6-Astra与Opus-5！无界前沿开源Fx-Bio-1031，把RSI带进生命科学 - 智源社区",
+      "summary": "高难盲测超越GPT-6-Astra与Opus-5！无界前沿开源Fx-Bio-1031，把RSI带进生命科学 智源社区",
+      "source": "智源社区",
+      "lang": "zh",
+      "published": "Sat, 14 Nov 2026 06:40:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE03Y0ZpN0UzVlFsMHlVQl9udGt0WUh3RG1uaWpfTmlwTV9yaXFTeHBxNHlFNEF2UkJtZDVXaU4wWDBjVGprUkpEVw?oc=5"
+    },
+    {
+      "title": "OpenAI解散机器人团队！GPT-6 Astra证明：通用大模型已可直接用于“物理AI”，无需专用模型 - 华尔街见闻",
+      "summary": "OpenAI解散机器人团队！GPT-6 Astra证明：通用大模型已可直接用于“物理AI”，无需专用模型 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Sat, 14 Nov 2026 01:09:09 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBlejBZS09GaUdDQU9xZGpDZ3A5WW5oQmJyZC1QMHlDVDZTdGNlcFNGcFVGZS1taU9CRnI1aW45cjIyRFZaWWQ4Mllaakd1bGt1QUhB?oc=5"
+    },
+    {
+      "title": "信创“双子星”走好算力突围“新长征” - 央广网",
+      "summary": "信创“双子星”走好算力突围“新长征” 央广网",
+      "source": "央广网",
+      "lang": "zh",
+      "published": "Sat, 14 Nov 2026 00:31:08 GMT",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5VRVpxNDFOWFhnaG54V3RyZzNJSlFHZGxkWHJPS01LSFJ1dUZ1UndEMW1zTHVkRF9fcEZCLU5qLVg1ckV5c0NFc05UaTdYOUg0RjM3VngxOWt0TGRGZDhkamNKYzJHcEtyMG8wcTZB?oc=5"
+    },
+    {
+      "title": "2026世界中文大会发布语飞国际中文教育垂直大模型 - ThePaper.cn",
+      "summary": "2026世界中文大会发布语飞国际中文教育垂直大模型 ThePaper.cn",
+      "source": "ThePaper.cn",
+      "lang": "zh",
+      "published": "Sat, 14 Nov 2026 02:15:47 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9Yak1mODlKeGJ5Z0dYVTNGMm9wcklOVnBTeHBZaHBuY3gzY200bEc5NmNYOXRUM3R5UlZwbkE2UHV4V3pPckM0T0JES3BRbHQ5X1h4YXJzZ3dFUWdYT1pHSg?oc=5"
+    },
+    {
+      "title": "算力疯抢神秘金属“硬通货” - 凤凰网财经",
+      "summary": "算力疯抢神秘金属“硬通货” 凤凰网财经",
+      "source": "凤凰网财经",
+      "lang": "zh",
+      "published": "Sat, 14 Nov 2026 06:26:05 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4ydUFLSXdjcUhSWFZLQUw5OThKTWdLQnVPbDZvUGNWWGxjX19sMFk2SUg0ZHZDcUZSMFFNNDFBRnRhOGMtdnR2V3dHSGRfN3lM?oc=5"
+    },
+    {
+      "title": "国产算力链，机会更确定了 - 投资界",
+      "summary": "国产算力链，机会更确定了 投资界",
+      "source": "投资界",
+      "lang": "zh",
+      "published": "Sat, 14 Nov 2026 03:01:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qeWVZZ2ZWQ2R2VmRLNGE1R09OY2FCUjRMUHNxWExONm9HckpLOEp6dW5Da3ZWbno0dE5uUUI2aklyUmJiTmNtVm1iTGd1MUdFeWh2Zmpn?oc=5"
+    },
+    {
+      "title": "浙江算力规模超198EFLOPS，智算占比96% - Sohu",
+      "summary": "浙江算力规模超198EFLOPS，智算占比96% Sohu",
+      "source": "Sohu",
+      "lang": "zh",
+      "published": "Sat, 14 Nov 2026 07:10:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRlV3a29ocVduZ2JXaTVZRXlXMWtrOXJaeTcxZXZFeGIwd0dDemQ3Wk56MjN0blRSSC1NdzlxYWVTb1dvZTZ6eHNhLVF1TXNpV3VDS29rNVRnSGF2VWRLRkxPTHhBSXo2cC1KU3FWMURCbzlUQVI5N0dmRFNwcmc3MWM1cUFoUm9XSkRvbA?oc=5"
+    },
+    {
+      "title": "风光蓄势 绿算潮起——看算力重镇乌兰察布的拔节生长 - 新华网",
+      "summary": "风光蓄势 绿算潮起——看算力重镇乌兰察布的拔节生长 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Sat, 14 Nov 2026 00:22:17 GMT",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMWg1WEVmRHI4VnpUaW5yMmctblRGekVIRnE1UFgxTmVMNm4wcjZfTHI5M3JOem8wSHZfUTRuQXFwT1JmbE1Qc0VMd1U0czZjcm0wRUtKbEUwMWJiQ19KcU5jVDQzRzdmdmpJbnUwUm1xQlFmQ2NmOFdEdE9jRkN0OEpoNA?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "A collection of MCP servers.",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 97689,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 79617,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57634,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "Playwright MCP server",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 39617,
+      "language": "TypeScript"
+    },
+    {
+      "title": "next-ai-draw-io",
+      "type": "GitHub",
+      "summary_en": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "summary": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "author": "DayuanJiang",
+      "stars": 36940,
+      "language": "TypeScript"
+    },
+    {
+      "title": "rea",
+      "type": "GitHub",
+      "summary_en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "url": "https://github.com/morluto/rea",
+      "author": "morluto",
+      "stars": 458435,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 394418,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "An agentic skills framework & software development methodology that works.",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 317372,
+      "language": "Shell"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
