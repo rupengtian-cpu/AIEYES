@@ -1,0 +1,411 @@
+{
+  "date": "2026-11-16",
+  "generated_at": "2026-11-16T10:23:12.337128+00:00",
+  "paper_count": 12,
+  "news_count": 0,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion",
+      "title_zh": "",
+      "summary": "Monitoring maritime activities is important for safety and security, particularly for detecting illegal activities, but remains challenging due to the size and complexity of the maritime domain. The Automatic Identification System (AIS) is commonly used for this purpose, despite its known vulnerabilities. In contrast, space-based radio frequency (RF) observ…",
+      "summary_zh": "",
+      "authors": [
+        "Daniel Grimm",
+        "Kyra Jongman",
+        "Renato Cordeiro Ferreira",
+        "Giuseppe Cascavilla",
+        "Alfredo Cuzzocrea",
+        "Willem-Jan Van Den Heuvel"
+      ],
+      "published": "2026-11-13T18:59:43Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.18563v1",
+      "abs_url": "https://arxiv.org/abs/2611.18563v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18563v1"
+    },
+    {
+      "title": "FETTUCCINE: Fast and efficient brain-to-text decoding on mobile devices",
+      "title_zh": "",
+      "summary": "Recent advances in speech neuroprostheses have enabled new communication avenues for people who have lost the ability to speak due to neurological illness or injury. These systems can decode neural activity during attempted speech into text by relying on language priors to achieve high decoding accuracy. This performance currently comes at the cost of using…",
+      "summary_zh": "",
+      "authors": [
+        "Jonathan D. McCart",
+        "Pranav I. Deevi",
+        "Mehdi Azabou",
+        "Nanda H. Krishna",
+        "Caleb A. McKinney",
+        "Nicholas S. Card"
+      ],
+      "published": "2026-11-13T18:59:02Z",
+      "category": "q-bio.NC",
+      "arxiv_id": "2611.18561v1",
+      "abs_url": "https://arxiv.org/abs/2611.18561v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18561v1"
+    },
+    {
+      "title": "Training Reasoning Models in Simulation to Natively Use Real Robots",
+      "title_zh": "",
+      "summary": "Robot-use agents (RUAs) have emerged as a promising approach to general-purpose robot control. However, strong performance has so far been achieved only by frontier proprietary models such as GPT-6 Astra and Claude Fable 5.2, whereas open-weight models remain substantially less capable. We show that an open-weight 27B reasoning model can be trained to use r…",
+      "summary_zh": "",
+      "authors": [
+        "Jiaming Tang",
+        "Zhuoyang Zhang",
+        "Junxian Guo",
+        "Fangzhou Zhao",
+        "Yilong Zhao",
+        "Zekai Li"
+      ],
+      "published": "2026-11-13T18:59:02Z",
+      "category": "cs.RO",
+      "arxiv_id": "2611.18562v1",
+      "abs_url": "https://arxiv.org/abs/2611.18562v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18562v1"
+    },
+    {
+      "title": "BAL: Bidirectional Autoregression in Latent Space for Learning Human Movement Representations",
+      "title_zh": "",
+      "summary": "Learning semantically meaningful human movement representations from 3D pose sequences is essential for human behavior modeling. Existing self-supervised methods derive supervision from artificial assumptions, e.g., invariance to augmentation within a certain range or recoverability of masked regions at a certain temporal scale, introducing heuristic hyperp…",
+      "summary_zh": "",
+      "authors": [
+        "Genki Kinoshita",
+        "Ko Nishino"
+      ],
+      "published": "2026-11-13T18:58:54Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.18559v1",
+      "abs_url": "https://arxiv.org/abs/2611.18559v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18559v1"
+    },
+    {
+      "title": "WeightBench: Evaluating Language Models as Weight-Space Programmers",
+      "title_zh": "",
+      "summary": "Recent work shows that large language models (LLMs) can operate directly on the parameters of other neural networks. They can read what a network was trained to do, fix a network that fails, and write working networks from scratch, all without gradient descent. This capability has been termed Weight-Space Programming (WSP). Exploring this new paradigm syste…",
+      "summary_zh": "",
+      "authors": [
+        "Aayush Marasini",
+        "Barsat Khadka",
+        "Nick Rahimi"
+      ],
+      "published": "2026-11-13T18:58:08Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.18553v1",
+      "abs_url": "https://arxiv.org/abs/2611.18553v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18553v1"
+    },
+    {
+      "title": "Restoring Diversity in Distilled Image and Video Generators by Probing Activations",
+      "title_zh": "",
+      "summary": "Distilling diffusion models into few-step student models substantially reduces sampling latency, but induces severe diversity collapse: samples generated from different random seeds show minimal variation. In this work, we investigate the root cause of this failure by probing the internal representations of student models relative to their teachers. We find…",
+      "summary_zh": "",
+      "authors": [
+        "Furkan Horoz",
+        "Ozgur Kara",
+        "Kaan Oktay",
+        "Adil Kaan Akan",
+        "Atakan Kara",
+        "Anand Bhattad"
+      ],
+      "published": "2026-11-13T18:55:59Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.18550v1",
+      "abs_url": "https://arxiv.org/abs/2611.18550v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18550v1"
+    },
+    {
+      "title": "Imitation Bootstrapped Multi-Agent Reinforcement Learning",
+      "title_zh": "",
+      "summary": "Demonstrations are an effective way to accelerate single-agent reinforcement learning (RL), but extending this idea to multi-agent reinforcement learning (MARL) is non-trivial as it is difficult and often impossible for a single person to teleoperate multiple agents simultaneously. Round-Robin Behavior Cloning (R2BC) addresses this by letting a single demon…",
+      "summary_zh": "",
+      "authors": [
+        "Tony H. Zhang",
+        "Connor Mattson",
+        "Daniel S. Brown"
+      ],
+      "published": "2026-11-13T18:50:05Z",
+      "category": "cs.AI",
+      "arxiv_id": "2611.18543v1",
+      "abs_url": "https://arxiv.org/abs/2611.18543v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18543v1"
+    },
+    {
+      "title": "Elliptic Sampling: Optimal Interpolant Schedules for Gaussians and Beyond",
+      "title_zh": "",
+      "summary": "Generative modeling based on stochastic interpolants requires specifying two key choices: an interpolant schedule bridging the initial and target distributions, and an efficient discretization of the resulting probability-flow ODE. In this work, we introduce a new framework for joint schedule/discretization design based on the analyticity properties of the…",
+      "summary_zh": "",
+      "authors": [
+        "Cole Becker",
+        "Taylan Kargin",
+        "Kimia Hassibi",
+        "Asuman Ozdaglar",
+        "Pablo A. Parrilo"
+      ],
+      "published": "2026-11-13T18:49:36Z",
+      "category": "stat.ML",
+      "arxiv_id": "2611.18542v1",
+      "abs_url": "https://arxiv.org/abs/2611.18542v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18542v1"
+    },
+    {
+      "title": "Understanding Contextual Bias in Agricultural CNNs Through Hidden-Neuron Concept Induction",
+      "title_zh": "",
+      "summary": "Convolutional Neural Networks (CNNs) can classify images using background-dominated patches that contain little or none of the target object, showing that they exploit contextual information. Previous studies detected this behavior through classification accuracy but say little about what CNN hidden layers represent. We investigate whether Concept Induction…",
+      "summary_zh": "",
+      "authors": [
+        "Abhilekha Dalal",
+        "Avishek Das",
+        "Samatha Ereshi Akkamahadevi"
+      ],
+      "published": "2026-11-13T18:43:15Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.18530v1",
+      "abs_url": "https://arxiv.org/abs/2611.18530v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18530v1"
+    },
+    {
+      "title": "WaferTetris: Efficient Freeform Mapping on Wafer-Scale Accelerators",
+      "title_zh": "",
+      "summary": "Wafer-scale accelerators offer massive compute capacity through hundreds of thousands of processing elements (PEs) interconnected across a single wafer, but realizing this potential requires efficient application mapping. Their scale makes programming these systems and mapping applications onto them challenging. Existing approaches rely on template-based ma…",
+      "summary_zh": "",
+      "authors": [
+        "Dayou Du",
+        "Congjie He",
+        "Andrew Boutros",
+        "Luo Mai",
+        "Vaughn Betz",
+        "Jianyi Cheng"
+      ],
+      "published": "2026-11-13T18:41:44Z",
+      "category": "cs.AR",
+      "arxiv_id": "2611.18527v1",
+      "abs_url": "https://arxiv.org/abs/2611.18527v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18527v1"
+    },
+    {
+      "title": "Box-conditional Hypothesis Testing for Out-of-Distribution Object Detection",
+      "title_zh": "",
+      "summary": "Detecting out-of-distribution (OOD) objects is essential for ensuring the reliability and safety of object detectors in real-world deployment. We treat the decision on a detected box as a hypothesis test with the null hypothesis that the box covers an object of an in-distribution (ID) class. The null distribution changes with the size of the box and its con…",
+      "summary_zh": "",
+      "authors": [
+        "Donghoon Lee",
+        "Jusung Park",
+        "Shinjin Kang"
+      ],
+      "published": "2026-11-13T18:36:23Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.18519v1",
+      "abs_url": "https://arxiv.org/abs/2611.18519v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18519v1"
+    },
+    {
+      "title": "StreamEmbed: Real-Time Indexing from Pixels for Screenshot Retrieval",
+      "title_zh": "",
+      "summary": "Screen history can serve as searchable visual memory for people and agents, but unlike an offline corpus, it must be encoded and indexed as each screenshot arrives. OCR-based indexing is fast but loses visual information; visual encoding takes over two seconds. Yet screens change incrementally: most pixels repeat within and across screenshots. This raises a…",
+      "summary_zh": "",
+      "authors": [
+        "Dayoon Ko",
+        "Yichuan Wang",
+        "Soyeong Jeong",
+        "Joseph E. Gonzalez",
+        "Gunhee Kim",
+        "Sewon Min"
+      ],
+      "published": "2026-11-13T18:35:17Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.18516v1",
+      "abs_url": "https://arxiv.org/abs/2611.18516v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.18516v1"
+    }
+  ],
+  "news": [],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "A collection of MCP servers.",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 97753,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 79782,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57641,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "Playwright MCP server",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 39716,
+      "language": "TypeScript"
+    },
+    {
+      "title": "next-ai-draw-io",
+      "type": "GitHub",
+      "summary_en": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "summary": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "author": "DayuanJiang",
+      "stars": 36992,
+      "language": "TypeScript"
+    },
+    {
+      "title": "rea",
+      "type": "GitHub",
+      "summary_en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "url": "https://github.com/morluto/rea",
+      "author": "morluto",
+      "stars": 462906,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 394564,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "An agentic skills framework & software development methodology that works.",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 318276,
+      "language": "Shell"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
