@@ -1,0 +1,491 @@
+{
+  "date": "2026-11-18",
+  "generated_at": "2026-11-18T10:54:20.946366+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching",
+      "title_zh": "",
+      "summary": "Collecting large-scale, diverse, and high-quality post-training datasets for autoregressive language models is challenging. Consequently, Supervised Fine-Tuning (SFT) is typically applied to datasets significantly smaller than those used for pre-training, which leads to overfitting and the catastrophic forgetting of the tails of the data distribution. To pr…",
+      "summary_zh": "",
+      "authors": [
+        "Giannis Daras",
+        "Marios Papachristou",
+        "Adam Klivans",
+        "Antonio Torralba",
+        "Constantinos Daskalakis"
+      ],
+      "published": "2026-11-17T18:59:37Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.23229v1",
+      "abs_url": "https://arxiv.org/abs/2611.23229v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23229v1"
+    },
+    {
+      "title": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models",
+      "title_zh": "",
+      "summary": "Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which interleave attention with linear recurrent layers such as Gated DeltaNet (GDN), are attractive for this setting, but main…",
+      "summary_zh": "",
+      "authors": [
+        "Rui Ning",
+        "Om Chabra",
+        "Hari Balakrishnan"
+      ],
+      "published": "2026-11-17T18:59:27Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.23228v1",
+      "abs_url": "https://arxiv.org/abs/2611.23228v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23228v1"
+    },
+    {
+      "title": "StringQFT: A Multiuse Textbook Resource for AI-Assisted Theoretical Physics",
+      "title_zh": "",
+      "summary": "We present StringQFT as a textbook collection for string constructions of quantum field theory and as infrastructure for AI-assisted theoretical physics. The collection comprises 18 volumes, 190 chapters and 3,795 pages, covering brane probes, brane webs, geometric engineering, F-theory constructions, wrapped M5-branes and exact worldsheet constructions. It…",
+      "summary_zh": "",
+      "authors": [
+        "Xingyang Yu"
+      ],
+      "published": "2026-11-17T18:58:40Z",
+      "category": "hep-th",
+      "arxiv_id": "2611.23225v1",
+      "abs_url": "https://arxiv.org/abs/2611.23225v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23225v1"
+    },
+    {
+      "title": "An inexact stochastic variance-reduced gradient method for constrained convex finite-sum optimization",
+      "title_zh": "",
+      "summary": "In this paper, we study a class of constrained convex finite-sum optimization problems. In many practical applications, all or some of the constraints are hard constraints that represent imperative requirements. Consequently, any desirable approximate solution must (nearly) satisfy these constraints. Motivated by this, we focus on computing an $ε$-$surely\\…",
+      "summary_zh": "",
+      "authors": [
+        "Zhaosong Lu",
+        "Yifeng Xiao"
+      ],
+      "published": "2026-11-17T18:57:16Z",
+      "category": "math.OC",
+      "arxiv_id": "2611.23221v1",
+      "abs_url": "https://arxiv.org/abs/2611.23221v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23221v1"
+    },
+    {
+      "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+      "title_zh": "",
+      "summary": "LLM agents increasingly drive their own learning. Self-improvement methods delegate various components of model optimization to the models themselves. As models become more capable, this motivates a basic question: do these increasingly capable models still need us to specify how they should self-improve? In this paper we study an autonomous paradigm in whi…",
+      "summary_zh": "",
+      "authors": [
+        "Shobhita Sundaram",
+        "Cansu Sancaktar",
+        "Phillip Isola"
+      ],
+      "published": "2026-11-17T18:57:10Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.23219v1",
+      "abs_url": "https://arxiv.org/abs/2611.23219v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23219v1"
+    },
+    {
+      "title": "Higher-Scoring Coding Models Did Not Get More Work Done",
+      "title_zh": "",
+      "summary": "New coding models advertise themselves on score improvements of coding benchmarks. Yet no study has tested if a model that scores higher on these benchmarks gets more real work done. On June 12, 2026, a U.S. export control directive banned access to Claude Fable 5 for 19 days, which forced users to switch to other models. During this time, most former Fable…",
+      "summary_zh": "",
+      "authors": [
+        "Yining Hua"
+      ],
+      "published": "2026-11-17T18:56:42Z",
+      "category": "cs.SE",
+      "arxiv_id": "2611.23216v1",
+      "abs_url": "https://arxiv.org/abs/2611.23216v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23216v1"
+    },
+    {
+      "title": "Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving",
+      "title_zh": "",
+      "summary": "Human cognitive state (e.g., distraction, stress), gaze, and behavior interact with the driving environment in subtle ways that AI could use to assist drivers, but ground-truth labels for human cognitive state levels are costly to obtain at scale. We propose a multimodal masked-diffusion autoencoder, ID-MAE, that adds a self-supervised objective to impairme…",
+      "summary_zh": "",
+      "authors": [
+        "John Gideon",
+        "Anshul Gupta",
+        "Megan Applegate-Kenton",
+        "Kayli Battel",
+        "Todd J Rowell",
+        "Patricio Reyes Gomez"
+      ],
+      "published": "2026-11-17T18:50:22Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.23211v1",
+      "abs_url": "https://arxiv.org/abs/2611.23211v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23211v1"
+    },
+    {
+      "title": "Learning Grounded Reasoning from Human Gaze",
+      "title_zh": "",
+      "summary": "Human visual reasoning is driven by systematic exploration and extraction of task-relevant visual evidence. Human gaze provides a window into this process, making gaze a useful source of guidance for visually-grounded reasoning in vision-language models (VLMs). However, human gaze also includes noise and redundancies that may transfer poorly to VLMs. In thi…",
+      "summary_zh": "",
+      "authors": [
+        "Gabriel Sarch",
+        "Declan Campbell",
+        "Nicholas Budny",
+        "Kia Ghods",
+        "Katerina Fragkiadaki",
+        "Jonathan D. Cohen"
+      ],
+      "published": "2026-11-17T18:49:33Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.23209v1",
+      "abs_url": "https://arxiv.org/abs/2611.23209v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23209v1"
+    },
+    {
+      "title": "Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Organization Autonomous AI Agents",
+      "title_zh": "",
+      "summary": "AI agents increasingly collaborate across organizational boundaries, invoking tools and interacting with agents operated by independent entities. Although existing agent frameworks support planning and coordination, they lack a common mechanism for verifying cross-organizational agent identity, execution integrity, and authorization. We propose the Agent Tr…",
+      "summary_zh": "",
+      "authors": [
+        "Viet K. Nguyen",
+        "Mohammad I. Husain"
+      ],
+      "published": "2026-11-17T18:44:25Z",
+      "category": "cs.AI",
+      "arxiv_id": "2611.23202v1",
+      "abs_url": "https://arxiv.org/abs/2611.23202v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23202v1"
+    },
+    {
+      "title": "Learned versus Kinematic Trajectory Prediction under Reduced Observation Frequency",
+      "title_zh": "",
+      "summary": "Trajectory prediction models for automated driving are usually trained on data with a fixed sampling frequency, while positions received via vehicle-to-everything (V2X) communication arrive at 1-10 Hz. We study whether a learned predictor that uses only the observation history keeps its advantage over constant velocity (CV) and constant acceleration (CA) mo…",
+      "summary_zh": "",
+      "authors": [
+        "Nukhbala Gadzhiev",
+        "Alexander Morochko"
+      ],
+      "published": "2026-11-17T18:38:28Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.23198v1",
+      "abs_url": "https://arxiv.org/abs/2611.23198v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23198v1"
+    },
+    {
+      "title": "WoRD: Diffusion-Based Posterior Inference for Online Goal Recognition",
+      "title_zh": "",
+      "summary": "Goal recognition is the task of inferring an agent's intended goal from its observed behavior. Most existing work focuses on high-level symbolic recognition, abstracting away the continuous motion through which agents reach their goal. Methods that do reason over continuous trajectories rely on an explicit dynamics model that is hard to acquire and rarely t…",
+      "summary_zh": "",
+      "authors": [
+        "Almog Anschel",
+        "Sarah Keren"
+      ],
+      "published": "2026-11-17T18:35:53Z",
+      "category": "cs.AI",
+      "arxiv_id": "2611.23192v1",
+      "abs_url": "https://arxiv.org/abs/2611.23192v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23192v1"
+    },
+    {
+      "title": "Retrieval-Augmented Correction for Generalist Medical Image Segmentation",
+      "title_zh": "",
+      "summary": "Automated segmentation is routinely used as the first step in quantitative image-based clinical workflows, where predicted masks are subsequently reviewed and corrected by human operators. Automated correction of the residual structural errors is currently addressed one anatomy at a time, so the number of trained correctors scales with the number of segment…",
+      "summary_zh": "",
+      "authors": [
+        "Vincenzo Marcianò",
+        "Xiaoming Zhang",
+        "Michela Antonelli",
+        "Sebastien Ourselin",
+        "Maria A Zuluaga"
+      ],
+      "published": "2026-11-17T18:33:42Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.23189v1",
+      "abs_url": "https://arxiv.org/abs/2611.23189v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.23189v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "全球AI创新治理｜黄仁勋离场，全球AI算力格局将走向何方？ - 复旦发展研究院",
+      "summary": "全球AI创新治理｜黄仁勋离场，全球AI算力格局将走向何方？ 复旦发展研究院",
+      "source": "复旦发展研究院",
+      "lang": "zh",
+      "published": "Wed, 18 Nov 2026 08:56:53 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB4Z1A3OUN2andoTWhyQnJqREp3V0U2STNFczJDMVRsb1pyeDhwdUVtX1REb29Palc5Sl9oWl8zX2hMQ25vSzA5eTFZOWdIaDY5X2EwT0otdFVFS2xfYlVaLUdjR28?oc=5"
+    },
+    {
+      "title": "港股大模型双雄齐遭“杀估值” 为何空头资金却在加速大撤退？ - 财联社",
+      "summary": "港股大模型双雄齐遭“杀估值” 为何空头资金却在加速大撤退？ 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Wed, 18 Nov 2026 07:56:27 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE04S0JYLVE2c2Eza1QtTk9JZ3RzdE5pSHlHSTdZazg3bzhUaWpYQTEtRDRpU0Z4OU1HUTAxS096T3VwUkxpV0FSag?oc=5"
+    },
+    {
+      "title": "A股三大股指午后齐涨，科创50涨超2%，算力硬件、算力租赁大反弹，恒指跌1%，京东大跌7% - 华尔街见闻",
+      "summary": "A股三大股指午后齐涨，科创50涨超2%，算力硬件、算力租赁大反弹，恒指跌1%，京东大跌7% 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Wed, 18 Nov 2026 08:18:10 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBGMlY1bEhiYkVBdFY2Rm44OHFKbHlhdG1vOG5jNDhXNWF1X3JZWHdpdEpwMG9jVHViUC1LY0doLUV1U3dpU3M0N1NldTk3SktyM1dB?oc=5"
+    },
+    {
+      "title": "推出 GPT-6.2 Astra 和 Sol - OpenAI",
+      "summary": "推出 GPT-6.2 Astra 和 Sol OpenAI",
+      "source": "OpenAI",
+      "lang": "zh",
+      "published": "Wed, 18 Nov 2026 00:56:23 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4xMlItcFdDczV4RnBZeWpjeThNNGRwS2xVRGgwMGphVUVXOWRoMmRPU3h2eXJVaGhyYlo4bWNfWkdhN3RYNU1ReFpaakxZcGcwRHgtZXZXSk5QdUJsVnZaWG1GbHp4a2N3N3RJUW9PdGVqS0FZ?oc=5"
+    },
+    {
+      "title": "最高涨近6%！算力相关ETF“霸屏”涨幅榜 - 中国基金报",
+      "summary": "最高涨近6%！算力相关ETF“霸屏”涨幅榜 中国基金报",
+      "source": "中国基金报",
+      "lang": "zh",
+      "published": "Wed, 18 Nov 2026 09:12:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1BTG1sWGNtVmlyVG9MblNHM3VhTlRVQ3RELURpajZsVXZ3RlhEUnZ3YlR4c3RudTYyZkFoUEEtaFhVWUVxX0s3VE5jbC1pQXhqZmhoS3ktQ0RvNUZNby01bGx5VWlLa216a0JrNmhBTGIzdVlrNGxGdEp3?oc=5"
+    },
+    {
+      "title": "ETF收盘解读 | 缩量震荡回升，算力回暖 - 21财经",
+      "summary": "ETF收盘解读 | 缩量震荡回升，算力回暖 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Wed, 18 Nov 2026 09:24:09 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMjFXR1dYbW5XcGhBU3hHMkRkLTR3MGdBU0cxTXVGOGozODU2RXhxdzh6cmU3OTJYWnJiM0dHUGJScGRRNlNmVEZlbWxwRVhUR2dVbkxVRDdpMzNoZVJiUTVjQTBUdF9tUTh4NDZmVW9GVTBraWZXakVsRHlyUERDYkNNSEI3RnRWOG5fM1Bn?oc=5"
+    },
+    {
+      "title": "明天见！2026算力互联网大会参会指南 - 湖北省经济和信息化厅",
+      "summary": "明天见！2026算力互联网大会参会指南 湖北省经济和信息化厅",
+      "source": "湖北省经济和信息化厅",
+      "lang": "zh",
+      "published": "Wed, 18 Nov 2026 01:03:25 GMT",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBVYk5SQlE1Z09aSUlxVWtzVl9NQ3FxZFFMbzd0Uk9fLXRpb3FIZG9FM2pGM3ZTOXA2WjRZT2c0ODN4QlE0b2NxNU9mQVR4OTdpQkpmcWFvUE5na3MtdE54NVFpekk0OFpiV1B5S1pTc05NQQ?oc=5"
+    },
+    {
+      "title": "中美大模型密集“上新”！AI智能体加速走向任务交付(附股) - 东方财富",
+      "summary": "中美大模型密集“上新”！AI智能体加速走向任务交付(附股) 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Wed, 18 Nov 2026 02:00:19 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1GVzZFcGdwWVl5M3dRZ1JKYVFSMTdtbGhBcy1GZ1Z0WWNmbUFpOWVySDFxUnZ2R204VVRMYmtFMFRIeXlqYy04elg5MDBJQ1pUUlFXMHJfOXZBMmdyZ0w3Yw?oc=5"
+    },
+    {
+      "title": "【福州晚报、学习强国、掌上福州】头版｜张艺明：为AI芯片造“心脏” - 福州大学",
+      "summary": "【福州晚报、学习强国、掌上福州】头版｜张艺明：为AI芯片造“心脏” 福州大学",
+      "source": "福州大学",
+      "lang": "zh",
+      "published": "Wed, 18 Nov 2026 07:28:50 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5EY2tLcl9KZElJWlRza3EyOUpFT3NKV1d2b2g5Qkl2cHoyOHYyMW9lckowN3BfdzBIdWExa0wtMk9RaTBfSnVFNndLYlRqSXhMZVFQanJ3UQ?oc=5"
+    },
+    {
+      "title": "张朝阳回应搜狐“躺平”：没资源做大模型，另选赛道；AI“横扫”数学，但破解不了物理学终极问题 - 上观新闻",
+      "summary": "张朝阳回应搜狐“躺平”：没资源做大模型，另选赛道；AI“横扫”数学，但破解不了物理学终极问题 上观新闻",
+      "source": "上观新闻",
+      "lang": "zh",
+      "published": "Wed, 18 Nov 2026 09:33:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8xeGNJY3BMSDZRR1RTVjFRdnBFQ3pneXh2Sm5iUlJLM2RNM3hUYUMtcHR4MjQ5dXFkQWt0WUllaVpmQkkxb1ltSlhSeXJ5UVI3SWtVanh1VFNrZw?oc=5"
+    },
+    {
+      "title": "Gemini新模型箭在弦上，网友：遍历元素周期表？ - 智源社区",
+      "summary": "Gemini新模型箭在弦上，网友：遍历元素周期表？ 智源社区",
+      "source": "智源社区",
+      "lang": "zh",
+      "published": "Wed, 18 Nov 2026 08:40:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBXei1wY01Sc3ZtVC1INDBHcDZkR1l2NC1FZVpmQ1VNeXdtMlBzZUVoNjM3aFlvOEc3c3pLZ056QXBuWUdDbmpMVw?oc=5"
+    },
+    {
+      "title": "优刻得回应投资者提问 两大自建数据中心算力超万P - 观点网",
+      "summary": "优刻得回应投资者提问 两大自建数据中心算力超万P 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Wed, 18 Nov 2026 09:16:43 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1kTEQxMmRvc2FZejVZVVpZVFltQVp2YXN5LUEtS0M2Y3lPajlIWkZMSVRSa0xZck5rLXd6cGk2cU10eUgyQVVGbFNKZ0QzMGFZaTlLRnIyM1Flckl2eFREOC1n?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "A collection of MCP servers.",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 97835,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 79969,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57643,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "Playwright MCP server",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 39835,
+      "language": "TypeScript"
+    },
+    {
+      "title": "next-ai-draw-io",
+      "type": "GitHub",
+      "summary_en": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "summary": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "author": "DayuanJiang",
+      "stars": 37050,
+      "language": "TypeScript"
+    },
+    {
+      "title": "rea",
+      "type": "GitHub",
+      "summary_en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "url": "https://github.com/morluto/rea",
+      "author": "morluto",
+      "stars": 467262,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 394708,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "An agentic skills framework & software development methodology that works.",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 319660,
+      "language": "Shell"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
