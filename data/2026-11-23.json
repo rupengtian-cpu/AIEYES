@@ -1,0 +1,498 @@
+{
+  "date": "2026-11-23",
+  "generated_at": "2026-11-23T11:31:07.475379+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "A Methodologically Rigorous Benchmark of Linear Regression,RNN, and LSTM for S&P 500 Forecasting:Identifying Sources of Performance Inflation in Financial DeepLearning",
+      "title_zh": "",
+      "summary": "This study examines one-day-ahead forecasting of the S&P 500 closing level using a 2006-2025 dataset that includes fundamental price data, macroeconomic indicators, and engineered technical features. We benchmark three model families, namely linear regression, vanilla recurrent neural networks (RNN), and long short-term memory networks (LSTM), within a unif…",
+      "summary_zh": "",
+      "authors": [
+        "Hari Sitaula",
+        "Joseph Opitz"
+      ],
+      "published": "2026-11-20T18:57:15Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.27978v1",
+      "abs_url": "https://arxiv.org/abs/2611.27978v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27978v1"
+    },
+    {
+      "title": "On the Complete Feature Set for ADHD Classification in Children and Adolescents Based on EEG Signals",
+      "title_zh": "",
+      "summary": "Attention-deficit/hyperactivity disorder is a neurodevelopmental condition that can affect attention, activity and impulse control. Electroencephalography (EEG) records brain activity as children and adolescents perform cognitive tasks. However, comparing features derived from these recordings requires consistent signal preparation, shared analysis windows…",
+      "summary_zh": "",
+      "authors": [
+        "Javier Sanchis",
+        "Álvaro Navarro",
+        "Jorge García-Carrasco",
+        "Tahar Kechadi",
+        "Juan Trujillo"
+      ],
+      "published": "2026-11-20T18:51:08Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.27970v1",
+      "abs_url": "https://arxiv.org/abs/2611.27970v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27970v1"
+    },
+    {
+      "title": "Non-penetrating World Models",
+      "title_zh": "",
+      "summary": "We study a new problem of preventing object penetration in interactive video world models. To understand how existing models handle this, we introduce NoPeBench, a benchmark that evaluates how world models respond to physical obstacles. Our evaluation reveals that none of the open-source models can reliably prevent such failures. Surprisingly, however, thes…",
+      "summary_zh": "",
+      "authors": [
+        "Yuhang Dai",
+        "Yinwei Wu",
+        "Ziyue Lin",
+        "Han Ji",
+        "Xingyi Yang"
+      ],
+      "published": "2026-11-20T18:44:57Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.27963v1",
+      "abs_url": "https://arxiv.org/abs/2611.27963v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27963v1"
+    },
+    {
+      "title": "Model Carving: Training Transformers That Optimize Their Own Topology",
+      "title_zh": "",
+      "summary": "Machine learning has largely kept separate the choice of architecture and the process of training. A classic Transformer, for instance, trains a fixed set of attention and MLP sublayers at every layer, in the same order, and optimizes the weights within. This uniformity is a convention rather than a principled design choice, and it is likely suboptimal: the…",
+      "summary_zh": "",
+      "authors": [
+        "Kaden Zheng",
+        "Pratyusha Sharma"
+      ],
+      "published": "2026-11-20T18:41:39Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.27962v1",
+      "abs_url": "https://arxiv.org/abs/2611.27962v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27962v1"
+    },
+    {
+      "title": "Ranking-Preserving Coreset Selection for Efficient Evolutionary Hyperparameter Optimization",
+      "title_zh": "",
+      "summary": "Hyperparameter optimization (HPO) is essential for high predictive performance, but its computational cost becomes prohibitive when candidate configurations require repeated training on large datasets. This paper proposes a ranking-preserving coreset (RPC) selection framework for accelerating evolutionary HPO. The method constructs a compact coreset that pr…",
+      "summary_zh": "",
+      "authors": [
+        "Mamoona Tasadduq",
+        "Maryam Bashir"
+      ],
+      "published": "2026-11-20T18:35:28Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.27959v1",
+      "abs_url": "https://arxiv.org/abs/2611.27959v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27959v1"
+    },
+    {
+      "title": "Real-time neuromorphic audio and vision perception for autonomous robotic applications: Integration and experimental evaluation on a rover platform",
+      "title_zh": "",
+      "summary": "Neuromorphic sensing and computing offer a promising alternative to conventional deep learning pipelines for mobile robots, where perception must run continuously under tight latency and energy constraints. However, most neuromorphic solutions are still evaluated offline or on isolated benchmarks, and their integration into complete robotic systems remains…",
+      "summary_zh": "",
+      "authors": [
+        "Guillem Fustier-Castillo",
+        "Ruben Ribes-Serrano",
+        "Javier Naranjo-Alcazar",
+        "Vicent Ortiz-Castello",
+        "Pedro Zuccarello"
+      ],
+      "published": "2026-11-20T18:27:26Z",
+      "category": "cs.RO",
+      "arxiv_id": "2611.27953v1",
+      "abs_url": "https://arxiv.org/abs/2611.27953v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27953v1"
+    },
+    {
+      "title": "DiTraR: Diverse Scorers and Transcript-Guided Re-ranking for Video Corpus Moment Retrieval",
+      "title_zh": "",
+      "summary": "Video corpus moment retrieval asks a system to find, in a large collection of untrimmed videos with subtitles, the video and the time interval that a natural-language query describes. We find that most top-ranked errors of a strong corpus-level scorer come from choosing the wrong video, not from imprecise boundaries, and that re-weighting the evidence the s…",
+      "summary_zh": "",
+      "authors": [
+        "Mohammad Alijanpour Shalmani",
+        "Alale Rezvani Boroujeni",
+        "Ali Amini"
+      ],
+      "published": "2026-11-20T18:08:03Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.27931v1",
+      "abs_url": "https://arxiv.org/abs/2611.27931v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27931v1"
+    },
+    {
+      "title": "ESSI: Computationally Efficient Semantic Search for Sparse Autoencoder Concepts",
+      "title_zh": "",
+      "summary": "Sparse autoencoders (SAEs) decompose diffusion model activations into interpretable features, but steering a model with them requires identifying which features map to a given semantic concept, if any. Existing methods for this concept to feature task are expensive, relying on grid searches or repeated passes through the frozen UNet. We propose Efficient Se…",
+      "summary_zh": "",
+      "authors": [
+        "James Baker"
+      ],
+      "published": "2026-11-20T17:58:06Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.27921v1",
+      "abs_url": "https://arxiv.org/abs/2611.27921v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27921v1"
+    },
+    {
+      "title": "SUAF: Spectral Universal Advantage Features for Zero-Shot Policy Improvement",
+      "title_zh": "",
+      "summary": "Reward-independent representations enable reinforcement learning agents to reuse knowledge across tasks, but limited representation capacity raises three fundamental questions: what statistical dependence should these representations capture, which components of that dependence should be retained for policy improvement, and how does discarding the remaining…",
+      "summary_zh": "",
+      "authors": [
+        "Huaze Tang",
+        "Runqing Miao",
+        "Tianren Peng",
+        "Lam Nguyen",
+        "Chao Wang",
+        "Jairong Li"
+      ],
+      "published": "2026-11-20T17:53:21Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.27919v1",
+      "abs_url": "https://arxiv.org/abs/2611.27919v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27919v1"
+    },
+    {
+      "title": "Augmentation of cardiovascular flow measurements with generative diffusion models",
+      "title_zh": "",
+      "summary": "Cardiovascular imaging offers several ways to measure blood flow, but each provides an incomplete, resolution-limited, or noisy view of the underlying dynamics. Reconstructing the missing information is inherently ambiguous because several flow fields may be compatible with the same observation. Here, we investigate generative diffusion models as tools for…",
+      "summary_zh": "",
+      "authors": [
+        "Fabio Guglietta",
+        "Tianyi Li",
+        "Francesco Viola",
+        "Luca Biferale"
+      ],
+      "published": "2026-11-20T17:52:48Z",
+      "category": "physics.flu-dyn",
+      "arxiv_id": "2611.27917v1",
+      "abs_url": "https://arxiv.org/abs/2611.27917v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27917v1"
+    },
+    {
+      "title": "StereoVLM: Binocular Vision-Language Models for Metric 3D Spatial Reasoning",
+      "title_zh": "",
+      "summary": "Vision-language models (VLMs) exhibit strong semantic understanding but remain limited in their ability to reason about metric 3D space in the physical world. Existing VLMs typically infer 3D scene structure from one or more images without known camera calibration or cross-view geometric constraints. This makes metric 3D inference inherently ambiguous and l…",
+      "summary_zh": "",
+      "authors": [
+        "Chi Yan",
+        "Guoyang Zhao",
+        "Wentao Yuan",
+        "Yixiao Ge",
+        "Yanning Zhou",
+        "Dan Xu"
+      ],
+      "published": "2026-11-20T17:52:02Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.27915v1",
+      "abs_url": "https://arxiv.org/abs/2611.27915v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27915v1"
+    },
+    {
+      "title": "Star Panoptic Quality: Selectively Evaluating Split and Merged Instances",
+      "title_zh": "",
+      "summary": "Detecting individual instances is crucial for many segmentation problems. However, expert instance annotations are often unavailable, so instances are approximated heuristically (e.g., as connected components of semantic maps), which can merge touching objects or split fragmented ones. Even when expert annotations exist, expert disagreement or structural de…",
+      "summary_zh": "",
+      "authors": [
+        "Erik Großkopf",
+        "Paula Tamara Buzduga",
+        "Hendrik Möller",
+        "Florian Kofler"
+      ],
+      "published": "2026-11-20T17:51:51Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.27913v1",
+      "abs_url": "https://arxiv.org/abs/2611.27913v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.27913v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "京北算力版图再扩容 约10万平方米算力中心明年开建 - 北京市人民政府门户网站",
+      "summary": "京北算力版图再扩容 约10万平方米算力中心明年开建 北京市人民政府门户网站",
+      "source": "北京市人民政府门户网站",
+      "lang": "zh",
+      "published": "Mon, 23 Nov 2026 00:28:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9QQ2thVXN3bVRiMlBsNldqXzN0Q3ZpNDJMOFdWNm5Gem1mXzg4WC1LS3FYV1hvNDBwa19iWC1JcUNkZlAtNHJtMm9YNkJTV0R5b3ZhOEtIOEpxN0xJR1d2T3k3ZnNSbW1wNTRKYjdvczFQTXRzWllrWHBwQQ?oc=5"
+    },
+    {
+      "title": "2026世界计算大会｜昆仑元正式发布分布式算力D-PIN白皮书 - 中国日报网",
+      "summary": "2026世界计算大会｜昆仑元正式发布分布式算力D-PIN白皮书 中国日报网",
+      "source": "中国日报网",
+      "lang": "zh",
+      "published": "Mon, 23 Nov 2026 07:08:19 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5HMmdYci0zdlVmRjBiOWxHTklfY1RyV0ZKOGhkNGIxbzZlZHdCMVZ1Y3kzQ3NNWjk3azd1QXdSc290Z181Rms2V1JqOEJNcGNhZlhwTEdMbEtuVHlReV9ncHR4SVA1UzR5QlU0UTM0Vl95NmpqdmNBbmVhN3I?oc=5"
+    },
+    {
+      "title": "家务能力飙升！“GPT大脑”引爆物理AI - 东方财富网",
+      "summary": "家务能力飙升！“GPT大脑”引爆物理AI 东方财富网",
+      "source": "东方财富网",
+      "lang": "zh",
+      "published": "Mon, 23 Nov 2026 10:45:29 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9DLW5wYThod0ZOcVpoMDRpaG9FbjhMbzdQTWxHMnVVUzlvdThBaG53ZEQ4U3dLV1Q3ekJoVHNqZjQ4bDFlbExBOEVDVU4wTUdZQ1lyLW51dW5NVzQtb0pMUA?oc=5"
+    },
+    {
+      "title": "数智引领 苏智跃升｜华为中国行2026·江苏算力产业及应用生态会议成功举办 - 紫牛新闻",
+      "summary": "数智引领 苏智跃升｜华为中国行2026·江苏算力产业及应用生态会议成功举办 紫牛新闻",
+      "source": "紫牛新闻",
+      "lang": "zh",
+      "published": "Mon, 23 Nov 2026 10:16:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5xbHlrS1JEa1p1VFhOYmxuWDEyemE2Y1lKZHZUSWNfdEpuelhBc0VzbVRNTERDQnlWRVBhYzJZa2dYV2hGSTZpbTJ1VTUxdlhzZFJLd0FsTm13amloRGZEQkswQWUyOGtr?oc=5"
+    },
+    {
+      "title": "智能体时代操作系统夯实根底座 - 经济参考报",
+      "summary": "智能体时代操作系统夯实根底座 经济参考报",
+      "source": "经济参考报",
+      "lang": "zh",
+      "published": "Mon, 23 Nov 2026 00:20:45 GMT",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNa2xlbENmeUZLRGdiX29MTFluSWtkaHRsRmxaS1psMTFjbWY4ODNpbXFqcWRYcm0yTERKYk9ZOHNHYnlmVl9IdEswTzNXb3JsU0Jsc19hSGoxYnFCNG1YNkgyOVBJN3I4SmpIckxVaEc4RmwycjJhZHN1LU9tZExRZw?oc=5"
+    },
+    {
+      "title": "从算力到产业，门头沟科技产业何以成势 - 人民网",
+      "summary": "从算力到产业，门头沟科技产业何以成势 人民网",
+      "source": "人民网",
+      "lang": "zh",
+      "published": "Mon, 23 Nov 2026 06:37:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0zakxoRXNZUG84bWRLVjNFNVhKaGZ2THFfeGFVVVdoYUh3d3UxTU1JVTJxcFEzVXFYZ0hXZDdsbUNtSDJmX1RzTEJ6Z3dvbWFQTUl3QmFLcllsb3hFTUlCUWdrYUVBSEJX?oc=5"
+    },
+    {
+      "title": "中博会丨湖南新锋科技：为算力提供“坚实”材料支撑 - 红网",
+      "summary": "中博会丨湖南新锋科技：为算力提供“坚实”材料支撑 红网",
+      "source": "红网",
+      "lang": "zh",
+      "published": "Mon, 23 Nov 2026 09:02:12 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1vRzNYOUZPS0ZMcHVFci1EU25kR09IaWE5aGxDelBxUHVOamJvTkp5WnNjUTdYeFMyMnYwaXd3bjFOdGd2MTZGSHd0OHAyc2xmWVJmTzE0dWxRd1pHZG9IUHk1MA?oc=5"
+    },
+    {
+      "title": "新浪新闻·2026探索大会在京举办 聚焦智能经济、智能体与具身智能新机遇 - 中国新闻网",
+      "summary": "新浪新闻·2026探索大会在京举办 聚焦智能经济、智能体与具身智能新机遇 中国新闻网",
+      "source": "中国新闻网",
+      "lang": "zh",
+      "published": "Mon, 23 Nov 2026 08:02:48 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5BQWtnZElFc2dUM2FpM3pGdEhCU1ZTTVJHcHRLOVduZ25PWncyZTlKdktZRkh1NlBpaHR2Q2taYkV1ZEtPckhJUWh6RmJhaEozeUlqQmZjWnAyQVExcHFjUjdXX0djMnlF?oc=5"
+    },
+    {
+      "title": "17:38:41【PCB、CPO等算力硬件板块走强，创业板算力ETF易方达（158050）标的指数上涨4%】 - 财联社",
+      "summary": "17:38:41【PCB、CPO等算力硬件板块走强，创业板算力ETF易方达（158050）标的指数上涨4%】 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Mon, 23 Nov 2026 09:38:41 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFA2dURlUHRXbXl6ajM3SGpNeUNzNnZVeHZUU2MzRWVJWGt6amJQZFc0dFZtNlVUZDJmWUk0aVJsMlBNR2NobHJSUA?oc=5"
+    },
+    {
+      "title": "IBM获Gartner AI智能体管理平台魔力象限领导者评级 - 观点网",
+      "summary": "IBM获Gartner AI智能体管理平台魔力象限领导者评级 观点网",
+      "source": "观点网",
+      "lang": "zh",
+      "published": "Mon, 23 Nov 2026 11:16:40 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE01SXRyV3RmV3VCb29qRjNfU25RNzZJeVpJVm1sZlFIeU5kOWhEZ2ZlNzdIR2liOUJ6cjZ5Zl83UjNObWpJTXVzMFoxaENjeXc2azVudlRDTWxMSWgtX1RjQ2VR?oc=5"
+    },
+    {
+      "title": "从拼规模到拼效率，AI算力产业链正在重构 - Jiemian.com",
+      "summary": "从拼规模到拼效率，AI算力产业链正在重构 Jiemian.com",
+      "source": "Jiemian.com",
+      "lang": "zh",
+      "published": "Mon, 23 Nov 2026 10:04:57 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBiSGJ0U1dJZlVhZ0p6cXJYbUhwalZ1bG5BVzk4cmg2cmJXQXlzZzNFS1QteFBpakZDeTluX1hzVlczdjhLa1k4dTluc3B0azRJa2JRR3RubTE?oc=5"
+    },
+    {
+      "title": "大模型双雄，逆市收涨！ - 21财经",
+      "summary": "大模型双雄，逆市收涨！ 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Mon, 23 Nov 2026 10:55:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSWoxSlh1QksxOWUxWmV6aEZkUFo1a1dCOHVCR1ByOVdPcFg2bVNYaTBfWXItWEEzbWM0cHRLYUZlSzFNY2RQaXRxVnBJVS1pdGlIMlU3NXFubUxXN0R0Qnp3UWNnUW5yWS1uSzQzbXlHN2JUUUZVNGRON1dJS1E0VnhWUG9sV2ZzYjZEUzdXYw?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "A collection of MCP servers.",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 98407,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 80607,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57643,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "Playwright MCP server",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 40040,
+      "language": "TypeScript"
+    },
+    {
+      "title": "next-ai-draw-io",
+      "type": "GitHub",
+      "summary_en": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "summary": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "author": "DayuanJiang",
+      "stars": 37141,
+      "language": "TypeScript"
+    },
+    {
+      "title": "rea",
+      "type": "GitHub",
+      "summary_en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "summary": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "url": "https://github.com/morluto/rea",
+      "author": "morluto",
+      "stars": 474860,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 395081,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "An agentic skills framework & software development methodology that works.",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 324575,
+      "language": "Shell"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
