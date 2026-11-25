@@ -1,0 +1,439 @@
+{
+  "date": "2026-11-25",
+  "generated_at": "2026-11-25T11:53:37.817192+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 12,
+  "papers": [
+    {
+      "title": "OmniAct: One Policy, One Million Embodiments",
+      "title_zh": "",
+      "summary": "A single policy that controls diverse robots must not only transfer task knowledge across embodiments, but also adapt its behavior to each robot's capabilities. Existing approaches facilitate transfer through shared action representations, but these representations do not necessarily capture how differences in robot morphology should shape manipulation stra…",
+      "summary_zh": "",
+      "authors": [
+        "Xiang Fan",
+        "Yuheng Wang",
+        "Jiayuan Yan",
+        "Bohan Fang",
+        "Wisdom Oluchi Ikezogwo",
+        "Ainaz Eftekhar"
+      ],
+      "published": "2026-11-24T18:59:58Z",
+      "category": "cs.RO",
+      "arxiv_id": "2611.33158v1",
+      "abs_url": "https://arxiv.org/abs/2611.33158v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33158v1"
+    },
+    {
+      "title": "DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning",
+      "title_zh": "",
+      "summary": "We present DiaCap, an audiovisual LLM for comprehensive dialogue captioning, which produces the transcript, timestamps, and a visual description of the speaker for every utterance in a video. Considering that utterance timing and audiovisual diarization are tightly coupled, DiaCap unifies the tasks in a single model, trained in two complementary stages. Fir…",
+      "summary_zh": "",
+      "authors": [
+        "Binfei Ji",
+        "Zhiwen Cao",
+        "Anqi Yang",
+        "Prem Seetharaman",
+        "Shuo Yang",
+        "Ratheesh Kalarot"
+      ],
+      "published": "2026-11-24T18:59:08Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.33153v1",
+      "abs_url": "https://arxiv.org/abs/2611.33153v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33153v1"
+    },
+    {
+      "title": "BioLoom: Scaling Biomedical Vision-Language Models by Learning from the Structure of Scientific Articles",
+      "title_zh": "",
+      "summary": "The development of biomedical vision-language models (VLMs) with contrastive image-text pretraining has been driven by scaling to increasingly large and diverse image-text datasets. Beyond scaling, further progress can come from learning richer representations from existing data. We hypothesize that the structure of scientific literature itself provides an…",
+      "summary_zh": "",
+      "authors": [
+        "Yuwei Yang",
+        "Xiaoxiao Sun",
+        "Alejandro Lozano",
+        "Yuan-Sen Ting",
+        "Yuhui Yuan",
+        "Liang Zheng"
+      ],
+      "published": "2026-11-24T18:59:04Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.33151v1",
+      "abs_url": "https://arxiv.org/abs/2611.33151v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33151v1"
+    },
+    {
+      "title": "One Take, Many Cameras: Audio-Grounded Shot Synthesis for Dialogue Re-Cinematography",
+      "title_zh": "",
+      "summary": "Creating a dialogue scene typically requires cutting between multiple views (e.g., close-ups, medium shots, and over-the-shoulder shots) of the actors. Yet capturing such coverage is costly and in many settings unavailable. We study dialogue re-cinematography: synthesizing additional shots from a single wide-angle dialogue video. Existing video generators c…",
+      "summary_zh": "",
+      "authors": [
+        "Anthony Chen",
+        "Naomi Ken Korem",
+        "Matan Ben-Yosef",
+        "Tavi Halperin",
+        "Urska Jelercic",
+        "Ofir Bibi"
+      ],
+      "published": "2026-11-24T18:58:32Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.33147v1",
+      "abs_url": "https://arxiv.org/abs/2611.33147v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33147v1"
+    },
+    {
+      "title": "Lost on Campus: Evaluating Embodied Spatial Reasoning of Vision-Language Models in the Wild",
+      "title_zh": "",
+      "summary": "Embodied Spatial Reasoning (ESR) is central to deploying Vision-Language Models (VLMs) in real-world embodied tasks, yet remains inadequately evaluated. Existing benchmarks primarily assess spatial reasoning in static images or synthetic indoor environments, where semantic shortcuts often suffice, making it difficult to faithfully evaluate spatial reasoning…",
+      "summary_zh": "",
+      "authors": [
+        "Zehan Zheng",
+        "Yanyuan Chen",
+        "Deming Li",
+        "Yutao Tang",
+        "Jianwen Xie",
+        "Alan Yuille"
+      ],
+      "published": "2026-11-24T18:57:48Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.33145v1",
+      "abs_url": "https://arxiv.org/abs/2611.33145v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33145v1"
+    },
+    {
+      "title": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",
+      "title_zh": "",
+      "summary": "Learning for dexterous manipulation is limited by the scarcity of high-quality demonstrations: retargeting from human video is imprecise, teleoperation gives no force feedback to the operator, and exoskeleton-based collection is hard to scale up. We present PyRUA-Dex, a framework that enables coding agents to develop dexterous manipulation through programma…",
+      "summary_zh": "",
+      "authors": [
+        "Feixiang Ruan",
+        "Guodong Lv",
+        "Kewei Zhang",
+        "Wenbo Huang",
+        "Yintianrun Zhang",
+        "Qiang Wang"
+      ],
+      "published": "2026-11-24T18:56:44Z",
+      "category": "cs.RO",
+      "arxiv_id": "2611.33144v1",
+      "abs_url": "https://arxiv.org/abs/2611.33144v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33144v1"
+    },
+    {
+      "title": "ROAM-Bench: Evaluating Embodied Active Spatial Intelligence through Evidence Verification",
+      "title_zh": "",
+      "summary": "Embodied spatial intelligence requires agents to gather information through exploration and interaction, then use it to reason and act. Existing benchmarks insufficiently distinguish correct outcomes from completion of these task requirements. We introduce ROAM-Bench to evaluate these abilities under robot motion and collision constraints. Independent check…",
+      "summary_zh": "",
+      "authors": [
+        "Xingjian Ran",
+        "Xiaoye Mo",
+        "Sihao Liu",
+        "Li Luo",
+        "Taiqiang Wu",
+        "Ji Zhao"
+      ],
+      "published": "2026-11-24T18:56:22Z",
+      "category": "cs.RO",
+      "arxiv_id": "2611.33143v1",
+      "abs_url": "https://arxiv.org/abs/2611.33143v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33143v1"
+    },
+    {
+      "title": "iWAM: Efficient Action Prediction from World Models without Explicit Future Prediction",
+      "title_zh": "",
+      "summary": "World-action models (WAMs) build policies on pretrained video-generation models, on the premise that predicting how a scene evolves helps determine how to act. However, generating future scenes is expensive for real-time control. This motivates efficient proxies for future imagination, but how to train such proxies without sacrificing action-prediction qual…",
+      "summary_zh": "",
+      "authors": [
+        "Vansh Kapoor",
+        "Max Sobol Mark",
+        "Sreyas Venkataraman",
+        "Max Simchowitz",
+        "Aviral Kumar"
+      ],
+      "published": "2026-11-24T18:56:04Z",
+      "category": "cs.RO",
+      "arxiv_id": "2611.33141v1",
+      "abs_url": "https://arxiv.org/abs/2611.33141v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33141v1"
+    },
+    {
+      "title": "Physicl Scenes: An Artist-created 3D Dataset for Learning Perception and Action",
+      "title_zh": "",
+      "summary": "We present Physicl Scenes, a high-quality artist-created and curated dataset of 6,499 3D scenes spanning household rooms, public interiors, and outdoor spaces. The dataset combines detailed geometry, physically based materials, and carefully composed environments with object- and part-level semantic annotations, providing rich, joint supervision for visual…",
+      "summary_zh": "",
+      "authors": [
+        "Yueh-Cheng Liu",
+        "Snehal Jauhri",
+        "Matthias Nießner",
+        "Angela Dai"
+      ],
+      "published": "2026-11-24T18:55:07Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.33137v1",
+      "abs_url": "https://arxiv.org/abs/2611.33137v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33137v1"
+    },
+    {
+      "title": "BriConstrain: Geometrically Constrained Decoding for Autoregressive Brick Assembly Generation",
+      "title_zh": "",
+      "summary": "Language models can generate LEGO$^\\circledR$ assemblies from text, but their builds often contain parts that collide or attach to nothing. The usual approach of rejecting and resampling invalid placements discards decoded tokens without guaranteeing a valid build. We present BriConstrain, a constrained decoding method that restricts a pretrained language m…",
+      "summary_zh": "",
+      "authors": [
+        "Nadav Magar",
+        "Amir Hertz",
+        "Ariel Shamir",
+        "Or Patashnik"
+      ],
+      "published": "2026-11-24T18:54:38Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.33135v1",
+      "abs_url": "https://arxiv.org/abs/2611.33135v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33135v1"
+    },
+    {
+      "title": "Exploratory Midtraining for Robot Policies",
+      "title_zh": "",
+      "summary": "Robot policies predominantly learn from human-collected data emphasizing competent behavior, limiting coverage of the low-level behaviors needed to support autonomous improvement. We study how a form of midtraining can be used to build coverage over diverse low-level behaviors that connect challenging states of the robot and its environment to states from w…",
+      "summary_zh": "",
+      "authors": [
+        "Kshitiz",
+        "Zheyuan Hu",
+        "Robyn Wu",
+        "Yizhou Li",
+        "Yunchu Zhang",
+        "Vattanary Tevy"
+      ],
+      "published": "2026-11-24T18:52:34Z",
+      "category": "cs.RO",
+      "arxiv_id": "2611.33130v1",
+      "abs_url": "https://arxiv.org/abs/2611.33130v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33130v1"
+    },
+    {
+      "title": "SAG-Mem-1.0 Technical Report",
+      "title_zh": "",
+      "summary": "Long-term conversational memory requires retrieving complementary facts scattered across dialogue sessions, including intermediate evidence with limited similarity to the original question. Existing approaches often rely on derived memory representations or persistent relational structures, introducing construction costs and potentially losing source detail…",
+      "summary_zh": "",
+      "authors": [
+        "Yuchao Wu",
+        "XingCheng Liang",
+        "Xuanze Wang",
+        "Yini Huang",
+        "Yue Wu"
+      ],
+      "published": "2026-11-24T18:51:29Z",
+      "category": "cs.CL",
+      "arxiv_id": "2611.33124v1",
+      "abs_url": "https://arxiv.org/abs/2611.33124v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33124v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "AI智能体来“买买买”！沃尔玛接入Meta Muse 并为AI代购划定边界 - 财联社",
+      "summary": "AI智能体来“买买买”！沃尔玛接入Meta Muse 并为AI代购划定边界 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Wed, 25 Nov 2026 08:54:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9UZXBJYVdJS2hPNGZISHNrX3JRcVNzcUhIU0xYNC0yaGVxNHdCNG5XWVlDaTFhLXBkZ01kYU5aQ25STENQRFpIMg?oc=5"
+    },
+    {
+      "title": "华为云发布智能体伙伴开放计划 推动行业智能体规模化落地 - 新华网",
+      "summary": "华为云发布智能体伙伴开放计划 推动行业智能体规模化落地 新华网",
+      "source": "新华网",
+      "lang": "zh",
+      "published": "Wed, 25 Nov 2026 08:25:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE93b2NjR2RnbWVlanZONFJoTU1tWmlmRTg4NWk0aHBvX253N3ViTERGbFZHM3JWRGtVcmNRVFFaZVRlb1hrMWpFUUk1eXNJeEdiR2xqU2tTaVdkdjVLZ3lIbGNuRXNXOE1BcVpMVVlYcFlHOWowRFJvMDlpOUk?oc=5"
+    },
+    {
+      "title": "华为云发布智能体伙伴开放计划 - 国际科技创新中心",
+      "summary": "华为云发布智能体伙伴开放计划 国际科技创新中心",
+      "source": "国际科技创新中心",
+      "lang": "zh",
+      "published": "Wed, 25 Nov 2026 08:37:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1HNDJ6UktBdjhQQUN2SFpHY1JUdU82eUVIaTZmODdQTHFRXzQ3aHBVLUFfWWRVWUI2dExiNHFzM0lGX0JtTGg2OWlUYlFYal9oU2daaElXSnc4SktYY3lSVzNJVUVkYkpLUWctM0ZGTzI?oc=5"
+    },
+    {
+      "title": "从芯片思维到系统思维，中国算力的换道时刻 - 国际电子商情",
+      "summary": "从芯片思维到系统思维，中国算力的换道时刻 国际电子商情",
+      "source": "国际电子商情",
+      "lang": "zh",
+      "published": "Wed, 25 Nov 2026 08:47:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9Sa0FfZkN0ekJ6c3FfaHB5Q0lMMnUzeEZELUJVNGJJLWVPUWhpVV9NSllEd05TRTBJZWhJVW1mNVhZMS1UaHd1NDVJNkltS0MxSFE?oc=5"
+    },
+    {
+      "title": "GPT-6，能设计蛋白质了！ - 国际金融报",
+      "summary": "GPT-6，能设计蛋白质了！ 国际金融报",
+      "source": "国际金融报",
+      "lang": "zh",
+      "published": "Wed, 25 Nov 2026 06:16:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9PLXFBQkdLc3d5M19LZU1KdzVoQ2RfSmJjR3djRkFkLThvNzgzaEZvV0o0WjFobEk4ZWV3RUE5cXdCQ0pqZ0tFYy1TeklOeGFBZHBZeEcwZnQ4emhfVnVV?oc=5"
+    },
+    {
+      "title": "搭载“汉原2号”，像用豆包一样调用量子算力 - 武汉市人民政府",
+      "summary": "搭载“汉原2号”，像用豆包一样调用量子算力 武汉市人民政府",
+      "source": "武汉市人民政府",
+      "lang": "zh",
+      "published": "Wed, 25 Nov 2026 00:30:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAzS21KNlF5RXdqMTRNQVZiTFN0NkdPeVRINWJYOUNjTHJXNGpmVUtIMmR5QzBpVzg5WHRjWS1mZWZRZG1IUnV0R2lsQXhZRGw3UUNEUFhlZzV5ZEl6WnFHcVBBR1ZMcWp6OG9zMFBCeHg?oc=5"
+    },
+    {
+      "title": "厦门大学与联想集团联合主办AI算力与Token落地实践研讨会 - 厦门大学新闻网",
+      "summary": "厦门大学与联想集团联合主办AI算力与Token落地实践研讨会 厦门大学新闻网",
+      "source": "厦门大学新闻网",
+      "lang": "zh",
+      "published": "Wed, 25 Nov 2026 01:48:48 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9JZjRNNmw4MFZtbklyc0hWekpwOTV2X0FjSWJtbXlTREFzYmRfZFB1Q2ZCX3h5ZnB1VUE3Y3VJc1dEa3BEc1BrdnV5anEyR3YxNDY0Rl9fbw?oc=5"
+    },
+    {
+      "title": "欺骗感知型AI渗透测试智能体的蜜罐利用 - 安全内参",
+      "summary": "欺骗感知型AI渗透测试智能体的蜜罐利用 安全内参",
+      "source": "安全内参",
+      "lang": "zh",
+      "published": "Wed, 25 Nov 2026 06:45:05 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAzZ0Q0cm9yRlRBVHRoZllNWkduamdLVFllSGJ0NDBHazFpZnBFa00tdTAxLVN1TWdoWkZXV05Uai1FTjY3ekQ2QXNQZFF0QQ?oc=5"
+    },
+    {
+      "title": "谷歌开源环境质量智能体 AQuA，用于诊断生产环境 AI 智能体故障 - InfoQ.cn",
+      "summary": "谷歌开源环境质量智能体 AQuA，用于诊断生产环境 AI 智能体故障 InfoQ.cn",
+      "source": "InfoQ.cn",
+      "lang": "zh",
+      "published": "Wed, 25 Nov 2026 05:01:39 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9tLXYxTkQwSmNaRnZtanRnd3BTem96UHlNTWJhOFFndTEtcXlOaE1MY0lkbkhuRkRmdXVYc1gwRWlURlhTLUZyc0ZPMk9SQXNqcnRWNm5RYUhwR1VneGc?oc=5"
+    },
+    {
+      "title": "上交大“多虚一”虚拟化技术为智能体筑牢算力底座 - 中国日报网",
+      "summary": "上交大“多虚一”虚拟化技术为智能体筑牢算力底座 中国日报网",
+      "source": "中国日报网",
+      "lang": "zh",
+      "published": "Wed, 25 Nov 2026 02:04:12 GMT",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1CaHlIczlxVXNJZjE2cjVXaU5TYVBza1V2NVhNVjR5cmhNQVdWWmVRT3c3R0t3VnFMSEF5VUNRdlg0YzhZRUstSXlxYzMyNjRSSlFwYjh6MmhBLXhXWkl6UHp0VVd2VGdwdktIRFFnU05sZkw0LU1SZkZyWUY?oc=5"
+    },
+    {
+      "title": "2026小鹏科技日：物理AI走向完整智能体竞争 图灵具身智能架构发布 - 新浪汽车",
+      "summary": "2026小鹏科技日：物理AI走向完整智能体竞争 图灵具身智能架构发布 新浪汽车",
+      "source": "新浪汽车",
+      "lang": "zh",
+      "published": "Wed, 25 Nov 2026 10:00:26 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Pd09pMFQ3TExfc0UxMGo5MVRRa2ZMMG8ySUI0dTUzYlNaTHBqZTFqR3dpR2lBanNONW01VFJEUzdaNy0yVVc1eUVDREE4bWVPRlN1a0YxY1E5YUJ0MDJmOWN4YUY2Zl9DS09HSkxZYy1yU2oxSEE?oc=5"
+    },
+    {
+      "title": "AI芯片挤占产能，游戏显卡的等待期为何越拉越长 - 同花顺财经",
+      "summary": "AI芯片挤占产能，游戏显卡的等待期为何越拉越长 同花顺财经",
+      "source": "同花顺财经",
+      "lang": "zh",
+      "published": "Wed, 25 Nov 2026 10:05:40 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9hZHlLaTR6djJydzhRbjJvSUJyejY2ck1ORm5XMU5heVNZRzRINXB2TGlkeGZxVDdSYlZWWkxCanBDeDFVSFotN0xLTFNDejVER0pCOEhkNWNKV2JOak5Zeg?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
