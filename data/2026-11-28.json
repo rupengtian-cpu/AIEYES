@@ -1,0 +1,517 @@
+{
+  "date": "2026-11-28",
+  "generated_at": "2026-11-28T11:05:54.390570+00:00",
+  "paper_count": 12,
+  "news_count": 12,
+  "tool_count": 20,
+  "papers": [
+    {
+      "title": "AnyCam: Anything Can Represent Camera for Video Generation",
+      "title_zh": "AnyCam：任何东西都可以代表视频生成相机",
+      "summary": "Camera-controlled video generation re-renders a video along a target camera trajectory, yet moving the camera around an object, the most natural way to change the viewpoint of an object-centric scene, remains difficult. Existing methods condition either on camera parameters, which are scale-ambiguous in monocular video, or on explicit geometry such as warpe…",
+      "summary_zh": "摄像机控制的视频生成沿着目标摄像机轨迹重新渲染视频，但围绕对象移动摄像机（改变以对象为中心的场景的视点的最自然方式）仍然很困难。现有的方法要么以相机参数为条件，这些参数在单目视频中尺度不明确，要么以显式几何形状为条件，例如扭曲的点云或深度，在大的视点变化下会崩溃。我们提出了 AnyCam，一种在场景中用锚点对象表示相机的方法：我们以 3D 方式重建它并沿着目标轨迹渲染它，这是一种具有比例感知、视图完整且易于相对于对象指定的相机信号。视频扩散模型将源视频的内容和动态传输到新的视点。其 H-Concat 布局及时对齐源帧和目标帧，因此该模型可以被提炼为 AnyCam-AR，这是一个用于实时相机控制的流式几步生成器。这两个模型都在配对视频上进行训练，并使用来自多摄像头视频和静态场景捕获的像素对齐锚点渲染。对不同数据集和轨迹的实验表明，AnyCam 在摄像…",
+      "authors": [
+        "Weijie Lyu",
+        "Zhixin Shu",
+        "Yuntian Ke",
+        "Ming-Hsuan Yang"
+      ],
+      "published": "2026-11-25T18:59:59Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.34944v1",
+      "abs_url": "https://arxiv.org/abs/2611.34944v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34944v1"
+    },
+    {
+      "title": "Tracking Any Point with Agentic Visual Reasoning",
+      "title_zh": "使用代理视觉推理跟踪任何点",
+      "summary": "A general-purpose Vision-Language Model (VLM) has surpassed expert vision models in many domains such as object detection and video recognition. However, point correspondence is known to be challenging for VLMs since it goes beyond object-level recognition: it requires pixel-level localization of the same physical surface point across observations, even whe…",
+      "summary_zh": "通用视觉语言模型（VLM）在物体检测和视频识别等许多领域已经超越了专家视觉模型。然而，点对应对于 VLM 来说是一个挑战，因为它超出了对象级识别的范围：它需要在观察中对同一物理表面点进行像素级定位，即使外观发生变化或点消失然后又重新出现。在本文中，我们介绍了 AgenTAP，这是一种基于 VLM 的代理，可以直接预测点坐标和可见性，并主动对视频进行推理。从自己的估计开始，代理自主选择要检查的内容，并使用结果证据来验证点身份并完善其预测。借助 GPT-6 Astra，它在点定位和可见性预测方面都超越了专家视觉模型，而无需进行特定于对应的微调。我们进一步使用 AgenTAP 重新识别消失后的物理点并重新连接碎片轨迹，构建 EgoTAP-4D，这是现实世界中以自我为中心的长视频中的 3D 点轨迹数据集。在采样的再现点上，其预测接近人类一致性，并且将 Eg…",
+      "authors": [
+        "Xuweiyi Chen",
+        "Jin Yao",
+        "Linzhan Mou",
+        "Lei Gong",
+        "Di Liu",
+        "Cheng Zhang"
+      ],
+      "published": "2026-11-25T18:59:58Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.34943v1",
+      "abs_url": "https://arxiv.org/abs/2611.34943v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34943v1"
+    },
+    {
+      "title": "LuxAvatar: Real-Time Relightable Head Avatars via Causal Neural Shading of 3D Intrinsic Proxies",
+      "title_zh": "LuxAvatar：通过 3D 内在代理的因果神经着色实现实时可重新照明的头部头像",
+      "summary": "We present LuxAvatar, a feed-forward framework for real-time head avatar animation and relighting from a single portrait. To achieve both 3D controllability and complex facial light transport, we factorize avatar synthesis into an animatable 3D intrinsic Gaussian proxy and a causal autoregressive neural shader. This proxy disentangles canonical geometry and…",
+      "summary_zh": "我们推出了 LuxAvatar，这是一个用于实时头像动画和单个肖像重新照明的前馈框架。为了实现 3D 可控性和复杂的面部光传输，我们将化身合成分解为可动画的 3D 固有高斯代理和因果自回归神经着色器。该代理解开规范几何和反射率属性，快速将变形高斯光栅化为视图和运动一致的 PBR 缓冲区。以这些缓冲区为条件，我们的神经着色器将前向渲染制定为条件视频扩散过程，绕过显式 PBR 计算以在目标照明下合成逼真的着色效果。我们通过异构蒸馏实现实时流，从预训练的多步双向重新照明教师到两步因果自回归神经着色器，继承广泛的合成照明先验，同时最大限度地减少调节和解码延迟。为了进一步专门化人类头部的这些先验，我们构建了一个混合重新照明数据集，用于特定领域的微调，捕获真实的面部动态和物理接地的光传输。大量实验表明，我们的框架可实现 3D 可控、实时肖像动画和重新照明，在视…",
+      "authors": [
+        "Yipengjing Sun",
+        "Chenyang Wang",
+        "Boyao Zhou",
+        "Jiapeng Zhu",
+        "Ka Leong Cheng",
+        "Shengping Zhang"
+      ],
+      "published": "2026-11-25T18:59:46Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.34940v1",
+      "abs_url": "https://arxiv.org/abs/2611.34940v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34940v1"
+    },
+    {
+      "title": "A Mesh for Every Moment",
+      "title_zh": "适合每个时刻的网格",
+      "summary": "We present MEMO (a Mesh for Every MOment), a method that reconstructs the geometry of complete dynamic scenes, captured by multiple synchronized cameras, and extracts a mesh at every frame. Existing dynamic Gaussian splatting methods either model appearance alone or target isolated objects segmented by foreground masks, and all of them recover meshes by TSD…",
+      "summary_zh": "我们提出了 MEMO（a Mesh for Every MOment），这种方法可以重建由多个同步摄像机捕获的完整动态场景的几何形状，并在每一帧提取网格。现有的动态高斯分布方法要么单独对外观进行建模，要么针对由前景掩模分割的孤立对象，并且所有这些方法都通过 TSDF 融合或泊松重建来恢复网格，其固定网格限制了它们可以捕获的细节。 MEMO 的核心是受高斯过程启发的每高斯运动模型，它将每个高斯随时间的位置和旋转表示为时间高斯核的组合。该模型在整个序列中使每个高斯函数保持有效的表面元素，并带有动态几何的隐式表示，因此可以随时从高斯函数定义的场导出网格。虽然在实际捕捉中很常见，但大而快速的运动提出了动态高斯泼溅方法通常忽视的挑战。为了解决这个问题，我们设计了一种基于轨迹的初始化方案，该方案将每个高斯的初始轨迹拟合为封闭形式的点轨迹。我们在 Blender…",
+      "authors": [
+        "Roy Or-El",
+        "Jeong Joon Park",
+        "Ira Kemelmacher-Shlizerman"
+      ],
+      "published": "2026-11-25T18:59:45Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.34939v1",
+      "abs_url": "https://arxiv.org/abs/2611.34939v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34939v1"
+    },
+    {
+      "title": "Attack Policy Selection can Mislead Monitor Evaluators",
+      "title_zh": "攻击策略选择可能会误导监控评估人员",
+      "summary": "AI monitors, classifiers that flag dangerous behaviour by AI agents, are often evaluated against transcripts generated by attack policies acting as proxies for dangerous behaviour in deployment. We evaluate an ex-production OpenAI monitor as a case study and find that measured false negative rate is highly sensitive to both the method used to generate attac…",
+      "summary_zh": "AI 监视器是标记 AI 代理危险行为的分类器，通常根据攻击策略生成的记录进行评估，这些记录充当部署中危险行为的代理。我们评估了一个前生产的 OpenAI 监视器作为案例研究，发现测量的误报率对用于生成攻击策略的方法以及该方法中应用的优化水平高度敏感。单一方法（强化学习）的优化级别的该比率范围为 0.5\\% 到 20.8\\%，而最佳观察到的优化级别（优化提示与转录编辑）的方法的比率范围为 6.4\\% 到 23.0\\%。每个攻击策略都是仅针对代理监视器制定的：所有报告的结果都显示攻击转移到保留的 GPT-5.4 目标监视器。我们的结果表明，监视器规避评估很容易产生误导：仅使用基本攻击方法的评估可能会错误地认为监视器很强大。对攻击策略选择的敏感性引发了一个问题：将任何特定结果解释为有关部署性能的证据都需要理由。攻击策略生成的记录是监视器在部署中必须标记…",
+      "authors": [
+        "Charlie Griffin",
+        "Oliver Makins",
+        "Asa Cooper Stickland",
+        "Alessandro Abate",
+        "Yarin Gal",
+        "Abby D'Cruz"
+      ],
+      "published": "2026-11-25T18:59:28Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.34934v1",
+      "abs_url": "https://arxiv.org/abs/2611.34934v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34934v1"
+    },
+    {
+      "title": "A gene informed benchmark for BioScoring of pathology foundation models",
+      "title_zh": "病理学基础模型生物评分的基因知情基准",
+      "summary": "Pathology foundation models are usually compared by their performance on downstream tasks such as classification and retrieval. While such benchmarks measure how useful a model is, they provide no insight into the biology it represents. We introduce BioScore, a benchmark that quantifies how well an image encoder captures cell identities, with spatial transc…",
+      "summary_zh": "病理学基础模型通常通过其在分类和检索等下游任务上的性能进行比较。虽然此类基准衡量模型的有用性，但它们无法深入了解其所代表的生物学。我们引入了 BioScore，这是一个基准，可以量化图像编码器捕获细胞身份的程度，并以相同组织的空间转录组作为参考。稀疏自动编码器将编码器的补丁嵌入分割为稀疏特征，我们将其聚类为固定数量的组。然后，BioScore 测量由标记基因定义的 52 个细胞身份中的每一个，一组如何具体地跟踪该身份在组织中的表达。由于自动编码器训练是完全无监督的，因此匹配表明该模型仅代表图像中的细胞身份。我们对 8 个病理基础模型和 3 个自然图像模型进行评分。每个病理模型的得分都高于每个自然图像模型（0.299--0.371 vs 0.214--0.232），并且配对测试将病理模型分为三层。与监督探针不同，BioScore 不需要标签，从数据构…",
+      "authors": [
+        "Paul Vilars",
+        "Vincent Quoc-Huy Trinh",
+        "Maria Vakalopoulou",
+        "Dimitris Samaras",
+        "Stergios Christodoulidis",
+        "Mahdi S. Hosseini"
+      ],
+      "published": "2026-11-25T18:59:13Z",
+      "category": "cs.LG",
+      "arxiv_id": "2611.34930v1",
+      "abs_url": "https://arxiv.org/abs/2611.34930v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34930v1"
+    },
+    {
+      "title": "High-Fidelity Image Matting with Pixel-Space Diffusion Transformers",
+      "title_zh": "使用像素空间扩散变压器进行高保真图像抠图",
+      "summary": "Diffusion models have shown strong potential for image matting by transferring generative priors learned from large-scale pretraining. However, existing approaches largely rely on latent diffusion models, whose compressed representations and VAE-based reconstruction introduce a mismatch with the high-frequency precision required for matting. We present Pixe…",
+      "summary_zh": "扩散模型通过转移从大规模预训练中学到的生成先验，在图像抠图方面表现出了强大的潜力。然而，现有方法很大程度上依赖于潜在扩散模型，其压缩表示和基于 VAE 的重建会导致与抠图所需的高频精度不匹配。我们提出了 PixelMatte，一个采用预训练像素空间扩散变换器进行高保真图像抠图的框架。我们证明，即使在没有配对图像到图像预训练的情况下，即使从纯文本到图像模型也可以获得强大的图像条件抠图能力。我们的方法重用主干的原生补丁嵌入来联合处理输入图像、三元图和噪声 alpha 遮罩作为空间对齐的标记，从而无需额外的条件编码器或适配器即可直接进行像素空间预测。通过像素精确的合成监督和真实图像微调，PixelMatte 可在单次前向传递中预测 alpha 遮罩。两个轻量级校准模块（LayerShift 和 High-Pass Refiner）进一步提高了区域不透明度…",
+      "authors": [
+        "Baihan Yang",
+        "Xin Lin",
+        "Yufan Wei",
+        "Baiang Li",
+        "Yuheng Liu",
+        "Juanxi Tian"
+      ],
+      "published": "2026-11-25T18:59:12Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.34929v1",
+      "abs_url": "https://arxiv.org/abs/2611.34929v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34929v1"
+    },
+    {
+      "title": "Diverse Alternative Reasoning Traces for Hard Math Problems",
+      "title_zh": "困难数学问题的多种替代推理轨迹",
+      "summary": "Post-training large language models (LLMs) for mathematical reasoning often relies on accepted traces whose final answers pass a verifier. For hard math problems, however, such traces can be rare under independent Monte Carlo (MC) sampling. To address this, we propose Diverse Alternative Reasoning Traces (DART), a trace-mining method that starts from a reje…",
+      "summary_zh": "用于数学推理的大型语言模型 (LLM) 的后训练通常依赖于已接受的痕迹，其最终答案可以通过验证者。然而，对于困难的数学问题，在独立蒙特卡罗 (MC) 采样下，此类痕迹可能很少见。为了解决这个问题，我们提出了多样化替代推理轨迹（DART），这是一种轨迹挖掘方法，从被拒绝的轨迹开始，将其分解为推理步骤，并按位置加权不确定性对它们进行排名。然后，在完成生成的跟踪之前，它会使用参考答案指导和元思想为排名较高的步骤故意生成不同的候选候选。对于贪婪未解决的 DeepMath-103K 问题，DART 在匹配数量的生成迹线下比 MC 采样多恢复 37% 的问题。每个已恢复问题的估计生成成本几乎相同，而每个已接受跟踪的成本要低 30%。训练后的 Llama-3.1-8B-Instruct 对 DART 挖掘的痕迹在 MATH-500 和 AIME 基准的六项评估中…",
+      "authors": [
+        "Lukas Aichberger",
+        "Adam Golinski",
+        "Arno Blaas",
+        "Arwen Bradley",
+        "Jacob Springer",
+        "Mehrdad Farajtabar"
+      ],
+      "published": "2026-11-25T18:59:11Z",
+      "category": "cs.CL",
+      "arxiv_id": "2611.34928v1",
+      "abs_url": "https://arxiv.org/abs/2611.34928v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34928v1"
+    },
+    {
+      "title": "One Ocean, Many Tasks: A Data-Grounded Simulation Suite and Benchmark for Marine Robotics",
+      "title_zh": "一片海洋，多项任务：基于数据的仿真套件和海洋机器人基准",
+      "summary": "Simulation is essential for marine robotics, yet existing platforms often trade off between visually realistic worlds, high-throughput experimentation, and ocean-condition realism grounded in real data. We present OneOcean, a data-grounded simulation suite and benchmark built around a unified spatiotemporal ocean-environment product that harmonizes bathymet…",
+      "summary_zh": "模拟对于海洋机器人至关重要，但现有平台经常在视觉现实世界、高通量实验和基于真实数据的海洋条件现实之间进行权衡。我们推出了 OneOcean，这是一个基于数据的模拟套件和基准，围绕统一的时空海洋环境产品构建，该产品将测深与数据驱动的洋流和潮汐相协调，并具有用于清理相关评估的可选污染场。在这种环境表示之上，OneOcean 定义了一个任务梯，涵盖水流下的导航和站位保持、航路点和路线跟踪、深度剖面跟踪、区域扫描、管道检查和多代理协调，包括编队运输、鱼类保护和巡逻（放牧）以及表面污染定位、遏制和清理。该套件支持 2-10 辆车的多代理设置。我们的模拟器支持三到六个自由度 (DoF)，并生成标准化指标和可重复的运行清单，从而实现跨任务、困难和扩展设置的一致聚合。跨数据集变体和场景的实验系统地强调了基于数据的干扰下的规划和控制，并揭示了启发式基线、行为克隆（B…",
+      "authors": [
+        "Shuaijun Liu",
+        "Qifu Wen",
+        "Xingwei Chen",
+        "Xinwen Hu",
+        "Feiyang You",
+        "Sijia Chen"
+      ],
+      "published": "2026-11-25T18:58:56Z",
+      "category": "cs.RO",
+      "arxiv_id": "2611.34925v1",
+      "abs_url": "https://arxiv.org/abs/2611.34925v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34925v1"
+    },
+    {
+      "title": "$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
+      "title_zh": "$μ$-Bench：共享交互语音代理中多用户任务完成的基准测试",
+      "summary": "Voice agents in shared spaces must satisfy interdependent multi-user requests while upholding per-user authority, privacy, and task constraints. Existing evaluations offer limited coverage when participants react throughout a session. We introduce $μ$-Bench, a benchmark for joint task completion in closed-loop, full-duplex multi-user voice interaction. Simu…",
+      "summary_zh": "共享空间中的语音代理必须满足相互依赖的多用户请求，同时维护每个用户的权限、隐私和任务限制。当参与者在整个会议中做出反应时，现有评估的覆盖范围有限。我们推出 $μ$-Bench，这是闭环、全双工多用户语音交互中联合任务完成的基准。模拟参与者根据目标、知识和权限的孤立配置文件进行操作，适应代理的语音和工具结果。跨越 20 个领域，100 个场景根据群体规模、声学效果和后续需求而变化，形成 800 个案例（408 个增强工具，392 个无工具）。联合任务成功（JTS）要求所有用户目标、隐私边界和终端状态共同持有，而Pure JTS进一步不允许未经授权的工具调用；归因、线程和协调 (ATC) 诊断可定位故障。在 13 个语音代理中，专有系统的无工具成功率达到 62.24%，工具增强成功率为 65.44%，而开放权重模型的成功率仍低于 20%。 ATC 诊断…",
+      "authors": [
+        "Qihao Lin",
+        "Guanxu Chen",
+        "Shuhang Zheng",
+        "Xiaoya Lu",
+        "Jingyi Yang",
+        "Terumi Chiba"
+      ],
+      "published": "2026-11-25T18:58:42Z",
+      "category": "cs.CL",
+      "arxiv_id": "2611.34920v1",
+      "abs_url": "https://arxiv.org/abs/2611.34920v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34920v1"
+    },
+    {
+      "title": "Cairn: Object-Centric 3D Trajectory Priors for Steering Frozen VLAs",
+      "title_zh": "Cairn：用于引导冻结 VLA 的以对象为中心的 3D 轨迹先验",
+      "summary": "Vision-language-action models (VLAs) are capable low-level controllers, but they tie where objects go to the layouts they were trained on: when objects are moved or obstacles block the way, they carry them to the wrong place or into collisions. Fine-tuning on new layouts needs robot data for each one and erodes skills the model already has. We introduce Cai…",
+      "summary_zh": "视觉语言动作模型（VLA）是功能强大的低级控制器，但它们将物体的位置与它们所训练的布局联系起来：当物体移动或障碍物挡住道路时，它们会将它们带到错误的地方或发生碰撞。对新布局的微调需要每个布局的机器人数据，并且会削弱模型已有的技能。我们引入了 Cairn，它使 VLA 保持冻结状态，并在测试时引导它沿着抓取器中学习到的物体的 3D 轨迹行驶。一个小的先验读取场景和所持物体的点云，以及其抓取时的姿势和指令，并对 SE(3) 轨迹进行采样，直至其释放，引导其绕过障碍物并使其适应间隙。先验和 VLA 构成了分层规划器的两个级别，其中反馈以双向方式运行：VLA 的预期运动选择并重塑轨迹，而所选运动则指导 VLA 的去噪。它的预测动作通过抓取映射到所持物体的姿势，被拉向下一个路径点，而 VLA 的权重保持不变。在 1,941 个具有移位物体和障碍物的 LIBE…",
+      "authors": [
+        "Agelos Kratimenos",
+        "Kostas Daniilidis",
+        "Evangelos Chatzipantazis"
+      ],
+      "published": "2026-11-25T18:57:29Z",
+      "category": "cs.RO",
+      "arxiv_id": "2611.34914v1",
+      "abs_url": "https://arxiv.org/abs/2611.34914v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34914v1"
+    },
+    {
+      "title": "Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation",
+      "title_zh": "Agentic LongLive：用于长视频生成的异步代理内存",
+      "summary": "Real-time autoregressive video generators stream minutes of video and accept new prompts on the fly, but struggle to keep people, objects, and places consistent over a long interactive story. Agent systems provide such memory for offline multi-shot generation, yet they read the whole script in advance, plan each shot before generating it, and regenerate fai…",
+      "summary_zh": "实时自回归视频生成器可以传输几分钟的视频并即时接受新的提示，但很难在长互动故事中保持人物、物体和地点的一致。代理系统为离线多镜头生成提供这样的内存，但它们提前读取整个脚本，在生成每个镜头之前对其进行规划，并重新生成失败的镜头，这是直播流所不允许的。我们推出了 Agentic LongLive，一种用于长视频生成的异步代理内存。单独 GPU 上的内存代理仅读取迄今为止显示的提示，而不会读取生成的视频，并保留每个人、物体和场景的文本状态和不断变化的图像。它从这个实体内存中组成一个全局图像和一个每次镜头内存图像，辅助 GPU 在下一个镜头开始之前将其预填充到生成器的注意力池中，并为命名它们的提示写入实体卡，因此视频永远不会等待内存，并且视频错误也不会被写回。一个小型语言模型，经过强化学习训练和使用下游视频结果校准的图像奖励，决定在知道下一个提示之前要记住…",
+      "authors": [
+        "Shaoteng Liu",
+        "Shuai Yang",
+        "Wei Huang",
+        "Luozhou Wang",
+        "Song Han",
+        "Yukang Chen"
+      ],
+      "published": "2026-11-25T18:54:03Z",
+      "category": "cs.CV",
+      "arxiv_id": "2611.34907v1",
+      "abs_url": "https://arxiv.org/abs/2611.34907v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.34907v1"
+    }
+  ],
+  "news": [
+    {
+      "title": "马斯克：算力租赁价格走向分化 - 华尔街见闻",
+      "summary": "马斯克：算力租赁价格走向分化 华尔街见闻",
+      "source": "华尔街见闻",
+      "lang": "zh",
+      "published": "Sat, 28 Nov 2026 10:25:42 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1oVVA1UHRoMkFCTTlkWXBMMEFSR0drblJJcWl4dHJJN01kYm9tWEJ6M09iZGxMTGNYSG8zYXNYRWFhZFM5bXpWWkxiVy1acFdFMVg4?oc=5"
+    },
+    {
+      "title": "机构调研丨算力租赁+CPO+存储芯片 这家公司明确当前采购渠道畅通 算力业务有序推进交付中 - 东方财富",
+      "summary": "机构调研丨算力租赁+CPO+存储芯片 这家公司明确当前采购渠道畅通 算力业务有序推进交付中 东方财富",
+      "source": "东方财富",
+      "lang": "zh",
+      "published": "Sat, 28 Nov 2026 10:52:53 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9GRS1nQlpKRHVwaWNEWjR4YmxobkFvZFBhc1JMSENVaWpVTWJmQUJQQzl5YnBTRzhFRlJkd1JMOVVaVm9BTzQ5TmhsTHlPUzR0bHRGdXN6Q3ZpS01DOUxQM2NVNWFBdw?oc=5"
+    },
+    {
+      "title": "数学之后，轮到密码学了？上海“书生”大模型揪出多项关键密码缺陷 - 上观新闻",
+      "summary": "数学之后，轮到密码学了？上海“书生”大模型揪出多项关键密码缺陷 上观新闻",
+      "source": "上观新闻",
+      "lang": "zh",
+      "published": "Sat, 28 Nov 2026 09:33:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA2WUZFc3h5RjYwZXJucVBxa3NNZXJUUDlyeXo5cVZ5T2ZqQWdrOWZUU2poanV2cmZGOVFiQkI4TWdqakFZMW1WTzAwdUhod2szOFNMSFJPREx4VW1vTmc?oc=5"
+    },
+    {
+      "title": "马斯克最新爆料：谷歌意向租用SpaceX更多算力 GPU平均租赁价格呈上行趋势 - 财联社",
+      "summary": "马斯克最新爆料：谷歌意向租用SpaceX更多算力 GPU平均租赁价格呈上行趋势 财联社",
+      "source": "财联社",
+      "lang": "zh",
+      "published": "Sat, 28 Nov 2026 08:07:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1Ha0oycDkwWmRrQ3NIM2xIZzJDN1c2ME42QUJNMFkwUXFwWDJlczFUZm5nQjIyWkpnRGMxTlgxclcyY1Q1VENMTQ?oc=5"
+    },
+    {
+      "title": "国产算力芯片的供给侧爬坡：政策定调之后，适配进度才是份额分配的前置变量 - 同花顺",
+      "summary": "国产算力芯片的供给侧爬坡：政策定调之后，适配进度才是份额分配的前置变量 同花顺",
+      "source": "同花顺",
+      "lang": "zh",
+      "published": "Sat, 28 Nov 2026 05:45:30 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBzSVZpdzlGbGNIOFVzcWpURlpZSEc3ZVNSZXd3VmVYeXc4TzZIaW5rMTByS3llX0gtVGN2LUV5VUNCRHl0WjE0STJmOUJaYng3TUNXNlRHZ1VKZmxUbEE?oc=5"
+    },
+    {
+      "title": "银行加速跑进AI智能体生态 - 新浪财经",
+      "summary": "银行加速跑进AI智能体生态 新浪财经",
+      "source": "新浪财经",
+      "lang": "zh",
+      "published": "Sat, 28 Nov 2026 09:45:06 GMT",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE11VW1udjktTVlZMWRsRDZ3T1lmemUzZGM2YU9WMUsyaXlMY0ZPUnhGLW5XUHpCOTdWN0EtaDRteWhZY0h1X0VIdDJPZGN4aWhqVlUxTlY5RnBPZmMtZUc0YmhxYUJOU2hMTGRlMWJZNXBZaHk4Ym5oMQ?oc=5"
+    },
+    {
+      "title": "马斯克：谷歌有意向SpaceX租用更多算力 - 联合早报",
+      "summary": "马斯克：谷歌有意向SpaceX租用更多算力 联合早报",
+      "source": "联合早报",
+      "lang": "zh",
+      "published": "Sat, 28 Nov 2026 09:41:31 GMT",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9MU2xoNjFIUE00aDFJWXNVbEh4S0ZuLV9Rb1hFRUtMZEtwZ2JpV3VfM1Y2YXdBTU9ub2FXZGh3MElvQk9TVmJVdG05VXJQWWNfTzRoSEEyQXJEcjBtZWxId2cwMEpIUndQdVBR?oc=5"
+    },
+    {
+      "title": "冠军熬到109分钟才过的题，GPT 12分钟交对，Claude先写暴力验自己 - 智源社区",
+      "summary": "冠军熬到109分钟才过的题，GPT 12分钟交对，Claude先写暴力验自己 智源社区",
+      "source": "智源社区",
+      "lang": "zh",
+      "published": "Sat, 28 Nov 2026 06:50:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE82X2dpZk1WemotSkZNcUs3RHBjdGFyd19mMWdlTTdmQUlROVA2azNlNFZiTzEyclhVTWVtdmk1OFFkNVdwbmJGdA?oc=5"
+    },
+    {
+      "title": "马斯克：谷歌已表示有兴趣从SpaceX租用更多算力|埃隆·马斯克|Grok|OpenAI|AI模型|Google_手机新浪网 - 新浪财经_金融信息服务商",
+      "summary": "马斯克：谷歌已表示有兴趣从SpaceX租用更多算力|埃隆·马斯克|Grok|OpenAI|AI模型|Google_手机新浪网 新浪财经_金融信息服务商",
+      "source": "新浪财经_金融信息服务商",
+      "lang": "zh",
+      "published": "Sat, 28 Nov 2026 10:28:01 GMT",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNcE10QUo5S21sNjdobDRNQlVqZEhaT2VDVzhoQVRrcGVJbWlZMmFBQU1GX2ZFS3UycHNVN2oya0d6RDJoWUVmWDk5UXRoekRBUFZncC1XTVBiSWRkN3NlZVpYdWsxbmU4VkYtaFZBbW9wRnFZb0FBREROTXp4SHZaZjR0VElqODl2Z3FfMUNHVWpIWVky?oc=5"
+    },
+    {
+      "title": "Google与蓝色起源推进轨道AI算力测试计划 - ThePaper.cn",
+      "summary": "Google与蓝色起源推进轨道AI算力测试计划 ThePaper.cn",
+      "source": "ThePaper.cn",
+      "lang": "zh",
+      "published": "Sat, 28 Nov 2026 05:51:15 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE04Q1B3YkhrVng5SjRPLWp2SjBfVE1RcnZIcG5HalpCbEtZYnRHa3hyTHNiWVZzUlVYMVdDV3l3dnBGUGpEOFN4S3VfbW1LM2NBTjJ6Y25DdG9wdUNyc1JhVA?oc=5"
+    },
+    {
+      "title": "首批液冷国标落地倒计时 算力基建重构散热规则 - 21财经",
+      "summary": "首批液冷国标落地倒计时 算力基建重构散热规则 21财经",
+      "source": "21财经",
+      "lang": "zh",
+      "published": "Sat, 28 Nov 2026 07:21:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMzEwWFQzeWw4ZEgzY1pfQTd5QnlhWmZMSmNJQVQzc1R0MzhvcnhxY2FFMlN3SWJwMGRFWUJHM3RaTlZnTFBwTGhwU3k2Rm14eG0xOEtZdXlKUDRraEkzSHhhdlFaV1hpVE9scGxNQm4wWkR2c0tUVmlpN0s2MGNKVFdDbUJibkxkcW9jR3FvSQ?oc=5"
+    },
+    {
+      "title": "理所当“燃”| 绿色算力成为创业“神助攻” - 紫牛新闻",
+      "summary": "理所当“燃”| 绿色算力成为创业“神助攻” 紫牛新闻",
+      "source": "紫牛新闻",
+      "lang": "zh",
+      "published": "Sat, 28 Nov 2026 08:53:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1UazZUWGVjMGRjZGpmY2M4TV8xSUtucjBCZnMwWHM5SU5ZaUtSUER0R3Bic2JmcE5BNEo1UW5VQ1pkVHQ4RkdGaGpzWXYyaFZvTlhjYlpQTElHNThrYXljczdvMUFZLTd1?oc=5"
+    }
+  ],
+  "tools": [
+    {
+      "title": "awesome-mcp-servers",
+      "type": "GitHub",
+      "summary_en": "A collection of MCP servers.",
+      "summary": "MCP 服务器的集合。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": 98593,
+      "language": ""
+    },
+    {
+      "title": "headroom",
+      "type": "GitHub",
+      "summary_en": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "summary": "在工具输出、日志、文件和 RAG 块到达 LLM 之前对其进行压缩。编码代理的标记减少了 20%，JSON 的标记减少了 60-95%，答案相同。库、代理、MCP 服务器。",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "author": "headroomlabs-ai",
+      "stars": 81038,
+      "language": "Python"
+    },
+    {
+      "title": "private-gpt",
+      "type": "GitHub",
+      "summary_en": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+      "summary": "本地模型上的私有 AI 应用程序的完整 API 层：RAG、技能、工具、MCP、文本到 SQL 等。可与任何兼容 OpenAI 的推理服务器配合使用。",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "author": "zylon-ai",
+      "stars": 57666,
+      "language": "Python"
+    },
+    {
+      "title": "playwright-mcp",
+      "type": "GitHub",
+      "summary_en": "Playwright MCP server",
+      "summary": "剧作家 MCP 服务器",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "author": "microsoft",
+      "stars": 40234,
+      "language": "TypeScript"
+    },
+    {
+      "title": "next-ai-draw-io",
+      "type": "GitHub",
+      "summary_en": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "summary": "通过与人工智能聊天来绘制和编辑draw.io图表。 Web 应用程序、桌面应用程序以及用于 Claude Code、Cursor、Codex 和 VS Code 的 MCP 服务器。",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "author": "DayuanJiang",
+      "stars": 37221,
+      "language": "TypeScript"
+    },
+    {
+      "title": "rea",
+      "type": "GitHub",
+      "summary_en": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "summary": "使用代理对任何内容进行逆向工程，从应用程序行为到本机二进制文件。",
+      "url": "https://github.com/morluto/rea",
+      "author": "morluto",
+      "stars": 481601,
+      "language": "TypeScript"
+    },
+    {
+      "title": "openclaw",
+      "type": "GitHub",
+      "summary_en": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "summary": "真正做事的人工智能。任何操作系统。任何平台。龙虾方式。 🦞",
+      "url": "https://github.com/openclaw/openclaw",
+      "author": "openclaw",
+      "stars": 395371,
+      "language": "TypeScript"
+    },
+    {
+      "title": "superpowers",
+      "type": "GitHub",
+      "summary_en": "An agentic skills framework & software development methodology that works.",
+      "summary": "有效的代理技能框架和软件开发方法。",
+      "url": "https://github.com/obra/superpowers",
+      "author": "obra",
+      "stars": 328643,
+      "language": "Shell"
+    },
+    {
+      "title": "Two Minute Papers (YouTube)",
+      "type": "视频",
+      "summary": "每期用精美可视化解读最新 AI 论文与工具效果，点赞量极高的科普标杆频道，适合快速 get 前沿成果。",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Matt Wolfe (YouTube)",
+      "type": "视频",
+      "summary": "每周盘点最新最热门的 AI 工具并实测演示，高赞高收藏，是跟进 AI 工具生态的高效频道。",
+      "url": "https://www.youtube.com/@mreflow",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Fireship (YouTube)",
+      "type": "视频",
+      "summary": "高能短视频讲解 AI 与编程工具，节奏快、点赞量爆表，适合碎片时间快速了解新工具。",
+      "url": "https://www.youtube.com/@Fireship",
+      "author": "YouTube",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "抖音 ·「AI工具」高赞合集",
+      "type": "社媒",
+      "summary": "抖音「AI工具」搜索入口，直达高点赞的 AI 工具实测、教程与避坑短视频内容流。",
+      "url": "https://www.douyin.com/search/AI%E5%B7%A5%E5%85%B7",
+      "author": "抖音",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "小红书 ·「AI工具」高藏笔记",
+      "type": "社媒",
+      "summary": "小红书「AI工具」搜索入口，汇集高收藏的 AI 工具种草笔记、效率玩法与实用清单。",
+      "url": "https://www.xiaohongshu.com/search_result?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "小红书",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "哔哩哔哩 ·「AI工具」高播教程",
+      "type": "视频",
+      "summary": "B 站「AI工具」搜索入口，覆盖高播放、高三连的 AI 工具深度教程与测评长视频。",
+      "url": "https://search.bilibili.com/all?keyword=AI%E5%B7%A5%E5%85%B7",
+      "author": "哔哩哔哩",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Model Context Protocol (MCP)",
+      "type": "MCP",
+      "summary": "Anthropic 提出的开放协议，标准化大模型与外部工具/数据源的连接，是构建 Agent 工具调用能力的基础规范。",
+      "url": "https://modelcontextprotocol.io",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Awesome MCP Servers",
+      "type": "MCP",
+      "summary": "社区整理的 MCP Server 大全，涵盖文件、数据库、浏览器、搜索、IDE 等可直接接入 Agent 的工具服务。",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "author": "punkpeye",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "OpenAI Cookbook",
+      "type": "经验",
+      "summary": "OpenAI 官方实战示例库，包含函数调用、RAG、Agent、评测等大量可复用的代码与最佳实践。",
+      "url": "https://github.com/openai/openai-cookbook",
+      "author": "OpenAI",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Cursor Directory",
+      "type": "Skill",
+      "summary": "汇集各类 Cursor Rules / MCP / 技能配置，可直接复用到 AI 编程工作流，提升 Agent 编码效率。",
+      "url": "https://cursor.directory",
+      "author": "Cursor",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Anthropic Agents & Tools 文档",
+      "type": "Skill",
+      "summary": "Claude 工具调用、Agent 与 Skills 官方指南，讲解如何编排多步骤工具调用、构建可靠 Agent。",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/overview",
+      "author": "Anthropic",
+      "stars": null,
+      "language": ""
+    },
+    {
+      "title": "Hugging Face Daily Papers & Spaces",
+      "type": "社媒",
+      "summary": "每日热门论文与可在线体验的模型 Demo（Spaces），是发现新工具、快速复现前沿成果的高效入口。",
+      "url": "https://huggingface.co/papers",
+      "author": "Hugging Face",
+      "stars": null,
+      "language": ""
+    }
+  ]
+}
